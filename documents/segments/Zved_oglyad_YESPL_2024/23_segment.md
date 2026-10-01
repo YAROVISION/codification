@@ -1,0 +1,43 @@
+#### Зведений огляд рішень Європейського суду з прав людини
+
+[замість перевірки її доброчесності та професійної компетентності, що свідчило](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[про упередженість членів ВРП, і недостатність судового контролю в цьому](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+аспекті [– порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+HELLGREN v. Finland: [утримання роботодавцем заробітної плати заявниці через](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[неповне виконання нею своїх робочих обов’язків упродовж двох днів у контексті](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[«вибіркового страйку» за рішенням профспілки – відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+KAYA v. Türkiye (ухв.) : [притягнення заявниці – вчительки – до дисциплінарної](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[відповідальності за участь в одноденному страйку, що не був пов’язаний з її](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[економічними, соціальними або професійними інтересами – заяву визнано](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+FEZA ALMAZ AND OTHERS v. Türkiye (ухв.) : [притягнення заявників – муніципальних](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[службовців – до дисциплінарної відповідальності за участь в одноденному](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[страйку, що не був пов’язаний з їхніми економічними, соціальними](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[або професійними інтересами – заяву визнано неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+
+Стаття 1 Першого протоколу до Конвенції (захист власності)
+[NASKOV AND OTHERS v. North Macedonia:](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf) порушення майнових прав заявників
+[через скасування національними органами влади proprio motu розпорядження](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[про остаточну реституцію, яким їм надавалося право власності на землю, на якій](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[треті особи побудували автозаправну станцію та господарські приміщення –](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+
+[порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+BERNOTAS v. Lithuania: [покладення на заявника зобов’язання з відшкодування](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[органам соціального забезпечення пенсійних виплат, здійснених на користь](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[особи, здоров’ю якої заявник завдав тяжкої шкоди – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+MAROSLAVAC v. Croatia: [вимога податкових органів під час проведення перевірки](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[фінансової діяльності заявниці сплатити податкові нарахування за періоди, щодо](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+
+[яких, як стверджувала заявниця, у держави спливли строки нарахування](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+та стягнення – [відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+SHYLINA v. Ukraine: [призупинення виплат внутрішньо переміщеній особі через її](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[відмову виконувати законодавчу вимогу про необхідність відкриття рахунку](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[в Ощадбанку для подальшого отримання таких виплат – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[ENERGYWORKS CARTAGENA S.L. v. Spain:](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf) перекласифікація частини прибутку
+[(субсидії) минулих періодів компанії-заявника як необґрунтованої та її подальше](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[зарахування в рахунок майбутньої винагороди, що, на думку компанії-заявника,](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[становило випадки ретроспективності та суперечило принципу правової](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+визначеності [– скаргу визнано неприйнятною](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+NINA DIMITROVA v. Bulgaria: [скарги заявниці на те, що її квартира, передана](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[в іпотеку банку на забезпечення кредитного договору, була продана в межах](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[виконавчого провадження до того, як були розглянуті її судові заперечення щодо](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)

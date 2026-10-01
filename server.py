@@ -144,6 +144,17 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
             """, (code,))
             cat["relations"] = [dict(r) for r in cur.fetchall()]
 
+            # Судова практика (Прикріплені сегменти)
+            try:
+                cur.execute("""
+                    SELECT id, case_number, original_category, teza, summary, circumstances, reasoning, confidence_score, llm_reasoning, file_path
+                    FROM mapped_segments
+                    WHERE category_code = ?
+                """, (code,))
+                cat["segments"] = [dict(r) for r in cur.fetchall()]
+            except sqlite3.OperationalError:
+                cat["segments"] = []
+
             return cat
 
     def handle_children(self, parent_code):

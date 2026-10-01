@@ -483,6 +483,11 @@ function renderCategoryDetails(cat) {
   // Subcategories Grid
   renderSubcategories(childrenList);
 
+  // Judicial Practice Segments
+  if (typeof renderSegments === "function") {
+    renderSegments(cat.segments);
+  }
+
   // Cross-references
   renderCrossReferences(cat.relations || [], cat.cross_references);
 
@@ -712,3 +717,51 @@ function showToast(msg) {
 
 // Kickoff
 document.addEventListener("DOMContentLoaded", init);
+
+// Render Judicial Segments
+function renderSegments(segments) {
+  const section = document.getElementById('segments-section');
+  const list = document.getElementById('segments-list');
+  const badge = document.getElementById('segments-count-badge');
+
+  if (!segments || segments.length === 0) {
+    section.classList.add('hidden');
+    return;
+  }
+
+  section.classList.remove('hidden');
+  badge.textContent = segments.length;
+  list.innerHTML = '';
+
+  segments.forEach(seg => {
+    const card = document.createElement('div');
+    card.className = 'subcat-card segment-card';
+    card.style.display = 'block';
+    card.style.textAlign = 'left';
+    card.style.padding = '1rem';
+    card.style.marginTop = '1rem';
+    
+    const confidenceBadge = seg.confidence_score ? 
+      `<span style="float:right; font-size:12px; color: var(--accent); background: var(--bg-hover); padding:2px 6px; border-radius:10px;">${Math.round(seg.confidence_score * 100)}% AI Match</span>` : '';
+    
+    card.innerHTML = `
+      <div style="margin-bottom:8px;">
+        <span style="font-weight:600; color: var(--text-primary);">${seg.case_number || 'Справа не вказана'}</span>
+        ${confidenceBadge}
+      </div>
+      <div style="font-size:14px; color: var(--text-secondary); margin-bottom: 8px;">
+        <p style="margin:4px 0;"><strong>Теза:</strong> ${seg.teza || 'Немає'}</p>
+        <p style="margin:4px 0;"><strong>Обставини:</strong> ${seg.summary || 'Немає'}</p>
+      </div>
+      ${seg.llm_reasoning ? `
+      <div style="margin-top: 12px; font-size:13px; border-top: 1px solid var(--border-color); padding-top: 8px;">
+        <details>
+          <summary style="cursor:pointer; color: var(--accent);">Чому обрано цю рубрику?</summary>
+          <p style="margin-top:4px; color:var(--text-secondary);">${seg.llm_reasoning}</p>
+        </details>
+      </div>
+      ` : ''}
+    `;
+    list.appendChild(card);
+  });
+}
