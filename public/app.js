@@ -41,9 +41,45 @@ const statRoots = document.getElementById("stat-roots");
 const statTotal = document.getElementById("stat-total");
 const statDocs = document.getElementById("stat-docs");
 
+// macOS Liquid Glass Theme Elements
+const themeBtnLight = document.getElementById("theme-btn-light");
+const themeBtnDark = document.getElementById("theme-btn-dark");
+const themeIndicator = document.getElementById("theme-indicator");
+const sidebar = document.getElementById("sidebar");
+
+// Mobile Drawer Elements
+const mobileSidebarToggle = document.getElementById("mobile-sidebar-toggle");
+const mobileSidebarClose = document.getElementById("mobile-sidebar-close");
+const sidebarBackdrop = document.getElementById("sidebar-backdrop");
+const statRootsMobile = document.getElementById("stat-roots-mobile");
+const statTotalMobile = document.getElementById("stat-total-mobile");
+const statDocsMobile = document.getElementById("stat-docs-mobile");
+
+function openMobileSidebar() {
+  if (sidebar) {
+    sidebar.classList.add("open");
+  }
+  if (sidebarBackdrop) {
+    sidebarBackdrop.classList.add("active");
+  }
+  document.body.classList.add("sidebar-open");
+}
+
+function closeMobileSidebar() {
+  if (sidebar) {
+    sidebar.classList.remove("open");
+  }
+  if (sidebarBackdrop) {
+    sidebarBackdrop.classList.remove("active");
+  }
+  document.body.classList.remove("sidebar-open");
+}
+
 // Initialize application
 async function init() {
+  initTheme();
   setupEventListeners();
+  setupWindowControls();
   loadStats();
   await loadTree();
 
@@ -54,6 +90,81 @@ async function init() {
     selectCategory(code);
   } else {
     selectCategory("10");
+  }
+}
+
+// Theme Management (Liquid Glass macOS Light / Dark Modes)
+function initTheme() {
+  const savedTheme = localStorage.getItem("app_theme") || "dark";
+  applyTheme(savedTheme, false);
+
+  if (themeBtnLight) {
+    themeBtnLight.addEventListener("click", () => applyTheme("light"));
+  }
+  if (themeBtnDark) {
+    themeBtnDark.addEventListener("click", () => applyTheme("dark"));
+  }
+}
+
+function applyTheme(theme, animate = true) {
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("app_theme", theme);
+
+  if (theme === "light") {
+    themeBtnLight?.classList.add("active");
+    themeBtnDark?.classList.remove("active");
+  } else {
+    themeBtnDark?.classList.add("active");
+    themeBtnLight?.classList.remove("active");
+  }
+
+  if (animate) {
+    showToast(theme === "light" ? "Світло-блакитну тему активовано" : "Темну тему активовано");
+  }
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute("data-theme") || "dark";
+  applyTheme(current === "dark" ? "light" : "dark");
+}
+
+// macOS Window Traffic Light Controls
+function setupWindowControls() {
+  const dotClose = document.querySelector(".mac-dot-close");
+  const dotMinimize = document.querySelector(".mac-dot-minimize");
+  const dotMaximize = document.querySelector(".mac-dot-maximize");
+
+  if (dotClose) {
+    dotClose.addEventListener("click", () => {
+      // Close search or clear filter
+      globalSearchInput.value = "";
+      treeFilterInput.value = "";
+      filterTreeNodes("");
+      searchDropdown.classList.add("hidden");
+      showToast("Пошукові фільтри очищено");
+    });
+  }
+
+  if (dotMinimize) {
+    dotMinimize.addEventListener("click", () => {
+      // Toggle sidebar collapse
+      if (sidebar) {
+        const isHidden = sidebar.style.display === "none";
+        sidebar.style.display = isHidden ? "flex" : "none";
+        showToast(isHidden ? "Бічну панель показано" : "Бічну панель приховано");
+      }
+    });
+  }
+
+  if (dotMaximize) {
+    dotMaximize.addEventListener("click", () => {
+      // Toggle fullscreen
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        document.exitFullscreen().catch(() => {});
+      }
+    });
   }
 }
 
@@ -70,7 +181,7 @@ function setupEventListeners() {
     searchDebounceTimer = setTimeout(() => performSearch(query), 200);
   });
 
-  // Global Keyboard Shortcuts (Ctrl+K or '/')
+  // Global Keyboard Shortcuts (Ctrl+K or '/' or Alt+T)
   window.addEventListener("keydown", (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
       e.preventDefault();
@@ -79,6 +190,11 @@ function setupEventListeners() {
     }
     if (e.key === "Escape") {
       searchDropdown.classList.add("hidden");
+    }
+    // Alt+T or Option+T for theme toggle
+    if (e.altKey && e.key.toLowerCase() === "t") {
+      e.preventDefault();
+      toggleTheme();
     }
   });
 
@@ -123,6 +239,17 @@ function setupEventListeners() {
     }
   });
 
+  // Mobile Drawer Toggle Listeners
+  if (mobileSidebarToggle) {
+    mobileSidebarToggle.addEventListener("click", openMobileSidebar);
+  }
+  if (mobileSidebarClose) {
+    mobileSidebarClose.addEventListener("click", closeMobileSidebar);
+  }
+  if (sidebarBackdrop) {
+    sidebarBackdrop.addEventListener("click", closeMobileSidebar);
+  }
+
   // Hash change
   window.addEventListener("hashchange", () => {
     const hash = window.location.hash.replace("#", "");
@@ -144,6 +271,11 @@ async function loadStats() {
     statRoots.textContent = stats.root_branches || 28;
     statTotal.textContent = Number(stats.total_categories).toLocaleString("uk-UA");
     statDocs.textContent = Number(stats.total_docs_registered).toLocaleString("uk-UA");
+
+    // Populate mobile drawer stats
+    if (statRootsMobile) statRootsMobile.textContent = stats.root_branches || 28;
+    if (statTotalMobile) statTotalMobile.textContent = Number(stats.total_categories).toLocaleString("uk-UA");
+    if (statDocsMobile) statDocsMobile.textContent = Number(stats.total_docs_registered).toLocaleString("uk-UA");
   } catch (err) {
     console.error("Failed to load stats", err);
   }
@@ -280,6 +412,11 @@ async function selectCategory(code) {
     targetRow.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
+  // Close mobile sidebar if open on smaller screens
+  if (window.innerWidth <= 900) {
+    closeMobileSidebar();
+  }
+
   // Fetch detailed data from server API or lookup map
   try {
     const res = await fetch(`/api/category?code=${encodeURIComponent(code)}`);
@@ -311,18 +448,22 @@ function renderCategoryDetails(cat) {
   heroLevel.textContent = `Рівень ${cat.level} • ${getLevelLabel(cat.level)}`;
   heroTitle.textContent = cat.clean_name;
 
-  // Links
+  // Action Links / Tabs
   if (cat.branch_url) {
     heroBranchUrlBtn.href = cat.branch_url;
-    heroBranchUrlBtn.style.display = "inline-flex";
+    heroBranchUrlBtn.classList.remove("hidden");
+    heroBranchUrlBtn.style.removeProperty("display");
   } else {
+    heroBranchUrlBtn.classList.add("hidden");
     heroBranchUrlBtn.style.display = "none";
   }
 
   if (cat.direct_url) {
     heroDirectUrlBtn.href = cat.direct_url;
-    heroDirectUrlBtn.style.display = "inline-flex";
+    heroDirectUrlBtn.classList.remove("hidden");
+    heroDirectUrlBtn.style.removeProperty("display");
   } else {
+    heroDirectUrlBtn.classList.add("hidden");
     heroDirectUrlBtn.style.display = "none";
   }
 
@@ -553,21 +694,20 @@ function cssSafe(str) {
 }
 
 function showToast(msg) {
+  const existing = document.querySelector(".mac-toast");
+  if (existing) existing.remove();
+
   const toast = document.createElement("div");
-  toast.textContent = msg;
-  toast.style.position = "fixed";
-  toast.style.bottom = "24px";
-  toast.style.right = "24px";
-  toast.style.background = "linear-gradient(135deg, #0284c7, #2563eb)";
-  toast.style.color = "#fff";
-  toast.style.padding = "10px 18px";
-  toast.style.borderRadius = "8px";
-  toast.style.boxShadow = "0 8px 20px rgba(0,0,0,0.5)";
-  toast.style.zIndex = "9999";
-  toast.style.fontSize = "13px";
-  toast.style.fontWeight = "600";
+  toast.className = "mac-toast";
+  toast.innerHTML = `
+    <span class="mac-toast-dot"></span>
+    <span class="mac-toast-text">${msg}</span>
+  `;
   document.body.appendChild(toast);
-  setTimeout(() => toast.remove(), 2500);
+  setTimeout(() => {
+    toast.classList.add("fade-out");
+    setTimeout(() => toast.remove(), 260);
+  }, 2200);
 }
 
 // Kickoff
