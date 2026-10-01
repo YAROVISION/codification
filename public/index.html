@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Єдиний класифікатор правових актів України — Семантичний Навігатор</title>
+  <meta name="description" content="Інтерактивна система навігації, аналізу та семантичного пошуку по єдиному рубрикатору законодавства України (Верховна Рада України).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav" id="top-nav">
+      <div class="brand-group">
+        <div class="logo-badge">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+            <path d="M6 6h10"/>
+            <path d="M6 10h10"/>
+            <path d="M6 14h7"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Кодифікатор Законодавства</h1>
+          <span class="brand-subtitle">Офіційний рубрикатор ВРУ • Семантична база</span>
+        </div>
+      </div>
+
+      <div class="search-box-container">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+          <input type="text" id="global-search-input" placeholder="Пошук рубрики або коду (наприклад: податок, 10 10, мито, оборона)..." autocomplete="off">
+          <kbd class="search-shortcut">Ctrl+K</kbd>
+        </div>
+
+        <!-- Search dropdown results -->
+        <div class="search-dropdown hidden" id="search-dropdown">
+          <div class="search-dropdown-header">
+            <span id="search-results-count">Результати пошуку</span>
+            <span class="search-hint">↑↓ для вибору, Enter для переходу</span>
+          </div>
+          <div class="search-results-list" id="search-results-list"></div>
+        </div>
+      </div>
+
+      <div class="nav-stats">
+        <div class="stat-pill" title="Всього галузей першого рівня">
+          <span class="stat-label">Галузей:</span>
+          <span class="stat-value" id="stat-roots">28</span>
+        </div>
+        <div class="stat-pill" title="Всього вузлів класифікатора">
+          <span class="stat-label">Рубрик:</span>
+          <span class="stat-value" id="stat-total">1,043</span>
+        </div>
+        <div class="stat-pill highlight" title="Сумарна кількість зареєстрованих нормативних актів">
+          <span class="stat-label">Актів:</span>
+          <span class="stat-value" id="stat-docs">500,000+</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Workspace Layout -->
+    <main class="main-layout" id="main-layout">
+      <!-- Left Sidebar: Tree Navigation -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title-row">
+            <h2 class="sidebar-title">Дерево класифікації</h2>
+            <div class="tree-actions">
+              <button class="icon-btn" id="btn-collapse-all" title="Згорнути всі">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 8l8 8 8-8" transform="rotate(180 12 12)"/>
+                </svg>
+              </button>
+              <button class="icon-btn" id="btn-expand-all" title="Розгорнути головні">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 8l8 8 8-8"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="tree-filter-wrapper">
+            <input type="text" id="tree-filter-input" placeholder="Фільтр гілок..." autocomplete="off">
+          </div>
+        </div>
+
+        <div class="tree-container" id="tree-container">
+          <div class="loading-state" id="tree-loading">
+            <div class="spinner"></div>
+            <span>Завантаження структури класифікатора...</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center / Right Content Panel -->
+      <section class="content-panel" id="content-panel">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb-bar" id="breadcrumb-bar" aria-label="Хлібні крихти"></nav>
+
+        <!-- Selected Category Main Hero Card -->
+        <article class="category-hero-card" id="category-hero-card">
+          <div class="hero-top-row">
+            <div class="code-badge-group">
+              <span class="code-badge" id="hero-code">10</span>
+              <span class="level-badge" id="hero-level">Рівень 1 • Галузь права</span>
+            </div>
+            <div class="hero-action-buttons">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="hero-branch-url-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>Всі акти на ВРУ (<span id="hero-total-docs-btn-count">0</span>)</span>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-direct-url-btn">
+                <span>Прямі акти (<span id="hero-direct-docs-btn-count">0</span>)</span>
+              </a>
+            </div>
+          </div>
+
+          <h2 class="hero-title" id="hero-title">Основи суспільного ладу</h2>
+
+          <div class="hero-metrics-grid">
+            <div class="metric-card">
+              <span class="metric-label">Всього актів у гілці</span>
+              <span class="metric-value" id="metric-total-docs">172,714</span>
+              <span class="metric-subtext">З урахуванням усіх підкатегорій</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Прямих актів вузла</span>
+              <span class="metric-value" id="metric-direct-docs">693</span>
+              <span class="metric-subtext">Прикріплені безпосередньо</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Підкатегорій</span>
+              <span class="metric-value" id="metric-children-count">39</span>
+              <span class="metric-subtext">Прямих дочірніх рубрик</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Subcategories Grid Section -->
+        <section class="subcategories-section" id="subcategories-section">
+          <div class="section-header">
+            <h3 class="section-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+              <span>Підрубрики цього розділу</span>
+              <span class="count-pill" id="subcats-count-badge">0</span>
+            </h3>
+          </div>
+          <div class="subcategories-grid" id="subcategories-grid"></div>
+        </section>
+
+        <!-- Semantic Intelligence & Cross-Relations Section -->
+        <section class="semantic-section" id="semantic-section">
+          <div class="section-header">
+            <h3 class="section-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2zm0-4.5h-2V7h2z"/>
+              </svg>
+              <span>Семантичний контекст та онтологія</span>
+            </h3>
+          </div>
+
+          <div class="semantic-cards-container">
+            <!-- Cross-references card -->
+            <div class="semantic-card" id="cross-refs-card">
+              <h4 class="card-subtitle">Перехресні посилання рубрикатора</h4>
+              <div id="cross-refs-content" class="cross-refs-list">
+                <span class="empty-text">Для цього вузла прямих перехресних відсилок немає</span>
+              </div>
+            </div>
+
+            <!-- Prepared text for embeddings / RAG -->
+            <div class="semantic-card">
+              <h4 class="card-subtitle">Текстовий блок для векторного пошуку (Embeddings / RAG)</h4>
+              <p class="semantic-text-preview" id="semantic-text-preview"></p>
+              <div class="semantic-actions">
+                <button class="btn btn-sm" id="btn-copy-semantic">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Копіювати опис</span>
+                </button>
+                <button class="btn btn-sm" id="btn-copy-json">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <span>Копіювати JSON вузла</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
