@@ -31,6 +31,9 @@ const metricChildrenCount = document.getElementById("metric-children-count");
 
 const subcategoriesGrid = document.getElementById("subcategories-grid");
 const subcatsCountBadge = document.getElementById("subcats-count-badge");
+const segmentsSection = document.getElementById("segments-section");
+const segmentsList = document.getElementById("segments-list");
+const segmentsCountBadge = document.getElementById("segments-count-badge");
 const crossRefsContent = document.getElementById("cross-refs-content");
 const semanticTextPreview = document.getElementById("semantic-text-preview");
 
@@ -566,6 +569,158 @@ function renderSubcategories(children) {
     });
 
     subcategoriesGrid.appendChild(card);
+  });
+}
+
+function escapeHtml(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+// Render Judicial Practice Segments with PDF Journal Viewer links
+function renderSegments(segments) {
+  if (!segmentsSection || !segmentsList) return;
+
+  segmentsList.innerHTML = "";
+
+  if (!segments || segments.length === 0) {
+    segmentsSection.classList.add("hidden");
+    if (segmentsCountBadge) segmentsCountBadge.textContent = "0";
+    return;
+  }
+
+  segmentsSection.classList.remove("hidden");
+  if (segmentsCountBadge) {
+    segmentsCountBadge.textContent = segments.length;
+  }
+
+  segments.forEach((seg, index) => {
+    const card = document.createElement("article");
+    card.className = "segment-card";
+
+    // Extract PDF URL and filename
+    let pdfUrl = "";
+    let pdfName = "";
+    if (seg.pdf_path) {
+      pdfUrl = "/" + seg.pdf_path.replace(/\\/g, "/").replace(/^\/+/, "");
+      pdfName = seg.pdf_path.split("/").pop() || "Огляд судової практики";
+    }
+
+    const confidencePct = Math.round((seg.confidence_score || 0.95) * 100);
+
+    card.innerHTML = `
+      <div class="segment-card-header">
+        <div class="segment-badges">
+          <span class="segment-badge-case" title="Номер судового рішення Верховного Суду">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m14 13-7.5 7.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0-.83-.83-.83-2.17 0-3L11 10"></path>
+              <path d="m16 16 6-6"></path>
+              <path d="m8 8 6-6"></path>
+              <path d="m9 7 8 8"></path>
+              <path d="m21 11-8-8"></path>
+            </svg>
+            ${escapeHtml(seg.case_number || "Справа ВС")}
+          </span>
+          <span class="segment-badge-confidence" title="Рівень семантичної відповідності категорії">
+            <span class="confidence-dot"></span>
+            ${confidencePct}% відповідність
+          </span>
+        </div>
+
+        ${pdfUrl ? `
+          <a href="${pdfUrl}" target="_blank" rel="noopener noreferrer" class="btn-pdf-view" title="Відкрити офіційний випуск журналу огляду (PDF) у новій вкладці">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Відкрити журнал (PDF)</span>
+            <svg class="external-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        ` : ''}
+      </div>
+
+      <div class="segment-body">
+        <h4 class="segment-teza">${escapeHtml(seg.teza || "Правова позиція")}</h4>
+        
+        ${seg.summary ? `
+          <div class="segment-summary">
+            <p>${escapeHtml(seg.summary)}</p>
+          </div>
+        ` : ''}
+
+        <div class="segment-details-collapse hidden" id="seg-details-${seg.id || index}">
+          ${seg.circumstances ? `
+            <div class="detail-block">
+              <div class="detail-label">Фактичні обставини спору:</div>
+              <div class="detail-text">${escapeHtml(seg.circumstances)}</div>
+            </div>
+          ` : ''}
+          ${seg.reasoning ? `
+            <div class="detail-block">
+              <div class="detail-label">Оцінка та мотиви Верховного Суду:</div>
+              <div class="detail-text">${escapeHtml(seg.reasoning)}</div>
+            </div>
+          ` : ''}
+          ${seg.llm_reasoning ? `
+            <div class="detail-block detail-ai">
+              <div class="detail-label">Семантичне обґрунтування класифікації:</div>
+              <div class="detail-text">${escapeHtml(seg.llm_reasoning)}</div>
+            </div>
+          ` : ''}
+          ${pdfUrl ? `
+            <div class="detail-block detail-pdf-ref">
+              <div class="detail-label">Офіційний журнал огляду:</div>
+              <div class="detail-text">
+                <a href="${pdfUrl}" target="_blank" rel="noopener noreferrer" class="pdf-link-inline">
+                  📄 <strong>${escapeHtml(pdfName)}</strong> (натисніть для перегляду журналу)
+                </a>
+              </div>
+            </div>
+          ` : ''}
+        </div>
+
+        <div class="segment-footer">
+          <button type="button" class="btn-toggle-details" data-target="seg-details-${seg.id || index}">
+            <span class="btn-toggle-text">Показати деталі та мотиви</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    `;
+
+    // Event listener for toggle details
+    const toggleBtn = card.querySelector(".btn-toggle-details");
+    const detailsBox = card.querySelector(`#seg-details-${seg.id || index}`);
+    if (toggleBtn && detailsBox) {
+      toggleBtn.addEventListener("click", () => {
+        const isHidden = detailsBox.classList.contains("hidden");
+        if (isHidden) {
+          detailsBox.classList.remove("hidden");
+          toggleBtn.querySelector(".btn-toggle-text").textContent = "Приховати деталі";
+          toggleBtn.classList.add("expanded");
+        } else {
+          detailsBox.classList.add("hidden");
+          toggleBtn.querySelector(".btn-toggle-text").textContent = "Показати деталі та мотиви";
+          toggleBtn.classList.remove("expanded");
+        }
+      });
+    }
+
+    segmentsList.appendChild(card);
   });
 }
 

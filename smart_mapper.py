@@ -398,6 +398,8 @@ def process_folder(folder_path: Path, dry_run: bool = False) -> Dict[str, int]:
 
         cat_code, conf, reason = find_best_category(info, context, conn)
 
+        pdf_rel = f"documents/pdfs/{folder_path.name}.pdf"
+
         if not dry_run:
             cur.execute("SELECT id FROM mapped_segments WHERE file_path = ?", (info["file_path"],))
             existing = cur.fetchone()
@@ -412,7 +414,8 @@ def process_folder(folder_path: Path, dry_run: bool = False) -> Dict[str, int]:
                         circumstances = ?,
                         reasoning = ?,
                         confidence_score = ?,
-                        llm_reasoning = ?
+                        llm_reasoning = ?,
+                        pdf_path = ?
                     WHERE id = ?
                 """, (
                     cat_code,
@@ -424,13 +427,14 @@ def process_folder(folder_path: Path, dry_run: bool = False) -> Dict[str, int]:
                     info["reasoning"],
                     conf,
                     reason,
+                    pdf_rel,
                     existing["id"]
                 ))
             else:
                 cur.execute("""
                     INSERT INTO mapped_segments 
-                    (category_code, case_number, original_category, teza, summary, circumstances, reasoning, confidence_score, llm_reasoning, file_path)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    (category_code, case_number, original_category, teza, summary, circumstances, reasoning, confidence_score, llm_reasoning, file_path, pdf_path)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     cat_code,
                     info["case_number"],
@@ -441,7 +445,8 @@ def process_folder(folder_path: Path, dry_run: bool = False) -> Dict[str, int]:
                     info["reasoning"],
                     conf,
                     reason,
-                    info["file_path"]
+                    info["file_path"],
+                    pdf_rel
                 ))
             stats["mapped"] += 1
         stats["processed"] += 1

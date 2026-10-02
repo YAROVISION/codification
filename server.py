@@ -19,6 +19,7 @@ if sys.stdout.encoding.lower() != 'utf-8':
 PORT = 8080
 PUBLIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DOCS_PDFS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents", "pdfs")
 DB_PATH = os.path.join(DATA_DIR, "classifier.sqlite")
 JSON_TREE_PATH = os.path.join(DATA_DIR, "classifier.json")
 
@@ -37,6 +38,11 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
         parsed = urllib.parse.urlparse(self.path)
         path = parsed.path
         query = urllib.parse.parse_qs(parsed.query)
+
+        # PDF serving
+        if path.startswith("/documents/pdfs/"):
+            self.handle_pdf(path)
+            return
 
         # API Endpoints
         if path == "/api/stats":
@@ -58,6 +64,52 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
         else:
             # Обслуговування статичних файлів з public/
             super().do_GET()
+
+    def do_HEAD(self):
+        parsed = urllib.parse.urlparse(self.path)
+        if parsed.path.startswith("/documents/pdfs/"):
+            rel_path = urllib.parse.unquote(parsed.path.replace("/documents/pdfs/", "").lstrip("/"))
+            file_path = os.path.normpath(os.path.join(DOCS_PDFS_DIR, rel_path))
+            if file_path.startswith(DOCS_PDFS_DIR) and os.path.isfile(file_path):
+                self.send_response(200)
+                self.send_header("Content-Type", "application/pdf")
+                self.send_header("Content-Length", str(os.path.getsize(file_path)))
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.send_header("Accept-Ranges", "bytes")
+                self.end_headers()
+                return
+        super().do_HEAD()
+
+    def handle_pdf(self, path):
+        rel_path = urllib.parse.unquote(path.replace("/documents/pdfs/", "").lstrip("/"))
+        file_path = os.path.normpath(os.path.join(DOCS_PDFS_DIR, rel_path))
+
+        # Захист від directory traversal
+        if not file_path.startswith(DOCS_PDFS_DIR) or not os.path.isfile(file_path):
+            self.send_error(404, "PDF Not Found")
+            return
+
+        try:
+            file_size = os.path.getsize(file_path)
+            filename = os.path.basename(file_path)
+
+            self.send_response(200)
+            self.send_header("Content-Type", "application/pdf")
+            self.send_header("Content-Length", str(file_size))
+            self.send_header("Content-Disposition", f'inline; filename="{urllib.parse.quote(filename)}"')
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.send_header("Accept-Ranges", "bytes")
+            self.end_headers()
+
+            with open(file_path, "rb") as f:
+                self.copyfile(f, self.wfile)
+        except (ConnectionResetError, BrokenPipeError):
+            pass
+        except Exception as e:
+            try:
+                self.send_error(500, "Error streaming PDF")
+            except Exception:
+                pass
 
     def send_json_response(self, data, status=200):
         body = json.dumps(data, ensure_ascii=False).encode("utf-8")
@@ -147,7 +199,7 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
             # Судова практика (Прикріплені сегменти)
             try:
                 cur.execute("""
-                    SELECT id, case_number, original_category, teza, summary, circumstances, reasoning, confidence_score, llm_reasoning, file_path
+                    SELECT id, case_number, original_category, teza, summary, circumstances, reasoning, confidence_score, llm_reasoning, file_path, pdf_path
                     FROM mapped_segments
                     WHERE category_code = ?
                 """, (code,))

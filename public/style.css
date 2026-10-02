@@ -1916,4 +1916,284 @@ body {
   }
 }
 
+/* ==========================================================================
+   Judicial Practice Segments (Верховний Суд & PDF Journals)
+   ========================================================================== */
+
+.segments-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.segments-section.hidden {
+  display: none !important;
+}
+
+.segments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.segment-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  box-shadow: var(--shadow-md), var(--glass-inner-border);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), 
+              box-shadow 0.22s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-color 0.22s ease;
+}
+
+.segment-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.segment-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-indigo), transparent);
+  opacity: 0.85;
+}
+
+.segment-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.segment-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.segment-badge-case {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--accent-cyan);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.segment-badge-confidence {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 9px;
+  border-radius: 8px;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: var(--accent-emerald);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.confidence-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 8px var(--accent-emerald);
+}
+
+/* PDF Open Button */
+.btn-pdf-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.16) 0%, rgba(225, 29, 72, 0.28) 100%);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  color: #fda4af;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(244, 63, 94, 0.18);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+[data-theme="light"] .btn-pdf-view {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.1) 0%, rgba(225, 29, 72, 0.18) 100%);
+  border-color: rgba(244, 63, 94, 0.35);
+  color: #be123c;
+  box-shadow: 0 2px 8px rgba(225, 29, 72, 0.12);
+}
+
+.btn-pdf-view:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.26) 0%, rgba(225, 29, 72, 0.42) 100%);
+  border-color: #f43f5e;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.35);
+}
+
+[data-theme="light"] .btn-pdf-view:hover {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.18) 0%, rgba(225, 29, 72, 0.3) 100%);
+  border-color: #e11d48;
+  color: #9f1239;
+}
+
+.btn-pdf-view .external-icon {
+  opacity: 0.7;
+  transition: transform 0.2s ease;
+}
+
+.btn-pdf-view:hover .external-icon {
+  transform: translate(2px, -2px);
+  opacity: 1;
+}
+
+.segment-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.segment-teza {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.segment-summary {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--accent-cyan);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.segment-summary p {
+  margin: 0;
+}
+
+.segment-details-collapse {
+  margin-top: 6px;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.segment-details-collapse.hidden {
+  display: none !important;
+}
+
+[data-theme="light"] .segment-details-collapse {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.detail-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-cyan);
+}
+
+.detail-text {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-main);
+}
+
+.detail-ai .detail-label {
+  color: var(--accent-purple);
+}
+
+.detail-pdf-ref .detail-label {
+  color: var(--accent-rose);
+}
+
+.pdf-link-inline {
+  color: var(--accent-rose);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.pdf-link-inline:hover {
+  color: #fb7185;
+}
+
+.segment-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.btn-toggle-details {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-toggle-details:hover {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.btn-toggle-details .chevron-icon {
+  transition: transform 0.2s ease;
+}
+
+.btn-toggle-details.expanded .chevron-icon {
+  transform: rotate(180deg);
+}
+
+
 
