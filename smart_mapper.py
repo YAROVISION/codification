@@ -384,12 +384,17 @@ def process_folder(folder_path: Path, dry_run: bool = False) -> Dict[str, int]:
 
     context = detect_digest_context(folder_path.name, preamble_text)
 
-    # Очищуємо помилково внесені преамбули
+    # Очищуємо помилково внесені преамбули та застереження (appendix)
     if not dry_run:
-        cur.execute("DELETE FROM mapped_segments WHERE file_path LIKE ?", (f"%{folder_path.name}/00_Preamble.md%",))
+        cur.execute("DELETE FROM mapped_segments WHERE file_path LIKE ? OR file_path LIKE ?", 
+                    (f"%{folder_path.name}/00_Preamble.md%", f"%{folder_path.name}/%appendix%"))
         stats["cleaned_preambles"] += cur.rowcount
 
-    md_files = sorted([f for f in folder_path.glob("*.md") if "preamble" not in f.name.lower() and "zmist" not in f.name.lower()])
+    md_files = sorted([f for f in folder_path.glob("*.md") 
+                       if "preamble" not in f.name.lower() 
+                       and "zmist" not in f.name.lower()
+                       and "appendix" not in f.name.lower()
+                       and "dodatok" not in f.name.lower()])
     
     for f in md_files:
         info = parse_segment_file(f)
