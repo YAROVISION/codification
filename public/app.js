@@ -470,8 +470,10 @@ function renderCategoryDetails(cat) {
     heroDirectUrlBtn.style.display = "none";
   }
 
-  heroTotalDocsBtnCount.textContent = Number(cat.total_docs_count).toLocaleString("uk-UA");
-  heroDirectDocsBtnCount.textContent = Number(cat.direct_docs_count).toLocaleString("uk-UA");
+  const totalDocs = Number(cat.total_docs_count || 0);
+  const directDocs = Number(cat.direct_docs_count || 0);
+  heroTotalDocsBtnCount.textContent = totalDocs > 0 ? `(${totalDocs.toLocaleString("uk-UA")})` : "";
+  heroDirectDocsBtnCount.textContent = directDocs > 0 ? `(${directDocs.toLocaleString("uk-UA")})` : "";
 
   // Metrics
   metricTotalDocs.textContent = Number(cat.total_docs_count).toLocaleString("uk-UA");
