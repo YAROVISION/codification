@@ -271,9 +271,9 @@ async function loadStats() {
     const res = await fetch("/api/stats");
     if (!res.ok) return;
     const stats = await res.json();
-    statRoots.textContent = stats.root_branches || 28;
-    statTotal.textContent = Number(stats.total_categories).toLocaleString("uk-UA");
-    statDocs.textContent = Number(stats.total_docs_registered).toLocaleString("uk-UA");
+    if (statRoots) statRoots.textContent = stats.root_branches || 28;
+    if (statTotal) statTotal.textContent = Number(stats.total_categories).toLocaleString("uk-UA");
+    if (statDocs) statDocs.textContent = Number(stats.total_docs_registered).toLocaleString("uk-UA");
 
     // Populate mobile drawer stats
     if (statRootsMobile) statRootsMobile.textContent = stats.root_branches || 28;

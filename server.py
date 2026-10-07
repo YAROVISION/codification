@@ -20,6 +20,8 @@ PORT = 8080
 PUBLIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public")
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 DOCS_PDFS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents", "pdfs")
+DOCS_MARKDOWN_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents", "markdown")
+DOCS_SEGMENTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents", "segments")
 DB_PATH = os.path.join(DATA_DIR, "classifier.sqlite")
 JSON_TREE_PATH = os.path.join(DATA_DIR, "classifier.json")
 
@@ -47,6 +49,8 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
         # API Endpoints
         if path == "/api/stats":
             self.send_json_response(self.handle_stats())
+        elif path == "/api/digests":
+            self.send_json_response(self.handle_digests())
         elif path == "/api/tree":
             self.send_json_response(self.handle_tree())
         elif path == "/api/roots":
@@ -254,6 +258,80 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
                     LIMIT ?
                 """, (f"%{clean_q}%", f"%{clean_q}%", f"%{clean_q}%", limit))
                 return [dict(r) for r in cur.fetchall()]
+
+    def handle_digests(self):
+        """Повертає список PDF дайджестів з перевіркою markdown, сегментів та категорій."""
+        results = []
+        if not os.path.exists(DOCS_PDFS_DIR):
+            return results
+
+        files = sorted([f for f in os.listdir(DOCS_PDFS_DIR) if f.lower().endswith(".pdf")])
+        for idx, filename in enumerate(files, 1):
+            name_no_ext = os.path.splitext(filename)[0]
+
+            # Перевірка наявності у documents/markdown:
+            # 1. Окремий файл name_no_ext.md
+            # 2. Або папка name_no_ext з .md файлами всередині
+            md_path_file = os.path.join(DOCS_MARKDOWN_DIR, f"{name_no_ext}.md")
+            md_path_dir = os.path.join(DOCS_MARKDOWN_DIR, name_no_ext)
+            has_markdown = False
+            if os.path.isfile(md_path_file):
+                has_markdown = True
+            elif os.path.isdir(md_path_dir):
+                md_inner = [mf for mf in os.listdir(md_path_dir) if mf.endswith(".md") and not mf.startswith(".")]
+                has_markdown = len(md_inner) > 0
+
+            # Перевірка наявності оброблених сегментів у documents/segments/name_no_ext
+            seg_folder = os.path.join(DOCS_SEGMENTS_DIR, name_no_ext)
+            segments_count = 0
+            has_segments = False
+            if os.path.isdir(seg_folder):
+                seg_files = [sf for sf in os.listdir(seg_folder) if sf.endswith(".md") and not sf.startswith(".")]
+                segments_count = len(seg_files)
+                has_segments = segments_count > 0
+
+            category = self.detect_category(filename)
+
+            pdf_full_path = os.path.join(DOCS_PDFS_DIR, filename)
+            pdf_size_bytes = os.path.getsize(pdf_full_path) if os.path.isfile(pdf_full_path) else 0
+
+            results.append({
+                "num": idx,
+                "filename": filename,
+                "url": f"/documents/pdfs/{urllib.parse.quote(filename)}",
+                "size_bytes": pdf_size_bytes,
+                "has_markdown": has_markdown,
+                "has_segments": has_segments,
+                "segments_count": segments_count,
+                "category": category
+            })
+        return results
+
+    @staticmethod
+    def detect_category(filename):
+        fn = filename.upper()
+        if "KKS" in fn:
+            return "ККС ВС (Кримінальна)"
+        elif "KGS" in fn:
+            return "КГС ВС (Господарська)"
+        elif "KAS" in fn or "OHLIAD_KAS" in fn:
+            return "КАС ВС (Адміністративна)"
+        elif "KCS" in fn or "KC_S" in fn:
+            return "КЦС ВС (Цивільна)"
+        elif "VP" in fn or "VELYKA" in fn or "ZVED_DAIDZHEST_VP" in fn:
+            return "Велика Палата ВС"
+        elif "ESPL" in fn or "YESPL" in fn:
+            return "Практика ЄСПЛ"
+        elif "SES" in fn or "COMMUNITY_DESIGNS" in fn:
+            return "Суд Європейського Союзу"
+        elif "VRP" in fn:
+            return "Вища рада правосуддя"
+        elif "BANKRUPTCY" in fn:
+            return "КГС ВС (Банкрутство)"
+        elif "VS" in fn or "OGLYAD" in fn or "OHLIAD" in fn or "ZBIRNUK" in fn:
+            return "Верховний Суд (Тематична)"
+        else:
+            return "Судова практика"
 
 
 def run_server(port=PORT):

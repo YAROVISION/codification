@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=11">
   <script>
     (function() {
       const savedTheme = localStorage.getItem('app_theme') || 'dark';
@@ -43,22 +43,16 @@
 
     <!-- Top Navigation Bar / macOS Unified Titlebar -->
     <header class="top-nav" id="top-nav">
-      <!-- macOS Window Traffic Light Controls (Desktop) -->
-      <div class="mac-window-controls" aria-label="macOS Window Controls">
-        <span class="mac-dot mac-dot-close" title="Закрити"></span>
-        <span class="mac-dot mac-dot-minimize" title="Згорнути"></span>
-        <span class="mac-dot mac-dot-maximize" title="Розгорнути"></span>
-      </div>
-
-      <!-- Mobile Sidebar Toggle Hamburger Button -->
-      <button type="button" class="mobile-sidebar-toggle" id="mobile-sidebar-toggle" aria-label="Відкрити дерево класифікатора">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-        <span class="mobile-toggle-text">Рубрики</span>
-      </button>
+      <div class="top-nav-inner">
+        <!-- Mobile Sidebar Toggle Hamburger Button -->
+        <button type="button" class="mobile-sidebar-toggle" id="mobile-sidebar-toggle" aria-label="Відкрити дерево класифікатора">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span class="mobile-toggle-text">Рубрики</span>
+        </button>
 
       <div class="brand-group">
         <div class="logo-badge">
@@ -96,40 +90,43 @@
       </div>
 
       <div class="nav-right-cluster">
-        <div class="nav-stats">
-          <div class="stat-pill" title="Всього галузей першого рівня">
-            <span class="stat-label">Галузей:</span>
-            <span class="stat-value" id="stat-roots">28</span>
-          </div>
-          <div class="stat-pill" title="Всього вузлів класифікатора">
-            <span class="stat-label">Рубрик:</span>
-            <span class="stat-value" id="stat-total">1,043</span>
-          </div>
-          <div class="stat-pill highlight" title="Сумарна кількість зареєстрованих нормативних актів">
-            <span class="stat-label">Актів:</span>
-            <span class="stat-value" id="stat-docs">500,000+</span>
-          </div>
-        </div>
+        <!-- Navigation Links to Other Pages -->
+        <nav class="nav-links" aria-label="Швидкі посилання">
+          <a href="digest.html" class="nav-link-pill" title="Дайджест судової практики">
+            <svg class="nav-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+              <path d="M6 6h10"/>
+              <path d="M6 10h10"/>
+            </svg>
+            <span>Дайджест</span>
+          </a>
+          <a href="decisions.html" class="nav-link-pill" title="Рішення Верховного Суду">
+            <svg class="nav-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="m10 15 5-3-5-3v6Z"/>
+            </svg>
+            <span>Рішення ВС</span>
+          </a>
+        </nav>
 
         <!-- macOS Liquid Glass Segmented Theme Switch -->
         <div class="mac-theme-control" id="theme-control" role="group" aria-label="Перемикач теми (Світла / Темна)">
-          <button type="button" class="theme-segment" id="theme-btn-light" data-theme="light" title="Світло-блакитна тема">
-            <svg class="theme-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <button type="button" class="theme-segment" id="theme-btn-light" data-theme="light" title="Світло-блакитна тема" aria-label="Світла тема">
+            <svg class="theme-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="4"/>
               <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
             </svg>
-            <span class="theme-label">Світла</span>
           </button>
-          <button type="button" class="theme-segment" id="theme-btn-dark" data-theme="dark" title="Темна тема">
-            <svg class="theme-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <button type="button" class="theme-segment" id="theme-btn-dark" data-theme="dark" title="Темна тема" aria-label="Темна тема">
+            <svg class="theme-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
             </svg>
-            <span class="theme-label">Темна</span>
           </button>
           <div class="theme-segment-indicator" id="theme-indicator"></div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
     <!-- Main Workspace Layout -->
     <main class="main-layout" id="main-layout">
@@ -314,6 +311,41 @@
             </div>
           </div>
         </section>
+
+        <!-- Minimalist Unified Footer -->
+        <footer class="app-footer">
+          <div class="footer-inner">
+            <div class="footer-left">
+              <span class="footer-copy">© 2026 Кодифікатор Законодавства</span>
+              <span class="footer-divider">•</span>
+              <span class="footer-desc">Єдиний рубрикатор правових актів та практика Верховного Суду</span>
+            </div>
+            <div class="footer-right">
+              <a href="https://zakon.rada.gov.ua" target="_blank" rel="noopener noreferrer" class="footer-link" title="Офіційний вебпортал Верховної Ради України">
+                <span>Законодавство ВРУ</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="footer-divider">•</span>
+              <a href="https://supreme.court.gov.ua" target="_blank" rel="noopener noreferrer" class="footer-link" title="Офіційний сайт Верховного Суду">
+                <span>Верховний Суд</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="footer-divider">•</span>
+              <span class="footer-status-pill">
+                <span class="status-dot"></span>
+                <span>Active</span>
+              </span>
+            </div>
+          </div>
+        </footer>
       </section>
     </main>
   </div>

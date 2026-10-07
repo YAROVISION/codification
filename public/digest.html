@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстр Дайджестів та Оглядів Судової Практики — Кодифікатор Законодавства</title>
+  <meta name="description" content="Реєстр та моніторинг опрацювання дайджестів і оглядів судової практики Верховного Суду, ЄСПЛ та Суду ЄС.">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=11">
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body class="page-digest">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav" id="top-nav">
+      <div class="top-nav-inner">
+        <div class="brand-group">
+          <a href="index.html" class="logo-badge-link" title="Повернутися до класифікатора">
+            <div class="logo-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                <path d="M6 6h10"/>
+                <path d="M6 10h10"/>
+                <path d="M6 14h7"/>
+              </svg>
+            </div>
+          </a>
+          <div class="brand-text">
+            <h1 class="brand-title">Кодифікатор Законодавства</h1>
+            <span class="brand-subtitle">Дайджести та огляди судової практики</span>
+          </div>
+        </div>
+
+        <div class="nav-right-cluster">
+          <!-- Navigation Links to Other Pages -->
+          <nav class="nav-links" aria-label="Швидкі посилання">
+            <a href="index.html" class="nav-link-pill" title="Головний рубрикатор класифікатора">
+              <svg class="nav-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="7" height="7" x="3" y="3" rx="1"/>
+                <rect width="7" height="7" x="14" y="3" rx="1"/>
+                <rect width="7" height="7" x="14" y="14" rx="1"/>
+                <rect width="7" height="7" x="3" y="14" rx="1"/>
+              </svg>
+              <span>Класифікатор</span>
+            </a>
+            <a href="digest.html" class="nav-link-pill active" title="Дайджест судової практики" aria-current="page">
+              <svg class="nav-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                <path d="M6 6h10"/>
+                <path d="M6 10h10"/>
+              </svg>
+              <span>Дайджест</span>
+            </a>
+            <a href="decisions.html" class="nav-link-pill" title="Рішення Верховного Суду">
+              <svg class="nav-link-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="m10 15 5-3-5-3v6Z"/>
+              </svg>
+              <span>Рішення ВС</span>
+            </a>
+          </nav>
+
+          <!-- macOS Liquid Glass Segmented Theme Switch -->
+          <div class="mac-theme-control" id="theme-control" role="group" aria-label="Перемикач теми (Світла / Темна)">
+            <button type="button" class="theme-segment" id="theme-btn-light" data-theme="light" title="Світло-блакитна тема" aria-label="Світла тема">
+              <svg class="theme-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+              </svg>
+            </button>
+            <button type="button" class="theme-segment" id="theme-btn-dark" data-theme="dark" title="Темна тема" aria-label="Темна тема">
+              <svg class="theme-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+              </svg>
+            </button>
+            <div class="theme-segment-indicator" id="theme-indicator"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area: Digest Table Workspace -->
+    <main class="digest-workspace">
+      <div class="digest-page-container">
+        <!-- Page Header & Stats Summary -->
+        <header class="digest-header-section">
+          <div class="digest-header-titles">
+            <div class="digest-badge-pill">Моніторинг опрацювання</div>
+            <h2 class="digest-main-heading">Дайджести та огляди судової практики</h2>
+            <p class="digest-sub-heading">
+              Таблиця відповідності PDF-джерел, згенерованих Markdown-файлів та сегментованих правових позицій
+            </p>
+          </div>
+
+          <div class="digest-stat-cards">
+            <div class="digest-stat-card">
+              <div class="stat-card-icon pdf-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                </svg>
+              </div>
+              <div class="stat-card-data">
+                <span class="stat-card-label">Всього PDF документів</span>
+                <span class="stat-card-value" id="total-pdfs-count">0</span>
+              </div>
+            </div>
+
+            <div class="digest-stat-card">
+              <div class="stat-card-icon md-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="7 15 7 9 10 12 13 9 13 15"/>
+                  <polyline points="17 11 19 13 17 15"/>
+                </svg>
+              </div>
+              <div class="stat-card-data">
+                <span class="stat-card-label">Конвертовано в Markdown</span>
+                <span class="stat-card-value highlight-cyan" id="total-md-count">0</span>
+              </div>
+            </div>
+
+            <div class="digest-stat-card">
+              <div class="stat-card-icon seg-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <div class="stat-card-data">
+                <span class="stat-card-label">Згенеровано сегментів</span>
+                <span class="stat-card-value highlight-green" id="total-seg-count">0</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Filters Bar -->
+        <div class="digest-filters-bar">
+          <div class="category-filter-chips" id="category-filter-chips" role="radiogroup" aria-label="Фільтр за юрисдикцією / судом">
+            <button type="button" class="chip active" data-cat="all">Всі категорії</button>
+            <button type="button" class="chip" data-cat="ККС">ККС ВС (Кримінальна)</button>
+            <button type="button" class="chip" data-cat="КГС">КГС ВС (Господарська)</button>
+            <button type="button" class="chip" data-cat="КАС">КАС ВС (Адміністративна)</button>
+            <button type="button" class="chip" data-cat="КЦС">КЦС ВС (Цивільна)</button>
+            <button type="button" class="chip" data-cat="Велика Палата">Велика Палата ВС</button>
+            <button type="button" class="chip" data-cat="ЄСПЛ">Практика ЄСПЛ</button>
+            <button type="button" class="chip" data-cat="Суд Європейського Союзу">Суд ЄС</button>
+          </div>
+
+          <div class="table-view-options">
+            <span class="results-counter-pill" id="filtered-count-badge">Знайдено: 0</span>
+          </div>
+        </div>
+
+        <!-- Main Digests Table Container -->
+        <div class="digest-table-wrapper">
+          <table class="mac-table" id="digests-table">
+            <thead>
+              <tr>
+                <th class="th-num" data-sort="num">
+                  <div class="th-content">
+                    <span>№</span>
+                    <span class="sort-indicator">↕</span>
+                  </div>
+                </th>
+                <th class="th-file" data-sort="filename">
+                  <div class="th-content">
+                    <span>Назва файлу (documents/pdfs)</span>
+                    <span class="sort-indicator">↕</span>
+                  </div>
+                </th>
+                <th class="th-status" data-sort="has_markdown">
+                  <div class="th-content">
+                    <span>Markdown (documents/markdown)</span>
+                    <span class="sort-indicator">↕</span>
+                  </div>
+                </th>
+                <th class="th-status" data-sort="has_segments">
+                  <div class="th-content">
+                    <span>Сегменти (documents/segments)</span>
+                    <span class="sort-indicator">↕</span>
+                  </div>
+                </th>
+                <th class="th-cat" data-sort="category">
+                  <div class="th-content">
+                    <span>Категорія</span>
+                    <span class="sort-indicator">↕</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="digests-tbody">
+              <!-- Loading Skeleton Rows -->
+              <tr class="table-loading-row">
+                <td colspan="5">
+                  <div class="loading-state">
+                    <div class="spinner"></div>
+                    <span>Завантаження списку дайджестів...</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Minimalist Unified Footer -->
+        <footer class="app-footer">
+          <div class="footer-inner">
+            <div class="footer-left">
+              <span class="footer-copy">© 2026 Кодифікатор Законодавства</span>
+              <span class="footer-divider">•</span>
+              <span class="footer-desc">Єдиний рубрикатор правових актів та практика Верховного Суду</span>
+            </div>
+            <div class="footer-right">
+              <a href="https://zakon.rada.gov.ua" target="_blank" rel="noopener noreferrer" class="footer-link" title="Офіційний вебпортал Верховної Ради України">
+                <span>Законодавство ВРУ</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="footer-divider">•</span>
+              <a href="https://supreme.court.gov.ua" target="_blank" rel="noopener noreferrer" class="footer-link" title="Офіційний сайт Верховного Суду">
+                <span>Верховний Суд</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <span class="footer-divider">•</span>
+              <span class="footer-status-pill">
+                <span class="status-dot"></span>
+                <span>Active</span>
+              </span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Digest Logic Script -->
+  <script src="digest.js"></script>
+</body>
+</html>
