@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KGS_11_2024 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KGS_11_2024 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KGS_11_2024.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KGS_11_2024</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">11</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">84.2%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">11</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 11 із 11</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01_segment.md № 911/2794/21 190 30 телефонний зв&#x27;язок. мобільний зв&#x27;язок. направляти умови продажу майна боржника уповноваженій особі засновників семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «телефонний зв&#x27;язок. мобільний зв&#x27;язок.» (законодавство про забезпечення діяльності зв&#x27;язку / телефонний зв&#x27;язок. мобільний зв&#x27;язок.).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123338051" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 911/2794/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">190 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про забезпечення діяльності зв&#x27;язку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Телефонний зв&#x27;язок. Мобільний зв&#x27;язок.</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>направляти умови продажу майна боржника уповноваженій особі засновників</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Телефонний зв&#x27;язок. Мобільний зв&#x27;язок.» (Законодавство про забезпечення діяльності зв&#x27;язку / Телефонний зв&#x27;язок. Мобільний зв&#x27;язок.).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Справи про банкрутство
+
+1.1. Щодо визнання недійсним аукціону та обов’язку арбітражного керуючого
+направляти умови продажу майна боржника уповноваженій особі засновників
+боржника
+
+Ненаправлення умов продажу майна боржника уповноваженій особі
+засновників боржника не є порушенням ліквідатором вимог ст. 48, 75 КУзПБ
+та підставою для визнання недійсним аукціону
+
+КГС ВС у межах справи по банкрутство ТОВ «Бориспільський комбікормовий
+завод» розглянув касаційну скаргу уповноваженої особи засновників (учасників)
+боржника у спорі про визнання недійсними відкритих торгів, протоколу електронного
+аукціону, акта про придбання майна та договору купівлі-продажу права вимоги.
+
+ОБСТАВИНИ СПРАВИ
+
+Постановою господарського суду ТОВ «Бориспільський комбікормовий завод»
+визнано банкрутом, відкрито ліквідаційну процедуру, ліквідатором призначено
+арбітражного керуючого Гамана О. М., вирішено інші процедурні питання у справі.
+
+Ухвалою цього суду залучено до участі у справі про банкрутство як
+уповноважену особу засновників (учасників) боржника генерального директора
+ТОВ «Комплекс Агромарс» Зазулю І. М. (далі – уповноважена особа засновників
+боржника).
+
+За рішенням комітету кредиторів, на засіданні якого уповноважена особа
+засновників боржника участі не брала, продано дебіторську заборгованість
+ТОВ «Бориспільський комбікормовий завод» на відкритих торгах (аукціоні)
+з використанням електронної торгової системи для проведення електронного
+аукціону. Уповноважена особа засновників боржника стверджує, що згаданий аукціон
+відбувся з порушенням положень КУзПБ, зокрема її не повідомлено про збори
+кредиторів, про визначення умов продажу майна боржника, формування складових
+лоту (дебіторської заборгованості), у зв’язку із чим результати аукціону та складений
+акт про придбання майна підлягають визнанню недійсними.
+
+Місцевий господарський суд відмовив у задоволенні позову повністю, із чим
+погодився суд апеляційної інстанції. Суди дійшли висновку, що наведені позивачем
+підстави для визнання аукціону недійсним не знайшли свого підтвердження та були
+спростовані відповідачами під час розгляду справи.
+
+ОЦІНКА СУДУ
+
+За змістом ст. 68 КУзПБ продаж майна боржника на аукціоні відбувається
+в електронній торговій системі. Замовником аукціону є арбітражний керуючий,
+призначений господарським судом у порядку, встановленому цим Кодексом.
+
+У разі оскарження результатів аукціону до предмета доказування входить
+з’ясування обставин дотримання ліквідатором та організатором аукціону вимог
+
+КУзПБ щодо його проведення, зокрема: порядку отримання згоди кредиторів
+на продаж майна банкрута; особливостей укладення договору на аукціоні; порядку
+оприлюднення оголошення про проведення аукціону певного змісту; допуску до участі
+в аукціоні; допуску до місця проведення аукціону; порядку проведення аукціону,
+повторного, другого повторного аукціонів.
+
+Тому, вирішуючи спір про визнання недійсними результатів торгів (аукціону),
+необхідно встановити, чи сталося порушення вимог законодавства під час його
+проведення, чи вплинули ці порушення на результати аукціону, чи відбулося
+порушення прав і законних інтересів особи, яка оспорює результати аукціону.
+
+Процедура підготовки до проведення аукціону включає в себе обов’язкову
+стадію – визначення умов продажу майна, яка встановлена ст. 75 КУзПБ. Наведеною
+статтею передбачено, що арбітражний керуючий визначає умови продажу
+за погодженням з комітетом кредиторів та забезпеченим кредитором (щодо майна,
+яке є предметом забезпечення).
+
+Поняття збори кредиторів та комітет кредиторів, порядок їх формування
+та компетенцію унормовано ст. 48 КУзПБ. Згідно з п. 5 ч. 8 ст. 48 КУзПБ
+до компетенції комітету кредиторів належить прийняття рішення, зокрема,
+про надання згоди на продаж майна боржника (крім майна, що є предметом
+забезпечення) та погодження умов продажу майна боржника (крім майна, що є
+предметом забезпечення) у процедурі санації відповідно до плану санації
+або у процедурі ліквідації банкрута.
+
+Частинами 8, 9 ст. 48 КУзПБ визначено, що уповноважена особа засновників
+(учасників) боржника має право брати участь у роботі комітету кредиторів з правом
+дорадчого голосу. Отже, як правильно зауважили господарські суди попередніх
+інстанцій, така особа не є безпосередньо членом комітету кредиторів у розумінні ч. 6
+[ст. 48 КУзПБ, оскільки членами комітету кредиторів є саме кредитори з відповідною](http://search.ligazakon.ua/l_doc2.nsf/link1/an_730/ed_2024_10_10/pravo1/T182597.html?pravo=1#730)
+кількістю голосів, яка визначається пропорційно до розміру грошових вимог
+до боржника.
+
+Рішення зборів (комітету) кредиторів вважається прийнятим, якщо за нього
+проголосувала більшість голосів кредиторів, присутніх на зборах (комітеті)
+кредиторів.
+
+[Положення ч. 4 ст. 75 КУзПБ передбачають, що арбітражний керуючий](http://search.ligazakon.ua/l_doc2.nsf/link1/an_1130/ed_2024_10_10/pravo1/T182597.html?pravo=1#1130)
+зобов’язаний направити умови продажу членам комітету кредиторів та протягом
+20 днів з дня, коли вони одержали чи мали одержати умови продажу, скликати
+комітет кредиторів. Якщо майно є предметом забезпечення, арбітражний керуючий
+зобов’язаний направити умови продажу забезпеченому кредитору.
+
+Отже, вимоги зазначеної норми не встановлюють обов’язку арбітражного
+керуючого направити умови продажу, крім членів комітету кредиторів, іншим
+учасникам комітету кредиторів, зокрема уповноваженій особі засновників боржника.
+
+До того ж з огляду на приписи КУзПБ відсутність на засіданні комітету
+кредиторів особи з правом дорадчого голосу не може бути перешкодою для прийняття
+рішень щодо порядку денного.
+
+КГС ВС звернув увагу на те, що у спорах про визнання аукціону недійсним
+обов’язковим є встановлення сукупності таких обставин: порушення правил
+проведення аукціону, їх вплив на результати аукціону; порушення (невизнання
+або оспорювання) суб’єктивного цивільного права або інтересу особи, яка звернулася
+до суду з відповідним позовом. Доведення зазначеного порушення прав
+покладається на особу, яка оспорює торги.
+
+Суди попередніх інстанцій встановили відсутність порушень закону під час
+підготовки та проведення спірного аукціону і впливу таких обставин на його
+результати, відсутність порушення прав та законних інтересів уповноваженої особи
+засновників боржника. Не підтвердилися і відповідні доводи касаційної скарги під час
+її розгляду.
+
+За результатами касаційного провадження КГС ВС залишив касаційну скаргу
+без задоволення, а рішення судів попередніх інстанцій – без змін.
+
+Детальніше з текстом постанови КГС ВС 21.11.2024 у справі № 911/2794/21 (911/3542/23) можна
+[ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123338051.](https://reyestr.court.gov.ua/Review/123338051)
+
+### 1. Справи про банкрутство 4
+
+### 1. Справи про банкрутство
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2_segment.md № 917/119/24 200 10 20 роздрібна незадоволення боржником – юридичною особою, кінцевим бенефіціарним семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «роздрібна» (законодавство з питань торгівлі та громадського харчування. побутове обслуговування населення / державна торгівля / роздрібна).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123281385" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 917/119/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">200 10 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань торгівлі та громадського харчування. Побутове обслуговування населення</span><span class="crumb-sep">›</span><span class="crumb">Державна торгівля</span><span class="crumb-sep">›</span><span class="crumb-leaf">Роздрібна</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Незадоволення боржником – юридичною особою, кінцевим бенефіціарним</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Роздрібна» (Законодавство з питань торгівлі та громадського харчування. Побутове обслуговування населення / Державна торгівля / Роздрібна).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Справи про банкрутство
+
+1.2. Щодо незастосування п. 1-6 розд. «Прикінцеві та перехідні положення» КУзПБ
+
+Незадоволення боржником – юридичною особою, кінцевим бенефіціарним
+власником якої є резидент республіки білорусь, внаслідок встановлення
+Національним банком України обмежень стосовно здійснення видаткових операцій не
+є тією обставиною в розумінні п. 1-6 розділу «Прикінцеві та перехідні положення»
+КУзПБ, що зумовлює відмову у відкритті провадження у справі про банкрутство
+
+КГС ВС розглянув касаційну скаргу ТОВ «Сервіс Ойл» на рішення судів попередніх
+інстанцій щодо обґрунтованості відкриття провадження у справі про банкрутство
+
+зазначеного товариства.
+
+ОБСТАВИНИ СПРАВИ
+
+Банк звернувся до господарського суду із заявою про відкриття провадження
+у справі про банкрутство ТОВ «Сервіс Ойл» (боржник, ініціюючий кредитор, заява-1),
+мотивуючи її наявністю безспірних грошових зобов’язань за кредитним договором,
+підтверджених рішенням суду. Згодом від ТОВ «Інвент Груп» теж надійшла заява
+про відкриття провадження у справі про банкрутство боржника (заява-2).
+
+Відповідно до витягу з Єдиного державного реєстру юридичних осіб, фізичних
+осіб – підприємців та громадських формувань засновником боржника є ВАТ,
+зареєстроване в республіці білорусь. Адреса реєстрації боржника –
+м. Полтава. Майнові активи боржника не знаходяться на території, яка перебувала
+в окупації, та / або в зоні бойових дій.
+
+На стадії підготовчого засідання ініціюючий кредитор повідомив про часткове
+погашення суми заборгованості у рамках юридичного механізму, передбаченого
+ст. 336 ГПК України.
+
+Стосовно причин неможливості задоволення вимог кредиторів боржник вказав
+на триваючу збройну агресію проти України, наявність воєнного стану, зупинення
+здійснення обслуговуючими банками видаткових операцій за рахунками, зокрема,
+юридичних осіб (крім банків), кінцевими бенефіціарними власниками яких є резиденти
+російської федерації / республіки білорусь.
+
+Господарський суд постановив ухвалу, залишену без змін постановою
+апеляційного господарського суду, про відкриття провадження у справі про
+банкрутство боржника, визнання кредиторських вимог банку, введення процедури
+розпорядження майном боржника, призначення до розгляду в попередньому
+засіданні грошових вимог ТОВ «Інвент Груп», що містяться в заяві-2, яка надійшла
+пізніше, тощо.
+
+ОЦІНКА СУДУ
+Пунктом 1-6 розділу «Перехідні та прикінцеві положення» КУзПБ (що набрав
+чинності 29.07.2023) врегульовано окремі питання провадження та застосування
+процедур банкрутства у період дії воєнного стану, а також протягом шести місяців
+після його припинення чи скасування. Абзацом дев’ятим зазначеного пункту цього
+Кодексу передбачено окремі підстави для відмови у відкритті провадження у справі
+про банкрутство за заявою кредитора, зокрема якщо вимоги кредитора (кредиторів)
+не задоволені внаслідок збройної агресії проти України, у тому числі через
+перебування єдиного майнового комплексу боржника на територіях, на яких ведуться
+(велися) бойові дії, або на тимчасово окупованих російською федерацією територіях
+відповідно до переліку, затвердженого центральним органом виконавчої влади,
+що забезпечує формування та реалізує державну політику з питань тимчасово
+окупованих територій.
+
+КГС ВС зауважив, що вирішення питання про відкриття провадження у справі про
+банкрутство боржника потребує врахування наявності між сторонами господарських
+правовідносин, у яких у боржника утворилася заборгованість перед кредитором,
+причини виникнення такої заборгованості, а також перебування активів, єдиного
+майнового комплексу на території, яка з 24.02.2022 була включена до переліку
+територій можливих бойових дій, та відсутність у підприємства боржника майна
+на території України, підконтрольній органам державної влади України.
+
+Суди попередніх інстанцій встановили, що боржник знаходиться у м. Полтаві, яке
+не перебувало ні в окупації, ні в зоні бойових дій; майнові активи боржника також не
+знаходяться на таких територіях. Інших доказів на підтвердження обставин,
+передбачених п. 16 розділу «Прикінцеві та перехідні положення» КУзПБ, боржник не
+
+надав.
+
+Щодо неможливості задоволення боржником вимог кредиторів внаслідок
+встановлення Національним банком України обмежень стосовно здійснення
+видаткових операцій, КГС ВС вказав на таке.
+
+З метою забезпечення надійності та стабільності функціонування банківської
+системи Правлінням Національного банку України ухвалено постанову № 18, згідно
+з п. 15 якої зупинено здійснення обслуговуючими банками видаткових операцій
+за рахунками резидентів держави, що здійснила збройну агресію проти України.
+
+Запровадження постановою № 18 особливостей щодо здійснення видаткових
+операцій за рахунками та поширення відповідних обмежень на боржника як
+юридичну особи, кінцевим бенефіціарним власником якої є резидент республіки
+білорусь, не можна вважати тими обставинами, що свідчать про незадоволення вимог
+його кредиторів саме внаслідок збройної агресії проти України в розумінні пункту 1-6
+розділу «Прикінцеві та перехідні положення» КУзПБ.
+
+Окрім того, КГС ВС підкреслив, що запроваджені пунктом 15 постанови № 18
+обмеження не вважаються несприятливими наслідками саме повномасштабної
+збройної агресії російської федерації, а навпаки, є заходами, що застосовуються щодо
+резидентів російської федерації та республіки білорусь (безпосередньо
+чи опосередковано через юридичних осіб, бенефіціарними власниками яких вони є)
+як держав, що здійснили збройну агресію проти України / сприяли їй. Тобто особа
+(резидент російської федерації / республіки білорусь або створена ним юридична
+особа), щодо якої застосовано постановою № 18 відповідні наслідки, не є
+постраждалою від збройної агресії проти України в розумінні пункту 1-6 розділу
+«Прикінцеві та перехідні положення» КУзПБ.
+
+Ураховуючи наявність у боржника невиконаних грошових зобов’язань перед
+банком, строк яких настав і безспірність яких підтверджена рішенням суду,
+та відсутність обставин, необхідних для застосування приписів п. 1-6 розділу
+«Прикінцеві та перехідні положення» КУзПБ, КГС ВС погодився з висновками судів
+попередніх інстанцій щодо наявності підстав для відкриття провадження у справі про
+банкрутство боржника за поданою банком заявою, яка надійшла до суду першою.
+
+За результатами касаційного перегляду КГС ВС залишив без змін рішення судів
+попередніх інстанцій.
+
+Детальніше з текстом постанови КГС ВС від 21.11.2024 у справі № 917/119/24 можна ознайомитися
+[за посиланням https://reyestr.court.gov.ua/Review/123281385.](https://reyestr.court.gov.ua/Review/123281385)
+
+### 1. Справи про банкрутство 4
+
+### 1. Справи про банкрутство
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.3_segment.md № 10/2180 150 80 30 представництва. філії. агенції підприємства на підставі п. 12 ч. 1 ст. 90 кузпб семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «представництва. філії. агенції» (загальні засади правового регулювання економічного розвитку / підприємства / представництва. філії. агенції).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">01.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122729731" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 10/2180</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 80 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Підприємства</span><span class="crumb-sep">›</span><span class="crumb-leaf">Представництва. Філії. Агенції</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>підприємства на підставі п. 12 ч. 1 ст. 90 КУзПБ</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Представництва. Філії. Агенції» (Загальні засади правового регулювання економічного розвитку / Підприємства / Представництва. Філії. Агенції).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Справи про банкрутство
+
+1.3. Щодо закриття провадження у справі про банкрутство державного
+підприємства на підставі п. 12 ч. 1 ст. 90 КУзПБ
+
+Для прийняття рішення про закриття / припинення провадження у справі про
+банкрутство боржника на підставі ч. 5 ст. 12 Закону України «Про приватизацію
+державного і комунального майна» необхідним і достатнім є встановлення судом
+за поданими сторонами доказами у справі обставин належності державі Україна прямо
+
+або опосередковано акцій (частки) цього боржника понад 50 відсотків та чинності (на
+момент ухвалення відповідного судового рішення) прийнятого ФДМУ стосовно
+боржника рішення про приватизацію. Винятком із цього правила є боржники,
+що ліквідуються за рішенням власника
+
+КГС ВС розглянув касаційну скаргу арбітражного керуючого
+у справі про банкрутство Державного підприємства «Машинобудівний завод «Оризон»
+(далі – ДП «Машинобудівний завод «Оризон», боржник).
+
+ОБСТАВИНИ СПРАВИ
+
+У провадженні господарського суду на стадії судової процедури ліквідації,
+введеної постановою цього суду, перебуває справа про банкрутство
+ДП «Машинобудівний завод «Оризон», провадження в якій порушене за заявою
+Управління Пенсійного фонду України в м. Сміла.
+
+ФДМУ подав клопотання з вимогами (з урахуванням поданого доповнення) про
+закриття провадження у справі про банкрутство ДП «Машинобудівний завод «Оризон»
+на підставі п. 12 ч. 1 ст. 90 КУзПБ, з урахуванням ч. 5 ст. 12 Закону України «Про
+приватизацію державного і комунального майна», та зобов’язання ліквідатора
+передати до ФДМУ документи, печатки, штампи та інші матеріальні цінності боржника.
+Обґрунтовуючи клопотання, ФДМУ зазначив про включення єдиного майнового
+комплексу ДП «Машинобудівний завод «Оризон» до переліку єдиних майнових
+комплексів державних підприємств та їх структурних підрозділів, у тому числі тих,
+що передані в оренду, відповідно до наказу Фонду.
+
+Місцевий господарський суд постановив ухвалу, в якій згадане клопотання ФДМУ
+задовольнив частково, провадження у справі про банкрутство закрив, у решті вимог
+клопотання відмовив; припинив дію мораторію на задоволення вимог кредиторів;
+припинив повноваження арбітражного керуючого як ліквідатора та поклав на нього
+виконання обов’язків керівника боржника до моменту призначення такого керівника
+ФДМУ; зобов’язав арбітражного керуючого підготувати для передачі новому керівнику
+боржника документи, печатки і штампи, матеріальні цінності, отримані у зв’язку
+
+з виконанням повноважень.
+
+Суд апеляційної інстанції здійснив перегляд зазначеної ухвали в тій частині,
+що оскаржувалася, та залишив без змін рішення про закриття провадження у справі
+про банкрутство і покладення на арбітражного керуючого виконання обов’язків
+керівника боржника до моменту призначення ФДМУ нового.
+
+При розгляді клопотання ФДМУ суди виходили з того, що боржник є державним
+підприємством, а також врахували наявність доказів прийняття рішення про його
+приватизацію.
+
+ОЦІНКА СУДУ
+
+Предметом касаційного перегляду у цій справі постало питання наявності /
+відсутності підстав для закриття провадження у справі про банкрутство
+[ДП «Машинобудівний завод «Оризон» на підставі п. 12 ч. 1 ст. 90 КУзПБ.](http://search.ligazakon.ua/l_doc2.nsf/link1/an_1241/ed_2024_05_22/pravo1/T182597.html?pravo=1#1241)
+
+[Згідно з п. 12 ч. 1 ст. 90 КУзПБ господарський суд закриває провадження у справі](http://search.ligazakon.ua/l_doc2.nsf/link1/an_1241/ed_2024_05_22/pravo1/T182597.html?pravo=1#1241)
+про банкрутство (неплатоспроможність) у разі прийняття рішення про приватизацію
+боржника, яким є державне підприємство або господарське товариство, у статутному
+капіталі якого більше 50 відсотків акцій (часток) належать державі.
+
+[Відповідно до ч. 1, 3, 10 ст. 11 Закону України «Про приватизацію державного](http://search.ligazakon.ua/l_doc2.nsf/link1/an_206/ed_2024_09_19/pravo1/T182269.html?pravo=1#206)
+і [комунального](http://search.ligazakon.ua/l_doc2.nsf/link1/an_206/ed_2024_09_19/pravo1/T182269.html?pravo=1#206) майна» ініціювати приватизацію об’єктів можуть органи
+приватизації, уповноважені органи управління, інші суб’єкти управління об’єктами
+державної і комунальної власності або покупці.
+
+Переліки об’єктів малої приватизації державної власності, що підлягають
+приватизації, затверджуються ФДМУ.
+
+Під час розгляду клопотання судами попередніх інстанцій встановлено факт
+належності державі Україна ДП «Машинобудівний завод «Оризон». На виконання наказу
+ФДМУ та відповідно до вимог ст. 12 Закону України «Про приватизацію державного
+і комунального майна» регіональним відділенням ФДМУ прийнято рішення про
+приватизацію єдиного майнового комплексу цього підприємства. Зазначені наказі є
+чинними, у задоволенні позову про їх скасування судами відмовлено.
+
+КГС ВС зазначив про правильність висновків судів попередніх інстанцій,
+що передумовою для припинення (закриття) провадження у справі про банкрутство
+державного підприємства в порядку, передбаченому ч. 5 ст. 12 Закону України
+«Про приватизацію державного та комунального майна», є наявність рішення про
+приватизацію такого підприємства.
+
+При цьому КГС ВС зауважив, що норми Закону України                   «Про
+приватизацію державного і комунального майна» узгоджуються із положеннями
+КУзПБ (п. 12 ч. 1 ст. 90 КУзПБ), а ст. 12 зазначеного Закону фактично визначено
+пріоритет процедури приватизації державного майна щодо інших процедур реалізації
+майна боржника в процедурах банкрутства.
+
+Ураховуючи норми чинного законодавства, судову практику та встановлені
+судами обставини справи про те, що боржник є державним підприємством, наявність
+доказів прийняття та чинність рішення про приватизацію державного підприємства,
+КГС ВС погодився з висновками судів попередніх інстанцій щодо існування підстав для
+закриття провадження у справі про банкрутство ДП «Машинобудівний завод «Оризон»
+на підставі п. 12 ч.1 ст. 90 КУзПБ.
+
+Стосовно питання наявності у ФДМУ повноважень на прийняття рішень
+про приватизацію ДП «Машинобудівний завод «Оризон» тоді, як підприємство
+вже визнано банкрутом та перебувало в ліквідаційній процедурі, КГС ВС наголосив
+
+на такому.
+
+ФДМУ є спеціальним органом виконавчої влади із спеціальним статусом,
+що реалізує державну політику у сфері приватизації державного майна, управління
+об’єктами державної власності. У встановлених відносинах у цій справі ФДМУ
+є одночасно уповноваженим органом управління державним майном боржника
+та державним органом приватизації. Тож Фонд уповноважений Законом України
+
+«Про приватизацію державного і комунального майна» на включення майна боржника
+до переліку об’єктів малої приватизації, які підлягають приватизації, та на прийняття
+рішення про його приватизацію.
+
+При цьому ні зазначений Закон, ні КУзПБ не передбачають участі боржника
+або його кредиторів у процесі прийняття рішень про включення боржника до переліку
+об’єктів державної власності, що підлягають приватизації, або прийняття органом
+приватизації рішення про приватизацію, а також не встановлюють заборони щодо
+прийняття органом приватизації рішення про приватизацію у процесі провадження
+у справі про банкрутство.
+
+За результатами касаційного перегляду рішень судів попередніх інстанцій
+у частині закриття провадження у справі КГС ВС залишив їх без змін.
+
+Детальніше з текстом постанови КГС ВС від 23.10.2024 у справі № 10/2180 можна ознайомитися
+[за посиланням https://reyestr.court.gov.ua/Review/122729731](https://reyestr.court.gov.ua/Review/122729731) .
+
+2. Справи щодо захисту прав інтелектуальної власності, а також пов’язані
+
+з антимонопольним та конкурентним законодавством
+
+### 2. Справи щодо захисту прав інтелектуальної власності, а також пов’язані
+
+### 2. Справи щодо захисту прав інтелектуальної власності, а також пов’язані
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 910/14228/21 270 30 господарський процес ненадання судом оцінки рецензії є порушенням процесуального закону. кгс вс мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122760988" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 910/14228/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">270 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судочинство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Господарський процес</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Ненадання судом оцінки рецензії є порушенням процесуального закону. КГС ВС</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Справи щодо захисту прав інтелектуальної власності, а також пов’язані
+
+2.1. Щодо необхідності оцінки судом рецензії на висновок експертизи
+
+Ненадання судом оцінки рецензії є порушенням процесуального закону. КГС ВС
+визнав, що рецензія за своєю суттю не є повторною чи додатковою експертизою.
+Експерт, який надає рецензію, оцінює, зокрема, методи і повноту дослідження, логіку
+висновку. З  огляду на викладене до рецензії не можуть бути застосовані ті вимоги, які
+передбачені для висновку експерта
+
+КГС ВС розглянув касаційну скаргу товариства у справі за його позовом
+до компанії та УКРНОІВІ про визнання недійсними частково та в повному обсязі
+належних компанії свідоцтв України номер_1, 2, 3, 4 на торговельні марки для
+зазначених позивачем товарів 7 класу МКТП та про заборону компанії
+використовувати торговельні марки, що охороняються спірними свідоцтвами.
+
+Позивач також просив суд зобов’язати УКРНОІВІ внести відповідні зміни
+до Державного реєстру свідоцтв України на знаки для товарів і послуг, про
+що здійснити відповідні публікації в офіційному бюлетені «Промислова власність».
+
+ОБСТАВИНИ СПРАВИ
+Позовні вимоги обґрунтовані тим, що торговельні марки не відповідають
+умовам надання правової охорони, оскільки на них поширюються підстави для
+відмови у реєстрації, встановлені п. 3 та абз. 5 п. 2 ст. 6 Закону України «Про охорону
+прав на знаки для товарів і послуг» у редакції, чинній на момент виникнення спірних
+правовідносин, а саме: ці торговельні марки є схожими з торговельною маркою
+позивача «Інформація_5» за міжнародною реєстрацією щодо споріднених товарів 7
+класу МКТП настільки, що їх можна сплутати; торговельні марки за спірними
+свідоцтвами є такими, що можуть ввести в оману щодо особи виробника.
+
+Справа розглядалася судами неодноразово.
+Господарський суд першої інстанції своїм рішенням позов задовольнив.
+Суд апеляційної інстанції, переглядаючи справу за новим розглядом, зокрема,
+зазначив, що надані сторонами висновки експертів – висновок_1 та висновок_2
+приймаються судом як належні та допустимі докази, однак вони
+є взаємовиключними. Тож суд апеляційної інстанції призначив у справі судову
+експертизу об’єктів інтелектуальної власності, за результатами проведення якої
+складено висновок_3.
+
+Апеляційний господарський суд рішення суду першої інстанції скасував
+у частині розподілу судових витрат зі сплати судового збору з ухваленням в цій
+частині нового рішення, у решті залишив оскаржуване судове рішення без змін.
+
+ОЦІНКА СУДУ
+КГС ВС зазначив, що суд апеляційної інстанції не виконав вказівок
+Верховного Суду в цій справі у контексті дослідження та оцінки наявних у справі
+висновків експертів, оскільки суд апеляційної інстанції фактично обмежився
+зазначенням осіб, які проводили експертизи, наявністю у них кваліфікації
+на проведення такого дослідження і обізнаністю про кримінальну відповідальність
+відповідно до приписів ст. 384 КК України, цитуванням питань, які поставлені
+на вирішення експертів, висновків експертів за результатами проведення експертизи
+та загальним висновком про належність і допустимість цих експертиз.
+
+Суд касаційної інстанції зауважив, що оскаржувана постанова не відповідає
+
+приписам процесуального закону з огляду на таке.
+
+Зі змісту оскаржуваної постанови вбачається, що судом апеляційної інстанції
+не надано оцінки наведеним у постанові суду касаційної інстанції аргументам
+відповідачів, унаслідок чого не були з’ясовані обставини, які є визначальними,
+вагомими і ключовими для вирішення цього господарського спору, ураховуючи
+предмет, підстави позову та предмет доказування.
+
+Так, товариство з огляду на позовні вимоги про заборону використання
+торговельних марок стверджувало: оскільки воно має право попереднього
+користування, то незалежно від визнання недійсними належних йому свідоцтв
+на знаки для товарів і послуг має право продовжувати використовувати свої
+позначення (знаки). Однак ані в оскаржуваному рішенні, ані в оскаржуваній постанові
+не були застосовані норми ст. 500 ЦК України.
+
+УКНОІВІ мало критичні зауваження щодо змісту висновків_2, 3 (наданого
+позивачем висновку експерта та висновку судової експертизи).
+
+При цьому зі змісту оскаржуваної постанови вбачається, що судом
+апеляційної інстанції не було надано оцінки відповідним аргументам відповідачів, які
+відображені у постанові КГС ВС, внаслідок чого не були з’ясовані обставини, які є
+визначальними, вагомими і ключовими для вирішення цього господарського спору,
+ураховуючи предмет, підстави позову та предмет доказування.
+
+Водночас КГС ВС зауважив, що знайшли підтвердження доводи скаржника
+стосовно рецензії на висновок судової експертизи, яка була подана відповідачем
+разом із запереченням на зазначений висновок. Оскаржувана постанова
+
+не містить оцінки судом апеляційної інстанції цієї рецензії, що є порушенням статей 86
+і 269 ГПК України.
+
+Суд неодноразово та послідовно вказував на те, що рецензія за своєю суттю
+не є повторною чи додатковою експертизою, у ній не оцінюються докази. Експерт,
+який надає рецензію, оцінює, зокрема, методи і повноту дослідження, логіку висновку.
+З огляду на викладене до рецензії не можуть бути застосовані ті вимоги, які
+передбачені для висновку експерта.
+
+Нездійснення судом апеляційної інстанції оцінки рецензії на судову
+експертизу, яка надана товариством, має наслідком порушення принципу змагальності
+сторін, відповідно до якого здійснюється судочинство у господарських судах, а також
+ст. 86 ГПК України у контексті всебічності, повноти, об’єктивності та безпосередності
+дослідження наявних у справі доказів.
+
+Ураховуючи зазначене та інші доводи касаційної скарги, які частково
+знайшли підтвердження, КГС ВС дійшов висновку про наявність підстав для
+скасування оскаржуваної постанови та передачі справи на новий розгляд до суду
+апеляційної інстанції.
+
+Детальніше з текстом постанови КГС ВС від 24.10.2024 у справі № 910/14228/21 можна
+[ознайомитися за посиланням https://reyestr.court.gov.ua/Review/122760988.](https://reyestr.court.gov.ua/Review/122760988)
+
+.
+
+3. Справи щодо корпоративних спорів, корпоративних прав
+
+### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+
+### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.03_segment.md № 910/14472/21 100170 30 театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.) за позовом суб’єктів, які наділені правом на звернення до суду з відповідним позовом семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (законодавство з питань освіти, науки, культури / правовий статус окремих об&#x27;єктів культури / театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">03.03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123012146" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 910/14472/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100170 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Правовий статус окремих об&#x27;єктів культури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за позовом суб’єктів, які наділені правом на звернення до суду з відповідним позовом</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (Законодавство з питань освіти, науки, культури / Правовий статус окремих об&#x27;єктів культури / Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+
+3.3. Щодо можливості ліквідації юридичної особи за рішенням суду лише
+за позовом суб’єктів, які наділені правом на звернення до суду з відповідним позовом
+
+Позовна вимога про припинення юридичної особи шляхом її ліквідації
+за рішенням суду за позовом особи, яка не є учасником цієї юридичної особи,
+що створена у відповідному порядку та здійснює свою діяльність тривалий час,
+за період свого існування набувши відповідних прав та обов’язків, не спричинить
+поновлення прав і законних інтересів особи, яка звертається з таким позовом
+
+КГС ВС розглянув касаційну скаргу у справі за позовом ОСОБА_1
+до ТОВ «Українсько-канадське підприємство «Рентал естейт», третя особа, яка не
+заявляє самостійних вимог щодо предмета спору, на стороні позивача – Мельник А. П.,
+треті особи, які не заявляють самостійних вимог щодо предмета спору, на стороні
+відповідача – Державний реєстратор Київської філії Комунального підприємства
+Березанської сільської ради Біляївського району Одеської області «Центр реєстрації»
+ОСОБА_8, ОСОБА_3, ТОВ «Віва-Інвест ЛТД», ОСОБА_4, про скасування реєстраційних дій
+та припинення юридичної особи.
+
+ОБСТАВИНИ СПРАВИ
+ОСОБА_1 (далі – ОСОБА_1, позивачка) звернулася до суду з позовом
+до ТОВ «Українсько-канадське підприємство «Рентал естейт» (далі – відповідач),
+у якому просила скасувати реєстраційну дію державного реєстратора щодо державної
+реєстрації новоутвореної шляхом заснування юридичної особи – ТОВ «Українськоканадське підприємство «Рентал естейт», припинити шляхом ліквідації назване
+товариство з призначенням ліквідатора – Мельника А. П.
+
+Обґрунтовуючи позовні вимоги, позивачка зазначила, що товариство,
+засновником якого під час реєстрації була вказана вона, в дійсності було
+зареєстроване без її участі та поза її волею, адже на час проведення реєстраційної дії
+вона перебувала на території тимчасово окупованої АРК, а реєстрація відбулась
+внаслідок вчинення злочину ОСОБА_8, встановленого вироком районного суду.
+
+Рішенням господарського суду позовні вимоги задоволено частково. Ухвалено
+припинити шляхом ліквідації ТОВ «Українсько-канадське підприємство «Рентал естейт».
+Призначено ліквідатором ТОВ &quot;Українсько-канадське підприємство «Рентал естейт»
+Мельника А. П. У решті позову відмовлено.
+
+Приймаючи рішення про припинення юридичної особи шляхом її ліквідації
+місцевий господарський суд виходив з того, що створення товариства сталося поза
+волевиявленням його засновника - ОСОБА_1, а державна реєстрація відповідача
+відбулася з порушеннями закону.
+
+Постановою апеляційного господарського суду рішення господарського суду
+скасовано частково, відмовлено в задоволенні позовних вимог в частині припинення
+шляхом ліквідації ТОВ «Українсько-канадське підприємство «Рентал естейт»
+та призначення ліквідатором Мельника А. П.
+
+Суд апеляційної інстанції виходив з того, що місцевий господарський суд не
+звернув уваги, що на момент звернення з позовом до суду і прийняття судом рішення
+про припинення шляхом ліквідації товариства ОСОБА_1 не була учасником цього
+господарського товариства, а тому рішення про ліквідацію господарського товариства
+за позовом особи, яка не є його учасником, суперечить змісту ст. 110 ЦК України.
+
+ОЦІНКА СУДУ
+КГС ВС зазначив, що апеляційним господарським судом встановлено,
+що ОСОБА_1 не є учасником ТОВ «Українсько-канадське підприємство «Рентал естейт».
+Єдиним учасником відповідно до витягу з Єдиного державного реєстру юридичних
+осіб, фізичних осіб − підприємців та громадських формувань станом на 18.02.2019 була
+ОСОБА_4 . Ця сама особа була і є керівником ТОВ «Українсько-канадське підприємство
+«Рентал естейт» від дня його створення.
+
+З огляду на встановлені судом апеляційної інстанції обставини справи КГС ВС
+вважає, що суд апеляційної інстанції дійшов заснованого на законі висновку про те,
+що позивачем під час розгляду справи не надано жодних належних та допустимих
+доказів на підтвердження наявності на момент прийняття судового рішення
+порушеного або оспорюваного права і охоронюваного законом інтересу фактом
+існування (діяльності) ТОВ «Українсько-канадське підприємство «Рентал естейт»,
+
+учасником якого позивачка не є.
+
+При цьому КГС ВС урахував, що предмет спору в цій справі не становлять вимоги
+майнового характеру, тобто спір у справі не стосується захисту майнового права
+позивача у визначений законодавством спосіб (ст. 386–388, 391 ЦК України), а  позовні
+вимоги спрямовані лише на припинення діяльності юридичної особи.
+
+КГС ВС зауважив, що загальна процедура ліквідації юридичної особи передбачає
+низку обов’язкових дій: погашення кредиторської заборгованості, відчуження активів,
+звільнення працівників, передання документів до архіву тощо. Лише після вчинення цих
+дій і подання державному реєстратору відповідних документів до Реєстру вноситься
+запис про припинення юридичної особи.
+
+Ліквідація юридичної особи – це встановлена законом процедура, результатом
+якої є припинення діяльності юридичної особи, і першочерговою умовою ліквідації
+законодавство визначило саме рішення її учасника / учасників про ліквідацію
+(у добровільному порядку та/або за рішенням суду).
+
+Позивачка, звертаючись до суду з позовом про припинення юридичної особи
+шляхом її ліквідації, не надала жодних належних та допустимих доказів
+на підтвердження наявності / відсутності заборгованості юридичної особи перед
+третіми особами, наявності / відсутності майна у такому товаристві, беззаперечних
+доказів відсутності здійснення товариством господарської діяльності протягом усього
+часу існування тощо.
+
+КГС ВС зазначив, що ліквідація юридичної особи з порушенням вимог, зокрема,
+ч. 3 ст. 110 ЦК України може призвести до порушення прав та інтересів кредитора /
+кредиторів товариства, майнові вимоги якого / яких внаслідок таких дій залишаться
+незадоволеними, а також майнових прав осіб, які є учасниками такого товариства.
+
+Отже, КГС ВС дійшов висновку, що позовна вимога про припинення юридичної
+особи шляхом її ліквідації за рішенням суду за позовом особи, яка не є учасником такої
+юридичної особи, що створена у відповідному порядку та здійснює свою діяльність
+тривалий час, за період свого існування набувши відповідних прав та обов’язків, не
+спричинить поновлення прав і законних інтересів особи, яка звертається з таким
+
+позовом.
+
+Ураховуючи наведене, КГС ВС залишив касаційну скаргу без задоволення,
+постанову апеляційного господарського суду – без змін.
+
+Детальніше з текстом постанови КГС ВС від 13.11.2024 у справі № 910/14472/21 можна ознайомитися
+[за посиланнямhttps://reyestr.court.gov.ua/Review/123012146.](https://reyestr.court.gov.ua/Review/123012146)
+
+4. Справи щодо земельних відносин
+
+### 4. Справи щодо земельних відносин 20
+
+### 4. Справи щодо земельних відносин 20
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md № 916/337/24 150120 10 основні фонди (будинки, споруди, устаткування) та його асоційованим членом, про стягнення членських внесків до кооперативу семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «основні фонди (будинки, споруди, устаткування)» (загальні засади правового регулювання економічного розвитку / майно, фінанси, розрахунки, планування підприємств / основні фонди (будинки, споруди, устаткування)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122848839" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 916/337/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150120 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Майно, фінанси, розрахунки, планування підприємств</span><span class="crumb-sep">›</span><span class="crumb-leaf">Основні фонди (будинки, споруди, устаткування)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>та його асоційованим членом, про стягнення членських внесків до кооперативу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Основні фонди (будинки, споруди, устаткування)» (Загальні засади правового регулювання економічного розвитку / Майно, фінанси, розрахунки, планування підприємств / Основні фонди (будинки, споруди, устаткування)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+
+3.1. Щодо господарської юрисдикції спору, який виник між кооперативом
+та його асоційованим членом, про стягнення членських внесків до кооперативу
+
+Спір, що виник між кооперативом та його асоційованим членом щодо стягнення
+членських внесків, які справляються для забезпечення поточної діяльності
+кооперативу, підлягає розгляду в порядку господарського судочинства
+
+КГС ВС розглянув касаційну скаргу ОК «Золоті ключі-1» у справі за позовом
+ОК «Золоті ключі-1» до ОСОБА_1 про стягнення 516 652,30 грн.
+ОБСТАВИНИ СПРАВИ
+
+ОК «Золоті ключі-1» звернувся до господарського суду з позовом до ОСОБА_1
+як асоційованого члену кооперативу про стягнення заборгованості з оплати членських
+внесків до кооперативу, пені, штрафу, трьох процентів річних та інфляційних втрат.
+
+Ухвалою господарського суду провадження у справі № 916/337/24 закрито.
+Роз’яснено позивачу, що цей спір підлягає розгляду за правилами цивільного
+
+судочинства.
+
+Ухвала суду першої інстанції мотивована тим, що асоційований член
+обслуговуючого кооперативу не наділений правомочностями, які б у повному обсязі
+відповідали ознакам поняття корпоративних прав, а спори між ним та кооперативом
+не є такими, що виникають з корпоративних відносин, у зв’язку із чим спір у цій справі
+не належить до юрисдикції господарських судів та підлягає розгляду за правилами
+цивільного судочинства.
+
+Постановою апеляційного господарського суду ухвалу господарського суду
+залишено без змін.
+
+ОЦІНКА СУДУ
+КГС ВС зазначив, що особливості створення обслуговуючих кооперативів
+та ведення ними господарської діяльності визначаються Законом України «Про
+кооперацію».
+
+Згідно із ч. 1 ст. 12 названого Закону та ч. 1 ст. 99 ГК України до основних прав
+члена кооперативу належить участь у господарській діяльності кооперативу та його
+управлінні, право голосу на загальних зборах.
+
+Корпоративними відносинами є відносини між учасниками (засновниками,
+акціонерами, пайовиками) юридичних осіб, у тому числі ті, які виникають між ними
+до державної реєстрації юридичної особи, а також відносини між юридичною особою
+та її учасниками (засновниками, акціонерами, пайовиками) щодо виникнення,
+здійснення, зміни і припинення корпоративних прав (ч. 6 ст. 96-1 ЦК України).
+
+Отже, члени обслуговуючого кооперативу незалежно від напряму його діяльності
+є носіями корпоративних прав, а відносини між його членами та кооперативом,
+пов’язані зі створенням, діяльністю, управлінням або припиненням діяльності такої
+юридичної особи, є корпоративними.
+
+Асоційований член кооперативу – це фізична чи юридична особа, яка внесла
+пайовий внесок і користується правом дорадчого голосу в кооперативі. При ліквідації
+кооперативу асоційований член кооперативу має переважне порівняно із членами
+
+кооперативу право на одержання паю.
+
+Тобто у кооперативі допускається асоційоване членство для осіб, які визнають
+його статут та внесли пай.
+
+Порядок вступу до кооперативу та участь асоційованого члена в його
+господарській та іншій діяльності, права та обов’язки такого члена, розміри паїв
+та виплат на паї визначаються статутом кооперативу (ст. 14 Закону України
+«Про кооперацію»).
+
+У статуті ОК «Золоті ключі-1» визначені обов’язки членів, у тому числі
+асоційованих членів, які кореспондують із правами та обов’язками, передбаченими
+ст. 12 Закону України «Про кооперацію».
+
+Відповідно до п. 4.3 статуту ОК «Золоті ключі-1» членський внесок та додатковий
+членський внесок – грошовий неповоротний внесок, що щомісячно сплачується
+членами та асоційованими членами кооперативу для забезпечення поточної діяльності
+
+кооперативу.
+
+Отже, Законом України «Про кооперацію» та статутом встановлені особливості
+правового статусу асоційованих членів кооперативу, наділення їх майновими правами
+(участь у формуванні майнових фондів кооперативу шляхом сплати внесків, переважне
+право на одержання паю вразі ліквідації кооперативу) та іншими правами, зокрема
+на участь таких асоційованих членів у господарській та іншій діяльності кооперативу.
+При цьому специфіка управлінських прав асоційованих членів кооперативу полягає
+в тому, що вони мають право брати участь у діяльності загальних зборів кооперативу
+
+з правом дорадчого голосу.
+
+КГС ВС зазначив, що з огляду на предмет спору асоційованих членів
+обслуговуючого кооперативу необхідно вважати носіями корпоративних прав,
+а відносини між кооперативом та його асоційованими членами, пов’язані
+зі створенням, діяльністю, управлінням або припиненням діяльності такої юридичної
+особи, – корпоративними.
+
+Зважаючи на те, що спір виник між кооперативом та його асоційованим членом
+щодо стягнення членських внесків, які справляються для забезпечення поточної
+діяльності кооперативу, КГС ВС дійшов висновку, що відповідно до п. 3 ч. 1 ст. 20 ГПК
+України ця справа підлягає розгляду в порядку господарського судочинства.
+
+Натомість суди попередніх інстанцій дійшли помилкових висновків про те,
+що спір у цій справі підлягає розгляду в порядку цивільного судочинства.
+
+За результатами касаційного провадження касаційну скаргу задоволено. Ухвалу
+господарського суду та постанову апеляційного господарського суду скасовано,
+
+а справу направлено для продовження розгляду до господарського суду.
+
+Детальніше з текстом постанови КГС ВС від 06.11.2024 у cправі № 916/337/24 можна ознайомитися
+[за посиланням https://reyestr.court.gov.ua/Review/122848839.](https://reyestr.court.gov.ua/Review/122848839)
+
+### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+
+### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.2_segment.md № 925/1442/23 150100 господарчі товариства (акціонерні товариства, товариства з обмеженою відповідальністю, командитні товариства) неефективний спосіб захисту семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «господарчі товариства (акціонерні товариства, товариства з обмеженою відповідальністю, командитні товариства)» (загальні засади правового регулювання економічного розвитку / господарчі товариства (акціонерні товариства, товариства з обмеженою відповідальністю, командитні товариства)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">03.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122957200" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 925/1442/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150100</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Господарчі товариства (акціонерні товариства, товариства з обмеженою відповідальністю, командитні товариства)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>неефективний спосіб захисту</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Господарчі товариства (акціонерні товариства, товариства з обмеженою відповідальністю, командитні товариства)» (Загальні засади правового регулювання економічного розвитку / Господарчі товариства (акціонерні товариства, товариства з обмеженою відповідальністю, командитні товариства)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+
+3.2. Визнання недійсним рішення загальних зборів учасників товариства як
+неефективний спосіб захисту
+
+Саме по собі рішення загальних зборів учасників господарського товариства
+про наявність згоди загальних зборів на припинення права оренди / суборенди
+земельних ділянок за договорами про розірвання не порушує прав позивача на участь
+у загальних зборах та  управлінні товариством.
+
+Обраний позивачем спосіб захисту прав у вигляді самого лише визнання
+недійсним рішення загальних зборів про підтвердження факту наявності згоди
+загальних зборів на припинення права оренди / суборенди земельних ділянок
+не матиме наслідком ні захист, ні відновлення порушеного права позивача
+та є неефективним, що становить самостійну підставу для відмови у позові
+
+КГС ВС розглянув касаційну скаргу ТОВ «Черкаси-Дніпро Агро» у справі
+за позовом ОСОБА_1 до ТОВ «Черкаси-Дніпро Агро», третя особа, яка не заявляє
+самостійних вимог щодо предмета спору, – ОСОБА_2, про визнання недійсним рішення
+загальних зборів учасників ТОВ.
+
+ОБСТАВИНИ СПРАВИ
+Засновник та учасник ТОВ «Черкаси-Дніпро Агро» – ОСОБА_1, розмір частки
+якого у статутному капіталі товариства становить 25 %, звернувся до господарського
+суду з позовом до ТОВ «Черкаси-Дніпро Агро» про визнання недійсним рішення
+загальних зборів учасників товариства про підтвердження факту припинення
+права оренди та суборенди на земельні ділянки відповідно до договорів про
+розірвання з ТОВ «Черкаси-Дніпро Агро» зі згоди загальних зборів учасників.
+
+Позовні вимоги обґрунтовані тим, що позивач як учасник цього товариства
+не був належним чином повідомлений про скликання зборів, не знав та не міг знати про
+проведення зборів, не брав участі у зборах та в голосуванні з питань порядку денного.
+
+Господарський суд відмовив у позові повністю. Місцевий господарський суд
+виходив з того, що спірне рішення було прийняте достатньою кількістю голосів,
+а обраний позивачем спосіб захисту прав у вигляді самого лише визнання недійсним
+рішення загальних зборів про підтвердження факту припинення права оренди /
+суборенди земельних ділянок відповідно до договорів про розірвання не матиме
+наслідком ні захист, ні відновлення порушеного права позивача та є неефективним,
+що становить самостійну підставу для відмови у позові.
+
+Апеляційний господарський суд скасував рішення господарського суду
+та прийняв нове рішення, яким позов задовольнив повністю.
+
+Суд апеляційної інстанції виходив з того, що  матеріали справи не містять доказів
+повідомлення позивача про скликання та проведення загальних зборів учасників
+товариства, що є порушенням корпоративного права позивача на участь в управлінні
+
+товариством.
+
+ОЦІНКА СУДУ
+Як встановили суди попередніх інстанцій у цій справі, позивач не був належним
+чином повідомлений про скликання на 12.10.2022 загальних зборів учасників
+товариства, на яких було прийняте спірне рішення.
+
+КГС ВС зазначив, що хоча право учасника товариства брати участь в управлінні
+справами товариства, бути обізнаним про скликання загальних зборів, брати участь
+у загальних зборах та у голосуванні з питань порядку денного і гарантоване законом,
+проте неповідомлення учасника господарського товариства про скликання загальних
+зборів не завжди може бути підставою для визнання недійсними рішень, прийнятих
+на таких зборах.
+
+Зазначена обставина може бути підставою для визнання недійсними рішень
+загальних зборів у разі, якщо учасник товариства, який звертається до суду з позовом
+про визнання недійсним рішення загальних зборів, довів належними та допустимими
+доказами не лише факт його неповідомлення, а й існування інших підстав для визнання
+недійсним рішення загальних зборів та/або факт того, що він не брав участі у таких
+зборах, не мав можливості взяти участь у них, ухвалені на таких зборах рішення
+суперечать вимогам законодавства та/або статуту господарського товариства та їх
+прийнято з порушенням порядку голосування, а також вони стосуються безпосередньо
+його прав та інтересів, порушують їх.
+
+Крім того, у кожному конкретному випадку судам слід досліджувати дійсні
+підстави та мотиви звернення до суду учасника товариства з позовом про визнання
+недійсними рішень загальних зборів учасників.
+
+З огляду на викладене для визнання недійсним рішення загальних зборів
+господарського товариства, що оскаржується з підстав порушення порядку скликання
+зборів щодо повідомлення позивача як учасника товариства про скликання зборів,
+позивач має довести, а суд встановити наявність порушених прав та/або інтересів
+
+позивача як учасника господарського товариства оспорюваним рішенням загальних
+зборів.
+
+КГС ВС зазначив, що місцевий господарський суд врахував висновки ВС,
+викладені у постанові судової палати для розгляду справ щодо корпоративних спорів,
+корпоративних прав та цінних паперів КГС ВС від 01.09.2023 у справі № 909/1154/21,
+та, досліджуючи наявність порушених прав та/або інтересів позивача, а також інших
+фактичних обставин, що мають значення для цієї справи, встановив, що спірне рішення
+загальних зборів учасників ТОВ «Черкаси-Дніпро Агро» було прийняте відповідно до ч.
+4 ст. 34 Закону України «Про товариства з обмеженою та додатковою
+відповідальністю» достатньою кількістю голосів, необхідною для прийняття такого
+рішення, а саме більшістю голосів усіх учасників товариства (75 %), якою володіє інший
+учасник товариства, який був присутній на зборах та голосував за прийняття спірного
+рішення.
+
+Суд першої інстанції встановив, що спірне рішення за своїм змістом
+стосувалося підтвердження факту наявності згоди загальних зборів на припинення
+права оренди / суборенди земельних ділянок за договорами про розірвання. Причому
+саме договорів про розірвання договорів оренди / суборенди землі позивач не
+заперечує та не оскаржує, а оскаржує лише рішення загальних зборів учасників
+товариства від 12.10.2022. З огляду на це місцевий господарський суд обґрунтовано
+зазначив про те, що визнання в судовому порядку недійсним спірного рішення
+загальних зборів учасників товариства не спричинить недійсності самих договорів
+оренди / суборенди землі.
+
+КГС ВС урахував, що позивач, обґрунтовуючи наявність у нього порушеного
+права, що підлягає судовому захисту, послався лише на порушення його права
+на участь у загальних зборах, управлінні товариством, тобто на порушення його прав
+не самим спірним рішенням, а фактом його прийняття. Позивач не зазначив, які його
+права та/або інтереси порушені безпосередньо прийнятим спірним рішенням загальних
+зборів та як задоволення позову відновить їх.
+
+При цьому саме по собі спірне рішення загальних зборів учасників
+господарського товариства про наявність згоди загальних зборів на припинення права
+оренди / суборенди земельних ділянок за договорами про розірвання не порушує прав
+позивача на участь у загальних зборах та  управлінні товариством.
+
+За таких обставин місцевий господарський суд дійшов правильного висновку про
+те, що обраний позивачем спосіб захисту прав у вигляді самого лише визнання
+недійсним рішення загальних зборів про підтвердження факту наявності згоди
+загальних зборів на припинення права оренди / суборенди земельних ділянок
+відповідно до договорів про розірвання з урахуванням збереження чинності самих
+договорів про дострокове розірвання договорів оренди землі із пайовиками не матиме
+наслідком ні захист, ні відновлення порушеного права позивача та є неефективним,
+що становить самостійну підставу для відмови у позові.
+
+Натомість суд апеляційної інстанції дійшов помилкового висновку про
+ефективність обраного позивачем у цій справи способу захисту та про наявність
+підстав для задоволення позову.
+
+Ураховуючи наведене, КГС ВС касаційну скаргу задовольнив, скасував постанову
+апеляційного господарського суду та залишив у силі рішення місцевого
+
+господарського суду.
+
+Детальніше з текстом постанови КГС ВС від 07.11.2024 у справі № 925/1442/23 можна ознайомитися
+[за посиланням https://reyestr.court.gov.ua/Review/122957200.](https://reyestr.court.gov.ua/Review/122957200)
+
+### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+
+### 3. Справи щодо корпоративних спорів, корпоративних прав 13
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1_segment.md № 923/898/21 270 30 40 докази передумовою звернення до суду за встановленням сервітуту повинен бути доказ семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «докази» (судочинство / господарський процес / докази).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123012091" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 923/898/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">270 30 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судочинство</span><span class="crumb-sep">›</span><span class="crumb">Господарський процес</span><span class="crumb-sep">›</span><span class="crumb-leaf">Докази</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Передумовою звернення до суду за встановленням сервітуту повинен бути доказ</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Докази» (Судочинство / Господарський процес / Докази).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Справи щодо земельних відносин 20
+
+4.1. Щодо встановлення земельного сервітуту в судовому порядку
+
+Передумовою звернення до суду за встановленням сервітуту повинен бути доказ
+вчинення дій щодо встановлення сервітуту та недосягнення про це згоди між сторонами.
+Якщо до звернення до суду не вчинялися дії щодо встановлення сервітуту
+за домовленістю сторін (зокрема не звернулася до іншої сторони з пропозицією
+про укладення договору про встановлення сервітуту), то суд не має підстав
+для задоволення відповідних вимог у зв’язку з відсутністю у позивача права вимагати
+встановлення сервітуту за рішенням суду
+
+КГС ВС розглянув касаційну скаргу ТОВ-1 у справі за позовом скаржника
+до ТОВ-2, третя особа, яка не заявляє самостійних вимог щодо предмета спору, на стороні
+позивача – міська рада, про встановлення земельного сервітуту.
+
+ОБСТАВИНИ СПРАВИ
+Будівля складу, якої стосується спір, належить сторонам — ТОВ-1 (позивач)
+та ТОВ-2 (відповідач) — на праві спільної часткової власності. Земельна ділянка, через
+яку існує єдиний доступ до належного ТОВ-1 майна, перебуває у користуванні (на правах
+оренди) відповідача.
+
+Позивачем та попереднім власником було укладено договір на встановлення
+земельного сервітуту строком на 10 років, у подальшому були внесені зміни щодо
+орендаря у зв’язку із набуттям ТОВ-2 права власності на нерухоме майно. Після
+закінчення строку дії цього договору він може бути продовжений за домовленістю сторін,
+при цьому сторони не пізніше як за 30 днів до закінчення строку його дії в письмовій
+формі повинні повідомити один одного про свої наміри. Доказів його продовження
+чи нових домовленостей суду не надано.
+
+Відповідач запропонував позивачу укласти договір про користування
+контрольно-пропускним пунктом, але позивач відмовився, посилаючись на наявність
+попереднього договору сервітуту.
+
+Звертаючись із позовом, ТОВ-1 зазначило, що фактично відповідач заборонив
+в’їзд, проїзд транспортних засобів та прохід працівників через спірну земельну ділянку,
+що є неправомірним. Отже, встановлення сервітуту спрямовано на усунення наведених
+перешкод, які чиняться позивачу з боку відповідача.
+
+Рішенням суду першої інстанції, залишеним без змін постановою суду апеляційної
+інстанції, у задоволенні позову відмовлено. Судові рішення мотивовані тим, що строк
+договору на встановлення сервітут сплив та продовжено його сторонами не було. Крім
+того, в матеріалах справи немає доказів вчинення ТОВ-1 дій щодо встановлення сервітуту
+за домовленістю сторін (зокрема звернення позивача до відповідача з пропозицією про
+укладення договору про встановлення сервітуту). Тож суди попередніх інстанцій
+виснували, що позивач не має права вимагати встановлення сервітуту за рішенням суду.
+
+ОЦІНКА СУДУ
+Відповідно до ст. 402 ЦК України сервітут може бути встановлений договором,
+законом, заповітом або рішенням суду. У разі недосягнення домовленості
+про встановлення сервітуту та про його умови спір вирішується судом за позовом особи,
+яка вимагає встановлення сервітуту.
+
+КГС ВС зауважив, що правова природа сервітуту передбачає, що однією з умов
+його встановлення є неможливість власника майна задовольняти власні потреби
+без встановлення користування чужим майном. При цьому обов’язковою умовою для
+встановлення сервітуту є вжиття особою (позивачем), яка цього вимагає, заходів щодо
+встановлення сервітуту в добровільному порядку, а якщо особа до звернення до суду не
+вчиняла дій щодо встановлення сервітуту за домовленістю сторін (зокрема не звернулася
+до іншої сторони з пропозицією про укладення договору про встановлення сервітуту), то
+суд не має підстав для задоволення відповідних вимог у зв’язку з відсутністю у позивача
+права вимагати встановлення сервітуту за рішенням суду.
+
+Суди попередніх інстанцій відмовили у задоволенні позову саме внаслідок
+відсутності доказів звернення позивача про встановлення сервітуту. Вони надали оцінку
+доводам позивача про те, що відповідач фактично здійснював відповідну пропозицію,
+
+зокрема, проєкту договору про надання послуг контрольно-пропускного пункту, наданого
+позивачу ТОВ-2, і вказали, що він не може вважатися пропозицією укласти договір
+сервітуту, оскільки цей проєкт договору має зовсім інший предмет регулювання.
+
+КГС ВС зазначив, що під час розгляду цієї справи судами попередніх інстанцій
+встановлені та досліджені обставини справи, які не дають підстави вважати, що будьякою стороною висловлювалася пропозиція про укладення саме договору про
+встановлення сервітуту, а тому правильним є висновок про відмову в задоволенні позову
+з огляду на вимоги законодавства та судову практику Верховного Суду.
+
+КГС ВС підкреслив, що обов’язковою умовою для встановлення сервітуту є
+неможливість задоволення потреби іншим способом та попереднє звернення до іншої
+сторони з пропозицією укласти договір. Відсутність таких дій позбавляє позивача права
+вимагати встановлення сервітуту за рішенням суду.
+
+За результатами розгляду справи касаційну скаргу залишено без задоволення,
+а рішення судів попередніх інстанцій – без змін.
+
+Детальніше з текстом постанови КГС ВС від 05.11.2024 у справі № 923/898/21 можна ознайомитись
+[за посиланням https://reyestr.court.gov.ua/Review/123012091.](https://reyestr.court.gov.ua/Review/123012091)
+
+### 4. Справи щодо земельних відносин 20
+
+### 4. Справи щодо земельних відносин 20
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.2_segment.md № 925/1414/23 30 50 10 10 загальнодержавна права власності ліквідованої юридичної особи семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «загальнодержавна» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / державна власність / загальнодержавна).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">04.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123081664" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 925/1414/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 10 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb">Державна власність</span><span class="crumb-sep">›</span><span class="crumb-leaf">Загальнодержавна</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>права власності ліквідованої юридичної особи</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Загальнодержавна» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Державна власність / Загальнодержавна).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Справи щодо земельних відносин 20
+
+4.2. Щодо неефективного способу захисту у справах за позовом про припинення
+права власності ліквідованої юридичної особи
+
+Рішення суду про припинення права власності за ліквідованою юридичною
+особою жодним чином не забезпечить підтвердження виникнення права власності на це
+майно за ФДМУ, як і не дасть йому правових підстав для проведення державної
+реєстрація права власності на спірне майно
+
+КГС ВС розглянув касаційну скаргу ФДМУ за позовом скаржника до сільської
+ради, за участю третьої особи, яка не заявляє самостійних вимог щодо предмета спору,
+на стороні відповідача – ДП про припинення права власності.
+
+ОБСТАВИНИ СПРАВИ
+Предметом позову є вимога ФДМУ до сільської ради про припинення права
+власності ТОВ на комплекс, нежитлові будівлі. Вимоги обґрунтовано тим, що для
+здійснення приватизації єдиного майнового комплексу ДП і подальшого належного
+оформлення права власності покупця на об’єкт приватизації необхідно припинити
+зареєстроване право власності ліквідованої юридичної особи – ТОВ на об’єкти
+нерухомого майна, що входять до складу єдиного майнового комплексу ДП.
+
+Відмова державного реєстратора у реєстрації права власності
+на зазначене майно за державою в особі ФДМУ стала підставою для звернення до суду
+
+з позовом.
+
+Апеляційний суд залишив без змін рішення суду першої інстанції про відмову
+в задоволенні позову та мотивував таке рішення тим, що обраний позивачем спосіб
+захисту не є ефективним для захисту його порушеного права у спірних правовідносинах,
+що становить самостійну підставу для відмови у задоволенні позовних вимог.
+
+ОЦІНКА СУДУ
+КГС ВС зауважив, що предметом позову в процесуальному сенсі є звернення
+позивача до суду з вимогою про захист своїх прав та інтересів, який складається із двох
+елементів: предмета і підстави позову. Предметом позову є певна матеріально-правова
+вимога позивача до відповідача, який одночасно становить спосіб захисту порушеного
+права, а підставою позову – факти, які обґрунтовують вимогу про захист права
+чи законного інтересу.
+
+За встановлених у справі обставин ФДМУ обрав такий спосіб захисту права, яке
+він вважає порушеним внаслідок відмови державних реєстраторів департаменту
+управління справами та юридичного забезпечення міської ради у реєстрації права
+власності на це майно за державою в особі позивача, як припинення права власності
+ліквідованої юридичної особи на майно, що, за твердженням позивача, належить державі
+та перебуває на балансі ДП.
+
+Позивач стверджував, що така ситуація щодо спірного майна обумовлена
+неодноразовим переходом права власності на нерухоме майно цукрового заводу
+в результаті низки правочинів, що вчинялися протягом 2003–2007 років, без належного
+оформлення правовстановлювальних документів на об’єкти нерухомого майна
+та відповідної реєстрації права власності за суб’єктами господарювання, які набували
+такі права.
+
+Тобто фактично позивач вважав, що лише наявність зареєстрованого права
+власності на спірне майно за ліквідованою особою є перешкодою у реєстрації
+відповідного права на таке майно за державою в особі ФДМУ.
+
+Пунктом 1 ч. 1 ст. 2 Закону України «Про державну реєстрацію речових прав
+на нерухоме майно та їх обтяжень» визначено, що державна реєстрація речових прав
+на нерухоме майно та їх обтяжень – офіційне визнання і підтвердження державою фактів
+набуття, зміни або припинення речових прав на нерухоме майно, обтяжень таких прав
+шляхом внесення відповідних відомостей до Державного реєстру речових прав
+на нерухоме майно.
+
+Сукупний правовий аналіз наведених норм свідчить про те, що реєстрація права
+власності на нерухоме майно є лише офіційним визнанням права власності з боку
+держави. Сама собою державна реєстрація права власності за певною особою не
+є безспірним підтвердженням наявності в цієї особи права власності, але створює
+спростовувану презумпцію права власності такої особи.
+
+КГС ВС зазначив, що за наявності державної реєстрації права власності
+за певною особою державна реєстрація права власності на це саме майно за іншою
+особою може бути здійснена за згодою цієї особи або за судовим рішенням, що набрало
+законної сили, щодо права власності на нерухоме майно.
+
+Статтею 392 ЦК встановлено, що власник майна може пред’явити позов
+про визнання його права власності, якщо це право оспорюється або не визнається іншою
+особою, а також у разі втрати ним документа, який засвідчує його право власності.
+
+Отже, передумовами та матеріальними підставами для захисту права власності
+у судовому порядку є наявність підтвердженого належними доказами права власності
+на майно, яке оспорюється або не визнається іншою особою, та порушення (невизнання
+або оспорювання) цього права на спірне майно.
+
+Як установлено судами попередніх інстанцій у справі, що розглядається,
+державний реєстратор відмовив у проведенні реєстраційних дій щодо права власності
+на спірне майно за позивачем через відсутність належних документів, які б свідчили
+або дали можливість встановити набуття, зміну або припинення речових прав на це
+нерухоме майно.
+
+КГС ВС погодився з висновками судів попередніх інстанцій, що у цій справі
+за обставин, що склалися, необхідним є доведення позивачем своїх прав на спірне
+майно, а тому рішення суду про припинення права власності за ліквідованою юридичною
+особою жодним чином не забезпечить підтвердження виникнення права власності на це
+майно за ФДМУ, як і не дасть йому правових підстав для проведення державної
+реєстрація права власності на спірне майно.
+
+КГС ВС виснував, що обрання позивачем неналежного (неефективного) способу
+захисту своїх прав є самостійною підставою для відмови в позові.
+
+За результатами розгляду справи касаційну скаргу залишено без задоволення,
+а рішення судів попередніх інстанцій –без змін.
+
+Детальніше з текстом постанови КГС ВС від 16.10.2024 у справі № 925/1414/23 можна ознайомитися
+за посиланням [https://reyestr.court.gov.ua/Review/123081664.](https://reyestr.court.gov.ua/Review/123081664)
+
+5. Справи у спорах, що виникають із правочинів, зокрема договорів
+
+### 5. Справи у спорах, що виникають із правочинів, зокрема договорів 24
+
+### 5. Справи у спорах, що виникають із правочинів, зокрема договорів 24
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.1_segment.md № 904/1553/23 150130 10 посередницька діяльність погоджених збитків, передбаченої пп. 2 п. 1 розд. vіі правил постачання природного газу, семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «посередницька діяльність» (загальні засади правового регулювання економічного розвитку / господарчі договори. договірна дисципліна (санкції) / посередницька діяльність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">05.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123152681" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 904/1553/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150130 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Господарчі договори. Договірна дисципліна (санкції)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Посередницька діяльність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>погоджених збитків, передбаченої пп. 2 п. 1 розд. VІІ Правил постачання природного газу,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Посередницька діяльність» (Загальні засади правового регулювання економічного розвитку / Господарчі договори. Договірна дисципліна (санкції) / Посередницька діяльність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5. Справи у спорах, що виникають із правочинів, зокрема договорів 24
+
+5.1. Щодо правової природи відповідальності (санкції) у вигляді заздалегідь
+погоджених збитків, передбаченої пп. 2 п. 1 розд. VІІ Правил постачання природного газу,
+затверджених постановою НКРЕКП від 30.09.2015 № 2496 (у редакції, чинній з 01.07.2020),
+та наслідків закріплення в умовах договору про постачання природного газу такого виду
+санкцій, як штраф
+
+Сплата неустойки (штрафу) та відшкодування збитків можна охарактеризувати
+загальним поняттям «санкція» – визначена міра майнових чи інших невигідних для особи
+наслідків невиконання вимог закону та/або умов договору.
+
+У разі узгодження сторонами санкції у вигляді штрафу та закріплення її в договорі
+суд не має вдаватися до її перекваліфікації на збитки за відсутності ознак зловживання
+свободою договору чи прямої законодавчої заборони.
+
+Перекваліфікація судом платежу на випадок невиконання, який сторони дійсно
+чітко та недвозначно позначили в договорі як штраф, на збитки, зазделегідь визначені
+як збитки, є неприпустимою.
+
+Підпункт 2 п. 1 розд. VII Правил постачання природного газу, затверджених
+постановою НКРЕКП від 30.09.2015 № 2496 (в редакції, чинній з 01.07.2020; далі –
+Правила № 2496), закріплює заздалегідь погоджені збитки, що нараховуються споживачу
+за встановленою формулою внаслідок перевищення об’єму (обсягу) природного газу.
+
+Норми Правил № 2496 самі по собі не змінюють правової природи умови договору
+щодо сплати споживачем постачальнику штрафу за перевищення обсягу постання газу,
+не надають підстав для іншого тлумачення чи перекваліфікації спірної санкції
+
+ОП КГС ВС розглянула касаційну скаргу ТОВ «Агрофірма Світанок» у справі
+за позовом ТОВ «Твій Газзбут» до ТОВ «Агрофірма Світанок» про стягнення
+11 274 265,51 грн.
+
+ОБСТАВИНИ СПРАВИ
+ТОВ «Твій Газзбут» (постачальник) і ТОВ «Агрофірма Світанок» (споживач) уклали
+договір постачання природного газу для потреб непобутових споживачів (далі – договір),
+згідно з яким постачальник зобов’язувався передати у власність споживача природний
+газ, а споживач – прийняти та оплатити вартість газу у розмірах, устроки та порядку,
+що визначені договором.
+
+ТОВ «Агрофірма Світанок» свої зобов’язання щодо повної та своєчасної оплати
+отриманого природного газу здійснило частково, внаслідок цього виникла заборгованість.
+
+ТОВ «Твій Газзбут» звернулося з позовом до ТОВ «Агрофірма Світанок», у якому
+просило стягнути з відповідача суму основного боргу, трьох процентів річних, пеню,
+інфляційні втрати та штраф. Позовні вимоги обґрунтовані неналежним виконанням
+відповідачем грошових зобов’язань за договором.
+
+Рішенням господарського суду, яке залишене без змін постановою апеляційного
+
+господарського суду, позов задоволено частково.
+
+Суд вважав необґрунтованими доводи відповідача про те, що санкція у вигляді
+штрафу, стягнення якого сторони передбачили у п. 6.2.2 договору, за своєю правовою
+природою належить до збитків.
+
+ОЦІНКА СУДУ
+ОП КГС ВС переглянула справу в частині вимоги про стягнення з відповідача
+санкції, нарахованої на підставі п. 6.2.2 договору, оскільки у розрахунковий період
+фактичний обсяг газу, поставленого споживачу, перевищив його підтверджений обсяг
+на цей період.
+
+ОП КГС ВС у питанні, якими є істотні ознаки поняття «збитки» та поняття «штрафні
+санкції», зазначила, що сплата неустойки (штрафу) та відшкодування збитків можна
+охарактеризувати загальним поняттям «санкція» – визначена міра майнових чи інших
+невигідних для особи наслідків невиконання вимог закону та/або умов договору.
+
+Статтею 217 ГК України передбачено, що господарськими санкціями визнаються
+заходи впливу на правопорушника у сфері господарювання, в результаті застосування
+яких для нього настають несприятливі економічні та/або правові наслідки (ч. 1). У сфері
+господарювання застосовуються такі види господарських санкцій: відшкодування збитків;
+штрафні санкції; оперативно-господарські санкції (ч. 2).
+
+Неустойка (штраф) і збитки мають схоже функціональне призначення, однак є
+самостійними формами цивільно-правової відповідальності.
+
+Щодо збитків ОП КГС ВС зауважила, що норми ЦК України і ГК України визначають
+умови, склад і порядок застосування до суб’єкта господарювання такого виду
+господарських санкцій як відшкодування збитків.
+
+Щодо штрафних санкцій ОП КГС ВС зазначила, що завданням неустойки як способу
+забезпечення виконання зобов’язання та як міри відповідальності є одночасно
+забезпечення дисципліни боржника стосовно виконання зобов’язання (спонукання
+до належного виконання зобов’язання) і захист майнових прав та інтересів кредитора
+у разі порушення зобов’язання шляхом компенсації можливих втрат, у тому числі
+у вигляді недосягнення очікуваних результатів господарської діяльності внаслідок
+порушення зобов’язання.
+
+До моменту порушення зобов’язання боржником неустойка виконує функцію
+сприяння належному виконанню зобов’язання, стимулювання боржника до належної
+поведінки. Після порушення боржником свого обов’язку неустойка починає виконувати
+функцію майнової відповідальності.
+
+Отже, штрафною є така санкція, що передусім спрямована на спонукання особи
+утриматися від порушення вимог закону чи умов договору під загрозою майнової кари.
+
+У питанні щодо поняття «заздалегідь погоджені збитки» ОП КГС ВС вказала на те,
+що проміжне місце між неустойкою (штрафом) та збитками займає інститут заздалегідь
+
+погоджених збитків – санкція, що має окремі ознаки як збитків у їх класичному розумінні,
+так і штрафу.
+
+У правовій доктрині інститут «заздалегідь визначених збитків» покликаний
+забезпечити кредитору справедливе відшкодування у тих випадках, коли сторони
+договору вже на момент його укладення погоджуються з тим, що певним порушенням
+умов договору кредитору завдається / завдаються шкода / збитки, але при цьому
+конкретний розмір завданих збитків складно чи взагалі неможливо довести.
+
+До використання цієї конструкції вдаються з метою полегшення розрахунків,
+забезпечення прозорого фінансово-економічного планування, економії часу суду
+та учасників процесу.
+
+Право сторін передбачити відшкодування збитків в іншому розмірі (у меншому
+чи більшому розмірі на власний розсуд) наразі прямо встановлено ст. 22 ЦК України, ч.
+1 ст. 226 ГК України.
+
+Щодо правової природи відповідальності (санкції), передбаченої Правилами
+№ 2496, ОП КГС ВС визначила, що пп. 2 п. 1 розд. VII зазначених Правил (у редакції, чинній
+на момент виникнення спірних правовідносин у цій справі (редакція з 01.07.2020))
+закріплює заздалегідь погоджені збитки, що нараховуються споживачу за встановленою
+формулою внаслідок перевищення об’єму (обсягу) природного газу.
+
+Щодо питання, чи мають право сторони самостійно визначити в договорі вид
+санкції, яка підлягає застосуванню, та чи має право суд самостійно встановлювати
+правову природу такої санкції, здійснювати її перекваліфікацію, ОП КГС ВС зазначила,
+що в разі узгодження сторонами санкції у вигляді штрафу та закріплення її в договорі
+суд не має вдаватися до її перекваліфікації на збитки за відсутності ознак зловживання
+свободою договору чи прямої законодавчої заборони.
+
+Перекваліфікація судом платежу на випадок невиконання, який сторони дійсно
+чітко та недвозначно позначили в договорі як штраф, на збитки, заздалегідь визначені
+як збитки, є неприпустимою.
+
+Щодо правової природи відповідальності (санкції), передбаченої п. 6.2.2 договору,
+ОП КГС ВС вказала таке.
+
+Як з’ясували суди попередніх інстанцій, сторони в межах принципу свободи
+договору встановили санкцію у вигляді штрафу та передбачили порядок його розрахунку,
+
+що не суперечить вимогам законодавства.
+
+За буквальним тлумаченням п. 6.2.2 договору, якщо за підсумками розрахункового
+періоду фактичний обсяг поставленого споживачеві газу буде перевищувати
+підтверджений обсяг газу на цей період (за умови, що підтверджений обсяг відповідав
+замовленому споживачем), споживач сплачує постачальнику штраф за перевищення
+обсягу постання газу, що розраховується за встановленою формулою.
+
+Зважаючи на мотиви, наведені в цій постанові, ОП КГС ВС відступила від висновку,
+[викладеного в постанові КГС ВС від 01.11.2023 у справі № 911/1893/22, де предметом](https://precedent.ua/114579006)
+спору було стягнення штрафу за споживання газу у більшому та меншому обсягах (за
+відповідні місяці у спірному періоді) від підтверджених обсягів постачання газу і КГС ВС
+погодився з висновками судів попередніх інстанцій, що визначена сторонами договору
+в пп. 6.2.2, 6.2.3 відповідальність за своєю правовою природою належить до збитків,
+
+відшкодування яких передбачено розд. VII Правил № 2496 та які нараховуються
+за формулою і в порядку, що встановлені зазначеними Правилами. З огляду
+на наведене колегія суддів вважала, що позивач, який є постачальником природного газу
+для потреб непобутових споживачів, мав довести факт отримання збитків та їх розмір;
+вину заподіювача шкоди та причинного зв’язку між діями заподіювача та настанням
+збитків.
+
+ОП КГС ВС дійшла висновку, що норми Правил № 2496 самі по собі не змінюють
+правової природи умови п. 6.2.2 договору, не надають підстав для іншого тлумачення
+чи перекваліфікації спірної санкції.
+
+Отже, суди попередніх інстанцій, зважаючи на п. 6.2.2 договору та вжите в ньому
+формулювання, обґрунтовано визначили, що спірна санкція є штрафом (згідно
+з буквальним тлумаченням).
+
+За результатами касаційного провадження оскаржувані судові рішення в частині
+задоволення вимоги про стягнення штрафу залишено без змін, а касаційну скаргу – без
+
+задоволення.
+
+Детальніше з текстом постанови ОП КГС ВС від 15.11.2024 у справі № 904/1553/23 можна ознайомитися
+[за посиланням https://reyestr.court.gov.ua/Review/123152681.](https://reyestr.court.gov.ua/Review/123152681)
+
+Огляд судової практики Касаційного господарського суду у складі Верховного Суду
+(актуальна практика). Рішення, внесені до ЄДРСР, за листопад 2024 року / Упоряд.:
+управління аналітичної та правової роботи Касаційного господарського суду
+департаменту аналітичної та правової роботи Апарату Верховного Суду, судові палати
+Касаційного господарського суду у складі Верховного Суду. Київ, 2024. − 27 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="30.09.2015_segment.md не вказана 20150 40 ощадні банки. грошові вклади населення закріплення в умовах договору про постачання природного газу такого 24 семантичний мапінг з урахуванням юрисдикції кгс вс. обрано рубрику «ощадні банки. грошові вклади населення» (бюджетно-фінансове законодавство / банки і банківська система / ощадні банки. грошові вклади населення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">30.09.2015_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20150 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Банки і банківська система</span><span class="crumb-sep">›</span><span class="crumb-leaf">Ощадні банки. Грошові вклади населення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>закріплення в умовах договору про постачання природного газу такого 24</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КГС ВС. Обрано рубрику «Ощадні банки. Грошові вклади населення» (Бюджетно-фінансове законодавство / Банки і банківська система / Ощадні банки. Грошові вклади населення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">30.09.2015 № 2496 (у редакції, чинній з 01.07.2020), та наслідків
+закріплення в умовах договору про постачання природного газу такого 24
+виду санкцій, як штраф
+
+Перелік уживаних скорочень
+
+—
+
+ВП ВС Велика Палата Верховного Суду
+
+—
+
+ВС Верховний Суд
+
+—
+
+ГПК України Господарський процесуальний кодекс України
+
+—
+
+ДП державне підприємство
+
+—
+
+ЗК України Земельний кодекс України
+
+—
+
+КГС ВС Касаційний господарський суд у складі
+
+Верховного Суду
+
+—
+
+КУзПБ Кодекс України з процедур банкрутства
+
+—
+
+МКТП Міжнародна класифікація товарів і послуг
+
+—
+
+НКРЕКП Національна комісія, що здійснює державне
+
+регулювання у сферах енергетики
+
+та комунальних послуг
+
+—
+
+ОК обслуговуючий кооператив
+
+—
+
+ОП КГС ВС об’єднана палата Касаційного господарського
+
+суду у складі Верховного Суду
+
+—
+
+ПП приватне підприємство
+
+—
+
+СП КГС ВС судова палата Касаційного господарського суду
+
+у складі Верховного Суду
+
+—
+
+ТОВ товариство з обмеженою відповідальністю
+
+—
+
+УКРНОІВІ Український національний офіс інтелектуальної
+
+власності та інновацій Фонд державного майна
+
+ФДМУ України
+
+—
+
+ЦК України Цивільний кодекс України
+
+1. Справи про банкрутство
+
+### 1. Справи про банкрутство 4
+
+### 1. Справи про банкрутство
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 11;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

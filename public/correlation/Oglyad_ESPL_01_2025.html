@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_ESPL_01_2025 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_ESPL_01_2025 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_ESPL_01_2025.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_ESPL_01_2025</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">4</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">60.2%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 4 із 4</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 30 60 40 безспірне списання ( стягнення ) коштів рішення про зобов&#x27;язання компаній-заявників повернути частину грошей, семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «безспірне списання ( стягнення ) коштів» (цивільне законодавство / зобов&#x27;язальне право / безспірне списання ( стягнення ) коштів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Безспірне списання ( стягнення ) коштів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення про зобов&#x27;язання компаній-заявників повернути частину грошей,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Безспірне списання ( стягнення ) коштів» (Цивільне законодавство / Зобов&#x27;язальне право / Безспірне списання ( стягнення ) коштів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Загальні міркування
+
+1. Наявність втручання та правило, що застосовується
+Рішення про зобов&#x27;язання компаній-заявників повернути частину грошей,
+отриманих на підставі укладених договорів, становило втручання у їхнє право
+на мирне володіння своїм майном. Суд вважав, що справу слід розглядати
+з огляду на загальний принцип, викладений у першому правилі статті 1 Першого
+протоколу, що визначає принцип мирного володіння майном.
+
+### 2. Відповідність гарантій справедливого суду в кримінальному провадженні
+
+### 2. Відповідність гарантій справедливого суду в кримінальному провадженні
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина легітимну мету мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>легітимну мету</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Відповідність гарантій справедливого суду в кримінальному провадженні
+
+2. Чи було втручання передбачене законом і чи переслідувало воно
+легітимну мету
+
+Анулювання договорів було передбачено законом, а вибраний спосіб
+відшкодування мав юридичну основу, яка була достатньо доступною, точною
+та передбачуваною за тих обставин справи. Отже, оскаржуване втручання було
+законним. Воно також переслідувало легітимну мету запобігання змовам
+і захисту державних коштів.
+
+### 3. Загальні принципи щодо гарантій проти провокації в кримінальних
+
+### 3. Загальні принципи щодо гарантій проти провокації в кримінальних
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина законодавцю надається широка свобода розсуду при запровадженні мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">03_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Законодавцю надається широка свобода розсуду при запровадженні</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Загальні принципи щодо гарантій проти провокації в кримінальних
+
+3. Чи було втручання пропорційним до мети, що переслідується
+Законодавцю надається широка свобода розсуду при запровадженні
+соціальної та економічної політики. Така свобода розсуду була значно ширшою,
+коли йшлося про оцінку кандидатів на публічні закупівлі та політичні вибори
+щодо обов&#x27;язкового чи дискреційного виключення кандидатів. Межі свободи
+розсуду також слід визнати широкими у випадках, подібних до цього, стосовно
+вибору, з яким стикаються Держави-учасниці, щодо зобов&#x27;язань, накладених
+на учасників процедур публічних закупівель та наслідків невиконання цих
+зобов&#x27;язань. Крім того, органи закупівель можуть бути зобов&#x27;язані вживати
+заходів в інтересах суспільства для виправлення своїх помилок, однак це не має
+призводити до ситуації, коли на особу покладається надмірний тягар.
+
+## 61  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+У цій справі Суд не знайшов підстав для сумнівів у тлумаченні
+та застосуванні законодавства національними судами або їхній оцінці
+та висновках. Зокрема, Суд відзначив наступне.
+
+По-перше, національні суди встановили, що процедура публічних закупівель
+не була проведена відповідно до правових вимог: хоча NVSPL мала право
+проводити закупівлю за переговорною процедурою без публікації у зв&#x27;язку
+з надзвичайними обставинами, спричиненими пандемією COVID-19, однак вона
+була зобов&#x27;язана дотримуватися принципів прозорості та раціонального
+використання державних коштів. Водночас не було проведено оцінку пропозицій
+від різних постачальників, і NVSPL уклала договір про закупівлі
+з постачальником, обраним Міністерством охорони здоров&#x27;я.
+
+Обов&#x27;язком державного замовника було провести процедуру публічних
+закупівель і забезпечити дотримання відповідних правових вимог та загальних
+принципів публічних закупівель. Водночас національне цивільне законодавство
+встановлювало певні загальні зобов&#x27;язання, які також поширювались
+на постачальників у контексті публічних закупівель, і накладення яких
+підпадало під широкі межі свободи розсуду національних органів влади в цій
+сфері. До того ж відповідно до національного законодавства зобов&#x27;язання
+та відповідальність державного замовника щодо проведення процедури
+закупівлі не скасовували загальні норми та принципи, які регулюють договірні
+та переддоговірні відносини між постачальником та державним замовником, як
+це передбачено чинним цивільним правом.
+
+По-друге, національні суди встановили, що компанії-заявники діяли
+недобросовісно та намагалися скористатися надзвичайною ситуацією у сфері
+охорони здоров&#x27;я для отримання надмірного прибутку. У зв&#x27;язку з цим суди
+зазначили, що компанії надали органам влади неточну інформацію щодо
+виробника тестів. Ідентичність виробника та країна, в якій він знаходився, були
+важливими характеристиками тестів, оскільки це впливало на їхню ціну. Крім
+того, апеляційний суд встановив, що перша компанія-заявник запропонувала
+ціну, що була необґрунтованою та перевищувала ринкову ціну таких тестів,
+та що обидві компанії-заявники діяли спільно, намагаючись отримати надмірний
+прибуток під час надзвичайної ситуації.
+
+В обов&#x27;язки Суду не входило визначати, яка була ринкова ціна швидких
+тестів на момент подій, або оцінювати, чи була ціна, запропонована першою
+компанією-заявником, надмірною. Висновки апеляційного суду щодо цього, які
+базувалися на проведених тендерах за участю подібних тестів від інших
+компаній (зокрема тендер, де були тести від того ж виробника), а також на оцінці
+ринку, проведеній Міністерством оборони, не можна вважати безпідставними
+чи явно необґрунтованими.
+
+## 62  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+Висновки апеляційного суду про те, що перший заявник діяв
+недобросовісно, ґрунтувалися не лише на факті, що ціна тестів цієї компанії була
+вищою, ніж пропонувалося іншими, а були результатом оцінки тендера першої
+компанії-заявника у світлі всіх інших релевантних обставин, включаючи загальну
+поведінку компаній-заявників в умовах надзвичайної ситуації, викликаної
+кризою у сфері охорони здоров&#x27;я. Так, апеляційний суд не встановлював
+зобов&#x27;язання для постачальників пропонувати «розумну» ціну і не перекладав
+обов&#x27;язок раціонального використання державних коштів з органів влади
+на приватні компанії.
+
+З огляду на обставини, хоча другий заявник не брав участі в процедурі
+публічних закупівель, компанії-заявники діяли спільно та узгоджено. Тому
+підстави для анулювання договору про закупівлі були однаково релевантними
+і для анулювання угоди купівлі-продажу між компаніями-заявниками, згідно
+з якою перша компанія-заявник передала другій більшу частину коштів,
+отриманих за договором про закупівлі.
+
+Завданням Суду не було визначати, які повинні бути наслідки визнаних
+недійсних договорів про закупівлі та/або будь-яких пов&#x27;язаних договорів. Радше
+Суд мав визначити, чи наклали рішення національних судів, прагнучи виправити
+помилки, зроблені в процедурі публічних закупівель, індивідуальний
+та надмірний тягар на заявників. Суд встановив, що в цьому випадку такого не
+
+сталося.
+
+Національні суди визнали, що за цих обставин неможливо було застосувати
+повернення в натурі та відновити ситуацію, яка існувала до оскаржуваних угод,
+оскільки контракт на закупівлю був повністю виконаний, і Держава вже
+використала більшість тестів, отриманих за цим договором. Апеляційний суд
+постановив, що збереження цих договорів суперечило б публічним інтересам,
+і зобов&#x27;язав компанію-заявника повернути Державі суму, яку було переплачено
+за тести. Суд ще раз наголосив, що добросовісність сторін договору є важливим
+фактором при встановленні будь-якої компенсації після анулювання договору.
+
+Хоча органи влади не виконали свої адміністративні зобов&#x27;язання відповідно
+до законодавства про публічні закупівлі, за обставин цієї справи це не може
+виправдати звільнення від відповідальності компаній-заявників за порушення
+зобов&#x27;язань, накладених на них чинним цивільним правом, щоб вони мали право
+зберегти надмірний прибуток, отриманий шляхом використання державних
+коштів.
+
+Суть цієї справи полягала у поєднанні адміністративної процедури відбору
+постачальника, з одного боку, та з іншого – договірною транзакцією між
+обраним постачальником і замовником. Процедура закупівлі, яка була
+відповідальністю відповідних державних органів, стосувалася пошуку
+потенційних постачальників та їх відбору, забезпечуючи прозорий
+
+## 63  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+і конкурентний доступ до процесу закупівлі. Однак, водночас потрібно було
+враховувати той факт, що постачальники, які брали участь у тендерах державних
+закупівель, є економічними операторами, які активно переслідують свої власні
+комерційні інтереси. Відповідно договірні відносини між постачальниками
+та замовниками у сфері публічних закупівель не можна порівнювати
+з ситуаціями, коли державні органи здійснюють адміністративні повноваження
+щодо осіб чи організацій, що перебувають у підпорядкованому становищі.
+
+Суд взяв до уваги аргумент компаній-заявників, що NVSPL, яка була
+відповідальна за забезпечення дотримання закону, але не змогла це зробити, не
+мала нести відповідальність за власну некомпетентність, оскільки штраф,
+накладений на неї судом першої інстанції, був пізніше скасований в апеляційному
+провадженні. Водночас Суд вважав важливим підкреслити, що процедура
+публічних закупівель у цій справі проводилася під час пандемії COVID-19, коли
+необхідність діяти з особливою терміновістю з боку органів влади підвищила
+ймовірність виникнення помилок.
+
+У будь-якому випадку, враховуючи свої висновки щодо поведінки компанійзаявників, Суд не зміг дійти висновку, що відсутність фінансових наслідків
+для NVSPL сама по собі була достатньою підставою для того, щоб визнати
+втручання в майнові права заявлених компаній непропорційним. Так, Суд
+виснував, що національні органи влади не вийшли за межі свободи розсуду,
+наданої їм у цьому контексті.
+
+Висновок
+
+Відсутність порушення статті 1 Першого протоколу до Конвенції (захист
+власності) щодо обох компаній-заявників.
+
+Рішення в цій справі ухвалене Палатою 07 січня 2025 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+
+## 64  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+[IOANNIDES v. Cyprus](https://hudoc.echr.coe.int/eng?i=001-238811) (№ 32879/18)
+
+Обставини справи
+
+Заявниця, пані Maryanne Ioannides, є громадянкою Великої Британії,
+народилася у 1964 році. У 1970 році вона покинула Кіпр і наразі проживає
+у Великій Британії.
+
+У 1973 році батько пані Ioannides переоформив на заявницю двоповерховий
+будинок, який спочатку знаходився в житловому районі Нікосії. Після вторгнення
+Туреччини до Кіпру в 1974 році будинок опинився в буферній зоні.
+
+У 2001 році Держава дозволила миротворчим силам ООН, які контролювали
+вхід у буферну зону, використовувати будинок пані Ioannides. Вони почали
+користуватися будинком у вересні 2001 року.
+
+Пізніше пані Ioannides звернулася з вимогою про «відшкодування [орендної
+плати] за поточною ринковою вартістю». Ця вимога була передана до Комітету
+з визначення орендної плати округу, який вирішив, що будинок не має вартості
+як об’єкта оренди та що Держава достатньо компенсувала їй, відремонтувавши
+будинок.
+
+Після інших неуспішних спроб отримати орендну плату від різних органів
+у 2007 році пані Ioannides подала цивільний позов проти Держави, вимагаючи
+повернення свого майна, компенсації за порушення права власності
+й заборгованості по оренді.
+
+Суди відхилили позов заявниці, в основному, зважаючи на те, що Кіпр не
+контролює буферну зону або її будинок через обмеження безпеки. Зокрема,
+у січні 2018 року Верховний Суд заявив, що через припинення вогню було
+необхідно надати миротворчим силам дозвіл на використання будинку,
+і в цьому контексті Держава не могла допомогти пані Ioannides у захисті її прав
+власності.
+
+Заявниця звернулася до ЄСПЛ заявляючи про порушення з боку Держави її
+права на мирне володіння майном, передбачене статтею 1 Першого протоколу
+до Конвенції, зокрема у зв’язку з відсутністю доступу до свого майна
+та дозволом держави, наданим миротворчим силам, використовувати її майно
+без сплати оренди.
+
+Оцінка Суду
+
+По-перше, Суд відзначив, що Кіпр не мав ефективного контролю над
+певними секторами буферної зони. Майно пані Ioannides фактично знаходилося
+в недоступній частині цієї зони.
+
+Проте Держава все ж зберігала обмежену юрисдикцію в цій справі,
+
+## 65  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+що передбачало наявність у неї лише позитивних зобов’язань. Зокрема,
+Держава мала вжити всі відповідні заходи, що залишалися в її силах, стосовно
+права пані Ioannides на доступ до її будинку. Суд встановив, що Кіпр вживав усіх
+таких заходів: уряд співпрацював з миротворчими силами відновлення
+нормальних умов, підтримки правопорядку та захисту права власності
+відповідно до своїх зобов&#x27;язань за міжнародним правом. Крім того, пані
+Ioannides окрім вимоги про оренду не вказала жодних інших заходів, які Держава
+могла б вжити для забезпечення її права власності.
+
+Сторони зазначали, що відсутність ефективного контролю Держави над
+частинами її території може призвести до утворення «правового вакууму» у сфері
+прав людини. Суд посилався на свою судову практику щодо юрисдикції
+у справах проти дій Організації Об&#x27;єднаних Націй (див., зокрема, справи Behrami
+and Behrami v. France та Saramati v. France, Germany and Norway [ВП] (ухв.),
+[№ 71412/01 та № 78166/01, § 151 і наступні, від 2 травня 2007 року), де Суд](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2271412/01%22%5D%7D)
+зазначив, що суперечливі дії органів ООН не можна приписувати Державам,
+особливо якщо ці дії не відбулися на території цих Держав або за конкретним
+рішенням їхніх органів.
+
+Отже, Суд виснував, що не було порушення статті 1 Першого протоколу
+до Конвенції стосовно обмеження доступу населення до сектора буферної зони,
+де знаходився будинок пані Ioannides.
+
+Окрім того, Суд зазначив, що питання щодо використання будинку заявниці
+миротворчими силами ООН та відмови Держави виплачувати орендну плату
+тісно пов’язані між собою. Уряд Кіпру мав змогу встановлювати умови, за яких
+миротворчі сили могли використовувати будинок. Зокрема, було узгоджено
+використання будинку миротворчими силами протягом кількох років без сплати
+оренди. Також уряд мав можливість вільно визначати суму та тип компенсації,
+яку необхідно було виплатити власнику за використання майна миротворчими
+силами ООН, навіть якщо останні не платили за таке використання. Так, Суд
+виснував, що юрисдикція Кіпру не була обмежена відсутністю ефективного
+контролю над певними частинами буферної зони, і Кіпр все ще міг визначати, як
+і на яких умовах миротворчі сили ООН могли займати будинок заявниці. Відтак,
+Суд дійшов висновку, що Держава фактично розпорядилась майном заявниці,
+що безпосередньо вплинуло на її здатність користуватися ним, тому саме уряд
+несе відповідальність за порушення прав заявниці, що мали місце.
+
+Хоча заявниця підтвердила відсутність заперечень щодо укладеної між
+урядом та миротворчими силами угоди, вона стверджувала, що відсутність
+орендної плати позбавила її можливості отримувати прибуток від володіння
+майном. Суд вказав на необхідність перевірки того, чи було втручання
+обґрунтованим з огляду на принципи законності, легітимної мети
+та «справедливого балансу».
+
+## 66  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+З приводу першого принципу Суд дійшов висновку, що таке втручання
+у право власності заявниці не відповідало умовам, встановленим законом
+або загальними принципами міжнародного права.
+
+Щодо принципу «справедливого балансу», що є складовою частиною
+статті 1 Першого протоколу до Конвенції, то Держава має широку свободу
+для оцінки кроків, які необхідно вжити для забезпечення дотримання Конвенції,
+враховуючи справедливий баланс, що має бути встановлений між конкуруючими
+інтересами особи та суспільства в цілому. У кожному випадку, коли йдеться про
+ймовірне порушення цієї статті, Суд повинен визначити, чи внаслідок втручання
+Держави особа мала нести непропорційний та надмірний тягар.
+
+Окрім того, Суд встановив, що всупереч відсутності у статті 1 Першого
+протоколу до Конвенції процесуальних вимог, особа повинна мати розумну
+можливість ефективно оскаржити заходи, які втручаються в її право на мирне
+володіння майном.
+
+Суд визнав, що у цій справі, безсумнівно, розміщення миротворчих сил ООН
+служило інтересу суспільства в контексті підтримки миру та безпеки. Що
+стосується пропорційності втручання, заявниця подала позов до національних
+судів, стверджуючи головним чином, що її право на власність було порушене
+через відмову у доступі до території, незаконне використання її будинку
+та відмову виплачувати будь-яку орендну плату протягом кількох років. Однак
+національні суди обмежили розгляд справи лише першим аспектом позову,
+а саме відмовою у доступі заявниці до будинку, і фактично дійшли висновку,
+що ситуація перебувала поза ефективним контролем Кіпру через обмеження
+доступу до зони безпеки. Окрім того, Верховний Суд не досліджував, яким чином
+було отримано «згоду» власниці на використання будинку, які умови були
+встановлені нею для цього використання або яка оренда мала бути виплачена.
+
+Суд визнав надзвичайно складну правову та фактичну ситуацію
+на місцевості після окупації частини Кіпру та необхідність запобігти відновленню
+бойових дій і водночас забезпечити подальшу присутність миротворчих сил.
+Однак Суд не зміг погодитися, що втручання у право власності заявниці
+відбулося відповідно до вимог статті 1 Першого протоколу до Конвенції. Суд
+виснував, що національні суди належним чином не перевірили, чи було
+досягнуто справедливого балансу між конкуруючими інтересами особи
+та суспільства в цілому. Також суди не з&#x27;ясували, чи було на пані Ioannides
+покладено непропорційний та надмірний тягар через втручання Держави в її
+права, що є порушенням статті 1 Першого протоколу до Конвенції.
+
+Висновок
+
+Відсутність порушення статті 1 Першого протоколу до Конвенції (захист
+
+## 67  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+власності) щодо обмеження доступу населення до сектора буферної зони, де
+знаходиться будинок заявниці.
+
+Порушення статті 1 Першого протоколу до Конвенції через неналежну оцінку
+національними судами пропорційності втручання щодо зайняття будинку
+заявниці та відсутності оплати за це.
+
+Рішення в цій справі ухвалене Палатою 16 січня 2025 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+
+## 68  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+РІШЕННЯ ЄСПЛ ПРОТИ УКРАЇНИ
+
+Стаття 2 Конвенції (право на життя)
+[BEREZOVSKYY v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240227) (№ 2083/24): непроведення ефективного розслідування
+смерті чи нещасних випадків, які становили загрозу життю, до яких не були
+причетні представники Держави – порушення
+
+Стаття 3 Конвенції (заборона катування)
+[NIKOLAYENKO v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238659) (№ 59342/19): відсутність обґрунтованих підстав
+для тримання заявника у металевій клітці під час судових засідань – порушення
+[KOROLYOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238837) (№ 11882/22 та 11 інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту; інші
+скарги, висунуті за усталеною практикою Суду (див. перелік у Додатку) –
+
+порушення
+[KOSOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238841) (№ 15959/23 та 7 інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту; інші
+скарги, висунуті за усталеною практикою Суду (див. перелік у Додатку) –
+
+порушення
+[ORLOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238836) (№ 8134/22 та 9 інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту; інші
+скарги, висунуті за усталеною практикою Суду (див. перелік у Додатку) –
+
+порушення
+[STARZHYNSKA AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238845) (№ 30464/23 та 8 інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту; інші
+скарги, висунуті за усталеною практикою Суду (див. перелік у Додатку) –
+
+порушення
+[IVCHENKO AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240207) (№ 25790/23 та 8 інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту; інші
+скарги, висунуті за усталеною практикою Суду (див. перелік у Додатку) –
+
+порушення
+[LEGACHOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240208) (№ 29773/23 та 7 інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту; інші
+скарги, висунуті за усталеною практикою Суду (див. перелік у Додатку) –
+
+порушення
+
+## 69  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+[POLITUN AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240205) (№ 7037/23 та 13 інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+[TEPLYAKOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240204) (заява № 53982/22 та 15 інших заяв – див.
+перелік у Додатку): неналежні умови тримання під вартою та відсутність
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+
+Стаття 5 Конвенції (право на свободу та особисту недоторканність)
+[BAGATYY v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240232) (№ 14748/24): відсутність відповідних і достатніх підстав
+для тримання під вартою – порушення
+[SHCHEGOLKOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240216) (№ 31916/23 та 3 інші заяви – див. перелік
+у Додатку): надмірна тривалість тримання під вартою під час досудового
+розслідування; інші скарги, висунуті за усталеною практикою Суду (див. перелік
+у Додатку) – порушення
+
+Стаття 6 Конвенції (право на справедливий суд)
+[NEVYADOMSKYY AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238848) (№ 6391/24 та 2 інші заяви – див. перелік
+у Додатку): надмірна тривалість кримінальних проваджень та відсутність
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+[SHEMYAKIN AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238805) (№ 23951/17 та 7 інших заяв – див. перелік
+у Додатку): надмірна тривалість цивільних проваджень та відсутність
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+[VOLENSHCHAK AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238807) (№ 1696/18 та 7 інших заяв – див. перелік
+у Додатку): надмірна тривалість цивільних проваджень та відсутність
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+[ZHABYNETS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238801) (№ 16706/16): надмірна тривалість цивільного провадження
+та відсутність у національному законодавстві ефективного засобу юридичного
+
+захисту – порушення
+[KOPTYELOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240195) (№ 30406/17 та 7 інших заяв – див. перелік
+у Додатку): надмірна тривалість цивільних проваджень та відсутність
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+[MELIKHOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240200) (№ 19681/21 та 5 інших заяв – див. перелік
+у Додатку): надмірна тривалість кримінальних проваджень та відсутність
+
+## 70  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+
+Стаття 11 Конвенції (свобода зібрань та об’єднання)
+[SVERDLOVA AND SHEVCHENKO v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240190) (№ 73596/13) : відсутність достатніх
+законних підстав для встановлення обмеження права на свободу зібрань, а саме
+проведення масових заходів у центрі міста, внаслідок чого заявниці
+(організатори) змінили місце проведення запланованого публічного заходу;
+відсутність у національному законодавстві ефективного засобу юридичного
+
+захисту – порушення
+
+Стаття 1 Першого протоколу до Конвенції (захист власності)
+[FEDERATION OF TRADE UNIONS OF CHERNIHIV REGION v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-238657) (№ 40633/15):
+визнання недійсним права власності організації-заявниці (правонаступниці
+профспілкової організації, створеної за радянських часів) на нежитлову будівлю
+через належність такого майна Державі, подальша неможливість користуватися
+тим самим набором прав, які вона мала раніше як зареєстрований власник
+будівлі, а також отримання відшкодування внаслідок знищення такого майна –
+
+порушення
+[RAYCHENKO AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-240196) (№ 64144/17 та 14 інших заяв – див. перелік
+у Додатку): накладення стягнень у вигляді штрафів і конфіскації усієї суми
+отриманих законним шляхом грошових коштів, що перевищила дозволений ліміт,
+внаслідок недекларування її митним органам – порушення
+
+## 71  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+Огляд рішень Європейського суду з прав людини (січень 2025 року) / Відп. за вип.: С. В. Гаврилюк,
+Ю. В. Місько, А. А. Петренко, Т. Р. Цибульська, О. Ю. Тарасенко, Р. Ш. Бабанли. Київ, 2025. – 71 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04_segment.md не вказана 20160 державна позика. лотереї суд виснував, що хоча в певних обставинах він може застосовувати семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «державна позика. лотереї» (бюджетно-фінансове законодавство / державна позика. лотереї).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">04_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20160</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державна позика. Лотереї</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Суд виснував, що хоча в певних обставинах він може застосовувати</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Державна позика. Лотереї» (Бюджетно-фінансове законодавство / Державна позика. Лотереї).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Позиція Суду в цій справі
+
+4. Позиція Суду в цій справі
+Суд виснував, що хоча в певних обставинах він може застосовувати
+принципи, розроблені в його практиці щодо гарантій проти провокації
+у кримінальних провадженнях, до дисциплінарних проваджень, що виникають
+після тестування на доброчесність, він повинен враховувати специфіку такого
+тестування. Природа такого тестування полягає в штучному створенні ситуацій,
+що нагадують ті, які можуть виникнути в контексті професійної діяльності осіб,
+що проходять тестування, з метою побачити, як вони реагують. Тож, з огляду
+на відсутність кримінальної відповідальності за дії, вчинені внаслідок такого
+тестування, та неможливості вважати його підбурюванням до вчинення злочину,
+Суд вважає, що проведення для особи тесту на професійну доброчесність саме
+по собі не є провокацією і не суперечить вимогам пункту 1 статті 6 Конвенції.
+
+Водночас Суд вважає, що докази вчинення правопорушення, отримані
+внаслідок тестування на професійну доброчесність, часто можуть бути
+вирішальними для результату дисциплінарних проваджень щодо особи. Тому Суд
+повинен переконатися, що до планування, проведення та оцінювання такого
+тестування застосовуються сильні процесуальні гарантії, які мають включати
+право особи оскаржити результати такого тестування в суді та обов&#x27;язок
+національних судів належним чином розглянути всі аргументи, зокрема будь-які
+заперечення щодо підбурювання.
+
+У цій справі Суд визнав, що існувала детально передбачена законом
+процедура, відповідно до якої суддя мав надати дозвіл на проведення
+тестування на професійну доброчесність, розглянувши доцільність та спосіб
+проведення такого тестування. Суд вважає, що така гарантія у поєднанні
+з подальшим судовим наглядом на початковому етапі є достатньою.
+
+Суд розглянув аргументи заявника щодо підбурювання зі сторони
+правоохоронних органів, що полягало в надмірно активній ролі представника
+Держави, який неодноразово пропонував неправомірну вигоду, не зважаючи
+на відмову заявника. Суд вважає, що, враховуючи специфіку професійного
+тестування, заявник аргументовано зауважив щодо провокації,
+на що національні суди повинні були б відреагувати й зробити відповідні
+
+висновки.
+
+Єдиний суд, що розглянув питання провокації, був суд міста Кишиніва, який
+дійшов висновку, що заявник порушив би правила професійної етики навіть без
+втручання представника. Однак суд ухвалив зазначене рішення лише на основі
+матеріалів справи не вислухавши заявника та не врахувавши його докази,
+зокрема щодо питання провокації злочину. Оскільки заявник не мав можливості
+оскаржити рішення, а інша сторона могла подавати апеляцію та вимагати
+додаткового розгляду в суді, це призвело до порушення принципу рівності
+
+## 40  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+сторін. Суд також вказав, що рішення не містило належного обґрунтування та не
+
+розглядало аргументи заявника.
+
+Ураховуючи зазначені обставини, Суд виснував, що національні суди не
+виконали своїх зобов&#x27;язань щодо ефективного розгляду заяви про провокацію
+злочину та не забезпечили справедливість судового процесу, зокрема щодо
+участі заявника та його права на оскарження.
+
+Висновок
+
+Порушення пункту 1 статті 6 Конвенції (право на справедливий суд).
+
+Рішення в цій справі ухвалене Палатою 09 січня 2025 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+
+## 41  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+[VASILEV v. Serbia](https://hudoc.echr.coe.int/eng?i=001-238789) (№ 48150/18)
+
+Обставини справи
+
+Справа стосувалася стверджуваного порушення принципів змагальності
+та рівності сторін відповідно до пункту 1 статті 6 Конвенції під час
+адміністративного провадження, в якому поліція анулювала ліцензію заявника
+на вогнепальну зброю на підставі нерозкритої конфіденційної інформації.
+
+1 липня 2015 року Босілеградське відділення поліції (Bosilegrad Police
+Station) анулювало ліцензію заявника на мисливську рушницю, посилаючись
+на необхідність захисту «особистої та матеріальної безпеки інших осіб».
+В основу цього рішення було покладено результати попередньої перевірки
+поліції.
+
+5 жовтня 2015 року Міністерство внутрішніх справ відхилило скаргу
+заявника на це рішення, вважаючи його необґрунтованою. Міністерство також
+стверджувало, що воно не було зобов&#x27;язане розкривати оперативні звіти
+та джерела інформації, на яких ґрунтувалося відповідне рішення.
+
+28 листопада 2015 року заявник звернувся до Адміністративного суду
+із заявою про судовий перегляд, стверджуючи, що рішення про анулювання його
+ліцензії не було належним чином обґрунтованим. Він стверджував, що був
+позбавлений можливості ефективно брати участь у провадженні, оскільки не міг
+оскаржити факти, на яких ґрунтувалося рішення, або подати докази
+
+на спростування викладених причин.
+
+В свою чергу Міністерство внутрішніх справ подало до суду заяву, до якої
+було додано конфіденційне досьє, що містило інформацію про перевірку.
+Національний суд розглянув вказане досьє без участі сторін і не розкрив його
+зміст заявнику.
+
+8 вересня 2016 року Адміністративний суд відхилив позов заявника без
+проведення відкритого розгляду справи. Суд дійшов висновку, що «характер
+спору не вимагав особистої присутності сторін або спеціального встановлення
+фактів». Суд також відхилив твердження заявника про неможливість ефективно
+брати участь у судовому розгляді, посилаючись на правові обмеження, які
+забороняють йому розголошувати або обговорювати конфіденційну інформацію
+у своєму рішенні.
+
+1 березня 2018 року Конституційний Суд відхилив конституційну скаргу
+
+заявника.
+
+Оцінка Суду
+
+Насамперед ЄСПЛ зазначив, що загальні принципи щодо права
+на розкриття відповідних доказів у контексті права на справедливий розгляд
+
+## 42  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+були узагальнені у рішеннях ЄСПЛ у справах Regner v. the Czech Republic [ВП],
+[№ 35289/11, §§ 146–49, від 19 вересня 2017 року) та T.G. v. Croatia (№ 39701/14,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2235289/11%22%5D%7D)
+§§ 48–54, від 11 липня 2017 року).
+
+ЄСПЛ вказав, що у цій справі підстави, з яких поліція вважала,
+що мисливська ліцензія заявника підлягала анулюванню, були викладені лише
+у загальних рисах, тобто без будь-якої конкретизації обставин, що мали місце
+у його ситуації. Так, не можна було стверджувати, що заявник був ознайомлений
+або достатньо обізнаний про висунуті проти нього звинувачення, що дозволило
+б йому ефективно їх оскаржити – фактично чи юридично (див. mutatis mutandis,
+[Užukauskas v. Lithuania, № 16965/04, § 50, від 6 липня 2010 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2216965/04%22%5D%7D)
+
+Окрім того, за таких обставин Адміністративний суд повинен був проявити
+особливу ретельність та увагу під час власного розгляду справи з метою
+забезпечення відповідності його рішення, наскільки це можливо, вимогам
+змагальності та принципу рівності сторін. Однак зазначений суд залишив рішення
+Міністерства внутрішніх справ без змін, і ніщо не вказувало на те, що при цьому
+він надав власну незалежну оцінку конфіденційній інформації, яка була прихована
+від заявника (на відміну від згаданого вище рішення у справі Regner, § 20,
+в цілому). Адміністративний суд також не надав жодного обґрунтування того, чому
+він не вказав, хоча б коротко, звинувачення, висунуті проти заявника (див. згадане
+вище рішення у справі Regner, § 160). Крім того, ні поліція, ні національні суди не
+стверджували, що приховування відповідної інформації було виправдано такими
+міркуваннями, як національна безпека, захист свідків, яким загрожує небезпека
+репресій, або необхідність захисту конфіденційних методів поліцейського
+розслідування (на відміну від згаданого вище рішення у справі Regner, §§ 20
+і 148). Не було докладено жодних зусиль для пом&#x27;якшення обмежень права
+заявника на рівність сторін, наприклад, шляхом надання можливості спростувати
+конкретні звинувачення, що випливають з перевірки біографічних даних,
+або шляхом проведення публічного слухання (на відміну від згаданої вище справи
+Regner, § 18) (пункт 16 рішення).
+
+З огляду на вищевикладене ЄСПЛ виснував, що процедура розгляду справи
+в Адміністративному суді не містила належних гарантій захисту інтересів
+заявника та забезпечення йому справедливого судового розгляду, як це
+гарантується пунктом 1 статті 6 Конвенції.
+
+Відповідно, ЄСПЛ констатував порушення пункту 1 статті 6 Конвенції.
+
+Висновок
+
+Порушення пункту 1 статті 6 Конвенції (право на справедливий суд).
+
+Рішення в цій справі ухвалене Комітетом 14 січня 2025 року та є остаточним.
+
+## 43  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+[VASILE PRUTEANU AND OTHERS v. Romania](https://hudoc.echr.coe.int/fre?i=001-241407) (№ 9308/18)
+
+Обставини справи
+
+Справа стосувалася провадження проти подружжя та їхнього сина, які
+володіли трьома масажними салонами в Румунії, за звинуваченням
+у сутенерстві та торгівлі людьми. Вони стверджували, що їхні вироки були
+несправедливими, оскільки ключові свідки – жінки, яких вони завербували
+в Республіці Молдова, – ніколи не були допитані безпосередньо в румунських
+
+судах.
+
+Заявниками є троє громадян Румунії: пан Vasile і пані Tatiana Pruteanu, 1960
+і 1965 років народження відповідно, та їхній син, Vasile Pruteanu, 1987 року
+народження. Вони проживають у містах Брашов та Сечеле (Румунія).
+
+Заявники володіли трьома масажними салонами в Румунії. У лютому
+2013 року їх обвинувачували у сутенерстві та торгівлі людьми. Їх підозрювали
+у сприянні еротичним масажам і сексуальним контактам, зокрема, за участю
+масажисток, завербованих у Республіці Молдова.
+
+Зрештою, рішенням від червня 2016 року суди встановили, що заявники
+вербували жінок у Республіці Молдова, обіцяючи їм роботу, їжу, житло
+та допомогу в отриманні віз, а потім примушували їх працювати масажистками
+у своїх салонах і вступати в статеві зносини з клієнтами. Подружжя заявників
+було засуджено до трьох років позбавлення волі, а їхнього сина – до двох років
+
+умовно.
+
+В основу своїх висновків суди покладали свідчення, надані у суді 2
+молдовськими масажистками, які стали цивільними сторонами у провадженні,
+близько 20 іншими – переважно румунськими масажистками, а також 11
+клієнтами масажних салонів. Інші докази включали: оголошення в молдовських
+і румунських газетах; розшифровані телефонні розмови заявників; обговорення
+в соціальних мережах між клієнтами масажних салонів; рапорти, написані
+співробітниками поліції під прикриттям; предмети, вилучені з масажних салонів,
+зокрема, презервативи та секс-іграшки.
+
+Заяви, зроблені трьома іншими молдовськими масажистками (також
+свідками цивільної сторони) і свідком, що перебуває під захистом, на ім&#x27;я
+«Maria», які на той час виїхали з Румунії, також були використані під час судового
+розгляду справи проти заявників.
+
+В апеляційній скарзі заявники стверджували, що ці чотири свідки не були
+особисто заслухані судом першої інстанції. Один з трьох відсутніх свідків з боку
+цивільної сторони був врешті-решт допитаний на прохання апеляційного суду
+судом в Республіці Молдова, але двох інших не вдалося допитати, оскільки їхнє
+місцеперебування було невідоме. Апеляційний суд неодноразово викликав
+
+## 44  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+«Maria», однак вона подавала заяви про те, що стан її здоров&#x27;я не дозволяє їй
+пережити травму, якої вона зазнала від заявників.
+
+Апеляційний суд, зокрема, заявив, що його рішення прийняти показання
+відсутніх свідків відповідало зобов&#x27;язанням щодо захисту жертв сексуальних
+злочинів. Він спирався на директиву ЄС і брав до уваги вразливість жертв
+торгівлі людьми та необхідність уникнення вторинної віктимізації. Крім того, він
+встановив, що свідчення цих свідків узгоджуються з показаннями інших жінок,
+які працювали на заявників.
+
+Що стосується двох відсутніх цивільних свідків, яких не вдалося знайти,
+апеляційний суд вказав, що їхні свідчення були надані молдовському прокурору
+і описували ту саму ситуацію, що й у свідченнях «Maria» та в інших доказах.
+
+Звертаючись до ЄСПЛ заявники, із посиланням на пункт 1 та підпункт «d»
+пункту 3 статті 6 Конвенції, скаржились на те, що кримінальне провадження, яке
+призвело до їх засудження, не було справедливим, оскільки три ключові свідки,
+які давали показання проти них, ніколи не були допитані безпосередньо в суді,
+а ще один свідок був допитаний молдовським, а не румунським судом.
+
+Оцінка Суду
+
+По-перше, Суд встановив, що у чотирьох свідків були поважні причини
+для неявки на судові засідання. Всі вони були колишніми працівниками
+масажних салонів заявників і потребували захисту як передбачувані жертви
+торгівлі людьми та сексуальної експлуатації. Так, причиною неявки «Maria»
+на судовий розгляд були проблеми з психічним і фізичним здоров&#x27;ям,
+спричинені травмою, яку вона пережила під час перебування в Румунії.
+
+Хоча показання цих свідків сприяли засудженню заявників, вони не були
+єдиним або вирішальним доказом у справі. Національні суди мали ряд інших
+доказів, які дозволили їм дійти висновку, що заявники сприяли вчиненню
+сексуальних дій у своїх масажних салонах. Крім того, докази свідчили про те,
+що заявники перевозили своїх молдавських жертв до Румунії під приводом
+законного працевлаштування, залишаючи деяких з них без документів, а потім
+стежили за ними і погрожували втягнути їх у заняття проституцією.
+
+Суд також зазначив, що були достатні факти, які дозволили провести
+справедливу і належну оцінку неперевірених доказів.
+
+Слід зазначити, що суди з обережністю підходили до показань відсутніх
+свідків, покладаючись на них лише тоді, коли ставало зрозуміло, що присутність
+свідків у суді не може бути забезпечена, і після того, як було встановлено, що їхні
+показання підтверджуються іншими доказами. Суди також перевірили
+достовірність показань двох свідків, яких не вдалося знайти, і розглянули їх
+у контексті, вирішуючи, чи брати їх до уваги. Крім того, суди визнали
+
+## 45  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+достовірність показань відсутніх свідків у контексті міжнародних зобов&#x27;язань
+Румунії щодо захисту жертв сексуальних злочинів.
+
+Крім того, суди вжили достатніх процесуальних заходів, щоб компенсувати
+відсутність можливості безпосередньо допитати свідків під час судового
+розгляду. Показання відсутніх свідків були наявні в матеріалах справи, які
+заявники та їхні захисники мали змогу оскаржити в суді. Загалом, заявники
+та їхні захисники були присутні та брали активну участь у судовому розгляді.
+Так, заявники мали змогу представити свою позицію захисту, надавши власну
+версію фактів.
+
+Нарешті, національні суди детально обґрунтовували свої рішення про
+прийняття показань відсутніх свідків. Їхні рішення ґрунтувалися на вичерпному
+дослідженні доказів і всіх наведених аргументів.
+
+Суд виснував, що в цілому провадження було справедливим, а права
+на захист не були обмежені тією мірою, якою він визнав би порушення гарантій,
+зокрема, рівності сторін, передбачених статтею 6 Конвенції.
+
+Отже, ЄСПЛ констатував відсутність порушення пункту 1 та підпункту «d»
+пункту 3 статті 6 Конвенції.
+
+Висновок
+
+Відсутність порушення пункту 1 та підпункту «d» пункту 3 статті 6 Конвенції
+(право на справедливий суд).
+
+Рішення в цій справі ухвалене Палатою 14 січня 2025 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+
+## 46  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+СТАТТЯ 8 КОНВЕНЦІЇ (ПРАВО НА ПОВАГУ ДО ПРИВАТНОГО І СІМЕЙНОГО ЖИТТЯ)
+
+[REZNIK v. Ukraine](https://hudoc.echr.coe.int/eng?i=001-240192) (№ 31175/14)
+
+Обставини справи
+
+3 липня 2013 року Михайло Рєзнік, перший заявник у цій справі, уклав
+договір про надання юридичних послуг з державною інформаційнотехнологічною компанією «Інформаційний центр». З підписаного договору
+випливало, що йому було передано оригінали 107 комерційних контрактів,
+укладених «Інформаційним центром» з різними компаніями в період з 2002 по
+2013 рік.
+
+19 вересня 2013 року Міністерство внутрішніх справ порушило кримінальне
+провадження за фактом стверджуваного вчинення керівництвом
+«Інформаційного центру» злочинів, включно, зокрема, зі зловживанням
+службовим становищем і привласненням коштів.
+
+25 вересня 2013 року «Інформаційний центр» звернувся до першого
+заявника з проханням повернути документи, надані йому в рамках укладеного
+договору. Згодом перший заявник повернув всі 107 комерційних контрактів,
+наданих йому за договором від 3 липня 2013 року.
+
+20 листопада 2013 року Р. А., заступник Генерального прокурора, звернувся
+до Печерського районного суду міста Києва з клопотанням про надання дозволу
+на проведення обшуку квартири першого заявника.
+
+21 листопада 2013 року слідчий органів поліції у супроводі двох
+оперуповноважених і спеціаліста з обслуговування комп’ютерної техніки почав
+проведення обшуку в присутності першого заявника. Під час обшуку присутніми
+також були троє представників Ради адвокатів і двоє понятих, що засвідчували
+факт проведення обшуку.
+
+У протоколі обшуку Тамара Рєзнік та Олексій Рєзнік, батьки першого
+заявника, а також другий і третій заявники в цій справі, згадуються як мешканці
+квартири; зазначається, що вони були присутні під час обшуку. Четвертому
+заявнику в цій справі, Миколі Рєзніку, брату першого заявника, який також
+проживав у тій самій квартирі, було дозволено вийти з помешкання, щоб піти
+на роботу.
+
+2 і 19 грудня 2013 року відповідно жорсткий диск та флешнакопичувач,
+вилучені з квартири першого заявника, було направлено до Київського науководослідного інституту судових експертиз.
+
+17 січня 2014 року перший заявник звернувся до слідчих органів
+з проханням повернути вилучені предмети, проте 24 січня 2014 року слідчий
+Міністерства внутрішніх справ відмовив у цьому.
+
+## 47  Рішення, ухвалені ЄСПЛ за період із 01.01.2025 по 31.01.2025
+
+## Огляд рішень Європейського суду з прав людини
+
+8 лютого 2014 року перший заявник оскаржив цю відмову до Печерського
+районного суду міста Києва. Він стверджував, що дозвіл на проведення обшуку
+було сформульовано занадто широко, і що в ньому не містилося достатніх
+підстав для проведення обшуку, з огляду, зокрема, на те, що він повернув усі
+передані йому «Інформаційним центром» документи, і не було жодних підстав
+підозрювати, що він зберігав у своїй квартирі будь-які інші відповідні документи
+або предмети. Заявник також стверджував, що органи поліції допустили низку
+процесуальних помилок під час проведення обшуку, зокрема, провели обшук без
+необхідних документів, що дають право на проведення обшуку; не дозволили
+членам його сім&#x27;ї скористатися своїм правом зв&#x27;язатися з адвокатом;
+перевищили обсяг дозволу на проведення обшуку шляхом проникнення в інші
+кімнати квартири, що не використовувалися заявником як його домашній офіс,
+включно з кухнею та санітарними приміщеннями; а також вилучили його
+пристрої зберігання персональних даних і документи, на які поширюється
+адвокатська таємниця, що жодним чином не стосувалися кримінального
+розслідування.
+
+5 березня 2014 року слідчий суддя відмовив у задоволенні клопотання про
+повернення носіїв інформації. Суддя не прокоментував жодного з інших
+порушених питань. Суддя зазначив, що рішення є остаточним і оскарженню не
+підлягає.
+
+23 вересня 2014 року Київська обласна прокуратура закрила кримінальне
+провадження, що було порушене за скаргою першого заявника на те, що дозвіл
+на проведення обшуку його помешкання було видано та виконано незаконно,
+оскільки не було доказів порушення Кримінального процесуального кодексу (далі
+– КПК).
+
+До ЄСПЛ перший заявник скаржився на те, що обшук його житла
+та вилучення матеріалів були незаконними й необґрунтованими, а також на те,
+що він не мав ефективних засобів правового захисту для розгляду своїх скарг
+на національному рівні. Він посилався на статті 8 і 13 Конвенції.
+
+Оцінка Суду
+
+I. Стверджуване порушення статей 8 і 13 Конвенції щодо першого заявника
+
+### 1. Загальні міркування
+
+### 1. Загальні міркування
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 4;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

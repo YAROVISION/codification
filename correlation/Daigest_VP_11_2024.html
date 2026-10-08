@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Daigest_VP_11_2024 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Daigest_VP_11_2024 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Daigest_VP_11_2024.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Daigest_VP_11_2024</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">4</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">71.5%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 4 із 4</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01_segment.md № 911/952/22 130 60 30 застосування заходів фізичного впливу, спеціальних засобів і вогнепальної зброї застосування в тексті господарського договору формулювання «за кожен семантичний мапінг з урахуванням юрисдикції вп вс. обрано рубрику «застосування заходів фізичного впливу, спеціальних засобів і вогнепальної зброї» (законодавство про національну безпеку та правопорядок / органи внутрішніх справ / застосування заходів фізичного впливу, спеціальних засобів і вогнепальної зброї).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123282018" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 911/952/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">130 60 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про національну безпеку та правопорядок</span><span class="crumb-sep">›</span><span class="crumb">Органи внутрішніх справ</span><span class="crumb-sep">›</span><span class="crumb-leaf">Застосування заходів фізичного впливу, спеціальних засобів і вогнепальної зброї</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Застосування в тексті господарського договору формулювання «за кожен</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВП ВС. Обрано рубрику «Застосування заходів фізичного впливу, спеціальних засобів і вогнепальної зброї» (Законодавство про національну безпеку та правопорядок / Органи внутрішніх справ / Застосування заходів фізичного впливу, спеціальних засобів і вогнепальної зброї).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Справи, розглянуті з підстав необхідності відступу від висновку,
+
+1.1. Господарська юрисдикція
+
+Застосування в тексті господарського договору формулювання «за кожен
+день прострочення» не можна вважати установленням іншого, ніж визначеного
+частиною шостою статті 232 ГК України, строку нарахування штрафних санкцій
+(зокрема, пені). Таке формулювання лише повторює вирізняльну характеристику
+пені (поденне її нарахування) та характеризує механізм її визначення (розрахунку),
+однак жодним чином не впливає на можливість зменшення або збільшення строку
+нарахування пені, визначеного законом чи договором.
+
+У разі використання в договорі лише формулювання про нарахування пені «за
+кожен день прострочення» за відсутності застережень про період чи строк, за який
+нараховується пеня, таке нарахування припиняється через шість місяців від дня,
+коли зобов’язання мало бути виконано відповідно до частини шостої статті 232 ГК
+України
+
+Велика Палата Верховного Суду розглянула справу за позовом ТОВ
+«Український банківський консалтинг» (позивач 1), ТОВ «Твін-трейд» (позивач 2),
+ОСОБА_1 (позивач 3) до ПАТ «Центренерго» про стягнення сум вартості акцій,
+штрафу, пені, 3 % річних та інфляційних втрат за касаційними скаргами позивачів
+та відповідача на постанову Північного апеляційного господарського суду від
+13 вересня 2023 року та рішення Господарського суду Київської області від
+18 січня 2023 року, і прийняла постанову, в якій зазначила таке.
+
+ОБСТАВИНИ СПРАВИ
+Загальні збори ПАТ «Центренерго» прийняли рішення про надання згоди
+на вчинення значних правочинів, щодо якого заперечили позивачі 1, 2, 3 (їх
+уповноважені особи), що відповідно до пункту 2 частини першої статті 68 Закону
+України «Про акціонерні товариства» надало їм право як акціонерам товариства
+вимагати обов’язкового викупу акцій.
+
+Оскільки ПАТ «Центренерго» не викупило належних позивачам 1, 2, 3 акцій,
+вони подали позов про визнання укладеними договорів викупу акцій,
+за результатом розгляду якого судовими рішеннями були визнані укладеними
+у відповідних редакціях договори купівлі-продажу цінних паперів з умовами щодо
+відповідальності сторін у випадку їх невиконання / неналежного виконання.
+Зокрема, у разі прострочення виконання умов пункту 3.3 договорів, відповідач мав
+сплатити пеню у розмірі подвійної облікової ставки НБУ від загальної вартості
+цінних паперів, зазначеної у пункті 3.2 цього договору, за кожний день
+
+прострочення.
+
+Відповідач своєчасно не оплатив договірну вартість належних позивачам 1, 2,
+3 акцій, у зв’язку із чим останні звернулися до суду з позовом про стягнення сум,
+
+які підлягають сплаті за акції, а також стягнення штрафу та пені, 3 % річних,
+інфляційних втрат до дня повного виконання рішення суду.
+
+Суд першої інстанції позов задовольнив частково та визнав обґрунтованими
+й правомірними вимоги в частині стягнення вартості акцій, штрафу, 3 % річних,
+інфляційних втрат. Водночас суд визнав помилковим і таким, що не відповідає
+вимогам частини шостої статті 232 ГК України, розрахунок заявленої пені, оскільки
+вона розрахована за період більше ніж 6 місяців, а умовами договорів не
+передбачено її нарахування протягом тривалішого строку.
+
+Апеляційний господарський суд погодився з висновками суду першої інстанції
+в частині задоволених вимог позивачів 1, 2, 3, за винятком стягнення інфляційних
+втрат до моменту виконання рішення суду, оскільки за висновком суду апеляційної
+інстанції положення частини десятої статті 238 ГПК України не містить вказівки про
+право суду зазначити в рішенні про нарахування інфляційних втрат до його повного
+
+виконання.
+
+ПОЗИЦІЯ ВЕЛИКОЇ ПАЛАТИ ВЕРХОВНОГО СУДУ
+За загальним правилом, визначеним частиною шостою статі 232 ГК України,
+нарахування штрафних санкцій за прострочення виконання зобов’язання, якщо
+інше не встановлено законом або договором, припиняється через шість місяців від
+дня, коли зобов’язання мало бути виконано.
+
+Хоча укладеним сторонами договором може бути передбачено більшу
+або меншу тривалість строку нарахування штрафних санкцій (зокрема, пені), однак
+такий строк з урахуванням положень статей 251, 252 ЦК України має бути
+визначений.
+
+Період, за який нараховується пеня, має визначені часові межі – початок
+та кінець періоду (граничні строки) її нарахування, який, зазвичай, може бути
+пов’язаний з певною календарною датою або подією, що неминуче має настати.
+Наприклад, такий момент може бути визначений шляхом відображення, зазначення
+(погодження сторонами) в договорі умови про нарахування пені, зокрема, &quot;до
+повного виконання зобов’язання&quot;, &quot;до дати фактичного виконання&quot;, &quot;до повної
+сплати заборгованості / погашення боргу&quot;, &quot;протягом року / усього періоду
+існування заборгованості&quot; тощо.
+
+Тому на практиці необхідно розмежовувати механізм (формулу) обчислення
+пені, який характеризує таку її ознаку, як нарахування за кожен день прострочення
+(поденне нарахування), та строк нарахування штрафних санкцій (зокрема, пені),
+який регулює частина шоста статті 232 ГК України. Формулювання, яке містить
+частина третя статті 549 ЦК України та кореспондуючі їй норми інших нормативних
+актів, в тому числі умови договору (у випадку відображення, зазначення сторонами
+подібного в договорі), лише вирізняють (ідентифікують) пеню серед неустойки
+(інших штрафних санкцій) та визначають механізм (формулу) її обчислення, однак
+жодним чином не стосуються питання щодо граничного строку, за який може бути
+
+нарахована пеня.
+
+У кожному конкретному випадку господарські суди повинні належним чином
+проаналізувати умови укладених між сторонами договорів щодо нарахування
+
+штрафних санкцій та встановити, чи містить відповідний пункт договору
+або певний термін, шляхом вказівки на подію (день сплати заборгованості, день
+фактичної оплати, фактичний момент оплати), або інший строк, відмінний від
+визначеного частиною шостою статті 232 ГК України, який є меншим або більшим
+шести місяців.
+
+Якщо умовами укладеного договору сторони передбачили більш тривалий, ніж
+визначений частиною шостою статті 232 ГК України, строк нарахування штрафних
+санкцій (зазначили про їх нарахування до дня фактичного виконання, протягом
+усього періоду існування заборгованості тощо), то їх нарахування не припиняється
+за період прострочення зобов’язання понад шість місяців від дня, коли відповідне
+зобов’язання мало бути виконано, а застосуванню підлягає саме строк,
+встановлений договором.
+
+У разі відсутності подібних умов у договорі (використання / зазначення
+в договорі лише формулювання про нарахування пені &quot;за кожен день
+прострочення&quot;) нарахування штрафних санкцій (зокрема, пені) припиняється через
+шість місяців від дня, коли зобов’язання мало бути виконано відповідно до частини
+шостої статті 232 ГК України.
+
+З огляду на викладене, Велика Палата Верховного Суду виснувала,
+що застосування в тексті господарського договору формулювання «за кожен день
+прострочення» не можна вважати установленням іншого, ніж визначеного
+частиною шостою статті 232 ГК України, строку нарахування штрафних санкцій
+(зокрема, пені). Таке формулювання лише повторює вирізняльну характеристику
+пені (поденне її нарахування) та характеризує її механізм визначення (розрахунку),
+однак жодним чином не впливає на можливість зменшення або збільшення строку
+нарахування пені, визначеного законом чи договором.
+
+У справі, яка переглядається, суди попередніх інстанцій установили, що умови
+договорів № 1, 2, 3 не містять будь-яких додаткових застережень (зокрема, &quot;до
+повного виконання зобов’язання&quot;, &quot;до повної сплати заборгованості&quot;, &quot;до повного
+погашення боргу&quot; тощо), які свідчили б про визначення в них іншого строку
+нарахування штрафних санкцій, ніж визначеного частиною шостою статті 232 ГК
+України.
+
+З огляду на викладене Велика Палата Верховного Суду вважає правомірними
+висновки судів попередніх інстанцій щодо задоволення вимог позивачів 1, 2, 3
+у частині пені в межах визначеного частиною шостою статті 232 ГК України
+шестимісячного строку нарахування штрафних санкцій.
+
+Окрім того Велика Палата Верховного Суду вважає правомірним зазначення
+судом першої інстанції в рішенні про нарахування 3 % річних до моменту виконання
+рішення суду, з огляду на таке.
+
+Велика Палата Верховного Суду зазначила, що застосування частини десятої
+статті 238 ГПК України, частин десятої, одинадцятої статті 265 ЦПК України полягає
+у продовженні нарахування відсотків поза часовими межами, в яких суд розглянув
+і вирішив спір по суті позовних вимог. Вони застосовуються лише в тих випадках,
+коли суд, розглянувши спір по суті, ухвалив рішення про застосування відсотків.
+
+Положення частини десятої статті 238 ГПК України, частин десятої,
+одинадцятої статті 265 ЦПК України урегульовують можливість нарахування
+відсотків до моменту виконання рішення суду.
+
+При прийнятті рішення про стягнення боргу, на який нараховуються відсотки,
+суд вправі відповідно до частини десятої статті 238 ГПК України, частин десятої,
+одинадцятої статті 265 ЦПК України зазначити в рішенні про нарахування
+відповідних відсотків до моменту виконання рішення суду.
+
+Передбачені частиною другою статті 625 ЦК України 3 % річних (якщо інший їх
+розмір не встановлений договором або законом) охоплюються положенням
+частини десятої статті 238 ГПК України, частин десятої, одинадцятої
+статті 265 ЦПК України.
+
+З огляду на викладене доводи відповідача щодо неможливості нарахування
+3 % річних до моменту виконання рішення суду є безпідставними, такими, що не
+відповідають положенням частини десятої статті 238 ГПК України.
+
+Щодо зменшення розміру заявлених до стягнення пені та штрафу на 99 %
+з огляду на надмірний розмір штрафних санкцій, Велика Палата Верховного Суду
+зауважила, що зменшення розміру заявленої до стягнення неустойки є правом
+суду, а за відсутності у законі переліку таких виняткових обставин (частина третя
+статті 551 ЦК України) господарський суд, оцінивши надані сторонами докази
+та обставини справи у їх сукупності, на власний розсуд вирішує питання про
+наявність або відсутність у кожному конкретному випадку обставин, за яких
+можливе зменшення неустойки.
+
+Індивідуальний характер підстав, якими у конкретних правовідносинах
+обумовлюється зменшення судом розміру неустойки (що підлягає стягненню
+за порушення зобов’язання), а також дискреційний характер визначення судом
+розміру, до якого суд її зменшує, свідчать про відсутність універсального
+максимального і мінімального розміру неустойки, на який її може бути зменшено,
+що водночас вимагає, щоб цей розмір відповідав принципам верховенства права.
+
+З огляду на викладене, Велика Палата Верховного Суду вважає, що суди
+попередніх інстанцій не порушили приписів статті 233 ГК України та частини третьої
+статті 551 ЦК України при вирішенні питання наявності підстав для зменшення
+розміру пені, штрафу, а тому відхиляє доводи відповідача щодо неправильного
+
+застосування судами цих норм.
+
+Детальніше з текстом постанови ВП ВС від 16 жовтня 2024 року у справі № 911/952/22 можна
+ознайомитись за посиланням: [https://reyestr.court.gov.ua/Review/123282018](https://reyestr.court.gov.ua/Review/123282018)
+
+2. Справи, розглянуті з підстав необхідності відступу від висновку, викладеного
+в раніше ухваленому рішенні Верховного Суду
+
+### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+
+### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md № 1005/7133/2012 100130 фінансово-господарська діяльність, матеріально-технічна база навчально-виховних закладів вп вс відступила від висновку кцс вс та кгс вс щодо процесуального семантичний мапінг з урахуванням юрисдикції вп вс. обрано рубрику «фінансово-господарська діяльність, матеріально-технічна база навчально-виховних закладів» (законодавство з питань освіти, науки, культури / фінансово-господарська діяльність, матеріально-технічна база навчально-виховних закладів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123313983" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 1005/7133/2012</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100130</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Фінансово-господарська діяльність, матеріально-технічна база навчально-виховних закладів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>ВП ВС відступила від висновку КЦС ВС та КГС ВС щодо процесуального</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВП ВС. Обрано рубрику «Фінансово-господарська діяльність, матеріально-технічна база навчально-виховних закладів» (Законодавство з питань освіти, науки, культури / Фінансово-господарська діяльність, матеріально-технічна база навчально-виховних закладів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+
+2.2. Господарська юрисдикція
+
+ВП ВС відступила від висновку КЦС ВС та КГС ВС щодо процесуального
+правонаступництва первісного кредитора, який відступив право вимоги
+за недійсним (нікчемним) договором, зазначивши, що якщо кредитор відчужив
+право вимоги у зобов’язанні за недійсним (нікчемним) правочином,
+і в подальшому це право вимоги було відчужено іншій особі, яка не є стороною
+недійсного (нікчемного) правочину, то кредитор може повернути собі таке право
+вимоги лише за результатами його витребування в порядку, передбаченому
+статтями 387, 388 ЦК України; а у разі, якщо таке право вимоги не підлягає
+витребуванню відповідно до зазначених норм, то інша особа (добросовісний
+набувач) набуває право на нього відповідно до статті 330 ЦК України.
+
+До переходу до кредитора права вимоги у зобов’язанні в порядку його
+витребування за статтею 387, 388 ЦК України таке право вимоги знаходиться
+у володінні набувача цього права вимоги, відповідно процесуальні права
+і обов’язки у справі, виконавчому провадженні також до кредитора як
+
+процесуального правонаступника не переходять
+
+Велика Палата Верховного Суду розглянула касаційну скаргу ТОВ «Файненс
+Компані» на ухвалу Господарського суду Дніпропетровської області від 08 грудня
+2022 року та постанову Центрального апеляційного господарського суду від 04
+грудня 2023 року щодо заяви ТОВ «Файненс Компані» про заміну позивача
+(стягувача) у справі за позовом ПАТ «Сведбанк» в особі Дніпропетровського
+регіонального центру до ТОВ «Глобус-РС», заінтересовані особи: ТОВ «Глобус-А»,
+ТОВ «Іпотека Кредит», ТОВ «Компанія з управління активами «Скай Кепітал
+Менеджмент», про стягнення заборгованості за договором кредитування,
+
+і прийняла постанову, в якій зазначила таке.
+
+ОБСТАВИНИ СПРАВИ
+Рішенням Господарського суду від 25 лютого 2013 року задоволено позов ПАТ
+«Сведбанк» (найменування якого змінено на ПАТ «Омега Банк») до ТОВ «ГлобусРС» про стягнення кредитної заборгованості за кредитним договором. На
+виконання зазначеного рішення видано накази.
+
+31 грудня 2014 року між ПАТ «Омега Банк» і ФК «Іпотека Кредит» укладено
+договір купівлі-продажу прав вимоги, за яким банк відчужив на користь нового
+кредитора право вимоги до ТОВ «Глобус-РС» за кредитним договором
+та договорами, укладеними на виконання основного зобов’язання.
+
+04 липня 2015 року між ФК «Іпотека Кредит» і ТОВ «Скай Кепітал укладено
+договір купівлі-продажу прав вимоги до ТОВ «Глобус-РС».
+
+Надалі право вимоги до ТОВ «Глобус-РС» за кредитним договором
+та договорами, укладеними на забезпечення виконання основного зобов’язання
+неодноразово перепродавалося, і зрештою ТОВ «Глобус-А» набуло всі права вимоги
+до ТОВ «Глобус-РС». Ухвалою господарського суду від 27 серпня 2018 року замінено
+стягувача у виконавчому провадженні – ТОВ «Скай Кепітал Менеджмент» на його
+правонаступника – ТОВ «Глобус-А».
+
+04 вересня 2018 року рішеннями судів визнано недійсними договір купівліпродажу прав вимоги від 31 грудня 2014 року, укладений між ПАТ «Омега Банк» і ФК
+
+«Іпотека Кредит», та договір купівлі-продажу прав вимоги від 04 липня 2015 року,
+укладений між ФК «Іпотека Кредит» і ТОВ «Скай Кепітал Менеджмент».
+
+07 березня 2019 року між ПАТ «Омега Банк» та ТОВ «Файненс Компані»
+за результатами проведеного аукціону укладено договір відступлення прав вимоги
+банку до позичальників, у тому числі права вимоги до ТОВ «Глобус-РС»
+за кредитним договором та договорами забезпечення.
+
+У зв’язку з цим ТОВ «Файненс Компані» звернулося до суду із заявою про
+заміну сторони у справі та у виконавчому провадженні.
+
+Справа розглядалася неодноразово. Суди першої та апеляційної інстанцій
+відмовили у задоволенні заяви, оскільки ПАТ «Омега Банк» вибуло із спірних
+процесуальних правовідносин на підставі ухвали господарського суду від 28
+березня 2016 року, а відповідно до ухвали господарського суду від 27 серпня 2018
+року новим позивачем (стягувачем) у справі стало ТОВ «Глобус-А». Відтак первісний
+кредитор втратив свої процесуальні права учасника спірних правовідносин,
+оскільки до укладення з ТОВ «Файненс Компані» договору відступлення права
+вимоги не вчинив певних процесуальних дій, спрямованих на відновлення свого
+процесуального статусу позивача (стягувача) у справі.
+
+ПОЗИЦІЯ ВЕЛИКОЇ ПАЛАТИ ВЕРХОВНОГО СУДУ
+Право вимоги у зобов’язанні є майновим правом (майном), яке має цивільну
+оборотоздатність та може вільно відчужуватися з урахуванням обмежень,
+встановлених нормами глави 47 ЦК України. Відступлення права вимоги може
+відбуватися, зокрема, на підставі договору купівлі-продажу, дарування, міни.
+
+Майнові права є різновидом майна та мають спільний режим правового
+регулювання з іншими його видами, зокрема такими, як речі, гроші тощо. Отже,
+правові норми, які регулюють відносини повернення або витребування майна,
+також поширюють свою дію на відносини повернення або витребування майнових
+
+прав.
+
+Відповідно до частини першої статті 334 ГПК України у разі вибуття однієї
+із сторін виконавчого провадження суд замінює таку сторону її правонаступником.
+Заяву про заміну сторони її правонаступником може подати сторона
+(заінтересована особа), державний або приватний виконавець.
+
+З наведених норм права випливає, що коли кредитор у спірному
+матеріальному зобов’язанні (цивільному, господарському тощо) відповідно
+до пункту 1 частини першої статті 512 ЦК України замінений внаслідок відступлення
+права вимоги, то суд в порядку процесуального правонаступництва замінює такого
+учасника справи, виконавчого провадження його правонаступником, про
+що постановляє ухвалу. Внаслідок цього процесуальні права та обов’язки у справі,
+виконавчому провадженні, які мав такий учасник переходять до його
+
+процесуального правонаступника.
+
+Отже, перехід процесуальних прав і обов’язків у справі, виконавчому
+провадженні до процесуального правонаступника безпосередньо залежить від
+переходу до нього матеріальних прав та обов’язків, зокрема права вимоги
+у зобов’язанні внаслідок його відступлення.
+
+Якщо кредитор відчужив право вимоги у зобов’язанні за недійсним
+(нікчемним) правочином, і в подальшому це право вимоги було відчужено іншій
+особі, яка не є стороною недійсного (нікчемного) правочину, то кредитор може
+повернути собі таке право вимоги лише за результатами його витребування
+в порядку, передбаченому статтями 387, 388 ЦК України; а у разі, якщо таке право
+вимоги не підлягає витребуванню відповідно до зазначених норм, то інша особа
+(добросовісний набувач) набуває право на нього відповідно до статті 330 ЦК
+України.
+
+Отже, до переходу до кредитора права вимоги у зобов’язанні в порядку його
+витребування за статтями 387, 388 ЦК України таке право вимоги знаходиться
+у володінні набувача цього права вимоги, відповідно процесуальні права
+і обов’язки у справі, виконавчому провадженні також до кредитора як
+
+процесуального правонаступника не переходять.
+
+Як встановлено судами попередніх інстанцій, права вимоги у зобов’язаннях
+за кредитним договором, які були ПАТ «Омега Банк» відчужені за нікчемним
+договором від 31 грудня 2014 року з ФК «Іпотека Кредит», в подальшому були
+неодноразово перепродані, та останнього разу придбані ТОВ «Глобус-А»
+за договором від 27 липня 2017 року.
+
+На підставі цього ухвалою господарського суду від 27 серпня 2018 року
+замінено стягувача у виконавчому провадженні з ТОВ «Скай Кепітал Менеджмент»
+на його процесуального правонаступника – ТОВ «Глобус-А».
+
+ПАТ «Омега Банк» та ТОВ «Файненс Компані» дій, спрямованих
+на витребування від ТОВ «Глобус-А» зазначених прав вимоги у зобов’язаннях
+за Кредитним договором, не вчиняли.
+
+Отже, зазначені права вимоги до ПАТ «Омега Банк» та ТОВ «Файненс Компані»
+в порядку їх витребування від ТОВ «Глобус-А» не перейшли, відповідно процесуальні
+права і обов’язки у даній справі та виконавчому провадженні також до цих осіб не
+перейшли.
+
+За цих обставин суди попередніх інстанцій правильно застосували до спірних
+правовідносин приписи чинного законодавства України та дійшли обґрунтованих
+висновків про відсутність правових підстав для задоволення заяви ТОВ «Файненс
+Компані» про заміну позивача (стягувача) у справі.
+
+З огляду на викладене вище, Велика Палата Верховного Суду відступила від
+висновку Касаційного цивільного суду, викладеного у постанові від
+18 листопада 2021 року у справі № 752/3582/14-ц, ухвалах від 20 грудня 2021 року
+у справі № 1005/7133/2012, від 20 січня 2022 року у справі № 1005/7134/2012
+та Касаційного господарського суду у постанові від 17 січня 2020 року у справі №
+31/287-10 щодо застосування норм статей 55, 442 ЦПК України та статей 52, 334
+ГПК України у подібних правовідносинах, внаслідок чого були задоволені заяви ТОВ
+«Файненс Компані» про заміну позивача (стягувача) у наведених справах з тих
+підстав, що ПАТ «Омега Банк» відчужило права вимоги за нікчемним правочином,
+тому інші особи, які в подальшому придбали ці права вимоги за договорами купівлі
+
+продажу, не могли їх отримати, відповідно ці особи (позивачі, стягувачі) підлягають
+заміні на їх процесуального правонаступника – ТОВ «Файненс Компані».
+
+Детальніше з текстом постанови ВП ВС від 06 листопада 2024 року у справі №21/5005/2686/2012
+[можна ознайомитись за посиланням:  https://reyestr.court.gov.ua/Review/123313983](https://reyestr.court.gov.ua/Review/123313983)
+
+### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+
+### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 806/5175/14 240 10 адміністративні правопорушення, адміністративна відповідальність вп вс відступила від висновку кас вс щодо неможливості окремого семантичний мапінг з урахуванням юрисдикції вп вс. обрано рубрику «адміністративні правопорушення, адміністративна відповідальність» (законодавство про адміністративні правопорушення / адміністративні правопорушення, адміністративна відповідальність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123283346" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 806/5175/14</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">240 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про адміністративні правопорушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Адміністративні правопорушення, адміністративна відповідальність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>ВП ВС відступила від висновку КАС ВС щодо неможливості окремого</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВП ВС. Обрано рубрику «Адміністративні правопорушення, адміністративна відповідальність» (Законодавство про адміністративні правопорушення / Адміністративні правопорушення, адміністративна відповідальність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+
+2.1. Адміністративна юрисдикція
+
+ВП ВС відступила від висновку КАС ВС щодо неможливості окремого
+оскарження ухвали суду першої інстанції про відмову у поновленні провадження,
+вказавши, що ухвали суду першої інстанції, які відсутні в переліку статті 294 КАС
+України, можуть бути оскаржені в апеляційному порядку окремо від рішення суду,
+якщо перешкоджають подальшому провадженню у справі й особа, яка подає
+апеляційну скаргу, не може поновити свої права в інший спосіб, аніж шляхом
+оскарження в апеляційному порядку ухвали суду першої інстанції окремо від
+рішення суду.
+
+Ухвала суду першої інстанції про відмову в поновленні провадження у справі
+підлягає оскарженню в апеляційному порядку окремо від рішення суду як така,
+що перешкоджає подальшому провадженню у справі
+
+Велика Палата Верховного Суду розглянула касаційну скаргу ОСОБА_1
+на ухвалу Сьомого апеляційного адміністративного суду від 07 березня 2024 року
+про відмову у відкритті апеляційного провадження у справі за позовом ОСОБА_1
+до Прокуратури Житомирської області про скасування наказу, поновлення
+на посаді, стягнення середнього заробітку за час вимушеного прогулу
+та зобов’язання вчинити дії, провадження у якій відкрито за касаційною скаргою,
+і прийняла постанову, в якій зазначила таке.
+
+ОБСТАВИНИ СПРАВИ
+ОСОБА_1 звернувся до суду з  позовом до Прокуратури Житомирської області,
+про скасування наказу про звільнення, поновлення на посаді, стягнення середнього
+заробітку за час вимушеного прогулу та відкликання відомостей про люстрацію.
+
+Ухвалою суду першої інстанції провадження у справі було зупинено
+до вирішення Конституційним Судом України питання щодо конституційності
+положень Закону України від 16 вересня 2014 року № 1682-VІІ «Про очищення влади»
+(далі – Закон № 1682-VІІ).
+
+У серпні 2020 року ОСОБА_1 подав до суду першої інстанції клопотання про
+поновлення провадження у справі, проте ухвалою окружного адміністративного
+суду від 07 вересня 2020 року відмовлено у задоволенні клопотання ОСОБА_1 з тих
+підстав, що оскільки Конституційний Суд України не вирішив подання Верховного
+Суду України щодо конституційності положень Закону № 1682-VІІ і відповідного
+рішення не ухвалив, обставин, що зумовлювали зупинення провадження у справі,
+не усунуто, то клопотання задоволенню не підлягає.
+
+Упродовж 2020–2024 років позивач декілька разів звертався до суду першої
+інстанції із заявами про поновлення провадження, проте суд відмовляв
+в поновленні провадження у справі.
+
+За результатом нового розгляду клопотання позивача про поновлення
+провадження у справі ухвалою окружного адміністративного суду від
+08 січня 2024 року відмовлено в його задоволенні. Ухвалою апеляційного
+адміністративного суду від 07 березня 2024 року відмовлено у відкритті
+апеляційного провадження за апеляційною скаргою ОСОБА_1 на ухвалу окружного
+адміністративного суду від 08 січня 2024 року на підставі пункту 1 частини першої
+статті 299 КАС України.
+
+Відмовляючи у відкритті апеляційного провадження, суд апеляційної інстанції
+виходив з того, що за правилами статті 294 КАС України ухвала про відмову
+в поновленні провадження не включена до переліку ухвал, які можуть бути
+оскаржені в апеляційному порядку, а тому така ухвала оскарженню не підлягає.
+
+ПОЗИЦІЯ ВЕЛИКОЇ ПАЛАТИ ВЕРХОВНОГО СУДУ
+Перелік ухвал, на які можуть бути подані апеляційні скарги окремо від рішення
+суду, визначений статтею 294 КАС України.
+
+Стаття 293 КАС України містить застереження щодо неможливості оскарження
+ухвал окремо від рішення суду, які відсутні в переліку, передбаченому статтею 294
+КАС України. Зокрема, оскаржувана позивачем у цій справі ухвала суду першої
+інстанції про відмову в поновленні провадження у справі не міститься в переліку,
+визначеному у статті 294 КАС України.
+
+Установлення процесуальним законом заборони (обмеження) щодо окремого
+оскарження ухвал, не передбачених статтею 294 КАС України, спрямоване
+на відстрочення реалізації права на апеляційне оскарження з питань, що не
+перешкоджають подальшому провадженню у справі до подання апеляційної
+скарги на рішення суду щодо суті спору, і має на меті забезпечити розгляд справи
+впродовж розумного строку та запобігти зловживанням процесуальними правами,
+які можуть призводити до невиправданих зволікань під час такого розгляду.
+
+Водночас статтею 320 КАС України встановлені підстави для скасування
+ухвали суду, яка перешкоджає подальшому провадженню у справі, і направлення
+справи для продовження розгляду до суду першої інстанції.
+
+Отже, ця стаття надає суду апеляційної інстанції повноваження щодо перегляду
+ухвал суду першої інстанції, які можуть бути окремо оскаржені від рішення суду
+та перешкоджають подальшому провадженню у справі.
+
+Переліку ухвал, які одночасно відповідають двом зазначеним вимогам, КАС
+України не встановлює, оскільки серед передбачених статтею 294 цього Кодексу
+ухвал, на які можуть бути подані апеляційні скарги окремо від рішення суду, є як
+ухвали, що перешкоджають провадженню у справі (щодо повернення заяви
+позивачеві (заявникові), відмови у відкритті провадження у справі, зупинення
+провадження у справі, залишення позову (заяви) без розгляду тощо), так і ухвали,
+які провадженню у справі не перешкоджають (щодо забезпечення доказів, відмови
+в забезпеченні доказів, скасування ухвали про забезпечення доказів; призначення
+експертизи; визначення розміру судових витрат; роз’яснення або відмови
+у роз’ясненні судового рішення тощо).
+
+У статті 237 КАС України закріплене диспозитивне право кожного учасника
+справи звернутися до суду з клопотанням про поновлення провадження у справі.
+Наслідки розгляду такого клопотання впливають на можливість подальшого
+
+розгляду справи.
+
+У визначеному статтею 294 КАС України переліку ухвал, на які можуть бути
+подані апеляційні скарги окремо від рішення суду, є ухвала суду першої інстанції
+щодо зупинення провадження у справі, яка безспірно перешкоджає подальшому
+
+провадженню у справі, проте відсутня ухвала суду про відмову в поновленні
+провадження у справі, постановлена відповідно до статті 237 КАС України.
+
+Водночас суть та правові наслідки ухвали про відмову в поновленні
+провадження у справі дають підстави для висновку, що така ухвала так само
+перешкоджає подальшому руху справи та впливає на строки її розгляду, оскільки
+у такому випадку продовжує свою дію ухвала про зупинення провадження у справі.
+
+Отже, тлумачення статті 294 КАС України стосовно оскарження
+в апеляційному порядку ухвал суду першої інстанції окремо від рішення суду має
+відбуватися з урахуванням того, чи перешкоджає така ухвала подальшому
+провадженню у справі, та можливості / неможливості поновити свої права особою,
+яка подає апеляційну скаргу, в інший спосіб, аніж шляхом оскарження
+в апеляційному порядку ухвали суду першої інстанції окремо від рішення суду.
+
+Велика Палата Верховного Суду зауважує, що процесуальні ухвали, які
+перешкоджають подальшому провадженню у справі, є такими, що впливають
+на строк розгляду справи та, відповідно, належать до переліку ухвал, апеляційний
+перегляд яких повинен здійснюватися задля перевірки дотримання права учасника
+процесу на справедливий суд.
+
+Вирішуючи правову проблему щодо можливості оскарження ухвали суду
+першої інстанції про відмову в поновленні провадження у справі окремо від
+рішення суду, Велика Палата Верховного Суду висновує, що така ухвала підлягає
+оскарженню в апеляційному порядку як така, що перешкоджає подальшому
+провадженню у справі, оскільки поновити свої права особою, яка подає апеляційну
+скаргу, в інший спосіб, аніж шляхом оскарження в апеляційному порядку ухвали
+суду першої інстанції окремо від рішення суду, неможливо.
+
+Велика Палата Верховного Суду вважає, що висновок суду апеляційної
+інстанції про відмову у відкритті апеляційного провадження на ухвалу суду першої
+інстанції про відмову в поновленні провадження, яка перешкоджає подальшому
+провадженню у справі, суперечить верховенству права, а також ефективному
+захисту порушених прав і свобод людини та не відповідає принципу розумності
+строків розгляду справи.
+
+З огляду на зазначене Велика Палата Верховного Суду також вважає
+за необхідне відступити від висновків судової палати з розгляду справ щодо
+виборчого процесу та референдуму, а також захисту політичних прав громадян
+Касаційного адміністративного суду у складі Верховного Суду, викладених
+у постанові від 12 березня 2024 року у справі № 640/12926/20, згідно з яким немає
+підстав для окремого оскарження ухвали суду першої інстанції про відмову
+в поновленні провадження у справі, яке зупинене ухвалою суду.
+
+Детальніше з текстом постанови ВП ВС від 21 листопада 2024 року у справі № 806/5175/14 можна
+[ознайомитись за посиланням: https://reyestr.court.gov.ua/Review/123283346](https://reyestr.court.gov.ua/Review/123283346)
+
+### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+
+### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.3_segment.md № 160/24663/23 100100 плата за навчання робоча група з розгляду питань примусового відчуження або вилучення семантичний мапінг з урахуванням юрисдикції вп вс. обрано рубрику «плата за навчання» (законодавство з питань освіти, науки, культури / плата за навчання).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">02.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123313995" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/24663/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>79% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100100</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Плата за навчання</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Робоча група з розгляду питань примусового відчуження або вилучення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВП ВС. Обрано рубрику «Плата за навчання» (Законодавство з питань освіти, науки, культури / Плата за навчання).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Справи, розглянуті з підстав необхідності відступу від висновку,
+
+2.3. Цивільна юрисдикція
+
+Робоча група з розгляду питань примусового відчуження або вилучення
+майна у зв’язку із запровадженням та виконанням заходів правового режиму
+воєнного стану, утворена розпорядженням військової адміністрації, до якої входить
+військове командування, є спеціально уповноваженим колективним органом, який
+в межах визначених повноважень та у відповідності до вимог чинного
+законодавства зобов’язаний ухвалювати рішення про відчуження транспортних
+засобів, для забезпечення виконання завдань з оборони України, її територіальної
+цілісності та недоторканності
+
+Велика Палата Верховного Суду розглянула справу за позовом ОСОБА_1
+до військової частини, Черкаської обласної державної адміністрації (Черкаської
+обласної військової адміністрації) про визнання рішень безпідставними
+та повернення майна за касаційною скаргою військової частини на постанову
+Черкаського апеляційного суду від 19 вересня 2023 року, і прийняла постанову,
+в якій зазначила таке.
+
+ОБСТАВИНИ СПРАВИ
+18 липня 2022 року робоча група з розгляду питань примусового відчуження
+або вилучення майна у зв’язку із запровадженням та виконанням заходів
+правового режиму воєнного стану протокольним рішенням ухвалила примусово
+відчужити транспортний засіб, належний позивачці, на користь військової частини
+шляхом складення акта відповідного зразка.
+
+Протокол оперативної наради робочої групи від 18 липня 2022 року складено,
+зокрема, спільно начальником Черкаського обласного штабу; начальником ТЦК;
+командиром військової частини.
+
+Актом від 11 серпня 2022 року, підписаним усіма членами робочої групи,
+здійснено примусове відчуження транспортного засобу – спірного автомобіля
+на користь військової частини.
+
+Позивачка наголошувала на відсутності підстав для відчуження автомобіля,
+акцентуючи увагу на невчиненні водієм транспортного засобу адміністративного
+правопорушення (що, на її думку, було основним мотивом для ініціювання питання
+реквізиції її майна), непропорційному втручанні у її право власності (за
+недоведеності необхідності відчуження саме її автомобіля для потреб держави)
+та неналежному оформленні акта, за яким її автомобіль було відчужено на користь
+військової частини.
+
+Апеляційний суд частково задовольнив позовні вимоги, визнав протиправним
+та скасував рішення про примусове вилучення автомобіля, зобов’язав військову
+частину повернути автомобіль позивачці. Суд виходив з того, що на розгляд
+робочої групи можуть передаватися питання щодо відчуження транспортного
+засобу, яким керував водій у стані алкогольного сп’яніння, що в цьому випадку не
+мало місця.
+
+Звертаючись з касаційною скаргою, військова частина посилалася на те,
+що автомобіль позивачки був реквізований у зв’язку з необхідністю забезпечення
+потреб держави в умовах правового режиму воєнного стану. Рішення про
+відчуження спірного транспортного засобу прийняте робочою групою як належним
+військовим командуванням у порядку, встановленому законом.
+
+ПОЗИЦІЯ ВЕЛИКОЇ ПАЛАТИ ВЕРХОВНОГО СУДУ
+Стаття 4 Закону України «Про передачу, примусове відчуження або вилучення
+майна в умовах правового режиму воєнного чи надзвичайного стану» передбачає,
+що примусове відчуження або вилучення майна у зв’язку із запровадженням
+та виконанням заходів правового режиму воєнного стану здійснюється
+за рішенням військового командування, погодженим відповідно з органом
+військового управління, визначеним Міністерством оборони України, Радою
+міністрів Автономної Республіки Крим, обласною, районною, Київською
+чи Севастопольською міською державною адміністрацією або виконавчим
+органом відповідної місцевої ради, крім випадків, передбачених частиною третьою
+цієї статті.
+
+Відповідно до частини першої статті 3 Закону України «Про правовий режим
+воєнного стану» військовим командуванням, якому згідно з цим Законом
+надається право разом з органами виконавчої влади, військовими адміністраціями,
+Радою міністрів Автономної Республіки Крим та органами місцевого
+самоврядування запроваджувати та здійснювати заходи правового режиму
+воєнного стану, є: Головнокомандувач Збройних Сил України, Командувач
+об’єднаних сил Збройних Сил України, командувачі видів та окремих родів військ
+(сил) Збройних Сил України, командувачі (начальники) органів військового
+управління, командири з’єднань, військових частин Збройних Сил України та інших
+утворених відповідно до законів України військових формувань.
+
+Розпорядженням Черкаської обласної військової адміністрації від
+04 березня 2022 року № 97 «Про робочу групу з розгляду питань примусового
+відчуження або вилучення майна у зв’язку із запровадженням та виконанням
+заходів правового режиму воєнного стану» утворено робочу групу з розгляду
+питань примусового відчуження або вилучення майна у зв’язку із запровадженням
+та виконанням заходів правового режиму воєнного стану та затверджено її склад
+
+за посадами.
+
+До складу названої робочої групи входять, зокрема, начальник Черкаського
+обласного штабу, начальник ТЦК, командир військової частини. Вказані особи
+відповідно до наведених вище нормативно-правових актів належать до суб’єктів,
+
+котрі зобов’язаних спільно запроваджувати та здійснювати заходи правового
+
+режиму воєнного стану.
+
+Таким чином, згадана робоча група з розгляду питань примусового
+відчуження або вилучення майна у зв’язку із запровадженням та виконанням
+заходів правового режиму воєнного стану є спеціально уповноваженим
+колективним органом, який в межах визначених повноважень та у відповідності
+до вимог чинного законодавства зобов’язаний ухвалювати рішення про відчуження
+транспортних засобів, для забезпечення виконання завдань з оборони України, її
+територіальної цілісності та недоторканності, а також усунення наслідків
+або запобігання тим наслідкам, що виникли або можуть виникнути в період
+
+воєнного стану.
+
+Зі змістом акта було ознайомлено представника власника та відповідно
+до положень частини п’ятої статті 7 Закону України «Про передачу, примусове
+відчуження або вилучення майна в умовах правового режиму воєнного
+чи надзвичайного стану» було зазначено, що оцінку транспортного засобу буде
+проведено у встановлений законодавством термін. Примірник акта було також
+направлено власниці автотранспортного засобу.
+
+Таким чином, Велика Палата Верховного Суду висновує, що автомобіль
+позивачки відчужений з дотриманням приписів законодавства України
+уповноваженим на те органом, тому відсутні підстави для зобов’язання військової
+частини повернути цей автомобіль колишньому власнику.
+
+Разом з тим, Велика Палата Верховного Суду зауважила, що позивачка обрала
+неналежний (неефективний) спосіб судового захисту. Акт про примусове
+відчуження та вилучення майна не є правовстановлюючим документом, а лише
+засвідчує факт приймання-передачі майна, щодо якого прийняте рішення про його
+реквізицію. Підписання цього акта є лише етапом документального оформлення
+процедури реквізиції. Скасування цього акта не буде підставою для скасування
+реєстрації права власності військової частини на примусово відчужене майно.
+
+Більше того, скасування вказаного акта не тільки не призведе до відновлення
+її прав, а й позбавить можливості на відшкодування вартості майна у порядку
+частини другої статті 11 Закону України «Про передачу, примусове відчуження
+або вилучення майна в умовах правового режиму воєнного чи надзвичайного
+стану» після скасування правового режиму воєнного стану.
+
+Оспорене протокольне рішення робочої групи, погоджене листом начальника
+Черкаської обласної військової адміністрації, вже виконане, а тому вичерпало свою
+дію. Скасування зазначеного документа жодним чином не поверне спірний
+автомобіль у власність позивачки і не спростує існування документа при вирішенні
+питання щодо відчуження транспортного засобу. Це ж стосується оспореного листа
+начальника, який не є актом індивідуальної дії.
+
+Крім того, пред’явлена позивачкою вимога про зобов’язання військової
+частини повернути їй як власнику згаданий автомобіль та ключі від нього також є
+неналежним способом захисту у спірних правовідносинах з огляду на те,
+що спірний транспортний засіб пройшов нову реєстрацію і після цього перебуває
+
+у власності держави і, відповідно, користуванні – військового підрозділу Збройних
+Сил України.
+
+За таких обставин Велика Палата Верховного Суду вважає, що постанова
+апеляційного суду підлягає скасуванню, а рішення місцевого суду потрібно змінити,
+відмовивши в задоволенні позову з наведених вище підстав.
+
+Також Велика Палата Верховного Суду вважає, що втручання у право
+власності позивачки переслідувало легітимну мету та було пропорційним
+у співвідношенні до суспільних інтересів. В Україні із 24 лютого 2022 року діє
+воєнний стан внаслідок збройної агресії російської федерації. Зусилля державних
+органів, Збройних Сил України, інших військових формувань спрямовані насамперед
+на захист життя і здоров’я мільйонів людей, значних зусиль і засобів потребує
+захист незалежності та територіальної цілісності України, що, окрім іншого, є
+обов’язком кожного громадянина України.
+
+Збройні Сили України мають гостру потребу в забезпеченні матеріальними
+ресурсами, у тому числі автомобільною технікою, для належного виконання
+
+визначених перед ними завдань.
+
+Військова частина підтвердила використання нею реквізованого автомобіля
+для виконання завдань по обороні України. У свою чергу, позивачка не навела
+переконливих аргументів на підтвердження того, що відчуження її автомобіля для
+потреб держави в умовах воєнного стану (з можливістю отримати належну грошову
+компенсацію) становитиме для неї надмірний тягар.
+
+Втручання у право власності позивачки відповідає критерію законності,
+оскільки відбулося у чітко регламентованому, зрозумілому порядку.
+
+Детальніше з текстом постанови ВП ВС від 23 жовтня 2024 року у справі № 712/3525/23 можна
+[ознайомитись за посиланням: https://reyestr.court.gov.ua/Review/123313995](https://reyestr.court.gov.ua/Review/123313995)
+
+3. Справи, прийняті до провадження Великою Палатою Верховного Суду
+
+1. Суд, який направив справу: КЦС ВС
+Дата прийняття ухвали: 20 листопада 2024 року
+Справа № 761/382/21 (провадження № 14-132цс24)
+Сторони / предмет: ОСОБА_1 до ТОВ «Фінансова компанія «Локо», ОСОБА_2 про
+визнання права власності, витребування майна із чужого незаконного володіння,
+визнання недійсним договору іпотеки та скасування рішень державних
+реєстраторів.
+Суддя-доповідач: Мартєв С. Ю.
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Верховного Суду та Верховного Суду України.
+Опис: КЦС ВС вважає за необхідне відступити від правового висновку, викладеного
+у постановах ВСУ від 08 квітня 2015 року у справі № 6-33цс15 та КГС ВС
+від 25 серпня 2020 року у справі № 905/1959/19 щодо застосування статей 1281,
+
+1282 ЦК України до правовідносин кредитора та спадкоємців іпотекодавця
+(майнового поручителя), який не був основним боржником.
+
+4. Справи, повернуті Великою Палатою Верховного Суду на розгляд касаційних судів
+
+1. Суд, який направив справу: КГС ВС
+Дата прийняття ухвали: 30 жовтня 2024 року
+Справа № 910/18526/21 (провадження № 12-54гс24)
+Сторони / предмет: ФГВФО до 25 фізичних осіб про стягнення 2 679 888 731,86 грн,
+Суддя-доповідач: Ткач І. В.
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Великої Палати Верховного Суду та Верховного Суду; виключна правова
+проблема.
+Опис: на думку КГС ВС, існує необхідність відступити від правового висновку ВП ВС
+та КЦС ВС про те, що вкладникам банку не завдано збитків чи шкоди до моменту
+припинення неплатоспроможного банку як юридичної особи. Разом з тим, КГС ВС
+вважає, що існує виключна проблема щодо підсудності спорів між ФГВФО
+і посадовими особами банку про відшкодування шкоди заподіяної третій особі.
+Позиція ВП ВС: КГС ВС не вказав конкретних причин необхідності відступу від
+висновку ВП ВС та КЦС ВС, та не обґрунтував підстав для передачі цієї справи
+на розгляд ВП ВС. А також КГС ВС не навів ні кількісних, ні якісних критеріїв
+наявності виключної правової проблеми.
+
+2. Суд, який направив справу: КЦС ВС
+Дата прийняття ухвали: 30 жовтня 2024 року
+Справа № 757/18879/20-ц (провадження № 14-127цс24)
+Сторони / предмет: перший заступник керівника Подільської окружної прокуратури
+міста Києва в інтересах держави в особі Київської міської ради до ОСОБА_1,
+ОСОБА_2, ОСОБА_3 про визнання правочину недійсним, визнання спадщини
+відумерлою, скасування державної реєстрації та витребування майна.
+Суддя-доповідач: Ступак О. В.
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Великої Палати Верховного Суду.
+Опис: на думку КЦС ВС, існує необхідність відступити від правового висновку     ВП
+ВС, викладеного у постанові від 14 грудня 2022 року у справі № 461/12525/15 про
+те, що належним способом захисту інтересу територіальної громади в отриманні
+спадкового майна як відумерлого в разі відчуження спадкового майна особою, яка
+не є спадкоємцем, на користь добросовісного набувача є виключно відшкодування
+вартості спадкового майна.
+
+Позиція ВП ВС: порівнюючи обставини справи № 757/18879/20 з обставинами
+у справі № 461/12525/15, ВП ВС вважає, що правовідносини, з яких виникли спори
+в цих справах, не є подібними. У справі № 461/12525/15 один з відповідачів набув
+право власності на нерухоме майно в порядку спадкування, отримавши свідоцтво
+про право на спадщину за законом на підставі судового рішення. Натомість
+у справі № 757/18879/20 відповідач набув право власності на спірне нерухоме
+майно на підставі підробленого, на думку прокурора, договору дарування.
+
+3. Суд, який направив справу: КЦС ВС
+Дата прийняття ухвали: 31 жовтня 2024 року
+Справа № 760/13367/14-ц (провадження № 14-120цс24)
+Сторони / предмет: ОСОБА_1 про визнання виконавчого листа, виданого
+Солом’янським районним судом міста Києва на виконання рішення від
+16 грудня 2014 року, про стягнення заборгованості з ОСОБА_1 на користь ПАТ
+«Альфа-банк» таким, що не підлягає виконанню.
+Суддя-доповідач: Погрібний С. О.
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Верховного Суду.
+Опис: на думку КЦС ВС, існує необхідність відступити від правового висновку КАС
+ВС, викладеного у постанові від 30 вересня 2020 року у справі № 819/523/16
+(шляхом конкретизації) про можливість перегляду в касаційному порядку ухвал
+суду першої інстанції після їх перегляду апеляційним судом щодо визнання
+виконавчого листа таким, що не підлягає виконанню.
+Позиція ВП ВС: ВП ВС зазначила, що у постанові від 30 вересня 2020 року у справі
+№ 819/523/16 КАС ВС не формулював висновків про можливість оскарження
+в касаційному порядку судових рішень щодо визнання виконавчого листа таким,
+що не підлягає виконанню.
+
+4. Суд, який направив справу: КЦС ВС
+Дата прийняття ухвали: 06 листопада 2024 року
+Справа № 369/3056/21 (провадження № 14-131цс24)
+Сторони / предмет: ОСОБА_1 до ОСОБА_2 про визнання майна спільною сумісною
+власністю та його поділ.
+Суддя-доповідач: Мартєв С. Ю.
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Верховного Суду України.
+Опис: на думку КЦС ВС, існує необхідність відступити від правового висновку
+Верховного Суду України, викладеного у постановах від 09 грудня 2015 року
+у справі № 6-814цс15 та від 16 грудня 2015 року у справі № 6-2710цс15 шляхом
+конкретизації щодо підстав припинення права власності на земельну ділянку
+(частку в праві на неї) у зв’язку з набуттям іншою особою права власності
+
+на жилий будинок, будівлю або споруду, які розташовані на такій земельній
+ділянці, за рішенням суду у справах про поділ спільного майна подружжя (визнання
+права на частку в праві спільної власності подружжя без вимог щодо поділу майна
+в натурі).
+Позиція ВП ВС: фактичні обставини у справах № 6-814цс15, №6-2710цс15
+та у справі № 369/3056/21, що розглядається, не є подібними та відрізняються,
+окрім цього у відповідних постановах ВСУ не формулюванні висновки з приводу
+підстав припинення права власності на земельну ділянку (частку у праві на неї)
+у зв’язку з набуттям іншою особою права власності на жилий будинок, будівлю
+або споруду, які були розташовані на такій земельній ділянці, однак були знищені
+під час розгляду справи, за рішенням суду у справах про поділ спільного майна
+подружжя (визнання права на частку в праві спільної власності подружжя без
+вимог щодо поділу майна в натурі).
+
+5. Суд, який направив справу: КАС ВС
+Дата прийняття ухвали: 07 листопада 2024 року
+Справа № 160/24663/23 (провадження № 11-223апп24)
+Сторони / предмет: ОСОБА_1 до ГУ Національної поліції в Черкаській області,
+Державної казначейської служби України про відшкодування моральної шкоди.
+Суддя-доповідач: Усенко Є. А.
+Підстава передачі на розгляд ВП ВС: виключна правова проблема.
+Опис: на думку КАС ВС, існує виключна проблема щодо визначення предметної
+юрисдикції справ стосовно відшкодування моральної шкоди, спричиненої
+професійним захворюванням, набутим під час проходження служби в органах
+внутрішніх справ.
+Позиція ВП ВС: КАС ВС не навів посилання на кількісні та якісні показники, які б
+свідчили про те, що передача справи № 160/24663/23 на розгляд ВП ВС необхідна
+для забезпечення розвитку права та формування єдиної правозастосовної
+практики. Натомість ВП ВС зауважила, що вже робила висновок про предметну
+юрисдикцію спору у правовідносинах, подібних тим, спір щодо прав і обов’язків
+сторін в яких просить вирішити позивач у цій справі.
+
+6. Суд, який направив справу: КЦС ВС
+Дата прийняття ухвали: 13 листопада 2024 року
+Справа № 725/5919/19 (провадження № 14-133цс24)
+Сторони / предмет: ОСОБА_1 до приватного виконавця АТ «ОТП Банк», ТОВ «ФайнПром», ДП «Сетам» про визнання торгів недійсними .
+Суддя-доповідач: Воробйова І. А.
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Верховного Суду; виключна правова проблема.
+Опис: КЦС ВС вважає за необхідне відступити від висновку КГС ВС, викладеного
+у постанові від 20 квітня 2023 року у справі № 918/351/21 (918/955/21), щодо
+
+ефективності вимог про визнання недійсними результатів електронних торгів,
+свідоцтва про придбання нерухомого майна з прилюдних торгів і припинення права
+власності за подібних правовідносин у спорах про захист прав власника (законного
+користувача) майна, яке було відчужене в процедурі примусового виконання
+судового рішення та вирішити виключну правову проблему щодо ефективного
+способу захисту прав власника (законного користувача) у спорі про продаж його
+майна на торгах під час примусового виконання судового рішення, якщо він не є
+стороною договору купівлі-продажу, укладеного з переможцем торгів.
+Позиція ВП ВС: КЦС ВС не обґрунтував існування якісного показника щодо
+вирішення порушених ним питань. Крім того, ВП ВС зауважила, що вже надавала
+відповіді на поставлені питання щодо ефективного способу захисту прав власника
+у відповідних спорах. ВП ВС вважає, що обставини справ № 918/351/21
+(918/955/21) не є подібними до обставин справи, яка переглядається, і правові
+підстави пред’явлених цих позовів є відмінними.
+
+7. Суд, який направив справу: КЦС ВС
+Дата прийняття ухвали: 13 листопада 2024 року
+Справа № 2-747/11 (провадження № 14-130цс24)
+Сторони / предмет: ПАТ «Райффайзен Банк Аваль» до ОСОБА_1, ОСОБА_2, ОСОБА_3
+про стягнення заборгованості за кредитними договорами.
+Суддя-доповідач: Воробйова І. А.
+Підстава передачі на розгляд ВП ВС: виключна правова проблема.
+Опис: на думку КЦС ВС, справа містить виключну правову проблему щодо
+застосування процесуальних норм ГПК України, КАС України та ЦПК України
+в частині можливості касаційних судів ухвалювати судові рішення по суті питання
+про перегляд рішення суду першої чи апеляційної інстанції за нововиявленими
+обставинами й самостійно його вирішувати.
+Позиція ВП ВС: КЦС ВС, стверджуючи про наявність виключної правової проблеми,
+фактично ставить питання про відступ від своїх же висновків, що належить
+до компетенції палати або об’єднаної палати цього ж суду, а не до повноважень
+ВП ВС.
+
+8. Суд, який направив справу: КГС ВС
+Дата прийняття ухвали: 13 листопада 2024 року
+Справа № 911/2506/23 (провадження № 12-60гс24)
+Сторони / предмет: ПрОА «Україна» до Переяславської міської ради, КП
+«Переяславське виробниче управління комунального господарства Переяславської
+міської ради», державного реєстратора Вікторівни Виконавчого комітету
+Переяславської міської ради Київської області про визнання права постійного
+користування, визнання протиправним та скасування рішення, а також про
+скасування рішень про державну реєстрацію права постійного користування.
+Суддя-доповідач: Власов Ю. Л.
+
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Великої Палати Верховного Суду.
+Опис: КГС ВС вважає за необхідне відступити від висновку ВП ВС, викладеного
+у постанові від 01 вересня 2020 року у справі № 907/29/19 шляхом уточнення про
+те, що в разі реорганізації колективного сільськогосподарського підприємства
+(КСП) шляхом перетворення його на іншу юридичну особу, колишні члени КСП
+автоматично мають стати учасниками новоствореної юридичної особи.
+Позиція ВП ВС: правовідносини у справах № 907/29/19 та № 911/2506/23 не є
+подібними: у справі № 911/2506/23 спір виник у відносинах створення
+та правонаступництва приватної орендної агрофірми прав, що належали КСП,
+а у справі № 907/29/19 – у відносинах правонаступництва фермерського
+господарства прав, що належали КСП. Крім того, ВП ВС не формувала
+універсальний висновок, що склад учасників реорганізованої та перетвореної
+юридичних осіб має бути однаковим за будь-яких обставин.
+
+9. Суд, який направив справу: КЦС ВС
+Дата прийняття ухвали: 20 листопада 2024 року
+Справа № 307/3096/22 (провадження № 14-124цс24)
+Сторони / предмет: ОСОБА_1 до ОСОБА_2 про визначення порядку користування
+спільною сумісною власністю.
+Суддя-доповідач: Ткачук О. С.
+Підстава передачі на розгляд ВП ВС: виключна правова проблема.
+Опис: на думку КЦС ВС, справа містить виключну правову проблему щодо того,
+чи може співвласник майна подружжя в разі відмови в позові про поділ майна
+подружжя з підстав пропущення позовної давності в судовий спосіб захистити своє
+право, зокрема шляхом установлення порядку користування або виділу його частки
+в майні.
+Позиція ВП ВС: твердження КЦС ВС про наявність виключної правової проблеми є
+передчасним, оскільки подібних до цієї справи фактичних обставин у справах,
+що перебували на розгляді у судів апеляційної та касаційної інстанції за останні
+роки не існувало.
+
+10. Суд, який направив справу: КГС ВС
+Дата прийняття ухвали: 20 листопада 2024 року
+Справа № 917/2033/21 (провадження № 12-59гс24)
+Сторони / предмет: заступник керівника Полтавської обласної прокуратури
+до державного реєстратора Сухинівської сільської ради Кобеляцького району
+Полтавської області, АТ «Укрпошта» про визнання незаконним та скасування
+рішення про державну реєстрацію, припинення права власності, визнання права
+власності за державою.
+Суддя-доповідач: Ткач І. В.
+
+Підстава передачі на розгляд ВП ВС: відступлення від висновку щодо застосування
+норми права у подібних правовідносинах, викладеного в раніше ухваленому
+рішенні Великої Палати Верховного Суду; виключна правова проблема.
+Опис: на думку КГС ВС, існує необхідність відступити від правового висновку ВП ВС,
+викладеного у постанові від 03 квітня 2024 у справі № 917/1212/21 (шляхом
+уточнення) про те, що державне майно, передане державою до статутного фонду
+державного унітарного підприємства, корпоратизованого в акціонерне товариство,
+100 % акцій статутного фонду якого залишаються у власності держави, до моменту
+завершення процедури приватизації є державною власністю.
+Позиція ВП ВС: КГС ВС не вказав конкретних причин необхідності відступу від
+висновку ВП ВС, зокрема у чому полягає його практична неефективність,
+необґрунтованість, помилковість, застарілість унаслідок зміни суспільного
+контексту чи розвитку суспільних відносин у певній сфері або їх правового
+регулювання тощо, а також КГС ВС не навів ні кількісних, ні якісних критеріїв
+наявності виключної правової проблеми у справі № 917/2033/21.
+
+Дайджест судової практики Великої Палати Верховного Суду. Рішення, внесені до
+ЄДРСР за період з 01.11.2024 по 30.11.2024 / Упоряд.: сектор систематизації
+практики Верховного Суду департаменту аналітичної та правової роботи Апарату
+Верховного Суду / Відпов. за вип.: Секретар ВП ВС, д-р юрид. наук, професор, членкореспондент НАПрН України В.Ю. Уркевич. Київ, 2024. Вип. 49. – 23 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 4;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

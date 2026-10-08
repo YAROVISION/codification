@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KKS_prusiagni — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KKS_prusiagni та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KKS_prusiagni.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KKS_prusiagni</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">3</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">80.3%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 3 із 3</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md № 725/3927/16к 60 20120 40 розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата судового розгляду семантичний мапінг з урахуванням юрисдикції ккс вс. обрано рубрику «розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/91572010" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 725/3927/16к</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>судового розгляду</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ККС ВС. Обрано рубрику «Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Роз’яснення права на суд присяжних на стадії досудового розслідування
+
+1. Відбір присяжних, зміна складу присяжних або даних про присяжних у ході
+
+судового розгляду
+
+У касаційній скарзі сторона захисту стверджує, що провадження розглянуто
+незаконним складом суду, оскільки повноваження у  присяжних на час розгляду
+цього провадження закінчились.
+
+На виконання вимог ч. 1 ст. 60 Закону «Про судоустрій і статус суддів» (далі
+– Закон № 2453-VI) для затвердження списку присяжних територіальне
+управління Державної судової адміністрації України звертається
+
+з поданням до відповідної місцевої ради, що формує і затверджує
+у кількості, зазначеній у поданні, список громадян, які постійно
+проживають на території, на яку поширюється юрисдикція відповідного
+суду, відповідають вимогам ст. 61 цього Закону і дали згоду бути
+
+присяжними.
+
+Згідно з ч. 3 вказаної статті Закону № 2453-VI список присяжних
+затверджується на два роки і переглядається в разі необхідності для
+заміни осіб, які вибули зі списку, за поданням територіального управління
+Державної судової адміністрації України.
+
+За матеріалами провадження, виконуючи вимоги ст. 60 Закону № 2453-VI,
+територіальне управління Державної судової адміністрації України
+направило подання до районної ради щодо затвердження списку
+присяжних для районного суду.
+
+Рішенням районної ради з посиланням на норми законодавства України,
+зокрема на КПК і Закон № 2453-VI, було затверджено список присяжних
+для районного суду у кількості 15 осіб.
+
+При цьому відповідно до положень ч. 3 ст. 60 Закону № 2453-VI
+закінчувались повноваження присяжних, затверджених раніше.
+
+З матеріалів провадження вбачається, що у зв’язку із закінченням
+повноважень присяжних територіальне управління Державної судової
+адміністрації України знову направило подання до районної ради щодо
+затвердження списку присяжних для районного суду.
+
+Рішенням районної ради на підставі вказаного подання з посиланням
+на норми законодавства України, зокрема на КПК і Закон № 2453-VI, було
+затверджено новий список присяжних у кількості 15 осіб, серед яких був
+новий присяжний, та продовжено термін повноважень попередніх
+присяжних, затверджених рішенням районної ради у кримінальному
+провадженні щодо обвинуваченого, до моменту завершення судового
+
+розгляду цього провадження.
+
+Враховуючи наведене, суд присяжних у цьому кримінальному провадженні
+утворений відповідно до вимог законодавства України, а повноваження
+присяжних у цьому провадженні не припинялися до ухвалення
+обвинувального вироку, що підтверджено перевіркою матеріалів
+кримінального провадження з урахуванням вимог законодавства.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 10.09.2020 у справі № 504/3802/15[к (провадження № 51-8786км18) https://reyestr.court.gov.ua/Review/91572010](https://reyestr.court.gov.ua/Review/91572010)
+
+У касаційній скарзі сторона захисту зазначає, що розгляд кримінального
+провадження в суді першої інстанції всупереч вимогам ст. 387 КПК проведено
+незаконним складом суду, а саме за відсутності одного запасного присяжного.
+
+Частиною 10 ст. 387 КПК визначено, що запасні присяжні під час судового
+засідання постійно перебувають на відведених їм місцях і до ухвалення
+вироку можуть бути включені до складу основних присяжних у разі
+неможливості кого-небудь з основних присяжних продовжувати участь
+у судовому розгляді. Про заміну вибулих основних присяжних запасними
+
+суд присяжних постановляє ухвалу.
+
+Суд апеляційної інстанції встановив, що всі судові засідання в цьому
+кримінальному провадженні проведено повноважним судом у складі двох
+суддів, а також трьох присяжних. Будь-якої заміни основних присяжних не
+
+проводилося.
+
+Вимоги ст. 387 КПК були дотримані судом першої інстанції, оскільки
+постійне перебування запасного присяжного під час судового розгляду
+на відведеному йому місці є гарантією забезпечення права
+на справедливий розгляд та вирішення справи в розумні строки
+незалежним і неупередженим судом, створеним на підставі закону, де
+за умови вибуття основних присяжних, в КПК встановлений порядок їх
+заміни запасними. За незмінності складу суду та відсутності підстав для
+заміни основного присяжного, зазначене в касаційній скарзі порушення
+
+процесуального закону не перешкодило ухваленню законного судового
+рішення.
+
+Відсутність запасного присяжного в окремих судових засіданнях у ході
+розгляду кримінального провадження не є тим істотним порушенням
+кримінального процесуального закону, яке вплинуло на правильність
+ухваленого судового рішення, його законність та обґрунтованість, та не є
+підставою для скасування оскаржених рішень.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 10.03.2021 у справі № 676/6211/16к (провадження № 51-3919км20) https://reyestr.court.gov.ua/Review/95509374
+
+У касаційній скарзі захисник стверджує, що вирок суду першої інстанції
+постановлений незаконним складом суду, оскільки згідно зі звітом
+автоматизованого розподілу справ визначення та відібрання присяжних було
+проведено з порушенням процедури відведення попередньо відібраних через
+автоматизований розподіл присяжних, зокрема, без проведення жодного
+судового засідання, яке безумовно мало проходити за правилами ст. 387 КПК.
+
+Слід відрізняти процедури виклику присяжних згідно з положеннями
+ст. 385 КПК (попередній відбір присяжних) та відбору присяжних
+у порядку, передбаченому ст. 387 КПК.
+
+Виклик (попередній відбір) присяжних згідно з положеннями ст. 385 КПК
+здійснюється на підставі розпорядження головуючого секретарю судового
+засідання, яке є підставою для визначення присяжних в кількості семи осіб
+
+автоматизованою системою документообігу суду з числа осіб, які внесені
+
+до списку присяжних.
+
+А вже під час відбору присяжних за правилами ч. 5 ст. 387 КПК виключно
+ухвалою суду у складі двох суддів вирішуються питання, пов’язані
+зі звільненням присяжних від участі в розгляді кримінального
+провадження, а також із самовідводом і відводом присяжних.
+
+З матеріалів кримінального провадження вбачається, що згідно
+з протоколом попереднього відбору присяжних було попередньо відібрано
+сім присяжних.
+
+Однак, в судовому засіданні процедури відбору присяжних не відбулося,
+оскільки суддя знаходився у відпустці. Водночас було з’ясовано,
+що рішенням міської ради списки присяжних були змінені і затвердженні
+нові списки, а тому у суду вже не було підстав здійснювати відбір
+присяжних з числа тих осіб, які були визначені згідно з ч. 1 ст. 385 КПК
+за списками присяжних, які вже не були чинними на час проведення
+судового засідання, як і вирішувати питання про їх відведення відповідно
+до ч. 5 ст. 387 КПК.
+
+Підставою ж для проведення нового виклику присяжних (попереднього їх
+відбору автоматизованою системою документообігу суду) слугувало
+рішення міської ради.
+
+Таким чином, судом першої інстанції були дотримані вимоги ст. ст. 385, 387
+КПК, а відбір присяжних, було проведено відповідно до нового списку,
+затвердженого рішення міської ради.
+
+При цьому сторона захисту, будучи ознайомленою з усіма підготовчими
+діями щодо виклику (попереднього відбору) присяжних, в суді першої
+інстанції під час судового розгляду не заявляла жодних відводів такому
+
+складу суду.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 30.07.2019 у справі № 725/3927/16к (провадження № 51-4798км18) https://reyestr.court.gov.ua/Review/83482698
+
+### 2. Роз’яснення права на суд присяжних у ході судового розгляду, а не під час
+
+### 2. Роз’яснення права на суд присяжних у ході судового розгляду, а не під час
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md № 607/5441/23 260 10 40 участь громадськості у виправленні та перевихованні засуджених в кримінальному провадженні семантичний мапінг з урахуванням юрисдикції ккс вс. обрано рубрику «участь громадськості у виправленні та перевихованні засуджених» (виправно-трудове законодавство / виправно-трудове законодавство / участь громадськості у виправленні та перевихованні засуджених).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124754858" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 607/5441/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">260 10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Участь громадськості у виправленні та перевихованні засуджених</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>в кримінальному провадженні</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ККС ВС. Обрано рубрику «Участь громадськості у виправленні та перевихованні засуджених» (Виправно-трудове законодавство / Виправно-трудове законодавство / Участь громадськості у виправленні та перевихованні засуджених).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Роз’яснення права на суд присяжних у ході судового розгляду, а не під час
+
+2. Обставини, що виключають участь слідчого судді, судді або присяжного
+в кримінальному провадженні
+
+У касаційній скарзі засуджений посилається на те, що до судового розгляду
+було допущено присяжного, який на той момент був чоловіком керівника апарату
+місцевого суду.
+
+Положеннями ст. 75 КПК передбачено, що присяжний не може брати
+участь у кримінальному провадженні:
+
+1) якщо він є заявником, потерпілим, цивільним позивачем, цивільним
+відповідачем, близьким родичем чи членом сім’ї слідчого, прокурора,
+
+підозрюваного, обвинуваченого, заявника, потерпілого, цивільного
+позивача, цивільного відповідача;
+
+2) якщо він брав участь у цьому провадженні як свідок, експерт, спеціаліст,
+представник персоналу органу пробації, перекладач, слідчий, прокурор,
+захисник або представник;
+
+3) якщо він особисто, його близькі родичі чи члени його сім’ї заінтересовані
+
+в результатах провадження;
+
+4) за наявності інших обставин, які викликають сумнів у його
+неупередженості;
+
+5) у випадку порушення встановленого ч. 3 ст. 35 цього Кодексу порядку
+визначення слідчого судді, судді для розгляду справи.
+
+У складі суду, що здійснює судове провадження, не можуть бути особи, які
+є родичами між собою.
+
+Враховуючи вищенаведене, посилання засудженого на те, що запасний
+присяжний перебував у родинних відносинах з керівником апарату (який
+не входив до складу суду, яким здійснювався розгляд цього кримінального
+провадження), не свідчать про те, що зазначений присяжний був
+позбавлений можливості виконувати свої обов’язки, передбачені ст. 386
+КПК.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.01.2025 у справі № 357/12623/21
+[(провадження № 51-2720км23) https://reyestr.court.gov.ua/Review/124754858](https://reyestr.court.gov.ua/Review/124754858)
+
+У касаційній скарзі захисник стверджує, що вирок місцевого суду ухвалений
+незаконним складом суду, оскільки присяжний у цьому провадженні підлягав
+відводу з мотивів конфлікту інтересів.
+
+Захисник зазначає, що присяжний постановою місцевого суду (під час
+судового розгляду кримінального провадження щодо засуджених) був
+притягнутий до адміністративної відповідальності за ч. 1 ст. 195-2 КУпАП
+у вигляді усного зауваження. При цьому таку постанову було ухвалено
+головою цього суду, який приймав участь у цьому кримінальному
+провадженні в якості судді та  ухвалював вирок щодо засуджених, який
+у подальшому ухвалою апеляційного суду було скасовано як незаконний.
+
+Вважати, що в даному кримінальному провадженні цей присяжний був
+упередженим та існував конфлікт інтересів, підстав немає, оскільки під час
+нового розгляду провадження щодо засуджених у суді першої інстанції,
+вищевказаний суддя участі не брав.
+
+Враховуючи вищенаведене, суд першої інстанції не порушив вимоги статей
+75, 76 КПК.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 19.01.2021 у справі № 263/5633/15к (провадження № 51-2329км20) https://reyestr.court.gov.ua/Review/94394502
+
+У касаційній скарзі захисник стверджує про наявність обставин, що можуть
+перешкоджати участі присяжного в судовому розгляді.
+
+Як визначено у ст. 80 КПК, за наявності підстав, передбачених
+статтями 75-79 КПК, присяжний зобов`язаний заявити самовідвід. За цими
+ж підставами їм може бути заявлено відвід особами, які беруть участь
+у кримінальному провадженні.
+
+Відповідно до ч. 1 ст. 390 цього Кодексу присяжний може бути усунутий від
+подальшої участі в судовому розгляді кримінального провадження
+у випадках невиконання ним обов´язків, передбачених ч. 2 ст. 386 КПК,
+та за наявності обґрунтованих підстав вважати, що присяжний
+у результаті незаконного впливу втратив неупередженість, необхідну для
+вирішення питань кримінального провадження.
+
+Крім того, ч. 2 ст. 65 Закону «Про судоустрій і статус суддів» визначено
+перелік категорій осіб, які не підлягають включенню до списків народних
+засідателів та списків присяжних, серед яких є і працівники
+правоохоронних органів.
+
+Під час з´ясування обставин, що можуть перешкоджати участі присяжного
+в судовому розгляді, у ході відбору присяжних в судовому засіданні від
+учасників провадження будь-яких заяв та клопотань про звільнення
+присяжного від виконання його обов´язків не надходило.
+
+Таке клопотання надійшло від засудженого та було мотивоване тим,
+що присяжний раніше працював слідчим, що, на думку засудженого, дає
+підстави сумніватися в його неупередженості.
+
+Вирішуючи заявлене клопотання, суд першої інстанції дійшов
+обґрунтованого висновку про відсутність будь-яких передбачених законом
+підстав для відводу присяжного, оскільки він не є працівником
+правоохоронного органу з 2010 року та не був слідчим у цьому
+кримінальному провадженні.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 10.03.2021 у справі № 676/6211/16к (провадження № 51-3919км20) https://reyestr.court.gov.ua/Review/95509374
+
+У касаційній скарзі сторона захисту стверджує про порушення вимог ст. 65 Закону
+«Про судоустрій і статус суддів» при визначенні присяжних, через включення
+до їх складу присяжного, який на думку сторони захисту працював
+у правоохоронних органах, так як у судовому засіданні відмовився відповідати
+
+на запитання про своє попереднє працевлаштування.
+
+Відповідно до вимог ч. 3 ст. 65 указаного вище закону на особу, як
+на присяжного покладено обов´язок повідомити суд про обставини,
+що унеможливлюють його участь у здійсненні правосуддя, з чим він був
+обізнаний, про що свідчить його підпис в пам´ятці. Таких обставин
+присяжний суду не повідомив. До того ж, ч. 2 ст. 65 Закону «Про судоустрій
+і статус суддів» не містить заборони включення до списку присяжних
+працівників правоохоронних органів, які вийшли на пенсію
+або у відставку. Даних про те, що на час повторного судового розгляду
+присяжний був діючим працівником міліції у матеріалах кримінального
+провадження немає, таких даних не наведено в місцевому суді,
+в апеляційних та касаційних скаргах сторони захисту.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 26.06.2019 у справі № 487/4710/13[к (провадження № 51-10159км18) https://reyestr.court.gov.ua/Review/82769686](https://reyestr.court.gov.ua/Review/82769686)
+
+VI. ДЕЯКІ ПИТАННЯ ОРГАНІЗАЦІЇ ТА ПОРЯДКУ ПРОВАДЖЕННЯ СУДОМ
+ПРИСЯЖНИХ
+
+У касаційній скарзі сторона захисту зазначає, що розгляд кримінального
+провадження у суді першої інстанції судом присяжних відбувся з порушенням
+вимог КПК.
+
+Той факт, що присяжні перебували у нарадчій кімнаті під час ухвалення
+вироку узгоджується із вимогами ст. 391 КПК та жодним чином не
+свідчить про їх залежність від позиції суддів.
+
+Як убачається зі змісту вироку місцевого суду, висновки про винуватість
+засудженої у вчиненні інкримінованого кримінального правопорушення
+були зроблені прийняттям одностайного рішення як суддями, так
+і присяжними. Розбіжності у позиціях суддів та присяжних мали місце
+лише щодо встановлення пом`якшуючих покарання обставин,
+що відображено у тексті цього вироку та враховано під час призначення
+особі покарання.
+
+Припущення засудженої про те, що присяжні, які розглядали цю справу,
+вважали, що вона не є винною також суд не приймає до уваги. Адже
+у цьому провадженні вирок суду першої інстанції належним чином
+підписаний всіма присяжними і будь-яких сумнівів у добровільності
+голосування присяжних сторона захисту не надала. Жодної окремої думки
+у цьому провадженні ніким із суддів або ж присяжних також не було
+
+складено.
+
+Порушення процедури розгляду кримінального провадження щодо особи
+
+судом присяжних не встановлено.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 10.12.2024 у справі № 163/2670/21
+[(провадження № 51-300км23) https://reyestr.court.gov.ua/Review/123841640](https://reyestr.court.gov.ua/Review/123841640)
+
+У касаційній скарзі засуджений вказує, що обвинувальний акт було прийнято
+до розгляду з процесуальними порушеннями, адже підготовче судове засідання
+здійснювалось колегією суддів місцевого суду, а судовий розгляд судом
+
+присяжних.
+
+Клопотання про здійснення судового розгляду судом присяжних
+засуджений заявив саме на стадії підготовчого судового провадження,
+коли відповідно до положень частин 1, 2 ст. 31, ч. 3 ст. 35 КПК було
+визначено колегію суддів місцевого суду у складі трьох суддів, при цьому
+подальший судовий розгляд, з урахуванням вказаного клопотання
+обвинуваченого, здійснювався в порядку, передбаченому параграфом 2 гл.
+30 КПК, а саме судом присяжних.
+
+За таких обставин, а також з огляду на положення, передбачені ч. 2 ст. 65,
+ч. 2 ст. 67 Закону та ч. 3 ст. 35, статтями 75, 385, 387 КПК, ККС вважає,
+що касаційна скарга засудженого в частині незаконності складу суду
+першої інстанції задоволенню не підлягає.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.01.2025 у справі № 357/12623/21
+(провадження № 51-2720км23) https://reyestr.court.gov.ua/Review/124754858
+
+У касаційній скарзі захисник стверджує, що судовий розгляд здійснювався
+упередженим складом суду, оскільки судові засідання закінчувалися поза
+межами робочого часу.
+
+Робота суду присяжних за межами робочого часу з розгляду даного
+кримінального провадження не може свідчити про упередженість такого
+суду, а її слід оцінювати як прагнення суду направлені на якнайшвидший
+розгляд справи в розумні строки. До того ж, значна кількість проведених
+судових засідань були спрямовані на швидкий, повний, неупереджений
+розгляд кримінального провадження та на реалізацію прав учасників
+судового процесу, у тому числі і сторони захисту.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 22.02.2022 у справі № 559/2733/18
+[(провадження № 51-3521км20) https://reyestr.court.gov.ua/Review/103906856](https://reyestr.court.gov.ua/Review/103906856)
+
+У касаційній скарзі засуджений вказував про те, що місцевий суд розглянув
+справу одноособово, оскільки відсутнє окреме рішення присяжних.
+
+Кримінальний процесуальний закон не передбачає ухвалення присяжними
+власного рішення.
+
+Статтею 383 КПК передбачено, що кримінальне провадження судом
+присяжних здійснюється відповідно до загальних правил цього Кодексу
+з певними особливостями. Усі питання, пов’язані з судовим розглядом,
+крім питання, передбаченого ч. 3 ст. 331 КПК, судді і присяжні вирішують
+спільно.
+
+Водночас, відповідно до ст. 371 КПК, вирок ухвалюється в нарадчій кімнаті
+тим складом суду, який здійснював судовий розгляд.
+
+Судом присяжних було ухвалено вирок щодо засудженого, у якому наявні
+підписи як суддів, так і всіх присяжних. Тому жодних порушень вимог
+
+процесуального закону не допущено.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 18.02.2021 у справі № 500/3490/13[к (провадження № 51-599км17) https://reyestr.court.gov.ua/Review/95139644](https://reyestr.court.gov.ua/Review/95139644)
+
+VII. СУДОВИЙ РОЗГЛЯД У СУДІ ПЕРШОЇ ІНСТАНЦІЇ ЩОДО ЗЛОЧИНІВ, ЗА ВЧИНЕННЯ
+
+ЯКИХ ПЕРЕДБАЧЕНО ДОВІЧНЕ ПОЗБАВЛЕННЯ ВОЛІ, В УМОВАХ ВОЄННОГО
+СТАНУ АБО У РАЗІ РОЗГЛЯДУ IN ABSENTIA
+
+У касаційній скарзі сторона захисту вважає, що оскільки суд першої інстанції
+в порушення ст. 314 КПК провів підготовче судове засідання майже через два
+місяці після надходження 10.03.2022 обвинувального акту, то положення ч. 10 ст.
+615 КПК в редакції Закону від 14.04.2022 № 2201-IX не могли бути застосовані
+в цьому провадженні.
+
+На відміну від кримінального (матеріального) закону, новий кримінальний
+процесуальний закон не має зворотної дії навіть у тих випадках, коли його
+правила є більш сприятливі для учасників кримінального провадження.
+
+Відповідно до ч. 10 ст. 615 КПК, чинної на день призначення 03.05 2022
+судового розгляду, кримінальне провадження в суді першої інстанції щодо
+злочинів, за вчинення яких передбачено довічне позбавлення волі,
+здійснюється колегіально судом у складі трьох суддів.
+
+Стороною захисту не заперечується, що під час підготовчого судового
+засідання суд першої інстанції роз´яснив всім учасникам, що ця норма
+закону, введена в дію з 01.05.2022, унеможливлює розгляд кримінального
+
+провадження судом присяжних.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 26.11.2024 у справі № 463/1771/22
+(провадження № 51-7150км23) https://reyestr.court.gov.ua/Review/123498980
+
+У касаційній скарзі захисник стверджує, що особі пред’явлено обвинувачення про
+вчинення злочину за ч. 2 ст. 111 КК, за який можливе призначення покарання
+у виді довічного позбавлення волі, а отже обвинувачений має бути
+поінформований щодо можливості розгляду такого кримінального провадження
+
+судом присяжних.
+
+ККС враховує, що обвинувальний акт у цьому кримінальному
+провадженні надійшов до суду першої інстанції 02.05.2022, тобто коли
+в Україні на підставі Указу Президента України від 24.02.2022 № 64/2022
+
+було введено воєнний стан, строк дії якого у подальшому неодноразово
+
+продовжувався.
+
+Законом від 14.04.2022 № 2201-IX «Про внесення змін до Кримінального
+процесуального кодексу України щодо удосконалення порядку здійснення
+кримінального провадження в умовах воєнного стану» ст. 615 КПК, якою
+врегульовано особливий режим кримінального провадження в умовах
+воєнного стану, викладено у новій редакції.
+
+Приписами ч. 10 ст. 615 КПК у редакції цього Закону встановлено,
+що кримінальне провадження в суді першої інстанції щодо злочинів,
+за вчинення яких передбачено довічне позбавлення волі, здійснюється
+колегіально судом у складі трьох суддів, крім здійснення кримінального
+провадження у суді, в якому до моменту введення воєнного стану
+та набрання чинності цією частиною було визначено склад суду за участю
+
+присяжних.
+
+Ця норма Закону набрала чинності 01.05.2022, тобто до надходження
+обвинувального акту щодо особи до суду (02.05.2022).
+
+Отже, судове провадження щодо особи у суді першої інстанції здійснено
+колегіально судом у складі трьох суддів, що відповідає вимогам
+ч. 10 ст. 615 КПК у редакції Закону від 14.04.2022 № 2201-IX.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 14.02.2024 у справі № 202/1744/22
+(провадження № 51-5963км23) https://reyestr.court.gov.ua/Review/117105881
+
+У касаційній скарзі захисник вказує, що судами попередніх інстанцій не було
+роз’яснено особисто обвинуваченому особливості розгляду кримінального
+
+провадження судом присяжних.
+
+Відповідно до ч. 10 ст. 615 КПК за вчинення злочинів, за які передбачено
+покарання у виді довічного позбавлення волі, судовий розгляд
+здійснюється колегіально у складі трьох суддів, крім здійснення
+кримінального провадженні у суді, в якому до моменту введення
+воєнного стану та набрання цією частиною законної сили було визначено
+
+склад суду за участю присяжних.
+
+Обвинувальний акт у даному кримінальному провадженні надійшов
+до суду першої інстанції 23.03.2023, тобто коли на всій території України
+вже був введений воєнний стан. Крім того, стороні захисту було
+повідомлено про неможливість роз’яснення обвинуваченому права про
+розгляд справи щодо нього судом присяжних, у зв’язку з розглядом
+справи за відсутності обвинуваченого («in absentia») в порядку
+спеціального судового провадження.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 09.10.2025 у справі № 607/5441/23
+[(провадження № 51-29км25) https://reyestr.court.gov.ua/Review/130956569](https://reyestr.court.gov.ua/Review/130956569)
+
+Огляд судової практики Верховного Суду про розгляд кримінального
+провадження судом присяжних (актуальна практика) / Упоряд.: управління
+аналітичної та правової роботи Касаційного кримінального суду департаменту
+аналітичної та правової роботи; заст. голови Касаційного кримінального суду
+у складі Верховного Суду д. ю. н. Антонюк Н. О. Київ, 2025. – 24 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03_segment.md № 473/2513/13к 60 20120 30 пенсії в разі втрати годувальника однак слухання в ній було розпочато повторно з підготовчого засідання семантичний мапінг з урахуванням юрисдикції ккс вс. обрано рубрику «пенсії в разі втрати годувальника» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / пенсії в разі втрати годувальника).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/128422317" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 473/2513/13к</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пенсії в разі втрати годувальника</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>однак слухання в ній було розпочато повторно з підготовчого засідання</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ККС ВС. Обрано рубрику «Пенсії в разі втрати годувальника» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Пенсії в разі втрати годувальника).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Дотримання вимог ст
+
+3. Дотримання вимог ст. 384 КПК у разі, якщо справу розглядав суд присяжних,
+однак слухання в ній було розпочато повторно з підготовчого засідання
+
+У касаційній скарзі захисник вказав про те, що місцевим судом неправомірно
+задоволено клопотання про відмову від розгляду справи судом присяжних, при
+цьому не роз’яснено наслідків такої відмови й ухвалено вирок незаконним
+
+складом суду.
+
+У цій справі право на суд присяжних, правові наслідки застосування цього
+інституту були письмово роз´яснені прокурором і про такий склад суду
+обвинувачений клопотав у  підготовчому судовому засіданні. Надалі
+внаслідок відставки двох професійних суддів та їх заміни в порядку ч. 3 ст.
+35 КПК, було проведено нове підготовче судове засідання, у ході якого,
+виконуючи приписи ст. 384 КПК суд з´ясував, чи бажає обвинувачений
+скористатися своїм правом на розгляд кримінального провадження
+стосовно нього судом присяжних. Обвинувачений заявив суду, що розгляд
+справи має здійснюватися колегіально в складі трьох суддів, тим самим
+підтримав міркування свого захисника про недоцільність залучення
+
+присяжних.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 19.06.2025 у справі № 357/10388/16к (провадження № 51-4474км24) https://reyestr.court.gov.ua/Review/128422317
+
+У касаційній скарзі захисник посилається на порушення права обвинуваченого
+на суд присяжних, оскільки прокурор не роз’яснив обвинуваченому можливість,
+особливості та правові наслідки розгляду кримінального провадження судом
+присяжних, що є порушенням ч. 1 ст. 384 КПК. Суд першої інстанції під час
+підготовчого судового засідання також не повідомив обвинуваченому про
+можливість розгляду кримінального провадження щодо нього судом присяжних
+На думку захисту, невиконання судом під час підготовчого судового засідання
+вимог ст. 384 КПК є безумовною підставою для скасування судових рішень.
+
+Верховний Суд не погодився зі стороною захисту із таких міркувань.
+
+Кримінальне провадження щодо обвинуваченого розглядалося спочатку
+в Рахівському районному суді, надалі, після зміни підсудності розгляд
+кримінального провадження був призначений у Тячівському районному
+суді Закарпатської області, де за клопотанням сторони захисту розгляд
+кримінального провадження проводився судом присяжних. Надалі
+
+обвинувачений звернувся до суду із заявою, у якій зазначив, що не
+погоджується з клопотанням захисника про розгляд кримінального
+провадження щодо нього судом присяжних і своєї згоди на такий розгляд
+він не давав.
+
+З наведеного убачається, що сторона захисту не тільки мала реальну
+можливість на стадії судового розгляду ефективно скористатися правом
+на суд присяжних, але і скористалася ним.
+
+Надалі за заявою обвинуваченого про відвід суддям Тячівського
+районного суд, підсудність кримінального провадження була змінена
+і справа була передана у Мукачівський міськрайонний суд, де сторона
+захисту клопотання про розгляд кримінального провадження судом
+
+присяжних не заявляла.
+
+Що стосується тверджень захисника про необхідність повторного
+роз´яснення засудженому права на суд присяжних при зміні складу суду,
+то з урахуванням вищезазначених обставин такі доводи не можуть
+свідчити про наявність істотного порушення положень КПК.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 21.03.2023 у справі № 305/188/17
+[(провадження № 51-2069км20) https://reyestr.court.gov.ua/Review/109747758](https://reyestr.court.gov.ua/Review/109747758)
+
+У касаційній скарзі сторона захисту стверджує про порушення місцевим судом
+
+права засудженого на розгляд справи судом присяжних.
+
+Той факт, що після зміни складу колегії суддів, яка розглядала дане
+кримінальне провадження, особі повторно не було роз’яснено її право
+на суд присяжних, не може свідчити про порушення його права на захист,
+оскільки обвинувачений реально мав можливість скористатися цим
+правом в будь-який момент, однак не зробив цього. Засуджений був
+обізнаний із правом, перешкоди у реалізації його права на особливий
+порядок судового розгляду попри зазначений недолік, не існували.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 06.06.2019 у справі № 686/10620/15к (провадження № 51-7950км18) https://reyestr.court.gov.ua/Review/82420496
+
+У касаційній скарзі сторона захисту зазначає, що вирок ухвалено з істотними
+процесуальними порушеннями, оскільки після зміни складу присяжних судовий
+розгляд не було розпочато спочатку
+
+Провадження розглянуто неповноважним складом суду внаслідок
+порушення місцевим судом процедури усунення присяжних від подальшої
+участі в судовому розгляді кримінального провадження з огляду
+на вимоги ст. 390 КПК, оскільки після заміни складу присяжних розгляд
+справи не було розпочато спочатку, а було продовжено без прийняття
+
+вмотивованого судового рішення та без з´ясування думки сторін
+
+з вказаного питання.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 11.03.2021 у справі № 237/1268/16[к (провадження № 51-6336км19) https://reyestr.court.gov.ua/Review/95574811](https://reyestr.court.gov.ua/Review/95574811)
+
+II. ВПЛИВ ВНЕСЕННЯ ЗМІН ДО КРИМІНАЛЬНОГО ЗАКОНУ НА ІСНУВАННЯ І
+
+РЕАЛІЗАЦІЮ ПРАВА НА РОЗГЛЯД СПРАВИ СУДОМ ПРИСЯЖНИХ
+
+Сторона захисту стверджує, що у цьому провадженні має місце порушення
+ст. 384 КПК, оскільки обвинуваченого засуджено за злочин, який є особливо
+тяжким, а санкцією інкримінованої статті як найбільш суворий вид покарання
+передбачено довічне позбавлення волі.
+
+Верховний Суд констатував, що має місце порушення положень ст. 384
+КПК, оскільки право на розгляд судом присяжних має бути роз’яснено
+й тоді, коли до обвинуваченого не можна застосувати покарання у вигляді
+довічного позбавлення волі в силу прямої заборони, передбачено
+кримінальним законом.
+
+Виходячи з системно-структурного аналізу зазначених норм та зважаючи
+на те, що в санкції ч. 2 ст. 115 КК йдеться про злочин, за вчинення якого
+передбачено довічне позбавлення волі, а не про застосування такого
+покарання судом при призначенні покарання, наведене дає підстави для
+висновку, що право на суд присяжних зберігається в обвинуваченого
+у вчиненні цього злочину незалежно від стадії вчинення злочину (стадії,
+на якій цей злочин було припинено).
+
+А тому обвинувачений є суб’єктом процесуального права заявляти
+клопотання про розгляд кримінального провадження стосовно нього судом
+присяжних, незабезпечення реалізації якого судом першої інстанції є
+істотним порушенням вимог кримінального процесуального закону,
+оскільки ставить під сумнів здійснення правосуддя в цьому кримінальному
+провадженні судом, який відповідає стандарту «створеного відповідно
+до закону» в контексті права на справедливий суд, передбаченого ст. 6
+Конвенції.
+
+Відповідно до вимог ч. 1 ст. 384 КПК суд зобов’язаний роз’яснити
+обвинуваченому у вчиненні як закінченого, так і незакінченого злочину,
+за який передбачене покарання у виді довічного позбавлення волі,
+можливість та особливості розгляду кримінального провадження
+
+стосовно нього судом присяжних.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 07.11.2018 у справі № 751/4876/15[к (провадження № 51-1253зпв18) https://reyestr.court.gov.ua/Review/77801401](https://reyestr.court.gov.ua/Review/77801401)
+
+Особі було інкриміновано вчинення злочину у редакції статті, яка не передбачала
+покарання у вигляді довічного позбавлення волі. Однак після вчинення у санкцію
+
+відповідної статті було внесено це покарання як альтернативне і сторона захисту
+стверджувала про необхідність роз’яснення права на розгляді провадження
+
+судом присяжних
+
+Суд першої інстанції встановив, що у обвинуваченого не виникло права
+на суд присяжних, незважаючи на те, що таке право було роз´яснено особі
+прокурором під час досудового розслідування з посиланням на санкцію ч.
+3 ст. 110 КК, яка, серед іншого, передбачає можливість призначення
+покарання у виді довічного позбавлення волі.
+
+Так, вмотивовуючи свої висновки, суд першої інстанції обґрунтовано
+звернув увагу на позицію сторони захисту, яка в підготовчому судовому
+засіданні наполягала на проведенні розгляду кримінального провадження
+колегіально судом у складі трьох суддів. Також місцевий суд відзначив,
+що довічне позбавлення волі передбачено санкцією чинної редакції ч. 3 ст.
+110 КК, яка з огляду на заборону зворотної дії закону, що посилює
+покарання, в будь-якому разі не може бути застосовано в цьому
+кримінальному провадженні в указаній частині.
+
+Станом на час вчинення інкримінованих особою кримінальних
+правопорушень, тобто на 01.03.2014, санкція ч. 3 ст. 110 КК не передбачала
+покарання у виді довічного позбавлення волі, а тому й права на розгляд
+зазначеного кримінального провадження судом присяжних
+у обвинуваченого не було.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 06.12.2021 у справі № 756/4855/17
+(провадження № 51-7121км18) https://reyestr.court.gov.ua/Review/101873632
+
+III. ВІДСУТНІСТЬ ПРАВА НА РОЗГЛЯД ПРОВАДЖЕННЯ СУДОМ ПРИСЯЖНИХ ПРИ
+
+РОЗГЛЯДІ КЛОПОТАНЬ ПРО ЗАПОБІЖНИЙ ЗАХІД ТА НА СТАДІЇ ПЕРЕГЛЯДУ
+СУДОВИХ РІШЕНЬ ЗА НОВОВИЯВЛЕНИМИ ОБСТАВИНАМИ
+
+Відповідно до ч. 2 ст. 383 КПК суд присяжних утворюється при місцевому
+загальному суді першої інстанції.
+
+Розгляд кримінального провадження судом присяжних проводиться
+за сукупності таких умов:
+
+1) обвинувальний акт щодо особи передано на розгляд суду першої
+інстанції;
+
+2) злочин, у вчиненні якого обвинувачується особа, передбачає покарання
+у виді довічного позбавлення волі;
+
+3) під час підготовчого судового засідання обвинувачений заявив
+клопотання про розгляд кримінального провадження щодо нього судом
+
+присяжних.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 07.11.2023 у справі № 644/5171/20
+[(провадження № 51-2483км23) https://reyestr.court.gov.ua/Review/114796482](https://reyestr.court.gov.ua/Review/114796482)
+
+Сторона захисту стверджує про порушення ст. 384 КПК і можливість розгляду
+справи судом присяжних навіть у тому разі, коли суд розглядає питання про
+обрання, проводження чи зміну запобіжного заходу.
+
+Як вбачається із журналу судового засідання предметом розгляду суду
+першої інстанції під час цього судового засідання були клопотання
+прокурора про продовження запобіжного заходу у вигляді тримання під
+вартою та захисника про скасування запобіжного заходу.
+
+Правила КПК не передбачають роз’яснення підозрюваному права
+на розгляд справи судом присяжних під час розгляду питання про обрання,
+зміну чи продовження запобіжного заходу, а тому такого обов’язку
+у місцевого суду і не виникало.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.10.2022 у справі № 565/1354/19
+[(провадження № 51-443км20) https://reyestr.court.gov.ua/Review/106988921](https://reyestr.court.gov.ua/Review/106988921)
+
+У касаційній скарзі засуджений вважає, що ухвалу суду першої інстанції
+за результатами розгляду його заяви про перегляд судового рішення
+за нововиявленими обставинами постановлено незаконним складом суду. Так,
+обвинувальний вирок щодо засудженого ухвалено судом у складі двох суддів
+та трьох народних засідателів, при цьому йому призначено покарання у виді
+довічного позбавлення волі. У зв’язку з цим, на думку засудженого, на підставі
+ч. 3 ст. 31 КПК він має право на здійснення кримінального провадження
+за нововиявленими обставинами судом присяжних. Однак всупереч вимогам
+ст. 384 КПК суд першої інстанції не роз’яснив вказаного права та ухвалив судове
+рішення у складі трьох суддів без участі присяжних.
+
+За змістом статей 459, 467 КПК перегляд судового рішення
+за нововиявленими обставинами є ревізійною стадією, в ході якої суд не
+розглядає обвинувачення по суті, а лише надає оцінку доводам учасників
+судового провадження щодо наявності у кримінальному провадженні
+обставин, що не були відомі суду на час судового розгляду при ухваленні
+судового рішення, а також щодо можливості впливу цих обставин
+на правильність судового рішення, яке належить переглянути.
+
+Предметом судового розгляду в порядку провадження
+за нововиявленими обставинами виступає не обвинувальний акт, а судове
+рішення, зокрема вирок суду, що набрав законної сили, яким установлено
+наявність чи відсутність винуватості особи у вчиненні інкримінованого їй
+
+злочину.
+
+Після набрання вироком законної сили особа, щодо якої здійснюється
+кримінальне провадження, вже не має статусу обвинуваченого, натомість
+
+залежно від прийнятого судом рішення вважається виправданою
+або засудженою.
+
+Забезпечення додаткових гарантій для такої особи у виді перегляду вироку
+щодо неї за нововиявленими обставинами судом присяжних
+процесуальний закон не передбачає.
+
+Вказане узгоджується з приписами ч. 10 ст. 31 КПК, відповідно до яких
+перегляд судового рішення за виключними обставинами в суді першої
+інстанції здійснюється виключно колегією у складі трьох або більшої
+непарної кількості суддів. І хоча ця норма не визначає складу суду для
+перегляду судового рішення за нововиявленими обставинами, однак
+з урахуванням подібності процедур провадження за нововиявленими
+та виключними обставинами, здійснення яких регулюються гл. 34 КПК,
+перегляд судових рішень за нововиявленими обставинами також повинен
+здійснюватися виключно професійними суддями.
+
+Залучення присяжних до цієї процедури не сприятиме реалізації завдань
+кримінального провадження, адже мета, якої може бути досягнуто при
+розгляді заяви про перегляд судового рішення за нововиявленими
+обставинами судом присяжних, є явно неспіврозмірною з витраченими
+на такий розгляд процесуальними засобами.
+
+За таких обставин, не роз’яснивши засудженому права на здійснення
+кримінального провадження за нововиявленими обставинами судом
+присяжних, та, відповідно, провівши судовий розгляд без участі присяжних,
+місцевий суд не порушив вимог кримінального процесуального закону,
+оскільки процедура перегляду судового рішення за нововиявленими
+обставинами не передбачає права засудженого (виправданого) на суд
+
+присяжних.
+
+Висновок: за змістом ч. 3 ст. 31, ч. 2 ст. 383, ст. 384 КПК обвинувачений
+у вчиненні злочину, за який передбачено покарання у виді довічного
+позбавлення волі, має право на розгляд кримінального провадження щодо
+нього в суді першої інстанції судом присяжних, проте таке право не виникає
+на стадії перегляду судових рішень в апеляційному, касаційному порядку,
+а також за нововиявленими або виключними обставинами.
+
+Постанова ОП ККС ВС від 04.11.2019 у справі № 496/4533/17 (провадження № 51-9834кмо18)
+[https://reyestr.court.gov.ua/Review/85582389](https://reyestr.court.gov.ua/Review/85582389)
+
+IV. ФОРМА РОЗ’ЯСНЕННЯ ПРАВА НА СУД ПРИСЯЖНИХ СУДОМ
+
+У касаційній скарзі сторона захисту стверджує про нероз´яснення засудженому
+права на розгляд провадження відносно нього судом присяжних.
+
+Твердження захисника про те, що суд першої інстанції мав письмово
+роз’яснити засудженому можливості та особливості розгляду
+
+кримінального провадження судом присяжних безпосередньо в процесі
+судового розгляду не узгоджується з вимогами кримінального
+процесуального закону, оскільки положеннями ст. 384 КПК обов’язок щодо
+письмового роз’яснення покладається лише на прокурора, а не на суд.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 16.10.2023 у справі № 212/7057/18
+[(провадження № 51-2532км22) https://reyestr.court.gov.ua/Review/114513575](https://reyestr.court.gov.ua/Review/114513575)
+
+Прокурор стверджує, що судові рішення підлягають скасуванню у зв’язку
+з нероз’ясненням місцевим судом засудженим можливості та особливостей
+розгляду кримінально провадження судом присяжних.
+
+У матеріалах провадження та на технічному носії запису судових засідань
+відсутні дані про те, що місцевий суд роз&#x27;яснив обвинуваченим можливості
+та особливості розгляду кримінального провадження стосовно них судом
+присяжних (хоча особи обвинувачувались у вчиненні злочину, за який
+передбачено покарання у виді довічного позбавлення волі), а отже, суд не
+виконав вимог ч. 1 ст. 384 КПК.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 14.06.2018 у справі № 263/830/14-к
+[(провадження № 51-1763км18) https://reyestr.court.gov.ua/Review/74777583](https://reyestr.court.gov.ua/Review/74777583)
+
+У касаційній скарзі засуджений стверджує, що йому не було роз’яснено його
+
+право на розгляд провадження щодо нього судом присяжних.
+
+Під час розгляду кримінального провадження в суді першої інстанції права
+на суд присяжних і наслідки обвинуваченим не роз’яснені,
+що встановлено під час прослуховування технічного носія перебігу
+судового засідання. Будь-яких відомостей про ознайомлення
+обвинувачених з такими правами у кримінальному провадженні також
+
+немає.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 07.05.2019 у справі № 473/2513/13к (провадження № 51-9659км18) https://reyestr.court.gov.ua/Review/8172237
+
+V. СКЛАД СУДУ ПРИСЯЖНИХ
+
+### 1. Роз’яснення права на суд присяжних на стадії досудового розслідування
+
+### 1. Роз’яснення права на суд присяжних на стадії досудового розслідування
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 3;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

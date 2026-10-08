@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KKS_civ_pozov — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KKS_civ_pozov та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KKS_civ_pozov.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KKS_civ_pozov</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">4</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">98.0%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 4 із 4</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 20 90 20 30 фінансування науки. інноваційний фонд тощо) семантичний мапінг з урахуванням юрисдикції кцс вс. обрано рубрику «фінансування науки. інноваційний фонд» (бюджетно-фінансове законодавство / державні витрати / фінансування / фінансування науки. інноваційний фонд).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/114796501" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>Не вказана</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20 90 20 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Державні витрати</span><span class="crumb-sep">›</span><span class="crumb">Фінансування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Фінансування науки. Інноваційний фонд</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>тощо)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КЦС ВС. Обрано рубрику «Фінансування науки. Інноваційний фонд» (Бюджетно-фінансове законодавство / Державні витрати / Фінансування / Фінансування науки. Інноваційний фонд).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Цивільний позивач
+
+1. Шкода життю та здоров’ю (смерть, втрата працездатності, витрати на лікування
+тощо)
+
+У касаційній скарзі представник страхової компанії зазначив, що частину коштів
+на лікування потерпілої витратила інша особа, а тому ці кошти не підлягають
+стягненню зі страхової компанії на користь потерпілої.
+
+Оскільки під час оперативного втручання – артродезування суглобів потерпілої
+були використані пластини і додаткові імпланти, рахунки на оплату яких
+пред’явлені останній, однак оплату провела інша особа, оскільки на той час
+потерпіла перебувала на лікуванні й не мала фізичної можливості зробити
+це самостійно, то зазначені витрати безсумнівно стосувалися лікування
+потерпілої і понесені саме останньою, а тому підлягають стягненню на користь
+потерпілої з відповідача (страхової компанії).
+
+Постанова колегії суддів Другої судової палати ККС ВС від 02 листопада 2023 року у справі
+[№ 686/28824/21 (провадження № 51-2059км23) https://reyestr.court.gov.ua/Review/114796501](https://reyestr.court.gov.ua/Review/114796501)
+
+На переконання представника цивільного відповідача, судом першої інстанції
+не перевірено обґрунтованості цивільного позову в частині стягнення витрат
+на лікування, оскільки позивачами не надано усіх підтверджуючих документів
+про таке лікування, а лише чеки, частина з яких є нечитабельними
+або не відносяться до шкоди, завданої внаслідок ДТП.
+
+Для сплати страхового відшкодування потерпіла особа має надати не тільки
+платіжні документи з купівлі лікарських засобів тощо, але й документально
+підтвердити необхідність їх придбання (витяг з історії хвороби, рецепти
+на придбання ліків тощо), тобто довести наявність причинно-наслідкового
+зв’язку між ДТП та лікуванням.
+
+Оскільки висновок місцевого суду про відшкодування матеріальної шкоди,
+а саме понесених позивачами витрат на лікування зроблено без належного
+з’ясування доведеності підстав та розміру цих позовних вимог, то вирок суду
+в цій частині не може вважатися законним та обґрунтованим.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 23 жовтня 2024 року у справі
+[№ 943/207/24 (провадження № 51-3717км24) https://reyestr.court.gov.ua/Review/122638188](https://reyestr.court.gov.ua/Review/122638188)
+
+У касаційній скарзі представник цивільного відповідача зазначив, що витрати
+на реабілітацію потерпілої в санаторії не підлягають стягненню з цивільного
+відповідача.
+
+Верховний Суд не погодився із наведеним твердженням, оскільки витрати,
+пов’язані з реабілітацією потерпілої особи у зв’язку з травмою, отриманою
+внаслідок дорожньо-транспортної пригоди, підлягають відшкодуванню, якщо
+вони підтверджені належними доказами. Такими доказами можуть бути
+квитанції про оплату курсу реабілітації та консультативні висновки спеціалістів,
+які підтверджують необхідність такого лікування внаслідок травм, отриманих у ДТП.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 25 березня 2024 року у справі
+[№ 161/2932/23 (провадження № 51-6143км23) https://reyestr.court.gov.ua/Review/117974827](https://reyestr.court.gov.ua/Review/117974827)
+
+За твердженням представника цивільного відповідача – страхової компанії суди
+першої та апеляційної інстанцій, задовольняючи цивільний позов в частині
+відшкодування майнової шкоди, завданої смертю потерпілого, не перевірили
+та не навели обґрунтування, з урахуванням належності та допустимості доказів,
+що дружина померлого перебувала на його утриманні та потребувала матеріальної
+
+допомоги.
+
+Частково задовольняючи вимоги касаційної скарги Верховний Суд зазначив,
+що ст. 27 Закону № 1961-IV визначено, що страховик здійснює відшкодування
+шкоди, заподіяної смертю потерпілого, виключно лише на умовах, встановлених
+[ст. 1200 ЦК .](http://search.ligazakon.ua/l_doc2.nsf/link1/ed_2025_11_18/pravo1/T030435.html?pravo=1)
+
+За змістом абз. 1 ч. 1 ст. 1200 ЦК у разі смерті потерпілого право
+на відшкодування шкоди мають непрацездатні особи, які були на його утриманні
+або мали на день його смерті право на одержання від нього утримання, а також
+дитина потерпілого, народжена після його смерті.
+
+Частиною 2 вказаної правової норми передбачено, що особам, визначеним
+у пунктах 1–5 ч. 1 цієї статті, шкода відшкодовується у розмірі
+
+середньомісячного заробітку (доходу) потерпілого з вирахуванням частки, яка
+припадала на нього самого та працездатних осіб, які перебували на його
+утриманні, але не мають права на відшкодування шкоди. До складу доходів
+потерпілого також включаються пенсія, суми, що належали йому за договором
+довічного утримання (догляду), та інші аналогічні виплати, які він одержував.
+
+Тобто, коло осіб, які мають право на відшкодування шкоди, завданої смертю
+потерпілого, можна розділити на дві групи: непрацездатні особи, які були
+на утриманні померлого або мали на день його смерті право на одержання
+утримання; дитина потерпілого, народжена після його смерті.
+
+Факт перебування особи на утриманні померлого має значення для
+відшкодування шкоди, якщо допомога, яка надавалась, була для заявника
+постійним і основним джерелом засобів до існування. Одержання заявником
+заробітку, пенсії, стипендії, інших доходів не є підставою для відмови
+у встановленні факту перебування на утриманні, коли суд встановить,
+що основним і постійним джерелом засобів до існування була для заявника
+допомога з боку особи, яка надавала йому утримання.
+
+Особа вважається такою, що потребує матеріальної допомоги, якщо заробітна
+плата, пенсія, доходи від використання його майна, інші доходи не забезпечують
+їй прожиткового мінімуму, встановленого законом.
+
+Таким чином, для набуття права на утримання непрацездатна особа повинна
+мати дохід, менший встановленого законом прожиткового мінімуму на місяць.
+
+Вказана обставина в ході судового розгляду має бути підтверджена належними
+і допустимими засобами доказування.
+
+Як вбачається з матеріалів кримінального провадження, предметом позову
+потерпілої до страхової компанії є відшкодування шкоди, спричиненої смертю
+потерпілого, тому доказуванню підлягає не лише факт родинних відносин,
+а й обставини, за яких особа перебувала на утриманні померлого та потребувала
+матеріальної допомоги.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 28 січня 2026 року у справі
+[№ 389/4400/23 (провадження № 51-2349км25) https://reyestr.court.gov.ua/Review/133719623](https://reyestr.court.gov.ua/Review/133719623)
+
+### 2. Цивільний відповідач як суб’єкт відшкодування шкоди
+
+### 2. Цивільний відповідач як суб’єкт відшкодування шкоди
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md № 571/244/25 50130 50 порядок вирішення колективних трудових спорів (конфліктів) в обґрунтування незаконності судових рішень в частині вирішення цивільного семантичний мапінг з урахуванням юрисдикції кцс вс. обрано рубрику «порядок вирішення колективних трудових спорів (конфліктів)» (трудове законодавство / трудові спори (конфлікти) / порядок вирішення колективних трудових спорів (конфліктів)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126693845" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 571/244/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок вирішення колективних трудових спорів (конфліктів)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>В обґрунтування незаконності судових рішень в частині вирішення цивільного</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КЦС ВС. Обрано рубрику «Порядок вирішення колективних трудових спорів (конфліктів)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок вирішення колективних трудових спорів (конфліктів)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Цивільний відповідач як суб’єкт відшкодування шкоди
+
+2. Моральна шкода
+
+В обґрунтування незаконності судових рішень в частині вирішення цивільного
+позову представник цивільного відповідача посилався на неспіврозмірне
+із завданою шкодою стягнення із військової частини моральної шкоди, завданої
+потерпілим в результаті ДТП, оскільки усі видатки на лікування та реабілітацію
+потерпілих понесла держава, їм виплачувалося грошове утримання під час
+лікування, а також вони мали можливість отримати одноразову грошову допомогу,
+передбачену Постановою КМУ від 25 грудня 2013 року № 975 «Про затвердження
+Порядку призначення і виплати одноразової грошової допомоги у разі загибелі
+
+(смерті), інвалідності або часткової втрати працездатності без встановлення
+інвалідності військовослужбовців, військовозобов’язаних та резервістів, призваних
+на навчальні (або перевірочні) та спеціальні збори чи для проходження служби
+у військовому резерві», що є підставою для зменшення сум відшкодування
+моральної шкоди кожному потерпілому.
+
+Виплати на лікування і реабілітацію, а також отримання одноразової грошової
+допомоги військовослужбовцями є частиною системи їх соціального захисту
+та не має відношення до позовних вимог про стягнення із відповідача
+відшкодування спричиненої потерпілим в наслідок ДТП моральної шкоди.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 15 квітня 2025 року у справі
+[№ 944/447/22 (провадження № 51-5400км24) https://reyestr.court.gov.ua/Review/126693845](https://reyestr.court.gov.ua/Review/126693845)
+
+На переконання представника цивільного відповідача, при вирішенні цивільного
+позову судами не враховано, що у військовій частині не передбачено кошторисом
+виділення коштів для відшкодування моральної (немайнової) шкоди потерпілим,
+що в свою чергу призведе до надмірних (незапланованих) витрат державних коштів,
+які могли б бути використані на оборону України.
+
+Відсутність бюджетних коштів у військової частини та/або непередбачення таких
+видатків кошторисом не є підставою для зменшення сум відшкодування
+моральної (немайнової) шкоди, заявлених у цивільних позовах потерпілих.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 15 квітня 2025 року у справі
+[№ 944/447/22 (провадження № 51-5400км24) https://reyestr.court.gov.ua/Review/126693845](https://reyestr.court.gov.ua/Review/126693845)
+
+Захисник не погоджується з визначеним судом на користь потерпілого розміром
+моральної шкоди, аргументуючи свої твердження тим, що розмір моральної шкоди
+має доводитись стороною обвинувачення та потерпілим у спосіб, визначений
+процесуальним законом, зокрема, і шляхом проведення відповідної експертизи.
+На його думку, встановлення судом у вироку розміру моральної шкоди без урахування
+передбаченого п. 6 ч. 2 ст. 242 КПК експертного дослідження, є неприпустимим.
+
+Вимоги п. 6 ч. 2 ст. 242 КПК стосуються саме повноважень органу досудового
+розслідування та визначають підстави, за яких слідчий або прокурор зобов’язані
+забезпечити проведення експертизи для встановлення розміру шкоди
+немайнового характеру з метою правильної правової кваліфікації дій особи.
+При цьому, визначення розміру моральної шкоди, яка була заподіяна
+потерпілому, є прерогативою виключно суду, який з урахуванням обставин,
+вказаних у ст. 23 ЦК, встановлює суму грошового стягнення, яку необхідно
+компенсувати особі, яка зазнала моральних страждань внаслідок протиправних
+дій обвинуваченого. Отже, проведення відповідного експертного дослідження
+з метою встановлення моральних страждань у потерпілого не обов’язковим для
+визначення розміру передбаченого положеннями ст. 1167 ЦК відшкодування.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 23 березня 2023 року у справі
+[№ 127/35822/21 (провадження № 51-3909км22) https://reyestr.court.gov.ua/Review/109747824](https://reyestr.court.gov.ua/Review/109747824)
+
+На обґрунтування доводів касаційної скарги цивільний відповідач зазначає,
+що розмір стягнутих з нього сум моральної шкоди є завищеним та не відповідає
+практиці Верховного Суду в такій категорії справ.
+
+Гроші виступають еквівалентом завданої моральної шкоди. Грошові кошти,
+як загальний еквівалент всіх цінностей, в економічному розумінні
+«трансформують» шкоду в загальнодоступне вираження, а розмір
+відшкодування «обчислює» шкоду. Розмір визначеної компенсації повинен, хоча
+б наближено, бути мірою моральної шкоди та справедливої сатисфакції
+потерпілому. При визначенні компенсації моральної шкоди враховуються
+характер правопорушення, глибина фізичних та душевних страждань,
+погіршення здібностей потерпілого або позбавлення його можливості
+їх реалізації, ступінь вини особи, яка завдала моральної шкоди, якщо вина
+є підставою для відшкодування, інші обставини, які мають істотне значення,
+вимоги розумності і справедливості.
+
+Розмір відшкодування моральної шкоди перебуває у взаємозв’язку з фізичним
+болем, моральними стражданнями, іншими немайновими втратами, яких
+зазнала потерпіла особа.
+
+Тож розмір відшкодування моральної шкоди не є сталою величиною,
+а визначається судом в кожному конкретному випадку з урахуванням всіх
+обставин справи.
+
+Колегія суддів Верховного Суду погодилася з висновками апеляційного суду
+за результатом оцінки вироку місцевого суду в частині мотивування підстав
+до задоволення цивільного позову та вважає, що розмір відшкодування
+моральної шкоди було визначено, виходячи із засад розумності, виваженості
+та справедливості, а також з урахуванням фізичних та моральних страждань
+потерпілих, одні з яких безповоротно втратили батька та сина, а інші отримали
+внаслідок ДТП тілесні ушкодження середньої тяжкості. Потерпілими перенесені
+моральні страждання у виді порушення звичного способу та ритму життя,
+необхідності тривалого лікування, стороннього догляду, емоційної напруги,
+тривоги, стресу, відчуття болю та безпорадності.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 14 січня 2026 року у справі
+№ 571/244/25 (провадження № 51-2214км25) [https://reyestr.court.gov.ua/Review/133421571](https://reyestr.court.gov.ua/Review/133421571)
+
+### 3. Упущена вигода
+
+### 3. Упущена вигода
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03_segment.md не вказана 140 70 20 призначення та відкликання дипломатичних представників у касаційній скарзі представник цивільного позивача тов стверджує, що місцевий семантичний мапінг з урахуванням юрисдикції кцс вс. обрано рубрику «призначення та відкликання дипломатичних представників» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / дипломатичні і консульські представництва україни за кордоном / призначення та відкликання дипломатичних представників).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/115476512" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>Не вказана</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 70 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb">Дипломатичні і консульські представництва України за кордоном</span><span class="crumb-sep">›</span><span class="crumb-leaf">Призначення та відкликання дипломатичних представників</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>У касаційній скарзі представник цивільного позивача ТОВ стверджує, що місцевий</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КЦС ВС. Обрано рубрику «Призначення та відкликання дипломатичних представників» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Дипломатичні і консульські представництва України за кордоном / Призначення та відкликання дипломатичних представників).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Упущена вигода
+
+3. Упущена вигода
+
+У касаційній скарзі представник цивільного позивача ТОВ стверджує, що місцевий
+суд не надав належної оцінки доказам, які підтверджують упущену цивільним
+позивачем вигоду внаслідок протиправної поведінки засудженого, проігнорував те,
+що засуджений визнав вину та протягом тривалого часу використовував свій
+вебсайт, де пропонував для продажу контрафактний товар, чим зменшив продажі
+оригінального товару, та не врахував маркетингових підходів, якими обґрунтовано
+
+розмір упущеної вигоди (за правилом «упущена вигода не може бути менша,
+ніж дохід порушника» та «витіснення оригінального товару контрафактним»).
+
+Верховний Суд відхилив наведені аргументи, вказавши, що при визначенні
+майнової шкоди у справах про порушення прав інтелектуальної власності суд
+враховує доходи, які особа могла б реально одержати за звичайних обставин,
+якби її право не було порушене (упущена вигода).
+
+Зі змісту обвинувального акта, убачається, що обвинувачений завдав ТОВ
+матеріальну шкоду у сумі 69 181,18 грн.
+
+З оскаржених судових рішень підтверджується, що в основу висновку про розмір
+завданої кримінальним правопорушенням матеріальної шкоди суди поклали
+результати належно проведених на стадії досудового розслідування
+економічних експертиз у сфері інтелектуальної власності, оформлені
+
+висновками експерта.
+
+Разом з тим, зі змісту вказаних експертних висновків, на які посилалися суди при
+визначенні суми матеріальної шкоди, вбачається, що експерт проводив
+розрахунок матеріальних збитків, завданих правовласнику знаків для товарів
+і послуг ТОВ внаслідок їх незаконного використання, зокрема, у формі упущеної
+вигоди та дійшов висновків, що сумарний розмір збитків, завданих цивільному
+позивачу, становить 69 181,18 грн. Також, посилаючись на практику Верховного
+Суду України, експерт у своєму висновку врахував, що один контрафактний
+примірник товару витісняє з ринку один оригінальний товар, при цьому за основу
+експерт узяв ціну ліцензійного продукту, встановлену правовласником,
+та фактично врахував і наведені в касаційній скарзі методики розрахунку
+втраченого заробітку. Таким чином зазначений у судових рішеннях розмір
+матеріальних збитків, завданих ТОВ, відповідає визначеному розміру
+матеріальних збитків у висновках експерта.
+
+При цьому слід зазначити, що матеріалами справи підтверджується те,
+що в розпорядженні експерта були всі необхідні матеріали, зокрема, і наданий
+ТОВ лист з актуальними цінами на оригінальну продукцію торговельної марки.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 29 листопада 2023 року у справі
+[№ 523/7730/21 (провадження № 51-4151км23) https://reyestr.court.gov.ua/Review/115476512](https://reyestr.court.gov.ua/Review/115476512)
+
+На переконання цивільних позивачів, суд дійшов помилкового висновку про відмову
+у задоволенні позовних вимог в частині стягнення упущеної вигоди, оскільки
+пред’явлені фактичні дані свідчать про те, що вантажний фургон-рефрижератор
+до ДТП використовувався у комерційних цілях і на час ремонту підприємство
+не мало змоги його експлуатувати.
+
+Верховний Суд погодився із висновком суду апеляційної інстанції, що позовні
+вимоги ТОВ про стягнення упущеної вигоди не підлягають до задоволення.
+
+Відмовляючи у задоволенні цивільного позову колегія суддів апеляційного суду
+вказала, що вантажний фургон-рефрижератор належний фізичній особі,
+перебував в оренді ТОВ без нотаріального посвідчення правочину, що робить
+такий договір нікчемним.
+
+Крім цього, апеляційний суд вказав, що надані ТОВ копії актів здачі-прийняття
+робіт, копії банківської роздруківки та акту звірки не мають жодного посилання
+на договір перевезення, укладеного з ПрАТ, та залучення у зв’язку з цим для
+виконання вказаного договору перевезення саме автомобіля, а позиція
+цивільного позивача базується на розрахунку можливого прибутку у разі
+використання автомобіля в майбутньому періоді, що є теоретичним
+припущенням, яке побудоване на можливих очікуваннях отримання певного
+доходу, не підтверджується жодними належними документами, що свідчили
+б про конкретний розмір прибутку, який міг би і повинен був отримати ТОВ.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 14 листопада 2024 року у справі
+[№ 175/4023/21 (провадження № 51-7664км23) https://reyestr.court.gov.ua/Review/123193829](https://reyestr.court.gov.ua/Review/123193829)
+
+### 4. Витрати на поховання
+
+### 4. Витрати на поховання
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04_segment.md № 757/11969/18-к 20 90 20 30 фінансування науки. інноваційний фонд у касаційній скарзі захисник стверджував про неправильне вирішення місцевим семантичний мапінг з урахуванням юрисдикції кцс вс. обрано рубрику «фінансування науки. інноваційний фонд» (бюджетно-фінансове законодавство / державні витрати / фінансування / фінансування науки. інноваційний фонд).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">04_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/110569339" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 757/11969/18-к</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20 90 20 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Державні витрати</span><span class="crumb-sep">›</span><span class="crumb">Фінансування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Фінансування науки. Інноваційний фонд</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>У касаційній скарзі захисник стверджував про неправильне вирішення місцевим</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КЦС ВС. Обрано рубрику «Фінансування науки. Інноваційний фонд» (Бюджетно-фінансове законодавство / Державні витрати / Фінансування / Фінансування науки. Інноваційний фонд).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Витрати на поховання
+
+4. Витрати на поховання
+
+У касаційній скарзі захисник стверджував про неправильне вирішення місцевим
+судом цивільного позову, який обґрунтовуючи своє рішення зазначив, що завдана
+матеріальна шкода на організацію поховання, поминальний обід у зазначеному
+потерпілою розмірі, підтверджена документально, а тому цивільний позов в цій
+частині задовольнив в повному обсязі.
+
+Задовольняючи касаційні вимоги Верховний Суд зазначив, що витрати, пов’язані
+з проведенням поминальних обідів, які проводяться після поховання,
+не належать до витрат на поховання та не підлягають стягненню в порядку
+відшкодування матеріальної шкоди.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 27 квітня 2023 року у справі
+№ 617/1605/18 (провадження № 51-942км22) [https://reyestr.court.gov.ua/Review/110569339](https://reyestr.court.gov.ua/Review/110569339)
+
+VII. СПІВВІДНОШЕННЯ МАТЕРІАЛЬНОЇ ШКОДИ І СКЛАДУ КРИМІНАЛЬНОГО
+ПРАВОПОРУШЕННЯ
+
+У касаційній скарзі представник цивільного позивача вказує, що визнаючи
+засудженого винуватим за ч. 2 ст. 367 КК (службова недбалість, що спричинила
+тяжкі наслідки) суди дійшли суперечливих висновків про відсутність факту
+заподіяння діями засудженого дійсної прямої шкоди АТ «Укрпошта» та безпідставно
+відмовили у позові, оскільки обов’язковою ознакою об’єктивної сторони цього
+кримінального правопорушення є саме настання тяжких наслідків, у цьому разі
+матеріальної шкоди, яку має бути стягнуто з засудженого.
+
+Службова недбалість належить до злочинів із матеріальним складом, який
+за ч. 2 ст. 367 КК визнається закінченим із моменту спричинення тяжких
+наслідків.
+
+Настання тяжких наслідків від службової недбалості є обов’язковою ознакою
+об’єктивної сторони складу злочину, передбаченого ч. 2 ст. 367 КК. Відсутність
+таких наслідків може свідчити про вчинення службовою особою лише
+дисциплінарного чи адміністративного проступку.
+
+Місцевий суд дійшов суперечливих висновків, оскільки визнав доведеним
+обвинувачення, пред’явлене особі, й засудив його за вчинення кримінального
+правопорушення, передбаченого ч. 2 ст. 367 КК, обов’язковою ознакою
+об’єктивної сторони якого є наявність тяжких наслідків у вигляді спричинення
+державним інтересам матеріальних збитків, проте, при вирішенні цивільного
+позову представника потерпілого, одночасно встановив, що діями
+обвинуваченого не була заподіяна дійсна шкода АТ «Укрпошта», чим фактично
+поставив під сумнів наявність в діянні засудженого об’єктивної сторони,
+як елементу складу вчиненого ним кримінального правопорушення.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 06 червня 2024 року у справі
+[№ 308/5823/18 (провадження № 51-69км24) https://reyestr.court.gov.ua/Review/119653424](https://reyestr.court.gov.ua/Review/119653424)
+
+Представник потерпілої вважає, що відповідно до встановлених судами обставин,
+потерпілій заподіяно шкоду саме у зв’язку з недбалими діями приватного нотаріуса,
+яка здійснила запит до Реєстру прав на нерухоме майно та їх обтяжень лише
+за реєстраційним номером об’єкта нерухомого майна, унаслідок чого не було
+отримано даних щодо наявності зареєстрованого рішення суду про арешт
+на квартиру, а не через подання будь-яких підроблених документів.
+
+За встановлених фактичних обставин саме недбалі дії засудженої-приватного
+нотаріуса (перевірка об’єкта нерухомого майна не за всіма ідентифікаторами
+за наявності обтяжень у виді арешту) призвели до відповідних наслідків,
+при цьому відомостей про визнання договору купівлі-продажу квартири
+підробленим документом, який став правовою підставою для реєстрації
+правочину, матеріали кримінального провадження не містять.
+
+Отже, обґрунтовуючи своє рішення, місцевий суд дійшов передчасного висновку
+стосовно підстав відмови у задоволенні цивільного позову, оскільки такі
+висновки суперечать встановленим судом обставинам справи, а також
+не узгоджуються з точним змістом ч. 2 ст. 27 Закону «Про нотаріат».
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 13 лютого 2025 року у справі
+№ 643/3313/21 (провадження № 51-4101км24) [https://reyestr.court.gov.ua/Review/125265399](https://reyestr.court.gov.ua/Review/125265399)
+
+Представник цивільного позивача вважає необґрунтованою відмову у задоволенні
+цивільного позову з підстав того, що заявлені вимоги виходять за межі
+пред’явленого засудженому обвинувачення.
+
+Сума відшкодування за цивільним позовом у кримінальному провадженні
+не обов’язково має збігатися з розміром завданої злочином шкоди, вказаним
+
+в обвинуваченні, яке суд визнав доведеним. Заподіяна кримінальним
+правопорушенням шкода як обставина, що впливає на його кваліфікацію
+та вирішення інших питань, пов’язаних із притягненням особи до кримінальної
+відповідальності, та відшкодування збитків як спосіб захисту порушеного
+цивільного права і компенсаційний механізм мають неоднакову юридичну
+природу, відрізняються за критеріями визначення і правовими наслідками.
+
+Розмір відшкодування збитків є предметом позовних вимог у межах заявленого
+цивільного позову, доводиться цивільним позивачем (потерпілим) самостійно
+за правилами цивільного судочинства з дотриманням приписів ч. 5 ст. 128 КПК
+і не охоплюється межами обвинувачення, яке висувається прокурором
+в обвинувальному акті або постанові про зміну обвинувачення в суді і обов’язок
+доказування якого покладається на державного обвинувача.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 24 квітня 2024 року у справі
+[№ 644/1546/23 (провадження № 51-7168км23) https://reyestr.court.gov.ua/Review/118651171](https://reyestr.court.gov.ua/Review/118651171)
+
+VIII. ПРОЦЕСУАЛЬНІ ПИТАННЯ, ЯКІ ВИНИКАЮТЬ ПІД ЧАС РОЗГЛЯДУ ЦИВІЛЬНОГО
+ПОЗОВУ
+
+У касаційній скарзі потерпілий в обґрунтування своїх вимог вказує, що місцевим
+судом безпідставно не взято до уваги його заяви про збільшення позовних вимог,
+які були зумовлені продовженням лікування під час розгляду кримінального
+провадження в суді, інфляційними процесами та затягуванням справи зі сторони
+обвинувачених по справі.
+
+Задовольняючи касаційні вимоги Верховний Суд зазначив, що кримінальне
+процесуальне законодавство не містить застережень щодо внесення змін
+до цивільного позову під час судового розгляду, включаючи можливість
+збільшення позовних вимог.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 15 травня 2024 року у справі
+[№ 129/2809/19 (провадження № 51-7059км23) https://reyestr.court.gov.ua/Review/119168560](https://reyestr.court.gov.ua/Review/119168560)
+
+Аналогічні правові позиції:
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 19 серпня 2024 року у справі
+№ 521/3869/22 (провадження № 51-2123км24) [https://reyestr.court.gov.ua/Review/121222146](https://reyestr.court.gov.ua/Review/121222146)
+
+Постанова колегії суддів Другої судової палати ККС ВС від 11 лютого 2025 року у справі
+[№ 524/2878/21 (провадження № 51-5327км24) https://reyestr.court.gov.ua/Review/125162527](https://reyestr.court.gov.ua/Review/125162527)
+
+У касаційній скарзі представник потерпілої не погоджується із ухвалою
+апеляційного суду, який приймаючи своє рішення про зміну вироку в частині
+цивільного позову, залишив поза увагою те, що зменшивши розмір стягнення
+моральної шкоди зі страхової компанії на користь потерпілих, фактично зменшив
+її загальний розмір, визначений судом першої інстанції, про що не порушувалось
+питання в апеляційній скарзі. До того ж вважає посилання апеляційного суду на те,
+
+що перерозподіл сум моральної шкоди і стягнення їх з власника джерела підвищеної
+небезпеки не передбачено законом, такими, що суперечать законодавству.
+
+Верховний Суд погодився із такими аргументами звернувши увагу на те,
+що підставою для зменшення судом розміру страхового відшкодування,
+яке підлягає стягненню зі страховика, є передусім зменшенням доведеної
+шкоди, яка повністю покривається страховиком. У разі зменшення судом
+розміру страхового відшкодування, яке підлягає стягненню із страхової компанії
+як страховика, суми відшкодування між ним та страхувальником, як власником
+джерела підвищеної небезпеки, за участі якого трапилась ДТП, перерозподілу
+не підлягають.
+
+Натомість, у разі зменшення зобов’язання страховика без зменшення
+загального розміру шкоди, що підлягає відшкодуванню, сума підлягає
+перерозподілу шляхом збільшення відповідальності власника джерела
+підвищеної небезпеки, не покритої договором страхування.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 11 жовтня 2023 року у справі
+[№ 711/1393/20 (провадження № 51-3032км21) https://reyestr.court.gov.ua/Review/114158816](https://reyestr.court.gov.ua/Review/114158816)
+
+На переконання представника цивільного відповідача суд першої інстанції,
+розглянувши кримінальне провадження за правилами ч. 3 ст. 349 КПК, не перевірив
+обґрунтованості цивільного позову до МТСБУ, не дослідив доказів
+на підтвердження позовних вимог.
+
+Суд першої інстанції, не дослідивши докази щодо обґрунтованості цивільного
+позову в кримінальному провадженні та застосувавши положення
+ч. 3 ст. 349 КПК, допустив істотне порушення вимоги кримінального
+процесуального закону. У разі, коли представник відповідача просить відмовити
+у задоволенні позовних вимог, суд зобов’язаний належним чином з’ясувати
+доведеність підстав та розміру позовних вимог. Вирок суду в частині
+відшкодування матеріальної шкоди, постановлений без дослідження доказів,
+не може вважатися законним та обґрунтованим.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 23 жовтня 2024 року у справі
+[№ 943/207/24 (провадження № 51-3717км24) https://reyestr.court.gov.ua/Review/122638188](https://reyestr.court.gov.ua/Review/122638188)
+
+У касаційній скарзі сторона захисту стверджувала про те, що місцевий суд усупереч
+вимогам КПК безпідставно приєднав до матеріалів кримінального провадження
+цивільний позов дружини загиблого потерпілого та визнав її цивільним позивачем,
+а також здійснив судовий розгляд.
+
+Верховний Суд відхилив зазначені доводи вказавши, що цивільне процесуальне
+законодавство не позбавляє можливості особу, яка має намір звернутися
+із позовом, уповноважити іншу особу подати від її імені такий позов до суду
+або ж надіслати його поштою. Не встановлено таких заборон і нормами КПК.
+
+Перевіркою матеріалів кримінального провадження встановлено, що потерпілий
+у підготовчому судовому засіданні місцевого суду подав цивільний позов
+про стягнення з обвинуваченого на свою користь завданої матеріальної шкоди,
+
+а також на підставі нотаріально посвідченої довіреності долучив заяву
+про визнання цивільним позивачем дружини загиблого потерпілого
+та її цивільний позов до обвинуваченого.
+
+Верховний Суд дійшов висновку, що подання потерпілим, на підставі нотаріально
+посвідченої довіреності, цивільного позову, підписаного його автором
+(дружиною загиблого потерпілого), є лише способом надходження до місцевого
+суду письмового тексту цієї позовної заяви. Такий спосіб звернення особи до суду
+з позовною заявою не суперечить вимогам ані КПК, ані ЦПК.
+
+Отже, місцевий суд підставно, з дотриманням вимог ст. 128 КПК, статей 48, 174,
+175 ЦПК визнав дружину загиблого потерпілого цивільним позивачем у цьому
+кримінальному провадженні та приєднав до матеріалів кримінального
+провадження поданий нею цивільний позов, про що постановив умотивовану
+ухвалу, а надалі з урахуванням вимог ст. 180 ЦПК, ст. 1187 ЦК розглянув
+та задовольнив його.
+
+Водночас захисник в касаційній скарзі не наводить обґрунтувань того, яким
+чином розгляд місцевим судом кримінального провадження щодо загиблого
+потерпілого без участі цивільного позивача (дружини загиблого потерпілого)
+вплинув на законність та обґрунтованість ухваленого цим судом вироку.
+
+Крім того, дружина загиблого потерпілого брала участь у апеляційному
+розгляді цього кримінального провадження та нею було реалізовано
+її право на висловлення позиції щодо встановлених місцевим судом
+у вироку обставин кримінального провадження та аргументів сторони
+захисту, що підтверджується звуко-, відеозаписом судового засідання
+апеляційного суду від 16 січня 2024 року.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 18 червня 2024 року у справі
+№ 190/580/22 (провадження № 51-1361км24) [https://reyestr.court.gov.ua/Review/119941029](https://reyestr.court.gov.ua/Review/119941029)
+
+За твердженням сторони захисту місцевий суд всупереч вимогам КПК здійснив
+судовий розгляд без належного повідомлення потерпілої (дружини загиблого
+потерпілого) та без її участі, що є істотним порушенням вимог кримінального
+
+процесуального закону.
+
+Верховний Суд не погодився із таким аргументом, оскільки відповідно до вимог
+ст. 61 КПК цивільний позивач є самостійним учасником кримінального
+провадження, який у разі незгоди із ухваленими судами рішеннями може
+самостійно їх оскаржити. Тож доводи касаційної скарги сторони захисту
+в інтересах цивільного позивача є фактично реалізацією процесуальних прав,
+які належать іншому учаснику процесу.
+
+Водночас захисник в касаційній скарзі не наводить обґрунтувань того, яким
+чином розгляд місцевим судом кримінального провадження щодо засудженого
+
+без участі цивільного позивача (дружини загиблого потерпілого) вплинув
+на законність та обґрунтованість ухваленого цим судом вироку.
+
+Крім того, дружина загиблого потерпілого брала участь у апеляційному розгляді
+цього кримінального провадження та нею було реалізовано її право
+на висловлення позиції щодо встановлених місцевим судом у вироку
+обставин кримінального провадження та аргументів сторони захисту,
+що підтверджується звуко-, відеозаписом судового засідання апеляційного суду.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 18 червня 2024 року у справі
+[№ 190/580/22 (провадження № 51-1361км24) https://reyestr.court.gov.ua/Review/119941029](https://reyestr.court.gov.ua/Review/119941029)
+
+В обґрунтування доводів поданої касаційної скарги цивільний відповідач зазначає,
+що суди безпідставно стягнули з нього судовий збір, оскільки це суперечить
+висновку об’єднаної палати Касаційного кримінального суду.
+
+Задовольняючи цю касаційну вимогу, Верховний Суд зазначив, що поняття
+«судові витрати» є більш широким, ніж поняття «процесуальні витрати».
+Вичерпний перелік видів процесуальних витрат міститься у ст. 118 КПК, а їхній
+розподіл регламентовано ст. 124 цього Кодексу. Зокрема, законодавець
+визначив такі види процесуальних витрат, які складаються: з витрат на правову
+допомогу; з витрат, пов’язаних із прибуттям до місця досудового розслідування
+або судового провадження; з витрат, пов’язаних із залученням потерпілих,
+свідків, спеціалістів, перекладачів та експертів; з витрат, пов’язаних
+із зберіганням і пересиланням речей і документів (див., наприклад, постанову
+Об’єднаної палати Касаційного кримінального суду у складі Верховного Суду від
+23 січня 2019 року в справі № 187/291/17).
+
+На переконання Верховного Суду кримінальний процесуальний закон
+не передбачає стягнення судового збору з учасників судового провадження
+при вирішенні цивільного позову в межах кримінального провадження.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 14 січня 2026 року у справі
+[№ 571/244/25 (провадження № 51-2214км25) https://reyestr.court.gov.ua/Review/133421571](https://reyestr.court.gov.ua/Review/133421571)
+
+У касаційних скаргах стверджувалось про безпідставне посилання представника
+цивільного позивача на висновки судово-економічної та додаткової
+судово-економічної експертиз через те, що представникам цивільного позивача
+не відкривалися матеріали кримінального провадження в порядку ст. 290 КПК і вони
+не ознайомлювалися з ними.
+
+Ознайомлення представників цивільного позивача з матеріалами
+кримінального провадження в частині, що стосується вчиненого кримінального
+правопорушення та завданої матеріальної шкоди може відбуватися і після
+завершення виконання вимог ст. 290 КПК, що не суперечить вимогам КПК.
+
+Постанова ОП ККС ВС від 10 лютого 2025 року у справі № 757/11969/18-к (провадження
+№ 51 5885км19) [https://reyestr.court.gov.ua/Review/125228095](https://reyestr.court.gov.ua/Review/125228095)
+
+На обґрунтування касаційних вимог захисники вказували, що цивільний позивач
+не оскаржував виправдувальний вирок місцевого суду, а тому, скасовуючи цей
+вирок, апеляційний суд допустив істотне порушення вимог кримінального
+
+процесуального закону.
+
+Фактично перегляд апеляційним судом виправдувального вироку місцевого суду
+зумовлює вирішення ним усіх тих питань, які повинен був би вирішити місцевий
+суд у випадку постановлення обвинувального вироку.
+
+Такому твердженню кореспондує і норма п. 2 ч. 3 ст. 374 КПК, згідно з якою
+у мотивувальній частині вироку суду апеляційної інстанції, у разі визнання особи
+винуватою, у тому числі зазначаються підстави для задоволення цивільного
+позову або відмови у ньому.
+
+Об’єднана палата ККС дійшла висновку, що скасування виправдувального
+вироку суду першої інстанції з подальшим ухваленням апеляційним судом
+обвинувального вироку у всіх випадках тягне за собою необхідність вирішення
+апеляційним судом цивільного позову, заявленого у порядку ст. 128 КПК.
+
+Постанова ОП ККС ВС від 10 лютого 2025 року у справі № 757/11969/18-к (провадження
+№ 51-5885км19) [https://reyestr.court.gov.ua/Review/125228095](https://reyestr.court.gov.ua/Review/125228095)
+
+У касаційній скарзі представник потерпілої стверджував, що суд апеляційної
+інстанції не вирішив питання щодо процесуальних витрат, понесених потерпілою
+у зв’язку із заявленим цивільним позовом .
+
+Відповідно до ч. 3 ст. 124 КПК якщо суд апеляційної чи касаційної інстанції,
+не приймаючи рішення про новий судовий розгляд, змінить судове рішення
+або ухвалить нове, він відповідно змінює розподіл процесуальних витрат.
+
+Як вбачається зі змісту касаційної скарги, процесуальні витрати, понесені
+потерпілою, стосуються також пред’явленого цивільного позову
+у кримінальному провадженні.
+
+Ухвалою суду апеляційної інстанції вирок місцевого суду скасовано в частині
+вирішення цивільного позову та призначено новий розгляд в цій частині у суді
+першої інстанції в порядку цивільного судочинства.
+
+З огляду на це, розподіл апеляційним судом процесуальних витрат, пов’язаних
+з пред’явленням та розглядом цивільного позову, до його остаточного
+вирішення не узгоджуватиметься з положеннями ч. 3 ст. 124 КПК та буде
+
+передчасним.
+
+Невирішення питання про розподіл процесуальних витрат не може бути єдиною
+підставою для скасування прийнятих судами першої та апеляційної інстанцій
+судових рішень, оскільки не є істотним порушенням вимог КПК та не впливає
+
+на вирішення питання кримінально-правової кваліфікації, доведеності
+винуватості і призначення покарання.
+
+Означене у касаційній скарзі представника потерпілої питання щодо розподілу
+процесуальних витрат може бути вирішено відповідно до положень
+ч. 5 ст. 534 КПК, згідно з якою процесуальні питання, пов’язані з виконанням
+судових рішень у кримінальному провадженні, вирішує суддя суду першої
+інстанції одноособово.
+
+Ухвала колегії суддів Першої судової палати ККС ВС від 16 березня 2026 року у справі
+[№ 202/11790/24 (провадження № 51-527ск26) https://reyestr.court.gov.ua/Review/134881235](https://reyestr.court.gov.ua/Review/134881235)
+
+Огляд судової практики Верховного Суду щодо цивільного позову
+в кримінальному провадженні (актуальна практика) / Упоряд.: управління
+аналітичної та правової роботи Касаційного кримінального суду департаменту
+аналітичної та правової роботи; заст. голови Касаційного кримінального суду
+у складі Верховного Суду, д. ю. н. Антонюк Н. О., заступник керівника
+департаменту аналітичної та правової роботи Апарату Верховного Суду,
+к. ю. н. Зеленов Г. М. Київ, 2026. – 38 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 4;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

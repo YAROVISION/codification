@@ -1,0 +1,2540 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KAS_03_2025 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KAS_03_2025 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KAS_03_2025.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KAS_03_2025</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">15</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">71.2%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">15</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 15 із 15</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01_segment.md № 160/5643/23 50 20 50 переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці до договору оренди семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (трудове законодавство / трудовий договір. контракт / переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125656549" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/5643/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 20 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудовий договір. Контракт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>до договору оренди</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (Трудове законодавство / Трудовий договір. Контракт / Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1. Про правові наслідки зміни ставки орендної плати без внесення змін
+
+до договору оренди
+
+Податковий кодекс України встановлює мінімальний розмір орендної плати (3 %
+від нормативної грошової оцінки земельної ділянки). Зміна ставки орендної плати
+понад цей мінімум може бути здійснена тільки за згодою орендодавця та орендаря,
+шляхом внесення змін до укладеного договору оренди. Без перегляду умов чинного
+договору застосування нової ставки орендної плати є неправомірним, навіть у разі
+ухвалення органом місцевого самоврядування відповідного рішення про її
+збільшення
+
+06 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу фізичної особи на постанову
+Третього апеляційного адміністративного суду від 30 жовтня 2024 року у справі №
+160/5643/23 за позовом фізичної особи до Головного управління ДПС
+у Дніпропетровській області про визнання протиправними та скасування
+податкових повідомлень-рішень.
+
+ОБСТАВИНИ СПРАВИ
+
+Платник орендував земельну ділянку на підставі договору оренди, укладеного
+з міською радою у 2015 році, з розміром орендної плати 3 % від нормативної
+грошової оцінки земельної ділянки. У 2018 році міська рада збільшила ставку
+орендної плати для земельних ділянок відповідного цільового призначення до 4 %
+від нормативної грошової оцінки земель. За результатами податкової перевірки
+контрольний орган на підставі зазначеного рішення міської ради здійснив
+нарахування орендної плати за період з 2018 до 2022 року, застосувавши
+підвищену ставку орендної плати 4 %. Платник уважав, що нарахування орендної
+плати з використанням підвищеної ставки є неправомірним, оскільки сума орендної
+плати була визначена відповідно до умов чинного податкового законодавства
+та договору, зміни до якого не було внесено.
+
+Дніпропетровський окружний адміністративний суд рішенням
+від 29 травня 2023 року задовольнив позов та скасував податкові повідомленнярішення. Суд першої інстанції вказав, що рішення міської ради про збільшення
+орендної плати автоматично не змінює умови укладеного договору оренди без
+внесення змін до нього, тому орендна плата має залишатися на рівні 3 %
+від нормативної грошової оцінки згідно з умовами договору.
+
+Третій апеляційний адміністративний суд скасував рішення суду першої
+інстанції та ухвалив нову постанову, якою відмовив у задоволенні позову. Суд
+апеляційної інстанції дійшов висновку, що органи місцевого самоврядування,
+відповідно до своїх повноважень згідно зі статтею 12 Податкового кодексу
+України, мали право встановлювати орендну плату на рівні 4 % без необхідності
+вносити зміни до договору.
+
+Верховний Суд задовольнив касаційну скаргу, скасувавши оскаржуване судове
+рішення та залишивши чинним рішення суду першої інстанції.
+
+ОЦІНКА СУДУ
+Податковий кодекс України чітко регулює питання орендної плати за земельні
+ділянки державної та комунальної власності. Згідно зі статтею 288 Податкового
+кодексу України орендна плата має бути визначена в договорі оренди, але річна
+сума платежу не може бути меншою ніж 3 % від нормативної грошової оцінки
+земельної ділянки (як це встановлено підпунктом 288.5.1 статті 288 цього Кодексу),
+а також не може перевищувати 12 %.
+
+Зміна орендної плати може бути здійснена лише після внесення змін
+до договору оренди шляхом укладення додаткової угоди. Якщо ставка орендної
+плати в договорі вже відповідає встановленому законодавцем мінімуму (3 %), її
+зміна потребує укладення додаткової угоди між сторонами. Лише після цього можна
+застосовувати нову ставку орендної плати, визначену органами місцевого
+
+самоврядування.
+
+У разі суперечності між нормами Податкового кодексу України та іншими
+
+нормативно-правовими актами, перевага надається нормам цього кодексу,
+оскільки вони є актами загальнодержавного рівня, що регулюють орендні
+відносини. Навіть якщо орган місцевого самоврядування ухвалив рішення про зміну
+орендної ставки, це не дає підстав для автоматичного збільшення орендної плати
+без внесення змін до укладеного договору оренди.
+
+Детальніше з текстом постанови Верховного Суду від 06 березня 2025 року у справі №
+[160/5643/23 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125656549.](https://reyestr.court.gov.ua/Review/125656549)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2_segment.md № 160/21398/24 10160 60 відповідність нормативних актів вимогам конституції та іншим законам до процедури перевірки й оформлення актів семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «відповідність нормативних актів вимогам конституції та іншим законам» (основи суспільного ладу / законодавство / відповідність нормативних актів вимогам конституції та іншим законам).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125932922" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/21398/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10160 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Відповідність нормативних актів вимогам конституції та іншим законам</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>до процедури перевірки й оформлення актів</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Відповідність нормативних актів вимогам конституції та іншим законам» (Основи суспільного ладу / Законодавство / Відповідність нормативних актів вимогам конституції та іншим законам).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2. Про анулювання реєстрації платника єдиного податку та вимоги
+до процедури перевірки й оформлення актів
+
+Анулювання реєстрації платника єдиного податку можливе лише за умови
+проведення належної перевірки, результатами якої встановлено порушення,
+що перешкоджають перебуванню платника на спрощеній системі оподаткування.
+Акт перевірки має містити чіткі та обґрунтовані висновки, що підтверджують факт
+порушення, а також мати достатні доказові матеріали, щоб бути підставою
+для ухвалення рішення про виключення з реєстру платників єдиного податку.
+
+Результати такої перевірки не мають правових наслідків у разі недотримання вимог
+до процедури перевірки й оформлення акта
+
+18 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Товариства з обмеженою
+відповідальністю «Теленавігатор» на постанову Третього апеляційного
+адміністративного суду від 30 січня 2025 року у справі № 160/21398/24 за позовом
+Товариства з обмеженою відповідальністю «Теленавігатор» до Головного
+управління ДПС у Дніпропетровській області про визнання протиправним
+і скасування рішення про виключення позивача з реєстру платників єдиного
+
+податку.
+
+ОБСТАВИНИ СПРАВИ
+
+Контрольний орган провів перевірку правомірності перебування платника
+на спрощеній системі оподаткування. Акт перевірки не підтверджував, що платник
+здійснював заборонену законом діяльність, і не містив чітких та об’єктивних
+висновків щодо порушень, які стали підставою для анулювання реєстрації
+платника. У позові платник указував на процедурні порушення з боку
+контрольного органу та зазначив, що не здійснював таку діяльність, яка
+на підставі підпункту 291.5.1 статті 291 Податкового кодексу України позбавляє
+права перебувати на спрощеній системі оподаткування.
+
+Дніпропетровський окружний адміністративний суд рішенням
+від 11 жовтня 2024 року задовольнив позов, визнавши протиправним
+та скасувавши оскаржуване рішення контрольного органу. Суд першої інстанції
+зазначив, що обмеження перебування на спрощеній системі оподаткування згідно
+з підпунктом 291.5.1 статті 291 Податкового кодексу України стосуються лише тих
+суб’єктів господарювання, які здійснюють діяльність, прямо зазначену
+в Податковому кодексі України, зокрема, у сфері поштового та телефонного
+зв’язку. Оскільки позивач не здійснював таких видів діяльності, то не було підстав
+для його виключення з реєстру платників єдиного податку.
+
+Третій апеляційний адміністративний суд скасував рішення суду першої
+інстанції та ухвалив нове, яким відмовив у задоволенні позову. Суд апеляційної
+інстанції дійшов висновку, що діяльність платника, яка не включає технічне
+обслуговування мереж, підпадає під обмеження для платників єдиного податку
+третьої групи, оскільки пов’язана з наданням послуг електронного зв’язку, зокрема
+послуг доступу до мережі Інтернет.
+
+Верховний Суд частково задовольнив касаційну скаргу, скасувавши
+оскаржуване судове рішення та змінивши рішення суду першої інстанції
+в мотивувальній частині, зокрема, щодо підстав та належного обґрунтування акта
+перевірки. В іншій частині рішення суду першої інстанції було залишено без змін.
+
+ОЦІНКА СУДУ
+Платники можуть обирати спрощену систему оподаткування за умови
+відповідності вимогам, визначеним статтями 291, 299 Податкового кодексу України.
+
+Реєстрація платника єдиного податку є безстроковою, але може бути
+анульована згідно з рішенням контрольного органу. Анулювання реєстрації
+можливе лише після проведення перевірки, на підставі якої встановлюють
+порушення, що перешкоджають перебуванню платника на спрощеній системі
+оподаткування. Перевірка є необхідною для виявлення порушень, а акт перевірки
+має містити чіткі дані про виявлені порушення та можливість їх оскарження
+платником. Якщо перевірка проведена з порушеннями або акт перевірки не містить
+достатніх доказів, результати такої перевірки не можуть бути підставою
+для ухвалення рішення про анулювання реєстрації платника.
+
+Детальніше з текстом постанови Верховного Суду від 18 березня 2025 року у справі №
+[160/21398/24 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125932922.](https://reyestr.court.gov.ua/Review/125932922)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.3_segment.md № 500/1744/24 150120 50 прибутки (доходи). рентабельність згідно з правилами податкового кодексу україни та міжнародними договорами семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «прибутки (доходи). рентабельність» (загальні засади правового регулювання економічного розвитку / майно, фінанси, розрахунки, планування підприємств / прибутки (доходи). рентабельність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">01.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125933033" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 500/1744/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150120 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Майно, фінанси, розрахунки, планування підприємств</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прибутки (доходи). Рентабельність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Згідно з правилами Податкового кодексу України та міжнародними договорами</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Прибутки (доходи). Рентабельність» (Загальні засади правового регулювання економічного розвитку / Майно, фінанси, розрахунки, планування підприємств / Прибутки (доходи). Рентабельність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.3. Про застосування зниженої ставки податку на доходи нерезидента
+
+Згідно з правилами Податкового кодексу України та міжнародними договорами
+право на застосування зниженої ставки податку на доходи нерезидента має лише
+той, хто є фактичним бенефіціарним власником доходу. Нерезидент, який є лише
+посередником або номінальним отримувачем без фактичного розпорядження
+доходом, не може скористатися пільговими умовами оподаткування
+
+18 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління ДПС
+у Тернопільській області на постанову Восьмого апеляційного адміністративного
+суду від 03 грудня 2024 року у справі № 500/1744/24 за позовом Товариства
+з обмеженою відповідальністю «Фора С» до Головного управління ДПС
+у Тернопільській області про визнання протиправним і скасування податкового
+повідомлення-рішення.
+
+ОБСТАВИНИ СПРАВИ
+
+Платник-резидент здійснював виплати відсотків компанії-нерезиденту згідно
+з договором позики. На переконання податкового органу, застосування зниженої
+ставки податку на доходи нерезидента замість належних 15 % призвело
+до несплати податку за 2019 та 2020 роки, що стало підставою для донарахування
+податкового зобов’язання на суму понад 3 млн грн. Платник заперечував проти
+таких висновків.
+
+Тернопільський окружний адміністративний суд рішенням
+від 03 вересня 2024 року відмовив у задоволенні позову, оскільки контрагент
+
+нерезидент платника є лише посередником, тому не є бенефіціарним власником
+
+доходу.
+
+Восьмий апеляційний адміністративний суд скасував рішення першої інстанції,
+задовольнивши апеляційну скаргу. Суд апеляційної інстанції зазначив про
+ненадання достатніх доказів того, що інша компанія-нерезидент є фактичним
+
+власником нарахованого та виплаченого доходу, отриманого в межах
+посередницької діяльності контрагента-нерезидента платника. Відсотки, нараховані
+згідно з договором, мають бути доходом платника-резидента, а не інших осіб.
+
+Верховний Суд задовольнив касаційну скаргу, скасувавши оскаржуване судове
+рішення та залишивши чинним рішення суду першої інстанції.
+
+ОЦІНКА СУДУ
+Основною умовою застосування податкових пільг є статус бенефіціарного
+(фактичного) отримувача доходу. Нерезидент, який є бенефіціарним власником
+доходу, має право на знижені ставки податків або звільнення від оподаткування
+згідно з міжнародними договорами, укладеними Україною. Для застосування
+вказаних пільг нерезидент має надати податковому агенту підтвердження свого
+статусу резидента країни, з якою Україна має міжнародну угоду, а також документ,
+що підтверджує бенефіціарний статус.
+
+Пільги згідно з міжнародними податковими угодами не можна застосовувати
+
+в таких випадках:
+
+– щодо юридичних або фізичних осіб, які є номінальними утримувачами
+доходу або виступають посередниками для іншої особи, яка фактично отримує
+вигоду від доходу (у такому випадку положення міжнародних угод можна
+застосувати лише до кінцевого бенефіціарного власника);
+
+– якщо операція має на меті лише формальне отримання податкових вигод,
+а не реальне здійснення господарської діяльності.
+
+Детальніше з текстом постанови Верховного Суду від 18 березня 2025 року у справі №
+[500/1744/24 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125933033.](https://reyestr.court.gov.ua/Review/125933033)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.4_segment.md № 280/4264/21 150 70 10 ліцензування окремих видів діяльності (сертифікати. патентування) для визнання діяльності іноземної компанії постійним представництвом в україні семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «ліцензування окремих видів діяльності (сертифікати. патентування)» (загальні засади правового регулювання економічного розвитку / підприємницька діяльність / ліцензування окремих видів діяльності (сертифікати. патентування)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">01.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126136681" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 280/4264/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 70 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Підприємницька діяльність</span><span class="crumb-sep">›</span><span class="crumb-leaf">Ліцензування окремих видів діяльності (Сертифікати. Патентування)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Для визнання діяльності іноземної компанії постійним представництвом в Україні</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Ліцензування окремих видів діяльності (Сертифікати. Патентування)» (Загальні засади правового регулювання економічного розвитку / Підприємницька діяльність / Ліцензування окремих видів діяльності (Сертифікати. Патентування)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.4. Про визначення постійного представництва іноземної компанії в Україні
+
+Для визнання діяльності іноземної компанії постійним представництвом в Україні
+достатньо встановити регулярний характер її господарської діяльності через
+представників, які укладають угоди та здійснюють ключові функції на території
+України. Наведене зобов’язує іноземну компанію сплачувати податки на доходи,
+отримані від такої діяльності, згідно зі ставкою, що відповідає загальним нормам
+
+оподаткування.
+
+20 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління ДПС
+
+у Запорізькій області на постанову Третього апеляційного адміністративного суду
+від 16 листопада 2023 року у справі № 280/4264/21 за позовом Товариства
+з обмеженою відповідальністю «Науково-виробниче підприємство Агрофірма
+„Солодководне“» до Головного управління ДПС у Запорізькій області про визнання
+протиправним і скасування податкового повідомлення-рішення.
+
+ОБСТАВИНИ СПРАВИ
+
+Під час податкової перевірки було встановлено, що платник виплатив
+дивіденди своєму учаснику (компанії-нерезиденту) на загальну суму 24,8 млн грн,
+застосовуючи ставку 5 %. Водночас компанія провадила діяльність в Україні через
+представників, які підписували важливі угоди та контролювали активи компанії.
+Контрольний орган уважав, що ставка податку на прибуток іноземних юридичних
+осіб на відповідні дивіденди має становити 15 %, оскільки компанія-нерезидент
+здійснювала свою господарську діяльність в Україні через постійне
+
+представництво.
+
+Суди неодноразово розглядали відповідну справу.
+Запорізький окружний адміністративний суд рішенням від 26 квітня 2023 року
+відмовив у задоволенні позову. Суд апеляційної інстанції вказав, що позивач є
+пов’язаною особою з компанією нерезидентом через спільних бенефіціарів.
+Оскільки діяльність цих осіб в Україні виходить за межі допоміжних функцій і має
+характер основної господарської діяльності, то компанія-нерезидент має постійне
+представництво в Україні, а дивіденди підлягають оподаткуванню згідно
+зі ставкою 15 %.
+
+Третій апеляційний адміністративний суд скасував рішення суду першої
+інстанції та задовольнив позов, визнавши, що платник правомірно застосував
+знижену ставку податку на дивіденди (5 %). Суд першої інстанції дійшов висновку,
+що до 23 травня 2020 року податкове законодавство не містило чітких положень
+стосовно оподаткування юридичних осіб, які обрали спрощену систему
+оподаткування, під час виплати доходів нерезидентам. На переконання суду, участь
+спільних бенефіціарів в загальних зборах платника не вказує на створення
+постійного представництва, оскільки їхні функції охоплюють лише повноваження
+учасників.
+
+Верховний Суд задовольнив касаційну скаргу, скасувавши оскаржуване судове
+рішення та залишивши чинним рішення суду першої інстанції.
+
+ОЦІНКА СУДУ
+Відповідно до Податкового кодексу України постійним представництвом
+визнається місце, де нерезидент здійснює свою господарську діяльність через
+представника, який має достатній рівень автономії для укладання договорів
+або здійснення інших операцій від імені компанії. Якщо представники іноземної
+компанії укладають угоди, контролюють активи або виконують інші ключові
+
+господарські функції, це є підставою для визнання їх діяльності постійним
+представництвом. Для визнання діяльності постійним представництвом необхідно
+встановити, що така діяльність є регулярною, систематичною та має на меті
+отримання доходів на території держави, де представництво здійснює свою
+діяльність.
+
+Якщо діяльність спільних бенефіціарів, які виконували управлінські функції
+та укладали важливі угоди від імені компанії-нерезидента в Україні, була достатньо
+тісно пов’язана з основною господарською діяльністю компанії, то такі дії фактично
+створюють постійне представництво на території України.
+
+Іноземна компанія, визнана постійним представництвом на території України,
+зобов’язана сплачувати податки на доходи, отримані від такої діяльності, згідно
+зі ставкою, що відповідає загальним нормам оподаткування, а не
+з використанням зниженої ставки, встановленої для дивідендів, що виплачують
+
+нерезидентам.
+
+Детальніше з текстом постанови Верховного Суду від 20 березня 2025 року у справі №
+[280/4264/21 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/126136681.](https://reyestr.court.gov.ua/Review/126136681)
+
+ІІ. СПРАВИ, РОЗГЛЯНУТІ СУДОВОЮ ПАЛАТОЮ З РОЗГЛЯДУ СПРАВ ЩОДО
+ЗАХИСТУ СОЦІАЛЬНИХ ПРАВ
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md № 260/4202/24 140270 40 квотування, ліцензування господарювання на підставі договорів про співробітництво семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «квотування, ліцензування» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / економічне співробітництво з іноземними країнами / квотування, ліцензування).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125656333" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 260/4202/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140270 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb">Економічне співробітництво з іноземними країнами</span><span class="crumb-sep">›</span><span class="crumb-leaf">Квотування, ліцензування</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>господарювання на підставі договорів про співробітництво</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Квотування, ліцензування» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Економічне співробітництво з іноземними країнами / Квотування, ліцензування).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.2. Про неприпустимість обміну персоналом (працівниками) між суб’єктами
+господарювання на підставі договорів про співробітництво
+
+Трудове законодавство України вимагає офіційного оформлення трудових відносин
+відповідно до норм Кодексу законів про працю України. У зв’язку із цим обмін
+персоналом (працівниками) між підприємствами (юридичними особами
+або фізичними особами – підприємцями) на підставі договорів про співробітництво
+(співпрацю або партнерство) є неприпустимим і може свідчити виключно про
+використання роботодавцем способу обходу вимог трудового законодавства про
+обов’язкове оформлення трудових відносин
+
+06 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Західного міжрегіонального
+
+управління Державної служби з питань праці на постанову Восьмого апеляційного
+адміністративного суду від 21 листопада 2024 року у справі № 260/4202/24
+за позовом Фізичної особи-підприємця до Західного міжрегіонального управління
+державної служби з питань праці про скасування постанови про накладення
+штрафу за порушення законодавства про працю та зайнятість населення.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивачка є фізичною особою-підприємцем, яка здійснює торгівлю
+алкогольними напоями. 12 квітня 2024 року до управління Держпраці надійшов
+лист від Головного Управління ДПС у Закарпатській області про вжиття заходів
+реагування у зв’язку з тим, що позивач допустила працівника до роботи без
+оформлення трудового договору та без повідомлення центрального органу
+виконавчої влади про прийняття працівника на роботу. Відповідач прийняв рішення
+про накладення штрафу на позивачку за порушення законодавства про працю
+та зайнятість населення. Позивачка стверджувала, що не здійснювала фактичний
+допуск особи до роботи, оскільки остання є самостійним підприємцем. Вони
+спільно використовують нежитлове приміщення на підставі договорів
+з власником. Між ними укладено договір про співробітництво, який передбачає
+взаємну допомогу у організації роботи магазину-кафе, а факт проведення
+розрахункових операцій та продажу товару особою не є доказом трудових відносин
+між ними, а є результатом реалізації договору про співробітництво між фізичними
+особами-підприємцями.
+
+Рішенням окружного адміністративного суду відмовлено у задоволенні
+позову. Суд першої інстанції виходив з того, що позивачка під час перевірки
+та прийняття оскарженого рішення не надала доказів на спростування
+встановлених відповідачем обставин щодо використання позивачкою праці особи
+без укладення трудового договору.
+
+Постановою апеляційного адміністративного суду скасовано рішення
+окружного адміністративного суду і ухвалено нове рішення, яким позов
+задоволено. Суд апеляційної інстанції вказав, що відповідно до договору про
+співробітництво, що укладений між ФОП позивача та ФОП особи, сторони
+зобов’язалися сприяти одна одній в організації роботи магазину-кафе. Факт
+проведення розрахункових операцій ФОП особи та продажу товару у магазині
+під час фактичної перевірки позивачки не може бути самостійною підставою
+на підтвердження трудового характеру правовідносин між ФОП особи
+та позивачкою, а є наслідком реалізації договору про співробітництво двох
+фізичних осіб-підприємців.
+
+Верховний Суд задовольнив касаційну скаргу, скасував рішення суду
+апеляційної інстанції та залишив в силі рішення суду першої інстанції.
+
+ОЦІНКА СУДУ
+
+Верховний Суд вказав, що чинне законодавство України не передбачає
+можливості передачі трудових ресурсів між суб’єктами господарювання на підставі
+договору про співпрацю (партнерство).
+
+Трудове законодавство України вимагає офіційного оформлення трудових
+відносин відповідно до норм КЗпП України. У зв’язку з цим обмін персоналом
+(працівниками) між підприємствами (юридичними особами або фізичними особамипідприємцями) на підставі договорів про співробітництво (співпрацю або партнерство)
+є неприпустимим і може свідчити виключно про використання роботодавцем способу
+обходу вимог трудового законодавства про обов’язкове оформлення трудових
+відносин.
+
+Залучення працівників одного підприємства до виконання роботи на іншому
+підприємстві можливе лише за умови офіційного переведення працівника відповідно
+до статті 32 КЗпП України або оформлення роботи за сумісництвом згідно зі
+статтею 102-1 КЗпП України.
+
+У випадку, якщо працівник фактично виконує трудові функції на користь іншого
+роботодавця, але без укладення трудового договору, це може свідчити про наявність
+прихованих трудових відносин, що є порушенням трудового законодавства і, відповідно
+до статті 265 КЗпП України, є підставою для застосування до такого суб’єкта
+відповідальності у вигляді штрафу.
+
+У справі, що розглядається, наявність договору про співпрацю (партнерство) не є
+достатньою правовою підставою для залучення працівників однієї сторони
+до виконання роботи на користь іншої сторони без належного оформлення трудових
+відносин відповідно до положень КЗпП України. Встановлений під час фактичної
+перевірки і підтверджений відповідним актом факт здійснення розрахункових операцій
+особою та продаж нею товару, що належить ФОП позивача без укладення трудового
+договору достеменно свідчить про обхід законодавчих вимог щодо оформлення
+трудових відносин і суперечить нормам трудового законодавства.
+
+Детальніше з текстом постанови Верховного Суду від 06 березня 2025 року у справі №
+[260/4202/24 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125656333](https://reyestr.court.gov.ua/Review/125656333) .
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 200/1767/24 150160 матеріально-технічне постачання підприємств що займаються видобутком та переробкою кам’яної солі відповідно семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «матеріально-технічне постачання підприємств» (загальні засади правового регулювання економічного розвитку / матеріально-технічне постачання підприємств).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125626307" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 200/1767/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150160</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Матеріально-технічне постачання підприємств</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>що займаються видобутком та переробкою кам’яної солі відповідно</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Матеріально-технічне постачання підприємств» (Загальні засади правового регулювання економічного розвитку / Матеріально-технічне постачання підприємств).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.1. Про право на пільгове пенсійне забезпечення працівників підприємств,
+що займаються видобутком та переробкою кам’яної солі відповідно
+до Закону України «Про підвищення престижності шахтарської праці»
+
+Стаття 1 Закону України від 02 вересня 2008 року № 345-VI «Про підвищення
+престижності шахтарської праці» містить чітко визначений перелік корисних
+копалин, видобуток яких є підставою для визнання особи шахтарем у розумінні
+цього Закону. Будь-які інші види корисних копалин, включно з кам’яною сіллю, не
+передбачені в зазначеному переліку. Тому діяльність підприємств, що займаються
+видобутком та переробкою солі, не належить до сфери регулювання цього Закону
+й не дає права працівникам таких підприємств на пільгове пенсійне забезпечення
+або інші спеціальні гарантії, встановлені для шахтарів
+
+04 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу особи на постанову Першого
+апеляційного адміністративного суду від 19 вересня 2024 року у справі №
+200/1767/24 за позовом особи до Головного управління Пенсійного фонду України
+в Донецькій області, про визнання протиправними дій щодо відмови у перерахунку
+
+та виплаті пенсії у розмірі 80 відсотків середньомісячної заробітної плати
+відповідно до статті 8 Закону України від 02 вересня 2008 року № 345-VI «Про
+підвищення престижності шахтарської праці» (далі – Закон № 345-VI).
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач, який є пенсіонером, з 1994 року по 2022 рік працював у державному
+підприємстві «Артемсіль» та виконував роботи з повним робочим днем
+під землею. У 2020 році позивачу проведено перерахунок, в результаті якого його
+переведено з пенсії по інвалідності від загального захворювання на пільгову
+пенсію за віком відповідно до частини третьої статті 114 Закону України «Про
+загальнообов’язкове державне пенсійне страхування» від 09 липня 2003 року №
+1058-IV (далі – Закон № 1058-IV). Позивач вважав, що при проведенні перерахунку
+відповідач не врахував норми Закону № 345-VI, що призвело до отримання
+позивачем пенсії у меншому розмірі ніж передбачено законодавством. Відмова
+у перерахунку пенсії обґрунтована тим, що норма статті 8 Закону № 345-VI не
+поширюється на працівників по видобутку солі, тож для встановлення позивачу
+розміру пенсії, що відповідає 80 відсотків середньомісячної заробітної плати немає
+підстав.
+
+Рішенням окружного адміністративного суду позов задоволено частково. Суд
+першої інстанції виходив з того, що мінімальний розмір пенсії у розмірі 80 відсотків
+середньої заробітної плати шахтаря, але не менш як три розміри прожиткового
+мінімуму, встановленого для осіб, які втратили працездатність, є додатковою
+гарантією для шахтарів, які працювали на підземних роботах не менш як 15 років
+для чоловіків за Списком № 1, яка встановлена на випадок, коли після розрахунку
+у встановленому законом порядку розміру відповідної пенсії за віком (в тому числі,
+з урахуванням понаднормового стажу, встановленого статтею 8 Закону № 345-VI)
+така пенсія буде менша ніж три розміри прожиткового мінімуму, встановленого
+для осіб, які втратили працездатність. Виходячи з положень наведеної норми, суд
+першої інстанції вказав, що до кола працівників, на яких поширюється дія Закону
+№ 345-VI та встановлені пільги, належать тільки працівники, зазначені у Списку №
+1, які були зайняті на підземних роботах повний робочий день.
+
+Постановою апеляційного адміністративного суду скасовано рішення
+окружного адміністративного суду і ухвалено нове рішення, яким відмовлено
+у задоволенні позову. Суд апеляційної інстанції вказав, що дія статті 8 Закону №
+345 - VI поширюється, зокрема, на працівників, які видобувають вугілля, залізну
+руду, руди кольорових і рідкісних металів, марганцеві, уранові, магнієві (солі
+калієво-магнієві та солі магнієві) та озокеритні руди. Водночас позивач працював
+повний робочий день під землею на посаді електрослюсаря (слюсар) з ремонту
+устаткування у ДП «Артемсіль», що не належить до підприємств, до видів
+діяльності яких не відноситься видобування зазначених вище коисних копалин.
+
+Відтак, позивач не може вважатися працівником на якого поширюється дія статті 8
+Закону № 345-VI.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення суду
+апеляційної інстанції без змін.
+
+ОЦІНКА СУДУ
+Верховний Суд зазначив, що стаття 1 Закону № 345-VI містить чітко визначений
+перелік корисних копалин, видобуток яких є підставою для визнання особи шахтарем
+у розумінні цього Закону. Зокрема, до таких корисних копалин відносяться: вугілля;
+залізна руда; руди кольорових і рідкісних металів; марганцеві руди; уранові руди;
+магнієві руди (солі калієво-магнієві та солі магнієві); озокеритні руди.
+
+Будь-які інші види корисних копалин, включаючи кам’яну сіль, не передбачені
+у зазначеному переліку. Тому діяльність підприємств, що займаються видобутком
+та переробкою солі, не належить до сфери регулювання цього Закону і не дає права
+працівникам таких підприємств на пільгове пенсійне забезпечення або інші спеціальні
+гарантії, встановлені для шахтарів.
+
+Судами встановлено, що згідно з витягом з Єдиного державного реєстру
+юридичних осіб, фізичних осіб-підприємців та громадських формувань, основним видом
+діяльності ДП «Артемсіль» відповідно до Класифікації видів економічної діяльності
+(КВЕД) є добування солі (код КВЕД 08.93).
+
+Отже, суд апеляційної інстанції правильно вказав, що ДП «Артемсіль» не належить
+до підприємств, що видобувають вугілля, залізну руду, руди кольорових і рідкісних
+металів, марганцеві, уранові, магнієві (солі калієво-магнієві та солі магнієві)
+та озокеритні руди.
+
+Детальніше з текстом постанови Верховного Суду від 04 березня 2025 року у справі №
+200/1767/24 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125626307.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.3_segment.md № 460/9136/23 30 50 20 приватна власність дозвільного характеру, строки дії яких автоматично продовжуються семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «приватна власність» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / приватна власність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">02.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125710496" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 460/9136/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb-leaf">Приватна власність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>дозвільного характеру, строки дії яких автоматично продовжуються</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Приватна власність» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Приватна власність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.3. Про відмінність паспорта прив’язки тимчасової споруди від документів
+дозвільного характеру, строки дії яких автоматично продовжуються
+на період воєнного стану
+
+Паспорт прив’язки тимчасової споруди – це комплект документів, які в сукупності
+дають підстави для розміщення тимчасової споруди, водночас такі документи не
+можна ототожнювати з документами дозвільного характеру в розумінні положень
+Закону України від 6 вересня 2005 року № 2806-IV «Про дозвільну систему у сфері
+
+господарської діяльності», Закону України від 19 травня 2022 року № 3392-VI «Про
+Перелік документів дозвільного характеру у сфері господарської діяльності»
+та постанови Кабінету Міністрів України від 18 березня 2022 року № 314 «Деякі
+питання забезпечення провадження господарської діяльності в умовах воєнного
+стану», яка в період воєнного стану передбачає особливості щодо продовження
+строку дії чинних документів дозвільного характеру
+
+10 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу управління містобудування
+та архітектури виконавчого комітету Рівненської міської ради на рішення
+Рівненського окружного адміністративного суду від 04 серпня 2023 року
+та постанову Восьмого апеляційного адміністративного суду
+від 11 жовтня 2023 року у справі № 460/9136/23 за позовом фізичної особипідприємця до управління містобудування та архітектури виконавчого комітету
+Рівненської міської ради про визнання протиправною відмови у продовженні дії
+паспорту прив’язки стаціонарної тимчасової споруди.
+
+ОБСТАВИНИ СПРАВИ
+
+У 2012 році позивач отримав паспорт прив’язки стаціонарної тимчасової
+споруди (торговий павільйон) в місті Рівне, терміном дії до 15 жовтня 2017 року,
+який був згодом продовжений до 11 жовтня 2022 року. У січні 2023 року позивач
+звернувся до відповідача із заявою про продовження строку дії паспорту, але
+отримав відмову. Відмова обґрунтована закінченням строку дії паспорту прив’язки
+на момент звернення позивача, а також наявність ознак підробки в документах,
+поданих позивачем. Позивач вважав таку відмову протиправною, оскільки
+відповідно до постанови Кабінету Міністрів України від 18 березня 2022 року № 314
+«Деякі питання забезпечення провадження господарської діяльності в умовах
+воєнного стану» (далі – Постанова № 314) строки дії діючих строкових ліцензій
+та документів дозвільного характеру автоматично продовжуються на період
+воєнного стану та три місяці з дня його припинення чи скасування.
+
+Рішенням окружного адміністративного суду, залишеним без змін постановою
+апеляційного адміністративного суду, позов задоволено. Суди виходили з того,
+що на момент виникнення спірних правовідносин діяв воєнний стан, правовий
+режим якого визначається Законом України від 12 травня 2015 року № 389-VIII
+«Про правовий режим воєнного стану».
+
+Своєю чергою, Кабінет Міністрів України у підпункті 5 пункту 1 Постанови №
+314 установив, що строк дії дозволів на розміщення зовнішньої реклами
+продовжується автоматично на період воєнного стану та три місяці з дня його
+
+припинення чи скасування.
+
+Паспорт прив’язки в розумінні Закону України від 06 вересня 2005 року
+№ 2806-IV «Про дозвільну систему у сфері господарської діяльності» (далі – Закон
+№ 2806-IV) є документом дозвільного характеру, строк дії якого на дату набрання
+чинності Постановою № 314 не закінчився.
+
+Верховний Суд задовольнив касаційну скаргу, скасував рішення судів
+попередніх інстанцій та ухвалив нове рішення про відмову у задоволенні позову.
+
+ОЦІНКА СУДУ
+Ключовим питанням, яке необхідно вирішити у цій справі, є те, чи відноситься
+паспорт прив’язки тимчасової споруди до документів дозвільного характеру.
+
+Аналізуючи положення статті 1 Закону України від 19 травня 2022 року
+№ 3392-VI «Про Перелік документів дозвільного характеру у сфері господарської
+діяльності» (далі – Закон № 3392-VI) колегія суддів констатувала, що вичерпний
+перелік документів дозвільного характеру у сфері господарської діяльності
+визначений у додатку до Закону № 3392-VI, у якому відсутній паспорт прив’язки
+тимчасової споруди.
+
+Натомість, визначення поняття паспорт прив’язки тимчасової споруди
+наведено у пункті 1.4 Порядку розміщення тимчасових споруд для провадження
+підприємницької діяльності, затвердженим наказом Міністерства регіонального
+розвитку, будівництва та житлово-комунального господарства України № 244
+від 21 жовтня 2011 року, та визначає під собою комплект документів, у яких
+визначено місце встановлення тимчасової споруди та благоустрій прилеглої
+території на топографо-геодезичній основі М 1:500, інженерне забезпечення,
+зовнішній архітектурний вигляд тимчасової споруди та напрям підприємницької
+діяльності.
+
+Отже, паспорт прив’язки тимчасової споруди - це комплект документів, які
+в сукупності дають підстави для розміщення тимчасової споруди, водночас такі
+документи не можна ототожнювати із документами дозвільного характеру
+в розумінні положень Законів № 2806-IV, № 3392-VI та відповідно Постанови № 314,
+яка у період воєнного стану передбачає особливості щодо продовження строку дії
+діючих документів дозвільного характеру.
+
+Оскільки строк дії паспорту прив’язки тимчасової споруди на дату звернення
+позивача із заявою про продовження строку його дії є таким, що закінчився,
+у відповідача були відсутні підстави для прийняття рішення щодо продовження
+строку дії такого паспорту прив’язки.
+
+Детальніше з текстом постанови Верховного Суду від 10 березня 2025 року у справі №
+460/9136/23 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125710496.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.4_segment.md № 620/4132/24 80 80 40 водопостачання, каналізація природного газу семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «водопостачання, каналізація» (житлове законодавство. житлово-комунальне господарство / комунальні послуги. тарифи та пільги / водопостачання, каналізація).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">02.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125892958" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 620/4132/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">80 80 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Житлове законодавство. Житлово-комунальне господарство</span><span class="crumb-sep">›</span><span class="crumb">Комунальні послуги. Тарифи та пільги</span><span class="crumb-sep">›</span><span class="crumb-leaf">Водопостачання, каналізація</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>природного газу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Водопостачання, каналізація» (Житлове законодавство. Житлово-комунальне господарство / Комунальні послуги. Тарифи та пільги / Водопостачання, каналізація).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.4. Про компенсацію за недотримання стандартів якості послуг постачання
+
+природного газу
+
+Постачальник самостійно визначає факт недотримання мінімальних стандартів
+якості послуг постачання природного газу та споживача, якому він має надати таку
+компенсацію, і надає її без додаткового звернення зі сторони споживача.
+Звернення із заявою як до поточного, так і до попереднього постачальника про
+надання компенсації є правом, а не обов’язком споживача й виникає в разі її
+ненадання постачальником. Закон не містить норм, які б визначали наявність
+вищевказаної заяви споживача як обов’язкової передумови для виплати йому
+постачальником (попереднім постачальником) компенсації. Отже, відсутність заяв
+споживачів про надання компенсації за недотримання мінімальних стандартів
+якості послуг постачання природного газу не звільняє постачальника, у тому числі
+попереднього постачальника, від обов’язку надати таку компенсацію
+
+17 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Товариства з обмеженою
+відповідальністю «ЧЕРНІГІВГАЗ ЗБУТ» на постанову Шостого апеляційного
+адміністративного суду від 07 жовтня 2024 року у справі № 620/4132/24
+за позовом Товариства з обмеженою відповідальністю «ЧЕРНІГІВГАЗ ЗБУТ»
+до Національної комісії, що здійснює державне регулювання у сферах енергетики
+
+та комунальних послуг, про визнання протиправними та скасування постанови про
+накладення штрафу та розпорядження щодо зобов’язання усунути порушення
+Ліцензійних умов провадження господарської діяльності з постачання природного
+газу, в частині дотримання мінімальних стандартів та вимог до якості
+обслуговування споживачів та постачання природного газу.
+
+ОБСТАВИНИ СПРАВИ
+
+Національною комісією проведено перевірку діяльності позивача з питань
+дотримання вимог законодавства та Ліцензійних умов провадження господарської
+діяльності з постачання природного газу, затверджених постановою НКРЕКП
+від 16 лютого 2017 року № 201 (далі – Ліцензійні умови). За результатами перевірки
+виявлено порушення позивачем вимог Ліцензійних умов, зокрема, недотримання
+забезпечення мінімальних стандартів якості послуг постачання природного газу
+споживачу, надання споживачам компенсації у разі недотримання мінімальних
+стандартів якості. Вказані порушення стали підставою для прийняття оспорюваних
+у справі рішень. Позивач вказав, що усіх побутових споживачів ТОВ «ЧЕРНІГІВГАЗ
+ЗБУТ» переведено на постачальника «останньої надії» ТОВ «Газопостачальна
+компанія «Нафтогаз України». У зв’язку з цим Товариство зазначило, що втратило
+
+зі свого Реєстру постачальника всіх побутових споживачів, а отже й можливість
+нарахувати їм компенсацію за недотримання мінімальних стандартів.
+
+Окружний адміністративний суд ухвалив рішення про задоволення позову.
+Постановою апеляційного адміністративного суду скасовано рішення суду першої
+інстанції та ухвалено нове судове рішення про відмову у задоволенні позову. Суд
+апеляційної інстанції погодився з доводами Національної комісії про те,
+що позивач, виступаючи у спірних правовідносинах ліцензованим постачальником
+природного газу побутовим споживачам, не дотрималось вимог Ліцензійних умов
+та не здійснило своєчасного повернення наявної у побутових споживачів
+переплати вартості природного газу на їх поточний рахунок й не сплатило 449
+споживачам передбачену законом компенсацію за недотримання стандартів
+
+та вимог.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а постанову суду
+апеляційної інстанції без змін.
+
+ОЦІНКА СУДУ
+Верховний Суд зазначив, що у спірних правовідносинах мав місце випадок,
+коли побутові споживачі, яких було переведено на постачальника «останньої надії»,
+на підставі поданих ними письмових заяв вимагали від попереднього
+постачальника повернення переплати вартості природного газу, яка утворилась
+за минулі розрахункові періоди.
+
+Проаналізувавши норми підпункту 3 пункту 3.2, пункти 3.5, 3.6, 3.8 розділу 3
+Мінімальних стандартів та вимог, Верховний Суд дійшов висновку, що компенсація
+за недотримання мінімальних стандартів якості послуг постачання природного газу
+у спірних правовідносинах мала б бути надана Товариством незалежно
+від наявності відповідних заяв споживачів про надання такої компенсації у строк
+не більше 45-ти днів з дня недотримання мінімального стандарту якості, яким є
+день, наступний після закінчення п’ятиденного строку, передбаченого підпунктом 3
+пункту 3.2 розділу 3 Мінімальних стандартів та вимог.
+
+Твердження скаржника про те, що вищезгадана компенсація може бути
+надана попереднім постачальником лише на підставі відповідної письмової заяви
+споживача не ґрунтується на правильному розумінні норм пункту 3.10 Мінімальних
+стандартів та вимог, оскільки звернення із заявою як до поточного так
+і до попереднього постачальника про виплату компенсації за недотримання
+мінімальних стандартів якості послуг постачання природного газу є правом, а не
+обов’язком, й виникає у разі ненадання постачальником такої компенсації. Закон
+не містить норм які б визначали наявність вищевказаної заяви споживача як
+обов’язкової передумови для виплати йому постачальником (попереднім
+постачальником) компенсації.
+
+Отже, відсутність заяв споживачів про надання компенсації за недотримання
+мінімальних стандартів якості послуг постачання природного газу не звільняє
+Товариство від обов’язку надати таку компенсацію.
+
+Детальніше з текстом постанови Верховного Суду від 17 березня 2025 року у справі №
+620/4132/24 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125892958.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.5_segment.md № 120/4864/24 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав переміщеним особам з 01 серпня 2023 року семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">02.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126071575" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 120/4864/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>переміщеним особам з 01 серпня 2023 року</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.5. Про умови продовження виплати допомоги на проживання внутрішньо
+переміщеним особам з 01 серпня 2023 року
+
+Виплата допомоги на проживання внутрішньо переміщеним особам, починаючи
+з 01 серпня 2023 року, не продовжується за одночасного існування двох умов:
+перебування внутрішньо переміщеної особи за кордоном понад 30 календарних
+днів підряд станом на 15 липня 2023 року та неповернення в Україну станом
+на 01 серпня 2023 року. Тобто навіть у випадку перебування внутрішньо
+переміщеної особи за кордоном понад 30 календарних днів підряд станом
+на 15 липня 2023 року після її повернення в Україну до 01 серпня 2023 року
+виплата допомоги на проживання такій особі мала бути автоматично продовжена
+з 01 серпня 2023 року
+
+24 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу особи на рішення Вінницького
+окружного адміністративного суду від 21 травня 2024 року та постанову Сьомого
+апеляційного адміністративного суду від 27 серпня 2024 року у справі №
+120/4864/24 за позовом особи до управління соціального захисту населення
+Гайсинської районної державної адміністрації Вінницької області про визнання
+протиправною бездіяльності управління соціального захисту населення
+Гайсинської районної державної адміністрації Вінницької області щодо
+непризначення допомоги на проживання внутрішньо переміщеній особі у вересні
+2023 року.
+
+ОБСТАВИНИ СПРАВИ
+
+У квітні 2022 року позивачка після переїзду з Луганської області до Львова,
+була зареєстрована як внутрішньо переміщена особа та отримувала допомогу
+на проживання. З 11 червня 2023 року по 14 серпня 2023 року позивачка
+перебувала за кордоном. Потім переїхала до села Берізки-Бершадські Вінницької
+області, де також була взята на облік як внутрішньо переміщена особа. У вересні
+2023 року вона звернулась до відповідача із заявою про надання допомоги
+на проживання внутрішньо переміщеній особі, однак отримала відмову. Підставою
+для відмови став факт перебування позивачки за кордоном понад 30 календарних
+днів (з 11 червня 2023 року) та неповернення в Україну станом
+
+на 01 серпня 2023 року. Позивачка оскаржила цю відмову в суді, вважаючи її
+неправомірною.
+
+Рішенням окружного адміністративного суду, залишеним без змін постановою
+апеляційного адміністративного суду, у задоволенні позову відмовлено. Суди
+попереднії інстанцій виходили з того, що позивачка до 01 серпня 2023 року не
+повернулася в Україну, доказів того, що не могла повернутись з-за кордону не
+надала, а тому правових підстав для продовження виплати їй допомоги
+у відповідача не було.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення судів
+попередніх інстанцій без змін.
+
+ОЦІНКА СУДУ
+Виплата допомоги на проживання внутрішньо переміщеним особам, починаючи
+з 01 серпня 2023 року, не продовжується за одночасного існування двох умов - це
+перебування внутрішньо переміщеної особи за кордоном понад 30 календарних днів
+підряд станом на 15 липня 2023 року та неповернення в Україну станом
+на 01 серпня 2023 року.
+
+Тобто навіть у випадку перебування внутрішньо переміщеної особи за кордоном
+понад 30 календарних днів підряд станом на 15 липня 2023 року, після її повернення
+в Україну до 01 серпня 2023 року, виплата допомоги на проживання такій особі мала
+бути автоматично продовжена з 01 серпня 2023 року.
+
+Крім того, Суд надав оцінку аргументам позивачки щодо незворотності дії
+нормативно-правових актів у часі. Позивачка вказувала, що факт перебування її
+за кордоном понад 30 календарних днів підряд є відносинами, які виникли до набуття
+чинності Постановою Кабінету Міністрів України від 11 липня 2023 року № 709 «Деякі
+питання підтримки внутрішньо переміщених осіб» (далі – Постанова № 709).
+
+Суд зазначив, що внутрішньо переміщеним особам, які станом
+на 15 липня 2023 року перебували за кордоном понад 30 календарних днів підряд
+та отримували допомогу на проживання, у період з 15 липня 2023 року (дня набрання
+чинності Постановою № 709) до 01 серпня 2023 року Урядом фактично було надано час
+повернутись в Україну з метою продовження виплати їм допомоги на проживання.
+
+Зважаючи на те, що позивачка до 01 серпня 2023 року не повернулася в Україну
+доказів на підтвердження того, що вона не могла повернутись з-за кордону нею не
+надано, а тому правових підстав для продовження виплати їй допомоги на проживання
+з вказаної дати у відповідача не було. Враховуючи викладене, під час розгляду справи,
+Суд не встановив ретроспективної дії нормативно-правових актів, що регулюють дані
+спірні правовідносини, зокрема, Постанови № 709.
+
+Детальніше з текстом постанови Верховного Суду від 24 березня 2025 року у справі №
+120/4864/24 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/126071575.
+
+ІІІ. СПРАВИ, РОЗГЛЯНУТІ СУДОВОЮ ПАЛАТОЮ З РОЗГЛЯДУ СПРАВ ЩОДО
+ВИБОРЧОГО ПРОЦЕСУ ТА РЕФЕРЕНДУМУ, А ТАКОЖ ЗАХИСТУ ПОЛІТИЧНИХ ПРАВ
+ГРОМАДЯН
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.03_segment.md № 120/10641/22 30 60 10 окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.) вантажів семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (цивільне законодавство / зобов&#x27;язальне право / окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">03.03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125825620" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 120/10641/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>вантажів</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (Цивільне законодавство / Зобов&#x27;язальне право / Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.3. Про статус автомобільного перевізника, що здійснює перевезення
+вантажів
+
+Автомобільним перевізником, що здійснює перевезення вантажів на договірних
+умовах, є суб’єкт господарювання, який відповідно до законодавства надає послугу
+згідно з договором про перевезення вантажу транспортним засобом,
+що використовується на законних підставах. Тобто законодавець пов’язує
+наявність статусу автомобільного перевізника, що здійснює перевезення вантажів
+саме із наявністю договору про перевезення вантажу транспортним засобом,
+що використовується на законних підставах. Законними підставами використання
+транспортного засобу є використання транспортних засобів, які належать
+перевізнику на праві власності або згідно з правом користування, яке
+опосередковується укладенням відповідних договорів. Для підтвердження
+наявності статусу «автомобільного перевізника, що здійснює перевезення
+
+вантажу» необхідно встановити дві ознаки: 1) наявність договору про перевезення
+вантажу транспортним засобом; 2) використання транспортного засобу
+на законних підставах
+
+13 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Державної служби України
+з безпеки на транспорті на рішення суду першої інстанції від 27 березня 2023 року
+та постанову суду апеляційної інстанції від 02 серпня 2023 року у справі №
+120/10641/22 за позовом Товариства з обмеженою відповідальністю «Юнісев Груп»
+до Державної служби України з безпеки на транспорті в особі Відділу державного
+нагляду (контролю) у Вінницькій області про визнання протиправною та скасування
+постанови про застосування адміністративно-господарського штрафу.
+
+ОБСТАВИНИ СПРАВИ
+
+Посадовими особами Укртрансбезпеки під час габаритно-вагового контролю
+транспортного засобу, що належав Особа_1 та яким керував Особа_2, зафіксовано
+перевищення допустимого навантаження на вісь. На підставі виявленого порушення
+винесено постанову про накладення на позивача штрафу у розмірі 17 000 грн, виходячи
+з того, що в товарно-транспортній накладній вказане ТОВ «Юнісев Груп» як перевізник.
+Позивач заперечив свою причетність до перевезення, вказавши на відсутність
+договорів, оренди чи відносин з водієм або власником транспортного засобу.
+
+Судами попередніх інстанцій позов задоволено. Суди керувалися тим,
+що матеріали справи не містять жодних доказів, що саме ТОВ «Юнісев Груп»
+здійснювало перевезення вантажу власним чи орендованим транспортним засобом
+на договірних умовах або іншим чином на законних підставах використовувало
+транспортні засоби, на яких здійснювалося перевезення вантажу.
+
+Верховний Суд касаційну скаргу задовольнив частково, рішення судів попередніх
+інстанцій – скасував, та направив справу на новий розгляд до суду першої інстанції.
+
+ОЦІНКА СУДУ
+Відповідно до частини першої статті 33 Закону України від 05 квітня 2001 року №
+2344-III «Про автомобільний транспорт» автомобільним перевізником, що здійснює
+перевезення вантажів на договірних умовах, є суб’єкт господарювання, який відповідно
+до законодавства надає послугу згідно з договором про перевезення вантажу
+транспортним засобом, що використовується на законних підставах.
+
+Тобто, законодавець пов’язує наявність статусу автомобільного перевізника,
+що здійснює перевезення вантажів саме із наявністю договору про перевезення
+вантажу транспортним засобом, що використовується на законних підставах.
+
+Законними підставами використання транспортного засобу є використання
+транспортних засобів, які належать перевізнику на праві власності або згідно права
+користування, яке опосередковується укладенням відповідних договорів.
+
+Отже, для підтвердження наявності статусу «автомобільного перевізника,
+що здійснює перевезення вантажу» у розумінні частини першої статті 33 Закону України
+від 05 квітня 2001 року № 2344-III «Про автомобільний транспорт»необхідно встановити
+дві ознаки: 1) наявність договору про перевезення вантажу транспортним засобом; 2)
+використання транспортного засобу на законних підставах. Одночасне встановлення
+двох із наведених умов є підставою стверджувати, що відповідний суб’єкт є
+автомобільним перевізником, що здійснює перевезення вантажу у розумінні частини
+першої статті 33 цього Закону.
+
+Детальніше з текстом постанови Верховного Суду від 13 березня 2025 року у справі
+№120/10641/22 можна ознайомитися за посиланням:
+https://reyestr.court.gov.ua/Review/125825620.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md № 460/21394/23 60 70 недержавне пенсійне забезпечення стягнення заробітної плати (грошового забезпечення) у зв’язку з набуттям семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «недержавне пенсійне забезпечення» (законодавство з питань соціального забезпечення та соціального страхування / недержавне пенсійне забезпечення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126036858" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 460/21394/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>75% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Недержавне пенсійне забезпечення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>стягнення заробітної плати (грошового забезпечення) у зв’язку з набуттям</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Недержавне пенсійне забезпечення» (Законодавство з питань соціального забезпечення та соціального страхування / Недержавне пенсійне забезпечення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.1. Про обчислення строків звернення до суду при вирішенні спорів щодо
+стягнення заробітної плати (грошового забезпечення) у зв’язку з набуттям
+чинності змінами до статті 233 КЗпП України
+
+Якщо мають місце тривалі правові відносини, які виникли під час дії статті 233 КЗпП
+України в редакції, що була чинною до 19 липня 2022 року, та були припинені
+на момент чинності дії статті 233 КЗпП України в редакції Закону України «Про
+внесення змін до деяких законодавчих актів України щодо оптимізації трудових
+відносин», то в такому випадку правове регулювання здійснюється таким чином:
+правовідносини, які мають місце в період до 19 липня 2022 року, підлягають
+правовому регулюванню згідно з положенням статті 233 КЗпП України (у
+попередній редакції); у період з 19 липня 2022 року підлягають застосуванню
+норми статті 233 КЗпП України у редакції Закону України «Про внесення змін
+до деяких законодавчих актів України щодо оптимізації трудових відносин».
+З урахуванням пункту 1 глави XIX «Прикінцеві положення» КЗпП України
+та постанови Кабінету Міністрів України від 27 червня 2023 року № 651 відлік
+тримісячного строку звернення до суду зі спорами, визначеними статтею 233 КЗпП
+України, почався 01 липня 2023 року
+
+21 березня 2025 року Верховний Суд у складі судової палати з розгляду справ
+щодо виборчого процесу та референдуму, а також захисту політичних прав
+громадян Касаційного адміністративного суду розглянув касаційну скаргу особи
+на постанову Восьмого апеляційного адміністративного суду
+від 28 жовтня 2024 року у справі № 460/21394/23 (провадження №
+К/990/45865/24) за позовом цієї ж особи до військової частини про визнання дій
+та бездіяльності протиправними.
+
+ОБСТАВИНИ СПРАВИ
+
+Предметом спору у цій справі є перерахунок грошового забезпечення
+військовослужбовця за період з 01 лютого 2020 року по 30 березня 2023 року.
+Рівненський окружний адміністративний суд рішенням від 11 грудня 2023 року
+позовні вимоги задовольнив. Апеляційний суд скасував рішення суду першої
+інстанції та залишив позов без розгляду, виснувавши, що позивачем пропущено
+строк звернення до суду, тривалість якого, з урахуванням частини другої статті 233
+КЗпП України у редакції, яка набула чинності з 19 липня 2022 року, становить три
+місяці й обчислюється з дати його звільнення з військової служби.
+
+Верховний Суд касаційну скаргу задовольнив частково, постанову
+апеляційного суду скасував, а справу направив для продовження розгляду до суду
+апеляційної інстанції.
+
+ОЦІНКА СУДУ
+У межах цього касаційного провадження вирішувалися питання про те, яку
+редакцію статті 233 КЗпП України необхідно застосовувати до спірних
+правовідносин та з якою подією слід пов’язувати початок перебігу строку
+звернення до суду з позовом у цій категорії спорів, зокрема, зважаючи на дію
+на території України карантину до 30 червня 2023 року.
+
+Судова палата зауважила, що спірні правовідносини охоплювали часові
+проміжки як до, так і після внесення змін до статті 233 КЗпП України.
+
+Період з 01 лютого 2020 року до 19 липня 2022 року регулюється
+положеннями статті 233 КЗпП України у редакції до внесення змін Законом України
+«Про внесення змін до деяких законодавчих актів України щодо оптимізації
+трудових відносин», яка визначає право особи на звернення до суду із позовом
+про стягнення належної їй заробітної плати (грошового забезпечення) без
+обмеження будь-яким строком. Проте період з 19 липня 2022 року по
+30 березня 2023 року регулюється чинною редакцією статті 233 КЗпП України, яка
+передбачає тримісячний строк звернення до суду з дня одержання ним письмового
+повідомлення про суми, нараховані та виплачені йому при звільненні.
+
+Законом України «Про внесення змін до деяких законодавчих актів України,
+спрямованих на забезпечення додаткових соціальних та економічних гарантій
+у зв’язку з поширенням коронавірусної хвороби (COVID-19)», який набрав чинності
+02 квітня 2020 року, КЗпП України доповнено Главою XIX «Прикінцеві положення»,
+зокрема пункт 1 якої передбачає продовження строків, визначених статтею 233
+на строк дії карантину. Постановою Кабінету Міністрів України
+від 27 червня 2023 року № 651 з 24:00 год 30 червня 2023 року карантин скасовано.
+
+З урахуванням цих правових актів, відлік тримісячного строку звернення
+до суду з цим позовом почався 01 липня 2023 року та мав би сплинути
+30 вересня 2023 року.
+
+Таким чином, при вирішенні питання щодо застосування статті 233 КЗпП
+України, в частині строку звернення до суду з вимогами про стягнення заробітної
+плати (грошового забезпечення) за періоди до і після 19 липня 2022 року (дата
+набуття чинності змін до статті 233 КЗпП України) у справі за позовом особи
+до військової частини про визнання дій та бездіяльності протиправними необхідно
+застосовувати різні підходи до обчислення строків звернення до суду, а також
+враховувати положення пункту 1 глави ХІХ «Прикінцеві положення» КЗпП України.
+
+Таким чином, судова палата дійшла висновку, що позивач, який звернувся
+із позовом 11 вересня 2023 року, не пропустив строку на звернення до суду
+
+з позовом, у тому числі в частині вимог за період з 19 липня 2022 року
+по 30 березня 2023 року, відтак апеляційний суд помилково виснував про наявність
+підстав для залишення позовної заяви без розгляду на підставі пункту 8 частини
+першої статті 240 КАС України.
+
+Детальніше з текстом постанови Верховного Суду від 21 березня 2025 року у справі №
+460/21394/23 (провадження № К/990/45865/24) можна ознайомитися за посиланням:
+https://reyestr.court.gov.ua/Review/126036858.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.2_segment.md № 580/245/24 30 60 20 забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія) за виконання одного судового рішення семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)» (цивільне законодавство / зобов&#x27;язальне право / забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">03.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125855202" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 580/245/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за виконання одного судового рішення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)» (Цивільне законодавство / Зобов&#x27;язальне право / Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.2. Про стягнення з боржника виконавчого збору й основної винагороди
+за виконання одного судового рішення
+
+Виконавче законодавство не ставить право приватного виконавця на отримання
+основної винагороди в залежність від тієї обставини, що на примусовому
+виконанні в органах державної виконавчої служби перебуває постанова
+державного виконавця про стягнення виконавчого збору. Це право залежить
+від того, чи виконане рішення в повному або частковому обсязі внаслідок дій
+приватного виконавця. На противагу цьому виконавче законодавство містить
+норму, у якій обумовлений випадок, коли виконавчий збір не стягується
+або припиняється стягуватися у зв’язку з участю приватного виконавця
+у процедурі виконання того самого виконавчого документа. У випадках, коли
+стягувач самостійно передає виконавчий документ на виконання приватному
+виконавцю, після того як державний виконавець уже розпочав стягнення
+виконавчого збору, останнє виконавче провадження підлягає закінченню
+
+14 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Приватного акціонерного
+товариства «Госпрозрахункова база матеріально-технічного постачання» на постанову
+Шостого апеляційного адміністративного суду від 29 лютого 2024 року у справі №
+580/245/24 за позовом ПрАТ «Госпрозрахункова база матеріально-технічного
+постачання» до Другого відділу державної виконавчої служби у місті Черкаси
+Центрального міжрегіонального управління Міністерства юстиції (м. Київ) про визнання
+протиправною бездіяльності та зобов’язання вчинити дії щодо закінчення виконавчого
+
+провадження.
+
+ОБСТАВИНИ СПРАВИ
+
+ПрАТ «Госпрозрахункова база матеріально-технічного постачання» звернулося
+до суду з позовом до Другого відділу державної виконавчої служби у місті Черкаси
+Центрального міжрегіонального управління Міністерства юстиції (м. Київ) про визнання
+протиправною бездіяльності яка полягає у неприйнятті рішення про закінчення
+виконавчого провадження, боржником у якому є позивач. Позов обґрунтований тим,
+
+що Законом України від 02 червня 2016 року № 1404-VIII «Про виконавче провадження»
+не передбачено одночасне стягнення виконавчого збору та винагороди приватного
+
+виконавця.
+
+Суд першої інстанції позов задовольнив та вказав, що оскільки наказ
+за заявою стягувача переданий на виконання до приватного виконавця
+виконавчого округу, який у свою чергу відкрив виконавче провадження й виніс
+постанову про стягнення основної винагороди у розмірі 10 відсотків від фактично
+стягнутих сум, то надалі виконавчий збір не стягується.
+
+Суд апеляційної інстанції скасував рішення суду першої інстанції та ухвалив
+нове, яким у задоволенні позову відмовив. Суд апеляційної інстанції виходив з того,
+що оскільки постанова про стягнення виконавчого збору у розмірі 44 900 грн,
+прийнята у виконавчому провадженні, є чинною, в судовому порядку не скасована,
+відсутні підстави для прийняття відповідачем рішення про закінчення виконавчого
+
+провадження.
+
+Верховний Суд касаційну скаргу задовольнив, скасував рішення суду
+апеляційної інстанції та залишив в силі рішення суду першої інстанції.
+
+ОЦІНКА СУДУ
+Основна винагорода приватного виконавця і виконавчий збір у виконавчому
+провадженні, що здійснює державний виконавець, хоча й виступають формами
+винагороди виконавців, проте не є тотожними поняттями. Згідно з приписами
+статті 45 Закону України «Про виконавче провадження» спільним для цих форм
+винагороди є лише порядок стягнення. Що стосується підстав виникнення
+у приватного виконавця права на основну винагороду та розміру цієї винагороди,
+такі питання регулюється окремими правовими нормами.
+
+Стягнення з боржника виконавчого збору й основної винагороди
+за виконання одного судового рішення тягне за собою додаткові витрати. Ця
+обставина може розглядатися як накладання непропорційного і надмірного тягара
+на боржника, що зачіпає його право власності
+
+Указана проблема за колом осіб, головним чином, стосується прав
+та інтересів державних виконавців, приватних виконавців і боржників. Однак
+з-поміж інших учасників виконавчого провадження саме боржники перебувають
+у найбільш уразливому становищі, позаяк у зв’язку з неповнотою законодавчого
+регулювання зобов’язані платити двічі за виконання одного й того ж виконавчого
+
+документа.
+
+Виконавче законодавство не ставить право приватного виконавця
+на отримання основної винагороди у залежність від тієї обставини,
+що на примусовому виконанні в органах державної виконавчої служби перебуває
+постанова державного виконавця про стягнення виконавчого збору. Це право
+
+залежить від того чи виконане рішення в повному або частковому обсязі
+внаслідок дій приватного виконавця.
+
+На противагу цьому, виконавче законодавство містить норму, у якій
+обумовлений випадок, коли виконавчий збір не стягується або припиняється
+стягуватися у зв’язку із участю приватного виконавця у процедурі виконання того
+
+ж самого виконавчого документа.
+
+У випадках, коли стягувач самостійно передає виконавчий документ на виконання
+приватному виконавцю, після того як державний виконавець уже розпочав стягнення
+виконавчого збору, останнє виконавче провадження підлягає закінченню.
+
+Частиною восьмою статті 27 Закону України «Про виконавче провадження»
+встановлено, що «під час передачі виконавчого документа від органу державної
+виконавчої служби приватному виконавцю виконавчий збір не стягується, якщо він не
+був стягнутий на момент передачі. У разі стягнення частини виконавчого збору
+на момент передачі виконавчого документа приватному виконавцю стягнута частина
+виконавчого збору поверненню не підлягає. У вказаному випадку приписи цієї статті
+мають імперативний характер і встановлюють пряму заборону стягувати
+або продовжувати стягнення виконавчого збору.
+
+Указана норма спрямована на те, щоб не допустити одночасного стягнення
+з боржника виконавчого збору і основної винагород. Ця норма покликана уникнути
+подвійної плати боржником зазначених коштів. Тож її застосування дозволяє розв’язати
+спір стосовно справедливості подвійного стягнення плати державному і приватному
+виконавцям за виконання одного й того ж виконавчого документа.
+
+Детальніше з текстом постанови Верховного Суду від 14 березня 2025 року у справі №
+580/245/24 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125855202.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.4_segment.md № 240/2921/23 150 60 10 облік і звітність в поліції семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «облік і звітність» (загальні засади правового регулювання економічного розвитку / загальні питання обліку і статистики. перепис населення / облік і звітність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">03.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126169157" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 240/2921/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Загальні питання обліку і статистики. Перепис населення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Облік і звітність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>в поліції</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Облік і звітність» (Загальні засади правового регулювання економічного розвитку / Загальні питання обліку і статистики. Перепис населення / Облік і звітність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.4. Про правову природу додаткової винагороди при звільненні зі служби
+в поліції
+
+За своєю правовою природою додаткова винагорода, установлена пунктом 1
+постанови Кабінету Міністрів України від 28 лютого 2022 року № 168 «Питання
+деяких виплат військовослужбовцям, особам рядового і начальницького складу,
+поліцейським та їх сім’ям під час дії воєнного стану», є одноразовим додатковим
+видом грошового забезпечення
+
+27 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління Національної
+поліції в Житомирській області на рішення Житомирського окружного
+адміністративного суду від 15 травня 2023 року та постанову Сьомого апеляційного
+адміністративного суду від 20 вересня 2023 року у справі № 240/2921/23 за позовом
+особи до Головного управління Національної поліції в Житомирській області про
+визнання дій протиправними та зобов’язання вчинити дії.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивачка звернулася до суду з повом до Головного управління Національної
+поліції в Житомирській області у якому вказала, що при звільненні з поліцї їй були
+виплачені не всі належні суми грошового забезпечення передбачені постановою
+Кабінету Міністрів України від 28 лютого 2022 року № 168 «Питання деяких виплат
+військовослужбовцям, особам рядового і начальницького складу, поліцейським та їх
+сім’ям під час дії воєнного стану» (далі - Постанова № 168), при нарахуванні одноразової
+грошової допомоги при звільненні в розмірі 25% місячного грошового забезпечення
+за кожний повний календарний рік служби та компенсація за невикористані дні
+відпустки.
+
+Судами попередніх інстанцій позов задоволено частково, визнано протиправними
+дії відповідача щодо невключення індексації та додаткової винагороди до складу
+грошового забезпечення при обчисленні одноразової допомоги, а також зобов’язано
+провести відповідний перерахунок і виплату.
+
+Верховний Суд касаційну скаргу задовольнив, скасував рішення судів попередніх
+інстанції в оскаржуваній частині та ухвалив в цій частині нове рішення, яким
+у задоволенні позовних вимог відмовив.
+
+ОЦІНКА СУДУ
+Вирішуючи питання того, чи є додаткова винагорода, передбачена Постановою №
+168, винагородою, яка має постійний характер та підлягає включенню до складу
+місячного грошового забезпечення для визначення розміру одноразової грошової
+допомоги при звільненні зі служби в поліції, пункт 1 Постанови № 168 чітко
+і однозначно передбачає, що:
+
+   - додаткова винагорода за своєю суттю є тимчасовою (непостійною) виплатою
+поліцейського, оскільки установлюється на період дії воєнного стану та прямо
+залежить від наявності (дії) в Україні правового режиму воєнного стану;
+
+   - розмір додаткової винагороди не є сталим, адже вона виплачується пропорційно
+в розрахунку на місяць в залежності від виконання завдань та часу приймання
+поліцейським участі в бойових діях або забезпечення здійснення заходів
+з національної безпеки і оборони, відсічі і стримування збройної агресії та перебування
+безпосередньо в районах у період здійснення зазначених заходів;
+
+   - визначається наказами командирів (начальників).
+Отже за відсутності принаймні однієї із указаних умов, виплата додаткової
+винагороди не здійснюється. Таким чином, за своєю правовою природою, додаткова
+винагорода, установлена пунктом 1 Постанови № 168, є одноразовим додатковим
+видом грошового забезпечення.
+
+Таким чином висновок судів попередніх інстанцій про те, що передбачена
+Постановою № 168 додаткова винагорода відповідає ознакам щомісячних додаткових
+видів грошового забезпечення, оскільки є щомісячною та має постійний характер, є
+
+помилковим.
+
+Детальніше з текстом постанови Верховного Суду від 27 березня 2025 року у справі №
+240/2921/23 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/126169157.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.5_segment.md № 380/25348/23 100171 20 20 кіно, звукозапис, аудіо-, відеозапис тощо відповідальності адвокатів семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «кіно, звукозапис, аудіо-, відеозапис тощо» (законодавство з питань освіти, науки, культури / засоби масової інформації / аудіовізуальні засоби / кіно, звукозапис, аудіо-, відеозапис тощо).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">03.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126136849" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 380/25348/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100171 20 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Засоби масової інформації</span><span class="crumb-sep">›</span><span class="crumb">Аудіовізуальні засоби</span><span class="crumb-sep">›</span><span class="crumb-leaf">Кіно, звукозапис, аудіо-, відеозапис тощо</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>відповідальності адвокатів</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Кіно, звукозапис, аудіо-, відеозапис тощо» (Законодавство з питань освіти, науки, культури / Засоби масової інформації / Аудіовізуальні засоби / Кіно, звукозапис, аудіо-, відеозапис тощо).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.5. Про розпорядника інформації щодо притягнення до дисциплінарної
+відповідальності адвокатів
+
+Вища кваліфікаційно-дисциплінарна комісія адвокатури володіє інформацією про
+перелік осіб, які притягалися до дисциплінарної відповідальності, та реквізитами
+цих рішень, оскільки створює її в процесі виконання своїх обов’язків. Вища
+
+кваліфікаційно-дисциплінарна комісія адвокатури є розпорядником такої інформації
+в розумінні Закону України від 13 січня 2011 року № 2939-VI «Про доступ
+до публічної інформації»
+
+25 березня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Вищої кваліфікаційнодисциплінарної комісії адвокатури на рішення Львівського окружного
+адміністративного суду від 04 грудня 2023 року та постанову Восьмого апеляційного
+адміністративного суду від 20 травня 2024 року у справі № 380/25348/23 за позовом
+особи до Вищої кваліфікаційно-дисциплінарної комісії адвокатури про визнання
+протиправними дій щодо ненадання публічної інформації.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивачка звернулася до суду з позовом до Вищої кваліфікаційно-дисциплінарної
+комісії адвокатури (далі – ВКДКА) у якому проила визнати протиправними дії щодо
+недання публічної інформації та зобовязати надати перелік ПІБ осіб, які притягалися
+до дисциплінарної відповідальності рішеннями відповідача із зазначенням дати
+прийняття та номеру таких рішень. Відповідач відмовив у наданні відповіді на вказаний
+запит. Причинами відмови в наданні запитуваної інформації відповідач зазначив
+відсутність згоди суб’єктів персональних даних (адвокатів) на поширення інформації,
+що містить персональні дані (прізвище, ім’я, по батькові); відсутність сформованої
+інформації за запитуваним форматом, в розрізі: ПІБ осіб, які притягались
+до дисциплінарної відповідальності, дати прийняття та номери таких рішень.
+
+Суд першої інстанції частково задовольнив позов. Суд апеляційної інстанції
+залишив рішення суду першої інстанції без змін. Суди виходили з того, що запитувана
+позивачкою та не надана їй інформація стосовно переліку ПІБ осіб, які притягались
+до дисциплінарної відповідальності рішеннями ВКДКА, підпадає під визначення, яке
+міститься у статті 1 Закону України від 13 січня 2011 року № 2939-VI «Про доступ
+до публічної інформації», а саме: інформація, отримана або створена в процесі
+виконання ВКДКА своїх обов’язків, передбачених чинним законодавством, яка
+знаходиться у володінні цього органу.
+
+Верховний Суд касаційну скаргу залишив без задоволення, рішення судів
+попередніх інстанції- без змін.
+
+ОЦІНКА СУДУ
+Відповідно до частин першої, третьої статті 33 Закону України
+від 05 липня 2012 року № 5076-VI «Про адвокатуру та адвокатську діяльність» (далі Закон №5076-VI) адвоката може бути притягнуто до дисциплінарної відповідальності
+у порядку дисциплінарного провадження з підстав, передбачених цим Законом.
+Дисциплінарне провадження стосовно адвоката здійснюється кваліфікаційно
+
+дисциплінарною комісією адвокатури за адресою робочого місця адвоката, зазначеною
+в Єдиному реєстрі адвокатів України.
+
+Згідно з положеннями пункту 4 частини п’ятої статті 50 Закону №5076-VI
+здійснення дисциплінарного провадження стосовно адвокатів належить
+до повноважень кваліфікаційно-дисциплінарної комісії адвокатури.
+
+Водночас повноваження щодо розгляду скарг на рішення кваліфікаційнодисциплінарних комісій адвокатури щодо здійснення дисциплінарних проваджень
+надано ВКДКА, яка відповідно до частини п’ятої статті 52 Закону № 5076-VI
+за результатами розгляду такої скарги має право, зокрема, змінювати рішення
+кваліфікаційно-дисциплінарної комісії адвокатури або його скасовувати та ухвалювати
+нове рішення.
+
+Таким чином, ВКДКА володіє запитуваною позивачкою інформацією, оскільки
+створює її в процесі виконання своїх обов’язків, а тому обґрунтованими є висновки
+судів обох інстанцій, що ВКДКА є розпорядником інформації в розумінні Закону України
+від 13 січня 2011 року № 2939-VI «Про доступ до публічної інформації».
+
+Надання цієї інформації не потребує створення нової інформації або проведення
+надміру складної роботи з аналітики та систематизації існуючої, а тому відмова у її
+наданні є протиправною.
+
+Детальніше з текстом постанови Верховного Суду від 25 березня 2025 року у справі №
+380/25348/23 можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/126136849.
+
+ІV. ПРОЦЕС
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1_segment.md № 380/970/24 140220 резолюції верховної ради україни по зовнішньоекономічних питаннях. постанови по наслідках зовнішньоекономічної діяльності уряду та поїздок членів уряду за кордон що усувають перешкоди для продовження розгляду справи семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «резолюції верховної ради україни по зовнішньоекономічних питаннях. постанови по наслідках зовнішньоекономічної діяльності уряду та поїздок членів уряду за кордон» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / резолюції верховної ради україни по зовнішньоекономічних питаннях. постанови по наслідках зовнішньоекономічної діяльності уряду та поїздок членів уряду за кордон).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126003765" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 380/970/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140220</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Резолюції Верховної Ради України по зовнішньоекономічних питаннях. Постанови по наслідках зовнішньоекономічної діяльності Уряду та поїздок членів Уряду за кордон</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>що усувають перешкоди для продовження розгляду справи</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Резолюції Верховної Ради України по зовнішньоекономічних питаннях. Постанови по наслідках зовнішньоекономічної діяльності Уряду та поїздок членів Уряду за кордон» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Резолюції Верховної Ради України по зовнішньоекономічних питаннях. Постанови по наслідках зовнішньоекономічної діяльності Уряду та поїздок членів Уряду за кордон).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">4.1. Про неможливість касаційного оскарження постанов апеляційного суду,
+
+що усувають перешкоди для продовження розгляду справи
+
+Постанови суду апеляційної інстанції, які скасовують ухвали суду першої інстанції,
+що не вирішують спір по суті, а лише усувають перешкоди для подальшого
+провадження у справі (зокрема, ухвали про повернення позову, відмову у відкритті
+провадження, залишення позову без розгляду), не підлягають касаційному
+оскарженню відповідно до норм Кодексу адміністративного судочинства України,
+оскільки вони не є остаточним рішенням по суті справи, а лише сприяють
+відновленню процесуального руху справи в суді першої інстанції
+
+19 березня 2025 року Верховний Суд у складі суддів об’єднаної палати Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління Державної
+податкової служби у Львівській області (далі - ГУ ДПС) на постанову Восьмого
+апеляційного адміністративного суду від 22 квітня 2024 року у справі № 380/970/24
+
+за позовом Товариства з обмеженою відповідальністю «СГП «ЛЬВІВСЬКЕ» (далі – ТОВ,
+позивач) до ГУ ДПС, Державної податкової служби України про визнання протиправним
+та скасування рішення, зобов’язання вчинити дії.
+
+ОБСТАВИНИ СПРАВИ
+
+Окружний адміністративний суд ухвалою повернув позовну заяву позивачеві
+з підстав пропуску строку звернення до суду, встановленого частиною другою статті
+122 КАС України. Апеляційний суд постановою скасував ухвалу окружного суду про
+повернення позовної заяви, а справу направив для продовження розгляду до суду
+першої інстанції. Відповідач звернувся з касаційною скаргою на постанову суду
+апеляційної інстанції.
+
+Верховний Суд закрив касаційне провадження.
+ОЦІНКА СУДУ
+Об’єднана палата на підставі аналізу статей 294 та 328 КАС України звернула увагу
+на те, що ухвали суду першої інстанції, які відповідно до ч. 2 ст. 328 КАС України
+підлягають касаційному оскарженню, за своєю суттю є такими, що або мають певний
+вплив на права та обов’язки учасників процесу, який за своїм характером та природою
+може прирівнюватися до впливу, що має рішення суду, яким вирішено спір по суті
+(ухвали про: забезпечення позову, заміну заходу забезпечення позову),
+або перешкоджають реалізації учасникам процесу фундаментального права на доступ
+до суду, тобто перешкоджають подальшому провадженню у справі (зокрема, ухвали
+про: повернення позовної заяви, відмови у відкритті провадження у справі, залишення
+позову без розгляду, закриття провадження у справі).
+
+За висновком Верховного Суду, якщо відповідне втручання чи обмеження щодо
+прав і свобод учасника адміністративного процесу усунуте судом апеляційної інстанції,
+а ухвала суду першої інстанції, яка становила таке втручання, скасована, то і відсутній
+предмет касаційного перегляду.
+
+Отже, у разі ухвалення судом апеляційної інстанції постанови про скасування
+ухвали суду першої інстанції, яка перешкоджає подальшому провадженню у справі
+(зокрема, ухвали про: повернення позовної заяви, відмови у відкритті провадження
+у справі, залишення позову без розгляду, закриття провадження у справі)
+та направлення справи для продовження розгляду до суду першої інстанції,
+усуваються перешкоди для подальшого провадження у справі, тому суд касаційної
+інстанції в силу положень КАС України не має повноважень для перегляду такої
+постанови апеляційного суду.
+
+Таким чином, об’єднана палата дійшла висновку, що оскаржуване у цій справі
+судове рішення не підлягає перегляду в касаційному порядку відповідно до Глави 2
+розділу III КАС України, у зв’язку з чим касаційне провадження необхідно закрити.
+
+Детальніше з текстом ухвали Верховного Суду від 19 березня 2025 року у справі № 380/970/24
+(провадження № К/990/20342/24) можна ознайомитися за посиланням:
+https://reyestr.court.gov.ua/Review/126003765.
+
+Огляд судової практики Касаційного адміністративного суду у складі Верховного
+Суду за березень 2025 року (актуальна практика) / Упоряд.: управління аналітичної
+та правової роботи Касаційного адміністративного суду департаменту аналітичної
+та правової роботи Апарату Верховного Суду; управління забезпечення роботи
+судової палати з розгляду справ щодо податків, зборів та інших обов’язкових
+платежів секретаріату Касаційного адміністративного суду Апарату Верховного
+Суду. Київ, 2025. – 32 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 15;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

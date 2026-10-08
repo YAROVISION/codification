@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Zved_oglyad_YESPL_2024 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Zved_oglyad_YESPL_2024 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Zved_oglyad_YESPL_2024.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Zved_oglyad_YESPL_2024</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">21</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">56.5%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">5</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 21 із 21</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 10 40 60 оскарження в суді неправомірних дій посадової особи на життя) семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «оскарження в суді неправомірних дій посадової особи» (основи суспільного ладу / законодавство з питань прав людини та громадянина / оскарження в суді неправомірних дій посадової особи).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Оскарження в суді неправомірних дій посадової особи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>на життя)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Оскарження в суді неправомірних дій посадової особи» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Оскарження в суді неправомірних дій посадової особи).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### Зведений огляд рішень Європейського суду з прав людини
+
+Стаття 2 Конвенції про захист прав людини і основоположних свобод (право
+на життя)
+GEORGIA v. russia (IV): [стверджувані численні порушення прав етнічних грузинів,](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[що проживали по обидва боки від лінії розмежування окупованої частини Грузії,](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[вчинювані окупаційною владою російської федерації і владою де-факто Абхазії](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[та Південної Осетії – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+CARÊME v. France [GC]: [скарга колишнього мера муніципалітету Гранд-Сінт](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[на недостатні дії Франції щодо запобігання зміні клімату – заяву визнано](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[неприйнятною (несумісна ratione personae)](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[DUARTE AGOSTINHO AND OTHERS v. Portugal and 32 others [GC]:](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf) нинішні та серйозні
+[майбутні наслідки зміни клімату, спричинені, серед іншого, стверджувано](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[неналежною політикою 32 Договірних Держав – заяву визнано неприйнятною](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[з огляду на відсутність екстериторіальної юрисдикції у 31 Договірної Держави](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[за Конвенцією та невичерпання заявниками національних засобів юридичного](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[захисту стосовно Португалії](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+SELÇUK v. Türkiye: [невжиття органами влади превентивних оперативних заходів](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[для припинення теракту, від якого постраждав заявник – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+HAUGEN v. Norway: [нездатність органів влади захистити життя сина заявника,](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[який страждав на психічні розлади та вчинив самогубство під час тримання](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[під вартою в звичайній тюремній камері](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) – порушення
+HARUTYUN KARAPETYAN v. Armenia: [стверджувана нездатність органів державної](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[влади з’ясувати обставини смерті дружини заявника, яка настала після](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[проведення невідкладного медичного втручання](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) – відсутність порушення
+
+Стаття 3 Конвенції (заборона катування)
+MYTSYK AND KRAVCHUK v. Ukraine: [непроведення належного розслідування факту](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[заподіяння адвокатам тілесних ушкоджень під час їхніх спроб бути присутніми](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[на проведенні обшуку їхнього клієнта – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+HASMIK KHACHATRYAN v. Armenia: [відсутність належного реагування на серйозні](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[випадки домашнього насильства та можливості у жертви вимагати від](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[кривдника відшкодування моральної шкоди – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+MEDVID v. Ukraine: [стверджувана неефективність нового механізму умовно-](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[дострокового звільнення до заявника, засудженого до довічного позбавлення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[волі, який став повністю функціональним з 3 березня 2023 року](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) – порушення
+[(у період з моменту ухвалення остаточного вироку до 3 березня 2023 року);](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[відсутність порушення (у період після 3 березня 2023 року)](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 2   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">03_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 3   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">04_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 4   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">05_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 5   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">06_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 6   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">07_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 7   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="08_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">08_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 8   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">09_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 9   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="10_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">10_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 10   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="11_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">11_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 11   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="12_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">12_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 12   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="13_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">13_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 13   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="14_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">14_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 14   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="15_segment.md не вказана 10 40 20 забезпечення безпеки осіб, які беруть участь у судочинстві о. ю. тарасенко, р. ш. бабанли. київ, 2025. – 15 с. семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «забезпечення безпеки осіб, які беруть участь у судочинстві» (основи суспільного ладу / законодавство з питань прав людини та громадянина / забезпечення безпеки осіб, які беруть участь у судочинстві).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">15_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Забезпечення безпеки осіб, які беруть участь у судочинстві</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>О. Ю. Тарасенко, Р. Ш. Бабанли. Київ, 2025. – 15 с.</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Забезпечення безпеки осіб, які беруть участь у судочинстві» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Забезпечення безпеки осіб, які беруть участь у судочинстві).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### 15   Рішення, ухвалені ЄСПЛ впродовж 2024 року
+
+Зведений огляд рішень Європейського суду з прав людини (2024 рік) / Відп. за вип.:
+О. Ю. Тарасенко, Р. Ш. Бабанли. Київ, 2025. – 15 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="17_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина [яких умов – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/oglyad_espl_09_2024.pdf) мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">17_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>[яких умов – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### Зведений огляд рішень Європейського суду з прав людини
+
+[на її заздалегідь висловлену письмову відмову від переливання крові за будь-](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+
+[яких умов – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+S.V.M. v. Ukraine: [розкриття інформації про судимість заявника в довідці про](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+[несудимість, необхідної для пошуку роботи – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+KAJGANIĆ v. Serbia: [стверджувана неспроможність органів влади забезпечити](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[заявниці, яка була захисницею обвинуваченого у резонансній справі, права](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[на повагу до її репутації з огляду на опубліковану щодо неї статтю про її](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[домовленості з посадовими особами надати обвинуваченому статус свідка](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[в обмін на його неправдиві свідчення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) – відсутність порушення
+[LINDHOLM AND THE ESTATE AFTER LEIF LINDHOLM v. Denmark:](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf) проведене
+[за медичними показниками термінове переливання крові особі, яка попередньо](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[з релігійних міркувань відмовилася від цієї процедури – відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[NATALYA KOSTYANTYNIVNA SHAPTALA v. Ukraine](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf) (ухв.) : висновок Верховної Ради
+[України про порушення суддею Конституційного Суду України присяги судді,](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[що не мав прямого наслідку для її професійного й  приватного життя – заяву](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[визнано неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+EL AROUD AND SOUGHIR v. Belgium [: позбавлення заявників громадянства через](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[засудження за тяжкі злочини, пов’язані з терористичною діяльністю –](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+
+Стаття 9 Конвенції (свобода думки, совісті і релігії)
+KANATLI v. Türkiye: [відсутність законодавчого дозволу особам, які відмовляються](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+[від проходження військової служби з релігійних міркувань або інших міркувань,](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+[обирати цивільну службу як альтернативу військовій – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+
+Стаття 10 Конвенції (свобода вираження поглядів)
+VEIGA CARDOSO v. Portugal: [незаконне притягнення заявника до кримінальної](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[відповідальності через наклеп на працівника прокуратури за обтяжуючих](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[обставин, що становило порушення його права на свободу вираження поглядів](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+
+[– порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+DANILEŢ v. Romania: [накладення Національною комісією з питань судоустрою](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[та судочинства дисциплінарного стягнення на суддю у зв’язку з розміщенням](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[ним на своїй сторінці у Facebook двох повідомлень, які могли підірвати репутацію](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[та довіру до судової влади – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+DEDE v. Türkiye: [звільнення працівника банку за надсилання співробітникам](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[відділу кадрів своєї компанії електронного листа, в якому він критикував методи](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[управління вищого керівництва, та відмова національних судів у задоволенні](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[його позову, яким він оскаржив це звільнення – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="19_segment.md не вказана 260 10 20 порядок і умови виконання умовного засудження до позбавлення волі [на адресу добре відомого політика та члена європейського парламенту і його](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/oglyad_espl_04_2024.pdf) семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «порядок і умови виконання умовного засудження до позбавлення волі» (виправно-трудове законодавство / виправно-трудове законодавство / порядок і умови виконання умовного засудження до позбавлення волі).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">17</span>
+            <span class="file-badge">19_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">260 10 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок і умови виконання умовного засудження до позбавлення волі</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>[на адресу добре відомого політика та члена Європейського парламенту і його](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Порядок і умови виконання умовного засудження до позбавлення волі» (Виправно-трудове законодавство / Виправно-трудове законодавство / Порядок і умови виконання умовного засудження до позбавлення волі).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### Зведений огляд рішень Європейського суду з прав людини
+
+ALMEIDA ARROJA v. Portugal: [засудження заявника за дифамаційні твердження](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+[на адресу добре відомого політика та члена Європейського парламенту і його](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+[юридичної фірми щодо будівництва педіатричного відділення лікарні](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf) – порушення
+[SIEĆ OBYWATELSKA WATCHDOG POLSKA v. Poland:](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf) відмова Конституційного Суду
+[надати заявнику (неурядовій організації) доступ до щоденників засідань суддів –](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+[порушення; відмова Конституційного Суду надати доступ до записів відвідувань](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+[будівлі цього Суду – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+ZÖLDI v. Hungary: [відсутність можливості в заявниці, яка працювала](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[журналісткою-розслідувачем, отримати інформацію про фінансові операції двох](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[фондів, створених Національним банком Угорщини – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+KIRKOROV v. Lithuania: [оскарження заявником заходів щодо заборони органами](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[влади Литви його в’їзду на територію цієї держави з міркувань охорони](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[національної безпеки через його відкриту підтримку політики агресії російської](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+федерації [– заяву було визнано неприйнятною](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+MÁRIA SOMOGYI v. Hungary: [зобов’язання заявниці сплатити відшкодування](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[на користь муніципалітету за порушення його особистих прав через поширення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[допису третьої особи у Facebook, який стосувався управління муніципалітетом](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[майном і використання публічних коштів – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+THOMAIDIS v. Greece: [цивільна відповідальність за порушення принципів](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[відповідальної журналістики, а саме незаконне поширення показань свідків,](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[що є частиною матеріалів кримінального розслідування, та оголошення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[незаконно перехоплених розмов у телевізійній програмі – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+LUTGEN v. Luxembourg: [накладення на адвоката штрафу (як кримінальне](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[покарання) за образу судді в електронному листі, який він надсилав органам](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[влади, щоб повідомити про ситуацію у справі, яку вважав неприпустимою –](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+
+[порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+PISANSKI v. Croatia: [накладення на заявника – адвоката штрафу за неповагу](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[до суду за зроблений ним коментар щодо тлумачення судом законодавчих](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+
+[положень – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+SUPRUN AND OTHERS v. russia: [відмова заявникам у доступі до архівної](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[інформації та накладення санкцій на одного з них через їхню діяльність](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[із дослідження історії радянських політичних репресій – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+BORONYÁK v. Hungary: [накладення на заявника штрафу через розголошення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[всупереч угоді про конфіденційність інформації щодо умов безстрокового](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[контракту, укладеного ним і приватною компанією – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+HRACHYA HARUTYUNYAN v. Armenia: [засудження заявника за наклеп через](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+[надіслане ним повідомлення своєму колишньому роботодавцю, в якому він](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+[звинуватив у корупційних злочинах одного зі своїх колег – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+BIELAU v. Austria: притягнення [заявника](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf) – практикуючого лікаря
+[до дисциплінарної відповідальності за категоричні висловлювання на своєму](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="21_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина [відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/oglyad_espl_08_2024.pdf) мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">18</span>
+            <span class="file-badge">21_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>[відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### Зведений огляд рішень Європейського суду з прав людини
+
+[вебсайті «холістичної медицини» щодо загальної неефективності вакцинації –](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+[відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+[ASSOCIATED NEWSPAPERS LIMITED v. the United Kingdom:](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf) зобов’язання видавця –
+[відповідача, який програв справу, сплатити значні суми «гонорару успіху»](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[в межах справ про недоторканність приватного життя та дифамацію](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf) –
+
+[порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+AFGAN MAMMADOV v. Azerbaijan: [позбавлення адвоката права на заняття](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[адвокатською діяльністю за скаргу на керівника юридичної консультації, де він](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+
+–
+[працював, у якій висловив твердження про його незаконну діяльність](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+
+[порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+BORZYKH v. Ukraine (ухв.) : [заборона публічного носіння георгіївської стрічки –](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[заяву визнано неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+AGHAJANYAN v. Armenia: [неналежне з’ясування національними судами обставин](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[звільнення заявника із займаної посади за розкриття під час інтерв’ю](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[журналісту газети відомостей щодо його роботодавця, які стосувалися питань](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[оплати праці, дотримання правил безпеки на виробництві тощо](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) – порушення
+GADZHIYEV AND GOSTEV v. russia: [втручання у право заявників на свободу](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[вираження поглядів шляхом застосування до них дисциплінарних заходів](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[за публічну критику недоліків функціонування офіційних установ, у яких вони](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+
+працювали [–](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) порушення
+
+Стаття 11 Конвенції (свобода зібрань та об’єднання)
+[ASSOCIATION OF PEOPLE OF SILESIAN NATIONALITY (IN LIQUIDATION) v.](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+Poland: [розпуск та ліквідація асоціації-заявника за відсутності вчинення нею](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+або її членами будь-яких [незаконних](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf) або антидемократичних дій;
+[неспроможність органів влади довести, що назва асоціації-заявника могла](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+
+[становити загрозу громадському порядку – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024.pdf)
+BORONENKOV v. Ukraine: [притягнення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf) заявника до адміністративної
+[відповідальності та накладення на нього штрафу за участь у публічному заході](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[всупереч судовій забороні його проведення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf) – заяву визнано неприйнятною
+
+Стаття 14 Конвенції (заборона дискримінації)
+DE JESUS LOURENÇO JÓIA v. Portugal [(ухв.)](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf) : стверджувана незаконна відмова
+[органів влади в наданні заявнику як працівнику поліції статусу особи](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+[з інвалідністю внаслідок війни через відсутність «підвищеного ризику» під час](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+[виконання ним службових обов’язків та надання такого статусу іншій особі](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+[за подібних обставин – заяву визнано неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+BAKRADZE v. Georgia: [зосередженість під час співбесіди у Вищій раді правосуддя](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[(ВРП) із заявницею як кандидатом на зайняття вакантної посади судді на її ролі](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[голови асоціації об’єднання суддів та критиці цією організацією діяльності ВРП](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="23_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина [про упередженість членів врп, і недостатність судового контролю в цьому](https://court.gov.ua/storage/portal/supreme/ogliady/oglyad_espl_11_2024.pdf) мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">19</span>
+            <span class="file-badge">23_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>[про упередженість членів ВРП, і недостатність судового контролю в цьому](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### Зведений огляд рішень Європейського суду з прав людини
+
+[замість перевірки її доброчесності та професійної компетентності, що свідчило](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[про упередженість членів ВРП, і недостатність судового контролю в цьому](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+аспекті [– порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+HELLGREN v. Finland: [утримання роботодавцем заробітної плати заявниці через](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[неповне виконання нею своїх робочих обов’язків упродовж двох днів у контексті](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[«вибіркового страйку» за рішенням профспілки – відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+KAYA v. Türkiye (ухв.) : [притягнення заявниці – вчительки – до дисциплінарної](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[відповідальності за участь в одноденному страйку, що не був пов’язаний з її](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[економічними, соціальними або професійними інтересами – заяву визнано](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+FEZA ALMAZ AND OTHERS v. Türkiye (ухв.) : [притягнення заявників – муніципальних](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[службовців – до дисциплінарної відповідальності за участь в одноденному](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[страйку, що не був пов’язаний з їхніми економічними, соціальними](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[або професійними інтересами – заяву визнано неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+
+Стаття 1 Першого протоколу до Конвенції (захист власності)
+[NASKOV AND OTHERS v. North Macedonia:](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf) порушення майнових прав заявників
+[через скасування національними органами влади proprio motu розпорядження](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[про остаточну реституцію, яким їм надавалося право власності на землю, на якій](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[треті особи побудували автозаправну станцію та господарські приміщення –](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+
+[порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+BERNOTAS v. Lithuania: [покладення на заявника зобов’язання з відшкодування](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[органам соціального забезпечення пенсійних виплат, здійснених на користь](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[особи, здоров’ю якої заявник завдав тяжкої шкоди – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+MAROSLAVAC v. Croatia: [вимога податкових органів під час проведення перевірки](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[фінансової діяльності заявниці сплатити податкові нарахування за періоди, щодо](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+
+[яких, як стверджувала заявниця, у держави спливли строки нарахування](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+та стягнення – [відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+SHYLINA v. Ukraine: [призупинення виплат внутрішньо переміщеній особі через її](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[відмову виконувати законодавчу вимогу про необхідність відкриття рахунку](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[в Ощадбанку для подальшого отримання таких виплат – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_01_02_2024.pdf)
+[ENERGYWORKS CARTAGENA S.L. v. Spain:](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf) перекласифікація частини прибутку
+[(субсидії) минулих періодів компанії-заявника як необґрунтованої та її подальше](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[зарахування в рахунок майбутньої винагороди, що, на думку компанії-заявника,](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[становило випадки ретроспективності та суперечило принципу правової](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+визначеності [– скаргу визнано неприйнятною](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+NINA DIMITROVA v. Bulgaria: [скарги заявниці на те, що її квартира, передана](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[в іпотеку банку на забезпечення кредитного договору, була продана в межах](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+[виконавчого провадження до того, як були розглянуті її судові заперечення щодо](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="25_segment.md не вказана 30 60 20 забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія) [порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/oglyad_espl_04_2024%20(1).pdf) семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)» (цивільне законодавство / зобов&#x27;язальне право / забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">20</span>
+            <span class="file-badge">25_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>[порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)» (Цивільне законодавство / Зобов&#x27;язальне право / Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### Зведений огляд рішень Європейського суду з прав людини
+
+[платіжного доручення на користь банку та його негайного виконання –](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+
+[порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_04_2024%20(1).pdf)
+ZELA v. Albania: [знесення збудованого заявником будинку без присудження](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[компенсації та тривалий розгляд його позову – порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+GANUSHCHAK v. Ukraine: [притягнення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf) заявника до відповідальності
+[за незаконний перетин кордону через тимчасово закритий пункт пропуску](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+[в окупованій росією Автономній Республіці Крим та за переміщення товарів –](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+[автомобіля, яким керував заявник – поза митним контролем – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_08_2024.pdf)
+MELANDRI v. San Marino: [конфіскація грошових коштів, одержаних злочинним](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+[шляхом – відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+YAYLALI v. Serbia: [накладення штрафу та конфіскація незадекларованих](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+[особистих і законно придбаних ювелірних виробів заявника під час перетину ним](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+
+[кордону – порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_09_2024.pdf)
+[AMERISOC CENTER S.R.L. v. Luxembourg:](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) відсутність законодавчого механізму
+[інформування компанії-заявника про арешт її активів за кордоном, що призвело](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[до пропуску строку оскарження наказу, та відсутність подальшого перегляду](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[доцільності продовження такого арешту всупереч вимозі пропорційності](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+
+–
+[застосованого заходу праву на повагу до мирного володіння майном](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+
+[порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+DROZDYK AND MIKULA v. Ukraine: [позбавлення права власності заявниць](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[на земельні ділянки, якими вони володіли та користувалися впродовж багатьох](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[років на підставі того, що ці ділянки знаходилися в межах охоронних зон](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+[залізниць та не могли бути передані у власність, без надання будь-якої](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf)
+компенсації [–](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_10_2024.pdf) порушення
+[RYBÁŘSTVÍ TŘEBOŇ A.S. AND RYBÁŘSTVÍ TŘEBOŇ HLD. A.S. v. the Czech Republic:](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[скасування двох приватизацій нерухомого майна після більше як 20 років без](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[компенсації та відсутність законних очікувань на продовження користування](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[спірними земельними ділянками, оскільки приватизація була недійсна ab initio](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[й  проведена недобросовісно – відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+RAMAJ v. Albania: [тривале невиконання остаточного та обов’язкового рішення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[суду про визнання за заявником права власності на земельну ділянку;](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[узаконення та реєстрація незаконного будівництва третіх осіб на частині](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[земельної ділянки заявника, що залишилася, є фактично експропріацією –](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+
+[порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[ODESKA BUTERBRODNA KOMPANIYA, TOV v. Ukraine:](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf) визнання недійсним права
+[власності підприємства-заявника на майно в судовому провадженні,](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[ініційованому прокурором, через те, що майно було самочинною забудовою,](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[зведеною на земельній ділянці, яка перебувала в комунальній власності –](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+
+[порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="27_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина [заявника – громадянина франції – на земельну ділянку, яку незаконно виділили](https://court.gov.ua/storage/portal/supreme/ogliady/oglyad_espl_12_2024.pdf) мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">21</span>
+            <span class="file-badge">27_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>[заявника – громадянина Франції – на земельну ділянку, яку незаконно виділили](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">#### Зведений огляд рішень Європейського суду з прав людини
+
+FILIPP ANDRE SADI VITSE v. Ukraine [(ухв.)](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf) : визнання недійсним права власності
+[заявника – громадянина Франції – на земельну ділянку, яку незаконно виділили](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[в ході процедури приватизації та якою сільська рада не могла розпоряджатися](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[– заяву визнано неприйнятною](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+
+Стаття 3 Першого протоколу до Конвенції (право на вільні вибори)
+ŽDANOKA v. Latvia (№ 2): [позбавлення заявниці права балотуватися](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[до парламенту Латвії з огляду на її членство в Комуністичній партії Латвії](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[у певний період – відсутність порушення](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+
+Стаття 2 Протоколу № 4 до Конвенції (свобода пересування)
+DOMENJOUD v. France: [превентивні рішення щодо комендантської години,](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[прийняті відповідно до законодавства про надзвичайний стан, впроваджений](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[після терактів, до двох заявників, підозрюваних у потенційній участі](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf)
+[в насильницьких діях під час саміту COP21](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_05_2024.pdf) [1] – порушення; відсутність порушення
+
+Стаття 1 Протоколу № 12 до Конвенції (загальна заборона дискримінації)
+FERRERO QUINTANA v. Spain: [встановлення вікового цензу при проведенні](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+[конкурсу на заміщення посад в органах поліції – відсутність порушення](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_11_2024.pdf)
+
+Консультативні висновки згідно з Протоколом № 16 до Конвенції
+[Консультативний висновок на запит Вищого суду касації та правосуддя Румунії](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[(the High Court of Cassation and Justice of Romania) щодо тлумачення застосовності](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[статті 6 Конвенції та статті 1 Першого протоколу до Конвенції (№ P16-2024-001)](https://supreme.court.gov.ua/userfiles/media/new_folder_for_uploads/supreme/ogliady/Oglyad_ESPL_06_07_2024.pdf)
+[Ухвала Великої Палати ЄСПЛ про відмову у прийнятті запиту про надання](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[консультативного висновку, який надійшов від Вищого касаційного суду Румунії,](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[щодо застосовності та тлумачення статті 8 Конвенції у випадку звільнення особи](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[з посади судді, у зв’язку з нез’явленням на експертне дослідження з метою](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[визначення ступеня психічного захворювання, яке перешкоджає виконанню](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+[відповідних професійних обов’язків (№ P16-2024-002)](https://court.gov.ua/storage/portal/supreme/ogliady/Oglyad_ESPL_12_2024.pdf)
+
+1 Конференція сторін Рамкової конвенції ООН щодо кліматичних змін.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 21;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

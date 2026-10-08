@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_SES_09_10_2024 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_SES_09_10_2024 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_SES_09_10_2024.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_SES_09_10_2024</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">2</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">76.0%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">2</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 2 із 2</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 20110 30 10 особисте рішення суду справедливості європейського союзу (перша палата) семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «особисте» (бюджетно-фінансове законодавство / страхова діяльність / види страхування / особисте).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20110 30 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Страхова діяльність</span><span class="crumb-sep">›</span><span class="crumb">Види страхування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Особисте</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Суду справедливості Європейського Союзу (Перша Палата)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Особисте» (Бюджетно-фінансове законодавство / Страхова діяльність / Види страхування / Особисте).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Страхування автотранспортних засобів
+
+1. Страхування автотранспортних засобів
+
+Рішення Суду справедливості Європейського Союзу (Перша Палата)
+від 19 вересня 2024 року, Inkreal, C-236/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=290210&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=3863213)
+
+Звернення за попереднім рішенням – Обов’язкове страхування цивільно-правової
+відповідальності власників автотранспортних засобів – Директива 2009/103/ЄС –
+Статті 3 та 13 – Договір страхування, укладений на підставі умисного подання
+неправдивих відомостей щодо постійного водія – Національне законодавство,
+що передбачає можливість посилання на нікчемність договору страхування
+«потерпілим пасажиром», який також є страхувальником, якщо така нікчемність є
+наслідком умисного подання неправдивих відомостей цією особою під час
+укладення договору – Зловживання правами – Позов до страхувальника з метою
+встановлення його відповідальності у зв’язку з умисним поданням неправдивих
+відомостей
+
+Після звернення Cour de cassation (Касаційний Суд, Франція) за попереднім
+рішенням, Суд надає роз’яснення щодо обсягу страхового покриття, що надається
+потерпілим третім особам, у межах обов’язкового страхування цивільно-правової
+відповідальності власників транспортних засобів. Зокрема, Суд зазначає,
+що Директива 2009/103 [40] виключає, за винятком випадків зловживання правом,
+національне законодавство, яке передбачає можливість посилання на нікчемність
+договору страхування цивільно-правової відповідальності власників транспортних
+засобів, укладеного пасажиром транспортного засобу, який став потерпілим
+у дорожньо-транспортній пригоді (ДТП) та водночас є страхувальником, якщо така
+нікчемність є наслідком подання ним неправдивих відомостей під час укладення
+договору. У разі, якщо нікчемність договору не може бути застосована до такого
+потерпілого пасажира і якщо відсутнє зловживання правом, зазначена Директива
+виключає можливість прийняття національного законодавства, що дозволяє
+страховій компанії подання позову до цього пасажира з метою відшкодування сум,
+виплачених на виконання договору страхування. У жовтні 2012 року PQ уклав
+договір страхування транспортного засобу з компанією Matmut, зазначивши,
+що він є єдиним водієм застрахованого транспортного засобу. У вересні 2013 року
+цей транспортний засіб, перебуваючи під керуванням TN, який перебував у стані
+алкогольного сп’яніння, став учасником ДТП за участю іншого транспортного
+
+40 Перший абзац статті 3 та стаття 13(1) Директиви 2009/103/ЄС Європейського Парламенту та Ради від 16 вересня
+2009 року щодо страхування цивільної відповідальності по відношенню до використання автотранспортних засобів
+та забезпечення виконання зобов&#x27;язань щодо страхування такої відповідальності (OJ 2009 L 263, с. 11).
+### 21   Рішення за вересень – жовтень 2024 року
+
+засобу, застрахованого в іншій страховій компанії. PQ, який на момент пригоди
+перебував у транспортному засобі як пасажир, зазнав тілесних ушкоджень.
+
+Проти TN було порушено кримінальне провадження у кримінальному суді
+(Франція), за результатами якого його було визнано винним, зокрема,
+у спричиненні PQ неумисних тілесних ушкоджень. Суд визнав нікчемним договір
+страхування у зв’язку з умисним поданням страхувальником неправдивих
+відомостей щодо особи постійного водія транспортного засобу. Це рішення було
+залишене в силі Cour d’appel de Lyon (Апеляційний суд Ліона, Франція), який, однак,
+постановив, що нікчемність відповідного договору страхування не може бути
+застосована щодо PQ, оскільки відповідно до законодавства Європейського Союзу
+нікчемність договору страхування на підставі умисного подання страхувальником
+неправдивих відомостей не може застосовуватися до потерпілих у ДТП
+або до їхніх правонаступників.
+
+Розглядаючи касаційну скаргу, подану на це рішення, запитуючий суд
+поставив питання про те, чи можна посилатися на нікчемність договору
+страхування проти потерпілого пасажира, якщо він також є страхувальником
+і особою, яка зробила завідомо неправдиву заяву, що призвела до нікчемності
+цього договору. Також суд ставить питання, чи має страховик право у випадку,
+якщо така нікчемність не може бути застосована до зазначеного потерпілого,
+подати позов до цього потерпілого з метою стягнення всіх сум, виплачених йому
+на підставі договору страхування.
+
+Висновки Суду
+
+Насамперед Суд наголошує, що законодавець Європейського Союзу
+послідовно прагне досягти мету захисту осіб, які постраждали унаслідок аварій,
+спричинених транспортними засобами, та посилити його. Відповідно до Директиви
+2009/103/ЄС [41] компанія, що здійснює обов’язкове страхування цивільно-правової
+відповідальності власників транспортних засобів, не має права відмовити у виплаті
+компенсації третім особам, які постраждали внаслідок ДТП, спричиненої
+застрахованим транспортним засобом, з підстав, що ґрунтуються
+на законодавчих положеннях або договірних умовах полісу страхування, які
+виключають відшкодування шкоди чи тілесних ушкоджень, завданих третім особам
+внаслідок, зокрема, використання або керування застрахованим транспортним
+засобом особами, які не мають права на керування таким транспортним засобом.
+Щодо правового статусу особи, потерпілої у ДТП, Суд зазначає, що принцип захисту
+потерпілих осіб вимагає, щоб правове становище особи, яка була застрахована
+для керування транспортним засобом, але під час настання ДТП перебувала
+у ньому як пасажир, прирівнювалося до становища будь-якого іншого пасажира,
+який є потерпілим у цій ДТП. Таким чином, сам факт, що пасажир, який постраждав
+унаслідок ДТП, одночасно є страхувальником, не дає підстав виключати його
+
+41 Зокрема, відповідно до першого підпункту статті 13(1) Директиви 2009/103/ЄС.
+### 22   Рішення за вересень – жовтень 2024 року
+
+з категорії «третіх осіб, які є потерпілими». [42] Те саме стосується випадків, коли
+страхувальник не є особою, яка постійно керує транспортним засобом,
+що потрапив у ДТП. Відповідно, той факт, що на момент ДТП PQ був
+страхувальником і пасажиром відповідного транспортного засобу, не впливає
+на його статус як «третьої особи, яка є потерпілою».
+
+По-друге, питання щодо того, чи може нікчемність договору страхування,
+спричинена поданням PQ неправдивих відомостей про особу постійного водія
+транспортного засобу під час укладення договору, бути застосована до нього, Суд
+доходить висновку, що факт укладення страховою компанією договору
+страхування на підставі упущень чи неправдивих відомостей, поданих
+страхувальником, не дає цій компанії права посилатися на нікчемність договору
+для звільнення від зобов’язання з відшкодування шкоди, завданої третій особі –
+потерпілому внаслідок ДТП за участю застрахованого транспортного засобу.
+Зазначена ситуація не підпадає під єдиний виняток із загального зобов’язання
+страхових компаній щодо відшкодування шкоди третім особам, які є жертвами
+у ДТП, передбачений Директивою 2009/103. [43]
+
+Враховуючи той факт, що PQ є не лише пасажиром – потерпілим у ДТП, який
+звертається із вимогою про відшкодування шкоди, а й страхувальником, який
+умисно подав неправдиві відомості, що призвело до нікчемності договору
+страхування, Суд наголошує, що Директива 2009/103/ЄС не містить жодних
+положень, які б регулювали питання зловживання правом з боку застрахованої
+особи. Водночас загальний правовий принцип, відповідно до якого на норми права
+Європейського Союзу не можна посилатися з метою зловживання
+або шахрайства, повинен дотримуватися фізичними особами. З цього принципу
+випливає, що Держава-член зобов’язана відмовити у наданні переваг, які
+передбачені положеннями права Європейського Союзу, якщо особа посилається
+на них не з метою досягнення їхньої законної мети, а для отримання переваги, яку
+цій особі надає право ЄС, у випадку, коли об’єктивні умови, необхідні
+для отримання бажаної переваги, дотримані лише формально. У цій справі, поперше, щодо питання, чи досягнуто мети Директиви 2009/103, Суд зазначає, що,
+за умови підтвердження запитуючим судом мета захисту потерпілих у ДТП
+видається досягнутою, оскільки PQ є потерпілим у цій ДТП і прагне отримати
+компенсацію. По-друге, що стосується суб’єктивного елемента, який полягає
+в намірі отримати перевагу, передбачену нормами права Європейського Союзу,
+шляхом штучного створення умов для її набуття, не вбачається, за умови
+підтвердження запитуючим судом, що PQ подав неправдиві відомості саме
+з метою покликатися на положення Директиви 2009/103 [44] та уникнути
+
+42 Як передбачено в першому підпункті статті 13(1) Директиви 2009/103/ЄС.
+43 Відповідно до першого та другого підпунктів статті 13(1), страхова компанія може відмовити у відшкодуванні
+збитків третім особам, які постраждали внаслідок ДТП, лише у випадках, коли транспортний засіб, що спричинив
+шкоду або травму, використовувався або керувався особами, які не мали на це прямого або неявного дозволу, і коли
+треті особи, які постраждали внаслідок пригоди, добровільно сіли в цей транспортний засіб, знаючи, що він був
+
+викраденим.
+44 Зокрема, статті 3 і 13 Директиви 2009/103/ЭС
+### 23   Рішення за вересень – жовтень 2024 року
+
+застосування національних положень щодо правових підстав для визнання
+договору страхування нікчемним. Неправдиві відомості були подані PQ з метою
+страхування належного TN транспортного засобу на більш вигідних умовах, ніж ті,
+які застосовувалися б у разі, якби страховик був поінформований про особу
+постійного водія зазначеного транспортного засобу. З огляду на викладене,
+за умови перевірки запитуючим судом, не вбачається, що PQ порушив принцип
+заборони зловживання правом. Відповідно, нікчемність договору страхування
+цивільно-правової відповідальності власників транспортних засобів,
+що розглядається у цій справі, спричинена поданням PQ неправдивих відомостей
+під час укладення цього договору, не може бути застосована проти нього.
+
+По-третє, стосовно можливості страховика вимагати від PQ відшкодування
+в повному обсязі сум, сплачених йому на виконання договору страхування, шляхом
+подання позову, що ґрунтується на умисній неправомірній поведінці PQ під час
+укладення цього договору, Суд зазначає, що питання дійсності договору
+страхування та відповідальності страхувальника за подання неправдивих
+відомостей під час укладення цього договору регулюються законодавством
+Держав-членів. Водночас національні правові положення, які регулюють ці питання,
+не можуть позбавляти Директиву 2009/103 її ефективності. У ситуаціях, подібних
+до тієї, що розглядається у цій справі, національне законодавство, яке дозволяє
+страховій компанії шляхом подання позову проти пасажира-потерпілого, який
+одночасно є страхувальником та особою, що подала неправдиві відомості під час
+укладення договору страхування, стягнути всі виплачені йому кошти у виконання
+цього договору, може призвести до остаточного та непропорційного позбавлення
+такої особи захисту, який Директива 2009/103/ЄС гарантує жертвам таких аварій.
+Таке законодавство може непропорційно обмежити право цієї особи на отримання
+компенсації за рахунок обов’язкового страхування цивільно-правової
+відповідальності власників транспортних засобів.
+
+### 2. Авторське право
+
+### 2. Авторське право
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md не вказана 10160 30 систематизація нормативно-правових актів рішення суду справедливості єс (перша палата), 17 жовтня 2024 року, sony computer семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «систематизація нормативно-правових актів» (основи суспільного ладу / законодавство / систематизація нормативно-правових актів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>78% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10160 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Систематизація нормативно-правових актів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Суду справедливості ЄС (Перша Палата), 17 жовтня 2024 року, Sony Computer</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Систематизація нормативно-правових актів» (Основи суспільного ладу / Законодавство / Систематизація нормативно-правових актів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Авторське право
+
+2. Авторське право
+
+Рішення Суду справедливості ЄС (Перша Палата), 17 жовтня 2024 року, Sony Computer
+Entertainment Europe, C-159/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=291248&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=2966539)
+
+Звернення за попереднім рішенням – Інтелектуальна власність – Авторське право
+і суміжні права – Правова охорона комп&#x27;ютерних програм - Директива 2009/24/ЄС
+– Стаття 1 – Сфера застосування – Форми вираження комп&#x27;ютерної програми –
+Поняття – Стаття 4(1)(b) – Модифікація комп&#x27;ютерної програми – Зміна змісту
+змінних, що зберігаються в оперативній пам&#x27;яті комп&#x27;ютера і використовуються
+під час роботи програми
+
+### 24   Рішення за вересень – жовтень 2024 року
+
+За результатами розгляду звернення про ухвалення попереднього рішення
+від Bundesgerichtshof (Федеральний суд, Німеччина) Суд справедливості ЄС
+ухвалює рішення щодо безпрецедентного питання про обсяг захисту авторського
+права [45] на комп&#x27;ютерні програми і, зокрема, про зміст змінних даних, які
+передаються захищеною комп&#x27;ютерною програмою в оперативну пам&#x27;ять цього
+комп&#x27;ютера і використовуються цією програмою під час її роботи.
+
+Компанія «Sony Computer Entertainment Europe Ltd» («Sony») продає ігрові
+консолі PlayStation, а також ігри для цих консолей. До 2014 року вона пропонувала
+до продажу, серед інших продуктів, портативну консоль PlayStation Portable
+(«консоль PSP») та гру MotorStorm: Arctic Edge, призначену для цієї консолі.
+
+Sony звернулася до Landgericht Hamburg (Земельний суд, Гамбург, Німеччина)
+з вимогою припинити маркетинг продуктів, що доповнюють її ігрові консолі, а саме
+програмного забезпечення Action Replay PSP, а також пристрою та програмного
+забезпечення Tilt FX, які виробляються та розповсюджуються компаніями «Datel
+Design and Development Ltd» «та Datel Direct Ltd».
+
+Ці продукти, які працюють виключно з оригінальними іграми Sony, дають
+можливість, серед іншого, змінювати певні ігрові параметри, надаючи
+користувачеві ігрові опції, не передбачені на даному етапі гри компанією «Sony»,
+а також можливість керувати консоллю PSP за допомогою рухів. На думку Sony, ці
+продукти дозволяють користувачам змінювати програмне забезпечення, яке
+лежить в основі її ігор, у спосіб, що суперечить авторському праву.
+
+Земельний суд Гамбурга частково задовольнив позовні вимоги Sony. Однак це
+рішення було переглянуте в апеляційному порядку Oberlandesgericht Hamburg (Вищий
+земельний суд Гамбурга, Німеччина), який повністю відхилив позов компанії Sony.
+
+Розглядаючи касаційну скаргу на це рішення, Федеральний суд запитав Суд
+справедливості ЄС, чи підпадає зміст змінних, які передаються захищеною
+комп&#x27;ютерною програмою в оперативну пам&#x27;ять цього комп&#x27;ютера
+і використовуються програмою під час її роботи, під захист авторського права
+на комп&#x27;ютерну програму, і якщо так, то чи вважається передача змінених змінних
+до оперативної пам&#x27;яті зміною комп&#x27;ютерної програми в розумінні Директиви 2009/24.
+
+Висновки Суду
+
+Суд зазначає, що зі статті 1(2) та (3) Директиви 2009/24 випливає, що «будьяка форма вираження» комп&#x27;ютерної програми, окрім ідей та принципів, які лежать
+в основі її складових елементів, охороняється авторським правом, за умови,
+що така програма є оригінальною, в тому сенсі, що вона є власним
+інтелектуальним творінням автора. З цих положень випливає, що вихідний
+та об&#x27;єктний коди підпадають під поняття «форми вираження» комп&#x27;ютерної
+програми в розумінні цього положення, оскільки вони дозволяють відтворювати
+
+45 Стаття 1(1) - (3) Директиви 2009/24/ЄС Європейського Парламенту та Ради від 23 квітня 2009 року про правову
+охорону комп&#x27;ютерних програм (OJ 2009 L 111, с. 16).
+### 25   Рішення за вересень – жовтень 2024 року
+
+або згодом створювати цю програму, тоді як інші елементи цієї програми, такі як,
+зокрема, її функціональні можливості, не охороняються. Таким чином, захист,
+гарантований цією Директивою, обмежується буквальним вираженням
+комп&#x27;ютерної програми у вихідному та об&#x27;єктному коді.
+
+Таке тлумачення підтримується, зокрема, чинним міжнародним
+законодавством. Угода ТРІПС [46] передбачає, що комп&#x27;ютерні програми, як
+у вихідному, так і в об&#x27;єктному коді, підлягають охороні як літературні твори
+відповідно до Бернської конвенції про охорону літературних і художніх творів. [47]
+Однак, за змістом цієї Конвенції та Угоди ТРІПС, захист авторського права може
+надаватися вираженням, але не ідеям, процедурам, методам роботи
+або математичним концепціям як таким, що також підтверджується преамбулою
+до Директиви 2009/24. [48]
+
+Крім того, тлумачення, що лише вихідний та об&#x27;єктний код підпадають
+під поняття «форми вираження» комп&#x27;ютерної програми, відповідає цілям правової
+охорони комп&#x27;ютерних програм відповідно до Директиви 2009/24. Метою системи
+захисту комп&#x27;ютерних програм, запровадженої законодавством ЄС, є захист авторів
+програм від їх несанкціонованого відтворення, яке в цифровому середовищі стало
+дуже простим і недорогим, а також від розповсюдження «піратських» копій цих
+програм. З іншого боку, з його витоків випливає, що правовий режим захисту
+комп&#x27;ютерних програм не надає монополій, які перешкоджають незалежному
+
+розвитку.
+
+Конкуренти автора комп&#x27;ютерної програми можуть вільно, як тільки вони
+встановлять шляхом незалежного аналізу, які ідеї, правила або принципи
+використовуються, створити власну реалізацію цих ідей, правил або принципів
+з метою створення сумісних продуктів.
+
+У справі, що розглядається, очевидно, що програмне забезпечення Datel
+Design and Development і Datel Direct, оскільки воно змінює лише зміст змінних,
+переданих захищеною комп&#x27;ютерною програмою до оперативної пам&#x27;яті
+комп&#x27;ютера і використовуваних цією програмою під час її роботи, не дозволяє
+відтворити цю програму або її частину, а навпаки, передбачає, що ця програма
+буде виконуватися одночасно з її запуском. Таким чином, зміст змінних є
+елементом програми, за допомогою якого користувачі використовують її функції,
+що не охороняється як «форма вираження» комп&#x27;ютерної програми в розумінні
+статті 1(2) Директиви 2009/24, і саме запитуючий суд повинен перевірити це.
+
+Суд також вважає, що статті 1(1) –(3) Директиви 2009/24 повинні тлумачитися
+як такі, що зміст змінних даних, переданих захищеною комп&#x27;ютерною програмою
+
+46 Стаття 10(1) Угоди про торговельні аспекти прав інтелектуальної власності («Угода ТРІПС»), викладена в Додатку
+1С до Угоди про заснування Світової організації торгівлі (СОТ), підписаної в Марракеші 15 квітня 1994 року та
+затвердженої Рішенням Ради 94/800/ЄС від 22 грудня 1994 року щодо укладення від імені Європейського
+Співтовариства, з питань, що належать до його компетенції, угод, досягнутих на багатосторонніх переговорах
+Уругвайського раунду (1986-1994 рр.) (ОВ 1994 р., L 336, с. 1)
+47 Бернська конвенція про охорону літературних і художніх творів, підписана в Берні 9 вересня 1886 року, у редакції,
+що випливає з Паризького акта від 24 липня 1971 року.
+48 Пункти 7, 11 і 15 Директиви 2009/24.
+### 26   Рішення за вересень – жовтень 2024 року
+
+в оперативну пам&#x27;ять комп&#x27;ютера і використовуваних цією програмою під час її
+роботи, не підпадає під захист, наданий цією Директивою, оскільки цей зміст не
+дозволяє відтворити або створити таку програму в подальшому.
+
+### 27   Рішення за вересень – жовтень 2024 року
+
+VI. Свобода пересування: свобода надання послуг
+
+Рішення Суду справедливості ЄС (Перша Палата), 17 жовтня 2024 року, FA.RO. di YK &amp;
+C., C-16/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=291243&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=2943280)
+
+Звернення за попереднім рішенням – Послуги на внутрішньому ринку – Директива
+2006/123/ЄС – Схема надання дозволів – Стаття 10 – Умови надання дозволу –
+Продаж тютюнових виробів – Національне законодавство, що ставить надання
+дозволу на відкриття пункту продажу тютюнових виробів у залежність
+від дотримання певних умов – Умови, що стосуються відстані та населення –
+Захист здоров&#x27;я населення від куріння
+
+У цьому зверненні за попереднім рішенням щодо відкриття пункту продажу
+промислових тютюнових виробів Суд справедливості ЄС вирішує питання про
+відповідність Директиві 2006/123 [49] італійського законодавства, що застосовується
+до роздрібної торгівлі цими товарами, оскільки це законодавство використовує
+обмежувальні критерії, засновані на географічній відстані та чисельності
+населення, для отримання дозволу на відкриття такого пункту продажу.
+
+Після анулювання ліцензії на роздрібну торгівлю тютюновими виробами
+компанія «FA.RO.» звернулася до Agenzia delle Dogane e dei Monopoli (Митномонопольне відомство, Італія; далі – ADM) з проханням відкрити нову звичайну
+точку продажу промислових тютюнових виробів у своєму комерційному ресторані
+та барі.
+
+ADM відмовило через недотримання умов мінімальної географічної відстані
+між постачальниками та чисельності населення, що встановлені національним
+
+законодавством.
+
+Тоді FA.RO. подала позов до Tribunale amministrativo regionale per la Liguria
+(Регіональний адміністративний суд, Лігурія, Італія), який є запитуючим судом. Ця
+компанія стверджувала, зокрема, що нова точка продажу в її закладі не призведе
+до шкідливого впливу завищеної пропозиції порівняно з попитом через високий
+рівень туризму в певні періоди.
+
+У зв&#x27;язку з цим запитуючий звернувся до Суду справедливості ЄС з питанням
+про те, чи, власне кажучи, стаття 15 Директиви 2006/123 виключає національне
+законодавство, яке ставить надання дозволу на відкриття точок продажу
+тютюнових виробів у залежність від дотримання умов, пов&#x27;язаних з мінімальною
+географічною відстанню між постачальниками та чисельністю населення, без
+можливості для компетентного державного органу враховувати замість цих умов
+періодичне збільшення кількості споживачів.
+Висновки Суду
+
+49 Директива 2006/123/ЄС Європейського Парламенту та Ради від 12 грудня 2006 року про послуги на внутрішньому
+ринку (OJ 2006 L 376, ст. 36).
+### 28   Рішення за вересень – жовтень 2024 року
+
+По-перше, Суд зазначає, що законодавство, яке закріплює роздрібну торгівлю
+тютюновими виробами за дистриб&#x27;юторами, уповноваженими органами державної
+влади, підпадає під сферу дії Директиви 2006/123. Таке законодавство не підпадає
+під поняття монополії, яке виходить за межі сфери дії цієї Директиви, [50] оскільки
+Держава не здійснює діяльність з роздрібної торгівлі, яка залишається предметом
+конкуренції і не надається одному оператору, а органи влади не можуть, крім того,
+втручатися в комерційні рішення операторів торгових точок і ліцензованих
+операторів.
+
+По-друге, Суд зазначає, що організація роздрібної торгівлі тютюновими
+виробами охоплюється поняттям «схема авторизації» у значенні статті 4(6)
+Директиви 2006/123, оскільки в контексті схеми, встановленої національним
+законодавством, про яке йдеться, постачальник послуг зобов&#x27;язаний вжити заходів
+перед компетентним органом для отримання офіційного рішення, що дозволяє
+йому отримати доступ до цієї діяльності.
+
+Таким чином, обмежувальні умови щодо відстані та чисельності населення,
+передбачені цією схемою авторизації, повинні відповідати положенням статті
+10(2)(a)-(g) Директиви 2006/123.
+
+Отже, по-перше, ці умови повинні бути недискримінаційними, що, як видається,
+має місце в даному випадку.
+
+По-друге, вони повинні бути обґрунтовані переважною причиною, пов&#x27;язаною
+із суспільними інтересами. Це може полягати в захисті здоров&#x27;я людей від ризиків,
+які породжуються виробленими тютюновими виробами. І навпаки, міркування суто
+економічного характеру не можуть становити переважну причину, пов&#x27;язану
+із суспільним інтересом. Схема видачі дозволів не може включати заборонені
+вимоги, оскільки стаття 14(5) Директиви 2006/123 забороняє ставити видачу
+дозволу в залежність від доведення існування економічної потреби або ринкового
+
+попиту.
+
+Однак у цій справі умови, встановлені національним законодавством щодо
+відстані та чисельності населення, яке проживає на певній території, можна було б,
+за умови перевірки запитуючим судом, класифікувати як економічні, якби їхньою
+метою було забезпечення достатнього доходу для продавців готових тютюнових
+виробів або максимізація збору податків зі споживачів цих виробів, адже ці критерії
+покликані, серед іншого, уникнути, з одного боку, збільшення кількості точок
+продажу в місцях, де попит вже задовольняється існуючими точками продажу,
+а з іншого боку, недостатньої кількості точок продажу, що може залишити частину
+попиту незадоволеною. І навпаки, якщо ці умови не мають мети економічного
+характеру і об&#x27;єктивно виправдані головною причиною, пов&#x27;язаною з суспільними
+інтересами, такими як охорона здоров&#x27;я населення, уникнення збільшення
+пропозиції, що стимулює споживання і має стримуючий вплив на попит, вони не
+підпадають під дію цієї заборони.
+
+50 Стаття 1(3) цієї Директиви.
+### 29   Рішення за вересень – жовтень 2024 року
+
+По-третє, умови, пов&#x27;язані з відстанню і чисельністю населення, повинні бути
+придатними для забезпечення послідовного і систематичного досягнення
+поставленої мети і не повинні виходити за рамки того, що необхідно для її
+
+досягнення.
+
+У контексті цього, перш за все, видається, що ці умови мають наслідком
+створення контролю над пропозицією тютюнових виробів, що дозволяє уникнути
+заохочення їхнього споживання, таким чином сприяючи досягненню мети охорони
+здоров&#x27;я населення. До того ж, контрольована пропозиція легально вироблених
+тютюнових виробів сприяє зменшенню використання контрабандної продукції, яка,
+ймовірно, може стимулювати споживання через нижчі ціни або створювати
+додаткові ризики для здоров&#x27;я споживачів.
+
+Однак, для послідовного та систематичного досягнення мети охорони
+здоров&#x27;я населення механізм контролю над пропозицією тютюнових виробів, який
+дає змогу гарантувати доступність та наявність вироблених тютюнових виробів,
+повинен також мати стримуючий вплив на попит на ці вироби. Більше того,
+для того, щоб зберегти ефективність мети охорони здоров&#x27;я населення, необхідно
+перевірити, що застосування умов, пов&#x27;язаних з відстанню та чисельністю
+населення, є достатнім для зменшення споживання промислових тютюнових
+виробів, не призводячи до збільшення нелегальної пропозиції цих виробів. З цих
+причин саме запитуючий суд повинен встановити, чи є встановлення торгових
+автоматів, як це передбачено національним законодавством, засобом продажу
+тютюнових виробів, альтернативним продажу через звичайні або спеціальні
+торгові точки чи за ліцензією, який повинен відповідати тим самим умовам,
+що стосуються відстані та чисельності населення, і чи не призводить це
+до збільшення пропозиції цих виробів.
+
+Далі Суд зазначає, що Держави-члени мають певну свободу розсуду
+у визначенні ступеня захисту, який вони бажають надати громадському здоров&#x27;ю,
+а також способу, в який цей ступінь захисту має бути досягнутий. Таким чином, не
+обов&#x27;язково, щоб обмежувальний захід, виданий органами влади Держави-члена,
+відповідав концепції, яку поділяють усі Держави-члени. Таким чином, той факт,
+що Рамкова конвенція 51 не передбачає умов, пов&#x27;язаних з відстанню
+та чисельністю населення, як заходу, спрямованого на скорочення споживання
+тютюну, не має жодного відношення до оцінки необхідності схеми,
+що розглядається в основному провадженні, для досягнення мети захисту
+громадського здоров&#x27;я.
+
+З огляду на цю свободу розсуду, якщо Держава-член вважає за доцільне
+запровадити заходи з контролю за постачанням вироблених тютюнових виробів,
+вона може на законних підставах вважати, що періодичне збільшення кількості
+споживачів не є фактором, який слід брати до уваги. Насправді, врахування такого
+
+51 Рамкова конвенція Всесвітньої організації охорони здоров&#x27;я із боротьби проти тютюну, підписана в Женеві 21
+травня 2003 року.
+### 30   Рішення за вересень – жовтень 2024 року
+
+періодичного збільшення суперечило б поставленій меті – обмежити пропозицію,
+щоб відвернути споживачів від споживання.
+
+По-четверте, здається, що умови, пов&#x27;язані з відстанню та чисельністю
+населення, ґрунтуються на об&#x27;єктивних даних, відомі заздалегідь і, в принципі, не
+можуть викликати труднощів у тлумаченні або застосуванні. Разом з тим, згідно
+з національним законодавством, навіть якщо умови, що стосуються відстані
+та чисельності населення, дотримані, звичайні пункти продажу повинні бути
+створені, зокрема, коли органи влади вважають це корисним і доцільним
+в інтересах надання послуг. Так як це останнє поняття визначено в загальних
+рисах, це може поставити під сумнів чіткий, однозначний, об&#x27;єктивний і прозорий
+характер критеріїв, що регулюють здійснення владою своїх дискреційних
+повноважень, які повинен перевірити запитуючий суд.
+
+### 31   Рішення за вересень – жовтень 2024 року
+
+VII. Соціальна політика: захист безпеки та здоров’я працівників
+
+Рішення Суду справедливості Європейського Союзу (Перша Палата)
+від 26 вересня 2024 року, Energotehnica, C-792/22
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=290412&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=3863213)
+
+Звернення за попереднім рішенням – Соціальна політика – Захист безпеки
+та здоров’я працівників – Директива 89/391/ЄЕС – Загальні зобов’язання щодо
+забезпечення безпеки та здоров’я – Паралельне національне провадження –
+Рішення адміністративного суду, що має силу res judicata у кримінальному суді –
+Кваліфікація події як «нещасного випадку на виробництві» – Ефективність захисту
+прав, гарантованих Директивою 89/391 – Стаття 47 Хартії Європейського Союзу про
+основоположні права – Право бути почутим – Дисциплінарне провадження щодо
+судді загальної юрисдикції у разі невиконання рішення конституційного суду, яке
+суперечить праву ЄС – Примат права ЄС
+
+Розглядаючи звернення за попереднім рішенням, подане Curtea de Apel Braşov
+(Апеляційний суд Брашова, Румунія), Суд справедливості Європейського Союзу
+постановив, що Директива 89/391 [52], з огляду на принцип ефективності та статтю
+47 Хартії Європейського Союзу про основоположні права («Хартія»), унеможливлює
+застосування національного законодавства Держави-члена, яке передбачає,
+що остаточне рішення адміністративного суду щодо кваліфікації події як
+«нещасного випадку на виробництві» має силу res judicata у кримінальному суді,
+покликаним ухвалити рішення про цивільну відповідальність, що випливає з дій,
+в яких обвинувачується відповідач, якщо це законодавство не дозволяє
+правонаступникам потерпілого від цієї події бути почутими в будь-якому
+
+з проваджень, у яких розглядається питання настання такого нещасного випадку
+на виробництві.
+
+У 2017 році електромонтер, працевлаштований у SC Energotehnica SRL Sibiu
+(«Energotehnica»), загинув від ураження електричним струмом під час виконання
+роботи на зовнішньому освітлювальному пристрої, встановленому на опорі низької
+напруги. MG, також працівник Energotehnica, був відповідальним за організацію
+робіт, навчання персоналу, а також впровадження заходів із забезпечення безпеки
+на робочому місці та надання засобів індивідуального захисту.
+
+Після настання цього летального випадку було проведено дві процедури проти
+компанії Energotehnica, а саме, спочатку, адміністративне розслідування Inspecția
+Muncii (Трудова інспекція, Румунія), і, далі, кримінальне провадження проти MG
+за невиконання законодавчих вимог щодо безпеки на робочому місці
+
+52 Стаття 1(1) і (2) та стаття 5(1) Директиви Ради 89/391/ЄЕС від 12 червня 1989 року про запровадження заходів,
+покликаних заохочувати до покращення безпеки та охорони здоров&#x27;я працівників на роботі (OJ 1989 L 183, с. 1).
+### 32   Рішення за вересень – жовтень 2024 року
+
+та спричинення смерті з необережності. В останньому провадженні
+правонаступники потерпілого стали цивільними сторонами.
+
+За результатами адміністративного провадження остаточним судовим
+рішенням було встановлено, що подія, про яку йдеться, не є нещасним випадком
+на виробництві у розумінні норм національного законодавства.
+
+Апеляційний суд, до якого було подано апеляційну скаргу у межах
+кримінального провадження і який звернувся до Суду справедливості ЄС
+із запитом, зазначає, що у межах норм національного законодавства та судової
+практики Curtea Constituțională (Конституційний суд Румунії), він зобов’язаний
+врахувати висновки адміністративного суду, який не кваліфікував подію,
+що розглядалася в основному провадженні, як нещасний випадок на виробництві
+в розумінні румунського законодавства.
+
+Встановивши, що неможливість визначення наявності кримінальної
+або цивільно-правової відповідальності, навіть якщо сторони в обох провадженнях
+не є тотожними, може підірвати принцип відповідальності роботодавця та принцип
+захисту працівників, закріплені у статті 1(1) і (2) та статті 5(1) Директиви 89/391
+у їх поєднанні із положеннями Хартії, запитуючий суд просить Суд справедливості
+ЄС роз’яснити зазначені положення.
+
+Висновки Суду
+
+Суд насамперед зазначає, що метою Директиви 89/391 є впровадження
+превентивних заходів, спрямованих на поліпшення умов безпеки та охорони
+здоров’я працівників на робочому місці з метою забезпечення вищого рівня
+
+захисту.
+
+У цьому контексті, як передбачено статтею 1(2), ця Директива містить загальні
+принципи щодо запобігання професійним ризикам, захисту безпеки та здоров&#x27;я
+працівників, усунення факторів ризику та нещасних випадків, а також загальні
+керівні положення щодо реалізації цих принципів.
+
+Крім того, відповідно до статті 5(1) Директиви 89/391, на роботодавця
+покладається обов’язок забезпечувати безпеку та охорону здоров’я працівників
+у всіх аспектах, пов’язаних із працею. Це положення зобов’язує
+роботодавця забезпечити працівникам безпечні умови праці. Зміст цього обов’язку
+деталізується у статтях 6–12 Директиви, а також у низці спеціальних директив, які
+встановлюють конкретні превентивні заходи, що підлягають впровадженню
+у певних галузях промисловості. Тим не менш, зазначене положення лише
+закріплює загальний обов’язок забезпечення безпеки, який покладається
+на роботодавця, не визначаючи жодної форми відповідальності.
+
+Суд зазначає, що право Європейського Союзу не гармонізує процедури, які
+застосовуються до відповідальності роботодавця у разі недотримання вимог
+статті 4(1) та статті 5(1) Директиви 89/391. Таким чином, зазначені процедури
+належать до внутрішньої правової системи Держав-членів відповідно до принципу
+
+### 33   Рішення за вересень – жовтень 2024 року
+
+процесуальної автономії Держав-членів; тим не менш, вони не повинні бути менш
+сприятливими, ніж ті, що застосовуються до аналогічних внутрішньодержавних
+позовів (принцип еквівалентності), і не повинні унеможливлювати на практиці
+або надмірно ускладнювати реалізацію прав, наданих правом ЄС (принцип
+ефективності).
+
+Під час встановлення Державами-членами детальних процесуальних норм
+щодо юридичних процедур, спрямованих на забезпечення захисту прав,
+гарантованих Директивою 89/391, вони зобов’язані забезпечити дотримання права
+на ефективний засіб правового захисту та на справедливий судовий розгляд,
+закріпленого у статті 47 Хартії, що є підтвердженням принципу ефективного
+судового захисту, який складається з різних елементів, зокрема, включає право
+бути почутим.
+
+Якщо кримінальний суд розглядає питання цивільно-правової
+відповідальності, що випливає з діянь, в яких обвинувачується відповідач, право
+сторін, які прагнуть встановити таку відповідальність, бути почутими було б
+порушено, якби вони не мали можливості висловити свою позицію щодо умови,
+необхідної для настання цієї відповідальності, до остаточної кваліфікації цієї умови.
+
+Аналогічне порушення відбувається у разі, якщо рішення щодо такої
+обов’язкової умови було ухвалене іншим судом, який ухвалив рішення, обов’язкове
+для суду, що розглядає питання відповідальності, у той час як сторони не мали
+можливості взяти участь у цьому процесі або хоча б висловити свої аргументи.
+І навпаки, за наявності у сторін такого права, зокрема можливості представити
+свої аргументи, факт того, що вони не скористалися цим правом, не має правового
+
+значення.
+
+Відповідно, національний суд повинен встановити, чи мали правонаступники
+потерпілого, які виступали цивільними позивачами у кримінальному провадженні,
+право бути почутими в адміністративному суді щодо остаточної кваліфікації події,
+про яку йшлося в основному провадженні, як «нещасного випадку на виробництві».
+
+### 34   Рішення за вересень – жовтень 2024 року
+
+VIII. Спільна зовнішня політика та політика безпеки: обмежувальні заходи
+
+Рішення Суду справедливості Європейського Союзу (Друга Палата)
+від 5 вересня 2024 року, Jemerak, C-109/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=289811&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=3875094)
+
+Звернення за попереднім рішенням – Спільна зовнішня політика та політика
+безпеки – Обмежувальні заходи у зв’язку з діями росії, що дестабілізують ситуацію
+в Україні – Регламент (ЄС) № 833/2014 – Стаття 5n(2) та (6) – Заборона надання
+юридичних консультаційних послуг безпосередньо або опосередковано уряду
+російської федерації чи юридичним особам, організаціям чи органам,
+зареєстрованим у росії – Виняток щодо надання послуг, які є суворо необхідними
+для забезпечення доступу до судових, адміністративних або арбітражних
+проваджень у Державі-члені – Посвідчення та виконання нотаріусом договору
+купівлі-продажу нерухомого майна – Надання перекладацьких послуг під час такого
+посвідчення
+
+У межах звернення за попереднім рішенням Landgericht Berlin (Земельний суд,
+Берлін, Німеччина) Суд розглядає питання обсягу заборони на надання юридичних
+консультаційних послуг юридичним особам, заснованим у росії, викладеної в статті
+5n(2) Регламенту № 833/2014/ЄС, 53 зі змінами внесеними Регламентом
+2022/1904, 54 який стосується обмежувальних заходів, прийнятих Радою
+Європейського Союзу у зв’язку з діями росії, що дестабілізують ситуацію в Україні.
+
+Громадяни Німеччини GM та ON готувалися придбати квартиру, розташовану
+в Берліні (Німеччина), що належала Visit Moscow Ltd, юридичній особі, заснованій
+в росії. Для здійснення цієї угоди GM, ON та Visit Moscow звернулися до PR,
+нотаріуса, який здійснює діяльність у Німеччині, з проханням скласти договір
+купівлі-продажу у формі нотаріального акта та забезпечити його подальше
+виконання. Однак у 2022 році PR відмовив у посвідченні договору купівлі-продажу
+з огляду на те, що договір не міг виключити можливості порушення заборони,
+встановленої статтею 5n(2) Регламенту № 833/2014. Оскільки він не
+задовольнив прохання GM, ON та Visit Moscow про перегляд свого рішення,
+PR направив подану ними апеляцію на цю відмову до Земельного суду Берліна,
+який у свою чергу звернувся до Суду ЄС з питаннями в порядку процедури
+попереднього рішення.
+
+53 Регламент Ради (ЄС) № 833/2014 від 31 липня 2014 року щодо обмежувальних заходів у зв&#x27;язку з діями росії, що
+дестабілізують ситуацію в Україні (OJ 2014, L 229, с. 1).
+54 Регламент Ради (ЄС) № 2022/1904 від 6 жовтня 2022 року про внесення змін до Регламенту (ЄС) № 833/2014 щодо
+обмежувальних заходів у зв&#x27;язку з діями росії, що дестабілізують ситуацію в Україні (OJ 2022 L 259 I, с. 3).
+### 35   Рішення за вересень – жовтень 2024 року
+
+Висновки Суду
+
+По-перше, Суд зазначає, що відповідно до загальноприйнятого значення
+в повсякденній мові поняття «юридична консультація», як правило, означає
+висновок щодо конкретного правового питання. Термін «юридична консультація»,
+використаний у поєднанні з терміном «послуги», виражений як «юридичні
+консультаційні послуги» у статті 5n(2) Регламенту № 833/2014,
+стосується здійснення економічної діяльності, яка ґрунтується на правовідносинах
+між постачальником послуг та його/її клієнтом, метою якої є надання юридичних
+консультацій, а також надання правових роз’яснень особам, які їх потребують.
+
+Таке тлумачення поняття «юридичні консультаційні послуги» підтверджується
+положенням пункту 19 преамбули Регламенту 2022/1904. По-перше, це положення
+стосується правовідносин між постачальником послуг та його/її «замовниками»
+чи «клієнтами» і визначає роль постачальника послуг як надання останнім
+допомоги та консультацій в їхніх інтересах щодо правових аспектів їхніх правочинів
+із третіми особами. По-друге, воно стосується допоміжної діяльності, що охоплює
+«підготовку, оформлення та перевірку правових документів».
+
+Таким чином, діяльність, що охоплюється поняттям «юридичні консультаційні
+послуги» у значенні статті 5n(2) Регламенту № 833/2014, є чітко відмінною
+від діяльності, яка може вимагатися від органів державної влади. Такі органи
+державної влади не мають завдання надавати послуги, що полягають у наданні
+правових висновків особам з метою просування чи захисту приватних інтересів
+цих осіб.
+
+Суд зазначає, що у цій справі, в контексті посвідчення автентичності договору
+купівлі-продажу нерухомого майна, нотаріус не діє з метою сприяння конкретним
+інтересам тієї чи іншої зі сторін чи обох сторін, а діє неупереджено, зберігаючи
+рівновіддаленість від сторін та їхніх відповідних інтересів, виключно в інтересах
+права та юридичної визначеності. Отже, з огляду на конкретні норми, що регулюють
+процедуру нотаріального посвідчення автентичності правочинів, та правові наслідки,
+що випливають із нотаріальних актів у німецькій правовій системі, посвідчення
+нотаріусом у порядку, передбаченому німецьким законодавством договору купівліпродажу нерухомого майна, що перебуває у власності юридичної особи, заснованій
+в росії, не охоплюється поняттям «юридичні консультаційні послуги», про які йдеться
+у статті 5n(2) Регламенту № 833/2014, а отже, таке посвідчення не підпадає під дію
+заборони на надання таких послуг зазначеній юридичній особі, встановленої
+у підпункті (b) цього положення.
+
+У зв&#x27;язку з цим Суд зазначає, що протилежне тлумачення статті 5n(2)
+зазначеного Регламенту призвело б до неузгодженості, з одного боку,
+у застосуванні цього Регламенту, а з іншого, до суперечностей між цим
+Регламентом та Регламентом № 269/2014 [55] .
+
+55 Регламент Ради (ЄС) № 269/2014 від 17 березня 2014 року щодо обмежувальних заходів у зв&#x27;язку з діями, що
+підривають або загрожують територіальній цілісності, суверенітету та незалежності України (OJ 2014 L 78, с. 6).
+### 36   Рішення за вересень – жовтень 2024 року
+
+Операції, пов’язані з нерухомим майном, що розташоване на території
+Європейського Союзу та належить юридичним особам, заснованим в росії,
+залишаються дозволеними відповідно до Регламенту № 833/2014. Однак,
+на практиці такі транзакції можуть бути ускладнені в деяких Державах-членах,
+у яких нотаріальне посвідчення договору купівлі-продажу нерухомого майна є
+істотною умовою для відчуження такого майна, незалежно від того, чи підлягають
+ці юридичні особи під заборону на відчуження своїх активів відповідно
+до Регламенту № 269/2014.
+
+Така варіативність наслідків заборони, передбаченої статтею 5n(2) Регламенту
+№ 833/2014, в різних Державах-членах залежно від існуючої у них нотаріальної
+системи, не могла бути метою законодавчого органу ЄС.
+
+Крім того, прийняте тлумачення не суперечить ні меті Регламенту № 833/2014,
+ні меті Регламенту № 269/2014.
+
+Насамперед, ані з Рішення 2022/1909, [56] ані з Регламенту № 833/2014, ані
+з Регламенту 2022/1904 не випливає, що, накладаючи заборону на надання
+юридичних консультаційних послуг, Рада ЄС мала намір унеможливити
+для юридичних осіб, заснованих в росії, розпорядження своїм нерухомим майном
+у певних Державах-членах ЄС.
+
+Далі, метою, що лежить в основі заборони, передбаченої статтею 5n(2)
+Регламенту № 833/2014, було ускладнення російським юридичним особам,
+що діють на території Європейського Союзу, продовження їхньої комерційної
+діяльності на цій території, і, таким чином, вплив на російську економіку.
+Нотаріальне посвідчення договору купівлі-продажу нерухомого майна, яке
+належить юридичній особі, заснованій в росії, не суперечить зазначеній меті.
+
+Окрім того, відсутні підстави вважати, що нотаріальне посвідчення договору
+купівлі-продажу нерухомого майна, яке належить юридичній особі, заснованій
+в росії, може, апріорі та в цілому, сприяти уникненню застосування
+обмежувальних заходів.
+
+По-друге, Суд зазначає, що саме національний суд, який розглядає справу,
+повинен оцінити кожну із дій, які вчиняє нотаріус для виконання засвідченого
+договору купівлі-продажу нерухомого майна, з метою встановлення,
+чи передбачають вони надання нотаріусом юридичної консультації сторонам
+відповідно до тлумачення поняття «юридичні консультаційні послуги», викладеного
+
+вище.
+
+Нарешті, стосовно питання, чи належать послуги перекладу, які надає
+перекладач під час нотаріального посвідчення автентичності, до юридичних
+консультаційних послуг у розумінні статті 5n(2) Регламенту № 833/2014,
+враховуючи, що професія перекладача за своєю природою не є юридичною, Суд
+зазначає, що такі послуги не можуть включати елемент «юридичної консультації»,
+навіть якщо надання відповідних послуг полягає в наданні допомоги правнику, який
+
+56 Рішення Ради (СЗППБ) 2022/1909 від 6 жовтня 2022 року про внесення змін до Рішення 2014/512/CFSP щодо
+обмежувальних заходів у зв&#x27;язку з діями Росії, що дестабілізують ситуацію в Україні (OJ 2022 L 259 I, с. 122).
+### 37   Рішення за вересень – жовтень 2024 року
+
+діє в юридичній сфері. Крім того, немає підстав вважати, що посвідчення
+німецьким нотаріусом автентичності договору купівлі-продажу нерухомого майна,
+розташованого в Німеччині та належного юридичній особі, заснованій в росії,
+підпадає під дію заборони на надання юридичних консультаційних послуг,
+передбаченої статтею 5n(2) Регламенту № 833/2014. Відповідно, надаючи послуги
+перекладу в контексті нотаріального посвідчення такого документа з метою
+надання допомоги представнику цієї юридичної особи, який не володіє мовою
+процедури посвідчення, перекладач не надає «правових консультаційних послуг»
+такій юридичній особі у розумінні зазначеного положення.
+
+### 38   Рішення за вересень – жовтень 2024 року
+
+Огляд практики Суду справедливості Європейського Союзу. Рішення за вересень – жовтень
+2024 року. Відп. за вип.: перший заступник керівника Апарату Верховного Суду, д-р юрид. наук
+Р. Ш. Бабанли. Опрацювання та переклад рішень: О. Ю. Тарасенко, Д. О. Мудрак. Київ, 2025. – 38 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 2;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

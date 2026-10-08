@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Ohliad_pod_voiennyi_stan — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Ohliad_pod_voiennyi_stan та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Ohliad_pod_voiennyi_stan.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Ohliad_pod_voiennyi_stan</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">18</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">72.4%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">18</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 18 із 18</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01_segment.md № 160/19575/22 120 50 загальний військовий обов&#x27;язок і військова служба. військовий облік контрольний орган ухвалив рішення про можливість своєчасно виконати семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «загальний військовий обов&#x27;язок і військова служба. військовий облік» (законодавство про оборону / загальний військовий обов&#x27;язок і військова служба. військовий облік).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/113935238" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/19575/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb-leaf">Загальний військовий обов&#x27;язок і військова служба. Військовий облік</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Контрольний орган ухвалив рішення про можливість своєчасно виконати</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Загальний військовий обов&#x27;язок і військова служба. Військовий облік» (Законодавство про оборону / Загальний військовий обов&#x27;язок і військова служба. Військовий облік).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Форс-мажорні обставини
+
+1.1. Про підстави звільнення платника від виконання податкових обов’язків
+
+Контрольний орган ухвалив рішення про можливість своєчасно виконати
+податковий обов’язок у частині подання звітності, оскільки платник не надав
+належних документів, які б підтверджували об’єктивну неможливість виконання
+податкових обов’язків у період воєнного стану.
+Платник указав, що територія міжнародного аеропорту, де він провадив
+господарську діяльність, зазнала значних руйнувань під час ракетних ударів
+і перебуває під постійною загрозою, тому було подано заяву про відсутність
+можливості виконати податковий обов’язок з огляду на недостатність фактичних
+та економічних можливостей. На переконання платника, надані докази
+(повідомлення органів влади, лист Служби безпеки України, наказ про простій
+тощо) підтверджують наявність обставин непереборної сили, які об’єктивно
+унеможливили виконання податкових обов’язків.
+Ключовим питанням у спорі є встановлення правомірності рішення контрольного
+органу, яким визнано можливим своєчасне виконання податкових обов’язків
+у період воєнного стану, у контексті оцінювання наданих платником доказів для
+підтвердження таких обставин.
+
+Верховний Суд указав, що з огляду на системний аналіз положень
+Порядку підтвердження можливості чи неможливості виконання
+платником обов&#x27;язків, визначених у підпункті 69.1 пункту 69
+підрозділу 10 розділу XX «Перехідні положення» Податкового кодексу
+України, затвердженого наказом Міністерства фінансів України від
+29 липня 2022 року № 225, його прийняття зумовлено необхідністю
+підтвердження платниками можливості чи неможливості своєчасного
+виконання податкового обов&#x27;язку щодо дотримання термінів сплати
+податків та зборів, подання звітності тощо.
+Платник, який у зв’язку з проведенням бойових дій втратив можливість
+провадити господарську діяльність, отримувати дохід
+від підприємницької діяльності та/або втратив основні засоби
+для ведення такої господарської діяльності, не може бути притягнутий
+до відповідальності у зв’язку з невиконанням податкових обов’язків.
+Обставини неможливості своєчасного виконання податкового
+обов’язку мають бути реальними та об’єктивними, а не формальними.
+Платник зобов’язаний надати вичерпний перелік документів,
+які підтверджують виникнення обставин, що унеможливлюють ведення
+господарської діяльності та виконання податкових обов’язків.
+
+Детальніше з текстом постанови КАС ВС від 04 жовтня 2023 року у справі № 160/19575/22 можна
+[ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/113935238.](https://reyestr.court.gov.ua/Review/113935238)
+
+### 1. Форс-мажорні обставини
+
+### 1. Форс-мажорні обставини
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2_segment.md № 240/25642/22 50120 20 статути про дисципліну. окремі правила для деяких категорій працівників за результатами документальної позапланової виїзної перевірки податковий семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «статути про дисципліну. окремі правила для деяких категорій працівників» (трудове законодавство / трудова дисципліна. відповідальність за її порушення / статути про дисципліну. окремі правила для деяких категорій працівників).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/120872678" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 240/25642/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50120 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудова дисципліна. Відповідальність за її порушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Статути про дисципліну. Окремі правила для деяких категорій працівників</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>За результатами документальної позапланової виїзної перевірки податковий</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Статути про дисципліну. Окремі правила для деяких категорій працівників» (Трудове законодавство / Трудова дисципліна. Відповідальність за її порушення / Статути про дисципліну. Окремі правила для деяких категорій працівників).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Форс-мажорні обставини
+
+1.2. Про нарахування пені за порушення строків розрахунків в іноземній валюті
+
+За результатами документальної позапланової виїзної перевірки податковий
+орган виявив порушення платником вимог пункту 2 статті 13 Закону України
+від 21 червня 2018 року № 2473-VIII «Про валюту і валютні операції»
+під час виконання зовнішньоекономічних контрактів з нерезидентом, що стало
+підставою для нарахування пені за порушення термінів розрахунків. Контрольний
+орган акцентував, що платник не надав доказів звільнення від відповідальності
+на підставі форс-мажорних обставин, визначених частиною шостою статті 13
+Закону України «Про валюту і валютні операції».
+
+Платник указав на безпідставність податкового повідомлення-рішення, зважаючи
+на мораторій щодо нарахування пені під час карантину, на зупинення строку
+граничних розрахунків у сфері зовнішньоекономічної діяльності з огляду
+на воєнний стан, а також на відсутність власної вини, оскільки заборгованість
+згідно з контрактом виникла з вини контрагента, щодо якого вже тривав судовий
+спір.
+
+Ключовим питанням у спорі є правомірність нарахування пені за порушення
+строків розрахунків у сфері зовнішньоекономічної діяльності в умовах, коли діяли
+норми мораторію на застосування штрафних санкцій та зупинення строків
+розрахунків у валюті, а також коли платник вказує на наявність судового спору
+
+з контрагентом.
+
+Судова палата з розгляду справ щодо податків, зборів та інших
+обов’язкових платежів Касаційного адміністративного суду висловила
+думку про необхідність відступити від правової позиції Верховного Суду
+щодо застосування мораторію на нарахування пені за порушення
+строків розрахунків у валюті під час карантину.
+
+Суд касаційної інстанції виснував, що пеня за порушення строків
+розрахунків в іноземній валюті не є різновидом пені в розумінні
+підпункту 14.1.162 пункту 14.1 статті 14 Податкового кодексу України,
+тому положення про мораторій на нарахування пені під час карантину
+не поширюється на такі правовідносини. Закон України
+«Про валюту і валютні операції» містить спеціальні норми щодо
+нарахування пені за порушення граничних строків розрахунків
+за зовнішньоекономічними операціями.
+
+Введення воєнного стану в Україні не можна розцінювати як форсмажорну обставину для неперерахування контрагентом-нерезидентом
+на рахунки платника коштів за поставлений товар в межах
+зовнішньоекономічних контрактів. Водночас у матеріалах справи, яка
+перебуває на розгляді, відсутні докази у вигляді відповідної довідки
+уповноваженої організації (органу) країни розташування сторони
+
+зовнішньоекономічного контракту або третьої країни,
+які б підтверджували виникнення та закінчення дії форс-мажорних
+обставин, що зумовили неможливість виконання компанієюнерезидентом своїх обов’язків згідно з контрактом.
+
+Детальніше з текстом постанови КАС ВС від 23 липня 2024 року у справі № 240/25642/22
+[(судова палата) можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/120872678.](https://reyestr.court.gov.ua/Review/120872678)
+
+2. Реєстрація податкових накладних / розрахунків коригування
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md № 400/226/24 280 40 20 кваліфікаційні комісії, кваліфікаційна атестація і дисциплінарна відповідальність суддів накладних в умовах воєнного стану семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «кваліфікаційні комісії, кваліфікаційна атестація і дисциплінарна відповідальність суддів» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / судді і народні засідателі / кваліфікаційні комісії, кваліфікаційна атестація і дисциплінарна відповідальність суддів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125248323" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 400/226/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 40 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Судді і народні засідателі</span><span class="crumb-sep">›</span><span class="crumb-leaf">Кваліфікаційні комісії, кваліфікаційна атестація і дисциплінарна відповідальність суддів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>накладних в умовах воєнного стану</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Кваліфікаційні комісії, кваліфікаційна атестація і дисциплінарна відповідальність суддів» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Судді і народні засідателі / Кваліфікаційні комісії, кваліфікаційна атестація і дисциплінарна відповідальність суддів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+2.2. Про відповідальність платника за порушення строків реєстрації податкових
+
+накладних в умовах воєнного стану
+
+Контрольний орган провів перевірку фізичної особи – підприємця щодо несвоєчасної
+реєстрації накладних у 2022 році, за результатами якої було винесено податкове
+повідомлення-рішення про накладення штрафу в розмірі 1,6 млн грн. Податковий орган
+уважав, що платник порушив встановлені строки реєстрації накладних, а обставини
+карантину та воєнного стану не звільняли його від відповідальності, оскільки
+дія мораторію та зміни в законодавстві не діяли в ці періоди та не мали зворотної сили.
+Платник указав на здійснення господарської діяльності в зоні бойових
+дій (що унеможливило своєчасне виконання обов’язку з реєстрації накладних
+і виключало наявність вини), а також на дію мораторію щодо застосування штрафних
+
+санкцій у період карантину, встановленого пунктом 52-1 підрозділу 10 розділу ХХ
+«Перехідні положення» Податкового кодексу України, і на пом’якшення
+відповідальності згідно з пунктами 89 і 90 підрозділу 2 розділу ХХ «Перехідні
+положення» цього Кодексу. На думку платника, ці норми потрібно застосовувати
+зі зворотною дією як більш м’які відповідно до частини першої статті 58 Конституції
+України.
+У касаційній скарзі представник платника покликався на нове рішення Конституційного
+Суду України від 18 грудня 2024 року № 12-р(ІІ)/2024, яке підтвердило, що частину
+першу статті 58 Конституції України застосовують і щодо фізичних осіб – підприємців,
+навіть у разі відсутності прямої вказівки в законі про зворотну дію норм. Було
+закцентовано на нерівності в підходах щодо розміру штрафу для юридичних осіб
+і фізичних осіб – підприємців за аналогічні правопорушення.
+Ключовим питанням у спорі є правомірність застосування штрафних санкцій
+за порушення строків реєстрації накладних у період дії карантину та воєнного стану,
+а також можливість застосування норм, що пом’якшують відповідальність,
+зі зворотною дією.
+
+Верховний Суд зауважив, що до 08 лютого 2023 року вимоги щодо
+реєстрації накладних було визначено пунктом 201.10 статті 201
+Податкового кодексу України, що встановлював граничні строки реєстрації
+для різних категорій накладних. За порушення цих строків була закріплена
+відповідальність, зокрема штрафи згідно з пунктом 120-1 цього Кодексу.
+Зміни, внесені Законом України від 12 січня 2023 року № 2876-ІХ
+«Про внесення змін до розділу ХХ „Перехідні положення“ Податкового
+кодексу України щодо відновлення обмеження перебування грального
+бізнесу на спрощеній системі оподаткування» (які набули чинності
+08 лютого 2023 року), не скасували дію попередніх приписів Податкового
+кодексу України, а лише встановили окремі правила про нові тимчасові
+(обмежені періодом воєнного стану та наступними шістьма місяцями після
+його припинення) строки реєстрації накладних, визначені пунктами 89 і 90
+розділу ХХ «Перехідні положення» Податкового кодексу України.
+Нові правила не мають зворотної сили і їх не можна застосовувати
+до правопорушень, вчинених до 08 лютого 2023 року, оскільки зміни
+не скасували попередні норми, а лише вплинули на регулювання строків
+реєстрації накладних у період воєнного стану.
+Рішення Конституційного Суду України від 18 грудня 2024 року
+№ 12 р(ІІ)/2024, яке стосувалося прав фізичних осіб – підприємців
+у контексті їхньої діяльності, не є релевантним до цієї справи, оскільки
+
+не належить до кола питань податкового законодавства.
+
+Детальніше з текстом постанови КАС ВС від 18 лютого 2025 року у справі № 400/226/24
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125248323.](https://reyestr.court.gov.ua/Review/125248323)
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 520/5995/23 70 30 права та обов&#x27;язки осіб, що перебувають у спорідненості під час розгляду заяви про неможливість своєчасно виконати податкові обов’язки семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «права та обов&#x27;язки осіб, що перебувають у спорідненості» (законодавство про шлюб і сім&#x27;ю / права та обов&#x27;язки осіб, що перебувають у спорідненості).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122882856" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 520/5995/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb-leaf">Права та обов&#x27;язки осіб, що перебувають у спорідненості</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>під час розгляду заяви про неможливість своєчасно виконати податкові обов’язки</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Права та обов&#x27;язки осіб, що перебувають у спорідненості» (Законодавство про шлюб і сім&#x27;ю / Права та обов&#x27;язки осіб, що перебувають у спорідненості).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+2.1. Про обов’язок податкового органу ухвалити попереднє рішення
+під час розгляду заяви про неможливість своєчасно виконати податкові обов’язки
+та належним чином умотивувати рішення, ухвалене за наслідками розгляду такої
+
+заяви
+
+Контрольний орган за результатами камеральної перевірки встановив факт
+несвоєчасної реєстрації накладних, попри надану платником заяву
+про неможливість виконати податкові обов’язки у зв’язку з форс-мажорними
+обставинами. Податковий орган не врахував форс-мажорні обставини
+як юридично значущі, оскільки платник не довів неможливості виконати податкові
+обов’язки у визначений законом строк.
+Платник акцентував на неможливості виконати податкові зобов’язання з огляду
+на обставини, пов’язані з бойовими діями, знищенням документації та серверного
+обладнання, обмеженим доступом до приміщень і перебоями
+в електропостачанні та інтернет-зв’язку. На думку платника, камеральну перевірку
+було проведено до граничного строку подання заяви, а рішення податкового
+органу було ухвалено з порушенням строків та порядку, визначеного
+законодавством України.
+Ключовим питанням у спорі є дотримання процедури призначення і проведення
+камеральної перевірки, ухвалення попереднього рішення щодо поданої заяви,
+а також визначення правомірності застосування податкових санкцій до платника,
+який заявив про неможливість своєчасно виконати податкові обов’язки з огляду
+на бойові дії та втрату технічних і документальних ресурсів.
+
+Суд касаційної інстанції вказав, що метою затвердження Порядку
+підтвердження можливості чи неможливості виконання платником
+податків обов&#x27;язків, визначених у підпункті 69.1 пункту 69 підрозділу 10
+розділу XX «Перехідні положення» Податкового кодексу України,
+та переліків документів на підтвердження, затвердженого наказом
+Міністерства фінансів від 29 липня 2022 року № 225, є забезпечення
+захисту платників, які в умовах воєнного стану не можуть виконати свої
+податкові обов’язки, від негативних наслідків несвоєчасного подання
+звітності та сплати податків.
+
+Правовий висновок Верховного Суду полягав у тому, що рішення
+суб’єктів мають відповідати вимогам статті 2 Кодексу
+адміністративного судочинства України, зокрема бути ухваленими
+у межах повноважень, обґрунтовано, пропорційно та своєчасно,
+з урахуванням усіх обставин справи та прав особи на участь у процесі.
+Належним чином мотивоване рішення має враховувати всі обставини
+справи, оцінювати їх у контексті чинного законодавства та надавати
+особі можливість долучати додаткові документи в разі недостатності
+доказів. В іншому випадку такі рішення підлягають скасуванню
+як необґрунтовані.
+Контрольний орган має встановити причиново-наслідковий зв’язок
+між форс-мажорними обставинами і неможливістю виконати
+податковий обов’язок. Якщо надані документи підтверджують
+цей зв’язок, податковий орган зобов’язаний ухвалити рішення щодо
+неможливості своєчасно виконати податковий обов’язок без ухвалення
+попереднього рішення. Ухвалене рішення має містити чітке
+обґрунтування та послідовну оцінку представлених доказів. Якщо
+документів недостатньо, контрольний орган повинен винести
+попереднє рішення з пропозицією подати додаткові документи
+протягом 10 календарних днів.
+У разі порушення процедури, зокрема неухвалення попереднього
+рішення, платник позбавлений можливості надати додаткові документи,
+що є підставою для визнання рішення контрольного органу
+протиправним. У випадку скасування рішення про можливість виконати
+податковий обов’язок, визнаного протиправним з огляду на порушення
+процедури розгляду заяви платника та неналежну оцінку наданих
+доказів, податкове повідомлення-рішення також підлягає скасуванню.
+
+Детальніше з текстом постанови КАС ВС від 07 листопада 2024 року у справі № 520/5995/23
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/122882856.](https://reyestr.court.gov.ua/Review/122882856)
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.3_segment.md № 200/4768/23 130 80 профілактика та боротьба з правопорушеннями. боротьба з організованою злочинністю та корупцією. тероризм. національне антикорупційне бюро. за результатами камеральної перевірки контрольний орган установив факти семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «профілактика та боротьба з правопорушеннями. боротьба з організованою злочинністю та корупцією. тероризм. національне антикорупційне бюро.» (законодавство про національну безпеку та правопорядок / профілактика та боротьба з правопорушеннями. боротьба з організованою злочинністю та корупцією. тероризм. національне антикорупційне бюро.).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">02.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125892977" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 200/4768/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">130 80</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про національну безпеку та правопорядок</span><span class="crumb-sep">›</span><span class="crumb-leaf">Профілактика та боротьба з правопорушеннями. Боротьба з організованою злочинністю та корупцією. Тероризм. Національне антикорупційне бюро.</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>За результатами камеральної перевірки контрольний орган установив факти</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Профілактика та боротьба з правопорушеннями. Боротьба з організованою злочинністю та корупцією. Тероризм. Національне антикорупційне бюро.» (Законодавство про національну безпеку та правопорядок / Профілактика та боротьба з правопорушеннями. Боротьба з організованою злочинністю та корупцією. Тероризм. Національне антикорупційне бюро.).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+2.3. Про мораторій на штрафи за податкові правопорушення під час воєнного стану
+
+За результатами камеральної перевірки контрольний орган установив факти
+порушення граничних строків реєстрації податкових накладних / розрахунків
+коригування в Єдиному реєстрі податкових накладних, тому застосував штрафні
+санкції в сумі понад 20,8 млн грн. Податковий орган наполягав на факті порушення
+строків реєстрації, оскільки дія мораторію, зміни в законодавстві та обставини
+воєнного стану не звільняли платника від відповідальності.
+Платник указав на кілька обставин, що, на його думку, виключають правомірність
+застосування штрафу. По-перше, порушення строків відбулося в період
+дії карантину, коли згідно з пунктом 52-1 підрозділу 10 розділу ХХ Податкового
+кодексу України діяв мораторій на застосування штрафних санкцій, зокрема
+за несвоєчасну реєстрацію накладних. По-друге, станом на момент ухвалення
+податкового повідомлення-рішення вже діяли оновлені положення пунктів 89 та 90
+підрозділу 2 розділу ХХ Податкового кодексу України, які збільшили строки
+реєстрації та зменшували штрафи (на думку платника, їх потрібно було
+застосовувати як більш м’які відповідно до статті 58 Конституції України). По-третє,
+платник акцентував на відсутності вини в порушенні, тому що здійснював
+діяльність у зоні бойових дій, що унеможливило своєчасну реєстрацію накладних.
+Ключовим питанням у спорі є встановлення правомірності застосування
+податкових санкцій у період дії спеціальних норм, спрямованих на пом’якшення
+відповідальності платників у зв’язку з карантином і воєнним станом.
+
+Верховний Суд не відступив від раніше сформульованих підходів щодо
+тлумачення норм Податкового кодексу України, зокрема
+про призупинення дії мораторію на штрафи під час воєнного стану
+та підтвердив свої попередні висновки, що стосуються застосування
+мораторію в період пандемії після введення воєнного стану.
+Суд касаційної інстанції зазначив, що механізм «ковідного» мораторію,
+який було введено для підтримки платників податків під час пандемії
+COVID-19, діяв до завершення карантину, установленого Кабінетом
+Міністрів України. Водночас після введення воєнного стану, який став
+пріоритетним для держави, законодавець ухвалив низку змін
+до Податкового кодексу України, що призвели до припинення
+дії «ковідного» мораторію на період воєнного стану.
+Підпункт 69.2 підрозділу 10 розділу XX Податкового кодексу України,
+що набрав чинності 27 травня 2022 року, чітко визначає, що положення
+про «ковідний» мораторій не підлягають застосуванню під час воєнного
+стану. Однозначність цієї норми не допускає різних трактувань, тому
+платники не можуть покладати на цю норму правомірні очікування
+щодо продовження мораторію.
+Наявність сертифіката Торгово-промислової палати у спірних
+правовідносинах не може бути єдиною та беззаперечною підставою
+для звільнення платника від відповідальності. Такий сертифікат
+
+необхідно оцінювати в сукупності з іншими обставинами, що мають
+бути розглянуті в контексті всіх наданих доказів, які підтверджують
+або спростовують можливість своєчасного виконання податкових
+зобов&#x27;язань.
+Правопорушення, що тривали протягом тривалого періоду, не можна
+виправдати лише наявністю форс-мажору. Якщо особа мала
+можливість виконати свої обов&#x27;язки, але не скористалася нею,
+це не може бути підставою для звільнення від відповідальності.
+Закон також установив зменшення штрафів за порушення строків
+реєстрації накладних в умовах воєнного стану. Зміни в законодавстві
+можуть бути застосовані до порушень, зафіксованих після вступу
+Закону № 2876-ІХ в силу (08 лютого 2023 року), а не до фактів,
+що сталися до настання цієї дати.
+
+Детальніше з текстом постанови КАС ВС від 26 лютого 2025 року у справі № 200/4768/23
+[(судова палата) можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125892977.](https://reyestr.court.gov.ua/Review/125892977)
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.4_segment.md № 320/27109/23 70 70 10 книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах за результатами камеральної перевірки щодо своєчасності реєстрації накладних семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (законодавство про шлюб і сім&#x27;ю / акти громадянського стану. загс / книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">02.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126346572" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 320/27109/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 70 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb">Акти громадянського стану. ЗАГС</span><span class="crumb-sep">›</span><span class="crumb-leaf">Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>За результатами камеральної перевірки щодо своєчасності реєстрації накладних</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (Законодавство про шлюб і сім&#x27;ю / Акти громадянського стану. ЗАГС / Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Реєстрація податкових накладних / розрахунків коригування ……………………………
+
+2.4. Про несвоєчасну реєстрацію податкових накладних в умовах воєнного стану
+
+За результатами камеральної перевірки щодо своєчасності реєстрації накладних
+було складено акт, яким зафіксовано порушення платником строків реєстрації
+накладних. На підставі цього акта було винесено податкове повідомлення-рішення
+про застосування штрафних санкцій на загальну суму понад 1,3 млн грн.
+Платник покликався на дію обставин непереборної сили (воєнний стан, ракетні
+обстріли, перебування в зоні бойових дій), у зв’язку з чим з 24 лютого до 27 травня
+2022 року реєстрація накладних була фактично неможлива, а згодом виникли
+технічні труднощі (нестача ліміту податку на додану вартість). Платник також
+зазначив, що контрольний орган не довів умислу у діях платника та застосував
+штрафні санкції згідно з нормами, які не були чинними на момент винесення
+податкового повідомлення-рішення.
+Ключовим питанням у спорі є те, чи можуть обставини, пов’язані з воєнним станом
+і визнані форс-мажорними Торгово-промисловою палатою, звільняти
+від відповідальності за несвоєчасну реєстрацію податкових накладних, а також
+чи можливе ретроспективне застосування зменшених штрафів.
+
+На переконання Верховного Суду, наявність форс-мажору,
+підтвердженого загальними обставинами, такими як воєнний стан,
+не є достатнім фактором для звільнення від відповідальності. Потрібно
+довести індивідуальну неможливість виконати податковий обов’язок.
+Платників, які не подали відповідного підтвердження, вважають
+такими, що мали можливість виконати обов’язок і не звільнені
+від відповідальності.
+Застосування зменшених штрафних санкцій, визначених пунктами 89 90
+підрозділу 2 розділу ХХ «Перехідні положення» Податкового кодексу
+
+України, можливе лише з 08 лютого 2023 року. Ці норми не мають
+зворотної сили й не можуть бути застосовані до порушень, які виникли
+до цієї дати.
+
+Детальніше з текстом постанови КАС ВС від 03 квітня 2025 року у справі № 320/27109/23
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/126346572.](https://reyestr.court.gov.ua/Review/126346572)
+
+3. Податок на додану вартість
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.03_segment.md № 200/466/23 100170 20 видавництва, видання. книжкова палата. книгосховища. книги (енциклопедії) на додану вартість в умовах воєнного стану семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «видавництва, видання. книжкова палата. книгосховища. книги (енциклопедії)» (законодавство з питань освіти, науки, культури / правовий статус окремих об&#x27;єктів культури / видавництва, видання. книжкова палата. книгосховища. книги (енциклопедії)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">03.03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/117317760" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 200/466/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100170 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Правовий статус окремих об&#x27;єктів культури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Видавництва, видання. Книжкова палата. Книгосховища. Книги (енциклопедії)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>на додану вартість в умовах воєнного стану</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Видавництва, видання. Книжкова палата. Книгосховища. Книги (енциклопедії)» (Законодавство з питань освіти, науки, культури / Правовий статус окремих об&#x27;єктів культури / Видавництва, видання. Книжкова палата. Книгосховища. Книги (енциклопедії)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+3.3. Про правовий режим для формування податкового кредиту з податку
+на додану вартість в умовах воєнного стану
+
+За результатами камеральної перевірки декларацій з податку на додану вартість
+за лютий–травень 2022 року було складено акт, у якому зафіксовано неправомірне
+формування податкового кредиту. Податковий орган зазначив, що підпункт 69.1-1
+пункту 69 підрозділу 10 розділу XX «Перехідні положення» Податкового кодексу
+України встановлює обов’язок платника узгодити податковий кредит
+із зареєстрованими після 15 липня 2022 року накладними. Така відповідність мала
+бути досягнута шляхом подання уточнюючих декларацій з виключенням
+відповідних сум. Оскільки платник не виконав цей обов’язок у повному обсязі,
+податковий орган видав податкове повідомлення-рішення, яким збільшив суму
+грошового зобов’язання з податку на додану вартість.
+Платник уважав, що податковий орган застосував санкції без достатніх правових
+підстав (в умовах обмеженого доступу до контрагентів та документів у період
+бойових дій), не врахувавши зміни до законодавства, які пом’якшували податкову
+відповідальність в умовах воєнного стану.
+Ключовим питанням у спорі є встановлення правомірності застосування
+податкових санкцій до платника, який сформував податковий кредит у період
+
+дії воєнного стану на підставі первинних документів, за відсутності належної
+реєстрації накладних з боку контрагентів.
+
+Верховний Суд сформулював правову позицію, згідно з якою станом
+на період дії воєнного стану законодавець запровадив спеціальний
+правовий режим для формування податкового кредиту з податку
+на додану вартість за лютий–травень 2022 року. Такий режим закріпив
+можливість включати до складу податкового кредиту суми податку
+на додану вартість на підставі наявних у платника первинних
+(розрахункових) документів у разі відсутності зареєстрованих
+накладних. Йдеться про спеціальний податковий режим,
+регламентований пунктом 32-2 підрозділу 2 розділу ХХ «Перехідні
+положення» Податкового кодексу України.
+
+Детальніше з текстом постанови КАС ВС від 28 лютого 2024 року у справі № 200/466/23
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/117317760.](https://reyestr.court.gov.ua/Review/117317760)
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md № 200/11022/19-а 80 81 засоби обліку витрачання і прилади регулювання споживання газу, води та теплової енергії, газу у побуті виробничі чи невиробничі засоби під час переміщення вантажів через лінії семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «засоби обліку витрачання і прилади регулювання споживання газу, води та теплової енергії, газу у побуті» (житлове законодавство. житлово-комунальне господарство / засоби обліку витрачання і прилади регулювання споживання газу, води та теплової енергії, газу у побуті).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/109138615" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 200/11022/19-а</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">80 81</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Житлове законодавство. Житлово-комунальне господарство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Засоби обліку витрачання і прилади регулювання споживання газу, води та теплової енергії, газу у побуті</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>виробничі чи невиробничі засоби під час переміщення вантажів через лінії</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Засоби обліку витрачання і прилади регулювання споживання газу, води та теплової енергії, газу у побуті» (Житлове законодавство. Житлово-комунальне господарство / Засоби обліку витрачання і прилади регулювання споживання газу, води та теплової енергії, газу у побуті).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+3.1. Про оподаткування податком на додану вартість, якщо ліквідовано основні
+виробничі чи невиробничі засоби під час переміщення вантажів через лінії
+зіткнення
+
+Обґрунтовуючи підстави для нарахування платнику суми грошових зобов’язань
+з податку на додану вартість, контрольний орган указав на порушення
+підпункту «г» пункту 198.5 статті 198 і підпункту 38.10 пункту 38 підрозділу 10
+розділу XX «Перехідні положення» Податкового кодексу України та зазначив,
+що із загальної кількості локомотивів, вагонів, напіввагонів, цистерн, які
+перебувають на тимчасово окупованій території та залишаються заблокованими
+на непідконтрольній Україні території, більшість залізничного рухомого складу
+є необоротними активами, призначеними для використання (або такими,
+що їх почали використовувати) в операціях, що не є господарською діяльністю
+
+платника.
+Платник зауважив, що відсутні підстави для такої кваліфікації його активів
+(вагонів, напіввагонів, цистерн, теплотягів), оскільки було припинено переміщення
+вантажів через лінії зіткнення в межах Донецької та Луганської областей.
+Неможливість переміщення вантажів у розумінні пункту 198.5 статті 198
+Податкового кодексу України не є ні використанням активів в операціях,
+не пов’язаних із господарською діяльністю, ні операцією постачання, переведення
+до складу невиробничих необоротних активів. Нарахування резерву знецінених
+активів не підпадає під визначення операції з постачання товарів / послуг, тому
+зазначена операція не є об’єктом оподаткування податком на додану вартість.
+Ключовим питанням у спорі є те, чи правомірно контрольний орган нарахував
+платникові податкові зобов’язання з податку на додану вартість щодо об’єктів
+основних засобів, які перебували на тимчасово окупованій території
+та не використовувалися в господарській діяльності з огляду на припинення
+перевезень. Йдеться про те, чи можна було оподатковувати операції з такими
+необоротними активами, якщо їх було фактично виведено з господарського
+обороту внаслідок обставин, що не залежать від волі платника.
+
+Верховний Суд зазначив, що предметом доказування під час вирішення
+спору про податкові зобов’язання з податку на додану вартість
+на підставі, зокрема, підпункту «г» пункту 198.5 статті 198
+та підпункту 38.10 пункту 38 підрозділу 10 розділу XX «Перехідні
+
+положення» Податкового кодексу України є обставини щодо дати
+придбання платником об’єктів залізничного рухомого складу (основних
+засобів) та місця їх знаходження станом на визначену дату.
+Придбання / спорудження основних засобів до такої дати та подальше
+їх знаходження на тимчасово окупованій території та/або території
+населених пунктів, що розташовані на лінії зіткнення, є юридичними
+фактами, які виключають оцінку використання основних засобів
+в операціях, що не є господарською діяльністю платника податку
+на додану вартість.
+Ураховуючи підстави визначення платнику зобов’язань з податку
+на додану вартість, обставини щодо вибуття вагонів, напіввагонів,
+цистерн з його володіння на тимчасово окупованій території не мають
+юридичного значення для цієї справи та не впливають на результат
+вирішення спору по суті, за встановлених у справі фактів.
+
+Детальніше з текстом постанови КАС ВС від 13 лютого 2023 року у справі № 200/11022/19-а
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/109138615.](https://reyestr.court.gov.ua/Review/109138615)
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.2_segment.md № 160/11478/22 200130 40 тарифи та пільги на побутове обслуговування та податку на додану вартість семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «тарифи та пільги на побутове обслуговування» (законодавство з питань торгівлі та громадського харчування. побутове обслуговування населення / побутове обслуговування / тарифи та пільги на побутове обслуговування).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">03.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/111884041" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/11478/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">200130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань торгівлі та громадського харчування. Побутове обслуговування населення</span><span class="crumb-sep">›</span><span class="crumb">Побутове обслуговування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Тарифи та пільги на побутове обслуговування</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>та податку на додану вартість</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Тарифи та пільги на побутове обслуговування» (Законодавство з питань торгівлі та громадського харчування. Побутове обслуговування населення / Побутове обслуговування / Тарифи та пільги на побутове обслуговування).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+3.2. Про момент виникнення права на застосування пільги з ввізного мита
+та податку на додану вартість
+
+Митниця відмовила в оформленні (випуску) товару, задекларованого 29 червня
+2022 року, зважаючи на неправильне заповнення митної декларації
+та безпідставне застосування податкових пільг згідно з кодами 223 (звільнення
+від ввізного мита) і 224 (звільнення від податку на додану вартість).
+На переконання контрольного органу, положення Закону України від 24 березня
+2022 року № 2142-ІХ «Про внесення змін до Податкового кодексу України щодо
+вдосконалення законодавства на період дії воєнного стану» (далі – Закон № 2142ІХ) у частині звільнення від оподаткування податком на додану вартість та ввізним
+митом не можна застосувати до товару, фактично ввезеного на митну територію
+України ще у травні 2021 року, тобто до набрання чинності цим законом.
+Положення цього закону застосовують лише щодо товарів, на які митні декларації
+було подано митному органу в період дії Закону № 2142-ІХ для митного
+оформлення в митному режимі імпорту (випуску для вільного обігу на підставі
+статті 74 Митного кодексу України), попри дату фактичного (фізичного)
+переміщення товару через митний кордон України. Митниця вважала, що не дата
+подання митної декларації, а дата фізичного ввезення товару (факт перетину
+митного кордону) є визначальною для звільнення від сплати митних платежів.
+Декларант уважав, що мав право на податкові пільги, оскільки нову митну
+декларацію було повторно подано 29 червня 2022 року — вже після
+набрання чинності Законом № 2142-ІХ (05 квітня 2022 року). Платник також
+уточнив, що раніше митниця вилучила товар і лише після закриття провадження
+у справі про порушення митних правил було дозволено повторно подати
+
+декларацію. На думку декларанта, законодавець не обмежив дію пільг лише
+випадками ввезення товару після дати набрання чинності Законом № 2142-ІХ.
+Умовою застосування відповідних пільг є саме дата подання митної декларації,
+а не фізичне переміщення товару через кордон.
+Ключовим питанням у спорі є те, яка дата є визначальною для застосування
+податкових пільг на підставі Закону № 2142-ІХ — дата фактичного ввезення товару
+на територію України або дата подання митної декларації.
+
+Здійснивши комплексне тлумачення норм законодавства, Верховний
+Суд виснував, що ввезення товару на митну територію України
+як операція, з якою законодавець пов’язує звільнення від обов’язку
+сплати митних платежів, не обмежено лише фактичним (фізичним)
+перетином товару через митний кордон України, а становить алгоритм
+дій, спрямованих на виконання необхідних митних формальностей.
+Якщо подана з метою митного оформлення ввезеного товару
+декларація датована в період з 01 квітня до 01 липня 2022 року,
+то задекларований згідно з цією митною декларацією товар підпадає
+під дію Закону № 2142-ІХ, оскільки виконано законодавчо встановлені
+умови для звільнення від сплати ввізного мита та податку на додану
+вартість.
+
+Детальніше з текстом постанови КАС ВС від 28 червня 2023 року у справі № 160/11478/22
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/111884041.](https://reyestr.court.gov.ua/Review/111884041)
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.4_segment.md № 280/10300/23 40 80 50 землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення обов’язку з огляду на руйнування виробничих приміщень внаслідок неодноразових семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення» (природні ресурси. охорона природи / склад земель / землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">03.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/121675267" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 280/10300/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40 80 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb">Склад земель</span><span class="crumb-sep">›</span><span class="crumb-leaf">Землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>обов’язку з огляду на руйнування виробничих приміщень внаслідок неодноразових</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення» (Природні ресурси. Охорона природи / Склад земель / Землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+3.4. Про звільнення від відповідальності за несвоєчасне виконання податкового
+обов’язку з огляду на руйнування виробничих приміщень внаслідок неодноразових
+ракетних обстрілів
+
+Податковий орган анулював реєстрацію платника податку на додану вартість
+як юридичної особи на підставі підпункту «г» пункту 184.1 статті 184 Податкового
+кодексу України. Підставою стало неподання декларацій з податку на додану
+вартість протягом 12 послідовних податкових місяців (з травня 2022 року
+до квітня 2023 року), що вказує на відсутність операцій, пов’язаних з формуванням
+податкового зобов’язання чи податкового кредиту.
+Платник зауважив, що не мав змоги подавати протягом 12 послідовних місяців
+податкові декларації з незалежних від нього причин (унаслідок ракетних обстрілів
+було пошкоджено виробничі приміщення, відсутнє електропостачання, а з липня
+2022 року до квітня 2023 року на підприємстві взагалі не було жодної
+уповноваженої особи для ведення бухгалтерського обліку та подання звітності).
+Про настання форс-мажорних обставин платник неодноразово повідомляв
+податковий орган, надаючи відповідні докази.
+Ключовим питанням у спорі є правомірність анулювання реєстрації платника
+податку на додану вартість згідно з формальною ознакою неподання звітності,
+без урахування обставин воєнного стану, відсутності персоналу, обстрілів
+підприємства та зупинення діяльності внаслідок форс-мажору.
+
+Верховний Суд указав на обов’язок суду встановити, чи були об’єктивні
+підстави для неподання податкової звітності та чи міг контрольний
+орган безумовно застосовувати норму Податкового кодексу України
+без урахування фактичних обставин.
+Якщо платник за адресою своєї реєстрації та виробничих потужностей
+зазнавав неодноразових обстрілів та руйнувань, що об’єктивно
+
+призвело до неможливості здійснювати належну господарську
+діяльність за вказаний період, то закон звільняє від відповідальності
+за несвоєчасне виконання податкового обов’язку. Водночас платник
+зобов’язаний подати відповідну заяву до контрольного органу.
+Ведення господарської діяльності, реєстрація накладних доводить,
+що платник мав можливість подати декларацію з податку на додану
+вартість або повідомити контрольний орган про неможливість виконати
+свій обов’язок у встановлений законодавством строк на підставі норм
+Порядку підтвердження можливості чи неможливості виконання
+платником податків обов’язків, визначених у підпункті 69.1 пункту 69
+підрозділу 10 розділу XX «Перехідні положення» Податкового кодексу
+України, затвердженого наказом Міністерства фінансів України
+від 29 липня 2022 року № 225.
+
+Детальніше з текстом постанови КАС ВС від 17 вересня 2024 року у справі № 280/10300/23
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/121675267.](https://reyestr.court.gov.ua/Review/121675267)
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.5_segment.md № 320/5548/23 30 60 40 безспірне списання ( стягнення ) коштів в разі втрати покупцем статусу платника податку на додану вартість семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «безспірне списання ( стягнення ) коштів» (цивільне законодавство / зобов&#x27;язальне право / безспірне списання ( стягнення ) коштів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">03.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/127557809" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 320/5548/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Безспірне списання ( стягнення ) коштів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>в разі втрати покупцем статусу платника податку на додану вартість</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Безспірне списання ( стягнення ) коштів» (Цивільне законодавство / Зобов&#x27;язальне право / Безспірне списання ( стягнення ) коштів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Податок на додану вартість ……………………………………………………………………………………………………………
+
+3.5. Про відсутність права в постачальника зменшити податкові зобов’язання
+в разі втрати покупцем статусу платника податку на додану вартість
+
+Контрольний орган розглянув заяву платника про отримання індивідуальної
+податкової консультації щодо застосування пункту 192.1 статті 192 Податкового
+кодексу України в частині реєстрації розрахунків коригування під час повернення
+авансу покупцеві, який на момент сплати був платником податку на додану
+вартість, а на момент повернення — платником єдиного податку згідно зі ставкою
+2 %. Було роз’яснено, що в разі повернення авансу покупцеві, який на момент
+такого повернення не є платником податку на додану вартість (оскільки перейшов
+на спрощену систему оподаткування зі ставкою 2 %), постачальник не має права
+складати та реєструвати розрахунок коригування. Тому не підлягають
+коригуванню податкові зобов’язання, сформовані станом на дату отримання
+авансу. Податковий орган уважав, що статус платника податку на додану вартість
+в обох сторін фінансової операції (повернення авансу) станом на момент
+коригування є обов’язковою умовою для оформлення розрахунку коригування.
+На переконання платника, надана індивідуальна податкова консультація
+суперечить положенням статті 192 Податкового кодексу України, порушує принцип
+правової визначеності та призводить до несправедливого оподаткування. Платник
+акцентував, що зареєстрував накладну на авансовий платіж від покупця
+як платника податку на додану вартість станом на момент сплати, але після
+відмови покупця від договору повернув аванс, тоді як покупець тимчасово
+призупинив реєстрацію платника податку на додану вартість у зв’язку з переходом
+на єдиний податок. Визначальним є факт того, що покупець був платником податку
+на додану вартість станом на дату авансу, а право на коригування не повинно
+
+залежати від проміжного статусу покупця, особливо якщо потім такий статус буде
+відновлено.
+Ключовим питанням у спорі є визначення можливості зменшити податкові
+зобов’язання в разі повернення авансу покупцеві, який станом на момент сплати
+був платником податку на додану вартість, а на момент повернення тимчасово
+ним не був. Йдеться також про правомірність застосовувати норми статті 192
+Податкового кодексу України в ситуаціях, коли в сторін змінюється податковий
+статус у проміжку між отриманням авансу та його поверненням.
+
+На думку Верховного Суду, якщо покупець втрачає статус платника
+податку на додану вартість (наприклад, ураховуючи перехід
+на спрощену систему зі спеціальним режимом), то він втрачає й
+технічну можливість і правовий статус для реєстрації розрахунку
+коригування в Єдиному реєстрі податкових накладних. Законодавство
+не встановлює альтернативних способів коригування податкових
+зобов’язань, якщо покупець втратив статус платника податку на додану
+вартість і не може зареєструвати розрахунок коригування. Отже,
+постачальник у такій ситуації не має змоги зменшити податкові
+зобов’язання, оскільки обов’язковою умовою є реєстрація розрахунку
+
+коригування покупцем, що є неможливим.
+Пункт 192.2 статті 192 Податкового кодексу України, який звільняє
+постачальника від коригування податкових зобов’язань у разі, коли він
+не є платником податку на додану вартість, не підлягає застосуванню,
+оскільки статус платника втратив покупець, а не постачальник.
+Імперативний характер податкових норм і принцип законності
+оподаткування згідно зі статтею 4 цього Кодексу не дозволяють суду
+розширювати чи звужувати сферу застосування статті 192 цього
+Кодексу.
+Після відновлення статусу платника податку на додану вартість, можна
+враховувати податковий кредит, сформований до переходу
+на спрощену систему, але з обов’язком нарахувати податкові
+зобов’язання за активи, придбані з податком на додану вартість,
+які використовували в період дії спрощеної системи оподаткування.
+
+Детальніше з текстом постанови КАС ВС від 22 травня 2025 року у справі № 320/5548/23
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/127557809.](https://reyestr.court.gov.ua/Review/127557809)
+
+4. Акцизний податок
+
+### 4. Акцизний податок …………………………………………………………………………………………………………………………………
+
+### 4. Акцизний податок …………………………………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1_segment.md № 320/14811/24 210110 50 переселення з територій, що зазнали радіоактивного забруднення пального в межах камеральної перевірки семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «переселення з територій, що зазнали радіоактивного забруднення» (законодавство про використання ядерної енергії та радіаційний захист. законодавство з питань ліквідації наслідків чорнобильської катастрофи та інших ядерних аварій і випробувань / законодавство з питань ліквідації наслідків чорнобильської катастрофи та інших ядерних аварій і випробувань / переселення з територій, що зазнали радіоактивного забруднення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/127771630" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 320/14811/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>75% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">210110 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про використання ядерної енергії та радіаційний захист. Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань</span><span class="crumb-sep">›</span><span class="crumb-leaf">Переселення з територій, що зазнали радіоактивного забруднення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>пального в межах камеральної перевірки</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Переселення з територій, що зазнали радіоактивного забруднення» (Законодавство про використання ядерної енергії та радіаційний захист. Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань / Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань / Переселення з територій, що зазнали радіоактивного забруднення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Акцизний податок …………………………………………………………………………………………………………………………………
+
+4.1. Про недопустимість установлення нецільового використання підакцизного
+пального в межах камеральної перевірки
+
+За результатами камеральної перевірки декларації з акцизного податку платника
+за жовтень 2023 року було встановлено нецільове використання авіаційного
+
+пального для реактивних двигунів за двома податковими векселями, загальний
+обсяг якого склав орієнтовно 2,5 млн літрів, що, на думку податкового органу,
+призвело до несплати акцизного податку на суму понад 16 млн грн.
+Платник указав на протиправність результатів камеральної перевірки, яку, на його
+переконання, було проведено з порушенням вимог Податкового кодексу України,
+оскільки постачання пального відбувалося для цільового використання
+військовими частинами, що підтверджують первинні документи, підписані
+зі затримкою з огляду на об’єктивні обставини (воєнний стан, ризики зберігання).
+Позивач закцентував, що аналіз первинних документів є предметом
+документальної перевірки, а не камеральної.
+Ключовим питанням у спорі є те, чи мав право податковий орган у межах
+камеральної перевірки встановлювати нецільове використання авіаційного
+пального на підставі первинних документів, а також чи є правомірним
+донарахування зобов’язань за акцизним податком без проведення документальної
+перевірки.
+
+Верховний Суд зазначив, що установлення нецільового використання
+пального для цільового використання військовими частинами
+за результатами камеральної перевірки є перевищенням повноважень
+контрольного органу та підставою для визнання ухваленого
+на цій підставі податкового повідомлення-рішення протиправним,
+а самого акту перевірки — недопустимим доказом. Камеральну
+перевірку проводять лише відповідно до податкової звітності
+та електронних реєстрів, без аналізу первинних документів
+чи встановлення факту цільового використання пального, що можна
+здійснити лише під час документальної перевірки.
+
+Детальніше з текстом постанови КАС ВС від 28 травня 2025 року у справі № 320/14811/24
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/127771630.](https://reyestr.court.gov.ua/Review/127771630)
+
+5. Податкові пільги
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.1_segment.md № 280/5185/19 100170 30 театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.) окупованій території та/або території населених пунктів на лінії зіткнення семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (законодавство з питань освіти, науки, культури / правовий статус окремих об&#x27;єктів культури / театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">05.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/107631753" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 280/5185/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100170 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Правовий статус окремих об&#x27;єктів культури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>окупованій території та/або території населених пунктів на лінії зіткнення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (Законодавство з питань освіти, науки, культури / Правовий статус окремих об&#x27;єктів культури / Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+5.1. Про оподаткування об’єктів нерухомості, які розташовані на тимчасово
+окупованій території та/або території населених пунктів на лінії зіткнення
+
+Контрольний орган нарахував платникові податок на нерухоме майно
+без застосування пільги у вигляді зменшення бази оподаткування об&#x27;єкта житлової
+нерухомості.
+Платник указав на неврахування визначених законом пільг з огляду
+на безпідставне включення до об&#x27;єкта оподаткування площі його квартири,
+розташованої на тимчасово окупованій території (в місті Донецьку).
+Ключовим питанням у спорі є визначення законності нарахування податку
+на нерухоме майно, що включає площу квартири на тимчасово окупованій
+території, а також застосування пільг, установлених для такої нерухомості.
+
+Верховний Суд зауважив, що об’єкти житлової та нежитлової
+нерухомості, які перебувають у власності фізичних або юридичних осіб
+і розташовані на тимчасово окупованій території та/або території
+населених пунктів на лінії зіткнення, не є об’єктами оподаткування
+податком на нерухоме майно, відмінне від земельної ділянки,
+відповідно до статті 266 Податкового кодексу України, а тому не можуть
+бути складником бази оподаткування.
+
+Детальніше з текстом постанови КАС ВС від 30 листопада 2022 року у справі № 280/5185/19
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/107631753.](https://reyestr.court.gov.ua/Review/107631753)
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.2_segment.md № 160/23272/24 50 70 70 оплата при переведенні на іншу постійну нижчеоплачувану роботу та переміщенні податку після 01 серпня 2023 року й анулювання реєстрації фізичної особи — семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «оплата при переведенні на іншу постійну нижчеоплачувану роботу та переміщенні» (трудове законодавство / оплата праці / оплата при переведенні на іншу постійну нижчеоплачувану роботу та переміщенні).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">05.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/126633074" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/23272/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 70 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Оплата праці</span><span class="crumb-sep">›</span><span class="crumb-leaf">Оплата при переведенні на іншу постійну нижчеоплачувану роботу та переміщенні</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>податку після 01 серпня 2023 року й анулювання реєстрації фізичної особи —</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Оплата при переведенні на іншу постійну нижчеоплачувану роботу та переміщенні» (Трудове законодавство / Оплата праці / Оплата при переведенні на іншу постійну нижчеоплачувану роботу та переміщенні).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+5.2. Про врахування доходу за ставкою 2 % під час переходу на іншу групу єдиного
+податку після 01 серпня 2023 року й анулювання реєстрації фізичної особи —
+підприємця як платника єдиного податку
+
+За результатами камеральної перевірки податковий орган установив порушення
+умов перебування на спрощеній системі оподаткування та виніс податкове
+повідомлення-рішення про донарахування грошового зобов&#x27;язання з єдиного
+податку, а також про анулювання реєстрації як платника єдиного податку
+з 01 січня 2024 року. На думку контрольного органу, отриманий у 2023 році дохід
+включав період, коли фізична особа — підприємець перебувала на третій групі
+зі ставкою 2 % (з 24 січня по 30 червня 2023 року), тому потрібно застосовувати
+нові правила, введені в дію з 01 серпня 2023 року на підставі підпункту 9-1.4.3
+пункту 9-1 підрозділу 8 розділу ХХ «Перехідні положення» Податкового кодексу
+України. Тобто після скасування ставки 2 % для платників третьої групи, вони
+автоматично повертаються на попередню групу, на якій перебували до переходу
+на спрощену систему оподаткування в умовах воєнного стану. Дохід, отриманий
+під час застосування ставки 2 %, не враховують під час підрахунку загального
+доходу для цієї групи. Водночас, якщо загальний дохід за рік перевищує ліміт
+для відповідної групи, фізична особа — підприємець втрачає право на спрощену
+
+систему оподаткування.
+На переконання платника, у період перебування на ставці 2 % вона фактично
+не використовувала пільгового режиму оподаткування, оскільки не здійснювала
+господарської діяльності та не отримувала доходу, а з 01 липня 2023 року
+перейшла на другу групу зі ставкою єдиного податку 20 % (на підставі заяви,
+поданої 12 червня 2023 року), на якій і перебувала з 01 жовтня 2021 року
+до 30 вересня 2022 року. Отож на момент набрання чинності новими правилами
+(01 серпня 2023 року) вона вже перебувала на іншій групі та не могла бути
+об’єктом їхньої дії. Фізична особа — підприємець також закцентувала,
+що положення підпункту 9-1.4.3 пункту 9-1 підрозділу 8 розділу ХХ «Перехідні
+положення» Податкового кодексу України не скасовують загальних норм
+пункту 291.4 статті 291 Податкового кодексу України, якими визначено граничний
+розмір доходу для кожної групи. Граничний обсяг доходу для другої групи
+
+у 2023 році складав 5,6 млн грн, а фактично задекларований дохід 5,4 млн грн
+
+не перевищив цю межу.
+Ключовим питанням у спорі є правомірність застосування нових правил щодо
+повернення платника на попередню групу після скасування ставки 2 %, врахування
+доходу, отриманого після такого переходу, а також правові межі використання
+результатів камеральної перевірки для анулювання статусу платника єдиного
+
+податку.
+
+Верховний Суд виснував, що Закон України від 15 березня 2022 року
+№ 2120-IX «Про внесення змін до Податкового кодексу України та інших
+законодавчих актів України щодо дії норм на період дії воєнного стану»
+запровадив тимчасові зміни, які дозволяли фізичним особам —
+підприємцям першої та другої груп не сплачувати єдиний податок
+з 01 квітня 2022 року до припинення або скасування воєнного стану,
+але не пізніше 01 серпня 2023 року. Платники єдиного податку третьої
+групи, які застосовували спеціальні умови оподаткування в умовах
+воєнного стану і в яких обсяг доходу не перевищував 10 млрд грн,
+отримали право на знижені ставки податку (2 %).
+Після серпня 2023 року законодавець визначив, що у 2023 році суб&#x27;єкти
+господарювання, які втратили право на застосування особливостей
+оподаткування, мають право повторно перейти на спрощену систему
+оподаткування. Зміни, регламентовані підпунктом 9-1.4.3 пункту 9-1
+підрозділу 8 розділу ХХ «Перехідні положення» Податкового кодексу
+України, набрали чинності з 01 серпня 2023 року. Тому до цього часу
+платники, які застосовували спеціальні правила оподаткування
+в період до 31 липня 2023 року, повинні застосовувати інші
+положення податкового законодавства, ураховуючи обмеження обсягу
+доходу в межах цього періоду. Керуючись пунктом 56.21 статті 56 цього
+Кодексу, підпункт 9-1.4.3 пункту 9-1 підрозділу 8 розділу ХХ «Перехідні
+положення» цього Кодексу, який набрав чинності лише 01 серпня
+2023 року, не може встановлювати обмеження на обсяг доходу
+для відповідної групи платників єдиного податку в період до 31 липня
+2023 року.
+Платники, які до 31 липня 2023 року не відмовилися від особливостей
+оподаткування, установлених пунктом 9 підрозділу 8 розділу ХХ
+«Перехідні положення» цього Кодексу, автоматично з 01 серпня
+2023 року втратили право на ці особливості та були зобов’язані перейти
+на ту систему оподаткування, на якій перебували до моменту переходу
+на застосування особливостей, визначених воєнним станом. Для таких
+платників почали діяти обмеження, установлені цим Кодексом для
+відповідної групи платників єдиного податку, зокрема щодо обсягу
+доходу та кількості осіб, які перебувають у трудових відносинах з таким
+платником. Водночас не враховують обсяг доходу, отриманий у період
+застосування особливостей оподаткування, визначаючи обмеження
+
+згідно зі статтями 291.4, 291.5 цього Кодексу для відповідної групи
+платників єдиного податку.
+Анулювання реєстрації платника єдиного податку за результатами
+камеральної перевірки є неправомірним, оскільки таку перевірку
+здійснюють лише на підставі податкової звітності без можливості
+точного визначення щомісячного обсягу доходу, а отже, не можна
+достовірно встановити факт порушення граничного обсягу доходу
+чи інших критеріїв, що є підставою для втрати права на спрощену
+
+систему оподаткування.
+
+Детальніше з текстом постанови КАС ВС від 15 квітня 2025 року у справі № 160/23272/24
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/126633074.](https://reyestr.court.gov.ua/Review/126633074)
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.3_segment.md № 520/9626/24 280 60 10 система органів прокуратури податкових пільг семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «система органів прокуратури» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура / система органів прокуратури).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">05.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/127172087" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 520/9626/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Прокуратура</span><span class="crumb-sep">›</span><span class="crumb-leaf">Система органів прокуратури</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>податкових пільг</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Система органів прокуратури» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура / Система органів прокуратури).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+5.3. Про дискреційні повноваження органів військової адміністрації в разі надання
+податкових пільг
+
+Селищна військова адміністрація відмовила платникові в наданні пільги зі сплати
+єдиного податку IV групи за 2023 рік, тому що не може визначити орендовані
+земельні ділянки як такі, що підпадають під статус потенційно забруднених
+вибухонебезпечними предметами.
+Платник акцентував на загрозі використання без попереднього розмінування
+орендованих земельних ділянок загальною площею понад 1389 га на території, яка
+з 26 лютого до 08 вересня 2022 року перебувала в окупації, а потім була включена
+до Переліку територій можливих бойових дій, затвердженого наказом Міністерства
+з питань реінтеграції тимчасово окупованих територій України від 22 грудня
+2022 року № 309. На переконання платника, такі земельні ділянки були потенційно
+забрудненими вибухонебезпечними предметами та фактично непридатні
+для використання за цільовим призначенням.
+Ключовим питанням у спорі є визначення правомірності відмови органом
+військової адміністрації в наданні податкової пільги платникові, який доводить,
+що орендовані земельні ділянки є потенційно небезпечними та непридатними
+для сільськогосподарського використання в умовах воєнного стану.
+
+Верховний Суд указав, що норми Податкового кодексу України, зокрема
+пункт 30.2 статті 30, визначають чіткі критерії для надання податкових
+пільг, ураховуючи об’єктивні характеристики, як-от: як статус території,
+вид діяльності або об&#x27;єкт оподаткування. Податкова пільга є правом
+для всіх платників, які відповідають зазначеним критеріям,
+і не залежить від індивідуальних обставин. Тобто податкову пільгу
+застосовують не як виняток для конкретного платника, а як реалізацію
+
+загального правила в межах визначених законом умов.
+Орган влади не має дискреційних повноважень щодо відмови
+або затримки в наданні податкової пільги у разі наявності об&#x27;єктивних
+підстав, визначених законом, тому зобов&#x27;язаний ухвалити рішення
+
+про надання податкової пільги на підставі об’єктивних критеріїв, таких
+як статус території, без необхідності попереднього обстеження
+земельних ділянок або внесення відповідних даних до Державного
+
+земельного кадастру.
+Відсутність обстеження земельних ділянок або невнесення відповідної
+інформації до Державного земельного кадастру не може бути
+підставою для відмови в наданні податкової пільги, оскільки статус
+потенційно забрудненої земельної ділянки може бути встановлений
+на підставі рішення уповноваженого органу, що є як достатнім для
+реалізації податкових пільг, так і необхідною умовою для подальших
+дій, зокрема проведення обстеження земельної ділянки операторами
+протимінної діяльності. Законодавство не вимагає попереднього
+обстеження для надання статусу потенційно забрудненої земельної
+ділянки. Сама наявність території в офіційному переліку районів,
+де тривали бойові дії чи які перебували під окупацією, є достатньою
+підставою для розгляду питання надання податкової пільги.
+
+Детальніше з текстом постанови КАС ВС від 07 травня 2025 року у справі № 520/9626/24
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/127172087.](https://reyestr.court.gov.ua/Review/127172087)
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.4_segment.md № 520/21190/24 80 80 комунальні послуги. тарифи та пільги за результатами документальної позапланової невиїзної перевірки в період семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «комунальні послуги. тарифи та пільги» (житлове законодавство. житлово-комунальне господарство / комунальні послуги. тарифи та пільги).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">05.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/127204819" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 520/21190/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">80 80</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Житлове законодавство. Житлово-комунальне господарство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Комунальні послуги. Тарифи та пільги</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>За результатами документальної позапланової невиїзної перевірки в період</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Комунальні послуги. Тарифи та пільги» (Житлове законодавство. Житлово-комунальне господарство / Комунальні послуги. Тарифи та пільги).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5. Податкові пільги ……………………………………………………………………………………………………………………………………
+
+5.4. Про податкові пільги на землю в умовах воєнного стану
+
+За результатами документальної позапланової невиїзної перевірки в період
+реорганізації платника контрольний орган уважав, що було занижено податок
+на доходи фізичних осіб та військовий збір, порушено обов’язки зі сплати єдиного
+податку та не дотримано вимог щодо трудових відносин і звітності, а також правил
+ведення обліку платників. На думку контрольного органу, дохід можна вважати
+нарахованим згідно з умовами договорів оренди до 31 грудня кожного року. Тому
+платник, зокрема, був зобов’язаний визначити та задекларувати мінімальне
+податкове зобов’язання за 2023 рік щодо сільськогосподарських земель, а також
+як податковий агент щодо орендодавців — фізичних осіб — нарахувати податок
+на доходи фізичних осіб та військовий збір, навіть якщо фактично не сплачував
+
+орендну плату.
+Платник не погодився з цими висновками, оскільки більшість земель було
+заміновано або були непридатні для використання через воєнні дії,
+а з 01 січня 2023 року – передано правонаступнику, який отримав пільгу на 100 %
+звільнення від сплати єдиного податку (частина орендодавців вже отримала
+відкладені виплати від правонаступника). На переконання платника, податковий
+орган зобов’язаний визначати зобов’язання лише з фактично нарахованого
+доходу, а не самостійно розрахувати дохід, з огляду на 3 % від нормативної
+грошової оцінки (що є гіпотетичним, а не реальним показником).
+Ключовим питанням у спорі є те, чи можна визначати податкові зобов’язання
+в ситуації, коли було унеможливлено фактичне використання землі та реальних
+
+доходів не виникало, а також чи мав платник підстави для звільнення від таких
+зобов’язань на підставі норм перехідного законодавства в умовах воєнного стану
+і локальних податкових пільг.
+
+Верховний Суд виснував про безпідставність нарахування платникові
+мінімального податкового зобов’язання, податку на доходи фізичних
+осіб та військового збору. Положення Податкового кодексу України
+не закріплюють оподаткування доходів, які фактично не було
+нараховано / виплачено найманим працівникам, коли земельні ділянки
+перебували на території активних бойових дій. Дія Положення
+(стандарту) бухгалтерського обліку № 15 не поширюється на доходи
+згідно з договорами оренди (відповідно до пункту 3).
+Достатньою правовою підставою для застосування податкової пільги
+є ідентифікація конкретних земельних ділянок із фіксацією кадастрових
+номерів і визначення строку дії пільги впродовж усього 2023 року
+відповідним рішенням органу місцевого самоврядування на підставі
+заяви платника. Законодавство не встановлює інших умов або підстав
+для ухвалення відповідним органом місцевого самоврядування,
+військової адміністрації або військово-цивільної адміністрації рішення
+про надання податкових пільг, окрім заяви платника про потенційне
+забруднення земельної ділянки вибухонебезпечними предметами.
+Інформацію про ухвалене рішення обов’язково надають контрольному
+
+органу.
+Якщо станом на час перевірки діяла податкова пільга, встановлена
+на рівні законодавства та локального нормативного акта органу
+місцевого самоврядування, то не можна нараховувати мінімальне
+податкове зобов’язання.
+Керуючись вимогами пункту 168.1 статті 168 та пункту 16¹
+підрозділу 10 розділу ХХ «Перехідні положення» Податкового кодексу
+України, податковий агент нараховує, утримує та сплачує податок
+на доходи фізичних осіб та військовий збір у разі фактичного
+нарахування або виплати доходу. Відсутність факту нарахування
+орендної плати згідно з договорами з фізичними особами за 2023 рік
+унеможливлює визначення об’єкта оподаткування, а отже, виникнення
+податкового зобов’язання.
+
+Детальніше з текстом постанови КАС ВС від 08 травня 2025 року у справі № 520/21190/24
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/127204819.](https://reyestr.court.gov.ua/Review/127204819)
+
+6. Забезпечення позову
+
+### 6. Забезпечення позову …………………………………………………………………………………………………………………………
+
+### 6. Забезпечення позову …………………………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06.1_segment.md № 140/8127/22 190 законодавство про забезпечення діяльності зв&#x27;язку виробничих потужностей та збереження суб’єктів економічної системи семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «законодавство про забезпечення діяльності зв&#x27;язку» (законодавство про забезпечення діяльності зв&#x27;язку).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">17</span>
+            <span class="file-badge">06.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/110502515" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 140/8127/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>76% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">190</span>
+          <div class="breadcrumbs">
+            <span class="crumb-leaf">Законодавство про забезпечення діяльності зв&#x27;язку</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>виробничих потужностей та збереження суб’єктів економічної системи</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Законодавство про забезпечення діяльності зв&#x27;язку» (Законодавство про забезпечення діяльності зв&#x27;язку).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 6. Забезпечення позову …………………………………………………………………………………………………………………………
+
+6.1. Про забезпечення позову з метою підтримання надійного функціонування
+виробничих потужностей та збереження суб’єктів економічної системи
+
+Контрольний орган виключив платника з електронного реєстру суб’єктів
+господарювання, які використовують спирт етиловий для виробництва продукції,
+що фактично унеможливило здійснення платником господарської діяльності
+з виробництва біоетанолу та похідного виробу – універсального органічного
+розчинника «BioNOL».
+Платник уважав таке рішення протиправним як ухвалене на підставі акта
+фактичної перевірки, на його думку, проведеної з порушенням вимог Податкового
+кодексу України, зокрема в період дії обмежень, пов’язаних із воєнним станом.
+Платник також акцентував, що таке виключення з реєстру унеможливило
+продовження виробничої діяльності, позбавило ліцензійних прав та зумовило
+порушення контрактних зобов’язань, що призводить до непоправних втрат
+у господарській діяльності. Платник покликався на те, що проведена перевірка
+мала ознаки втручання в господарську діяльність, а її результати не ґрунтувалися
+на достовірних і належних доказах, що засвідчують порушення обігу спирту.
+Ключовим питанням у спорі є застосування заходів забезпечення позову з метою
+збереження функціонування виробництва та економічної присутності шляхом
+зупинення дії рішення про виключення з електронного реєстру суб’єктів
+господарювання, які використовують спирт етиловий для виробництва продукції
+(на час розгляду справи).
+
+Верховний Суд підтримав висновки судів попередніх інстанцій щодо
+необхідності вжиття заходів забезпечення позову та співмірності
+заявлених вимог із предметом позову, зауваживши, що період
+дії режиму воєнного стану та руйнування економіки України в нинішніх
+складних для країни умовах вимагає безперервного виробництва
+матеріальних активів та насичення коштами фінансової системи країни.
+Отже, особливого значення набуває підтримання надійного
+функціонування виробничих потужностей та збереження суб’єктів
+економічної системи.
+
+Детальніше з текстом постанови КАС ВС від 27 квітня 2023 року у справі № 140/8127/22
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/110502515.](https://reyestr.court.gov.ua/Review/110502515)
+
+### 6. Забезпечення позову …………………………………………………………………………………………………………………………
+
+### 6. Забезпечення позову …………………………………………………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06.2_segment.md № 520/2073/25 60 40 10 20 забезпечення інвалідів засобами пересування податкового боргу в умовах воєнного стану семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «забезпечення інвалідів засобами пересування» (законодавство з питань соціального забезпечення та соціального страхування / соціальна захищеність населення / соціальна захищеність інвалідів, ветеранів війни, учасників воєнних конфліктів, ветеранів праці. жертви нацистських переслідувань / забезпечення інвалідів засобами пересування).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">18</span>
+            <span class="file-badge">06.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/127920711" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 520/2073/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>76% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 40 10 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Соціальна захищеність населення</span><span class="crumb-sep">›</span><span class="crumb">Соціальна захищеність інвалідів, ветеранів війни, учасників воєнних конфліктів, ветеранів праці. Жертви нацистських переслідувань</span><span class="crumb-sep">›</span><span class="crumb-leaf">Забезпечення інвалідів засобами пересування</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>податкового боргу в умовах воєнного стану</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Забезпечення інвалідів засобами пересування» (Законодавство з питань соціального забезпечення та соціального страхування / Соціальна захищеність населення / Соціальна захищеність інвалідів, ветеранів війни, учасників воєнних конфліктів, ветеранів праці. Жертви нацистських переслідувань / Забезпечення інвалідів засобами пересування).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 6. Забезпечення позову …………………………………………………………………………………………………………………………
+
+6.2. Про застосування заходів забезпечення позову у справах про стягнення
+податкового боргу в умовах воєнного стану
+
+Надавач комунальних послуг звернувся до суду з позовом про визнання
+протиправним і скасування рішення контрольного органу про стягнення коштів
+з рахунків у межах погашення податкового боргу. Позов було, зокрема,
+
+мотивовано тим, що контрольний орган вже застосував процедуру стягнення
+відповідно до пункту 95.3 статті 95 Податкового кодексу України щодо боргу, який
+охоплював період з 30 вересня 2018 року до 21 січня 2025 року. На переконання
+платника, було порушено приписи підпункту 69.40 пункту 69 підрозділу 10
+розділу ХХ «Перехідні положення» Податкового кодексу України, згідно з якими
+з 01 серпня 2023 року податкові органи не мають права вживати заходів щодо
+погашення податкового боргу, який виник до 24 лютого 2022 року, стосовно
+платників, з податковою адресою на території можливих бойових дій.
+Недопустимим є одночасне застосування процедури, визначеної пунктом 95.5
+статті 95 Податкового кодексу України, у разі наявності вже розпочатих
+дій відповідно до статті 96 Податкового кодексу України.
+30 січня 2025 року було подано заяву про забезпечення позову з проханням
+зупинити стягнення коштів, тому що платник належить до об’єктів критичної
+інфраструктури, перебуває в скрутному фінансовому становищі та має
+заборгованість, яка виникла з огляду державне регулювання тарифів без належної
+компенсації. Було додано докази наслідків бойових дій та рішень органів місцевого
+самоврядування щодо звільнення населення від оплати послуг.
+Ключовим питанням у спорі є те, чи можна задовольнити заяву про забезпечення
+позову шляхом зупинення дії рішення контрольного органу про стягнення коштів
+з рахунків платника до набрання законної сили судовим рішенням у справі, коли
+платник є об’єктом критичної інфраструктури, перебуває в складному фінансовому
+стані та виконує функції щодо життєзабезпечення населення в умовах воєнного
+стану. Йдеться про те, чи виконання такого рішення могло б унеможливити
+поточну діяльність платника, що створює ризик невідворотної шкоди
+або ускладнення поновлення порушених прав.
+
+Верховний Суд виснував, що в разі невжиття заходів забезпечення
+позову, на ймовірне завдання значної шкоди як інтересам позивача,
+так і публічним інтересам може вказувати сукупність таких факторів,
+як-от: наявність заборгованості держави перед платником у зв’язку
+з регульованими тарифами; ведення діяльності на території, належить
+до зони бойових дій; загрозливий вплив заходів стягнення
+на безперервність надання життєво необхідних послуг; відсутність
+належного державного фінансування. Усі ці фактори у своїй сукупності
+дають достатні підстави вважати, що стягнення безготівкових коштів
+у безспірному порядку без попередньої оцінки правомірності
+відповідного рішення контрольного органу могло б об’єктивно
+призвести до суттєвих перешкод у забезпеченні безперервного надання
+
+життєво важливих послуг, а також до значного ускладнення
+подальшого поновлення порушеного права. Особливу увагу у справі
+було приділено характеру діяльності платника як суб’єкта критичної
+інфраструктури, який забезпечує функціонування централізованої
+системи холодного водопостачання та водовідведення для населення
+м. Харкова та Харківської області.
+
+Вжиття заходів забезпечення позову є правомірним у разі відповідності
+вимогам статей 150–151 Кодексу адміністративного судочинства
+України, без порушення балансу інтересів сторін, у межах заявлених
+вимог, з обґрунтуванням потреби захистити права особи до завершення
+розгляду справи по суті. Заходи забезпечення позову мають
+відповідати принципам процесуальної пропорційності, обґрунтованості,
+адекватності та правової визначеності, а також бути спрямованими
+на запобігання завданню шкоди публічним інтересам у контексті
+забезпечення базових потреб населення або функціонування об’єкта
+критичної інфраструктури в умовах воєнного стану.
+
+Детальніше з текстом постанови КАС ВС від 05 червня 2025 року у справі № 520/2073/25
+[можна ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/127920711.](https://reyestr.court.gov.ua/Review/127920711)
+
+Огляд судової практики Верховного Суду щодо оподаткування в умовах воєнного
+стану. Рішення, внесені до ЄДРСР, за період із лютого 2022 року до червня
+2025 року / Упоряд.: управління забезпечення роботи судової палати з розгляду
+справ щодо податків, зборів та інших обов’язкових платежів секретаріату
+Касаційного адміністративного суду; управління аналітичної та правової роботи
+Касаційного адміністративного суду департаменту аналітичної та правової роботи
+Апарату Верховного Суду / Відпов. за вип.: секретар судової палати з розгляду
+справ щодо податків, зборів та інших обов’язкових платежів канд. юрид. наук
+Р. Ф. Ханова; науковий консультант відділу забезпечення роботи секретаря та
+суддів судової палати управління забезпечення роботи судової палати з розгляду
+справ щодо податків, зборів та інших обов’язкових платежів секретаріату
+Касаційного адміністративного суду доктор юрид. наук А. А. Барікова. Київ, 2025.
+Вип. 2. 25 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 18;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2587 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KAS_10_2025 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KAS_10_2025 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KAS_10_2025.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KAS_10_2025</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">16</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">69.5%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">15</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 16 із 16</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01_segment.md № 300/4732/24 180 50 70 транспортні засоби, що належать громадянам. гаражі. автостоянки за цільовим призначенням належать до земель природно-заповідного фонду семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «транспортні засоби, що належать громадянам. гаражі. автостоянки» (законодавство про забезпечення діяльності транспорту / автотранспорт / транспортні засоби, що належать громадянам. гаражі. автостоянки).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131233027" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 300/4732/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">180 50 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про забезпечення діяльності транспорту</span><span class="crumb-sep">›</span><span class="crumb">Автотранспорт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Транспортні засоби, що належать громадянам. Гаражі. Автостоянки</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за цільовим призначенням належать до земель природно-заповідного фонду</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Транспортні засоби, що належать громадянам. Гаражі. Автостоянки» (Законодавство про забезпечення діяльності транспорту / Автотранспорт / Транспортні засоби, що належать громадянам. Гаражі. Автостоянки).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1. Про застосування ставки земельного податку до лісових земель, які
+за цільовим призначенням належать до земель природно-заповідного фонду
+та іншого природоохоронного призначення
+
+Граничний розмір ставки земельного податку для лісових земель, визначений
+статтями 274 і 277 Податкового кодексу України, застосовується виключно до тих
+лісових земель, які за цільовим призначенням належать до земель
+лісогосподарського призначення.
+Оподаткування лісових земель, що за цільовим призначенням віднесені до земель
+природно-заповідного фонду та іншого природоохоронного призначення (зокрема,
+з кодом 04.03 «для збереження та використання національних природних парків»),
+здійснюється за ставками, встановленими відповідними місцевими радами для цієї
+категорії земель — відповідно до виду їхнього цільового призначення, навіть якщо
+за класифікацією земельних угідь такі землі є лісовими
+
+22 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу фізичної особи на постанову
+Сьомого апеляційного адміністративного суду від 28 листопада 2024 року у справі
+№ 300/4732/24 за позовом Карпатського національного природного парку
+на рішення Івано-Франківського окружного адміністративного суду від 24 жовтня
+2024 року та постанову Восьмого апеляційного адміністративного суду від
+26 лютого 2025 року.
+
+ОБСТАВИНИ СПРАВИ
+Карпатський національний природний парк (далі також Парк) оскаржував
+донарахування земельного податку за січень 2024 року, вважаючи,
+що до земельних ділянок, які за класифікацією земельних угідь є лісовими (91 %
+території Парку), має застосовуватись гранична ставка 0,1 % відповідно
+до статей 274 і 277 ПК України — незалежно від цільового призначення земельної
+ділянки.
+
+Контролюючий орган, покликаючись на відомості Державного земельного
+кадастру (код цільового призначення 04.03 «для збереження та використання
+національних природних парків»; категорія земель — землі природно-заповідного
+фонду та іншого природоохоронного призначення), застосував ставки земельного
+податку, встановлені рішеннями місцевих рад (від 0,18 % до 5 % залежно від
+громади та наявності нормативної грошової оцінки).
+
+Івано-Франківський окружний адміністративний суд рішенням, залишеним без
+змін постановою Восьмого апеляційного адміністративного суду, відмовив
+у задоволенні позову.
+
+Суди ґрунтували свої висновки на тому, що визначальним критерієм для
+встановлення ставки земельного податку є цільове призначення земельної ділянки,
+зафіксоване в Державному земельному кадастрі (пункт 286.1 статті 286
+ПК України), а не класифікація земельних угідь.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а оскаржувані
+судові рішення – без змін.
+
+ОЦІНКА СУДУ
+Основним критерієм поділу земель України на категорії є цільове призначення
+земельної ділянки (частина перша статті 19 Земельного кодексу України). Саме
+відомості про цільове призначення, внесені до Державного земельного кадастру, є
+підставою для нарахування земельного податку (пункт 286.1 статті 286
+Податкового кодексу України).
+
+Статті 274, 277 ПК України встановлюють граничну ставку земельного податку
+для лісових земель у розмірі не більше 0,1 % від нормативної грошової оцінки (або
+від нормативної грошової оцінки площі ріллі по області – для земель без оцінки).
+Однак стаття 273 Податкового кодексу України чітко пов’язує ці ставки зі землями
+лісогосподарського призначення (розділ 09 Класифікатора видів цільового
+призначення).
+
+Лісові землі, розташовані в межах категорії природно-заповідного фонду
+(розділ 04 Класифікатора, зокрема код 04.03 «для збереження та використання
+національних природних парків»), не підпадають під дію зазначеної пільгової ставки,
+оскільки їхнє цільове призначення передбачає особливий правовий режим,
+відмінний від лісогосподарського.
+
+Факт покриття земель лісом (за класифікацією земельних угідь) не змінює їх
+цільового призначення і не впливає на ставку земельного податку.
+
+Детальніше з текстом постанови Верховного Суду від 22 жовтня 2025 року у справі
+№ 300/4732/24 можна ознайомитися за посиланням
+
+[https://reyestr.court.gov.ua/Review/131233027](https://reyestr.court.gov.ua/Review/131233027)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2_segment.md № 560/21804/23 40 80 20 40 земельні ділянки для традиційних народних промислів на площу загорожі та асфальтованого майданчика, включених до складу семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «земельні ділянки для традиційних народних промислів» (природні ресурси. охорона природи / склад земель / землі сільськогосподарського призначення / земельні ділянки для традиційних народних промислів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131233010" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 560/21804/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40 80 20 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb">Склад земель</span><span class="crumb-sep">›</span><span class="crumb">Землі сільськогосподарського призначення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Земельні ділянки для традиційних народних промислів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>на площу загорожі та асфальтованого майданчика, включених до складу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Земельні ділянки для традиційних народних промислів» (Природні ресурси. Охорона природи / Склад земель / Землі сільськогосподарського призначення / Земельні ділянки для традиційних народних промислів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2. Про нарахування податку на нерухоме майно, відмінне від земельної ділянки,
+на площу загорожі та асфальтованого майданчика, включених до складу
+комплексу нежитлових будівель, зареєстрованого за єдиним реєстраційним
+номером у Державному реєстрі речових прав на нерухоме майно
+
+Загорожі та асфальтові майданчики не є об’єктами нежитлової нерухомості
+у розумінні Податкового кодексу України, навіть якщо вони входять до складу
+комплексу будівель з єдиним реєстраційним номером, а тому не підлягають
+оподаткуванню податком на нерухоме майно, відмінне від земельної ділянки.
+Податковий орган зобов’язаний виключити їхню площу з бази оподаткування
+за результатами звірки, проведеної на підставі заяви платника та оригіналів
+документів (підпункт 266.7.3 Податкового кодексу України)
+
+22 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу фізичної особи на постанову
+Сьомого апеляційного адміністративного суду від 28 листопада 2024 року у справі
+№ 560/21804/23 за позовом фізичної особи до Головного управління ДПС
+в Хмельницькій області про визнання протиправним та скасування податкового
+повідомлення-рішення.
+
+ОБСТАВИНИ СПРАВИ
+
+Контролюючий орган за наслідками перевірки згідно з податковим
+повідомленням-рішенням нарахував податок на нерухоме майно, відмінне від
+земельної ділянки, з огляду на загальну площу комплексу нежитлових будівель
+4829,6 кв. м, зареєстрованого за єдиним реєстраційним номером, зокрема
+на загорожу (388,2 кв. м, літ. № 1) та асфальтований майданчик (3212 кв. м,
+літ. № 2). Платник указував, що ці об’єкти не є будівлями, не створюють об’ємного
+простору та не можуть використовуватися самостійно як окремий об’єкт
+нерухомості.
+
+Хмельницький окружний адміністративний суд рішенням від 12 липня
+2024 року частково задовольнив позов, скасувавши податкові повідомленнярішення в частині податку, нарахованого на площу огорожі та асфальтованого
+майданчика.
+
+Сьомий апеляційний адміністративний суд скасував своєю постановою
+рішення суду першої інстанції і відмовив у позові повністю, вважаючи, що база
+оподаткування визначається за даними Державного реєстру речових прав
+на нерухоме майно.
+
+Верховний Суд задовольнив касаційну скаргу, скасувавши оскаржуване судове
+рішення та залишивши чинним рішення суду першої інстанції.
+
+ОЦІНКА СУДУ
+Об’єктами оподаткування податком на нерухоме майно, відмінне від земельної
+ділянки, є виключно будівлі та їхні складові частини (підпункти 14.1.15, 14.1.129-1
+пункту 14.1 Податкового кодексу України) – об’ємні конструкції з опорними
+та огороджувальними елементами, що утворюють приміщення і можуть
+використовуватися за відповідним функціональним призначенням. Загорожа не
+
+має опорних конструкцій і не створює внутрішнього простору. Асфальтований
+майданчик є елементом благоустрою земельної ділянки, а не будівлею. Отже,
+нарахування податку на їхню площу суперечить підпункту 266.2.1 Податкового
+кодексу України.
+
+Дані Державного реєстру речових прав на нерухоме майно не мають
+безумовного характеру і можуть бути уточнені оригіналами документів платника,
+зокрема документів на право власності, які підтверджують фактичні
+характеристики об’єкта (підпункт 266.3.2 Податкового кодексу України). Якщо
+виникають розбіжності, то пріоритет мають документи, на підставі яких проведено
+реєстрацію (частина друга статті 12 Закону України від 01 липня 2004 року
+№ 1952-IV «Про державну реєстрацію речових прав на нерухоме майно та їх
+обтяжень»). Єдиний реєстраційний номер комплексу не змінює кваліфікацію
+об’єктів для цілей оподаткування.
+
+Контролюючий орган, визначаючи базу оподаткування, зобов’язаний
+враховувати не лише реєстрові дані, а й документи, надані платником,
+що підтверджують фактичну площу об’єкта оподаткування.
+
+Детальніше з текстом постанови Верховного Суду від 22 жовтня 2025 року у справі
+№ 560/21804/23 можна ознайомитися за посиланням
+
+[https://reyestr.court.gov.ua/Review/131233010](https://reyestr.court.gov.ua/Review/131233010)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.3_segment.md № 120/7999/24 270 50 адміністративне судочинство за кредитними договорами та договорами позики для застосування зменшеної мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">01.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131341640" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 120/7999/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">270 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судочинство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Адміністративне судочинство</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за кредитними договорами та договорами позики для застосування зменшеної</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.3. Про бенефіціарного (фактичного) отримувача доходу у вигляді процентів
+за кредитними договорами та договорами позики для застосування зменшеної
+ставки оподаткування податком на репатріацію доходів нерезидентів
+
+Бенефіціарним (фактичним) отримувачем доходу нерезидента є особа, яка має
+право на отримання такого доходу та визначає його подальшу економічну долю,
+не пов’язана договірними або юридичними зобов’язаннями щодо перерахування
+доходу (його більшої частини) іншій особі. Наявність корпоративної структури групи
+компаній, пов’язаності осіб чи спільних бенефіціарів не спростовує статус
+бенефіціарного власника. Обов’язок доказування відсутності такого статусу
+покладається на контрольний орган як на суб’єкта владних повноважень
+
+27 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління ДПС
+у Вінницькій області на рішення Вінницького окружного адміністративного суду від
+20 березня 2025 року та постанову Сьомого апеляційного адміністративного суду
+від 15 липня 2025 року у справі № 120/7999/24 за позовом Товариства
+з обмеженою відповідальністю «Курилівці Агро» до Головного управління ДПС
+
+у Вінницькій області про визнання протиправним і скасування податкового
+повідомлення-рішення.
+
+ОБСТАВИНИ СПРАВИ
+
+Платник виплачував відсотки за кредитними договорами та договорами
+
+позики на користь нерезидента, застосовуючи зменшену ставку податку
+на репатріацію 2 % відповідно до Конвенції між Урядом України і Урядом
+Республіки Кіпр про уникнення подвійного оподаткування. За результатами
+перевірки податковий орган дійшов висновку про відсутність у нерезидента статусу
+бенефіціарного отримувача доходу через транзит коштів та збільшив платнику
+податок за ставкою 15 %, а також застосував штрафні санкції. Платник зазначав,
+що під час виплати доходів правомірно застосував знижену ставку податку,
+оскільки є бенефіціарним власником доходу, має право самостійно розпоряджатися
+отриманими відсотками та не зобов’язаний їх передавати іншим особам.
+
+Вінницький окружний адміністративний суд рішенням, залишеним без змін
+постановою Сьомого апеляційного адміністративного суду, задовольнив позов,
+визнавши податкове повідомлення-рішення протиправним та скасувавши його.
+Суди попередніх інстанцій дійшли висновку, що саме податковий орган
+зобов’язаний у межах своїх повноважень збирати та аналізувати документи, які
+підтверджують господарську діяльність платника і податкові зобов’язання,
+у контексті обґрунтованості здійснених донарахувань у порядку, визначеному
+пунктом 54.3 статті 54 Податкового кодексу України.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а оскаржувані
+судові рішення – без змін.
+
+ОЦІНКА СУДУ
+Для встановлення статусу бенефіціарного отримувача не мають значення
+корпоративна структура та пов’язаність осіб правового характеру. Тому наявність
+корпоративної структури групи компаній, пов’язаності осіб, спільних бенефіціарів
+чи структурування активів між компаніями не є підставою для спростування
+статусу бенефіціарного власника.
+
+Контрольний орган наділений обов’язком доказувати відсутність статусу
+бенефіціарного власника (частина друга статті 77 Кодексу адміністративного
+судочинства України), тому уповноважений отримувати та аналізувати документи
+про фінансово-господарську діяльність платника (статті 19-1, 75, 85 Податкового
+кодексу України), а також визначати суми грошових зобов’язань (пункт 54.3
+статті 54 цього Кодексу). Оскільки податковий орган не довів наявності
+у нерезидента зобов’язань щодо перерахування доходу чи обмежень у визначенні
+його економічної долі, то транзит коштів через корпоративну структуру та викуп
+привілейованих акцій не спростовують статус бенефіціарного власника.
+
+Детальніше з текстом постанови Верховного Суду від 27 жовтня 2025 року у справі
+№ 120/7999/24 можна ознайомитися за посиланням
+
+[https://reyestr.court.gov.ua/Review/131341640](https://reyestr.court.gov.ua/Review/131341640)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.4_segment.md № 200/673/25 30 50 10 30 муніципальна (місцевого самоврядування) земельної ділянки, залежно від статусу території семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «муніципальна (місцевого самоврядування)» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / державна власність / муніципальна (місцевого самоврядування)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">01.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131341577" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 200/673/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 10 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb">Державна власність</span><span class="crumb-sep">›</span><span class="crumb-leaf">Муніципальна (місцевого самоврядування)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>земельної ділянки, залежно від статусу території</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Муніципальна (місцевого самоврядування)» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Державна власність / Муніципальна (місцевого самоврядування)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.4. Про звільнення від обов’язку сплати податку на нерухоме майно, відмінне від
+земельної ділянки, залежно від статусу території
+
+Обидві редакції підпункту 69.22 пункту 69 підрозділу 10 розділу ХХ «Перехідні
+положення» Податкового кодексу України не суперечать одна одній,
+а застосовуються у часі залежно від дати надання території відповідного статусу:
+до 06 травня 2023 року — території, на яких ведуться / велися бойові дії; після
+06 травня 2023 року — території активних бойових дій. Такі території не обов’язково
+збігаються за площею та місцем розташування об’єктів, щодо яких надається
+пільга зі сплати податку на нерухоме майно, відмінне від земельної ділянки
+
+28 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління ДПС
+у Донецькій області на рішення Донецького окружного адміністративного суду від
+21 травня 2025 року та постанову Першого апеляційного адміністративного суду від
+28 серпня 2025 року у справі № 200/673/25 за первинним позовом Головного
+управління ДПС у Донецькій області до фізичної особи про стягнення податкового
+боргу та за зустрічним позовом фізичної особи до Головного управління ДПС
+у Донецькій області про визнання протиправними та скасування податкових
+повідомлень-рішень.
+
+ОБСТАВИНИ СПРАВИ
+
+Фізична особа є власником об’єктів житлової та нежитлової нерухомості,
+розташованої в Покровській міській територіальній громаді Покровського району
+Донецької області. Податковий орган сформував та надіслав платникові податкові
+повідомлення-рішення про нарахування податку на нерухоме майно, відмінне від
+земельної ділянки, з якими платник не погодився, покликаючись на звільнення від
+обов’язку сплати податку відповідно до підпункту 69.22 пункту 69 підрозділу 10
+розділу ХХ «Перехідні положення» Податкового кодексу України та порушення
+строків надсилання повідомлень-рішень.
+
+Донецький окружний адміністративний суд рішенням, залишеним без змін
+постановою Першого апеляційного адміністративного суду, частково задовольнив
+позов податкового органу, стягнувши з фізичної особи податковий борг за об’єкти
+нежитлової нерухомості за період до 01 березня 2022 року. Зустрічний позов
+фізичної особи було також задоволено частково. Суди попередніх інстанцій дійшли
+висновку про звільнення платника від обов’язку сплати податку за об’єкти житлової
+нерухомості за 2021–2022 роки та за об’єкти нежитлової нерухомості з 01 березня
+
+2022 року відповідно до редакції підпункту 69.22 пункту 69 підрозділу 10 розділу ХХ
+«Перехідні положення» Податкового кодексу України, що діяла до 06 травня
+2023 року, зважаючи на розташування нерухомості на територіях, на яких
+ведуться /велися бойові дії.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а оскаржувані
+судові рішення – без змін.
+
+ОЦІНКА СУДУ
+Порушення порядку розгляду справи в спрощеному позовному провадженні
+в разі наявності зустрічного позову не унеможливило встановлення фактичних
+обставин, що мають значення для правильного вирішення справи, тому не є
+підставою для скасування судових рішень (пункт 2 частини другої статті 353
+Кодексу адміністративного судочинства України).
+
+Підпункт 69.22 пункту 69 підрозділу 10 розділу ХХ «Перехідні положення»
+Податкового кодексу України в редакції, що діяла до 06 травня 2023 року,
+регламентував звільнення від нарахування та сплати податку за 2021 та 2022 роки
+за об’єкти житлової нерухомості; з 01 березня 2022 року до 31 грудня 2022 року
+за об’єкти нежитлової нерухомості, розташовані на територіях, на яких
+ведуться /велися бойові дії. Редакція цього підпункту, чинна з 06 травня 2023 року),
+встановлює звільнення за аналогічні періоди, але лише за об’єкти, розташовані
+на територіях активних бойових дій або тимчасово окупованих територіях, а також
+за пошкоджене / знищене майно. Обидві редакції вказаного підпункту не
+суперечать одна одній, а підлягають застосуванню для нерухомого майна,
+відмінного від земельної ділянки, яке знаходиться на територіях, визначених
+у вказаному пункті залежно від дати отримання відповідного статусу: до 06 травня
+2023 року — території, на яких ведуться /велися бойові дії, після 06 травня
+2023 року — території активних бойових дій. Ці території не обов’язково
+збігалися / збігаються за площею та місцем розташування об’єктів, стосовно яких
+надається пільга.
+
+Оскільки оскаржувані податкові повідомлення-рішення було сформовано щодо
+правовідносин, які виникли до набрання чинності нової редакції підпункту 69.22
+пункту 69 підрозділу 10 розділу ХХ «Перехідні положення» Податкового кодексу
+України, потрібно застосовувати редакцію, що діяла до 06 травня 2023 року.
+Оскільки нерухомість фізичної особи розташована на території, де ведуться /велися
+бойові дії (з 24 лютого 2022 року), то платник звільнений від обов’язку сплати
+податку за об’єкти житлової нерухомості за 2021–2022 роки та за об’єкти
+нежитлової нерухомості з 01 березня 2022 року.
+
+Детальніше з текстом постанови Верховного Суду від 28 жовтня 2025 року у справі № 200/673/25
+[можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/131341577](https://reyestr.court.gov.ua/Review/131341577)
+
+ІІ. СПРАВИ, РОЗГЛЯНУТІ СУДОВОЮ ПАЛАТОЮ З РОЗГЛЯДУ СПРАВ ЩОДО ЗАХИСТУ
+СОЦІАЛЬНИХ ПРАВ
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.01.2023_segment.md № 380/3973/23 150 40 економічні зони, райони. спеціальні (вільні) економічні зони визначено райони ведення воєнних (бойових) дій з 01 грудня 2022 року по семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «економічні зони, райони. спеціальні (вільні) економічні зони» (загальні засади правового регулювання економічного розвитку / економічні зони, райони. спеціальні (вільні) економічні зони).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">02.01.2023_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131215385" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 380/3973/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Економічні зони, райони. Спеціальні (вільні) економічні зони</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>визначено райони ведення воєнних (бойових) дій з 01 грудня 2022 року по</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Економічні зони, райони. Спеціальні (вільні) економічні зони» (Загальні засади правового регулювання економічного розвитку / Економічні зони, райони. Спеціальні (вільні) економічні зони).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">02.01.2023 № 1 &quot;Про визначення районів ведення воєнних (бойових) дій&quot;, яким
+визначено райони ведення воєнних (бойових) дій з 01 грудня 2022 року по
+31 грудня 2022 року (зокрема, Луганська та Донецька області), у наказі
+Головнокомандувача Збройних Сил України від 02 лютого 2023 року № 26 &quot;Про
+визначення районів ведення воєнних (бойових) дій&quot; визначено райони ведення
+воєнних (бойових) дій з 01 січня 2023 року по 31 січня 2023 року конкретизовано
+територіальні громади вказаних областей, в яких велись воєнні (бойові) дії, зокрема
+у Краматорському районі Донецької області до районів ведення бойових дій
+віднесено лише Лиманську міську територіальну громаду та Константинівську
+міську територіальну громаду.
+
+Суди попередніх інстанцій частково задовольнили позов. Визнали
+протиправною бездіяльність Військової частини щодо неповного нарахування
+та виплати позивачу збільшеної до 100000 грн додаткової винагороди
+та зобов&#x27;язано нарахувати та виплатити позивачу, збільшену до 100000 грн
+додаткову винагороду за 22 доби грудня 2022 року. В іншій частині позовних вимог
+відмовлено.
+
+Верховний Суд касаційну скаргу залишив без задоволення, рішення судів
+попередніх інстанцій- без змін.
+
+ОЦІНКА СУДУ
+Перелік бойових дій та заходів у районах ведення бойових дій, із виконанням
+яких, пов&#x27;язано право військовослужбовців на отримання підвищеної додаткової
+винагороди не розрізняє двох видів діяльності, встановлених Постановою № 168,
+з яких лише перший (безпосередня участь у бойових діях) передбачає
+безпосереднє зіткнення з противником; водночас у багатьох випадках якісне
+виконання завдання, що належить до другого виду, не вимагає (але й не виключає)
+вступу у безпосереднє зіткнення з противником.
+
+Отже, доповнення обставин, які визначають підставу виникнення
+у військовослужбовців права на таку винагороду у зв`язку із «забезпеченням
+здійснення заходів з національної безпеки і оборони, відсічі і стримування
+збройної агресії безпосередньо в районах їх [бойових дій] ведення (здійснення)»
+
+вимогою її поєднання із «вогневим ураженням або безпосереднім зіткненням
+з противником» є по суті не умовами нарахування та виплати підвищеної
+додаткової винагороди, а зміною підстав, встановлених Постановою № 168 для
+набуття військовослужбовцем права на підвищену додаткову винагороду,
+що фактично є звуженням обсягу таких підстав актом нижчої юридичної сили
+порівняно з актом, яким такі підстави встановлено.
+
+Доповнення підстав для нарахування та виплати додаткової винагороди,
+передбаченої Постановою № 168, які визначають право військовослужбовців
+на підвищену додаткову винагороду, вимогами «безпосереднього зіткнення
+з противником» та «вогневого ураження», коли це не обумовлено природою
+відповідних бойових завдань, таких як забезпечення здійснення заходів
+з національної безпеки і оборони, відсічі і стримування збройної агресії
+безпосередньо в районах їх (бойових дій) ведення (здійснення), порушує вимогу,
+щоб акти нижчої юридичної сили не суперечили актам вищої сили. У випадку
+виникнення такої колізії загальновизнаним способом її вирішення є надання
+переваги акту вищої юридичної сили.
+
+Детальніше з текстом постанови Верховного Суду від 21 жовтня 2025 року у справі №
+380/3973/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/131215385
+
+IV. ПРОЦЕС
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md № 420/13307/23 30 50 10 10 загальнодержавна власності на об’єкти незавершеного будівництва семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «загальнодержавна» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / державна власність / загальнодержавна).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131215615" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 420/13307/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 10 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb">Державна власність</span><span class="crumb-sep">›</span><span class="crumb-leaf">Загальнодержавна</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>власності на об’єкти незавершеного будівництва</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Загальнодержавна» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Державна власність / Загальнодержавна).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.2. Про відсутність правових підстав для визнання в судовому порядку права
+власності на об’єкти незавершеного будівництва
+
+До виникнення права власності на новозбудоване нерухоме майно право власності
+існує лише на матеріали, обладнання та інше майно, що було використано
+в процесі будівництва. Особа стає власником новоствореного об’єкта нерухомості
+після завершення його будівництва, прийняття нерухомого майна до експлуатації
+та державної реєстрації. Таким чином, право власності на новостворене нерухоме
+майно як об’єкт цивільних прав виникає з моменту державної реєстрації права.
+Законодавством не передбачено можливості звернення до суду з вимогою про
+визнання права власності на об’єкт незавершеного будівництва, який не прийнято
+у встановленому законом порядку до експлуатації. У такому випадку об’єкт
+незавершеного будівництва ще не набув статусу нерухомого майна як об’єкта
+цивільного права
+
+20 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Особа_1 на рішення Одеського
+окружного адміністративного суду від 21 серпня 2023 року та постанову П’ятого
+
+апеляційного адміністративного суду від 10 квітня 2024 року у справі
+№ 420/13307/23 за позовом Особа_1 до Юридичного департаменту Одеської
+міської ради, державного реєстратора Юридичного департаменту Одеської міської
+ради про визнання протиправним та скасування рішення про відмову у державній
+реєстрації прав та їх обтяжень.
+
+ОБСТАВИНИ СПРАВИ
+
+Матір позивачки у 1987 році придбала за договором купівлі-продажу
+житловий будинок з господарськими спорудами загальною площею 26,1 кв.м.
+Покупець у 1988 році отримала дозвіл на проведення реконструкції цього будинку
+в існуючих розмірах. Після смерті матері спадщину на зазначене майно прийняли
+її діти — зокрема позивачка та її брат. Після смерті брата між спадкоємцями було
+укладено мирову угоду, затверджену судовим рішенням, якою визнано
+за позивачкою право користування частиною земельної ділянки та право
+власності на будівельні матеріали, з яких зведено 65/100 частин житлового
+будинку. У листопаді 2022 року позивачка подала заяву до управління державної
+реєстрації юридичного департаменту Одеської міської ради про державну
+реєстрацію права власності на будинок загальною площею 32,8 кв.м, надавши
+відповідні документи, у тому числі ухвалу суду та мирову угоду. Державний
+реєстратор відмовив у державній реєстрації, посилаючись на відсутність
+відомостей про прийняття будинку в експлуатацію та присвоєння адреси.
+Уважаючи рішення про відмову у державній реєстрації прав та їх обтяжень
+
+протиправним, позивач звернулася до суду з цим позовом.
+
+Суд першої інстанції рішенням, залишеним без змін постановою апеляційного
+адміністративного суду, у задоволенні позову відмовив. Суди попередніх інстанцій
+виходили із того, що державна реєстрація права власності на закінчений
+будівництвом об’єкт проводиться за наявності відомостей, зокрема, про прийняття
+його в експлуатацію, а позивачкою не надано державному реєстратору таких
+відомостей по спірному об’єкту нерухомого майна, тому суд дійшов висновку про
+наявність правових підстав для відмови у проведенні державної реєстрації права
+власності на такий об’єкт, що свідчить про правомірність оскаржуваного рішення.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення судів
+попередніх інстанцій без змін.
+
+ОЦІНКА СУДУ
+До реєстрації права власності на новозбудоване нерухоме майно особа є
+власником лише матеріалів, обладнання та іншого майна, що було використано
+в процесі будівництва. Це правило застосовується лише при наявності усієї
+дозвільної документації, тобто документів, що підтверджують право власності
+або користування земельною ділянкою для створення об’єкта нерухомого майна,
+
+дозволу на виконання будівельних робіт, а також документів, що містять опис
+об`єкта незавершеного будівництва.
+
+Отже, законодавством не передбачено можливості звернення до суду
+з вимогою про визнання права власності на об’єкт незавершеного будівництва,
+який не прийнято у встановленому законом порядку до експлуатації. У такому
+випадку об’єкт незавершеного будівництва ще не набув статусу нерухомого майна
+як об`єкта цивільного права.
+
+Ураховуючи, що пунктом 77 Порядку державної реєстрації речових прав
+на нерухоме майно та їх обтяжень, затверджений постановою Кабінету Міністрів
+України від 25 грудня 2015 року № 1127 передбачено, що державна реєстрація
+права власності на закінчений будівництвом об’єкт проводиться за наявності
+відомостей, зокрема, про прийняття його в експлуатацію, а позивачкою не надано
+державному реєстратору таких відомостей по спірному об’єкту нерухомого майна,
+Верховний Суд погодився з висновком судів попередніх інстанцій про наявність
+правових підстав для відмови у проведенні державної реєстрації права власності
+на такий об`єкт, що свідчить про правомірність оскаржуваного рішення.
+
+Детальніше з текстом постанови Верховного Суду від 20 жовтня 2025 року у справі
+№420/13307/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/131215615
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 420/32668/23 30 50 10 10 загальнодержавна структури власності юридичної особи семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «загальнодержавна» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / державна власність / загальнодержавна).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/130705325" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 420/32668/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 10 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb">Державна власність</span><span class="crumb-sep">›</span><span class="crumb-leaf">Загальнодержавна</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>структури власності юридичної особи</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Загальнодержавна» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Державна власність / Загальнодержавна).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.1. Про правову природу інформації Національного банку України щодо прозорості
+структури власності юридичної особи
+
+Правова природа інформації від Національного банку України, як результат
+прийнятого ним рішення зберігає свою значущість, поки саме рішення
+Національного банку України не скасоване або не втрачає чинності в інший спосіб.
+Таке тлумачення пункту 5 частини першої статті 9 Закону України від
+15 травня 2003 року № 755-IV «Про державну реєстрацію юридичних осіб, фізичних
+осіб - підприємців та громадських формувань» узгоджується із положеннями, які
+перелічують джерела формування Єдиного державного реєстру юридичних осіб,
+фізичних осіб-підприємців та громадських формувань, не встановлюючи
+спеціальних часових умов відправлення інформації як підстави для її внесення
+
+02 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув Приватного акціонерного товариства «Одеська
+регіональна страхова компанія» на рішення Одеського окружного
+адміністративного суду від 07 лютого 2024 року та постанову П’ятого апеляційного
+адміністративного суду від 13 червня 2024 року у справі № 420/32668/23
+за позовом Приватного акціонерного товариства «Одеська регіональна страхова
+компанія» до Національного банку України, Міністерства юстиції України про
+визнання протиправним та скасування рішення про визнання структури власності
+
+непрозорою.
+
+ОБСТАВИНИ СПРАВИ
+
+ПрАТ «Одеська регіональна страхова компанія», зареєстроване як фінансова
+установа з 2004 року, повідомило НБУ про зміну структури власності у січні
+2023 року. НБУ виявив невідповідність структури власності товариства окремим
+вимогам, передбаченим у розділі III Положення про вимоги до структури власності
+надавачів фінансових послуг затвердженого постановою Правління НБУ
+від 14 квітня 2021 року № 30, та надав строк для приведення структури власності
+у відповідність до вказаних вимог. У зв’язку з тим, що позивач не виконав ці
+вимоги НБУ прийнято рішення від 8 травня 2023 року про визнання структури
+власності товариства непрозорою. НБУ листом від 05 липня 2023 року
+поінформував Міністерство юстиції України, яке направило до органу державної
+реєстрації вказівку про внесення відповідної відмітки до Єдиного державного
+реєстру юридичних осіб, фізичних осіб-підприємців та громадських формувань.
+Позивач вважав, що НБУ не мав права складати та надсилати на адресу Мін’юсту
+
+вказаний лист, оскільки на момент його складання та надсилання, позивач вже не
+мав ліцензії на здійснення страхової діяльності та був виключений з Державного
+реєстру фінансових установ на підставі рішення відповідача від 30 червня 2023
+
+року.
+
+Рішенням окружного адміністративного суду, залишеним без змін постановою
+апеляційного адміністративного суду, у задоволенні позову відмовлено. Суди
+дійшли висновку, що лист від 05 липня 2023 року не є рішенням відповідно
+до Закону України від 20 травня 1999 року № 679-XIV «Про Національний банк
+України», однак звернули увагу, що відповідний лист породжує правові наслідки,
+оскільки у зв’язку із його підписанням та направленням на адресу Мін’юсту,
+у останнього виник обов’язок направити вказівку державному реєстратору про
+внесення відмітки про непрозору структуру власності позивача. Тому суди вважали
+вказаний лист не рішенням (актом індивідуальної дії), а саме діями, вчиненими НБУ
+відносно прав та обов’язків позивача. Оскільки було прийнято рішення про
+визнання структури власності позивача непрозорою, то відповідно НБУ був
+зобов’язаний звернутися до Мін’юсту з листом-повідомленням про прийняття
+відповідного рішення. Враховуючи, що рішення про визнання структури власності
+позивача непрозорою прийнято ще під час визначення позивача як фінансової
+установи та наявності відомостей щодо нього в Державному реєстрі фінансових
+установ, НБУ, направляючи лист, діяв відповідно до вимог законодавства.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення судів
+попередніх інстанцій без змін.
+
+ОЦІНКА СУДУ
+Верховний Суд визнав необґрунтованими доводи позивача щодо
+незастосування судами попередніх інстанцій до спірних правовідносин положень
+пункту 5 частини першої статті 9 Закону України від 15 травня 2003 року № 755-IV
+«Про державну реєстрацію юридичних осіб, фізичних осіб - підприємців
+та громадських формувань» (далі – Закон № 755-IV) відповідно до яких,
+до державного реєстру вносяться відомості, які надходять від НБУ, виключно
+за умови, що вони стосуються юридичних осіб, державне регулювання та нагляд
+за діяльністю яких здійснює НБУ.
+
+Системне тлумачення цієї норми показує, що мова йде про вид відомостей, які
+вносяться до Єдиного державного реєстру, а саме: інформація від НБУ про
+визнання структури власності юридичної особи, державне регулювання та нагляд
+за діяльністю якої здійснює НБУ, непрозорою (прозорою). Отже, норма визначає
+джерело відомостей (НБУ) і характер юридичних осіб, щодо яких НБУ має
+компетенцію (тобто ті, щодо яких відповідно до закону здійснюється державне
+регулювання і нагляд НБУ).
+
+Вказана норма права не містить необхідної граматичної або смислової
+конструкції, яка б прямо обумовлювала відмову у внесенні відомостей до Єдиного
+державного реєстру у разі, коли юридична особа вже виведена з-під регулювання
+НБУ після прийняття рішення щодо непрозорості.
+
+Отже, правова природа інформації від НБУ, як результат прийнятого ним
+рішення зберігає свою значущість, поки саме рішення НБУ не скасоване або не
+втрачає чинності в інший спосіб. Таке тлумачення пункту 5 частини першої статті 9
+Закону № 755-IV узгоджується із положеннями, які перелічують джерела
+формування Єдиного державного реєстру, не встановлюючи (у цій статті)
+спеціальних часових умов відправлення інформації як підстави для її внесення.
+
+Оскаржуваний позивачем лист НБУ, складений та направлений до Мін’юсту
+на підставі рішення від 08 травня 2023 року про визнання структури власності
+товариства непрозорою, яке було прийняте під час перебування позивача під
+наглядом НБУ. Своєю чергою рішення про визнання структури власності позивача
+непрозорою прийнято під час визначення позивача як фінансової установи
+та наявності відомостей щодо нього в Державному реєстрі фінансових установ.
+
+Детальніше з текстом постанови Верховного Суду від 02 жовтня 2025 року у справі
+№ 420/32668/23 можна ознайомитися за посиланням
+
+https://reyestr.court.gov.ua/Review/130705325
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.3_segment.md № 420/16547/24 200 30 комісійна торгівля відсоткового розподілу житлових приміщень семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «комісійна торгівля» (законодавство з питань торгівлі та громадського харчування. побутове обслуговування населення / комісійна торгівля).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">02.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131232811" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 420/16547/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">200 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань торгівлі та громадського харчування. Побутове обслуговування населення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Комісійна торгівля</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>відсоткового розподілу житлових приміщень</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Комісійна торгівля» (Законодавство з питань торгівлі та громадського харчування. Побутове обслуговування населення / Комісійна торгівля).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.3. Про відсутність у житлових комісій гарнізонів повноважень щодо визначення
+відсоткового розподілу житлових приміщень
+
+Житлові комісії гарнізонів не мають повноважень визначати відсотковий розподіл
+житлових приміщень. Натомість розподіл житла затверджується заступником
+Міністра оборони України (відповідно до розподілу обов’язків) на основі
+пропозицій, наданих визначеним органом, як це передбачено Інструкцією
+з організації забезпечення військовослужбовців Збройних Сил України та членів їх
+сімей жилими приміщеннями, затвердженої наказом Міністерства оборони України
+від 31 липня 2018 року № 380
+
+22 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Особа_1 на рішення Одеського
+окружного адміністративного суду від 07 листопада 2024 року та постанову П’ятого
+апеляційного адміністративного суду від 01 квітня 2025 року у справі
+№ 420/16547/24 за позовом Особа_1 до житлової комісії Одеського гарнізону,
+начальника гарнізону міста Одеси про визнання незаконним та скасування
+протоколу засідання житлової комісії Одеського гарнізону в частині визначення
+відсоткового розподілу житлових приміщень (квартир).
+
+ОБСТАВИНИ СПРАВИ
+Позивач (підполковник запасу) перебуває на квартирному обліку в Одеському
+гарнізоні для забезпечення постійним житлом за рахунок житлового фонду
+Міністерства оборони України. Житлова комісія Одеського гарнізону на засіданні
+28 березня 2024 року розглянула питання визначення відсоткового розподілу
+новонадходженого житла - 38 квартир. Комісія встановила відсотковий розподіл
+житла: 10% — для забезпечення житловими приміщеннями для постійного
+проживання військовослужбовців, які захищали незалежність, суверенітет
+та територіальну цілісність України та визнані в установленому законодавством
+порядку особами з інвалідністю, 30% — для забезпечення військовослужбовців
+згідно з узагальненими списками осіб, які потребують поліпшення житлових умов
+шляхом надання жилих приміщень для постійного проживання, 70% — для
+забезпечення військовослужбовців згідно з списками військовослужбовців, які
+потребують поліпшення житлових умов шляхом забезпечення службовими жилими
+приміщеннями. Вважаючи протиправними дії відповідачів щодо визначення
+відсоткового розподілу новонадходженого житла, позивач звернувся до суду
+
+за захистом свого порушеного права.
+
+Рішенням окружного адміністративного суду у задоволені позовних вимог
+відмовлено. Відмовляючи у задоволенні позовних вимог суд першої інстанції
+виходив із того, що ухвалення житловою комісією пропозицій щодо визначення
+відсоткового розподілу житлових приміщень (квартир) не створює правових
+наслідків для позивача.
+
+Постановою суду апеляційної інстанції змінено рішення суду першої інстанції
+шляхом виключення із мотивувальної частини висновку суду першої інстанції:
+«алгоритм визначення пропорції Інструкція не містить, що свідчить про дискреційну
+складову в аспекті прийняття відповідного рішення комісією», в решті рішення суду
+першої інстанції залишено без змін.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення судів
+попередніх інстанцій без змін.
+
+ОЦІНКА СУДУ
+Верховний Суд на підставі аналізу положень Інструкції з організації
+забезпечення військовослужбовців Збройних Сил України та членів їх сімей жилими
+приміщеннями, затвердженої наказом Міністерства оборони України від
+31 липня 2018 року № 380 (далі – Інструкція № 380) зазначив, що житлові комісії
+гарнізонів не мають повноважень визначати відсотковий розподіл житлових
+приміщень. Натомість розподіл житла затверджується заступником Міністра
+оборони України (відповідно до розподілу обов’язків) на основі пропозицій,
+наданих визначеним органом, як це передбачено Інструкцією № 380.
+
+Суд звернув увагу, що у справі № 420/39259/24 цей же позивач оскаржував
+рішення заступника Міністра оборони України від 25 листопада 2024 року про
+затвердження розподілу тих самих 38 квартир, щодо яких житлова комісія
+Одеського гарнізону попередньо визначала відсотковий розподіл. За результатами
+розгляду справи № 420/39259/24 суди задовольнили позов, дійшовши висновку,
+що загальна кількість сімей, які мають право на житло для постійного проживання,
+становить 1656 осіб, включаючи 765 військовослужбовців, які наразі проходять
+службу, та які безпідставно включені у кількість сімей, які знаходяться в черзі
+на отримання службового приміщення, а тому затверджений розподіл житлових
+приміщень був здійснений без урахування права цих осіб на постійне житло,
+що суперечить обліковим даним та штучно порушив визначення пропорційності
+службового житла та житла для постійного проживання, що призводить
+до обмеження прав військовослужбовців на отримання житла для постійного
+
+проживання.
+
+Водночас, у справі № 420/16547/24 позивач звернувся до суду з позовом про
+визнання незаконним та скасування протоколу засідання житлової комісії
+Одеського гарнізону від 28 березня 2024 року в частині визначення відсоткового
+розподілу житлових приміщень (квартир).
+
+Враховуючи викладене, колегія суддів Верховного Суду погодилась
+з висновками судів попередніх інстанцій, що ухвалене житловою комісією
+Одеського гарнізону рішення щодо визначення відсоткового розподілу житлових
+приміщень (квартир) не створює правових наслідків для позивача.
+
+Детальніше з текстом постанови Верховного Суду від 22 жовтня 2025 року у справі
+№420/16547/24 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/131232811
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.4_segment.md № 200/5372/24 100150 10 науково-технічна інформація навчання за бакалаврським рівнем вищої освіти в іншому вищому навчальному семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «науково-технічна інформація» (законодавство з питань освіти, науки, культури / наука і наукові заклади / науково-технічна інформація).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">02.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131409264" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 200/5372/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>75% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100150 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Наука і наукові заклади</span><span class="crumb-sep">›</span><span class="crumb-leaf">Науково-технічна інформація</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>навчання за бакалаврським рівнем вищої освіти в іншому вищому навчальному</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Науково-технічна інформація» (Законодавство з питань освіти, науки, культури / Наука і наукові заклади / Науково-технічна інформація).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.4. Про послідовність здобуття освіти у разі продовження особою незавершеного
+навчання за бакалаврським рівнем вищої освіти в іншому вищому навчальному
+закладі з того ж самого курсу
+
+Здобуття першого (бакалаврського) рівня вищої освіти розпочинається з моменту
+зарахування особи до відповідного навчального закладу та закінчується у момент
+її відрахування з нього у зв’язку з успішним виконанням освітньої програми
+та врученням передбаченого законом документа про вищу освіту, зокрема,
+диплома бакалавра встановленого зразка. Тому продовження навчання
+за бакалаврським рівнем вищої освіти особою, яка має лише повну загальну
+середню освіту і жоден документ про вищу освіту раніше не отримувала, в іншому
+вищому навчальному закладі з того ж самого курсу, з якого вона була відрахована
+з попереднього навчального закладу, за тією ж спеціальністю і освітньою
+
+програмою – не може вважатись повторним здобуттям вищої освіти й, незалежно
+від тривалості та перерв у навчанні, не порушує послідовність здобуття освіти
+у розумінні частини другої статті 10 Закону України від 05 вересня 2017 року №
+2145-VIII «Про освіту»
+
+29 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Особа_1 на рішення Донецького
+окружного адміністративного суду від 09 жовтня 2024 року та постанову Першого
+апеляційного адміністративного суду від 23 грудня 2024 року справі № 200/5372/24
+за позовом Особа_1 до Міністерства освіти і науки України, третя особа, яка не
+заявляє самостійних вимог щодо предмета спору на стороні відповідача, –
+Державне підприємство «Інфоресурс», про визнання протиправними дій щодо
+формування довідки з Єдиної державної електронної бази з питань освіти (ЄДЕБО),
+яка видана позивачу, із зазначенням відомостей про порушення послідовності
+здобуття освіти.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач має атестат про повну загальну середню освіту та у період
+з 01 вересня 2012 року по 01 квітня 2015 навчався у Донецькому державному
+університеті управління за спеціальністю «менеджмент», звідки був відрахований
+з третього курсу. З 15 вересня 2022 року він є студентом третього курсу першого
+(бакалаврського) рівня вищої освіти за тією ж самою спеціальністю у Донбаському
+державному педагогічному університеті. З метою оформлення відстрочки від
+призову позивач отримав довідку з ЄДЕБО від 05 червня 2024 року, у якій
+зазначено про порушення послідовності здобуття освіти відповідно до частини
+другої статті 10 Закону України від 05 вересня 2017 року № 2145-VIII «Про освіту»
+(далі – Закон № 2145-VIII). Звернувшись до відповідача за відповідними
+роз’ясненнями позивач отримав відповідь про те, що після відрахування
+з університету у 2015 році позивач повторно зарахований у 2022 році на той самий
+рівень освіти (бакалавра), тому здобуває освіту у непослідовному порядку,
+що й відображено у довідці ЄДЕБО. Не погоджуючись з вказаною відповіддю
+
+позивач звернувся до суду.
+
+Рішенням окружного адміністративного суду, залишеним без змін постановою
+суду апеляційної інстанції, у задоволені позовних вимог відмовлено. Відмовляючи
+у задоволенні позову, суди попередніх інстанцій виходили з того, що після першого
+зарахування на навчання для здобуття відповідного рівня вищої освіти, особі, яка
+приступила до навчання, впродовж періоду навчання надавалися необхідні освітні
+послуги, які забезпечували, зокрема, формування знань, умінь, навичок
+та загальних компетентностей на відповідному рівні вищої освіти. Повторне
+зарахування означає, що особа знову формуватиме такі знання, уміння, навички
+
+та загальні компетентності на тому самому рівні вищої освіти. Суди вважали,
+що у розумінні визначеної законом послідовності здобуття освіти такі обставини,
+які мають місце у цьому спорі, свідчать про здобуття вищої освіти
+в непослідовному порядку.
+
+Верховний Суд задовольнив касаційну скаргу, скасував рішення судів
+попередніх інстанцій та ухвалив нове судове рішення про задоволення позову.
+
+ОЦІНКА СУДУ
+Нормативне визначення поняття «послідовності поточного здобуття освіти»
+у законі відсутнє, однак зі змісту норм частини другої статті 10 Закону № 2145-VIII
+розуміється, зокрема, що перший (бакалаврський) рівень вищої освіти є вищим
+за раніше здобутий особою рівень повної загальної середньої освіти й така
+послідовність здобуття освіти відповідає положенням зазначеної статті.
+
+При цьому закон передбачає, що особі, яка успішно виконала відповідну
+освітню програму та пройшла атестацію, присуджується відповідний ступень вищої
+освіти, у тому числі бакалавр, та видається документ про вищу освіту, зокрема,
+диплом бакалавра. З моменту отримання документа про вищу освіту особа
+вважається такою, що завершила навчання і фактично здобула вищу освіту
+за відповідним ступенем.
+
+З’ясовані у цій справі обставини підтверджують, що позивач раніше не
+отримував жодного документа про вищу освіту, у тому числі за ступенем вищої
+освіти – бакалавр. За таких обставин справи та наявного у спірних
+правовідносинах правового регулювання суд касаційної інстанції дійшов висновку,
+що послідовність здобуття позивачем освіти відповідає положенням частини другої
+статті 10 Закону № 2145-VIII, оскільки позивач здобуває перший (бакалаврський)
+рівень вищої освіти, який є вищим за раніше здобутий ним рівень повної загальної
+середньої освіти.
+
+Тобто позивач у цьому випадку фактично продовжив навчання у іншому
+вищому навчальному закладі з того ж самого курсу, з якого він був відрахований
+з попереднього навчального закладу, та за тією ж спеціальністю і освітньою
+програмою, що спростовує підтримані судами попередніх інстанцій доводи
+відповідача про те, що в цьому випадку мало місце повторне отримання позивачем
+одних і тих самих освітніх послуг й повторне формування відповідних знань, умінь,
+навичок та загальних компетентностей на тому самому рівні вищої освіти.
+
+Детальніше з текстом постанови Верховного Суду від 29 жовтня 2025 року у справі №
+200/5372/24 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/131409264
+
+ІІІ. СПРАВИ, РОЗГЛЯНУТІ СУДОВОЮ ПАЛАТОЮ З РОЗГЛЯДУ СПРАВ ЩОДО
+ВИБОРЧОГО ПРОЦЕСУ ТА РЕФЕРЕНДУМУ, А ТАКОЖ ЗАХИСТУ ПОЛІТИЧНИХ ПРАВ
+ГРОМАДЯН
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.03_segment.md № 380/3973/23 70 70 10 книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах винагороди актами нижчої юридичної сили семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (законодавство про шлюб і сім&#x27;ю / акти громадянського стану. загс / книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">03.03_segment.md</span>
+            <span class="file-badge">№ 380/3973/23</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 70 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb">Акти громадянського стану. ЗАГС</span><span class="crumb-sep">›</span><span class="crumb-leaf">Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>винагороди актами нижчої юридичної сили</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (Законодавство про шлюб і сім&#x27;ю / Акти громадянського стану. ЗАГС / Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.3. Про недопустимість звуження підстав для виплати підвищеної додаткової
+винагороди актами нижчої юридичної сили
+
+Доповнення підстав для нарахування та виплати додаткової винагороди,
+передбаченої постановою Кабінету Міністрів України від 28 лютого 2022 року №168
+«Питання деяких виплат військовослужбовцям, особам рядового і начальницького
+складу, поліцейським та їх сім`ям під час дії воєнного стану», які визначають право
+військовослужбовців на підвищену додаткову винагороду, вимогами
+«безпосереднього зіткнення з противником» та «вогневого ураження», коли це не
+обумовлено природою відповідних бойових завдань, таких як забезпечення
+здійснення заходів з національної безпеки і оборони, відсічі і стримування
+збройної агресії безпосередньо в районах їх (бойових дій) ведення (здійснення),
+порушує вимогу, щоб акти нижчої юридичної сили не суперечили актам вищої сили.
+У випадку виникнення такої колізії загальновизнаним способом її вирішення є
+надання переваги акту вищої юридичної сили
+
+21 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Військової частини на рішення
+Львівського окружного адміністративного суду від 08 вересня 2023 року
+та постанову Восьмого апеляційного адміністративного суду від 18 грудня 2023
+року у справі № 380/3973/23 за позовом Особа_1 до Військової частини про
+визнання протиправною бездіяльності щодо неповного нарахування та виплати
+додаткової винагороди військовослужбовцю.
+
+ОБСТАВИНИ СПРАВИ
+Позивач проходить військову службу на посаді старшого офіцера (старшого
+оперуповноваженого) відділу організації оперативно-розшукової діяльності
+головного оперативно-розшукового відділу Військової частини
+та з 23 листопада 2022 року приймає безпосередню участь у бойових діях,
+забезпечує здійснення заходів з національної безпеки і оборони, відсічі
+і стримування збройної агресії в Донецькій та Луганській областях,
+що підтверджується довідкою Військовою частиною. Позивачу за грудень 2022
+та січень 2023 року виплачена додаткова винагорода в розмірі: 30 000 грн
+на місяць, відповідно до положень постанови Кабінету Міністрів України «Питання
+деяких виплат військовослужбовцям, особам рядового і начальницького складу,
+поліцейським та їх сім’ям під час дії воєнного стану» від 28 лютого 2022 року № 168
+(далі - Постанова № 168), пропорційно до кількості діб участі позивача у діях
+та заходах. Однак Військова частина протиправно недоплатила позивачу збільшену
+додаткову винагороду на суму до 70 000 гривень на місяць, пропорційно кількості
+діб проходження служби та виконання завдань в районах ведення воєнних
+
+(бойових) дій, у грудні 2022 року та січні 2023 року, оскільки відповідно до бойових
+розпоряджень, позивач щоденно приймав безпосередню участь у бойових діях,
+забезпеченні здійснення заходів з національної безпеки і оборони, відсічі
+і стримування збройної агресії, перебуваючи безпосередньо в районах ведення
+воєнних (бойових) дій (проведення заходів) у першому ешелоні оборони у складі
+оперативно-тактичного угрупування. Відповідач вказував, що позивач не перебував
+в зоні активних бойових дій, він виконував обов&#x27;язки в населених пунктах, які не
+знаходяться на території між позиціями сил оборони та позиціями військ агресора,
+позаяк на відміну від наказу Головнокомандувача Збройних Сил України від
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md № 140/14255/23 30 60 10 окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.) перевезення фізичною особою - суб’єктом господарювання за власний кошт семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (цивільне законодавство / зобов&#x27;язальне право / окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/130705402" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 140/14255/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Перевезення фізичною особою - суб’єктом господарювання за власний кошт</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (Цивільне законодавство / Зобов&#x27;язальне право / Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.1. Про перевезення на таксі без мети отримання доходу
+
+Перевезення фізичною особою - суб’єктом господарювання за власний кошт
+пасажирів на таксі не є тотожним перевезенню для власних потреб, оскільки
+останнє передбачає перевезення пасажирів без мети отримання доходу, таке
+перевезення не може вважатися господарською діяльністю та не потребує надання
+перевізником ліцензії та сервісної книжки
+
+02 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Державної служби України
+з безпеки на транспорті в особі Відділу державного нагляду (контролю)
+у Волинській області на рішення Волинського окружного адміністративного суду
+від 04 жовтня 2023 року та постанову Восьмого апеляційного адміністративного
+суду від 09 лютого 2024 року у справі № 140/14255/23 за позовом Особа_1
+до Відділу державного нагляду (контролю) у Волинській області Державної служби
+України з безпеки на транспорті про визнання протиправною та скасування
+постанови про застосування адміністративно-господарського штрафу.
+
+ОБСТАВИНИ СПРАВИ
+
+Позов обґрунтовано тим, що через відсутність документів, визначених статтею
+39 Закону України від 05 квітня 2001 року № 2344-III «Про автомобільний транспорт»
+(далі – Закон № 2344-III), а саме ліцензії та сервісної книжки, Відділом державного
+нагляду (контролю) у Волинській області Державної служби України з безпеки
+на транспорті прийнято постанову, якою до позивача застосовано штраф. Позивач
+вказував, що на момент проведення перевірки він не виступав автомобільним
+самозайнятим перевізником, а транспортний засіб використовував для власних
+потреб без мети отримання прибутку.
+
+Рішенням окружного адміністративного суду, залишеним без змін постановою
+апеляційного адміністративного суду, позов задоволено. Суди попередніх інстанцій
+керувалися тим, що відповідачем не надано належних та достовірних доказів того,
+що позивач на момент проведення перевірки надавав послуги з перевезення
+пасажирів на таксі на договірних умовах за плату, тобто виступав автомобільним
+самозайнятим перевізником.
+
+Верховний Суд касаційну скаргу залишив без задоволення, рішення судів
+попередніх інстанцій - без змін.
+
+ОЦІНКА СУДУ
+
+Ліцензія, і сервісна книжка, є тими документами, наявність яких під час
+здійснення заходів державного контролю є предметом перевірки щодо дотримання
+вимог законодавства автомобільними самозайнятими перевізниками, які надають
+послуги з перевезення пасажирів на таксі. За відсутності документів на підставі
+яких виконуються пасажирські перевезення автомобільним самозайнятим
+перевізником, застосовуються адміністративно-господарські штрафи.
+Непред’явлення, зазначених у статті 39 Закону № 2344-III документів під час
+проведення перевірки свідчить про порушення законодавства про автомобільний
+транспорт, що має наслідком для застосування санкцій, визначених статтею 60
+цього Закону
+
+Позивач стверджував, що на момент проведення перевірки позивач не
+виступав автомобільним самозайнятим перевізником, а транспортний засіб
+використовувався ним для власних потреб без мети отримання прибутку. Водночас,
+відповідач зазначає, що перевезення на комерційній основі означає надання
+послуг, а перевезення за власний кошт - перевезення для власних потреб, а тому
+переконує, що відповідальність настає незалежно від того, чи надаються послуги
+перевезення (договірні умови), чи перевозиться пасажир для власних потреб.
+
+Верховний Суд вказав, що оскільки перевезення фізичною особою – суб’єктом
+господарювання за власний кошт пасажирів на таксі не є тотожним перевезенню
+для власних потреб, оскільки останнє передбачає перевезення пасажирів без мети
+отримання доходу, таке перевезення не може вважатися господарською діяльністю
+та не потребує в такому випадку надання перевізником документів, що визначені
+у статті 39 Закону № 2344-III.
+
+Судами попередніх інстанцій встановлено, що в обґрунтування своїх доводів
+відповідач посилається на акт перевірки, у якому зазначено лише загальні
+відомості про транспортний засіб, номерний знак, дані про водія, а також вказано,
+що під час перевезень пасажирів автомобілем таксі відсутні документи для
+автомобільного самозайнятого перевізника: ліцензія, сервісна книжка.
+
+Натомість, як установлено судами, в акті перевірки не вказано інформацію про
+пасажирів та матеріали перевірки не містять їх пояснень. Доданий відповідачем
+відеозапис не містить інформації про обставини перевірки, ідентифікацію осіб
+пасажирів, при цьому відсутні їх пояснення щодо обставин їх перевезення
+позивачем, зроблені на відеозапис. Крім того, з відеозапису неможливо
+встановити чи інспектор запитував у водія про здійснення перевезення пасажирів
+та відповіді водія на такі питання; інспектором не отримано пояснень у пасажира
+(пасажирів), чи здійснювали або чи будуть вони здійснювати оплату
+за перевезення. Матеріали перевірки не містять відомості про те чи був увімкнений
+лічильник, який обраховує вартість поїздки у таксі, і чи взагалі на момент
+проведення перевірки такий лічильник був у салоні автомобіля, що не дає підстав
+
+ідентифікувати здійснення перевезення як таке, що здійснювалося в межах
+підприємницької діяльності позивача.
+
+Таким чином, Верховний Суд погоджується з висновками судів першої
+та апеляційної інстанцій, що саме по собі перевезення позивачем пасажирів не
+може бути підставою для притягнення його до відповідальності, передбаченої
+абзацом третім частини першої статті 60 Закону № 2344-III, оскільки контролюючий
+орган не надав належних, достатніх та беззаперечних доказів на підтвердження
+того, що під час проведення перевірки позивачем було надано послуги
+з перевезення пасажирів автомобілем таксі на замовлення та, що позивач
+у спірних правовідносинах виступав автомобільним самозайнятим перевізником
+у розумінні Закону № 2344-III.
+
+Детальніше з текстом постанови Верховного Суду від 02 жовтня 2025 року у справі
+№140/14255/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/130705402
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.2_segment.md № 640/23545/21 160 50 нагляд за безпечним веденням робіт у промисловості та будівництві. порядок зберігання, обліку та використання вибухових матеріалів з інформацією обмеженого доступу семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «нагляд за безпечним веденням робіт у промисловості та будівництві. порядок зберігання, обліку та використання вибухових матеріалів» (законодавство про діяльність галузей промисловості / нагляд за безпечним веденням робіт у промисловості та будівництві. порядок зберігання, обліку та використання вибухових матеріалів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">03.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131217558" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 640/23545/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">160 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про діяльність галузей промисловості</span><span class="crumb-sep">›</span><span class="crumb-leaf">Нагляд за безпечним веденням робіт у промисловості та будівництві. Порядок зберігання, обліку та використання вибухових матеріалів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>з інформацією обмеженого доступу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Нагляд за безпечним веденням робіт у промисловості та будівництві. Порядок зберігання, обліку та використання вибухових матеріалів» (Законодавство про діяльність галузей промисловості / Нагляд за безпечним веденням робіт у промисловості та будівництві. Порядок зберігання, обліку та використання вибухових матеріалів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.2. Про особливий порядок набрання чинності актами Кабінету Міністрів України
+з інформацією обмеженого доступу
+
+Наявність в актах Уряду інформації з обмеженим доступом зумовлює особливий
+порядок набрання цими актами (або їх окремими положеннями) чинності,
+що означає, що вони не підлягають опублікуванню і набирають чинності
+з моменту їх доведення в установленому порядку до виконавців, якщо цими
+постановами не встановлено пізніший термін набрання ними чинності. Відповідно,
+загальне правило щодо набрання постановами Кабінету Міністрів України чинності
+«з дня їх офіційного опублікування, якщо інше не передбачено самими постановами,
+але не раніше дня їх опублікування», за описаної ситуації не застосовується
+
+20 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Особа_1 на рішення Київського
+окружного адміністративного суду від 15 квітня 2024 року та постанову Шостого
+апеляційного адміністративного суду від 02 жовтня 2024 року у справі
+№640/23545/21 за позовом Особа_1 до Кабінету Міністрів України, третя особа Служба безпеки України, про визнання протиправними та нечинними нормативноправового акту в частині.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач звернувся до суду з позовом про визнання протиправними
+та нечинними пунктів пунктів 53, 54, 56 Порядку організації та забезпечення
+режиму секретності в державних органах, органах місцевого самоврядування,
+
+на підприємствах, в установах і організаціях, затвердженого постановою Кабінету
+Міністрів України від 18 грудня 2013 року № 939 (далі – Порядок № 939), мотивуючи
+позов тим, що вказаними пунктами визначено обов&#x27;язки громадян щодо подання
+заяв та документів для отримання допуску до державної таємниці, тому Постанова
+№ 939 мала бути офіційно опублікована, проте до відома населення її не доведено,
+що зумовлює протиправність і нечинність оскаржуваних пунктів.
+
+Рішенням окружного адміністративного суду, залишеним без змін апеляційним
+адміністративним судом, у задоволенні позову відмовлено. Суди попередніх
+інстанцій вказали, що оскільки Порядок №939 не є актом загального значення, то її
+оприлюднення може здійснюватися шляхом безпосереднього доведення до відома
+обмеженого кола осіб, у порядку, визначеному пунктом 7 Указу Президента України
+від 10 червня 1997 року №503/97 «Про порядок офіційного оприлюднення
+нормативно-правових актів та набрання ними чинності» (далі - Указ №503/97). Крім
+цього, під час вирішення питання про надання позивачеві допуску до державної
+таємниці зміст оспорюваних ним вимог Порядку №939 було доведено до його
+відома, що вказує на відсутність підстав для висновку про порушення принципу
+правової визначеності.
+
+Верховний Суд касаційну скаргу залишив без задоволення, рішення судів
+попередніх інстанцій - без змін.
+
+ОЦІНКА СУДУ
+Порядок №939 встановлює єдині вимоги до організації та забезпечення
+режиму секретності в органах законодавчої, виконавчої та судової влади, органах
+прокуратури України, консультативних, дорадчих та допоміжних органах і службах,
+утворених Президентом України, інших державних органах, Верховній Раді
+Автономної Республіки Крим, Раді міністрів Автономної Республіки Крим, органах
+місцевого самоврядування, на підприємствах, в установах та організаціях
+незалежно від форми власності, що провадять діяльність, пов’язану з державною
+таємницею, та процедуру ведення обліку, виготовлення, користування, зберігання,
+пересилання матеріальних носіїв секретної інформації.
+
+З листа Секретаріату Кабінету Міністрів України від 31 січня 2024 року
+№54/0/2-24 ДСК судами встановлено, що розробник проєкту - Служба безпеки
+України присвоїла Порядку №939 гриф обмеження доступу «для службового
+користування» (супровідний лист від 18 вересня 2013 року №26/4-10999).
+
+Закон України «Про Кабінет Міністрів України» (як у редакції Закону №2591-VI,
+чинного на час прийняття Урядом Порядку №939, так і в редакції Закону №794-VII,
+що діяла на час звернення позивача з метою отримання доступу до державної
+таємниці) постанови Кабінету Міністрів України або їх окремі положення,
+що містять інформацію з обмеженим доступом, не підлягають опублікуванню. Таке
+
+ж правило закріплено у пункті 2 параграфу 31 Регламенту Кабінету Міністрів
+України.
+
+Тобто, наявність в таких актах Уряду інформації з обмеженим доступом
+зумовлює особливий порядок набрання цими актами (або їх окремими
+положеннями) чинності, що дістає вияв, зокрема, в тому, що такі не підлягають
+опублікуванню і набирають чинності з моменту їх доведення в установленому
+порядку до виконавців, якщо цими постановами не встановлено пізніший термін
+набрання ними чинності. Відповідно, загальне правило щодо набрання постановами
+Кабінету Міністрів України чинності «з дня їх офіційного опублікування, якщо інше не
+передбачено самими постановами, але не раніше дня їх опублікування», за описаної
+ситуації не застосовується.
+
+Доступ до державної таємниці надається громадянинові не в силу закону,
+а за рішенням уповноваженого органу, наділеного певним обсягом дискреції
+у вирішенні цього питання, у чітко визначених межах та з конкретною метою.
+
+У розглядуваній ситуації виникнення правовідносин у процедурі надання
+уповноваженим органом доступу позивачеві до державної таємниці потребує
+ініціювання (звернення) отримання дозволу на ознайомлення з конкретною
+секретною інформацією, водночас закон не встановлює відповідальності за його
+неотримання. Поза вказаними відносинами оспорювані пункти Порядку № 939 не
+покладають обов’язків на невизначене коло осіб, як помилково стверджує позивач.
+
+Зважаючи на сферу та специфіку регулювання, Порядок №939 не встановлює
+і не змінює права чи обов&#x27;язки громадян у контексті загального правового
+порядку. Його зміст спрямований на організацію роботи з документами,
+що містять відомості, які становлять державну таємницю, і реалізується винятково
+в межах дій і рішень суб&#x27;єктів, які здійснюють діяльність, пов`язану з державною
+
+таємницею.
+
+Положення Порядку № 939 в оскаржуваній частині лише уточнюють
+та конкретизують правила взаємодії зі Службою безпеки України у процесі
+надання допуску до державної таємниці. Наявність у Порядку № 939 інформації
+з обмеженим доступом зумовлює особливий порядок набрання постановою КМУ
+чинності, а саме, з моменту доведення в установленому порядку до виконавців
+(іншого, пізнішого строку у постанові не встановлено). Тобто, саме таким є порядок,
+установлений законом.
+
+Детальніше з текстом постанови Верховного Суду від 20 жовтня 2025 року у справі
+№640/23545/21 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/131217558
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1_segment.md № 460/17904/23 170 20 10 проектні організації. типові проекти. титульні списки будов. норми технічного проектування. поліпшення проектно-кошторисної справи неконституційними норм закону семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «проектні організації. типові проекти. титульні списки будов. норми технічного проектування. поліпшення проектно-кошторисної справи» (законодавство про основи містобудування / проектування / проектні організації. типові проекти. титульні списки будов. норми технічного проектування. поліпшення проектно-кошторисної справи).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <span class="file-badge">№ 460/17904/23</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">170 20 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про основи містобудування</span><span class="crumb-sep">›</span><span class="crumb">Проектування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Проектні організації. Типові проекти. Титульні списки будов. Норми технічного проектування. Поліпшення проектно-кошторисної справи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>неконституційними норм закону</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Проектні організації. Типові проекти. Титульні списки будов. Норми технічного проектування. Поліпшення проектно-кошторисної справи» (Законодавство про основи містобудування / Проектування / Проектні організації. Типові проекти. Титульні списки будов. Норми технічного проектування. Поліпшення проектно-кошторисної справи).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">4.1. Про строк звернення до суду у пенсійних спорах, пов’язаних із визнанням
+неконституційними норм закону
+
+Звернення до суду з позовом, який обґрунтовано посиланням на визнання
+рішенням Конституційного Суду України неконституційними окремих положень
+закону, якими врегульовувались спірні правовідносини, не змінює правил
+обрахунку строків звернення до адміністративного суду, визначених
+процесуальним законом, у зв’язку з чим у спорах щодо перерахунку та виплати
+пенсій, які виникли у зв’язку з визнанням неконституційними норм закону,
+що врегульовували спірні правовідносини, застосовується шестимісячний строк
+звернення до адміністративного суду, визначений частиною другою статті 122 КАС
+України
+
+21 жовтня 2025 року Верховний Суд у складі судової палати з розгляду справ
+щодо захисту соціальних прав Касаційного адміністративного суду розглянув
+касаційну скаргу Особа_1 на ухвалу Рівненського окружного адміністративного
+суду від 23 вересня 2024 року та постанову Восьмого апеляційного
+
+адміністративного суду від 23 грудня 2024 року у справі № 460/10097/24
+за позовом Особа_1 до Головного управління Пенсійного фонду України
+в Рівненській області про визнання протиправними дій, зобов’язання вчинити дії.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивачка оскаржила до суду відмову Головного управління Пенсійного
+фонду України в Рівненській області у нарахуванні та виплаті з 01 липня 2021 року
+пенсії у розмірі шести мінімальних пенсій за віком як особі з інвалідністю ІІІ групи,
+захворювання якої пов’язане з Чорнобильською катастрофою, відповідно до статті
+54 Закону України від 28 лютого 1991 року № 796-XII «Про статус і соціальний захист
+громадян, які постраждали внаслідок Чорнобильської катастрофи» (далі – Закон
+№ 796-XII), з урахуванням Рішення Конституційного Суду України від
+07 квітня 2021 року № 1-р(ІІ)/2021.
+
+Окружний адміністративний суд ухвалою, залишеною без змін постановою
+апеляційного адміністративного суду, на підставі статті 123 КАС України повернув
+позовну заяву в частині вимог за період з 01 липня 2021 року по
+29 лютого 2024 року. Суди виходили з того, що позивачка пропустила строк
+звернення до адміністративного суду, а отримання нею листа відповідача на її
+звернення не змінює момент, з якого вона повинна була дізнатись про порушення
+своїх прав, а свідчить лише про час, коли позивачка почала вчиняти дії щодо
+реалізації свого права і ця дата не пов’язується з початком перебігу строку
+
+звернення до суду.
+
+Верховний Суд касаційну скаргу залишив без задоволення, ухвалу суду першої
+інстанції та постанову апеляційного суду – без змін.
+
+ОЦІНКА СУДУ
+Ключовим у цій справі було питання про вплив рішення Конституційного Суду
+України, яким визнано неконституційною норму закону, на підставі якої було
+визначено розмір пенсії позивачки, на застосування строку звернення до суду.
+
+Колегія суддів врахувала усталену практику Європейського суду з прав
+людини, Конституційного Суду України та Верховного Суду про те, що право
+на звернення до суду не є абсолютним і може бути обмеженим, в тому числі
+і встановленням строків для звернення до суду, якими чинне законодавство
+обмежує звернення до суду за захистом прав, свобод та інтересів, та зауважила,
+що спеціальних правил щодо обчислення строків звернення до адміністративного
+суду у спорах, які виникли у зв’язку визнанням неконституційними норм закону,
+якими були врегульовані спірні правовідносини, ані КАС України, ані будь-яким
+іншим законом не встановлено.
+
+Визначення початку перебігу строку для звернення до суду пов’язують
+із встановленням часу, коли позивач дізнався або повинен був дізнатися про
+порушення своїх прав, свобод та інтересів.
+
+Оскільки Рішення Конституційного Суду України від 07 квітня 2021 року
+№ 1-р(II)/2021, яким було визнано неконституційною частину третю статті 54 Закону
+№ 796-XII у редакції Закону України від 28 грудня 2014 року № 76-VIII «Про внесення
+змін та визнання такими, що втратили чинність, деяких законодавчих актів
+України» (далі – Закон № 76-VIII), було офіційно оприлюднене, зокрема,
+11 травня 2021 року в «Офіційному віснику України» № 36, то саме з цього моменту
+особа, яка отримала пенсійну виплату в розмірі меншому, ніж встановлено
+частиною третьою статті 54 Закону № 796-ХІІ у редакції Закону України від
+06 червня 1996 року № 230/96-ВР «Про внесення змін і доповнень до Закону
+України «Про статус і соціальний захист громадян, які постраждали внаслідок
+Чорнобильської катастрофи»» (далі – Закон № 230/96-ВР), вважається такою,
+що повинна була дізнатися про порушення своїх прав, свобод чи законних
+інтересів.
+
+Враховуючи, що позивачка лише в 2024 році звернулась до ГУ ПФУ
+з відповідною заявою про перерахунок пенсії з 01 липня 2021 року і на момент
+звернення їй було відомо про наявність правових підстав для перерахунку пенсії
+в розмірі, визначеному частиною третьою статті 54 Закону № 796-ХІІ у редакції
+Закону № 230/96-ВР. За таких обставин звернення позивачки до ГУ ПФУ
+з відповідною заявою більш ніж через три роки після виникнення підстав для
+перерахунку пенсії не може вважатись таким, що було здійснене без зайвих
+зволікань і в розумні строки.
+
+Таким чином, судова палата погодилася з правовими висновками Верховного
+Суду, викладеними у його постановах від 29.03.2024 у справі № 460/17904/23 та від
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.2_segment.md № 280/5691/24 60 20120 10 пенсії за вислугою строків служби повідомлення-рішення після процедури адміністративного оскарження семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «пенсії за вислугою строків служби» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / пенсії за вислугою строків служби).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">04.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131341564" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 280/5691/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пенсії за вислугою строків служби</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>повідомлення-рішення після процедури адміністративного оскарження</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Пенсії за вислугою строків служби» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Пенсії за вислугою строків служби).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">4.2. Про строк звернення до суду з позовом про скасування податкового
+повідомлення-рішення після процедури адміністративного оскарження
+
+Якщо платник до подання позову скористався процедурою адміністративного
+оскарження податкового повідомлення-рішення або іншого рішення контрольного
+органу про нарахування грошового зобов’язання, строк звернення
+до адміністративного суду становить один місяць з дня, що настає після
+завершення такої процедури (пункт 56.19 статті 56 Податкового кодексу України).
+Ця норма є спеціальною щодо положень частини четвертої статті 122 Кодексу
+адміністративного судочинства України та має пріоритет у застосуванні.
+Пропущення цього строку без поважних причин зумовлює залишення позовної
+заяви без розгляду. Сам факт дії воєнного стану не є безумовною підставою для
+поновлення строку, тому потрібно довести прямий причинно-наслідковий зв’язок
+між воєнними обставинами та неможливістю своєчасного звернення до суду
+
+28 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління ДПС
+у Запорізькій області на постанову Третього апеляційного адміністративного суду
+від 19 листопада 2024 року у справі № 280/5691/24 за позовом Товариства
+з обмеженою відповідальністю «Запоріжгаз збут» до Головного управління ДПС
+у Запорізькій області про визнання протиправним і скасування податкового
+повідомлення-рішення.
+
+ОБСТАВИНИ СПРАВИ
+
+Платник звернувся до суду з позовом про визнання протиправним
+та скасування податкового повідомлення-рішення, яким контрольний орган
+збільшив податок на додану вартість та застосував штрафні санкції. Податковий
+орган рішенням, яке платник отримав 15 березня 2024 року, залишив скаргу без
+задоволення. Позов було подано 24 червня 2024 року.
+
+Запорізький окружний адміністративний суд визнав неповажними причини
+пропущення строку та залишив позовну заяву без розгляду на підставі статті 123
+Кодексу адміністративного судочинства України.
+
+Третій апеляційний адміністративний суд скасував ухвалу суду першої інстанції,
+вважаючи, що позов було подано в межах тримісячного строку, встановленого
+частиною четвертою статті 122 Кодексу адміністративного судочинства України,
+а положення Податкового кодексу України не можна застосовувати як «інший
+закон» для визначення строків звернення до суду.
+
+Верховний Суд задовольнив касаційну скаргу, скасувавши оскаржуване судове
+рішення та залишивши чинною ухвалу суду першої інстанції.
+
+ОЦІНКА СУДУ
+
+Пункт 56.19 статті 56 Податкового кодексу України є спеціальною нормою
+щодо частини четвертої статті 122 Кодексу адміністративного судочинства України
+та встановлює місячний строк звернення до суду після завершення процедури
+адміністративного оскарження рішень про нарахування грошових зобов’язань. Ця
+норма має пріоритет у податкових спорах.
+
+Покликання позивача на воєнний стан, бойові дії на території, де він провадить
+підприємницьку діяльність, та труднощі з отриманням первинних документів не
+підтверджують наявності прямого причинно-наслідкового зв’язку з пропущенням
+строку. Отже, факт воєнного стану сам по собі не є поважною причиною (стаття 121
+Кодексу адміністративного судочинства України).
+
+Детальніше з текстом постанови Верховного Суду від 28 жовтня 2025 року у справі
+№ 280/5691/24 можна ознайомитися за посиланням
+
+[https://reyestr.court.gov.ua/Review/131341564](https://reyestr.court.gov.ua/Review/131341564)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.3_segment.md № 620/5156/23 10280 законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів неналежного проведення службового розслідування, ініційованого третьою семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів» (основи суспільного ладу / законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">04.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/131281843" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 620/5156/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10280</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>неналежного проведення службового розслідування, ініційованого третьою</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів» (Основи суспільного ладу / Законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">4.3. Про неоскаржуваність бездіяльності Національної поліції України щодо
+неналежного проведення службового розслідування, ініційованого третьою
+особою
+
+Бездіяльність Департаменту стратегічних розслідувань Національної поліції
+України, який проводив службове розслідування стосовно поліцейського, не
+створює і не може створювати жодних юридично значущих наслідків для особи, яка
+подала заяву про проведення службового розслідування відносно дій поліцейського
+(для позивача), не зумовлює впливу на його права, обов&#x27;язки або інтереси,
+що унеможливлює їх порушення. З огляду на те, що висновок службового
+розслідування не створює безпосередньо для особи жодних юридичних прав та/чи
+обов&#x27;язків, то допущена, бездіяльність дисциплінарної комісії у неповному
+проведенні службового розслідування, також не порушує прав позивача, а тому спір
+щодо оскарження такої бездіяльності не підлягає розгляду в порядку
+адміністративного судочинства
+
+24 жовтня 2025 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Особа_1 на постанову Шостого
+апеляційного адміністративного суду від 03 червня 2024 року у справі
+№ 620/5156/23 за позовом Особа_1 до Департаменту стратегічних розслідувань
+Національної поліції України про визнання протиправною бездіяльності.
+
+ОБСТАВИНИ СПРАВИ
+
+Позов обґрунтовано тим, що постановою Шостого апеляційного
+адміністративного суду від 21 липня 2022 року зобов&#x27;язано Департамент
+
+стратегічних розслідувань Національної поліції України (далі – Департамент)
+розглянути заяву позивача щодо службового розслідування відносно дій
+оперуповноваженого Особа_2. На виконання вказаної постанови Департамент
+розглянув заяву та провів службове розслідування, про що повідомив позивача
+листом від 02 листопада 2022 року. Однак, позивач вважав, що службове
+розслідування проведено неповно: не перевірено належним чином обставини,
+викладені у його заяві, не зібрано доказів для встановлення обставин події, не
+проведено опитування поліцейського та заявника, не відібрано пояснень у самого
+Особа_2 та інших обізнаних осіб, не додано до матеріалів відеозапису слідчої дії.
+
+Суд першої інстанції позов задовольнив, визнав протиправною бездіяльність
+відповідача в частині неналежного службового розслідування, та зобов&#x27;язав
+провести належне, повне та об&#x27;єктивне службове розслідування. Суд апеляційної
+інстанції апеляційну скаргу Департаменту задовольнив частково, рішення суду
+першої інстанції скасував та закрив провадження у справі на підставі пункту 1
+частини першої статті 238 КАС України. Апеляційний суд дійшов висновку, що дії
+відповідача щодо проведення службового розслідування, як і висновки
+за наслідками проведеного службового розслідування в частині наявності
+або відсутності у діях поліцейського дисциплінарного проступку, не створюють і не
+можуть створювати жодних юридично значущих наслідків для особи, яка подала
+заяву, не зумовлюють впливу на його права, обов&#x27;язки або інтереси,
+що унеможливлює їх порушення з боку дисциплінарної комісії Департаменту.
+
+Верховний Суд касаційну скаргу залишив без задоволення, постанову суду
+апеляційної інстанції - без змін.
+
+ОЦІНКА СУДУ
+Публічно-правовий спір має особливий суб&#x27;єктний склад. Участь суб&#x27;єкта
+владних повноважень є обов&#x27;язковою ознакою для того, щоб класифікувати спір як
+публічно-правовий. Однак сама по собі участь у спорі суб’єкта владних
+повноважень не дає підстав ототожнювати спір із публічно-правовим та відносити
+його до справ адміністративної юрисдикції. Необхідно з’ясовувати, у зв’язку з чим
+виник спір та за захистом яких прав особа звернулася до суду.
+
+Дії відповідача щодо проведення службового розслідування, як і висновки
+за наслідками проведеного службового розслідування в частині відсутності
+у діянні поліцейського оперуповноваженого Особа_2 дисциплінарного проступку, не
+створюють і не можуть створювати жодних юридично значущих наслідків для
+особи, яка подала скаргу, не зумовлює впливу на його права, обов’язки
+або інтереси, що унеможливлює їх порушення з боку дисциплінарної комісії
+Департаменту.
+
+Дисциплінарна комісія Департаменту проводила службове розслідування
+щодо оперуповноваженого Особа_2, що не створює юридично значущих наслідків
+
+для особи, яка подала заяву, тому твердження позивача про порушення його прав,
+обов’язків або законних інтересів під час проведення службового розслідування які
+б потребували судового захисту, не можна визнати обґрунтованими. У випадку
+незгоди із висновком службового розслідування позивач не позбавлений
+можливості оскаржити такий висновок до керівника органу поліції вищого рівня.
+
+Детальніше з текстом постанови Верховного Суду від 24 жовтня 2025 року у справі №
+620/5156/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/131281843
+
+Огляд судової практики Касаційного адміністративного суду у складі Верховного
+Суду (актуальна практика). Рішення, внесені до ЄДРСР, за жовтень 2025
+року / Упоряд.: управління аналітичної та правової роботи Касаційного
+адміністративного суду департаменту аналітичної та правової роботи Апарату
+Верховного Суду; управління забезпечення роботи судової палати з розгляду справ
+щодо податків, зборів та інших обов’язкових платежів секретаріату Касаційного
+адміністративного суду Апарату Верховного Суду. Київ, 2025. – 33 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="22.01.2025_segment.md № 460/10097/24 60 20110 20 підвищення пенсій деяким категоріям громадян правовідносини в яких стосуються перерахунку пенсійних виплат, зокрема, й тих, семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «підвищення пенсій деяким категоріям громадян» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / обчислення пенсій. розмір і перерахування пенсій. надбавки. виплата пенсій. відрахування / підвищення пенсій деяким категоріям громадян).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">22.01.2025_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/127342982" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 460/10097/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20110 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Обчислення пенсій. Розмір і перерахування пенсій. Надбавки. Виплата пенсій. Відрахування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Підвищення пенсій деяким категоріям громадян</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>правовідносини в яких стосуються перерахунку пенсійних виплат, зокрема, й тих,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Підвищення пенсій деяким категоріям громадян» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Обчислення пенсій. Розмір і перерахування пенсій. Надбавки. Виплата пенсій. Відрахування / Підвищення пенсій деяким категоріям громадян).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">22.01.2025 у справі № 460/8956/24, відповідно до яких у справах, спірні
+правовідносини в яких стосуються перерахунку пенсійних виплат, зокрема, й тих,
+які здійснюються у зв’язку з визнанням відповідної норми закону
+неконституційною, має застосовуватись шестимісячний строк звернення
+до адміністративного суду, визначений частиною другою статті 122 КАС України.
+
+Також Верховний Суд констатував, що суди попередніх інстанцій дійшли
+законного та обґрунтованого висновку про наявність підстав для повернення
+позову в частині вимог за період з 01 липня 2021 року по 29 лютого 2024 року
+у зв’язку з пропуском шестимісячного строку звернення до адміністративного
+суду, тоді як доводи позивачки щодо незастосовності строків позовної давності
+до заявлених нею вимог ґрунтувалися на хибному тлумаченні норм КАС України.
+
+Детальніше з текстом постанови Верховного Суду від 21 жовтня 2025 року у справі
+№460/10097/24 можна ознайомитися за посиланням
+
+https://reyestr.court.gov.ua/Review/127342982
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 16;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

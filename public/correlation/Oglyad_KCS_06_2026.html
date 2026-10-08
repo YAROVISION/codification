@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KCS_06_2026 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KCS_06_2026 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KCS_06_2026.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KCS_06_2026</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">14</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">75.5%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">13</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 14 із 14</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="04.1_segment.md № 761/33276/23 50 70 60 оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку за умови зазначення в наказі конкретної норми іншого закону, яка встановлює семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку» (трудове законодавство / оплата праці / оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137226396" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 761/33276/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 70 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Оплата праці</span><span class="crumb-sep">›</span><span class="crumb-leaf">Оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за умови зазначення в наказі конкретної норми іншого закону, яка встановлює</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку» (Трудове законодавство / Оплата праці / Оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Спори, що виникають із трудових правовідносин
+
+4.1 . Звільнення працівника за п. 9 ч. 1 ст. 36 КЗпП України є правомірним лише
+за умови зазначення в наказі конкретної норми іншого закону, яка встановлює
+самостійну підставу припинення трудового договору. Норма закону,
+що визначає лише компетенцію органу юридичної особи щодо призначення
+та звільнення працівника, не є самостійною підставою для звільнення
+
+03 червня 2026 року Верховний Суд у складі колегії суддів Другої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за позовом ОСОБА_1
+до АТ «Укрпошта», Наглядової ради АТ «Укрпошта» про визнання
+протиправними та скасування наказів, поновлення на роботі, стягнення
+середнього заробітку за час вимушеного прогулу.
+
+На обґрунтування заявлених вимог позивач зазначала, що вона працювала
+на посаді директора департаменту внутрішнього аудиту АТ «Укрпошта».
+У березні 2023 року її було звільнено на підставі п. 9 ст. 36 КЗпП України
+та статей 71, 79 Закону України «Про акціонерні товариства». Позивач вважала
+звільнення незаконним, оскільки її посада не належить до переліку посадових
+осіб товариства, а наказ не містив законних підстав для припинення трудових
+відносин.
+
+Справу суди розглядали неодноразово.
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+відмовив у задоволенні позову, оскільки припинення повноважень позивача
+як посадової особи за наслідками незадовільної роботи є самостійною
+підставою для звільнення посадових осіб АТ «Укрпошти» без зазначення причин,
+що обумовлено специфічним статусом та гарантується нормами цивільного
+права для припинення або запобігання негативному впливу на управлінську
+діяльність товариства. Позивач не оскаржувала рішення наглядової ради
+АТ «Укрпошта».
+
+ВС не погодився з висновками судів, скасував судові рішення в частині
+вирішення вимог про скасування наказів та поновлення на роботі, ухвалив
+у цій частині нове рішення, яким визнав протиправними та скасував накази
+про звільнення позивача, про внесення змін до наказу та поновив позивача
+на посаді. Постанову апеляційного суду в частині залишення без змін рішення
+районного суду про відмову в задоволенні вимоги про стягнення середнього
+заробітку за час вимушеного прогулу скасував, справу в цій частині направив
+на новий розгляд до суду апеляційної інстанції з огляду на таке.
+
+ВС зазначив, що при розгляді справ про поновлення на роботі необхідно
+перевіряти відповідність законові саме тих підстав, які вказані в наказі.
+Роботодавець визначив як підставу звільнення п. 9 ч. 1 ст. 36 КЗпП України,
+що є бланкетною нормою. У такому разі в наказі має бути зазначена конкретна
+норма закону, яка встановлює підставу для припинення договору.
+
+Водночас статті 71 та 79 Закону України «Про акціонерні товариства»,
+на які посилалося товариство, лише визначають компетенцію наглядової ради
+(право призначати та звільняти), але не встановлюють конкретних
+матеріально-правових підстав (причин) для звільнення. Оскільки роботодавець
+не застосував п. 5 ч. 1 ст. 41 КЗпП України (припинення повноважень посадових
+осіб), а інших спеціальних підстав у законодавстві для цієї ситуації
+не передбачено, звільнення не відповідає вимогам трудового законодавства.
+
+Детальніше з текстом постанови Верховного Суду від 03 червня 2026 року у справі
+№ 761/33276/23 (провадження № 61-13136св25) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137226396.](https://reyestr.court.gov.ua/Review/137226396)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.2_segment.md № 274/1838/25 100140 10 органи і служби у справах неповнолітніх працівником, на якого поширюються гарантії ч. 2 ст. 57 зу «про освіту». семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «органи і служби у справах неповнолітніх» (законодавство з питань освіти, науки, культури / боротьба з дитячою безпритульністю і бездоглядністю / органи і служби у справах неповнолітніх).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">04.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137606230" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 274/1838/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Боротьба з дитячою безпритульністю і бездоглядністю</span><span class="crumb-sep">›</span><span class="crumb-leaf">Органи і служби у справах неповнолітніх</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>працівником, на якого поширюються гарантії ч. 2 ст. 57 ЗУ «Про освіту».</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Органи і служби у справах неповнолітніх» (Законодавство з питань освіти, науки, культури / Боротьба з дитячою безпритульністю і бездоглядністю / Органи і служби у справах неповнолітніх).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Спори, що виникають із трудових правовідносин
+
+4.2. Тренер-викладач дитячо-юнацької спортивної школи є педагогічним
+працівником, на якого поширюються гарантії ч. 2 ст. 57 ЗУ «Про освіту».
+За педагогічним працівником, призваним на військову службу за призовом
+під час мобілізації, зберігається попередній середній заробіток за період
+до 24 грудня 2023 року
+
+10 червня 2026 року Верховний Суд у складі колегії суддів Першої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за позовом ОСОБА_1
+
+до Обласної дитячо-юнацької спортивної школи з хокею на траві Житомирської
+обласної ради, назву якої змінено на Житомирська обласна дитячо-юнацька
+школа з ігрових видів спорту Житомирської обласної ради, Управління
+національно-патріотичного виховання, молоді та спорту Житомирської обласної
+державної адміністрації про визнання незаконним та скасування наказу,
+зобов’язання вчинити дії.
+
+На обґрунтування заявлених вимог позивач зазначав, що він працював
+на посаді тренера-викладача з хокею на траві. У лютому 2022 року
+він був призваний на військову службу під час мобілізації. До 19.07.2022
+йому виплачували середній заробіток, проте наказом роботодавця ці виплати
+було припинено з посиланням на зміни до ст. 119 КЗпП України. Позивач вважав
+ці дії незаконними, оскільки як педагогічний працівник він має право
+на збереження заробітку згідно зі спеціальним законодавством.
+
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+у задоволенні позову відмовив. Судові рішення мотивовано тим, що позивач
+не є педагогічними працівником, який 26.02.2022 був призваний на військову
+службу за призовом під час мобілізації, на якій перебував до 20.01.2025,
+тому правових підстав для збереження за ним середнього заробітку немає.
+
+ВС не погодився з висновками судів першої та апеляційної інстанцій,
+рішення судів скасував, ухвалив нове рішення, яким позов задовольнив з огляду
+
+на таке.
+
+Згідно із Законом України «Про позашкільну освіту» та Положенням
+про дитячо-юнацьку спортивну школу, затвердженим постановою КМУ
+від 05.11.2008 № 993, учасниками навчально-тренувальної та спортивної роботи
+в спортивній школі, зокрема, є тренери-викладачі. Крім того, стаж роботи
+на цій посаді зараховується до стажу педагогічної роботи.
+
+Частина друга ст. 57 Закону України «Про освіту» є спеціальною нормою
+щодо положень ст. 119 КЗпП України. Відповідно до принципу пріоритету
+спеціальної норми над загальною (lex specialis derogat generali) за педагогами
+зберігається попередній середній заробіток на час мобілізації, попри зміни
+у трудовому кодексі. Така гарантія діяла до 24.12.2023 (дата набрання чинності
+змінами, що скасували ці виплати і в спеціальному законі).
+
+ВС констатував, що позивач належить до категорії педагогічних
+працівників, оскільки є тренером-викладачем позашкільного закладу освіти,
+
+на якого законами, нормативно-правовими актами та трудовим контрактом
+покладено виконання виховних та педагогічних функцій. У зв’язку з чим на нього
+поширюються гарантії, передбачені ч. 2 ст. 57 ЗУ «Про освіту», які відповідач
+порушив, а тому наказ Обласної дитячо-юнацької спортивної школи
+Житомирської обласної ради від 19.07.2022, яким позивачу з 19.07.2022
+припинено виплату середнього заробітку на період проходження військової
+
+служби, є незаконним та підлягає скасуванню, а позивачу підлягає нарахування
+та виплата заробітної плати за період з 19.07.2022 до 23.12.2023.
+
+Детальніше з текстом постанови Верховного Суду від 10 червня 2026 року у справі
+№ 274/1838/25 (провадження № 61-4376св26) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137606230.](https://reyestr.court.gov.ua/Review/137606230)
+
+5. Спори, що виникають із сімейних правовідносин
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.1_segment.md № 369/10819/25 50 20 50 переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці за умови встановлення, що вона відповідає найкращим інтересам дитини, семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (трудове законодавство / трудовий договір. контракт / переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">05.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137606279" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 369/10819/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 20 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудовий договір. Контракт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за умови встановлення, що вона відповідає найкращим інтересам дитини,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (Трудове законодавство / Трудовий договір. Контракт / Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5. Спори, що виникають із сімейних правовідносин
+
+5.1. За заперечення одного з батьків зміна прізвища дитини допускається лише
+за умови встановлення, що вона відповідає найкращим інтересам дитини,
+з урахуванням виконання кожним із батьків батьківських обов’язків та інших
+істотних обставин. Збереження окремо проживаючим батьком близьких
+стосунків з дитиною та участі в її вихованні виключає зміну прізвища, якщо така
+зміна сприяє відчуженню між батьком і дитиною
+
+17 червня 2026 року Верховний Суд у складі колегії суддів Першої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за позовом ОСОБА_2
+до ВК Борщагівської сільської ради Бучанського району Київської області,
+Боярського відділу державної реєстрації актів цивільного стану у Фастівському
+районі Київської області Центрального міжрегіонального управління
+Міністерства юстиції (м. Київ), ОСОБА_1, третя особа — Служба у справах дітей
+Борщагівської сільської ради Бучанського району Київської області,
+про визнання незаконним та скасування рішення, зобов`язання вчинити певні дії.
+
+На обґрунтування заявлених вимог позивач (батько) посилався
+на те, що він перебував у шлюбі з відповідачкою, в якому в них народився син
+ОСОБА_3. Після розірвання шлюбу дитина проживає з матір’ю в Польщі.
+Виконавчий комітет сільської ради прийняв рішення про надання дозволу
+на зміну прізвища дитини з прізвища батька на прізвище матері без його згоди.
+Позивач вважав це рішення незаконним, оскільки воно було прийняте всупереч
+його думці та без належного обґрунтування того, як така зміна відповідає
+інтересам дитини.
+
+Суд першої інстанції у задоволенні позову відмовив, мотивуючи своє
+рішення тим, що заперечення батька самі по собі не свідчать про незаконність
+рішення органу опіки та піклування.
+
+Апеляційний суд не погодився з висновками суду першої інстанції, рішення
+скасував, ухвалив нове рішення, яким позов задовольнив, мотивуючи
+своє рішення тим, що оскаржуване рішення було прийнято виключно на підставі
+суб’єктивних тверджень матері про те, що прізвище батька нібито викликає
+небажані асоціації в Польщі та може стати причиною булінгу. Водночас орган
+опіки не дослідив характер стосунків батька з дитиною, факт виконання
+
+ним батьківських обов’язків та не навів жодних доказів того, що зміна прізвища
+сприятиме забезпеченню найкращих інтересів дитини.
+
+Верховний Суд погодився з висновками апеляційного суду, залишив
+касаційну скаргу матері без задоволення з огляду на таке.
+
+Відповідно до ст. 148 СК України інтереси дитини є пріоритетними
+і визначальними при вирішенні спору щодо зміни її прізвища. Якщо батько,
+який проживає окремо, зберігає з дитиною близькі стосунки та бере участь
+у її вихованні, недоцільно сприяти відчуженню між ними шляхом зміни прізвища.
+
+Верховний Суд наголосив, що рішення суб’єкта владних повноважень
+має відповідати критерію обґрунтованості. Це передбачає наявність правової
+оцінки фактичних обставин справи та логічність викладення мотивів. У цій справі
+відповідачі не надали жодних доказів того, що батько свідомо не піклується
+про дитину, або що зміна прізвища на прізвище матері є необхідною
+для благополуччя дитини. Доказування не може ґрунтуватися на припущеннях
+про можливий булінг чи фонетичні асоціації.
+
+Суд також зауважив, що скасування рішення органу опіки є законною
+підставою для повернення запису про прізвище дитини в актовому реєстрі
+до первісного стану.
+
+Детальніше з текстом постанови Верховного Суду від 17 червня 2026 року у справі
+№ 369/10819/25 (провадження № 61-6663св26) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137606279.](https://reyestr.court.gov.ua/Review/137606279)
+
+6. Справи окремого провадження
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06.1_segment.md № 305/1557/24 60 20120 50 призначення пенсій та безумовною перешкодою для призначення військовослужбовця опікуном семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «призначення пенсій» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / призначення пенсій).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">06.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137885288" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 305/1557/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Призначення пенсій</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>та безумовною перешкодою для призначення військовослужбовця опікуном</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Призначення пенсій» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Призначення пенсій).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 6. Справи окремого провадження
+
+6.1. Сам по собі факт проходження військової служби не є автоматичною
+та безумовною перешкодою для призначення військовослужбовця опікуном
+недієздатної особи. Можливість реалізації права військовослужбовця
+бути призначеним опікуном, що в подальшому є / може бути підставою
+для звільнення з військової служби за сімейними обставинами, безпосередньо
+залежить від наявності або відсутності інших осіб, які здійснюють або реально
+можуть здійснювати таку опіку, тощо
+
+22 червня 2026 року Верховний Суд у складі Об’єднаної палати
+Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за заявою ОСОБА_1,
+заінтересовані особи: Орган опіки та піклування виконавчого комітету Ясінської
+селищної ради Рахівського району Закарпатської області, Міністерство оборони
+України, про визнання особи недієздатною, призначення опікуна.
+
+Заявник звернувся до суду з вимогою про визнання його рідного дядька
+недієздатним та призначити його опікуном. Заявник стверджував,
+що він тривалий час проживав разом із дядьком, здійснював за ним догляд,
+
+забезпечував продуктами та ліками, а інших родичів, які могли б виконувати
+ці обов’язки, немає. На момент розгляду справи заявник проходив військову
+службу за призовом під час мобілізації.
+
+Суд першої інстанції, з висновком якого погодився і апеляційний суд,
+визнав особу недієздатною, проте відмовив у призначенні заявника опікуном,
+зазначивши, що перебування на військовій службі робить фактичне виконання
+обов’язків опікуна неможливим. Крім того, суди встановили, що у недієздатної
+особи є інші близькі родичі, які хоч і не на постійній основі, проте могли
+б надавати допомогу особі, яку визнано недієздатною. Тимчасово покладено
+обов’язки опікуна над недієздатним на Орган опіки та піклування.
+
+ВС у складі ОП КЦС залишив касаційну скаргу заявника без задоволення,
+а оскаржувані судові рішення про відмову в призначенні його опікуном –
+без змін, зробивши такі правові висновки.
+
+Норми права, які регулюють інститут опіки, свідчать, що визнання фізичної
+особи недієздатною є винятковим заходом правового характеру,
+який застосовується з метою захисту самої особи. Інститут опіки покликаний
+забезпечити повну реалізацію та охорону прав недієздатної фізичної особи
+шляхом покладення на опікуна обов’язків діяти в інтересах підопічного,
+забезпечуючи йому належні умови життя, догляд і правове представництво.
+
+Сам факт перебування на військовій службі за мобілізацією
+не є законодавчою перешкодою для призначення опікуном. Більше того,
+законодавство передбачає механізм реалізації права на опіку при вирішенні
+питання про призначення опікуном мобілізованого військовослужбовця
+не шляхом обмеження чи заборони призначення такого військовослужбовця
+опікуном, а навпаки шляхом визначення такої підстави для звільнення
+із військової служби, у тому числі за мобілізацією. Відповідно, законодавство
+про військову службу, мобілізацію і мобілізаційну підготовку не тільки
+не забороняє призначати військовослужбовця опікуном, а встановлює наслідки
+такого призначення – звільнення особи з військової служби, у тому числі
+і за мобілізацією.
+
+А тому ВС у складі ОП КЦС дійшов висновку, що сам по собі факт
+проходження військової служби не може розглядатися як безумовна перешкода
+для призначення особи опікуном, оскільки інше тлумачення призводило
+б до дискримінації та порушення принципу рівності прав громадян.
+
+У таких справах, з урахуванням якнайкращих інтересів особи, над якою
+встановлюється опіка, потрібно з’ясовувати наявність інших осіб, які можуть
+бути опікунами недієздатного, здійснювати оцінку їх здатності виконання
+функцій саме опікуна недієздатної особи, а не відвідувача за необхідністю;
+досліджувати дійсність намірів військовослужбовця як єдиного кандидата
+на призначення опікуном недієздатної особи щодо забезпечення її особистих
+
+немайнових і майнових прав та інтересів та ураховувати визначені Правилами
+опіки та піклування критерії, яким має відповідати особа як опікун.
+
+ВС неодноразово формулював висновки щодо застосування положень
+ст. 26 ЗУ «Про військовий обов’язок і військову службу».
+
+Суд касаційної інстанції наголосив, що закон не вимагає попереднього
+звільнення зі служби для призначення опікуном. Навпаки, саме таке призначення
+є передумовою для можливого звільнення.
+
+Водночас ВС у складі ОП КЦС підкреслив, що під час розгляду таких справ
+суди повинні ретельно з’ясовувати наявність інших осіб, які можуть бути
+опікунами, та оцінювати їхню здатність виконувати ці функції.
+
+У цій справі суди встановили, що у хворого є інші близькі особи,
+а тому відмова у призначенні опікуном саме мобілізованого племінника
+бул обґрунтованою.
+
+Детальніше з текстом постанови Верховного Суду від 22 червня 2026 року у справі
+№ 305/1557/24 (провадження № 61-9539сво25) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137885288.](https://reyestr.court.gov.ua/Review/137885288)
+
+7. Застосування норм процесуального права
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.07_segment.md № 545/487/25 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) ті, що стосуються визначення обсягу прав на земельну ділянку під приватизованим семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">07.07_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137759042" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 545/487/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>ті, що стосуються визначення обсягу прав на земельну ділянку під приватизованим</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7. Застосування норм процесуального права
+
+7.7. Спори щодо приватизації державного або комунального майна, зокрема
+ті, що стосуються визначення обсягу прав на земельну ділянку під приватизованим
+об’єктом, підлягають розгляду в порядку господарського судочинства. Участь
+фізичної особи у процедурі приватизації майна не змінює правової природи
+такого спору та не є підставою для його вирішення в порядку цивільного
+
+судочинства
+
+24 червня 2026 року Верховний Суд у складі колегії суддів Другої судової
+палати Касаційного цивільного суду розглянув у порядку письмового
+провадження касаційну скаргу ОСОБА_1 у справі за позовом ОСОБА_1
+до ДУ «Божківська виправна колонія (№ 16)», треті особи: ГУ Держгеокадстру
+у Полтавській області, Полтавська районна військова адміністрація,
+про припинення права постійного користування земельною ділянкою
+та визнання права користування земельною ділянкою.
+
+На обґрунтування заявлених вимог позивач зазначала, що у березні
+2023 року вона придбала у власність об’єкти нерухомого майна (казарми,
+вольєри тощо) в порядку малої приватизації. Ці об’єкти розташовані
+на земельній ділянці, що перебуває у постійному користуванні Божківської
+виправної колонії. Позивач уважала, що з набуттям права власності
+на нерухомість до неї автоматично перейшло право користування землею
+
+(принцип єдності юридичної долі земельної ділянки та будівлі), а тому просила
+припинити право колонії на частину ділянки та визнати це право за собою.
+
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+у задоволенні позову відмовив за відсутністю правових підстав для його
+
+задоволення.
+
+ВС не погодився з висновками судів попередніх інстанцій, скасував
+їх рішення та закрив провадження у справі на підставі п. 1 ч. 1 ст. 255
+ЦПК України з огляду на таке.
+
+Згідно з положеннями ЗУ «Про приватизацію державного і комунального
+майна» та сталою практикою Великої Палати Верховного Суду справи у спорах
+щодо приватизації майна (крім державного житлового фонду) належать
+до виключної юрисдикції господарських судів.
+
+Спори щодо приватизації виникають у зв’язку з відчуженням державного
+майна та виникненням відповідного обсягу прав у суб’єктів приватної власності.
+Оскільки цей спір стосується обсягу прав на земельну ділянку, набутих
+позивачкою саме в процесі приватизації нерухомості, він має розглядатися
+
+за правилами господарського судочинства.
+
+ВС наголосив, що участь фізичної особи у процедурі приватизації
+не змінює господарського характеру спору. Отже, суди попередніх інстанцій
+помилково розглянули справу в порядку цивільного судочинства.
+
+Детальніше з текстом постанови Верховного Суду від 24 червня 2026 року у справі
+№ 545/487/25 (провадження № 61-3868св26) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137759042.](https://reyestr.court.gov.ua/Review/137759042)
+
+8. Спори щодо розгляду скарг на рішення, дії або бездіяльність державного
+виконавця чи іншої посадової особи ДВС
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.1_segment.md № 291/41/22 190 10 поштовий зв&#x27;язок у зв’язку з втратою військового майна під час проходження військової служби, семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «поштовий зв&#x27;язок» (законодавство про забезпечення діяльності зв&#x27;язку / поштовий зв&#x27;язок).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">07.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137226436" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 291/41/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">190 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про забезпечення діяльності зв&#x27;язку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Поштовий зв&#x27;язок</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>у зв’язку з втратою військового майна під час проходження військової служби,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Поштовий зв&#x27;язок» (Законодавство про забезпечення діяльності зв&#x27;язку / Поштовий зв&#x27;язок).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7. Застосування норм процесуального права
+
+7.1 . Спір про відшкодування шкоди, завданої державі військовослужбовцем
+у зв’язку з втратою військового майна під час проходження військової служби,
+є спором з приводу проходження публічної служби. Такий спір підлягає розгляду
+в порядку адміністративного судочинства, у тому числі якщо позов
+про стягнення шкоди подано після звільнення особи з військової служби
+
+03 червня 2026 року Верховний Суд у складі колегії суддів Першої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу Військової частини у справі за позовом
+Військової частини до ОСОБА_1 про відшкодування шкоди, завданої державі
+внаслідок втрати відповідачем військового майна.
+
+На обґрунтування заявлених вимог позивач посилався на те, що відповідач,
+перебуваючи на посаді, що відноситься до публічної служби, як матеріально
+відповідальна особа, завдав шкоди державі в особі військової частини шляхом
+втрати майна в період здійснення ним повноважень, пов&#x27;язаних з виконанням
+завдань і функцій військовослужбовця.
+
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+закрив провадження у справі, оскільки спір між сторонами виник з приводу
+відшкодування збитків, завданих відповідачем державі під час проходження
+військової служби, та підлягає розгляду за правилами адміністративного
+
+судочинства.
+
+Верховний Суд погодився з рішеннями судів попередніх інстанцій
+зазначив, що спір між сторонами виник з приводу проходження відповідачем
+військової служби, під час якої у результаті неналежного виконання своїх
+службових обов&#x27;язків він втратив військове майно, чим завдав державі збитків.
+
+Згідно зі ст. 2 Закону України «Про військовий обов’язок і військову
+службу» військова служба є державною службою особливого характеру.
+Законодавство визначає військову службу як публічну службу.
+
+Відповідач, перебуваючи на посаді, що відноситься до публічної служби,
+як матеріально відповідальна особа, завдав шкоди державі в період здійснення
+ним повноважень, безпосередньо пов’язаних із виконанням завдань і функцій
+військовослужбовця.
+
+ВС наголосив, що правовідносини, які виникли між сторонами,
+є адміністративно-правовими. Судовий контроль у таких спорах має здійснюватися
+адміністративними судами, оскільки позов стосується відповідальності
+за шкоду, заподіяну під час виконання обов&#x27;язків публічної служби.
+
+ВС підтвердив сталість своєї практики, посилаючись на висновки Великої
+Палати Верховного Суду (постанови у справах № 11-892апп18, № 14-481цс18
+та № 636/93/14-ц), згідно з якими такі майнові спори належать до адміністративної
+юрисдикції. Доводи скаржника про виключно цивільно-правовий характер
+відповідальності відхилено як безпідставні.
+
+Детальніше з текстом постанови Верховного Суду від 03 червня 2026 року у справі
+№ 291/41/22 (провадження № 61-9385св25) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137226436.](https://reyestr.court.gov.ua/Review/137226436)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.2_segment.md № 538/1109/25 30 50 10 10 загальнодержавна лише в межах предмета та обсягу заявлених позовних вимог. накладення семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «загальнодержавна» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / державна власність / загальнодержавна).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">07.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137262903" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 538/1109/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 10 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb">Державна власність</span><span class="crumb-sep">›</span><span class="crumb-leaf">Загальнодержавна</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>лише в межах предмета та обсягу заявлених позовних вимог. Накладення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Загальнодержавна» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Державна власність / Загальнодержавна).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7. Застосування норм процесуального права
+
+7.2. Забезпечення позову шляхом накладення арешту на майно допускається
+лише в межах предмета та обсягу заявлених позовних вимог. Накладення
+арешту на об’єднану земельну ділянку, площа якої значно перевищує площу
+ділянок, що є предметом спору про витребування, без належного обґрунтування
+та з’ясування повного обсягу вимог, є передчасним
+
+03 червня 2026 року Верховний Суд у складі колегії суддів Третьої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за позовом заступника
+керівника Миргородської окружної прокуратури Полтавської області в інтересах
+держави в особі Сенчанської сільської ради Миргородського району Полтавської
+області до ОСОБА_1, третя особа — ТОВ «Агротех-Гарантія», про скасування
+у Державному земельному кадастрі державної реєстрації об`єднаної земельної
+ділянки, витребування земельних ділянок з незаконного володіння.
+
+Прокурор звернувся з позовом про скасування в Державному земельному
+кадастрі запису про реєстрацію об’єднаної земельної ділянки, площею
+
+26,0001 га, та витребування з володіння ОСОБА_1 земельних ділянок загальною,
+площею 12 га, які існували до об’єднання.
+
+Разом із позовом було подано заяву про його забезпечення.
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+заяву задовольнив, наклав арешт на всю об’єднану ділянку (26,0001 га)
+та заборонив відповідачу та органам реєстрації вчиняти будь-які дії щодо неї,
+мотивуючи свої рішення тим, що такі заходи є співмірними та необхідними
+для запобігання подальшому відчуженню майна.
+
+ВС з висновками судів попередніх інстанцій не погодився, скасував
+їх рішення та передав справу на новий розгляд до суду першої інстанції.
+Зазначив, що поза увагою та оцінкою судів залишилися обставини
+про те, що предметом заявлених вимог є ділянка, площею 12 га, водночас
+забезпечено позов, зокрема, накладенням арешту на земельну ділянку, площею
+26,0001 га.
+
+Також судовими рішеннями в справі № 538/130/21 уже витребувано
+з незаконного володіння ОСОБА_1 земельні ділянки, загальною площею 12 га,
+що входять до складу об`єднаної земельної ділянки з кадастровим номером
+5322681900:00:004:1450, площею 26,0001 га.
+
+Отже, накладення арешту на земельну ділянку, площею 26,0001 га
+фактично унеможливлює виконання рішення суду в справі № 538/130/21.
+
+ВС виснував, що, розглядаючи заяву про забезпечення позову, суд
+має з’ясувати обсяг позовних вимог, чого в цій справі суди не зробили,
+адже виділені матеріали взагалі не містять позовної заяви, а оскаржувані судові
+рішення зміст заявлених позовних вимог коректно не відображають (наведено
+лише назву позовних вимог без викладу конкретних підстав і предмета позову).
+
+Детальніше з текстом постанови Верховного Суду від 03 червня 2026 року у справі
+№ 538/1109/25 (провадження № 61-13371св25) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137262903.](https://reyestr.court.gov.ua/Review/137262903)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.3_segment.md № 509/4257/18 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) якщо уповноважений суб’єкт владних повноважень не здійснює або неналежно семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">07.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137413889" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 509/4257/18</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>якщо уповноважений суб’єкт владних повноважень не здійснює або неналежно</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7. Застосування норм процесуального права
+
+7.3. Прокурор здійснює представництво інтересів держави в суді лише субсидіарно,
+якщо уповноважений суб’єкт владних повноважень не здійснює або неналежно
+здійснює їх захист чи якщо такий орган відсутній. Незвернення прокурора
+до такого органу до подання позову та необґрунтування підстав представництва
+за ст. 23 ЗУ «Про прокуратуру» є підставою для залишення позову без розгляду
+
+10 червня 2026 року Верховний Суд у складі колегії суддів Першої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за позовом заступника
+прокурора Одеської області в інтересах держави в особі Міністерства юстиції
+України, ДАБІ до ОСОБА_1, державного реєстратора Одеської філії
+КП «Реєстрація нерухомості» про скасування рішення державного реєстратора
+та запису про право власності на об`єкт нерухомого майна.
+
+На обґрунтування позовних вимог прокурор посилався на те, що державний
+реєстратор безпідставно зареєстрував за ОСОБА_1 право власності на об’єкти
+нерухомості, які за своєю природою є тимчасовими спорудами та не підлягають
+державній реєстрації як нерухоме майно. Прокурор стверджував, що ці дії порушують
+встановлений законодавством порядок.
+
+Суд першої інстанції у задоволенні позову відмовив, вважаючи реєстрацію
+
+законною.
+
+Апеляційний суд не погодився з висновками суду першої інстанції, рішення
+скасував, ухвалив нове рішення, яким позов задовольнив, дійшов висновку,
+що реєстрація права власності на тимчасові споруди відбулася за відсутності
+належних правовстановлюючих документів.
+
+Верховний Суд не погодився з висновками судів попередніх інстанцій,
+рішення судів скасував, а позов прокурора залишив без розгляду, з огляду
+
+на таке.
+
+Згідно зі ст. 131-1 Конституції України та ст. 23 Закону України
+«Про прокуратуру» прокурор здійснює представництво інтересів держави в суді
+лише у виключних випадках. Підставою для такого представництва
+є бездіяльність компетентного органу — коли орган, знаючи про порушення,
+протягом розумного строку самостійно не звертається до суду за захистом.
+
+Прокурор повинен дотриматися чіткого порядку: спочатку повідомити
+відповідний орган про виявлені порушення, а вже у разі невчинення
+цим органом дій — представляти інтереси держави в суді, навівши відповідне
+обґрунтування.
+
+Суд установив, що прокурор, зазначаючи Міністерство юстиції та ДАБІ
+як органи, в інтересах яких подається позов, взагалі не звертався
+до них попередньо та не повідомляв про виявлені ним порушення перед
+поданням позовної заяви до суду.
+
+Отже, прокурор не перевірив, чи здійснюють ці органи захист інтересів
+держави у спірних правовідносинах, і не надав їм можливості відреагувати
+на порушення самостійно. Оскільки прокурор не обґрунтував підстави
+для представництва згідно із законом, позовну заяву відповідно до п. 1 ч. 1
+ст. 257 ЦПК України має бути залишено без розгляду.
+
+ВС констатував, що, розглянувши справу по суті позовних вимог, суди
+не врахували наведених норм права, не перевірили дотримання прокурором
+визначеного ст. 23 ЗУ «Про прокуратуру» порядку щодо обґрунтування підстав
+для здійснення представництва держави у суді та не врахували, що прокурор
+взагалі не звертався до органів державної влади, в інтересах держави в особі
+
+яких подав позов.
+
+Детальніше з текстом постанови Верховного Суду від 10 червня 2026 року у справі
+№ 509/4257/18 (провадження № 61-9518св25) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137413889.](https://reyestr.court.gov.ua/Review/137413889)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.4_segment.md № 176/2469/22 280 60 10 система органів прокуратури органів пенсійного фонду україни (як правонаступника фонду соціального семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «система органів прокуратури» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура / система органів прокуратури).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">07.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137758979" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 176/2469/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Прокуратура</span><span class="crumb-sep">›</span><span class="crumb-leaf">Система органів прокуратури</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>органів Пенсійного фонду України (як правонаступника Фонду соціального</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Система органів прокуратури» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура / Система органів прокуратури).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7. Застосування норм процесуального права
+
+7.4. Спори стосовно оскарження фізичними особами рішень, дій чи бездіяльності
+органів Пенсійного фонду України (як правонаступника Фонду соціального
+страхування) щодо обчислення, призначення, перерахунку та здійснення страхових
+виплат за загальнообов’язковим державним соціальним страхуванням підлягають
+розгляду за правилами адміністративного, а не цивільного судочинства.
+Такі органи діють як суб’єкти владних повноважень, що виконують управлінські
+функції у сфері соціального захисту
+
+19 червня 2026 року Верховний Суд у складі колегії суддів Другої судової
+палати Касаційного цивільного суду розглянув у порядку письмового
+провадження касаційну скаргу ОСОБА_1 у справі за позовом ОСОБА_1 до ГУ ПФУ
+в Дніпропетровській області про стягнення заборгованості зі сплати
+одноразової страхової виплати та щомісячних страхових виплат в зв`язку
+зі смертю чоловіка.
+
+На обґрунтування заявлених вимог позивач посилалася на те, що її чоловік
+протягом майже 20 років працював у шкідливих умовах праці, внаслідок чого
+йому було встановлено діагноз «професійний рак». Чоловік помер до того,
+як встиг пройти огляд МСЕК для визначення ступеня втрати працездатності.
+Позивач вважала, що Пенсійний фонд як правонаступник Фонду соціального
+страхування безпідставно відмовив їй у призначенні одноразової та щомісячних
+страхових виплат у зв’язку зі смертю годувальника від профзахворювання,
+тому просила стягнути ці кошти в судовому порядку.
+
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+відмовив у задоволенні позову, оскільки ОСОБА_1 не є особою, яка має право
+на отримання спірних щомісячних страхових виплат після смерті чоловіка в разі
+втрати годувальника, не є спадкоємцем померлого чоловіка щодо отримання
+страхових виплат після його смерті, бо її померлий чоловік не є спадкодавцем
+у цьому випадку, оскільки не був одержувачем спірних страхових платежів
+
+ВС не погодився з висновками судів попередніх інстанцій, скасував
+їхні рішення та закрив провадження у справі, зазначив, що суд своєю ухвалою
+закриває провадження у справі, якщо справа не підлягає розгляду в порядку
+цивільного судочинства ( п. 1 ч. 1 ст. 255 ЦПК України).
+
+Згідно зі статтями 4 та 5 Закону України «Про загальнообов’язкове
+державне соціальне страхування» Пенсійний фонд України є уповноваженим
+органом управління, який здійснює владні управлінські функції у сфері
+соціального захисту.
+
+ВС наголосив, що при визначенні юрисдикції необхідно виходити із суті
+права, за захистом якого звернулася особа. У цій справі позивач фактично
+оскаржує непризначення їй страхових виплат як особі, що має на це право після
+смерті чоловіка-годувальника. Це не є приватноправовим спором про спадкування
+вже нарахованих сум, а є спором про право на призначення соціальної
+
+допомоги.
+
+Оскільки вимоги позивач пов’язані з доведенням наявності підстав
+для виплати соціальних коштів суб’єктом владних повноважень, такий спір
+є публічно-правовим. Отже, справа має розглядатися за правилами
+адміністративного судочинства.
+
+Закриваючи провадження через порушення правил предметної
+юрисдикції, касаційний суд роз’яснив позивачу її право протягом десяти днів
+звернутися із заявою про направлення справи до суду адміністративної
+юрисдикції.
+
+Детальніше з текстом постанови Верховного Суду від 19 червня 2026 року у справі
+№ 176/2469/22 (провадження № 61-3707св25) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137758979.](https://reyestr.court.gov.ua/Review/137758979)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.5_segment.md № 752/3051/25 20 70 пільги щодо сплати податків, зборів та інших платежів пов&#x27;язаних із захистом їхніх соціальних прав, незалежно від процесуального семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «пільги щодо сплати податків, зборів та інших платежів» (бюджетно-фінансове законодавство / пільги щодо сплати податків, зборів та інших платежів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">07.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137690556" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 752/3051/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пільги щодо сплати податків, зборів та інших платежів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>пов&#x27;язаних із захистом їхніх соціальних прав, незалежно від процесуального</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Пільги щодо сплати податків, зборів та інших платежів» (Бюджетно-фінансове законодавство / Пільги щодо сплати податків, зборів та інших платежів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7. Застосування норм процесуального права
+
+7.5. Учасники бойових дій звільняються від сплати судового збору у справах,
+пов&#x27;язаних із захистом їхніх соціальних прав, незалежно від процесуального
+статусу у справі. Пільга зі сплати судового збору, передбачена для учасників
+бойових дій, поширюється на таких осіб незалежно від того, чи є вони позивачами,
+чи відповідачами у справі. Покладення обов&#x27;язку зі сплати судового збору
+на учасника бойових дій лише з підстави його процесуального статусу
+відповідача є неправильним застосуванням п. 13 ч. 1 ст. 5 Закону України
+«Про судовий збір»
+22 червня 2026 року Верховний Суд у складі Об’єднаної палати Касаційного
+цивільного суду розглянув у порядку спрощеного позовного провадження
+касаційну скаргу ОСОБА_1 у справі за позовом ТОВ «Новобудова» до ОСОБА_1
+про стягнення заборгованості за житлово-комунальні послуги.
+
+У справі, що переглядалась, товариство, що здійснює управління
+та обслуговування багатоквартирного будинку, звернулося до суду з позовом
+до споживача житлово-комунальних послуг про стягнення заборгованості
+за надані послуги, інфляційних втрат та трьох процентів річних.
+
+Суд першої інстанції позов задовольнив.
+Відповідач, який має статус учасника бойових дій, подав апеляційну скаргу
+на рішення суду першої інстанції. У скарзі він просив звільнити його від сплати
+судового збору, посилаючись на пільги, гарантовані йому законом.
+
+Апеляційний суд відмовив у задоволенні клопотання відповідача
+про звільнення його від сплати судового збору та повернув скаргу після того,
+як заявник не усунув недоліки апеляційної скарги щодо сплати судового збору.
+Суд мотивував це тим, що справа про стягнення заборгованості
+за житлово-комунальні послуги не стосується захисту прав учасника бойових
+дій, а сам заявник є відповідачем, а не позивачем, і самостійно за захистом
+своїх прав до суду не звертався.
+
+ВС у складі ОП КЦС скасував ухвалу апеляційного суду та направив справу
+на новий розгляд до суду апеляційної інстанції, зробивши такі правові висновки.
+
+За змістом п. 13 ч. 1 ст. 5 ЗУ «Про судовий збір» від сплати судового збору
+під час розгляду справи в усіх судових інстанціях звільняються учасники
+бойових дій, постраждалі учасники Революції Гідності, Герої України - у справах,
+пов’язаних з порушенням їхніх прав.
+
+Законодавець, формулюючи у п. 13 ч. 1 ст. 5 ЗУ «Про судовий збір»
+правову норму – правило поведінки для суду, використав розмежування статусу
+учасників справи, не вказавши в ній слово «позивач», як в інших нормах цього
+Закону. Саме таким чином визначається прийом законодавчої техніки з метою
+з’ясування дійсного змісту сформульованої правової норми.
+
+За загальним правилом, якщо правова норма надає якесь право
+або гарантію особам приватного права, то зміст такої норми повинен
+тлумачитись або буквально або розширено, проте не може тлумачитись
+звужено. Правозастосовний орган не може шляхом звуженого тлумачення
+зменшувати обсяг наданих законодавцем прав або гарантій.
+
+У ст. 22 ЗУ «Про статус ветеранів війни, гарантії їх соціального захисту»
+передбачено, що особи, на яких поширюється дія цього нормативного акта,
+отримують безоплатну правову допомогу щодо питань, пов`язаних
+з їх соціальним захистом, а також звільняються від судових витрат, пов`язаних
+
+з розглядом таких питань.
+
+ВС у складі ОП КЦС зазначив, що системне тлумачення п. 13 ч. 1 ст. 5
+ЗУ «Про судовий збір» у поєднанні зі ст. 22 ЗУ «Про статус ветеранів війни,
+гарантії їх соціального захисту» свідчить про те, що законодавець не пов’язує
+сплату / звільнення від сплати судового збору учасників бойових дій у разі
+захисту ними питань, пов`язаних з їх соціальним захистом, від того мають
+вони статус позивача чи відповідача у справі.
+
+З урахуванням наведеного ВС у складі ОП КЦС виснував, що апеляційний
+суд, визнаючи апеляційну скаргу відповідача неподаною з підстави несплати
+ним судового збору на рішення суду, яким з нього, як з учасника бойових дій,
+стягнуто заборгованість з оплати житлово-комунальних послуг, оскільки
+він є відповідачем, а не позивачем у справі, допустив звужене тлумачення п. 13
+ч. 1 ст.5 Закону України «Про судовий збір», що є неправильним.
+
+Детальніше з текстом постанови Верховного Суду від 22 червня 2026 року у справі
+№ 752/3051/25 (провадження № 61-12120сво25) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137690556.](https://reyestr.court.gov.ua/Review/137690556)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.6_segment.md № 604/774/24 10230 10 30 інші органи державного контролю здійснюється в межах справи про банкрутство. після відкриття провадження семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «інші органи державного контролю» (основи суспільного ладу / державний контроль / органи державного контролю / інші органи державного контролю).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">07.6_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137649353" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 604/774/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10230 10 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Державний контроль</span><span class="crumb-sep">›</span><span class="crumb">Органи державного контролю</span><span class="crumb-sep">›</span><span class="crumb-leaf">Інші органи державного контролю</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>здійснюється в межах справи про банкрутство. Після відкриття провадження</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Інші органи державного контролю» (Основи суспільного ладу / Державний контроль / Органи державного контролю / Інші органи державного контролю).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7. Застосування норм процесуального права
+
+7.6. Судовий контроль за виконанням рішень щодо боржника-банкрута
+здійснюється в межах справи про банкрутство. Після відкриття провадження
+у справі про банкрутство боржника всі майнові спори та вимоги, вирішення
+
+яких може вплинути на розмір або склад ліквідаційної маси, підлягають
+розгляду господарським судом у межах справи про банкрутство, у тому числі
+скарги, подані в порядку судового контролю за виконанням судових рішень
+щодо такого боржника
+
+22 червня 2026 року Верховний Суд у складі Об’єднаної палати
+Касаційного цивільного суду розглянув у порядку письмового провадження
+касаційну скаргу ФГ «Золотий жайвір» у справі за скаргою ФГ «Золотий жайвір»
+на дії та бездіяльність державного виконавця Волочиського ВДВС
+у Хмельницькому районі Хмельницької області Центрального міжрегіонального
+управління Міністерства юстиції (м. Київ).
+
+У справі, що переглядалась, фермерське господарство (боржник)
+оскаржило бездіяльність і дії державного виконавця, який після відкриття
+щодо боржника справи про банкрутство не зупинив виконавче провадження,
+а наклав арешт на кошти та здійснив їх стягнення.
+
+Суди відмовили у задоволенні скарги, посилаючись на те, що права
+заявника не було порушено, а дії виконавця відповідали вимогам закону.
+
+Перед об’єднаною палатою поставлено правове питання юрисдикційності:
+який суд розглядає скарги на дії та бездіяльність державного виконавця, подані
+в межах виконавчого провадження щодо боржника, стосовно якого відкрито
+провадження у справі про банкрутство, які можуть вплинути на його майнові
+
+активи.
+
+ВС у складі ОП КЦС скасував рішення судів попередніх інстанцій
+та передав справу за підсудністю до відповідного господарського суду,
+зробивши такі правові висновки.
+
+За загальним правилом судовий контроль за виконанням судових рішень
+у цивільних справах здійснює суд, який розглянув справу як суд першої інстанції.
+
+Водночас процесуальний закон встановлює імперативне правило
+виключної юрисдикційності справ про банкрутство та спорів з майновими
+вимогами до боржника, стосовно якого відкрито провадження у справі
+про банкрутство.
+
+За положеннями ч. 2 ст. 7 КУзПБ усі майнові спори та вимоги
+до боржника, щодо якого відкрито провадження у справі про банкрутство,
+розглядаються господарським судом у межах такої справи.
+
+Установлена ст. 7 КУзПБ концентрація майнових спорів за участю
+боржника виключно в межах справи про банкрутство дозволяє здійснювати
+ефективний судовий контроль щодо збереження майнових активів боржника
+у його розпорядженні, з метою відновлення платоспроможності такого
+боржника або належного формування ліквідаційної маси банкрута.
+
+Таким чином, з дня введення в дію Кодексу України з процедур
+банкрутства, тобто з 21.10.2019, розгляд усіх майнових спорів, стороною
+
+в яких є боржник, має відбуватися господарським судом у межах справи
+про банкрутство, яку такий суд розглядає.
+
+ВС у складі ОП КЦС роз’яснив, що під час вирішення питання
+про необхідність розгляду спору, стороною якого є особа, щодо якої відкрито
+провадження у справі про банкрутство, суди мають виходити не лише з того,
+чи підлягають заявлені вимоги вартісній оцінці, а й оцінювати зміст заявлених
+вимог та порушене право чи інтерес, на захист якого подано відповідну заяву
+або позов.
+
+Оскільки наслідком задоволення вимог скарги в межах судового
+контролю за виконанням судового рішення щодо боржника, стосовно якого
+відкрито провадження у справі про банкрутство, може бути зміна розміру
+або складу ліквідаційної маси, така скарга підлягає розгляду господарським
+судом, у провадженні якого перебуває справа про банкрутство боржника.
+
+Отже, якщо виконання судового рішення та здійснення судового контролю
+за його виконанням можуть вплинути на обсяг ліквідаційної маси боржника,
+відповідні питання мають вирішуватися господарським судом у межах справи
+про банкрутство.
+
+Детальніше з текстом постанови Верховного Суду від 22 червня 2026 року у справі
+№ 604/774/24 (4-с/604/4/25) (провадження № 61-13251сво25) можна ознайомитися
+[за посиланням – https://reyestr.court.gov.ua/Review/137649353.](https://reyestr.court.gov.ua/Review/137649353)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="08.1_segment.md № 932/5808/25 30 60 20 забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія) судового рішення, який не може існувати автономно і безстроково за відсутності семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)» (цивільне законодавство / зобов&#x27;язальне право / забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">08.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137262902" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 932/5808/25</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>судового рішення, який не може існувати автономно і безстроково за відсутності</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)» (Цивільне законодавство / Зобов&#x27;язальне право / Забезпечення виконання зобов&#x27;язань (штраф, пеня, застава (ломбард), іпотека, порука, завдаток, гарантія)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 8. Спори щодо розгляду скарг на рішення, дії або бездіяльність державного
+
+8.1. Арешт майна боржника є похідним заходом примусового виконання
+судового рішення, який не може існувати автономно і безстроково за відсутності
+відкритого виконавчого провадження або реальної можливості виконання
+рішення. Збереження арешту протягом тривалого часу (понад 10 років)
+після закінчення провадження та знищення його матеріалів, за умови спливу
+строків пред’явлення виконавчого документа до виконання, є невиправданим
+втручанням у право особи на мирне володіння своїм майном
+
+03 червня 2026 року Верховний Суд у складі колегії суддів Третьої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за скаргою ОСОБА_1
+на бездіяльність державного виконавця Першого Правобережного ВДВС
+у Шевченківському та Центральному районах м. Дніпра Південного
+міжрегіонального управління Міністерства юстиції (м. Одеса).
+
+Заявник просив визнати незаконною бездіяльність державних виконавців
+щодо незняття арештів, накладених на його майно на підставі постанов
+державних виконавців від 14.07.2007 та від 15.10.2012, й зобов’язати державних
+виконавців вчинити дії щодо зняття (скасування) арештів майна боржника,
+посилаючись на те, що у Державному реєстрі речових прав містяться записи
+про обтяження його майна, накладені у 2007 та 2012 роках на підставі
+виконавчих листів про стягнення боргу. Позивач зазначав, що протягом останніх
+десяти років жодні виконавчі дії щодо нього не вчинялися, виконавчі
+провадження у відділах ДВС відсутні, а стягувач не звертався за видачею
+дублікатів документів. На думку скаржника, збереження арешту за таких обставин
+втратило свою правову мету та порушує його право власності.
+
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+відмовив у задоволенні скарги, керуючись тим, що у разі закінчення
+виконавчого провадження у зв’язку із направленням виконавчого документа
+за належністю іншому органу державної виконавчої служби арешт, накладений
+на майно боржника, не знімається та не скасовуються інші вжиті державним
+виконавцем заходи примусового виконання рішення.
+
+ВС не погодився з висновками апеляційного суду, скасував його
+постанову, а справу передав на новий розгляд до суду апеляційної інстанції,
+
+з огляду на таке.
+
+Арешт майна не є самоціллю, а лише засобом забезпечення виконання
+рішення. Якщо виконавче провадження відсутнє, а можливість примусового
+виконання виключена через сплив строків, подальше обмеження прав власника
+
+є незаконним.
+
+Суд установив, що Дніпровський відділ ДВС є правонаступником органу,
+який безпосередньо накладав арешт. Отже, саме цей орган несе відповідальність
+за належне оформлення чи скасування обтяжень, незалежно від того, куди
+згодом передавалися матеріали справ.
+
+Суди попередніх інстанцій не дали оцінки тому факту, що з моменту
+завершення проваджень минуло понад 10 років, матеріали знищені
+за закінченням строку зберігання, а стягувач не виявляв майнових претензій.
+У таких умовах збереження «автономного» арешту суперечить ст. 1 Першого
+протоколу до Конвенції про захист прав людини і основоположних свобод.
+
+ВС підтвердив, що боржник, який не згоден із арештом, накладеним
+під час виконання рішення, має захищати свої права саме шляхом оскарження
+дій (бездіяльності) виконавця в порядку судового контролю (розділ VII ЦПК України),
+
+а не шляхом подання окремого позову про зняття арешту.
+
+Детальніше з текстом постанови Верховного Суду від 03 червня 2026 року у справі
+№ 932/5808/25 (провадження № 61-233св26) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137262902.](https://reyestr.court.gov.ua/Review/137262902)
+
+9. Звернення рішень до виконання і контроль за їх виконанням
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.1_segment.md № 753/17854/24 50 60 30 тимчасова та сезонна робота що не підлягає примусовому виконанню, визнається в україні за принципом семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «тимчасова та сезонна робота» (трудове законодавство / робочий час і час відпочинку. робочі місця / тимчасова та сезонна робота).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">09.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137336483" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 753/17854/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 60 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Робочий час і час відпочинку. Робочі місця</span><span class="crumb-sep">›</span><span class="crumb-leaf">Тимчасова та сезонна робота</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>що не підлягає примусовому виконанню, визнається в Україні за принципом</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Тимчасова та сезонна робота» (Трудове законодавство / Робочий час і час відпочинку. Робочі місця / Тимчасова та сезонна робота).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 9. Звернення рішень до виконання і контроль за їх виконанням
+
+9.1. Рішення іноземного суду про визначення місця проживання дитини,
+що не підлягає примусовому виконанню, визнається в Україні за принципом
+взаємності або відповідно до міжнародних договорів. Юрисдикція таких спорів
+визначається залежно від звичайного місця проживання дитини. Відсутність
+двостороннього договору про правову допомогу не є підставою для відмови
+у визнанні рішення, а незгода одного з батьків зі змістом рішення іноземного
+суду не може бути підставою для його перегляду по суті під час розгляду
+процесуального питання про визнання такого рішення
+
+10 червня 2026 року Верховний Суд у складі колегії суддів Першої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_2 у справі за клопотанням ОСОБА_1,
+заінтересована особа – ОСОБА_2, про визнання рішення суду Сполученого
+Королівства Великої Британії та Північної Ірландії, що не підлягає примусовому
+виконанню, на території України.
+
+Спір виник між батьками щодо визначення місця проживання їхньої
+малолітньої доньки (2017 року народження). З квітня 2022 року дитина разом
+із матір’ю проживає у Великій Британії, де відвідує школу та є соціально
+інтегрованою. У січні 2023 року батько (ОСОБА_2) особисто ініціював розгляд
+справи у британському суді. 10.05.2024 Сімейний суд Вулвергемптона
+(Сполучене Королівство) ухвалив рішення, яким визначив, що дитина
+має проживати з матір’ю та встановив порядок спілкування батька з дитиною
+через відеоповідомлення. Мати звернулася до суду з клопотанням про визнання
+цього рішення в Україні.
+
+Суд першої інстанції, з висновками якого погодився апеляційний суд,
+визнав рішення суду Сполученого Королівства Великої Британії та Північної
+Ірландії, що не підлягає примусовому виконанню, яке було винесене Сімейним
+Судом Вулвергемптона, від 10.05.2024 у справі про визначення місця
+проживання дитини — ОСОБА_3 разом з матір`ю ОСОБА_1. Оскільки
+між Україною та Сполученим Королівством Великої Британії та Північної Ірландії
+не укладено договору про правову допомогу та правові відносини у цивільних
+і кримінальних справах, то рішення суду Сполученого Королівства Великої
+Британії та Північної Ірландії визнається в Україні за принципом взаємності,
+а відсутність двостороннього договору не може бути підставою для невизнання
+рішення. Тому для цих правовідносин слід застосовувати принцип взаємності
+для визнання рішення суду, за яким рішення суду певної держави повинно
+визнаватись та виконуватись в Україні, якщо тільки немає доказів того,
+що рішення українських судів не визнаються і не можуть бути виконані
+на території такої держави.
+
+ВС погодився з висновками судів з огляду на таке.
+
+Відповідно до ст. 471 ЦПК України рішення іноземного суду, що не підлягає
+примусовому виконанню, визнається в Україні, якщо це передбачено
+міжнародними договорами або за принципом взаємності.
+
+Згідно з Конвенцією про юрисдикцію та батьківську відповідальність
+1996 року заходи захисту дитини мають вживатися органами держави
+її звичайного місця проживання.
+
+У цій справі встановлено, що дитина – громадянка України ОСОБА_3
+з квітня 2022 року постійно проживає у Великій Британії, відвідує там школу
+та є соціально інтегрованою.
+
+Отже, саме британський суд мав юрисдикцію вирішувати питання
+щодо її проживання та спілкування з батьками.
+
+Перелік підстав для відмови у визнанні рішення іноземного суду (ст. 468
+ЦПК України) є вичерпним. Суд встановив, що ОСОБА_2 був належним чином
+повідомлений про розгляд у Великій Британії та навіть намагався оскаржити
+рішення в апеляційному порядку там.
+
+Під час розгляду клопотання про визнання рішення іноземного суду
+український суд вирішує лише процесуальне питання його чинності на території
+України. Суд не має права переглядати заходи, вжиті іноземним судом, по суті
+чи оцінювати їхню доцільність, оскільки це суперечило б принципу юридичної
+визначеності.
+
+Рішення іноземного суду було ухвалено в інтересах дитини, забезпечуючи
+їй стабільне середовище проживання в умовах війни в Україні.
+
+Детальніше з текстом постанови Верховного Суду від 10 червня 2026 року у справі
+№ 753/17854/24 (провадження № 61-3474св26) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137336483.](https://reyestr.court.gov.ua/Review/137336483)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.2_segment.md № 495/8640/21 280 60 прокуратура розмежування тієї частини рішення, яка підлягає примусовому виконанню мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">09.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/137498983" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 495/8640/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>розмежування тієї частини рішення, яка підлягає примусовому виконанню</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 9. Звернення рішень до виконання і контроль за їх виконанням
+
+9.2. Остаточність рішення іноземного суду сама по собі не усуває необхідності
+розмежування тієї частини рішення, яка підлягає примусовому виконанню
+(глава 1 розділу ІХ ЦПК України), і тієї частини, яка за своїм змістом може бути
+лише предметом визнання (глава 2 розділу ІХ ЦПК України) як юридичний факт
+або правовий стан. Рішення іноземного суду в частині позбавлення батьківських
+прав та встановлення опіки за своїм характером не потребує примусового
+виконання, а має визнаватися як юридичний факт у порядку, визначеному
+главою 2 розділу ІХ ЦПК України. Водночас присудження іноземним судом
+процесуальних витрат має майновий характер і підлягає примусовому
+виконанню в Україні
+
+17 червня 2026 року Верховний Суд у складі колегії суддів Першої судової
+палати Касаційного цивільного суду розглянув у порядку спрощеного позовного
+провадження касаційну скаргу ОСОБА_1 у справі за клопотанням ОСОБА_1,
+
+боржник – ОСОБА_2, про надання дозволу на примусове виконання рішення
+іноземного суду.
+
+На обґрунтування заявленого клопотання заявник вказував, що рішенням
+італійського суду ОСОБА_2 (матір) було позбавлено батьківських прав щодо їхнього
+сина, дитину передано під опіку батькові, а також зобов’язано матір сплатити
+на його користь 8 000,00 євро процесуальних витрат. Оскільки рішення добровільно
+не виконується, а дитина незаконно утримується матір’ю в Україні, заявник
+просив надати дозвіл на примусове виконання цього рішення в цілому.
+
+Суд першої інстанції клопотання задовольнив, надав дозвіл на виконання
+рішення в частині позбавлення батьківських прав, передачі дитини батькові
+та стягнення витрат, при цьому визначив гривневий еквівалент суми витрат
+за курсом НБУ.
+
+Апеляційний суд не погодився з такими висновками суду першої інстанції,
+рішення скасував, ухвалив нове рішення, яким у задоволенні клопотання
+відмовив, мотивуючи своє рішення тим, що дитина проживає в Україні понад
+8 років і вже адаптувалася тут, а її повернення до Італії може загрожувати
+психічною шкодою (п. «b» ст. 13 Гаазької конвенції 1980 року).
+
+ВС із висновками апеляційного суду погодився лише частково, змінив
+мотиви відмови та частково задовольнив вимоги заявника, зазначивши таке.
+
+Відповідно до ЦПК України існують дві окремі процедури: надання дозволу
+на примусове виконання (для майнових вимог, де видається виконавчий лист)
+та визнання рішення іноземного суду (для немайнових справ, як-от розірвання
+шлюбу чи встановлення опіки, де рішення визнається як правовий стан).
+
+Рішенням суду Італійської Республіки в частині позбавлення батьківських
+прав та опіки за своєю суттю є рішенням про визнання юридичного факту
+і не підлягає процедурі примусового виконання (глава 1 розділу ІХ ЦПК).
+Оскільки заявник просив саме про виконання, а не про визнання цієї частини,
+відмова у задоволенні клопотання в цій частині є правильною, але з процесуальних
+мотивів, а не через ризик завдання шкоди дитині.
+
+Апеляційний суд безпідставно застосував норми про міжнародне
+викрадення дітей, оскільки в цій справі вирішувалося питання легітимізації
+остаточного рішення суду по суті батьківських прав, що регулюється Гаазькою
+конвенцією 1996 року.
+
+В частині стягнення 8 000,00 євро судових витрат рішення має майновий
+характер і підлягає примусовому виконанню в Україні. Підстав для відмови,
+передбачених ст. 468 ЦПК, не встановлено.
+
+Суд першої інстанції помилково визначив гривневий еквівалент витрат,
+оскільки національний суд не має права змінювати резолютивну частину
+іноземного судового рішення. Виконання має відбуватися в оригінальній валюті.
+
+Таким чином, ВС поновив дію ухвали про примусове виконання рішення
+в частині стягнення грошових коштів, але залишив у силі відмову щодо виконання
+частини про батьківські права, змінивши її мотивування.
+
+Детальніше з текстом постанови Верховного Суду від 17 червня 2026 року у справі
+№ 495/8640/21 (провадження № 61-3506св26) можна ознайомитися за посиланням –
+[https://reyestr.court.gov.ua/Review/137498983.](https://reyestr.court.gov.ua/Review/137498983)
+
+Огляд судової практики Касаційного цивільного суду у складі Верховного Суду
+(актуальна практика). Рішення, внесені до ЄДРСР, за червень 2026 року / Упоряд.:
+управління аналітичної та правової роботи Касаційного цивільного суду департаменту
+аналітичної та правової роботи / Відпов. за вип.: суддя ВС у КЦС, секретар Пленуму ВС,
+канд. юрид. наук, доцент Д. Д. Луспеник. Київ, 2026. – 43 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 14;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

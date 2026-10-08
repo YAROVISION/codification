@@ -89,14 +89,14 @@ def detect_digest_context(folder_name: str, preamble_text: str = "") -> Dict[str
         context["court"] = "Органи прокуратури"
         context["preferred_branches"].extend(["280 60", "50130 40"])
 
-    # 5. Адміністративне судочинство (КАС)
+    # 5. Адміністративне судочинство (КАС / КУпАП)
     if "kas" in fn or "кас" in fn or "адміністративн" in pt:
         context["court"] = "КАС ВС"
-        context["preferred_branches"].append("270 50")
+        context["preferred_branches"].extend(["240 20", "240 10", "240"])
         context["forbidden_branches"].extend(["270 10", "270 20", "270 30", "250", "260"])
         if "daidzhest_kas_ukrainy" in fn or "20-річчя" in pt or "кодекс адміністративного судочинства" in pt:
             context["is_pure_procedural"] = True
-            context["default_procedural_code"] = "270 50"
+            context["default_procedural_code"] = "240 20"
 
     # 6. Господарське судочинство (КГС)
     elif "kgs" in fn or "кгс" in fn or "гпк" in fn or "voen_stan_kgs" in fn or "господарськ" in pt:
@@ -197,6 +197,9 @@ def parse_segment_file(filepath: Path) -> Optional[Dict[str, Any]]:
         text = filepath.read_text(encoding="utf-8")
     except Exception as e:
         print(f"Помилка читання {filepath}: {e}")
+        return None
+
+    if "технічний сегмент" in text.lower() or "не підлягає розподілу" in text.lower():
         return None
 
     lines = [l.strip() for l in text.split("\n") if l.strip()]

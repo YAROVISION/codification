@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KAS_vidchygenna_majna — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KAS_vidchygenna_majna та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KAS_vidchygenna_majna.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KAS_vidchygenna_majna</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">17</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">72.2%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">15</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 17 із 17</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01_segment.md № 852/2а-7/19 190 10 40 тарифи і такси на поштові відправлення з ненаданням доказів суспільної необхідності в такому відчуженні семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «тарифи і такси на поштові відправлення» (законодавство про забезпечення діяльності зв&#x27;язку / поштовий зв&#x27;язок / тарифи і такси на поштові відправлення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/88304403" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 852/2а-7/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">190 10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про забезпечення діяльності зв&#x27;язку</span><span class="crumb-sep">›</span><span class="crumb">Поштовий зв&#x27;язок</span><span class="crumb-sep">›</span><span class="crumb-leaf">Тарифи і такси на поштові відправлення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>з ненаданням доказів суспільної необхідності в такому відчуженні</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Тарифи і такси на поштові відправлення» (Законодавство про забезпечення діяльності зв&#x27;язку / Поштовий зв&#x27;язок / Тарифи і такси на поштові відправлення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1. Про передчасність позову про примусове відчуження земельної ділянки у зв’язку
+з ненаданням доказів суспільної необхідності в такому відчуженні
+
+Оріхівська районна державна адміністрація звернулася до апеляційного
+адміністративного суду, як суду першої інстанції, з позовом до фізичної особи, за участю
+Товариства з обмеженою відповідальністю «КАОЛІН АЗОВ», про примусове відчуження
+у державну власність з мотивів суспільної необхідності земельної ділянки, призначеної
+для ведення товарного сільськогосподарського виробництва, для розміщення об’єктів,
+пов’язаних із видобуванням корисних копалин загальнодержавного значення. В
+обґрунтування позовних вимог посилалась на необхідність розміщення
+та обслуговування об’єктів, пов’язаних із видобуванням корисних копалин
+загальнодержавного значення - під розміщення виробничої бази кар’єру для розробки
+Буряківського родовища кварцових пісків, розташованого за межами населеного пункту
+села Новопавлівка на території Оріхівського району Запорізької області. ТОВ «КАОЛІН
+АЗОВ», маючи спеціальний дозвіл на видобування корисних копалин на родовищі,
+розташованому поблизу зазначеної вище земельної ділянки, ініціювало процедуру її
+викупу для суспільних потреб. Оріхівська РДА видала розпорядження про початок
+процедури викупу. При цьому, ділянка перебувала в оренді у ТОВ «Александр-Агро 2»
+до 2030 року, яке не залучалось до переговорів. Відповідач отримав від Оріхівської РДА
+повідомлення щодо порядку визначення та відшкодування збитків у зв’язку із викупом
+земельної ділянки, але воно не містило умов заміни земельної ділянки чи наслідків
+відмови від її викупу. Крім цього, позивач не направив відповідачу письмове
+повідомлення про прийняте рішення щодо примусового відчуження земельної ділянки.
+Судом першої інстанції у задоволенні позову відмовлено. Верховний Суд залишив
+апеляційну скаргу без задоволення, а рішення суду першої інстанції без змін.
+
+Верховний Суд дійшов висновку, що у даному випадку звернення до суду
+з позовом про примусове відчуження об’єктів з мотивів суспільної
+необхідності є передчасним, беручи до уваги недодержання встановленої
+законом досудової процедури узгодження викупу земельної ділянки для
+суспільних потреб (включаючи непроведення переговорів з відповідачем
+або надання доказів її відмови в участі в таких переговорах, відсутність
+доказів запропонування відповідачеві рівноцінної земельної ділянки тощо)
+та відсутність доказів наявності необхідності такого відчуження
+
+Детальніше з текстом постанови КАС ВС від 18 березня 2020 року у справі № 852/2а-7/19 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/88304403
+
+#### 4
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2_segment.md № 856/9/20-а 150 80 30 представництва. філії. агенції видобування корисних копалин для суспільних потреб, а не для задоволення семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «представництва. філії. агенції» (загальні засади правового регулювання економічного розвитку / підприємства / представництва. філії. агенції).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/94873316" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 856/9/20-а</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 80 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Підприємства</span><span class="crumb-sep">›</span><span class="crumb-leaf">Представництва. Філії. Агенції</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>видобування корисних копалин для суспільних потреб, а не для задоволення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Представництва. Філії. Агенції» (Загальні засади правового регулювання економічного розвитку / Підприємства / Представництва. Філії. Агенції).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2. Про відчуження земельної ділянки для розміщення підприємства, що здійнює
+видобування корисних копалин для суспільних потреб, а не для задоволення
+комерційних інтересів
+
+Козятинська районна державна адміністрація звернулася до апеляційного
+адміністративного суду, як суду першої інстанції, з позовом до фізичної особи про
+примусове відчуження у державну власність з мотивів суспільної необхідності земельної
+ділянки, призначеної для ведення товарного сільськогосподарського виробництва. В
+обґрунтування позовних вимог посилалась на те, що вилучення земельної ділянки
+відповідає суспільним потребам, оскільки на ній планується подальше розміщення
+і обслуговування об’єктів, пов’язаних із видобуванням первинних каолінів Товариством
+з обмеженою відповідальністю «АКВ Українське каолінове товариство» як корисних
+копалин загальнодержавного значення. Вважала, що збільшення площі розробки
+родовища за рахунок спірної земельної ділянки є безумовною підставою для збільшення
+суми надходжень до місцевого та державного бюджетів, оскільки збільшується
+видобуток корисних копалин і за рахунок цього сплачується рентна плата, збільшується
+площа орендованих земельних ділянок і за рахунок чого сплачується орендна плата
+за землю, збільшується кількість працівників, що задіяні на роботах в кар’єрі,
+і за рахунок чого сплачується податок з доходів фізичних осіб. Постановою суду першої
+інстанції позов задоволено. У апеляційній скарзі сільськогосподарський виробничий
+кооператив «Маяк», як орендар спірної земельної ділянки, вважав, що позивач не довів
+необхідність відчуження спірної земельної ділянки та позивався до суду в інтересах ТОВ
+«АКВ Українське каолінове товариство». Верховний Суд залишив апеляційну скаргу без
+задоволення, а рішення суду першої інстанції без змін.
+
+Верховний Суд зазначив, що стимулювання підприємницької діяльності,
+створення привабливого інвестиційного клімату та захист прав інвесторів
+відноситься до пріоритетів державної політики, оскільки є запорукою
+економічного зростання та добробуту кожного через збільшення
+надходжень до державного та місцевих бюджетів, збереження існуючих
+та створення нових робочих місць, розвитку відповідної територіальної
+громади. Це, зокрема, відповідає положенням частини четвертої статті 13
+Конституції України, згідно з якою держава забезпечує захист прав усіх
+суб’єктів права власності і господарювання, соціальну спрямованість
+економіки, а також частини першої статті 17 Основного Закону забезпечення, зокрема економічної безпеки є найважливішою функцією
+держави, справою всього Українського народу.
+Отже, спірна земельна ділянка підлягає викупу не для задоволення
+комерційних інтересів ТОВ «АКВ Українське каолінове товариство», як
+зазначає СВК «Маяк», а для суспільних потреб щодо розміщення
+та обслуговування об’єктів, пов’язаних із видобуванням корисних копалин
+
+загальнодержавного значення.
+
+#### 5
+
+Суд звернув увагу на те, що розміщення ТОВ «АКВ Українське каолінове
+товариство» по видобуванню корисних копалин (первинних коалінів)
+в будь-якому іншому місці, минаючи вищевказану земельну ділянку,
+територіально неможливо, оскільки право вказаного підприємства
+на видобування надр обмежена межами та географічними координатами,
+зазначеними в спеціальному дозволі
+
+Детальніше з текстом постанови КАС ВС від 09 лютого 2021 року у справі № 856/9/20-а можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/94873316
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.3_segment.md № 876/7/17 100170 30 театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.) власника може застосовуватися відчуження з мотивів суспільної необхідності семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (законодавство з питань освіти, науки, культури / правовий статус окремих об&#x27;єктів культури / театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">01.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/72867103" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 876/7/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100170 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Правовий статус окремих об&#x27;єктів культури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>власника може застосовуватися відчуження з мотивів суспільної необхідності</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (Законодавство з питань освіти, науки, культури / Правовий статус окремих об&#x27;єктів культури / Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.3. Про неналежність стадіону до переліку об’єктів, щодо яких за відсутності згоди
+власника може застосовуватися відчуження з мотивів суспільної необхідності
+
+Львівська міська рада звернулася до апеляційного адміністративного суду, як суду
+першої інстанції, з позовом до Товариства з обмеженою відповідальністю «Три Корони
+Девелопмент» про примусове відчуження у комунальну власність з мотивів суспільної
+необхідності (для будівництва стадіону) наступних об’єктів нерухомого майна:
+роздягальні для спортсменів; споруд стадіону (футбольного поля та ворот, огорожі,
+бігової доріжки) з виплатою викупної ціни відповідачу. Постановою суду першої інстанції
+у задоволенні позову відмовлено. Апеляційну скаргу позивач обґрунтував тим,
+що рішення щодо викупу для суспільних потреб у ТОВ «Три Корони Девелопмент» об’єкта
+нерухомого майна, прийнято за результатом розгляду звернень мешканців прилеглих
+вулиць району з проханням щодо необхідності будівництва стадіону на земельній ділянці
+за даною адресою, оскільки споруди, які розташовані на ній, є зруйнованими, а будь-які
+інші вільні земельні ділянки, які можна використати для будівництва стадіону, поблизу
+відсутні. Верховний Суд залишив апеляційну скаргу без задоволення, а рішення суду
+першої інстанції без змін.
+
+Верховний Суд зазначив, що у частині першій статті 15 Закону України від
+17 листопада 2009 року № 1559-VI «Про відчуження земельних ділянок,
+інших об’єктів нерухомого майна, що на них розміщені, які перебувають
+у приватній власності, для суспільних потреб чи з мотивів суспільної
+необхідності» міститься виключний (вичерпний) перелік об’єктів, щодо яких
+за відсутності згоди власника може бути застосовано відчуження
+з мотивів суспільної необхідності, який не містить таку підставу для
+примусового відчуження об’єкту, як будівництво стадіону
+
+Детальніше з текстом постанови КАС ВС від 20 березня 2018 року у справі № 876/7/17 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/72867103
+
+#### 6
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.4_segment.md № п/857/9/24 30 60 40 безспірне списання ( стягнення ) коштів за обґрунтованою вимогою власника в разі неможливості раціонального семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «безспірне списання ( стягнення ) коштів» (цивільне законодавство / зобов&#x27;язальне право / безспірне списання ( стягнення ) коштів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">01.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/128225364" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ П/857/9/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Безспірне списання ( стягнення ) коштів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за обґрунтованою вимогою власника в разі неможливості раціонального</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Безспірне списання ( стягнення ) коштів» (Цивільне законодавство / Зобов&#x27;язальне право / Безспірне списання ( стягнення ) коштів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.4. Про зобов’язання держави забезпечити повне відчуження земельної ділянки
+за обґрунтованою вимогою власника в разі неможливості раціонального
+використання її залишку при частковому відчуженні
+
+Дрогобицька районна державна адміністрація звернулася до апеляційного
+адміністративного суду, як суду першої інстанції, з позовом до фізичної особи, третя
+особа, яка не заявляє самостійних вимог на предмет спору, на стороні позивача - ПрАТ
+«Національна енергетична компанія «Укренерго», про примусове відчуження у державну
+власність з мотивів суспільної необхідності частини земельної ділянки (цільове
+призначення: для колективного садівництва), яка належить на праві приватної власності
+відповідачу. Позовні вимоги обґрунтовані необхідністю вилучення земельної ділянки для
+суспільних потреб для розміщення, будівництва, експлуатації та обслуговування
+стратегічного системоутворюючого магістрального лінійного енергооб’єкта. Підставою
+для звернення до суду стало те, що відповідач не надав добровільної згоди на викуп
+частини земельної ділянки. Суд першої інстанції задовольнив позовні вимоги. У
+апеляційній скарзі відповідач зазначив, що суд першої інстанції не звернув увагу на те,
+що решта земельної ділянки, яка йому належить на праві власності не може
+використовуватись ним за цільовим призначенням, з огляду на визначені Законом
+України від 09 липня 2010 року № 2480-VI «Про землі енергетики та правовий режим
+спеціальних зон енергетичних об’єктів» обмеження на використання земель
+у спеціальних зонах об’єктів енергетики, у зв’язку з чим доцільним буде або викуп
+належної йому земельної ділянки у повному обсязі, або передача іншої земельної
+ділянки відповідної площі, розташування та цільового призначення. Верховний Суд
+задовольнив апеляційну скаргу, скасував рішення суду першої інстанції та ухвалив нове
+рішення про відмову у задоволенні позову.
+
+Верховний Суд вказав, що у разі прийняття рішення про примусове
+відчуження земельних ділянок з мотивів суспільної необхідності,
+за наявності обґрунтованої вимоги власника, який доводить неможливість
+раціонального використання залишку земельної ділянки за її цільовим
+призначенням, органи державної влади зобов’язані забезпечити відчуження
+всієї земельної ділянки, а не лише її частини.
+Суд також дійшов висновку, що у разі розміщення на відчужуваній частині
+земельної ділянки повітряної лінії електропередач 220 кВ, решта площі цієї
+земельної ділянки, що залишиться у власності, фактично потрапляє в межі
+охоронної зони електричних мереж, у якій встановлено суттєві обмеження
+щодо можливостей використання землі, що унеможливлює раціональне
+використання земельної ділянки за її цільовим призначенням, і, відповідно,
+підтверджує обґрунтованість вимоги власника щодо відчуження всієї
+земельної ділянки або надання йому у власність ділянки з подібними
+
+характеристиками
+
+Детальніше з текстом постанови КАС ВС від 17 червня 2025 року у справі № П/857/9/24 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/128225364
+
+#### 7
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.5_segment.md № 850/8/19 10150 20 міські, селищні та сільські ради народних депутатів та їх органи необхідність відчуження земельної ділянки під розміщення об’єктів, пов’язаних семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «міські, селищні та сільські ради народних депутатів та їх органи» (основи суспільного ладу / ради народних депутатів та місцеве самоврядування в україні / міські, селищні та сільські ради народних депутатів та їх органи).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">01.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/88061961" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 850/8/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10150 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Ради народних депутатів та місцеве самоврядування в Україні</span><span class="crumb-sep">›</span><span class="crumb-leaf">Міські, селищні та сільські Ради народних депутатів та їх органи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>необхідність відчуження земельної ділянки під розміщення об’єктів, пов’язаних</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Міські, селищні та сільські Ради народних депутатів та їх органи» (Основи суспільного ладу / Ради народних депутатів та місцеве самоврядування в Україні / Міські, селищні та сільські Ради народних депутатів та їх органи).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.5. Про відсутність обов’язку органу місцевого самоврядування доводити суспільну
+необхідність відчуження земельної ділянки під розміщення об’єктів, пов’язаних
+із видобуванням корисних копалин загальнодержавного значення
+
+Добропільська районна державна адміністрація звернулася до апеляційного
+адміністративного суду, як суду першої інстанції, з позовом до фізичної особи, за участі
+Товариства з обмеженою відповідальністю «Юмджи Інвест», про примусове відчуження
+у державну власність з мотивів суспільної необхідності трьох частин земельних ділянок,
+призначених для ведення товарного сільськогосподарського виробництва, під
+розміщення об’єктів, пов’язаних з видобуванням корисних копалин загальнодержавного
+значення (вогнетривких глин). Позивач вважав, що здійснив всі можливі заходи для
+проведення переговорів з власником, але відповідач ухилявся від їх проведення, таким
+чином не надав згоди на викуп земельних ділянок. Обґрунтовуючи позов Добропільська
+РДА зазначила, що запаси вогнетривкої глини майже виснажені, тому її видобуток буде
+вагомим внеском в розвитку національної економіки. Відповідач заперечував щодо
+задоволення позовних вимог, посилаючись на те, що позивач не обґрунтував суспільну
+необхідність у викупі спірних земельних ділянок. Суд першої інстанції відмовив
+у задоволенні позову. У апеляційній скарзі ТОВ «Юмджи Інвест» зазначило, що суд
+безпідставно надав пріоритет землям сільськогосподарського призначення над
+землями, на яких містяться корисні копалини. Суспільна необхідність відчуження спірних
+земельних ділянок зумовлена тим, що вогнетривка глина є корисною копальною
+загальнодержавного значення; головними споживачами вогнетривких виробів є
+вітчизняні металургійні та машинобудівні підприємства, які у свою чергу є основними
+видами промислової діяльності держави, що робить їх стратегічно важливими для
+майбутнього розвитку вітчизняної економіки. Верховний Суд задовольнив апеляційні
+скарги, скасував рішення суду першої інстанції та постановив нове – про задоволення
+
+позовних вимог.
+
+Проаналізувавши положення Закону № 1559-VI, Верховний Суд дійшов
+висновку, що у випадку неотримання згоди власника земельної ділянки
+з викупом для суспільних потреб вона може бути примусово відчужена
+у державну чи комунальну власність лише як виняток з мотивів суспільної
+необхідності і виключно під розміщення, зокрема, об’єктів, пов’язаних
+із видобуванням корисних копалин загальнодержавного значення. Тобто
+визначальними рисами такого відчуження є винятковість, наявність
+суспільної необхідності та мета - розміщення визначених об’єктів, а саме:
+об’єктів національної безпеки і оборони; лінійних об’єктів та об’єктів
+транспортної і енергетичної інфраструктури (доріг, мостів, естакад,
+магістральних трубопроводів, ліній електропередачі, аеропортів, морських
+портів, нафтових і газових терміналів, електростанцій) та об’єктів, необхідних
+для їх експлуатації; об’єктів, пов’язаних із видобуванням корисних копалин
+
+#### 8
+
+загальнодержавного значення; об’єктів природно-заповідного фонду;
+
+кладовищ.
+З огляду на викладене, безпосередньо сам законодавець визначив
+розміщення об’єктів, пов’язаних із видобутком корисних копалин
+загальнодержавного значення, як суспільну необхідність відчуження
+земельних ділянок.
+Суд звернув увагу, що Закон № 1559-VI не встановлює додаткових вимог
+щодо відповідних органів в частині окремого доведення суспільної
+необхідності розміщення об’єктів під видобування корисних копалин
+загальнодержавного значення, переваг економічної ефективності від надання
+в оренду земельної ділянки для видобування корисних копалин в порівнянні
+з використанням земельної ділянки в сільськогосподарській діяльності.
+Крім цього, суд зазначив про наявність вичерпного переліку умов для
+відчуження об’єктів права приватної власності для суспільних потреб, а саме:
+на підставі та в порядку, визначеному Законом № 1559-VІ, за умови повного
+рівноцінного відшкодування особі його вартості або надання їй рівноцінної
+земельної ділянки чи об’єкта нерухомого майна
+
+Детальніше з текстом постанови КАС ВС від 03 березня 2020 року у справі № 850/8/19 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/88061961
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.6_segment.md № 879/2/18 50120 20 статути про дисципліну. окремі правила для деяких категорій працівників суб’єктом владних повноважень семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «статути про дисципліну. окремі правила для деяких категорій працівників» (трудове законодавство / трудова дисципліна. відповідальність за її порушення / статути про дисципліну. окремі правила для деяких категорій працівників).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">01.6_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/83327110" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 879/2/18</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50120 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудова дисципліна. Відповідальність за її порушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Статути про дисципліну. Окремі правила для деяких категорій працівників</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>суб’єктом владних повноважень</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Статути про дисципліну. Окремі правила для деяких категорій працівників» (Трудове законодавство / Трудова дисципліна. Відповідальність за її порушення / Статути про дисципліну. Окремі правила для деяких категорій працівників).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.6. Про наслідки порушення процедури примусового відчуження земельної ділянки
+суб’єктом владних повноважень
+
+Руденківська сільська рада звернулася до апеляційного адміністративного суду, як
+суду першої інстанції, з позовом до фізичної особи про поділ двох земельних ділянок
+громадянина згідно з висновком земельно-технічної експертизи, примусовим
+відчуженням у комунальну власність частини цих земельних ділянок для експлуатації
+та обслуговування водовідвідної канави з виплатою відповідачу викупної ціни.
+Позовні вимоги обґрунтовані необхідністю викупу належної відповідачу земельної
+ділянки для забезпечення водовідведення із автомобільної дороги, що зумовлено
+суспільною необхідністю, відсутністю згоди власника земельної ділянки на такий
+викуп та наявністю підстав для примусового відчуження земельної ділянки. Рішенням
+суду першої інстанції в задоволенні позову відмовлено. Відмова мотивована тим,
+що позивачем не було дотримано строки для отримання письмової відповіді
+відповідача щодо згоди на проведення переговорів щодо умов викупу або відмови від
+такого викупу. У апеляційній скарзі позивач зазначив, що в день прийняття рішення
+про викуп для суспільних потреб земельних ділянок (07 листопада 2017 року) сільська
+рада вручила особисто відповідачеві під підпис повідомлення-пропозицію про викуп
+частини земельних ділянок, що підтверджується підписом відповідача
+на повідомленні-пропозиції про його одержання. У відповідь на дану пропозицію
+відповідач 05 грудня 2017 року надіслав позивачеві заперечення, в яких висловив
+
+#### 9
+
+свою незгоду з викупом. Верховний Суд залишив апеляційну скаргу без задоволення,
+а рішення суду першої інстанції без змін.
+
+Після прийняття рішення від 07 листопада 2017 року про викуп для
+суспільних потреб земельних ділянок сільська рада внесла до нього зміни
+рішенням від 05 квітня 2018 року (щодо розміру та ціни ділянок, які
+підлягають викупу). А з позовом про примусове відчуження земельної
+ділянки позивач звернувся до суду 11 квітня 2018 року, тобто,
+до отримання письмової відповіді від відповідача щодо згоди
+на проведення переговорів щодо умов викупу або відмови від такого
+
+викупу.
+Тобто, позивачем подано до суду позов про примусове відчуження
+земельної ділянки до закінчення запропонованого ним відповідачу
+місячного строку для надання письмової відповіді щодо згоди
+на проведення переговорів з приводу умов викупу або відмову від такого
+викупу, незважаючи на те, що законодавством регламентовано чітку
+та послідовну процедуру відчуження земельних ділянок з мотивів
+суспільної необхідності, яка, зокрема, передбачає, що у разі недосягнення
+згоди з власником земельної ділянки, орган місцевого самоврядування,
+що прийняв рішення про відчуження земельної ділянки звертається
+до суду із позовом про примусове відчуження зазначених об’єктів.
+Верховний Суд дійшов висновку, що порушення суб’єктом владних
+повноважень визначеної законодавством процедури примусового
+відчуження об’єктів права приватної власності робить неможливим
+задоволення відповідного позову
+
+Детальніше з текстом постанови КАС ВС від 23 липня 2019 року у справі № 879/2/18 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/83327110
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.7_segment.md № 856/1/22-а 50120 20 статути про дисципліну. окремі правила для деяких категорій працівників примусового відчуження земельної ділянки для суспільних потреб семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «статути про дисципліну. окремі правила для деяких категорій працівників» (трудове законодавство / трудова дисципліна. відповідальність за її порушення / статути про дисципліну. окремі правила для деяких категорій працівників).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">01.7_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/106466722" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 856/1/22-а</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50120 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудова дисципліна. Відповідальність за її порушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Статути про дисципліну. Окремі правила для деяких категорій працівників</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>примусового відчуження земельної ділянки для суспільних потреб</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Статути про дисципліну. Окремі правила для деяких категорій працівників» (Трудове законодавство / Трудова дисципліна. Відповідальність за її порушення / Статути про дисципліну. Окремі правила для деяких категорій працівників).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.7. Про порушення процедури визначення викупної ціни як перешкоду для
+примусового відчуження земельної ділянки для суспільних потреб
+
+Чернівецька міськрада звернулася до апеляційного адміністративного суду, як суду
+першої інстанції, з позовом до фізичної особи, про примусове відчуження у комунальну
+власність, з мотивів суспільної необхідності чотирьох земельних ділянок
+сільськогосподарського призначення. В обґрунтування позовних вимог міськрадою
+вказано те, що нею прийнято рішення, у зв’язку із відсутністю можливості розширення
+кладовища для організації місць поховань за рахунок земель запасу міста, викупити для
+суспільних потреб земельні ділянки, які розташовані на території міської територіальної
+громади і належать на праві приватної власності відповідачці. Проте, останньою не
+надано згоди на викуп цих земельних ділянок, що стало підставою для звернення
+до суду з цим позовом. Суд першої інстанції відмовив у задоволенні позову. Апеляційну
+
+#### 10
+
+скаргу позивач мотивував тим, що відповідачка фактично не погоджується із викупною
+ціною земельної ділянки. При цьому апелянт вказував на те, що оскільки судом першої
+інстанції поставлено під сумнів надану позивачем експертну грошову оцінку, суд мав всі
+правові підстави для призначення повторної експертизи. Верховний Суд залишив
+апеляційну скаргу без задоволення, а рішення суду першої інстанції без змін.
+
+Верховний Суд звернув увагу, що визначальною підставою для примусового
+відчуження земельної ділянки, що знаходиться в приватній власності
+з мотивів суспільної необхідності є неотримання згоди власника земельної
+ділянки з її викупом для суспільних потреб, а також обов’язкове дотримання
+процедури щодо прийняття рішення, повідомлення власника про викуп
+земельної ділянки для суспільних потреб, забезпечення права на участь
+у переговорах щодо умов викупу, узгодження умов договору купівлі-продажу,
+істотною умовою якого є викупна ціна, яка передує виникненню підстав для
+примусового відчуження земельних ділянок, інших об’єктів нерухомого
+майна, що на них розміщені, з мотивів суспільної необхідності.
+Суд зазначив, що визначена позивачем викупна ціна не може бути
+використана для прийняття рішення про викуп земельної ділянки для
+суспільних потреб, оскільки звіт про експертну грошову оцінку земельної
+ділянки щодо примусового викупу якої виник спір, складений без ретельного
+аналізу даних про об’єкт оцінки, фізичних характеристик, правового стану,
+особливостей місця розташування та використання
+
+Детальніше з текстом постанови КАС ВС від 27 вересня 2022 року у справі № 856/1/22-а можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/106466722
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.8_segment.md № 160/11489/19 30 50 10 державна власність за примусово відчужене державою майно семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «державна власність» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / державна власність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">01.8_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/112587735" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/11489/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державна власність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за примусово відчужене державою майно</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Державна власність» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Державна власність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.8. Про звільнення від оподаткування коштів, отриманих як компенсація
+за примусово відчужене державою майно
+
+Позивачка звернулася до окружного адміністративного суду з позовом
+до Васильківської районної державної адміністрації Дніпропетровської області, третя
+особа: ТОВ «Демурінський гірничо-збагачувальний комбінат», в якому просила визнати
+протиправними дії щодо часткового відшкодування вартості земельної ділянки
+сільськогосподарського призначення, яка була примусово відчужена у державну
+власність з мотивів суспільної необхідності, стягнення з відповідача на користь
+позивачки недоплаченої вартості примусово відчуженої в державну власність з мотивів
+суспільної необхідності земельної ділянки у розмірі 45311,93 грн. Позивачка
+стверджувала, що в липні 2018 року після примусового відчуження її земельної ділянки
+на користь держави за рішенням суду (справа № 872/2а-4/17) вона отримала 558 847,07
+грн, тоді як повна вартість ділянки становила 604 159 грн. Різниця у сумі 45 311,93 грн
+була утримана відповідачем як податок. Позивачка вважала, що ця сума має бути їй
+доплачена, оскільки, згідно з підпунктом 165.1.16 Податкового кодексу України, кошти,
+
+#### 11
+
+отримані як компенсація за примусово відчужене державою майно, не включаються
+до загального оподатковуваного доходу. Таке майно також не підлягає оподаткуванню
+військовим збором та державним митом. Рішенням судів попередніх інстанцій позов
+задоволено. У касаційній скарзі відповідач наполягав на тому, що присуджена судом
+сума коштів за примусове відчуження земельної ділянки підлягає оподаткуванню.
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення судів попередніх
+інстнацій без змін.
+
+Верховний Суд зазначив, що до загального місячного (річного)
+оподатковуваного доходу платника податку, не включаються кошти, отримані
+ним в рахунок відшкодування вартості земельної ділянки, примусово
+відчуженої за судовим рішенням в державну власність з мотивів суспільної
+необхідності
+
+Детальніше з текстом постанови КАС ВС від 02 серпня 2023 року у справі № 160/11489/19 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/112587735
+
+ІІ. ПРИМУСОВЕ ВІДЧУЖЕННЯ ІНШИХ ОБ’ЄКТІВ НЕРУХОМОГО МАЙНА
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md № 851/19/19 100170 30 театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.) з мотивів суспільної необхідності за відсутності належного обґрунтування такої семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (законодавство з питань освіти, науки, культури / правовий статус окремих об&#x27;єктів культури / театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/99094105" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 851/19/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100170 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Правовий статус окремих об&#x27;єктів культури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>з мотивів суспільної необхідності за відсутності належного обґрунтування такої</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)» (Законодавство з питань освіти, науки, культури / Правовий статус окремих об&#x27;єктів культури / Театрально-видовищні організації та підприємства (театри, кінопрокат, відеоцентри, цирки та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.2. Про неприпустимість примусового відчуження об’єктів нерухомого майна
+з мотивів суспільної необхідності за відсутності належного обґрунтування такої
+необхідності
+
+Харківська міська рада звернулася до апеляційного адміністративного суду, як суду
+першої інстанції, з позовом до фізичної особи про примусове відчуження у комунальну
+власність з мотивів суспільної необхідності житлового будинку та земельної ділянки,
+що належать відповідачу. Позивач обґрунтовував свої вимоги рішенням міської ради,
+яким затверджено перелік об’єктів нерухомості, що підлягають викупу для суспільних
+потреб. Згідно з цим рішенням, зокрема, підлягала викупу земельна ділянка,
+що належить відповідачу. Метою викупу для суспільних потреб є будівництво третьої лінії
+Харківського метрополітену. Позивач зазначив, що будівництво метрополітену є
+об’єктом транспортної інфраструктури, що підпадає під перелік об’єктів, для
+спорудження яких передбачена можливість примусового відчуження нерухомості
+на підставі рішення суду. Саме тому міська рада звернулася з цим позовом. Відповідач
+
+заперечував щодо задоволення позовних вимог, посилаючись на те, що позивачем не
+надано доказів стосовно неможливості будівництва лінії метрополітену без примусового
+відчуження об’єктів нерухомого майна. Суд першої інстанції відмовив у задоволенні
+позову. У апеляційній скарзі позивач зазначив, що об’єкти відповідача розташовані
+в технічній зоні 1-ї категорії та зоні можливої деформації поверхні, що заборонено ДБН
+В.2.3-7-2010. Це унеможливлює будівництво третьої лінії метрополітену без припинення
+права власності відповідача. Верховний Суд частково задовольнив апеляційну скаргу,
+змінивши рішення суду апеляційної інстанції шляхом виключення з мотивувальної
+частини постанови висновків щодо поширення на спірні правовідносини положень
+абзацу 7 частини першої статті 15 Закону № 1559-VІ. В іншій частині рішення суду першої
+інстанції залишив без змін.
+
+Верховний Суд зазначив, що жодних доказів, які б свідчили про наявність
+намірів будівництва об’єктів, зазначених у статті 15 Закону № 1559-VI, саме
+у межах графічних координатах спірної земельної ділянки, належної
+відповідачу, позивачем не надано; окрім того, представником позивача
+
+#### 13
+
+у судовому засіданні надано пояснення, що розміщення наземних
+та підземних споруд в межах зазначеної земельної ділянки не планується.
+Натомість згідно з положеннями статті 15 Закону № 1559-VI зазначені у ній
+об’єкти можуть бути примусово відчужені у державну чи комунальну
+власність лише як виняток з мотивів суспільної необхідності і виключно під
+розміщення, зокрема, лінійних об’єктів та об’єктів транспортної
+і енергетичної інфраструктури та об’єктів, необхідних для їх експлуатації.
+Суд звернув увагу, що Закон № 1559-VI не передбачає можливості
+примусового відчуження земельних ділянок, інших об’єктів нерухомого
+майна, що на них розміщені, з мотивів суспільної необхідності у випадку
+наявності загрози потенційної деформації поверхні, про можливість настання
+якої зазначає позивач у апеляційній скарзі
+
+Детальніше з текстом постанови КАС ВС від 17 серпня 2021 року у справі № 851/19/19 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/99094105
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 850/2/20 40 80 40 земельні ділянки для житлових, житлово-будівельних, гаражно-будівельних і дачно-будівельних кооперативів та індивідуального житлового будівництва необхідності окремо від земельної ділянки, на якій воно розміщене семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «земельні ділянки для житлових, житлово-будівельних, гаражно-будівельних і дачно-будівельних кооперативів та індивідуального житлового будівництва» (природні ресурси. охорона природи / склад земель / земельні ділянки для житлових, житлово-будівельних, гаражно-будівельних і дачно-будівельних кооперативів та індивідуального житлового будівництва).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/96339251" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 850/2/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40 80 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb">Склад земель</span><span class="crumb-sep">›</span><span class="crumb-leaf">Земельні ділянки для житлових, житлово-будівельних, гаражно-будівельних і дачно-будівельних кооперативів та індивідуального житлового будівництва</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>необхідності окремо від земельної ділянки, на якій воно розміщене</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Земельні ділянки для житлових, житлово-будівельних, гаражно-будівельних і дачно-будівельних кооперативів та індивідуального житлового будівництва» (Природні ресурси. Охорона природи / Склад земель / Земельні ділянки для житлових, житлово-будівельних, гаражно-будівельних і дачно-будівельних кооперативів та індивідуального житлового будівництва).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.1. Про неможливість відчуження нерухомого майна з мотивів суспільної
+необхідності окремо від земельної ділянки, на якій воно розміщене
+
+Маріупольська міська рада звернулася до апеляційного адміністративного суду, як суду
+першої інстанції, з позовом до фізичної особи, про примусове відчуження у комунальну
+власність, з мотивів суспільної необхідності - для суспільних потреб - капітального
+ремонту, з благоустроєм території об’єкту нежитлової нерухомості (торгівельного
+павільйону з продажу квітів). Причиною звернення до суду позивач зазначив відмову
+відповідача у надані згоди на викуп належного йому на праві приватної власності
+об’єкту нежитлової нерухомості. Відповідач просив відмовити у задоволенні позову,
+зазначивши, що позивач обґрунтував наявність суспільної необхідності для примусового
+викупу об’єкта нерухомого майна проведенням капітального ремонту проспекту Миру від
+вул. Левановського до проспекту Будівельників у Центральному районі міста Маріуполя,
+проте торгівельний павільйон, знаходиться в іншому місці та жодним чином не
+перешкоджає реконструкції дороги. Рішенням суду першої інстанції у задоволенні позову
+відмовлено. У апеляційній скарзі позивач вказував, що суд не врахував законодавчо
+визначену перевагу суспільного інтересу територіальної громади міста над приватним
+інтересом відповідача. Верховний Суд залишив апеляційну скаргу без задоволення,
+а рішення суду першої інстанції без змін.
+
+Верховний Суд зазначив, що позов Маріупольською міськрадою про
+примусове відчуження об’єкту нерухомого майна з мотивів суспільної
+необхідності заявлено поза межами процедури, визначеної Законом
+
+#### 12
+
+№ 1559-VІ та статтею 267 Кодексу адміністративного судочинства України.
+Вимоги про примусове відчуження нерухомого майна з мотивів суспільної
+необхідності можуть бути задоволені лише одночасно із вимогою щодо
+відчуження відповідної земельної ділянки, яка в даному випадку знаходиться
+у власності позивача
+
+Детальніше з текстом постанови КАС ВС від 15 квітня 2021 року у справі № 850/2/20 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/96339251
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.3_segment.md № 851/15/19 30 50 60 20 мала приватизація перебуває у приватній власності, окремо від земельної ділянки, на якій він семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «мала приватизація» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / приватизація / мала приватизація).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">02.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/112672094" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 851/15/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 60 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb">Приватизація</span><span class="crumb-sep">›</span><span class="crumb-leaf">Мала приватизація</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>перебуває у приватній власності, окремо від земельної ділянки, на якій він</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Мала приватизація» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Приватизація / Мала приватизація).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.3. Про неможливість примусового відчуження об’єкта нерухомого майна, який
+перебуває у приватній власності, окремо від земельної ділянки, на якій він
+розташований і яка перебуває в комунальній власності
+
+Харківська міська рада звернулася до апеляційного адміністративного суду, як суду
+першої інстанції, з позовом до Товариства з обмеженою відповідальністю «КОРСО
+ТАУН», про примусове відчуження у комунальну власність територіальної громади міста
+Харкова з мотивів суспільної необхідності нежитлової будівлі, що належить відповідачу
+на праві приватної власності, з відшкодуванням вартості зазначеного об’єкту
+нерухомості. В обґрунтуванні позову наводились аргументи про те, що спірна будівля
+на підставі рішення Харківської міської ради підлягала викупу для суспільних потреб для
+будівництва третьої лінії метрополітену в місті Харкові. Разом з тим, земельна ділянка,
+на якій розташовується нежитлова будівля, щодо відчуження якої заявлено позов, як
+станом на час виникнення спірних у цій справі правовідносин, так і на момент судового
+розгляду справи, перебувала у комунальній власності територіальної громади міста
+Харкова в особі Харківської міської ради. Оскільки згоди щодо викупу для суспільних
+потреб зазначеного вище об’єкту нерухомого майна між сторонами у справі досягнуто не
+було міська рада звернулася до суду із цією позовною заявою. Рішенням суду першої
+інстанції позов задоволено частково. Верховний Суд задовольнив апеляційну скаргу
+відповідача, скасував рішення суду першої інстанції та ухвалив нове судове рішення про
+відмову у задоволенні позову.
+
+Об’єктом відчуження з мотивів, зокрема, суспільної необхідності можуть бути,
+у тому числі, лише ті нежитлові будівлі та споруди, які розміщенні
+на земельних ділянках виключно приватної форми власності й тільки
+
+#### 14
+
+у випадку, якщо одночасно порушується питання про відчуження саме цих
+земельних ділянок.
+Оскільки наявними у справі, що розглядається, матеріалами
+та встановленими у ній обставинами підтверджується перебування
+земельної ділянки, на якій розташована відчужувана позивачем будівля,
+у комунальній власності й вимог щодо відчуження такої земельної ділянки
+Харківською міською радою не заявляється і стосовно неї не приймалось
+відповідного передбаченого законом рішення про її відчуження, то Верховний
+Суд констатував, що вимоги позовної заяви, у тому вигляді, у якому вони
+сформульовані, й за вищевказаних умов, не ґрунтуються на законі, а тому
+не можуть бути задоволені
+
+Детальніше з текстом постанови КАС ВС від 07 серпня 2023 року у справі № 851/15/19 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/112672094
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.4_segment.md № 852/2а-6/24 130 60 20 обов&#x27;язки та права працівників міліції надати власнику житла інше благоустроєне житлове приміщення семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «обов&#x27;язки та права працівників міліції» (законодавство про національну безпеку та правопорядок / органи внутрішніх справ / обов&#x27;язки та права працівників міліції).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">02.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/125967785" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 852/2а-6/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">130 60 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про національну безпеку та правопорядок</span><span class="crumb-sep">›</span><span class="crumb">Органи внутрішніх справ</span><span class="crumb-sep">›</span><span class="crumb-leaf">Обов&#x27;язки та права працівників міліції</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>надати власнику житла інше благоустроєне житлове приміщення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Обов&#x27;язки та права працівників міліції» (Законодавство про національну безпеку та правопорядок / Органи внутрішніх справ / Обов&#x27;язки та права працівників міліції).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.4. Про обов’язок органу, що ініціює відчуження житлового будинку або його частини,
+надати власнику житла інше благоустроєне житлове приміщення
+
+Криворізька районна військова адміністрація Дніпропетровської області звернулась
+до апеляційного адміністративного суду, як суду першої інстанції, з позовом до фізичної
+особи, третя особа Публічне акціонерне товариство «АрселорМіттал Кривий Ріг», про
+примусове відчуження земельної ділянки та житлового будинку з мотивів суспільної
+необхідності: розміщення та обслуговування об’єктів і санітарно-захисних зон,
+пов’язаних з видобування корисних копалин загальнодержавного значення з виплатою
+викупної ціни за рахунок коштів ПАТ «АрселорМіттал Кривий Ріг». В обґрунтуванні позову
+позивач зазначив, що з метою проведення переговорів щодо викупу об’єктів
+нерухомості направляв повідомлення власниці майна з відповідною пропозицією. Однак,
+відповідь на пропозицію надійшла від особи яка є спадкоємцем померлої, при цьому від
+пропозиції викупу ця особа відмовилась. Позивач зазначав, що оскільки відповідач
+прийняв спадщину, яка належить йому з часу відкриття, а також відмовився від продажу
+майна в добровільному порядку, достатніми є підстави для примусового відчуження
+земельної ділянки та житлового будинку в судовому порядку. Суд першої інстанції
+відмовив в задоволенні позовних вимог. В апеляційній скарзі позивач зазначав про
+помилковість висновку суду першої інстанції про те, що відповідачу не було
+запропоновано іншого житлового будинку чи квартири, облаштованих належним чином,
+під час проведення переговорів з приводу відчуження земельної ділянки та об’єктів,
+що на ній розміщені, з урахуванням того, що від відшкодування вартості об’єктів
+нерухомості відмовився. Верховний Суд залишив апеляційну скаргу без задоволення,
+а рішення суду першої інстанції без змін.
+
+#### 15
+
+Верховний Суд зазначив, що примусове відчуження житлового будинку
+або його частини передбачає обов’язкове надання його власнику, органом,
+що звернувся до суду за примусовим відчуженням, у власність іншого
+благоустроєного житлового будинку, частини будинку чи жилого приміщення,
+якщо з власником відчужуваного майна не погоджено інше.
+При цьому таке відчуження можливе виключно з мотивів суспільної
+необхідності або для задоволення суспільних потреб, що відповідає
+загальним засадам захисту права приватної власності. Надане власнику
+житло має відповідати вимогам житлового законодавства щодо благоустрою
+та придатності для проживання. Крім того, процедура примусового
+відчуження повинна відбуватися у встановленому законодавством порядку,
+що передбачає попереднє та справедливе відшкодування вартості
+відчуженого майна або надання рівноцінного замінного житла.
+У цій справі відповідачу не було запропоновано іншого житлового будинку
+чи квартири, облаштованих належним чином, як це передбачено статтею 4
+Закону № 1559-VI, під час проведення переговорів з приводу відчуження
+земельної ділянки та об’єктів, що на ній розміщені, з урахуванням того,
+що від відшкодування вартості об’єктів нерухомості відповідач відмовився.
+Відсутність такої пропозиції є істотним порушенням обов’язку позивача
+забезпечити дотримання прав власника. Водночас, відмова відповідача від
+компенсації не означає його відмову від гарантій, передбачених законом,
+зокрема права на альтернативне житло або справедливе відшкодування.
+Оскільки переговори були проведені формально, позивач не довів реального
+наміру виконати вимоги закону щодо викупу
+
+Детальніше з текстом постанови КАС ВС від 19 березня 2025 року у справі № 852/2а-6/24 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/125967785
+
+ІІІ. ПРОЦЕСУАЛЬНІ ПИТАННЯ
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.03_segment.md № 852/2а-3/24 60 20120 10 пенсії за вислугою строків служби про примусове відчуження земельної ділянки, інших об’єктів нерухомого майна, семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «пенсії за вислугою строків служби» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / пенсії за вислугою строків служби).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">03.03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122039301" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 852/2а-3/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пенсії за вислугою строків служби</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>про примусове відчуження земельної ділянки, інших об’єктів нерухомого майна,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Пенсії за вислугою строків служби» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Пенсії за вислугою строків служби).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.3. Про строк звернення суб’єкта владних повноважень з адміністративним позовом
+про примусове відчуження земельної ділянки, інших об’єктів нерухомого майна,
+що на ній розміщені, з мотивів суспільної необхідності
+
+Криворізька районна військова адміністрація Дніпропетровської області звернулася
+до апеляційного адміністративного суду, як суду першої інстанції, з позовом до фізичної
+особи, третя особа Публічне акціонерне товариство «АрселорМіттал Кривий Ріг», про
+примусове відчуження у державну власність належних на праві приватної власності
+відповідачу земельної ділянки та житлового будинку з мотивів суспільної необхідності:
+розміщення та обслуговування об’єктів і санітарно-захисних зон, пов’язаних
+з видобуванням корисних копалин загальнодержавного значення ПАТ «АрселорМіттал
+Кривий Ріг». Від відповідачки до суду першої інстанції надійшло клопотання про
+залишення без розгляду позовної заяви у зв’язку з пропуском строку звернення до суду.
+Судом зазначене клопотання було задоволено та позовну заяву залишено без розгляду
+з мотивів, наведених клопотанні відповідача. У апеляційній скарзі позивач вказував,
+що суд не врахував спеціальні норми частини третьої статті 12 Закону № 1559-VI, у яких
+передбачений річний строк та інший порядок його обчислення - з дня прийняття рішення
+про викуп земельної ділянки й будинку. Також суд не дослідив обставини щодо
+незавершеності перемовин між позивачем і відповідачем з питання умов викупу об’єктів
+нерухомого майна та отримання згоди власника на їх викуп. Верховний Суд залишив
+апеляційну скаргу без задоволення, а рішення суду першої інстанції без змін.
+
+Верховний Суд зазначив, що відповідно до приписів статей 15, 16 Закону
+№ 1559-VI, статей 122, 267 Кодексу адміністративного судочинства України
+строк звернення суб’єкта владних повноважень з адміністративним позовом
+про примусове відчуження земельної ділянки, інших об’єктів нерухомого
+майна, що на ній розміщені, з мотивів суспільної необхідності - три місяці
+з дня неотримання згоди власника земельної ділянки, інших об’єктів
+нерухомого майна, що на ній розміщені, з викупом цих об’єктів для
+суспільних потреб.
+Перемовини з відповідачем щодо умов викупу і після звернення до суду
+з позовом, не свідчать про продовження переговорів між сторонами
+відповідно до Закону № 1559-VI, як на цьому наполягає позивач,
+стверджуючи про дотримання строків звернення до суду, оскільки такі дії не
+узгоджуються з проаналізованими вище нормами вказаного закону, та, крім
+того, наявність підстав для звернення до суду з вимогами про примусове
+відчуження зумовлюється виключно недосягненням згоди на викуп
+
+Детальніше з текстом постанови КАС ВС від 02 жовтня 2024 року у справі № 852/2а-3/24 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/122039301
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md № 480/4146/20 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) потреб чи з мотивів суспільної необхідності семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/99182522" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 480/4146/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>потреб чи з мотивів суспільної необхідності</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.1. Про публічно-правову природу спорів щодо вилучення майна для суспільних
+потреб чи з мотивів суспільної необхідності
+
+Сумська міська рада звернулась до апеляційного адміністративного суду, як суду першої
+інстанції, з позовом до Товариства з обмеженою відповідальністю «Сенс», третя особа
+Департамент забезпечення ресурсних платежів Сумської міської ради, про припинення
+права постійного користування земельною ділянкою, зобов’язання відповідача звільнити
+земельну ділянку та повернути її міській раді. В обґрунтування позовних вимог позивач
+посилався на те, що спірна земельна ділянка перебуває у комунальній власності міської
+ради та підлягає вилученню для суспільних потреб, а саме: для будівництва дороги
+та бульвару з майданчиками відпочинку. За наслідками розгляду позову міської ради
+
+ухвалою апеляційного адміністративного суду провадження у справі закрито. Роз’яснено
+позивачу, що дана справа підлягає розгляду в порядку господарського судочинства.
+Закриваючи провадження у справі, суд виходив з того, що вказаний спір не є публічноправовим спором в розумінні Кодексу адміністративного судочинства України та має
+вирішуватися в порядку господарського судочинства, оскільки позивач прагне
+повернути земельну, яка належить йому на праві комунальної власності. Верховний Суд
+частково задовольнив апеляційну скаргу, скасував ухвалу суду апеляційної інстанції
+та направив справу для розгляду за встановленою підсудністю до окружного
+адміністративного суду.
+
+Верховний Суд вказав, що господарські суди розглядають справи у спорах
+щодо вилучення майна для усіх інших потреб, крім для суспільних потреб
+чи з мотивів суспільної необхідності.
+Водночас, за правилами пункту 8 статті 19 Кодексу адміністративного
+судочинства України на спори щодо вилучення майна для суспільних потреб
+чи з мотивів суспільної необхідності поширюється юрисдикція саме
+адміністративних судів.
+Крім цього, Верховний Суд зазначив, що оскільки для справ щодо вилучення
+майна для суспільних потреб чи з мотивів суспільної необхідності не
+передбачено особливостей провадження, в тому числі щодо їх розгляду
+та вирішення апеляційним адміністративним судом, а тому такі справи
+підлягають розгляду та вирішенню в загальному порядку окружним
+адміністративним судом за загальними правилами інстанційної
+та територіальної юрисдикції
+
+Детальніше з текстом постанови КАС ВС від 26 серпня 2021 року у справі № 480/4146/20 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/99182522
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.2_segment.md № 480/159/20 10150 10 обласні, київська та севастопольська міські, районні та районні в містах ради народних депутатів та їх органи самоврядування про вилучення земельної ділянки для суспільних потреб семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «обласні, київська та севастопольська міські, районні та районні в містах ради народних депутатів та їх органи» (основи суспільного ладу / ради народних депутатів та місцеве самоврядування в україні / обласні, київська та севастопольська міські, районні та районні в містах ради народних депутатів та їх органи).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">03.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/100189538" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 480/159/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10150 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Ради народних депутатів та місцеве самоврядування в Україні</span><span class="crumb-sep">›</span><span class="crumb-leaf">Обласні, Київська та Севастопольська міські, районні та районні в містах Ради народних депутатів та їх органи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>самоврядування про вилучення земельної ділянки для суспільних потреб</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Обласні, Київська та Севастопольська міські, районні та районні в містах Ради народних депутатів та їх органи» (Основи суспільного ладу / Ради народних депутатів та місцеве самоврядування в Україні / Обласні, Київська та Севастопольська міські, районні та районні в містах Ради народних депутатів та їх органи).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.2. Про неможливість судового оскарження рішення органу місцевого
+самоврядування про вилучення земельної ділянки для суспільних потреб
+
+Товариство з обмеженою відповідальністю «Сенс» звернулося до окружного
+адміністративного суду з позовом до Сумської міської ради, у якому просило визнати
+протиправним та скасувати рішення відповідача від 24 грудня 2019 року «Про вилучення
+земельної ділянки по проспекту М. Лушпи, 7а у м. Суми, яка перебуває в постійному
+користуванні ТОВ &quot;Сенс&quot;, для суспільних потреб та викуп розташованих на ній об’єктів
+нерухомого майна для даних потреб». Позовні вимоги позивач обґрунтовував тим,
+що рішення про вилучення земельної ділянки протиправно прийнято без згоди
+землекористувача, чим, на думку позивача, порушена встановлена статтею 149
+Земельного кодексу України процедура вилучення земельної ділянки з постійного
+користування. При цьому, в силу зазначених норм, відповідна згода повинна бути
+отримана до прийняття рішення про вилучення, а не після, як визначено
+
+в оскаржуваному рішенні. У разі відсутності згоди землекористувача на вилучення,
+відповідне рішення Сумської міської ради не приймається, натомість вилучення
+відбувається за рішенням суду. Суди попередніх інстанцій відмовили у задоволенні
+позову. Верховний Суд частково задовольнив касаційну скаргу, скасував рішення судів
+попередніх інстанцій, а провадження у справі закрив.
+
+Верховний Суд зазначив, що рішення органу місцевого самоврядування
+про вилучення земельної ділянки з мотиву суспільних потреб не підлягає
+оскарженню землекористувачем в суді, оскільки таке рішення не
+спричиняє настання правових наслідків для такої особи, якщо вона
+заперечує проти такого вилучення, а отже, і не може порушувати її прав.
+Правомірність такого рішення оцінюється адміністративним судом під час
+розгляду справи за позовом органу місцевого самоврядування про
+вилучення земельної ділянки
+
+Детальніше з текстом постанови КАС ВС від 05 жовтня 2021 року у справі № 480/159/20 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/100189538
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.4_segment.md № 480/4146/20 30 50 60 приватизація вилучення земельних ділянок комунальної власності для суспільних чи інших потреб семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «приватизація» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / приватизація).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">03.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/121803754" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 480/4146/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb-leaf">Приватизація</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>вилучення земельних ділянок комунальної власності для суспільних чи інших потреб</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Приватизація» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Приватизація).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.4. Про неможливість об’єднання в одному провадженні позовних вимог про
+вилучення земельних ділянок комунальної власності для суспільних чи інших потреб
+з вимогами про примусове відчуження земельних ділянок та об’єктів, які на них
+розміщені, для суспільних потреб чи з мотивів суспільної необхідності
+
+Сумська міська рада звернулась до суду, з позовом до ТОВ «Сенс», третя особа
+Департамент забезпечення ресурсних платежів Сумської міської ради, про припинення
+права постійного користування земельною ділянкою, зобов’язання відповідача звільнити
+земельну ділянку та повернути її міській раді. В обґрунтуванні підстав позову
+та зазначених у ньому вимог Міськрада наводила аргументи про те, що позивачем було
+прийнято рішення щодо вилучення вищевказаної земельної ділянки, яка перебувала
+у постійному користуванні товариства, та про викуп розташованих на ній об’єктів
+нерухомого майна. Прийняття такого рішення у спірних відносинах обумовлювалось
+необхідністю реалізації положень містобудівної документації щодо комплексної забудови
+території міста з метою будівництва дороги та бульвару з майданчиками відпочинку,
+потреба в яких відповідає інтересам територіальної громади та не може бути
+забезпечена за рахунок інших територій. Судами попередніх інстанцій у задоволенні
+позову відмовлено. У касаційній скарзі позивач зазначав, що Верховним Судом не
+сформовано висновку у правовідносинах, коли адміністративний орган прийняв рішення
+про одночасне вилучення земельної ділянки комунальної власності з постійного
+користування та про примусове відчуження об’єкту нерухомості, процедура яких
+врегульована абсолютно різними правовими актами. Верховний Суд залишив касаційну
+скаргу без задоволення, а рішення судів попередніх інстанцій без змін.
+
+Верховний Суд дійшов висновку, що позовні вимоги про вилучення земельних
+ділянок комунальної власності для суспільних чи інших потреб та викуп
+майна, яке на них розташовано, не можуть бути об’єднані в одному
+провадження з вимогами про примусове відчуження земельних ділянок
+та об’єктів, які на них розміщенні для суспільних потреб чи з мотивів
+суспільної необхідності, оскільки такі вимоги можуть бути заявлені щодо
+земельних ділянок різної форми власності та підсудні різним судам,
+розглядаються за іншими процедурами.
+Заявлення таких вимог в одному провадженні є порушенням правил
+об’єднання позовних вимог і тягне за собою повернення позовної заяви
+особі, яка її подала. Тобто такий позов апріорі не може бути розглянуто судом
+в одному провадженні, інакше це буде порушенням норм процесуального
+
+права.
+Крім цього, встановлені у справі обставини не підтвердили наведених
+у касаційній скарзі аргументів про те, що цей спір одночасно є спором про
+вилучення земельної ділянки комунальної власності з постійного
+користування та про примусове відчуження об’єкту нерухомості
+
+Детальніше з текстом постанови КАС ВС від 23 вересня 2024 року у справі № 480/4146/20 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/121803754
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.5_segment.md № 852/2а-2/24 20 20 контрольно-ревізійне управління міністерства фінансів та інших міністерств і відомств у зв’язку з перебуванням особи у складі збройних сил україни або інших утворених семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «контрольно-ревізійне управління міністерства фінансів та інших міністерств і відомств» (бюджетно-фінансове законодавство / контрольно-ревізійне управління міністерства фінансів та інших міністерств і відомств).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">17</span>
+            <span class="file-badge">03.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/120609517" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 852/2а-2/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Контрольно-ревізійне управління Міністерства фінансів та інших міністерств і відомств</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>у зв’язку з перебуванням особи у складі Збройних Сил України або інших утворених</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Контрольно-ревізійне управління Міністерства фінансів та інших міністерств і відомств» (Бюджетно-фінансове законодавство / Контрольно-ревізійне управління Міністерства фінансів та інших міністерств і відомств).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.5. Про зупинення провадження у справі щодо відчуження земельної ділянки
+у зв’язку з перебуванням особи у складі Збройних Сил України або інших утворених
+відповідно до закону військових формувань, що переведені на воєнний стан
+або залучені до проведення антитерористичної операції
+
+У лютому 2024 року Криворізька районна військова адміністрація Дніпропетровської
+області звернулась до апеляційного адміністративного суду, як суду першої інстанції,
+з позовом до фізичної особи, третя особа: Публічне акціонерне товариство
+«АрселорМіттал Кривий Ріг», про примусове відчуження земельної ділянки з мотивів
+суспільної необхідності. Суд апеляційної інстанції зупинив провадження у цій справі
+на підставі клопотання відповідача до припинення перебування його у складі Збройних
+Сил України або інших утворених відповідно до закону військових формувань,
+що переведені на воєнний стан. Позивач оскаржив ухвалу в апеляційному порядку,
+стверджуючи, що для вирішення питання про зупинення провадження недостатньо
+самого факту введення воєнного стану і формального перебування сторони у складі
+Збройних Сил України, оскільки не кожен структурний елемент у складі Збройних Сил
+України переведений на воєнний стан, тобто виконує бойові завдання у зоні бойових дій.
+Верховний Суд залишив апеляційну скаргу, без задоволення, а рішення суду першої
+інстанції без змін.
+
+Верховний Суд дійшов висновку, що норма пункту 5 частини першої статті 236
+Кодексу адміністративного судочинства України може бути застосована
+судами при вирішенні питання про зупинення провадження у справі у разі
+перебування фізичної особи, яка є стороною чи третьою особою, яка заявляє
+самостійні вимоги щодо предмета спору, у складі Збройних Сил України
+або інших утворених відповідно до закону військових формувань,
+що переведені на воєнний стан або залучені до проведення
+антитерористичної операції, до припинення перебування такої фізичної особи
+у складі Збройних Сил України або інших утворених відповідно до закону
+військових формувань, що переведені на воєнний стан або залучені
+до проведення антитерористичної операції. Конструкція вказаної норми
+носить імперативний характер та покладає на суд саме обов’язок, а не право
+зупинити провадження у випадку перебування сторони у складі Збройних
+Сил України або інших утворених відповідно до закону військових
+формувань, що переведені на воєнний стан або залучені до проведення
+антитерористичної операції
+
+Детальніше з текстом постанови КАС ВС від 25 липня 2024 року у справі № 852/2а-2/24 можна
+ознайомитися за посиланням: https://reyestr.court.gov.ua/Review/120609517
+
+Огляд судової практики Касаційного адміністративного суду у складі Верховного
+Суду щодо розгляду справ у спорах, пов’язаних з примусовим відчуженням
+нерухомого майна для суспільних потреб чи з мотивів суспільної необхідності
+(рішення, внесені до ЄДРСР, з березня 2018 року до червня 2025 року) / Упоряд.:
+управління аналітичної та правової роботи Касаційного адміністративного суду
+департаменту аналітичної та правової роботи Апарату Верховного Суду. Київ, 2025. –
+21 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 17;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

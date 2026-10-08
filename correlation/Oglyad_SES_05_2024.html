@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_SES_05_2024 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_SES_05_2024 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_SES_05_2024.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_SES_05_2024</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">3</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">89.7%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 3 із 3</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 120140 10 пільги по оподаткуванню рішення суду справедливості єс (велика палата) від 30 квітня 2024 року, procura della семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «пільги по оподаткуванню» (законодавство про оборону / соціальний і правовий захист військовослужбовців. пільги для військовослужбовців і членів їх сімей / пільги по оподаткуванню).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb">Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пільги по оподаткуванню</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Суду справедливості ЄС (Велика Палата) від 30 квітня 2024 року, Procura della</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Пільги по оподаткуванню» (Законодавство про оборону / Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей / Пільги по оподаткуванню).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Звернення за попереднім рішенням 6
+
+1. Захист персональних даних
+
+Рішення Суду справедливості ЄС (Велика Палата) від 30 квітня 2024 року, Procura della
+Repubblica presso il Tribunale di Bolzano, C-178/22
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=285363&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=3379274)
+
+Звернення за попереднім рішенням – Опрацювання персональних даних у секторі
+електронних комунікацій – Конфіденційність комунікацій – Постачальники послуг
+електронних комунікацій – Директива 2002/58/ЄС – Стаття 15(1) – Статті 7, 8, 11
+та стаття 52(1) Хартії основоположних прав Європейського Союзу – Доступ до даних,
+запитуваних національним органом, уповноваженим переслідувати злочини, пов&#x27;язані
+з крадіжкою за обтяжуючих обставин – Визначення поняття «серйозного
+правопорушення», переслідування якого може виправдати серйозне втручання
+в основоположні права – Компетенція Держав-членів – Принцип пропорційності –
+Обсяг попереднього розгляду судом запитів про доступ до даних, що зберігаються
+постачальниками електронних комунікаційних послуг
+
+У відповідь на звернення за попереднім рішенням від Giudice delle indagini
+preliminari presso il Tribunale di Bolzano (суддя, відповідальний за попереднє
+розслідування в окружному суді Больцано, Італія), Велика Палата Суду
+справедливості ЄС надає роз&#x27;яснення щодо того, хто відповідає за визначення
+поняття «серйозне правопорушення» для цілей застосування статті 15(1) Директиви
+про приватність та електронні комунікації. [27] Суд також визначає обсяг попереднього
+розгляду національним судом запитів на доступ до даних, що зберігаються
+постачальниками послуг електронних комунікацій.
+
+Після двох крадіжок мобільних телефонів Procura della Repubblica presso il
+Tribunale di Bolzano (Прокуратура при окружному суді міста Больцано, Італія) порушила
+два кримінальні провадження проти невідомих осіб за вчинення крадіжок
+за обтяжувальних обставин. З метою встановлення осіб, які вчинили ці крадіжки,
+прокуратура, спираючись на положення національного законодавства, [28] звернулася
+
+27 Директива 2002/58/ЄС Європейського Парламенту та Ради від 12 липня 2002 року щодо опрацювання персональних
+даних і захисту приватності в секторі електронних комунікацій (Директива про приватність та електронні комунікації)
+(OJ 2002 L 201, стор. 37), зі змінами, внесеними Директивою 2009/136/ЄС Європейського Парламенту та Ради від 25
+листопада 2009 року (OJ 2009 L 337, стор. 11) (далі – Директива про приватність та електронні комунікації).
+28 А саме, стаття 132(3) legislativo decto n. 196 - Codice in materia di protezione dei dati personali, recante disposizioni per
+l&#x27;adeguamento dell&#x27;ordinamento nazionale al regolamento (UE) n. 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile
+2016, relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione
+di tali dati e che abroga la direttiva 95/46/CE (Законодавчий декрет № 196 про створення Кодексу про захист персональних
+даних, що містить положення про адаптацію національного законодавства до Регламенту (ЄС) 2016/679 Європейського
+Парламенту та Ради від 27 квітня 2016 року про захист фізичних осіб у зв’язку із опрацюванням персональних даних і про
+вільний рух таких даних, та про скасування Директиви 95/46/ЄС) від 30 червня 2003 року (Ординарне доповнення до GURI
+№ 174 від 29 липня 2003 року), у редакції, що застосовується до спору в основному провадженні.
+
+### 19 Рішення за травень 2024 року
+
+до запитуючого суду з проханням надати дозвіл на отримання записів телефонних
+дзвінків з викрадених телефонів від усіх телефонних компаній.
+
+Оскільки запитуючий суд був непевним в тому, що національне положення, яке
+передбачає, що максимальний термін позбавлення волі на строк не менше 3 років,
+яким карається злочин, може виправдовувати розкриття записів телефонних розмов
+органам державної влади, є сумісним з Директивою про приватність та електронні
+комунікації у світлі Хартії основоположних прав Європейського Союзу (далі – Хартія),
+він передав питання про тлумачення цієї директиви до Суду справедливості ЄС.
+
+Висновки Суду
+
+По-перше, щодо характеру втручання в основоположні права на приватність
+та захист персональних даних, [29] спричиненого доступом до записів телефонних
+розмов, Суд визнає, що це втручання, ймовірно, може бути класифіковане як серйозне
+і, відповідно, такий доступ може бути наданий лише в контексті боротьби з тяжкими
+злочинами. Суд зазначає, що для цілей оцінки наявності серйозного втручання у ці
+основоположні права не має значення той факт, що дані, до яких запитувався доступ,
+можуть не бути даними власників мобільних телефонів, про які йдеться, а даними осіб,
+які користувалися цими телефонами після їх ймовірної крадіжки. Дійсно, з положень
+Директиви про приватність та електронні комунікації [30] випливає, що принципове
+зобов&#x27;язання забезпечувати конфіденційність електронних комунікацій та пов&#x27;язаних
+з ними даних про трафік поширюється на комунікації користувачів комунікаційної
+мережі загального користування. Ця Директива визначає поняття «користувач» як
+будь-яку фізичну особу, яка користується загальнодоступними електронними
+комунікаційними послугами не обов&#x27;язково з передплатою на такі послуги.
+
+По-друге, щодо визначення поняття «серйозне правопорушення» Суд нагадує, що,
+оскільки Європейський Союз не ухвалив законодавства у цій сфері, кримінальне
+законодавство та кримінальні процесуальні норми належать до компетенції Державчленів. Однак вони повинні здійснювати цю компетенцію відповідно до права ЄС.
+
+У зв&#x27;язку з цим Суд зазначає, що визначення кримінальних правопорушень,
+пом&#x27;якшувальних і обтяжувальних обставин та покарань відображає як соціальні
+реалії, так і правові традиції, які змінюються не тільки між Державами-членами, але
+й з плином часу. Однак ці реалії та традиції мають безсумнівне значення при
+визначенні тяжких злочинів.
+
+Отже, з огляду на розподіл повноважень між Європейським Союзом
+і Державами-членами та значні відмінності між національними правовими
+системами у сфері кримінального права, визначення поняття «серйозне
+правопорушення» належить до компетенції Держав-членів.
+
+Однак Суд зазначає, що таке поняття «серйозного правопорушення» має
+відповідати вимогам, що випливають з Директиви про приватність та електронні
+
+29 Гарантується статтями 7 і 8 Хартії.
+30 Стаття 5(1) Директиви про приватність та електронні комунікації.
+
+### 20 Рішення за травень 2024 року
+
+комунікації, [31] що розглядається у поєднанні із положеннями Хартії. [32] З цього
+випливає, що Держави-члени не можуть спотворювати поняття «серйозного
+правопорушення» і, відповідно, поняття «серйозного злочину», включаючи в нього
+правопорушення, які явно не є тяжкими правопорушеннями, з огляду на соціальні
+умови, що переважають у відповідній Державі-члені. Саме для того, щоб
+переконатися у відсутності таких викривлень, важливо, щоб у випадках, коли існує
+ризик серйозного втручання в основоположні права, доступ національних органів
+влади до збережених даних підлягав попередній перевірці, що здійснюється
+або судом, або незалежним адміністративним органом.
+
+По-третє, й в останню чергу для того, щоб оцінити, чи не є поняття «серйозних
+правопорушень», що випливає з національного положення, надто широким, Суд
+зазначає, по-перше, що поняття, згідно з яким «серйозними правопорушеннями», для
+переслідування яких може бути наданий доступ до даних, є ті, за які максимальний
+термін позбавлення волі щонайменше дорівнює строку, визначеному законом,
+ґрунтується на об&#x27;єктивному критерії.
+
+Крім того, Суд підкреслює, що поняття «серйозних правопорушень», наведене
+в національному законодавстві, не повинно бути настільки широким, щоб доступ
+до цих даних став правилом, а не винятком. Таким чином, це поняття не може
+охоплювати переважну більшість кримінальних правопорушень, що могло б статися,
+якби мінімальний строк був встановлений на надмірно низькому рівні. Однак
+мінімальний строк, встановлений шляхом посилання на максимальний строк
+ув&#x27;язнення у 3 роки, не видається в цьому відношенні надмірно низьким.
+
+Разом з тим, оскільки поняття «серйозних правопорушень» встановлюється
+шляхом посилання не на мінімальне, а на максимальне покарання Суд не виключає,
+що доступ до даних, який становить серйозне втручання в основоположні права,
+може бути запитаний з метою кримінального переслідування за правопорушення, які
+насправді не є серйозним злочином.
+
+Проте, встановлення мінімального терміну, після якого максимальний термін
+позбавлення волі за правопорушення виправдовує класифікацію цього
+правопорушення як серйозного злочину, не обов&#x27;язково суперечить принципу
+пропорційності.
+
+Схоже, що це стосується положення національного законодавства, яке є
+предметом розгляду у цій справі, оскільки воно охоплює, inter alia, випадки, коли
+доступ не може бути класифікований як серйозне втручання, оскільки він не
+стосується набору даних, які дозволяють зробити точні висновки щодо приватного
+життя зацікавлених осіб.
+
+Крім того, суд або незалежний адміністративний орган, діючи в контексті
+попереднього розгляду, повинен мати право відмовити в такому доступі
+або обмежити його, якщо він встановить, що втручання в основоположні права є
+серйозним, навіть якщо очевидно, що правопорушення, про яке йдеться, насправді не
+є серйозним злочином.
+
+31 Стаття 15(1) Директиви про приватність та електронні комунікації.
+32 Статті 7, 8, 11 та стаття 52(1) Хартії.
+
+### 21 Рішення за травень 2024 року
+
+Насправді суд або орган, якому доручено проведення перегляду, повинен мати
+можливість встановити справедливий баланс між, з одного боку, законними
+інтересами, пов&#x27;язаними з потребами кримінального розслідування, і, з іншого боку,
+правами на недоторканність приватного життя і захист персональних даних.
+
+Зокрема, цей суд або орган повинен мати можливість відмовити в такому
+доступі, якщо він запитується в контексті провадження у справі про правопорушення,
+яке явно не є серйозним правопорушенням.
+
+З цього Суд робить висновок, що Директива про приватність та електронні
+комунікації, у поєднанні з положеннями Хартії, не перешкоджає національному
+положенню, яке вимагає від національного суду санкціонувати доступ до набору
+даних про трафік або місцеперебування, якщо він запитується з метою розслідування
+кримінальних правопорушень, що караються максимальним строком позбавлення
+волі не менше 3 років, однак за умови, що цей суд має право відмовити в такому
+доступі, якщо він запитується в контексті розслідування правопорушення, яке явно не
+є серйозним правопорушенням з огляду на суспільні умови, що переважають
+у відповідній Державі-члені.
+
+Рішення Суду справедливості ЄС (Повний cклад) від 30 квітня 2024 року, La Quadrature
+du Net and Others (Персональні дані та боротьба з підробкою), C-470/21
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=285361&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=3381532)
+
+Звернення за попереднім рішенням – Опрацювання персональних даних та захист
+приватності в секторі електронних комунікацій – Директива 2002/58/ЄС –
+Конфіденційність електронних комунікацій – Захист – Стаття 5 та стаття 15(1) – Хартія
+основоположних прав Європейського Союзу – Статті 7, 8 та 11 та стаття 52(1) –
+Національне законодавство, спрямоване на боротьбу з правопорушеннями,
+пов&#x27;язаними з підробкою, що вчиняються в Інтернеті, за допомогою заходів,
+що здійснюються державними органами – Процедура «поступового реагування» –
+Попередній збір організаціями правовласників IP-адрес, що використовуються для
+діяльності, яка порушує авторське право або суміжні права – Подальший доступ
+державного органу, відповідального за захист авторських і суміжних прав, до даних,
+що стосуються ідентифікації особи, пов&#x27;язаної з IP-адресами, які зберігаються
+постачальниками електронних комунікаційних послуг – Автоматизоване опрацювання
+– Вимога попереднього розгляду судом або незалежним адміністративним органом –
+Матеріально-правові та процесуальні умови – Запобіжні заходи проти ризиків
+зловживань, а також проти будь-якого неправомірного доступу до цих даних
+або їхнього незаконного використання
+
+Останніми роками до Суду справедливості ЄС неодноразово зверталися
+з проханням ухвалити рішення щодо зберігання персональних даних та доступу
+до них у сфері електронних комунікацій, і, як наслідок, Суд сформував значний масив
+
+### 22 Рішення за травень 2024 року
+
+судової практики в цій сфері. [33] На підставі попереднього рішення Conseil d&#x27;État
+(Державна рада, Франція) Суд у повному складі розвиває судову практику через
+надання роз&#x27;яснень щодо (i) умов, за яких загальне збереження IP-адрес
+постачальниками послуг електронних комунікацій не може розглядатися як таке,
+що тягне за собою серйозне втручання у право на повагу до приватного життя,
+на захист персональних даних і на свободу вираження поглядів, гарантованих
+Хартією, [34] та (ii) можливості доступу органів державної влади до певних
+персональних даних, що зберігаються відповідно до цих умов, у контексті боротьби
+з порушеннями прав інтелектуальної власності, вчиненими в Інтернеті.
+
+У цій справі чотири асоціації подали запит до Premier ministre (Прем&#x27;єр-міністр,
+Франція) з проханням скасувати декрет про автоматизовану обробку персональних
+даних. [35] Оскільки на це прохання не було надано відповіді, ці асоціації подали позов
+до Conseil d’État (Державна рада) з вимогою скасувати рішення про неявну відмову.
+На їхню думку, декрет і положення, що становлять його правову основу, [36] порушують
+право ЄС.
+
+Відповідно до французького законодавства, з метою виявлення осіб,
+відповідальних за порушення авторського права або суміжних прав, скоєних
+в Інтернеті, Haute Autorité pour la diffusion des œuvres et la protection des droits sur
+internet (Вищий орган з розповсюдження творів і захисту прав в Інтернеті, далі –
+Hadopi) уповноважений отримувати доступ до певних даних, які зобов&#x27;язані зберігати
+провайдери електронних комунікаційних послуг. Ці дані стосуються ідентифікації
+особи, пов&#x27;язаної з її IP-адресою, яку раніше збирали організації-правовласники. Після
+встановлення власника IP-адреси, яка використовується для протиправної діяльності,
+Hadopi застосовує процедуру «поступового реагування». Зокрема, він має право
+надіслати такій особі дві рекомендації, які схожі на попередження, і, якщо діяльність
+продовжується, то лист з повідомленням про те, що така діяльність підлягає
+кримінальному переслідуванню. Наостанок, він має право передати справу до органів
+прокуратури з метою притягнення цієї особи до кримінальної відповідальності. [37]
+
+33 Див., зокрема, рішення від 21 грудня 2016 року, Tele2 Sverige and Watson and Others (C-203/15 і C-698/15, EU:C:2016:970);
+від 2 жовтня 2018 року, Ministerio Fiscal (C-207/16, EU:C:2018); від 6 жовтня 2020 року, La Quadrature du Net and Others (C207/16, EU:C:2018: 788); від 6 жовтня 2020 року, La Quadrature du Net and Others (C-511/18, C-512/18 та C-520/18,
+EU:C:2020:791); від 2 березня 2021 року, Prokuratuur (Умови доступу до даних, що стосуються електронних комунікацій)
+(C-746/18, EU:C:2021:152); від 17 червня 2021 року, M. I.C.M. (C-597/19, EU:C:2021:492); та від 5 квітня 2022 року,
+Commissioner of An Garda Síochána and Others (C-140/20, EU:C:2022:258).
+34 Статті 7, 8 і 11 Хартії основоположних прав Європейського Союзу (далі – Хартія).
+35 Décret № 2010-236, du 5 mars 2010, relatif au traitement automatique de données à caractère personnel autorisé par l&#x27;article
+L. 331-29 du code de la propriété intellectuelle dénommé «Système de gestion des mesures pour la protection des œuvres sur
+internet» (Декрет № 2010-236 від 5 березня 2010 року про систему автоматизованої обробки персональних даних,
+уповноважену статтею L. 331-29 code de la propriété intellectuelle (Кодекс інтелектуальної власності), відомого як «Система
+управління заходами щодо захисту творів в Інтернеті» (JORF № 56 від 7 березня 2010 року, текст № 19), зі змінами,
+внесеними декретом № 2017-924 від 6 травня 2017 року, relatif à la gestion des droits d&#x27;auteur et des droits voisins par un
+organisme de gestion de droits et modifiant le code de la propriété intellectuelle (Декрет № 2017-924 від 6 травня 2017 року
+про управління авторськими та суміжними правами організацією з управління правами та внесення змін до Кодексу
+інтелектуальної власності) (JORF № 109 від 10 травня 2017 року, текст № 176).
+36 Зокрема, третій-п&#x27;ятий абзаци статті L. 331-21 Кодексу інтелектуальної власності.
+37 З 1 січня 2022 року Hadopi було об&#x27;єднано з Conseil supérieur de l&#x27;audiovisuel (Вищою радою з питань аудіовізуального
+сектору) (CSA), іншим незалежним державним органом, щоб утворити Autorité de régulation de la communication
+
+### 23 Рішення за травень 2024 року
+
+У цьому контексті Conseil d&#x27;État (Державна рада) звернулася до Суду
+з питаннями тлумачення Директиви про приватність та електронні комунікації
+у поєднанні з положеннями Хартії. [38]
+
+Висновки Суду
+
+По-перше, щодо збереження даних, які стосуються громадянської ідентичності
+та пов&#x27;язаних з нею IP-адрес, Суд зазначає, що загальне і невибіркове збереження
+IP-адрес не обов&#x27;язково в кожному випадку є серйозним втручанням у право
+на повагу до приватного життя, захист персональних даних та свободу вираження
+поглядів, гарантовані Хартією.
+
+Зобов&#x27;язання забезпечити таке збереження може бути виправдане метою
+боротьби з кримінальними правопорушеннями в цілому, якщо дійсно виключено,
+що таке збереження може призвести до серйозного втручання в приватне життя
+відповідної особи через можливість зробити точні висновки про цю особу, зокрема,
+пов&#x27;язавши ці IP-адреси з набором даних про трафік або місцеперебування.
+
+Відповідно, Держава-член, яка має намір покласти такий обов&#x27;язок
+на постачальників електронних комунікаційних послуг, повинна забезпечити, щоб
+умови зберігання цих даних були такими, аби виключити можливість зробити точні
+висновки про приватне життя відповідних осіб.
+
+Суд зазначає, що з цією метою домовленості про збереження повинні
+стосуватися самого способу організації такого; по суті, це зберігання повинно бути
+організовано таким чином, щоб гарантувати справді надійне розмежування різних
+категорій даних, що зберігаються. Відповідно, національні норми, що стосуються цих
+заходів, повинні гарантувати, що кожна категорія даних, включаючи дані,
+що стосуються ідентифікації особи та IP-адреси, зберігається повністю відокремлено
+від інших категорій збережених даних, і що це відокремлення є дійсно невразливим,
+за допомогою безпечної та надійної комп&#x27;ютерної системи. Крім того, оскільки ці
+правила передбачають можливість пов&#x27;язувати збережені IP-адреси з ідентифікацією
+особи з метою боротьби з порушеннями, вони повинні дозволяти таке пов&#x27;язування
+лише за допомогою ефективного технічного методу, який не підриває ефективність
+невразливого відокремлення цих категорій даних. Надійність такого відокремлення
+повинна регулярно перевірятися стороннім державним органом. Оскільки чинне
+національне законодавство передбачає такі суворі вимоги то втручання, спричинене
+таким збереженням IP-адрес, не може бути класифіковане як «серйозне».
+
+Відповідно, Суд констатує, що за наявності законодавчої бази, яка гарантує,
+що жодна комбінація даних не дозволить зробити точні висновки про приватне життя
+осіб, чиї дані зберігаються, Директива про приватність та електронні комунікації
+
+audiovisuelle et numérique (Орган з регулювання аудіовізуальних та цифрових комунікацій) (ARCOM). Процедура
+поетапного реагування, однак, залишилася по суті незмінною.
+38 Стаття 15(1) Директиви 2002/58/ЄС Європейського Парламенту та Ради від 12 липня 2002 року про обробку
+персональних даних і захист приватності в секторі електронних комунікацій (OJ 2002 L 201, стор. 37), зі змінами,
+внесеними Директивою 2009/136/ЄС Європейського Парламенту та Ради від 25 листопада 2009 року (OJ 2009 L 337, стор.
+11) (далі – Директива про приватність та електронні комунікації), у поєднанні із статтями 7, 8 та 11 і статті 52(1) Хартії.
+
+### 24 Рішення за травень 2024 року
+
+у поєднанні з положеннями Хартії не перешкоджає Державі-члену накладати
+зобов&#x27;язання зберігати IP-адреси в загальному і невибірковому порядку протягом
+періоду, що не перевищує суворо необхідного, для цілей боротьби з кримінальними
+правопорушеннями в цілому.
+
+По-друге, щодо доступу до даних, які стосуються ідентифікації особи, пов&#x27;язаної
+з IP-адресами, Суд вважає, що Директива про приватність та електронні комунікації,
+протлумачена у світлі Хартії, в принципі, не перешкоджає національному
+
+законодавству, яке дозволяє державному органу отримати доступ до даних,
+що зберігаються постачальниками електронних комунікаційних послуг, окремо
+і в дійсно невразливий спосіб, з єдиною метою – уможливити ідентифікацію таким
+органом власників цих адрес, підозрюваних у порушенні авторського права
+і суміжних прав в Інтернеті, і вжити проти них заходів. У такому випадку національне
+законодавство повинно заборонити посадовим особам, які мають такий доступ, (i)
+розголошувати в будь-якій формі інформацію про зміст файлів, що переглядаються
+цими власниками, за винятком випадків передачі справи до прокуратури, (ii)
+відстежувати в будь-який спосіб відвідуваність сайтів цими власниками та (iii)
+використовувати ці IP-адреси з іншою метою, окрім вжиття таких заходів.
+
+У цьому контексті Суд зазначає, inter alia, що, хоча свобода вираження поглядів
+і конфіденційність персональних даних є першочерговими міркуваннями, проте ці
+основоположні права не є абсолютними. При встановленні рівноваги між правами
+та інтересами, про які йдеться, ці основоположні права іноді повинні поступатися
+іншим основоположним правам або імперативам суспільного інтересу, таким як
+підтримання громадського порядку, запобігання злочинам або захист прав і свобод
+інших осіб. Це, зокрема, стосується випадків, коли вага цих першочергових міркувань
+є такою, що перешкоджає ефективності кримінального розслідування, зокрема,
+унеможливлюючи або надмірно ускладнюючи ефективне встановлення особи, яка
+вчинила кримінальне правопорушення, та призначення їй покарання.
+
+В контексті боротьби з вчиненими в Інтернеті кримінальними
+правопорушеннями щодо авторського права або суміжних прав Суд також
+посилається на свою судову практику, згідно з якою той факт, що доступ до IP-адрес
+може бути єдиним засобом розслідування, який дозволяє ідентифікувати відповідну
+особу, свідчить про те, що збереження цих адрес і доступ до них є суворо необхідним
+для досягнення поставленої мети, а отже, відповідає вимозі пропорційності. Що
+більше, відмова в такому доступі створить реальний ризик системної безкарності
+за кримінальні правопорушення, вчинені в Інтернеті, або вчинення чи підготовка
+яких полегшується специфічними характеристиками Інтернету. Існування такого
+ризику є важливим фактором для цілей оцінки, при досягненні рівноваги між різними
+правами та інтересами, що розглядаються, того, чи є втручання в права на повагу
+до приватного життя, захист персональних даних та свободу вираження поглядів
+пропорційним заходом у контексті мети боротьби з кримінальними
+
+правопорушеннями.
+
+По-третє, вирішуючи питання про те, чи повинен доступ державного органу
+до даних, що стосуються ідентифікації особи, пов&#x27;язаної з IP-адресою, підлягати
+
+### 25 Рішення за травень 2024 року
+
+попередньому розгляду судом або незалежним адміністративним органом, Суд
+
+вважає, що вимога такого попереднього розгляду застосовується, якщо в рамках
+національного законодавства такий доступ несе ризик серйозного втручання
+в основоположні права відповідної особи, оскільки він може дозволити державному
+органу зробити точні висновки про приватне життя цієї особи і, в залежності від
+обставин, скласти її / його детальний профіль. І навпаки, вимога попереднього
+
+розгляду не призначена для застосування у випадках, коли втручання
+в основоположні права не може бути класифіковане як серйозне.
+
+У зв&#x27;язку з цим Суд зазначає, що за наявності системи зберігання даних, яка
+забезпечує надійне розмежування різних категорій таких даних, доступ державного
+органу до даних, що стосуються ідентифікації особи, пов&#x27;язаних з IP-адресами,
+в принципі, не підпадає під вимогу попереднього перегляду. Такий доступ з єдиною
+метою ідентифікації власника IP-адреси, за загальним правилом, не є серйозним
+втручанням у вищезазначені права.
+
+Однак Суд не виключає можливості того, що в нетипових ситуаціях існує ризик
+того, що в контексті процедури поступового реагування, про яку йдеться в основному
+провадженні, державний орган може зробити точні висновки про приватне життя
+відповідної особи, зокрема, коли ця особа здійснює діяльність, що неодноразово
+порушує авторське право або суміжні права в пірингових мережах (peer-to-peer
+networks) або у великих масштабах, у зв&#x27;язку з охоронюваними творами певних
+видів, розкриваючи потенційно конфіденційну інформацію про аспекти приватного
+життя цієї особи.
+
+В цій справі власник IP-адреси може бути особливо підданий такому ризику, коли
+орган державної влади повинен вирішити, чи передавати справу до прокуратури
+з метою притягнення цієї особи до кримінальної відповідальності. Інтенсивність
+порушення права на повагу до приватного життя, ймовірно, зростатиме в міру того,
+як процедура поетапного реагування, яка є послідовним процесом, проходитиме через
+різні його етапи. Доступ компетентного органу до всіх даних про відповідну особу,
+зібраних на різних етапах цієї процедури, може дозволити зробити точні висновки про
+її приватне життя. Відповідно, національне законодавство має передбачати
+попередню перевірку, яка має відбутися до того, як державний орган зможе пов&#x27;язати
+дані, що ідентифікують особу, з таким набором даних, а також до надсилання
+письмового повідомлення про те, що ця особа вчинила дії, які підлягають
+кримінальному переслідуванню. Крім того, така перевірка повинна зберігати
+ефективність процедури поступового реагування, дозволяючи, зокрема, виявляти
+випадки, коли протиправна поведінка, про яку йде мова, повторюється. З цією метою
+ця процедура повинна бути організована і структурована таким чином, щоб
+ідентифікаційні дані особи, пов&#x27;язані з IP-адресами, раніше зібраними в Інтернеті, не
+могли бути автоматично пов&#x27;язані особами, відповідальними за розгляд фактів
+у компетентному державному органі, з інформацією, якою він вже володіє, і яка
+могла б дозволити зробити точні висновки про приватне життя цієї особи.
+
+Крім того, щодо об&#x27;єкта попереднього розгляду Суд зазначає, що якщо відповідна
+особа підозрюється у вчиненні злочину, який підпадає під сферу кримінальних
+
+### 26 Рішення за травень 2024 року
+
+правопорушень в цілому, суд або незалежний адміністративний орган,
+відповідальний за такий розгляд, повинен відмовити в доступі, якщо такий доступ
+дозволить органу державної влади зробити точні висновки про приватне життя цієї
+особи. Однак навіть доступ, що дозволяє зробити такі точні висновки, повинен бути
+дозволений у випадках, коли відповідна особа підозрюється у вчиненні
+правопорушення, яке, на думку відповідної Держави-члена ЄС, підриває
+основоположний інтерес суспільства і, таким чином, є серйозним злочином.
+
+Суд також зазначає, що попередній перегляд у жодному разі не може бути
+повністю автоматизованим, оскільки у випадку кримінального розслідування такий
+перегляд вимагає дотримання рівноваги між, з одного боку, законними інтересами,
+пов&#x27;язаними з боротьбою зі злочинністю, та, з іншого боку, повагою до приватного
+життя та захистом персональних даних. Таке врівноваження вимагає залучення
+фізичної особи тим більше коли автоматичний підхід та великі масштаби обробки
+даних, про які йде мова, створюють ризики для приватного життя.
+
+Таким чином, Суд доходить висновку, що можливість для осіб, відповідальних
+за вивчення фактів у цьому державному органі, пов&#x27;язувати такі ідентифікаційні дані
+особи, пов&#x27;язаної з IP-адресою, з файлами, що містять інформацію, яка розкриває
+назву захищених творів, розміщення яких в Інтернеті виправдовує збір IP-адрес
+організаціями правовласників, підлягає перегляду судом або незалежним
+адміністративним органом у випадках, коли та сама особа знову повторює дії,
+що порушують авторські або суміжні права. Такий розгляд не може бути повністю
+автоматизованим і повинен відбуватися до встановлення будь-якого такого зв&#x27;язку,
+оскільки за таких обставин можна зробити точні висновки про приватне життя особи,
+чия IP-адреса використовувалася для діяльності, що може порушувати авторське
+право або суміжні права.
+
+По-четверте Суд зазначає, що система опрацювання даних, яка
+використовується державним органом, повинна регулярно перевірятися незалежним
+органом, який діє як третя особа відносно цього державного органу. Метою такого
+контролю є перевірка цілісності системи, включаючи ефективні гарантії проти ризиків
+зловживання або незаконного доступу до цих даних або їх використання, а також її
+ефективності та надійності у виявленні потенційних правопорушень.
+
+У цьому контексті Суд зазначає, що в цій справі автоматизоване опрацювання
+персональних даних державним органом на підставі інформації про випадки підробки,
+виявлені організаціями-правовласниками, ймовірно, містить певну кількість
+помилкових спрацьовувань і, перш за все, ризик того, що потенційно дуже значна
+кількість персональних даних може бути використана третіми особами в незаконних
+або неправомірних цілях, що пояснює необхідність проведення такого перегляду.
+
+Крім того, він додає, що таке опрацювання має відповідати конкретним
+правилам захисту персональних даних, встановленим Директивою 2016/680. [39] У цій
+
+39 Директива (ЄС) 2016/680 Європейського Парламенту та Ради від 27 квітня 2016 року про захист фізичних осіб щодо
+обробки персональних даних компетентними органами з метою запобігання, розслідування, виявлення чи
+переслідування кримінальних правопорушень або для виконання кримінальних покарань, а також щодо вільного
+переміщення таких даних та про скасування Рамкового рішення Ради 2008/977/JHA (OJ 2016 L 119, стор. 89).
+
+### 27 Рішення за травень 2024 року
+
+справі, навіть якщо орган державної влади не має власних повноважень щодо
+прийняття рішень у контексті процедури «поступового реагування», він повинен бути
+класифікований як «орган державної влади», який бере участь у запобіганні
+та виявленні кримінальних правопорушень, а отже, підпадати під сферу дії цієї
+Директиви. Таким чином, особи, які беруть участь у такій процедурі, повинні
+користуватися комплексом матеріальних і процесуальних гарантій, зазначених
+у Директиві 2016/680; саме суд, що розглядає справу, повинен з&#x27;ясувати,
+чи передбачає національне законодавство такі гарантії.
+
+### 2. Тимчасові заходи 9
+
+### 2. Тимчасові заходи 9
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md не вказана 140270 10 спільні підприємства розслідування в кримінальних справах семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «спільні підприємства» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / економічне співробітництво з іноземними країнами / спільні підприємства).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140270 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb">Економічне співробітництво з іноземними країнами</span><span class="crumb-sep">›</span><span class="crumb-leaf">Спільні підприємства</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>розслідування в кримінальних справах</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Спільні підприємства» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Економічне співробітництво з іноземними країнами / Спільні підприємства).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Тимчасові заходи 9
+
+2. Судове співробітництво у кримінальних справах: європейський наказ на проведення
+розслідування в кримінальних справах
+
+Рішення Суду справедливості ЄС (Велика Палата) від 30 квітня 2024 року, M. N.
+(EncroChat), C-670/22
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=285365&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=3384288)
+
+Звернення за попереднім рішенням – Судове співробітництво у кримінальних справах
+– Директива 2014/41/ЄС – Європейський наказ на проведення розслідування (ЕІО)
+в кримінальних справах – Отримання доказів, які вже є у розпорядженні
+компетентних органів Держави, що виконує EIO – Умови видачі EIO – Зашифрований
+телекомунікаційний сервіс – EncroChat – Потреба в рішенні судді – Використання
+доказів, отриманих з порушенням права ЄС
+
+У попередньому рішенні за зверненням Landgericht Berlin (Регіональний суд
+Берліна, Німеччина) Велика Палата Суду справедливості ЄС визначає умови, за яких
+прокурор може видати європейський наказ на проведення розслідування (EIO)
+у кримінальних справах, коли орган Держави-члена ЄС, який видав EIO, бажає
+забезпечити передачу перехоплених телекомунікаційних даних, які вже перебувають
+у володінні іншої Держави-члена ЄС. Він також роз&#x27;яснює наслідки порушення
+відповідного права ЄС у частині використання даних.
+
+У ході розслідування, проведеного французькою владою, з&#x27;ясувалося,
+що обвинувачені особи використовували мобільні телефони, зашифровані
+за допомогою сервісу «EncroChat», для вчинення злочинів, пов&#x27;язаних насамперед
+з незаконним обігом наркотиків. Цей сервіс дозволяв здійснювати зашифровану
+комунікацію через сервер у Франції, яку неможливо було перехопити звичайними
+слідчими засобами.
+
+Навесні 2020 року з дозволу французького суду на цей сервер було завантажено
+троянське програмне забезпечення, розроблене франко-нідерландською слідчою
+групою, а згодом його було встановлено на мобільні телефони користувачів у 122
+країнах, зокрема приблизно 4 600 користувачів у Німеччині.
+
+### 28 Рішення за травень 2024 року
+
+На конференції, організованій Євроюстом [40] у березні 2020 року, представники
+французької та нідерландської влади поінформували владу інших Держав-членів ЄС
+про заплановане перехоплення даних, у тому числі з мобільних телефонів,
+розташованих за межами французької території. Представники Bundeskriminalamt
+(Федеральне відомство кримінальної поліції Німеччини, далі – BKA)
+та Generalstaatsanwaltschaft Frankfurt am Main (Генеральна прокуратура Франкфуртана-Майні; далі – Прокуратура Франкфурта-на-Майні) заявили про свою зацікавленість
+у даних німецьких користувачів.
+
+У період з червня 2020 року по липень 2021 року в рамках провадження,
+порушеного проти Х, Прокуратура Франкфурта-на-Майні видала кілька EIO з метою
+отримання дозволу від французької влади на безперешкодне використання зібраних
+ними даних у кримінальному провадженні. Прокуратура обґрунтувала свій запит тим,
+що Європол поінформував BKA про те, що велика кількість дуже серйозних
+кримінальних злочинів вчиняється в Німеччині за допомогою мобільних телефонів,
+обладнаних сервісом «EncroChat», і що поки що невстановлені особи підозрюються
+у плануванні та вчиненні таких злочинів у Німеччині за допомогою зашифрованого
+зв&#x27;язку. Французький суд дозволив передачу і використання в судовому процесі
+даних, перехоплених у німецьких користувачів.
+
+Згодом Прокуратура Франкфурта-на-Майні передоручила розслідування, зокрема
+щодо M. N., місцевим прокуратурам. В одному з кримінальних проваджень, переданих
+на його розгляд, запитуючий суд ставить під сумнів законність цих EIO з огляду
+на положення Директиви 2014/41 [41] та наслідки можливого порушення права ЄС
+у зв&#x27;язку з використанням у цих провадженнях перехоплених даних. Тому він вирішив
+передати питання на розгляд Суду справедливості ЄС для ухвалення попереднього
+рішення.
+
+Висновки Суду
+
+Перш за все, Суд зазначає, що поняття «орган видачі», у розумінні Директиви
+2014/41, не обмежується суддями. Фактично, прокурор включений у статті 2(c)(i) цієї
+Директиви до числа органів, які розуміються як «орган видачі», за єдиної умови,
+що він повинен мати компетенцію у відповідній справі. Відповідно, якщо відповідно
+до законодавства Держави, яка видала EIO, прокурор уповноважений у суто
+внутрішній ситуації в цій Державі розпоряджатися про проведення слідчих дій для
+передачі доказів, які вже є у розпорядженні компетентних національних органів, то
+цей прокурор охоплюється поняттям «орган видачі» для цілей видачі ЕІО для передачі
+доказів, які вже є у розпорядженні компетентних органів Держави, що виконує EIO.
+
+По-друге, зі статті 6(1) Директиви 2014/41 випливає, що EIO для передачі
+отриманих доказів, таких як докази в основному провадженні, які вже перебувають
+у розпорядженні компетентних органів Держави, яка виконує EIO, повинен
+
+40 Агентство Європейського Союзу з питань співпраці у сфері кримінального правосуддя (Євроюст).
+41 Директива 2014/41/ЄС Європейського Парламенту та Ради від 3 квітня 2014 року стосовно Європейського слідчого
+наказу у кримінальних справах (OJ 2014 L 130, стор. 1).
+
+### 29 Рішення за травень 2024 року
+
+відповідати всім умовам, які можуть бути встановлені національним законодавством
+цієї Держави для передачі таких доказів у суто внутрішній ситуації в цій Державі.
+
+Однак, хоча стаття 6(1)(b) Директиви 2014/41 спрямована на забезпечення того,
+щоб правила та гарантії, передбачені національним законодавством Держави видачі
+EIO, не можна було обійти, вона не вимагає, в тому числі в ситуації, подібній до тієї,
+що розглядається в основному провадженні, коли запитувані дані були зібрані
+компетентними органами Держави, яка виконує EIO, на території Держави його видачі
+та в її інтересах, щоб видача EIO для передачі доказів, які вже перебувають
+у розпорядженні компетентних органів Держави, яка виконує EIO, здійснювалася
+на тих самих істотних умовах, які застосовуються в Державі видачі до процесу збору
+цих доказів.
+
+До того, з огляду на принцип взаємного визнання вироків та судових рішень,
+що лежить в основі судового співробітництва у кримінальних справах, на який
+посилається Директива 2014/41, орган видачі не уповноважений перевіряти
+законність окремої процедури, за допомогою якої Держава-член, яка виконує EIO,
+зібрала докази, які вже є у її володінні і про передачу яких просить орган видачі.
+
+Суд також чітко зазначає, що, по-перше, стаття 6(1)(а) Директиви 2014/41 не
+вимагає, щоб видача такого EIO обов&#x27;язково залежала від наявності на момент його
+видачі підозри, що ґрунтується на конкретних фактах, у вчиненні серйозного злочину
+стосовно кожної відповідної особи, якщо така вимога не випливає з національного
+законодавства Держави, яка видає EIO, для передачі доказів між національними
+прокуратурами. По-друге, це положення не перешкоджає видачі EIO, якщо цілісність
+перехоплених даних не може бути перевірена на цьому етапі через конфіденційність
+технології, що лежить в основі перехоплення за умови, що право на справедливий
+судовий розгляд гарантується в подальшому кримінальному провадженні. Дійсно,
+цілісність переданих доказів може, в принципі, бути оцінена лише тоді, коли
+компетентні органи фактично матимуть у своєму розпорядженні відповідні докази.
+
+По-третє, Суд зазначає, що проникнення на кінцеві пристрої з метою збору
+даних про трафік, місцеперебування та комунікаційні дані служби інтернет-зв&#x27;язку
+становить «перехоплення телекомунікацій» у розумінні статті 31(1) Директиви
+2014/41, про що має бути повідомлено орган, призначений для цієї мети Державоючленом, на території якої знаходиться об&#x27;єкт перехоплення. Якщо Держава-член,
+що перехоплює, не в змозі визначити компетентний орган Держави-члена, яку
+необхідно повідомити, таке повідомлення може бути подане до будь-якого органу
+такої Держави-члена, який Держава-член, що здійснює перехоплення, вважає
+відповідним для цієї мети.
+
+Відповідно до статті 31(3) Директиви 2014/41, компетентний орган Державичлена, яка отримала таке повідомлення може, якщо перехоплення не було б дозволено
+в аналогічній національній справі, вказати, що перехоплення не може бути здійснене
+або має бути припинене, або що будь-який вже перехоплений матеріал не може бути
+використаний, або може бути використаний лише за умов, які вона повинна
+визначити. Таким чином, стаття 31 Директиви 2014/41 покликана не лише гарантувати
+
+### 30 Рішення за травень 2024 року
+
+повагу до суверенітету Держави-члена, яка отримує таке повідомлення, а й захищати
+права осіб, які постраждали від такого перехоплення телекомунікацій.
+
+Зрештою, Суд зазначає, що, в принципі, лише національне законодавство може
+визначати правила, що стосуються допустимості та оцінки в кримінальному
+провадженні інформації та доказів, отриманих у спосіб, що суперечить праву ЄС.
+
+Однак стаття 14(7) Директиви 2014/41 вимагає від Держав-членів забезпечити,
+без шкоди для застосування національних процесуальних норм, щоб у кримінальному
+провадженні в Державі, яка видала EIO, при оцінці доказів, отриманих через ЕІО, були
+дотримані права захисту та справедливість судового розгляду. Отже, якщо суд
+вважає, що сторона не в змозі ефективно прокоментувати такий доказ, який може
+мати переважний вплив на встановлення фактів, суд повинен визнати порушення
+права на справедливий судовий розгляд і не брати до уваги цей доказ.
+
+### 3. Довкілля: рамкові заходи ЄС у сфері водної політики 31
+
+### 3. Довкілля: рамкові заходи ЄС у сфері водної політики 31
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03_segment.md не вказана 130 50 30 надзвичайні ситуації природного та техногенного характеру (крім пожеж) рішення суду справедливості єс (друга палата) від 25 квітня 2024 року, sweetman, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «надзвичайні ситуації природного та техногенного характеру (крім пожеж)» (законодавство про національну безпеку та правопорядок / надзвичайні заходи / надзвичайні ситуації природного та техногенного характеру (крім пожеж)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">03_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">130 50 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про національну безпеку та правопорядок</span><span class="crumb-sep">›</span><span class="crumb">Надзвичайні заходи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Надзвичайні ситуації природного та техногенного характеру (крім пожеж)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Суду справедливості ЄС (Друга Палата) від 25 квітня 2024 року, Sweetman,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Надзвичайні ситуації природного та техногенного характеру (крім пожеж)» (Законодавство про національну безпеку та правопорядок / Надзвичайні заходи / Надзвичайні ситуації природного та техногенного характеру (крім пожеж)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Довкілля: рамкові заходи ЄС у сфері водної політики 31
+
+3. Довкілля: рамкові заходи ЄС у сфері водної політики
+
+Рішення Суду справедливості ЄС (Друга Палата) від 25 квітня 2024 року, Sweetman,
+C-301/22
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=285184&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=1746004)
+
+Звернення за попереднім рішенням – Навколишнє середовище – Директива
+2000/60/ЄС – Рамкова діяльність ЄС у сфері водної політики – Стаття 4(1)(а) –
+Екологічні цілі, пов&#x27;язані з поверхневими водами – Зобов&#x27;язання Держав-членів не
+дозволяти реалізацію проєктів, які можуть призвести до погіршення стану об&#x27;єктів
+поверхневих вод – Стаття 5 та Додаток II – Характеристика типів об’єктів поверхневих
+вод – Стаття 8 та Додаток V – Класифікація статусу об&#x27;єктів поверхневих водних –
+Стаття 11 – Програма дій – Проєкт забору води з озера з площею поверхні менше 0,5
+км²
+
+Ухвалюючи попереднє рішення за зверненням Високого Суду (Ірландія), Суд
+справедливості ЄС роз&#x27;яснив екологічні зобов&#x27;язання Держав-членів відповідно
+до Директиви 2000/60 [42] щодо малих озер, розташованих на їхніх територіях.
+
+У липні 2018 року An Bord Pleanála (Рада з питань планування, Ірландія) надала
+згоду на реалізацію проєкту із забору прісної води з озера площею 0,083 км²,
+розташованого в графстві Голуей (Ірландія).
+
+Ухвалою від 15 січня 2021 року Високий Суд скасував це рішення про надання
+згоди на підставі того, що Агентство з охорони навколишнього середовища (далі –
+EPA) не надало екологічного статусу озеру, про яке йдеться, як того вимагає
+Директива 2000/60.
+
+Після ухвалення цього рішення одна зі сторін провадження у Високому Суді
+звернулася до Агентства із захисту довкілля з проханням прокоментувати його.
+
+42 Директива 2000/60/ЄС Європейського Парламенту та Ради від 23 жовтня 2000 року про встановлення рамок заходів
+Співтовариства в галузі водної політики (ОВ 2000 р. L 327, стор. 1).
+
+### 31 Рішення за травень 2024 року
+
+У відповідь EPA повідомило, що озеро, про яке йде мова, не є водним об&#x27;єктом,
+що підпадає під дію Директиви 2000/60.
+
+Вважаючи, що позиція EPA може вплинути на результат справи, Високий Суд
+вирішив поновити розгляд справи і звернутися до Суду справедливості ЄС
+з питаннями щодо зобов&#x27;язань Держав-членів за Директивою 2000/60 стосовно
+визначення та класифікації статусу малих озер, а також щодо умов надання дозволу
+на реалізацію проєкту, який може вплинути на мале озеро, яке не було визначено і не
+було класифіковано відповідно до цієї Директиви.
+
+Висновки Суду
+
+Що стосується, в першу чергу, зобов&#x27;язання Держав-членів визначати
+характеристики озер та класифікувати їхній екологічний статус Суд нагадує, що для
+забезпечення збереження або відновлення належного стану поверхневих вод
+Директива 2000/60 містить низку положень, які передбачають складний процес,
+що включає низку детально регламентованих етапів, з метою надання Державамчленам можливості вжити необхідних заходів, виходячи зі специфічних особливостей
+та характеристик водних об&#x27;єктів, виявлених на їхній території.
+
+Щодо, зокрема, зобов&#x27;язання Держав-членів ЄС визначати характеристики озер
+на своїй території, то стаття 5 Директиви 2000/60 вимагає проведення аналізу
+характеристик кожного району річкового басейну відповідно до технічних
+специфікацій, викладених у Додатку II до цієї Директиви. З формулювань цього
+додатку зрозуміло, що зобов&#x27;язання встановлювати специфічні умови для кожного
+типу поверхневих водних об&#x27;єктів не стосується озер з площею водного плеса менше
+0,5 км².
+
+Оскільки Держави-члени не зобов&#x27;язані характеризувати, згідно зі статтею 5
+та додатком II до Директиви 2000/60, озера з площею поверхні менше 0,5 км², логічно
+випливає, що вони також не зобов&#x27;язані класифікувати екологічний статус таких озер
+відповідно до статті 8 та додатку V до цієї Директиви. Таке тлумачення
+підтверджується, зокрема, спільним тлумаченням Додатків II і V до Директиви
+2000/60.
+
+Проте, ці висновки не перешкоджають Державам-членам, які вважають це
+за доцільне, зробити певні типи озер з площею поверхні менше 0,5 км² об&#x27;єктом вимог
+щодо визначення характеристик та класифікації, викладених у Директиві 2000/60.
+
+По-друге, щодо зобов&#x27;язань національних органів влади при наданні дозволу
+на реалізацію проєкту, який потенційно може вплинути на мале озеро, яке не було
+охарактеризоване або класифіковане за своїм екологічним статусом, Суд зазначає,
+що зобов&#x27;язання запобігати погіршенню та покращувати стан поверхневих водних
+об&#x27;єктів, викладені у статті 4 Директиви 2000/60, не поширюються на озера, площа
+поверхні яких не перевищує 0,5 км² і які не були згруповані Державами-членами ЄС
+з метою їхньої класифікації згідно з варіантом, передбаченим у Додатку II до цієї
+Директиви.
+
+### 32 Рішення за травень 2024 року
+
+Було б несумісним з механізмом Директиви 2000/60 і, зокрема, з комплексним
+характером процесу, встановленого цією Директивою, якби обов&#x27;язковий характер
+екологічних цілей, зазначених у статті 4(1) цієї Директиви, стосувався також
+поверхневих водних об&#x27;єктів, які не підлягали і не повинні були підлягати
+охарактеризуванню або класифікації, оскільки сенс характеризації або класифікації,
+однак, полягає в отриманні даних, необхідних для досягнення цих цілей.
+
+З огляду на це, оскільки озеро, про яке йдеться в основному провадженні,
+пов&#x27;язане зі спеціальною природоохоронною зоною Кілкіранської затоки та островів
+прямим припливно-відпливним зв&#x27;язком Суд зазначає, що відповідно до статті 4
+Директиви 2000/60, якщо не дозволено відступ, компетентний орган Держави-члена
+зобов&#x27;язаний відмовити у наданні згоди на проєкт, якщо його вплив на озеро
+з площею водного плеса менше ніж 0,5 км² може призвести до погіршення статусу
+іншого поверхневого водного об&#x27;єкта, який був або мав бути предметом
+характеризації відповідно до Директиви 2000/60, або якщо це може поставити під
+загрозу досягнення належного стану поверхневих вод або належного екологічного
+потенціалу та належного хімічного стану такого іншого поверхневого водного об&#x27;єкта.
+
+Крім того, компетентний орган також повинен з&#x27;ясувати, чи є результати проєкту,
+про який йде мова, сумісними із заходами, що здійснюються в рамках програми,
+розробленої відповідно до статті 11 Директиви 2000/60 для відповідного району
+річкового басейну, з метою досягнення цілей цієї Директиви. З тексту цього
+положення випливає, що сфера застосування програми заходів не обмежується
+виключно «типами» поверхневих водних об&#x27;єктів, визначених у статті 5 Директиви
+2000/60 та Додатку II до неї.
+
+Зокрема, стаття 11(3)(с) Директиви 2000/60 передбачає, що «основні заходи», які
+повинні бути включені до кожної програми заходів і становлять мінімальні вимоги,
+яких необхідно дотримуватися, повинні включати заходи, спрямовані на сприяння
+ефективному та сталому використанню водних ресурсів, щоб не ставити під загрозу
+досягнення цілей, визначених у статті 4 цієї Директиви.
+
+З огляду на той факт, що якість невеликого елемента поверхневих вод може
+впливати на якість іншого більшого елемента, захист вод, що входять до складу
+поверхневих водних об&#x27;єктів, які, як і озеро, про яке йдеться в основному
+провадженні, не були і не повинні були бути охарактеризовані відповідно
+до Директиви 2000/60, може виявитися необхідним в цьому контексті. З тієї
+ж причини може бути необхідним застосувати контроль за забором води до тих
+малих поверхневих водних об&#x27;єктів, про які йдеться у статті 11(3)(e) Директиви
+2000/60 та пункті (viii) частини В Додатку VI до неї
+
+### 33 Рішення за травень 2024 року
+
+Огляд практики Суду справедливості Європейського Союзу. Рішення за травень
+2024 року. Відп. за вип.: Перший заступник керівника Апарату Верховного Суду, д-р
+юрид. наук Р. Ш. Бабанли. Опрацювання та переклад рішень: Д. П. Мордас,
+Т. В. Простибоженко, О. Ю. Тарасенко. Київ, 2024. – 33 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 3;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

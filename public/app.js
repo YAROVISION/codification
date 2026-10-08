@@ -25,9 +25,7 @@ const heroDirectUrlBtn = document.getElementById("hero-direct-url-btn");
 const heroTotalDocsBtnCount = document.getElementById("hero-total-docs-btn-count");
 const heroDirectDocsBtnCount = document.getElementById("hero-direct-docs-btn-count");
 
-const metricTotalDocs = document.getElementById("metric-total-docs");
-const metricDirectDocs = document.getElementById("metric-direct-docs");
-const metricChildrenCount = document.getElementById("metric-children-count");
+
 
 const subcategoriesGrid = document.getElementById("subcategories-grid");
 const subcatsCountBadge = document.getElementById("subcats-count-badge");
@@ -475,12 +473,11 @@ function renderCategoryDetails(cat) {
   heroTotalDocsBtnCount.textContent = totalDocs > 0 ? `(${totalDocs.toLocaleString("uk-UA")})` : "";
   heroDirectDocsBtnCount.textContent = directDocs > 0 ? `(${directDocs.toLocaleString("uk-UA")})` : "";
 
-  // Metrics
-  metricTotalDocs.textContent = Number(cat.total_docs_count).toLocaleString("uk-UA");
-  metricDirectDocs.textContent = Number(cat.direct_docs_count).toLocaleString("uk-UA");
+  // Subcategories count badge
   const childrenList = cat.children || [];
-  metricChildrenCount.textContent = childrenList.length;
-  subcatsCountBadge.textContent = childrenList.length;
+  if (subcatsCountBadge) {
+    subcatsCountBadge.textContent = childrenList.length;
+  }
 
   // Breadcrumbs
   renderBreadcrumbs(cat);

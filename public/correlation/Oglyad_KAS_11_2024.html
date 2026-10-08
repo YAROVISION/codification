@@ -1,0 +1,2564 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_KAS_11_2024 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_KAS_11_2024 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_KAS_11_2024.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_KAS_11_2024</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">16</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">71.6%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">15</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 16 із 16</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01.01_segment.md № 520/5995/23 20 50 податки та обов&#x27;язкові платежі розгляду заяви про неможливість своєчасного виконання платником податків своїх семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «податки та обов&#x27;язкові платежі» (бюджетно-фінансове законодавство / податки та обов&#x27;язкові платежі).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122882856" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 520/5995/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Податки та обов&#x27;язкові платежі</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>розгляду заяви про неможливість своєчасного виконання платником податків своїх</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Податки та обов&#x27;язкові платежі» (Бюджетно-фінансове законодавство / Податки та обов&#x27;язкові платежі).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+1.1.1. Про обов’язок податкового органу прийняти попереднє рішення в ході
+розгляду заяви про неможливість своєчасного виконання платником податків своїх
+податкових обов’язків та належним чином вмотивувати рішення, прийняте
+за наслідками розгляду такої заяви
+
+У випадку, коли платник податків через наслідки бойових дій зазнав значних
+матеріальних втрат, що унеможливили своєчасне виконання податкових
+обов’язків, податковий орган зобов’язаний належним чином розглянути обставини
+форс-мажору та надати можливість платнику подати додаткові документи для
+підтвердження цих обставин. Недотримання процедурних вимог, зокрема,
+відсутність попереднього рішення та надання можливості доповнити документи,
+призводить до визнання рішення податкового органу протиправним та його
+
+скасування
+
+07 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Північного міжрегіонального
+управління ДПС по роботі з великими платниками податків на постанову Другого
+апеляційного адміністративного суду від 30 листопада 2023 року у справі
+№ 520/5995/23 за позовом Товариства з обмеженою відповідальністю «Родоніт-Р»
+до Північного міжрегіонального управління ДПС по роботі з великими платниками
+податків про визнання протиправними та скасування рішень.
+
+ОБСТАВИНИ СПРАВИ
+
+У березні 2022 року, внаслідок бойових дій та обстрілів м. Харкова, Товариство
+з обмеженою відповідальністю «Родоніт-Р» зазнало значних матеріальних
+втрат — було знищено первинну документацію, сервери та програмне
+забезпечення. Це унеможливило своєчасне виконання податкових обов’язків,
+зокрема реєстрацію податкових накладних та подання звітності. 29 вересня
+2022 року платник подав заяву до податкового органу про неможливість виконання
+податкових обов’язків через форс-мажорні обставини, надавши документи,
+що підтверджують ці обставини, зокрема акти про пожежі та відсутність доступу
+до документів. Водночас податковий орган не визнав ці обставини підставою для
+звільнення від відповідальності за невиконання податкових обов’язків і ухвалив
+рішення № 1529, згідно з яким Товариству з обмеженою відповідальністю
+«Родоніт-Р» могло виконати свої податкові зобов’язання.
+
+За результатами камеральної перевірки податковий орган, згідно
+з податковим повідомленням-рішенням, застосував до товариства штраф на суму
+ПДВ понад 21 мільйон гривень за несвоєчасну реєстрацію податкових накладних
+у Єдиному реєстрі.
+
+Товариство з обмеженою відповідальністю «Родоніт-Р» оскаржило ці рішення,
+зазначивши, що виконати податкові зобов’язання було неможливо через
+обставини, пов’язані з бойовими діями, знищенням документації та серверного
+обладнання, обмеженим доступом до приміщень і перебоями в електропостачанні
+та інтернет-зв’язку. Товариство вказало на протиправність рішення податкового
+органу, оскільки той не прийняв попереднього рішення, як того вимагає Порядок
+підтвердження можливості чи неможливості виконання платником податків
+обов&#x27;язків, визначених у підпункті 69.1 пункту 69 підрозділу 10 розділу XX
+«Перехідні положення» Податкового кодексу України, та переліків документів
+на підтвердження, затверджений наказом Міністерства фінансів України від
+29 липня 2022 року № 225 (далі – Порядок № 225), а відразу ухвалив остаточне
+рішення по суті. На думку платника, камеральна перевірка була проведена
+до граничного строку подання заяви, а рішення податкового органу було прийняте
+з порушенням строків, передбачених Податковим кодексом України.
+
+Харківський окружний адміністративний суд рішенням від 17 серпня 2023 року
+відмовив у задоволенні позову, вказавши, що позивач не надав документів,
+що відповідають вимогам Порядку № 225, і не довів неможливість виконання
+податкових обов’язків. Суд також зазначив, що платник податків мав можливість
+своєчасно виконати податкові зобов’язання, а отже, рішення податкового органу
+було правомірним.
+
+Другий апеляційний адміністративний суд скасував рішення першої інстанції,
+визнавши рішення податкового органу протиправними та скасувавши їх. Зокрема,
+суд зазначив, що податковий орган не здійснив попередню перевірку документів
+позивача, що є порушенням вимог Порядку № 225.
+
+Верховний Суд визнав необхідним змінити постанову Другого апеляційного
+адміністративного суду, виклавши її мотивувальну частину в новій редакції.
+Резолютивну частину рішення було доповнено абзацом, який зобов’язує Північне
+міжрегіональне управління ДПС повторно розглянути заяву платника від 29 вересня
+2022 року про неможливість виконання податкового обов’язку з урахуванням
+висновків, викладених судом. В іншій частині постанова апеляційного суду була
+залишена без змін.
+
+ОЦІНКА СУДУ
+Метою затвердження Порядку № 225 є забезпечення захисту платників
+податків, які через збройну агресію Російської Федерації не можуть виконати свої
+
+податкові обов’язки, від негативних наслідків несвоєчасного подання звітності
+та сплати податків.
+
+Платник податків повинен надати вичерпний перелік документів,
+що підтверджують відсутність можливості своєчасного виконання свого
+податкового обов’язку. Контролюючий орган має встановити причиннонаслідковий зв’язок між форс-мажорними обставинами і неможливістю виконання
+податкових обов’язків. Якщо надані документи підтверджують цей зв’язок, орган
+має прийняти рішення щодо неможливості своєчасного виконання платником
+податків свого податкового обов’язку без прийняття попереднього рішення. Якщо ж
+документів недостатньо, контролюючий орган повинен винести попереднє рішення
+з пропозицією подати додаткові документи протягом 10 календарних днів.
+
+У разі порушення процедури, зокрема неприйняття попереднього рішення,
+платник позбавляється можливості надати додаткові документи, що є підставою
+для визнання рішення контролюючого органу протиправним.
+
+У цій справі контролюючий орган відразу відмовив у задоволенні заяви без
+пропозиції подати додаткові документи, що порушило права позивача і стало
+підставою для скасування рішення через порушення процедури.
+
+Суд також наголосив, що рішення органів державної влади мають відповідати
+вимогам статті 2 Кодексу адміністративного судочинства України, зокрема бути
+прийнятими у межах повноважень, обґрунтовано, пропорційно та своєчасно,
+з урахуванням усіх обставин справи та прав особи на участь у процесі.
+
+У випадках розгляду заяв щодо неможливості виконання податкових
+обов’язків через наслідки збройної агресії, контролюючий орган зобов’язаний
+досліджувати причинно-наслідковий зв’язок між заявленими обставинами
+та об’єктивною можливістю виконання податкового обов’язку. Ухвалене рішення
+має містити чітке обґрунтування та послідовну оцінку представлених доказів.
+
+На прикладі справи за позовом Товариства з обмеженою відповідальністю
+«Родоніт-Р», рішення контролюючого органу, яке базується виключно на висновку
+про загальне виконання платником податків обов’язків без врахування їх
+своєчасності та обставин, що унеможливлювали таке виконання, є
+необґрунтованим. Контролюючий орган не дослідив доказів, наданих платником,
+та не надав платнику можливості доповнити їх, що суперечить принципу
+добросовісності та обґрунтованості.
+
+Таким чином, Верховний Суд встановив, що належним чином мотивоване
+рішення має враховувати всі обставини справи, оцінювати їх у контексті чинного
+законодавства та надавати особі можливість долучати додаткові документи у разі
+недостатності доказів. В іншому випадку такі рішення підлягають скасуванню як
+необґрунтовані.
+
+Ураховуючи викладені обставини справи, Верховний Суд дійшов висновку,
+що питання правомірності прийняття рішення № 1529 має безпосередній вплив
+на правомірність прийняття податкового повідомлення-рішення № 157/3500040336
+від 25 жовтня 2022 року. У разі скасування рішення № 1529, визнаного
+
+протиправним з огляду на порушення процедури розгляду заяви платника,
+та неналежну оцінку наданих доказів, податкове повідомлення-рішення також
+підлягає скасуванню.
+
+Детальніше з текстом постанови Верховного Суду від 07 листопада 2024 року у справі
+[№ 520/5995/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/122882856](https://reyestr.court.gov.ua/Review/122882856)
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.2_segment.md № 160/2202/24 280 80 правова робота в народному господарстві податковий орган має право призначати фактичну перевірку лише в разі наявності семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «правова робота в народному господарстві» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / правова робота в народному господарстві).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.01.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123151915" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/2202/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 80</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Правова робота в народному господарстві</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Податковий орган має право призначати фактичну перевірку лише в разі наявності</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Правова робота в народному господарстві» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Правова робота в народному господарстві).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+1.1.2. Про достатність відображення підстав для проведення фактичної перевірки
+
+Податковий орган має право призначати фактичну перевірку лише в разі наявності
+достатніх підстав, що підтверджують можливі порушення податкового
+законодавства. Неналежне розкриття змісту підстав проведення перевірки в наказі
+(зокрема, лише з використанням нумераційного позначення відповідного пункту
+статті Податкового кодексу України) не є автоматичною підставою для визнання
+наказу протиправним, якщо загальні положення підпункту 80.2.2 пункту 80.2
+статті 80 цього Кодексу охоплюють такі підстави
+
+19 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Східного міжрегіонального
+управління ДПС по роботі з великими платниками податків на рішення
+Дніпропетровського окружного адміністративного суду від 02 квітня 2024 року
+та постанову Третього апеляційного адміністративного суду від 01 жовтня
+2024 року у справі № 160/2202/24 за позовом Товариства з обмеженою
+відповідальністю «Комфі Трейд» до Східного міжрегіонального управління ДПС по
+роботі з великими платниками податків про визнання протиправним і скасування
+податкового повідомлення-рішення.
+
+ОБСТАВИНИ СПРАВИ
+
+Контрольний орган провів фактичну перевірку господарської одиниці платника
+з метою перевірки дотримання законодавства щодо обігу готівки, розрахункових
+операцій, ведення касових операцій, порядку обліку товарних запасів та інших
+вимог. За результатами перевірки було встановлено порушення щодо
+неправильного оформлення розрахункових операцій через РРО, оскільки під час
+продажу товару частина його вартості була зменшена на вартість додаткової
+послуги (доступу до електронних книг), включеної до фіскального чека без згоди
+покупця. Платник стверджував, що податкове законодавство дозволяє
+встановлювати такі ціни на товари.
+
+Дніпропетровський окружний адміністративний суд задовольнив позов
+платника та скасував податкове повідомлення-рішення. Суд першої інстанції
+визнав, що наказ про проведення перевірки видано без належного обґрунтування.
+Третій апеляційний адміністративний суд змінив мотивувальну частину рішення
+суду першої інстанції в частині недоведеності факту порушення.
+
+Верховний Суд частково задовольнив касаційну скаргу, змінивши постанову
+суду апеляційної інстанції в частині доводів щодо необґрунтованості наказу про
+перевірку, та неправомірності проведення перевірки на підставі такого наказу.
+
+ОЦІНКА СУДУ
+Відповідно до статей 62, 75, 80 та 81 Податкового кодексу України контрольні
+органи мають право проводити фактичні перевірки в разі наявності встановлених
+законодавством підстав з метою контролю за дотриманням норм податкового
+законодавства, зокрема, у сфері розрахункових операцій, обігу підакцизних товарів
+та наявності дозвільних документів.
+
+Податковий орган має право призначати фактичну перевірку лише в разі
+наявності достатніх підстав, що підтверджують можливі порушення податкового
+законодавства й отримані в установленому порядку. Обґрунтованість підстав
+перевірки та відповідність наказу законодавчим вимогам є ключовими критеріями
+оцінки правомірності дій контрольних органів та відповідних наслідків.
+
+Згідно з пунктом 81.1 статті 81 Податкового кодексу України наказ про
+проведення перевірки має відповідати встановленим вимогам щодо форми
+та змісту, зокрема містити інформацію про дату видавання, підстави для перевірки,
+мету, період діяльності, що підлягає перевірці. Неналежне розкриття змісту підстав
+проведення перевірки в наказі (зокрема, лише з використанням нумераційного
+позначення відповідного пункту статті Податкового кодексу України) не є
+автоматичною підставою для визнання наказу протиправним, якщо загальні
+положення підпункту 80.2.2 пункту 80.2 статті 80 цього Кодексу охоплюють такі
+підстави.
+
+Належним обґрунтуванням для призначення перевірки є доповідна записка
+управління податкового аудиту, яка стала основою для призначення перевірки,
+містила достатню інформацію щодо можливих порушень платника, охоплюючи
+неповне відображення сум вартості товарів у реєстраторах розрахункових
+операцій. Обсяг інформації в такому наказі має відповідати вимогам абзацу
+третього пункту 81.1 статті 81 Податкового кодексу України, із зазначенням усіх
+необхідних реквізитів, включаючи правову та фактичну підстави для проведення
+перевірки.
+
+Детальніше з текстом постанови Верховного Суду від 19 листопада 2024 року у справі
+[№ 160/2202/24 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123151915](https://reyestr.court.gov.ua/Review/120381011)
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.3_segment.md № 480/14519/21 50120 20 статути про дисципліну. окремі правила для деяких категорій працівників за порушення у сфері обігу пального семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «статути про дисципліну. окремі правила для деяких категорій працівників» (трудове законодавство / трудова дисципліна. відповідальність за її порушення / статути про дисципліну. окремі правила для деяких категорій працівників).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">01.01.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123060271" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 480/14519/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50120 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудова дисципліна. Відповідальність за її порушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Статути про дисципліну. Окремі правила для деяких категорій працівників</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за порушення у сфері обігу пального</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Статути про дисципліну. Окремі правила для деяких категорій працівників» (Трудове законодавство / Трудова дисципліна. Відповідальність за її порушення / Статути про дисципліну. Окремі правила для деяких категорій працівників).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+1.1.3. Про визначення акцизних складів та обґрунтованість штрафних санкцій
+за порушення у сфері обігу пального
+
+Резервуари, які використовують лише в межах технологічного процесу (наприклад,
+паливні баки зерносушарок), не є акцизними складами і не підлягають реєстрації
+як акцизні склади, а також не потребують установки витратомірів-лічильників
+
+11 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Головного управління ДПС
+у Сумській області на рішення Сумського окружного адміністративного суду від
+12 вересня 2022 року та постанову Другого апеляційного адміністративного суду
+від 16 травня 2023 року у справі № 480/14519/21 за позовом Товариства
+з обмеженою відповідальністю «Альянс» до Головного управління Державної
+податкової служби у Сумській області про визнання протиправними та скасування
+податкових повідомлень-рішень.
+
+ОБСТАВИНИ СПРАВИ
+
+Контрольний орган за результатами фактичної перевірки виявив порушення
+платником у сфері обігу пального, зокрема відсутність реєстрації акцизних складів,
+необладнання резервуарів витратомірами-лічильниками та рівнемірамилічильниками, зберігання пального без ліцензії, а також неподання повідомлення
+про об’єкти діяльності. На підставі цих порушень було винесено податкові
+повідомлення-рішення щодо накладення штрафних санкцій на суму понад
+4 млн грн. Платник указав, що резервуари для роботи зерносушарки не були
+акцизними складами, оскільки виконували функцію паливних баків, використання
+пального з яких для інших цілей було технічно неможливо.
+
+Сумський окружний адміністративний суд рішенням, залишеним без змін
+постановою Другого апеляційного адміністративного суду, задовольнив позов.
+Суди попередніх інстанцій дійшли висновку, що резервуари для зберігання газу є
+невіддільною частиною зерносушарки (паливними баками лише для її роботи, а не
+для зберігання пального) і не відповідають ознакам акцизного складу відповідно
+до вимог Податкового кодексу України. Загальна кількість бензину та дизельного
+пального, яку платник зберігав в інших місцях, не перевищувала встановлений
+законодавством обсяг у 1000 кубічних метрів, що на підставі вимог підпункту «б»
+підпункту 14.1.6 пункту 14.1 статті 14 Податкового кодексу України також виключає
+віднесення таких місць до акцизного складу. Суди також визнали безпідставними
+застосовані штрафи за зберігання пального без ліцензії, оскільки паливні баки не
+потребують отримання ліцензії.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а оскаржувані
+судові рішення – без змін.
+
+ОЦІНКА СУДУ
+Акцизним складом є приміщення або територія для зберігання, реалізації
+чи іншої діяльності з пальним, за умови відповідності критеріям, визначеним
+у підпункті 14.1.6 пункту 14.1 статті 14 Податкового кодексу України. Акцизні
+склади мають бути обладнані витратомірами-лічильниками та рівнемірамилічильниками відповідно до вимог статті 230 цього Кодексу. Відсутність
+обладнання або реєстрації акцизних складів у відповідних реєстрах зумовлює
+застосування штрафів (20 000 грн за кожен резервуар або місце відпуску пального,
+1 000 000 грн за відсутність реєстрації складу).
+
+Не є акцизними складами:
+– паливні баки транспортних засобів або обладнання;
+– приміщення, де зберігається пальне лише для власного споживання (у межах
+установлених обсягів);
+
+– місця зберігання пального з обсягом до 1000 куб. м згідно з вторинним
+підпунктом «б» первинного підпункту 14.1.6 пункту 14.1 статті 14 Податкового
+кодексу України;
+
+– ємності для зберігання пального як частина обладнання, що не призначене
+для реалізації або перекачування пального (наприклад, паливні баки зерносушарок,
+які використовують лише в межах технологічного процесу без функції реалізації
+пального відповідно до вторинного підпункту «г» первинного підпункту 14.1.6
+пункту 14.1 статті 14 цього Кодексу).
+
+Детальніше з текстом постанови Верховного Суду від 11 листопада 2024 року у справі
+[№ 480/14519/21 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123060271](https://reyestr.court.gov.ua/Review/123060271)
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01_segment.md не вказана 120140 10 пільги по оподаткуванню 1. обмеження доступу до правової допомоги: під час служби військовослужбовці семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «пільги по оподаткуванню» (законодавство про оборону / соціальний і правовий захист військовослужбовців. пільги для військовослужбовців і членів їх сімей / пільги по оподаткуванню).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb">Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пільги по оподаткуванню</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>1. Обмеження доступу до правової допомоги: під час служби військовослужбовці</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Пільги по оподаткуванню» (Законодавство про оборону / Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей / Пільги по оподаткуванню).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+1.1. Оподаткування
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2.01_segment.md № 380/9564/23 10 40 60 оскарження в суді неправомірних дій посадової особи судового оскарження повноважень банку щодо валютного нагляду семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «оскарження в суді неправомірних дій посадової особи» (основи суспільного ладу / законодавство з питань прав людини та громадянина / оскарження в суді неправомірних дій посадової особи).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">01.2.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122882907" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 380/9564/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Оскарження в суді неправомірних дій посадової особи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>судового оскарження повноважень банку щодо валютного нагляду</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Оскарження в суді неправомірних дій посадової особи» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Оскарження в суді неправомірних дій посадової особи).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+1.2.1. Про нарахування пені за зовнішньоекономічним договором та можливість
+судового оскарження повноважень банку щодо валютного нагляду
+
+Позовні вимоги про визнання протиправною бездіяльності банку щодо
+незавершення валютного нагляду не підлягають судовому розгляду, оскільки ці
+правовідносини не є публічно-правовими і не виникають з публічно-владної функції
+банку. Санкції за порушення строків розрахунків застосовуються на загальних
+підставах відповідно до норм Закону України «Про валюту і валютні операції»
+
+07 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Приватного підприємства
+«Компанія ВДВ» на постанову Восьмого апеляційного адміністративного суду від
+16 квітня 2024 року у справі № 380/9564/23 за позовом Приватного підприємства
+
+«Компанія ВДВ» до Акціонерного товариства «Державний ощадний банк України»,
+Головного управління ДПС у Львівській області про визнання бездіяльності
+протиправною, зобов’язання вчинити дії, визнання протиправним і скасування
+податкового повідомлення-рішення.
+
+ОБСТАВИНИ СПРАВИ
+
+Передумовою для проведення податкової перевірки стала банківська
+інформація щодо виявлених порушень граничних строків розрахунків за експортноімпортними операціями. Під час перевірки було виявлено, що оплата за імпортним
+контрактом була здійснена на вказаний у контракті рахунок, але в митній
+декларації було вказано іншого контрагента. Наведене стало підставою для
+нарахування пені. Платник заперечував факт порушення, оскільки виконав умови
+контракту належним чином, а український банк некоректно відобразив дані,
+отримані від банку-партнера з Туреччини щодо належного одержувача коштів,
+що призвело до формування недостовірної інформації. Було подано позов щодо
+правомірності дій банка та податкового органу, що призвели до нарахування пені
+за порушення граничних строків розрахунків за операціями зовнішньоекономічної
+діяльності.
+
+Львівський окружний адміністративний суд рішенням від 06 листопада
+2023 року частково задовольнив позов, визнавши протиправною бездіяльність
+банку щодо незавершення валютного нагляду та зобов’язавши банк завершити
+валютний нагляд за імпортним контрактом. Суд також скасував податкове
+повідомлення-рішення (яким платнику було нараховано пеню), тому що фінансові
+зобов’язання були виконані своєчасно, а товар було імпортовано вчасно.
+
+Восьмий апеляційний адміністративний суд скасував рішення суду першої
+інстанції та прийняв нову постанову, якою повністю відмовив у задоволенні
+позову. Апеляційний суд дійшов висновку, що платіж за контрактом було здійснено
+неналежному контрагенту, оскільки не було надало доказів заміни сторін контракту
+ні банку, ні під час митного оформлення. Суд також зазначив, що станом на грудень
+2022 року у платника була прострочена дебіторська заборгованість, тому
+нарахування пені було правомірним.
+
+Верховний Суд скасував судові рішення судів першої та апеляційної інстанцій
+у частині вимог до банку щодо завершення валютного контролю за імпортним
+контрактом і закрив провадження в цій частині, визнавши, що такі вимоги не
+підлягають судовому розгляду. У частині податкового спору Верховний Суд
+скасував оскаржуване судове рішення та залишив без змін рішення суду першої
+інстанції про визнання податкового рішення протиправним і його скасування.
+
+ОЦІНКА СУДУ
+Функція уповноваженого банку як агента валютного нагляду полягає лише
+в зборі та передачі інформації про валютну операцію. Банк не наділений
+
+повноваженнями встановлювати порушення валютного законодавства суб’єктами
+господарювання. Такий спір не виник із публічно-владної функції банку
+або договору банківського рахунку, не стосується публічно-правових відносин і не
+є господарським, оскільки не передбачає рівності суб’єктів господарювання. Тому
+судовому розгляду не підлягають вимоги про визнання протиправною
+бездіяльності банку в частині незавершення валютного контролю.
+
+Положення Податкового кодексу України, що обмежують відповідальність
+платників під час карантину, не поширюються на санкції за порушення строків
+розрахунків в іноземній валюті. Правовідносини у сфері валютного нагляду
+врегульовано спеціальними нормами Закону України «Про валюту і валютні
+операції». Згідно з цим Законом санкції за порушення строків розрахунків
+застосовуються на загальних підставах. Відсутні зміни до цього Закону, які б
+звільняли суб’єктів господарювання від відповідальності за порушення строків
+розрахунків під час карантину.
+
+Детальніше з текстом постанови Верховного Суду від 07 листопада 2024 року у справі
+[№ 380/9564/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/122882907](https://reyestr.court.gov.ua/Review/122882907)
+
+ІІ. СПРАВИ, РОЗГЛЯНУТІ СУДОВОЮ ПАЛАТОЮ З РОЗГЛЯДУ СПРАВ ЩОДО ЗАХИСТУ
+СОЦІАЛЬНИХ ПРАВ
+
+### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+
+### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2_segment.md не вказана 20130 10 валютні фонди і рахунки 1. обмеження доступу до правової допомоги: під час служби військовослужбовці семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «валютні фонди і рахунки» (бюджетно-фінансове законодавство / валютне законодавство / валютні фонди і рахунки).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">01.2_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20130 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Валютне законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Валютні фонди і рахунки</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>1. Обмеження доступу до правової допомоги: під час служби військовослужбовці</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Валютні фонди і рахунки» (Бюджетно-фінансове законодавство / Валютне законодавство / Валютні фонди і рахунки).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+1.2. Валютне регулювання та валютний контроль
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+
+### 1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md № 260/1011/23 150170 інвестиції. капітальні вкладення процедури ухвалення нормативно-правового акта в період дії воєнного стану семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «інвестиції. капітальні вкладення» (загальні засади правового регулювання економічного розвитку / інвестиції. капітальні вкладення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122780301" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 260/1011/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150170</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Інвестиції. Капітальні вкладення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>процедури ухвалення нормативно-правового акта в період дії воєнного стану</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Інвестиції. Капітальні вкладення» (Загальні засади правового регулювання економічного розвитку / Інвестиції. Капітальні вкладення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+
+2.2. Про застосування органом місцевого самоврядування спрощеної регуляторної
+процедури ухвалення нормативно-правового акта в період дії воєнного стану
+
+Правова конструкція та спосіб формулювання норм частини десятої статті 9 Закону
+України від 12 травня 2015 року № 389-VIII «Про правовий режим воєнного стану»
+дають підстави для висновку про те, що у період дії воєнного стану вимоги Закону
+України від 11 вересня 2003 року № 1160-IV «Про засади державної регуляторної
+політики у сфері господарської діяльності» не поширюються у повному обсязі
+на усі без винятку акти органів місцевого самоврядування та їх посадових осіб,
+у тому числі щодо розроблення, розгляду, прийняття та оприлюднення проєктів
+таких актів у порядку, встановленому вищезгаданим Законом.
+Разом з тим таке правове регулювання правовідносин у сфері здійснення
+регуляторної діяльності у період дії воєнного стану жодним чином не звільняє
+органи місцевого самоврядування та їх посадових осіб від обов`язку неухильного
+дотримання усіх інших вимог національного законодавства та актів міжнародного
+права, які ставляться до діяльності та рішень зазначених органів та осіб у цих
+відносинах, а лише надають їм повноваження під час дії воєнного стану оперативно,
+у спрощеному та прискореному порядку приймати передбачені законом акти без
+врахування вимог Закону № 1160-IV з тією метою, щоб забезпечити у цей час
+належне та безперервне функціонування органів місцевого самоврядування
+і комунального сектору економіки.
+
+04 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Товариства з обмеженою
+відповідальністю «Еко ХХІ століття» на постанову Восьмого апеляційного
+адміністративного суду у справі № 260/1011/23 за позовом Товариства
+з обмеженою відповідальністю «Еко ХХІ століття» до Ужгородської міської ради
+про визнання протиправним і скасування рішення органу місцевого
+
+самоврядування.
+
+ОБСТАВИНИ СПРАВИ
+
+Ужгородською міською радою затверджено тимчасовий Порядок визначення
+розміру плати за тимчасове користування місцями комунальної власності для
+розташування рекламних засобів (далі – Порядок). Представник позивача
+звертався до відповідача з адвокатським запитом з проханням надати для
+ознайомлення аналіз регуляторного впливу вищевказаного рішення та експертний
+висновок відповідальної комісії з питань реалізації державної регуляторної
+політики про відповідність проекту вищевказаного рішення принципам регуляторної
+політики та його регуляторного впливу, а також повідомити коли та де було
+опубліковано повідомлення про оприлюднення проекту вищевказаного рішення
+з метою одержання зауважень та пропозицій та повідомити чи були подані
+на погодження до органів Антимонопольного комітету України та до Державної
+
+регуляторної служби України проект вищевказаного рішення. Відповідач повідомив,
+що запитувані документи не розроблялись, оскільки Порядок носить тимчасовий
+характер. Позивач оскаржив вказане рішення до суду з тих підстав, що воно
+прийнято з порушенням процедури прийняття, визначеної Законом України від
+11 вересня 2003 року № 1160-IV «Про засади державної регуляторної політики
+у сфері господарської діяльності» (далі – Закон № 1160-IV).
+
+Рішенням окружного адміністративного суду позов задоволено.
+Задовольняючи позовні вимоги, суд першої інстанції виходив з того,
+що Міськрадою, при прийнятті спірного рішення, не було дотримано вимог статті 8,
+частини четвертої статті 9 і частини другої статті 13 Закону № 1160-IV щодо аналізу
+регуляторного впливу та оприлюднення проектів регуляторних актів з метою
+одержання зауважень і пропозицій, що є підставою для визнання його
+
+протиправним та скасування.
+
+Постановою апеляційного адміністративного суду рішення суду першої
+інстанції скасоване та прийнято нове судове рішення, яким у задоволенні позову
+відмовлено. Суд апеляційної інстанції вказав на відсутність правових підстав для
+здійснення у спірних відносинах аналізу регуляторного впливу та оприлюднення
+проєкту оскарженого рішення Міськради у відповідних друкованих засобах масової
+інформації, оскільки під час дії воєнного стану діють обмеження та особливості
+організації роботи органів місцевого самоврядування. Таким чином, застосування
+спрощеної регуляторної процедури ухвалення оскарженого рішення без урахування
+норм Закону № 1160-IV обумовлено реалізацією дискреційних повноважень
+відповідача з метою забезпечення ефективного та належного виконання у період
+воєнного стану покладених на міську раду завдань.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення суду
+апеляційної інстанції без змін.
+
+ОЦІНКА СУДУ
+Верховний Суд звернув увагу на імперативність приписів частини десятої
+статті 9 Закону України від 12 травня 2015 року № 389-VIII «Про правовий режим
+воєнного стану» (далі – Закон № 389-VIII), які не дають органам місцевого
+самоврядування та їх посадовим особам інших варіантів поведінки, окрім як
+у період дії воєнного стану не поширювати на усі без виключення акти, у тому числі
+регуляторного характеру, вимоги Закону № 1160-IV. Інших варіантів дій відповідач,
+який керується спеціально - дозвільним типом поведінки, у спірних
+правовідносинах не мав, інакше це суперечило б приписам частини другої статті 19
+Конституції України, статті 24 Закону України від 21 травня 1997 року № 280/97-ВР
+«Про місцеве самоврядування в Україні» та частині другій статті 2 Кодексу
+адміністративного судочинства України.
+
+Врахуванню підлягає і те, що вищевказана норма Закону № 389-VIII не містить
+будь - яких винятків чи застережень стосовно видів актів органів місцевого
+самоврядування та їх посадових осіб, на які у період дії воєнного стану не
+поширюються вимоги Закону № 1160-IV, не виокремлює, у якій саме частині цей
+Закон не застосовується у період дії воєнного стану.
+
+Така правова конструкція та спосіб формулювання норм частини десятої
+статті 9 Закону № 389-VIII дають підстави для висновку про те, що у період дії
+воєнного стану вимоги Закону № 1160-IV не поширюються у повному обсязі на усі
+без винятку акти органів місцевого самоврядування та їх посадових осіб, у тому
+числі щодо розроблення, розгляду, прийняття та оприлюднення проєктів таких
+актів у порядку, встановленому вищезгаданим Законом.
+
+Таке правове регулювання спірних правовідносин у період дії воєнного стану
+жодим чином не звільняє органи місцевого самоврядування та їх посадових осіб
+від обов`язку неухильного дотримання усіх інших вимог національного
+законодавства та актів міжнародного права, які ставляться до діяльності
+та рішень зазначених органів та осіб у цих відносинах, а лише надають їм
+повноваження під час дії воєнного стану оперативно, у спрощеному
+та прискореному порядку приймати передбачені законом акти без врахування
+вимог Закону № 1160-IV з тією метою, щоб забезпечити у цей час належне
+та безперервне функціонування органів місцевого самоврядування і комунального
+сектору економіки.
+
+Детальніше з текстом постанови Верховного Суду від 04 листопада 2024 року у справі
+№ 260/1011/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/122780301
+
+### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+
+### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 420/23960/21 170 30 60 будівництво промислових та інших об&#x27;єктів на території курортів державного і місцевого значення державного нагляду у сфері техногенної та пожежної безпеки семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «будівництво промислових та інших об&#x27;єктів на території курортів державного і місцевого значення» (законодавство про основи містобудування / будівництво та капітальний ремонт / будівництво промислових та інших об&#x27;єктів на території курортів державного і місцевого значення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122780299" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 420/23960/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">170 30 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про основи містобудування</span><span class="crumb-sep">›</span><span class="crumb">Будівництво та капітальний ремонт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Будівництво промислових та інших об&#x27;єктів на території курортів державного і місцевого значення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>державного нагляду у сфері техногенної та пожежної безпеки</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Будівництво промислових та інших об&#x27;єктів на території курортів державного і місцевого значення» (Законодавство про основи містобудування / Будівництво та капітальний ремонт / Будівництво промислових та інших об&#x27;єктів на території курортів державного і місцевого значення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+
+2.1. Про уповноважений центральний орган виконавчої влади щодо здійснення
+державного нагляду у сфері техногенної та пожежної безпеки
+
+Вжитий у статтях 68 та 69 Кодексу цивільного захисту України від 2 жовтня 2012
+року № 5403-VI термін «центральний орган виконавчої влади, який здійснює
+державний нагляд у сфері техногенної та пожежної безпеки» охоплює як
+безпосередньо центральний орган виконавчої влади, який здійснює державний
+нагляд (контроль) у сфері пожежної та техногенної безпеки, так і його
+територіальні органи, а також структурні підрозділи територіальних органів
+Державної служби України з надзвичайних ситуацій, які відповідно до положень
+про ці підрозділи виконують функції державного нагляду (контролю)
+за додержанням та виконанням вимог законодавства у сферах пожежної
+і техногенної безпеки у межах певних адміністративно - територіальних одиниць.
+
+04 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу ПрП «Ніка-2» на рішення
+Одеського окружного адміністративного суду від 19 лютого 2024 року та постанову
+П’ятого апеляційного адміністративного суду від 5 червня 2024 року у справі
+№ 420/23960/21 за позовом ПрП «Ніка-2» до Другого Державного пожежно
+
+рятувального загону ГУ ДСНС в Одеській області, ГУ ДСНС в Одеській області про
+визнання протиправними дій щодо здійснення планового заходу державного
+нагляду (контролю), визнання протиправним та скасування припису про усунення
+порушень вимог законодавства у сфері техногенної та пожежної безпеки.
+
+ОБСТАВИНИ СПРАВИ
+
+Наказом ГУ ДСНС в Одеській області ініційовано здійснення планового заходу
+державного нагляду (контролю) у сфері пожежної, техногенної безпеки
+та цивільного захисту стосовно (об`єктів) (будівель, приміщень, споруд, території
+тощо) суб`єктів господарювання згідно Річного плану заходів державного нагляду
+(контролю) Державної служби України з надзвичайних ситуацій на 2021 рік,
+до якого також включено і Приватне підприємство «Ніка-2». Начальником
+Білгород-Дністровського міськрайонного відділу ГУ ДСНС в Одеській області
+видано посвідчення на проведення планової перевірки у якому зазначено чотирьох
+посадових осіб цієї ж установи. Плановий захід державного нагляду контролю
+стосовно дотримання вимог законодавства у сфері пожежної, техногенної безпеки
+та цивільного захисту здійснено одноособово інспектором відповідача,
+за результатами якого складені акт перевірки та припис про усунення порушень
+законодавства та нормативно-правових актів у сферах пожежної і техногенної
+безпеки. Позивач оскаржив дії та рішенння контролюючого органу до суду,
+оскільки вважав, що перевірка мала б проводитись саме відповідним центральним
+органом виконавчої влади, а не її територіальним органом в особі його
+структурного підрозділу, й, до того ж, наполягав, що вказаний захід нагляду
+(контролю) повинен був здійснюватися колегіально у складі усіх посадових осіб, які
+були визначенні у направленні (посвідченні) на перевірку.
+
+Рішенням окружного адміністративного суду, залишеним без змін постановою
+апеляційного адміністративного суду, у задоволенні позову відмовлено. Суди
+попередніх інстанцій дійшли висновку, що плановий захід державного нагляду
+(контролю) у сфері пожежної, техногенної безпеки та цивільного захисту стосовно
+(об`єктів) (будівель, приміщень, споруд, території тощо) стосовно суб`єкта
+господарювання ПП «Ніка-2» у спірних правовідносинах проведено посадовою
+особою органу державного нагляду (контролю) з додержанням і з виконанням
+вимог законодавства у сферах пожежної і техногенної безпеки, цивільною захисту,
+юрисдикція якого поширюється на адміністративно - територіальну одиницю,
+в межах якої позивачем здійснюється господарська діяльність.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення судів
+попередніх інстанцій без змін.
+
+ОЦІНКА СУДУ
+На підставі системного аналізу частини третьої статті 64 Кодексу цивільного
+захисту України від 2 жовтня 2012 року № 5403-VI, пункту 7 Положення про
+
+Державну службу України з надзвичайних ситуацій, затвердженого постановою
+Кабінету Міністрів України від 16 грудня 2015 року № 1052, Верховний Суд дійшов
+висновку про те, що Державна служба України з надзвичайних ситуацій (далі –
+ДСНС) як центральний орган виконавчої влади, який здійснює державний нагляд
+(контроль) у сфері пожежної та техногенної безпеки, діє безпосередньо або через
+утворені в установленому порядку територіальні органи, до складу яких входять,
+у тому числі підрозділи забезпечення та інші структурні підрозділи територіальних
+органів.
+
+Згідно з установленими у цій справі обставинами Білгород-Дністровський
+міськрайонний відділ ГУ ДСНС в Одеській області входить до складу
+територіального органу ДСНС та є його структурним підрозділом, а тому вказаний
+відділ належить до органів, уповноважених здійснювати державний нагляд
+(контроль) у сфері пожежної та техногенної безпеки.
+
+Вжитий у статтях 68 та 69 Кодексу цивільного захисту України термін
+«центральний орган виконавчої влади, який здійснює державний нагляд у сфері
+техногенної та пожежної безпеки» охоплює як безпосередньо центральний орган
+виконавчої влади, який здійснює державний нагляд (контроль) у сфері пожежної
+та техногенної безпеки, так і його територіальні органи, а також структурні
+підрозділи територіальних органів ДСНС, які відповідно до положень про ці
+підрозділи виконують функції державного нагляду (контролю) за додержанням
+та виконанням вимог законодавства у сферах пожежної і техногенної безпеки
+у межах певних адміністративно - територіальних одиниць.
+
+Оцінюючи доводи скаржника про неправомірне проведення перевірки
+одноособово інспектором відповідача, необхідно зазначити, що відповідно
+до частини шостої статті 7 Закону України від 5 квітня 2007 року № 877-V «Про
+основні засади державного нагляду (контролю) у сфері господарської діяльності»
+
+повноваження стосовно складання за результатами позапланового заходу акту
+та розпорядчих документів, у тому числі й припису, надані саме посадовій особі (в
+однині) органу державного нагляду (контролю). Жодних приписів про те,
+що плановий захід державного нагляду (контролю) повинен здійснюватися,
+а розпорядчі документи за його результатами повинні складатись лише
+колегіально та одразу усіма посадовими особами, які зазначенні у посвідченні
+(направленні) на проведення такого заходу, положення законодавства, якими
+регламентовані спірні у цій справі правовідносини, не містять.
+
+Детальніше з текстом постанови Верховного Суду від 04 листопада 2024 року у справі
+№ 420/23960/21 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/122780299
+
+### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+
+### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.3_segment.md № 480/5165/21 90 30 50 психіатрична допомога та дотримання прав громадян при її наданні для дотримання вимог порядку проведення громадських слухань щодо проектів семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «психіатрична допомога та дотримання прав громадян при її наданні» (законодавство про охорону здоров&#x27;я / лікувально-профілактична допомога населенню (безплатна, платна, пільги по оплаті). медичні огляди / психіатрична допомога та дотримання прав громадян при її наданні).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">02.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123058566" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 480/5165/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">90 30 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про охорону здоров&#x27;я</span><span class="crumb-sep">›</span><span class="crumb">Лікувально-профілактична допомога населенню (безплатна, платна, пільги по оплаті). Медичні огляди</span><span class="crumb-sep">›</span><span class="crumb-leaf">Психіатрична допомога та дотримання прав громадян при її наданні</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Для дотримання вимог Порядку проведення громадських слухань щодо проектів</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Психіатрична допомога та дотримання прав громадян при її наданні» (Законодавство про охорону здоров&#x27;я / Лікувально-профілактична допомога населенню (безплатна, платна, пільги по оплаті). Медичні огляди / Психіатрична допомога та дотримання прав громадян при її наданні).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+
+2.3. Про предмет громадських слухань у контексті містобудівної документації
+
+Для дотримання вимог Порядку проведення громадських слухань щодо проектів
+містобудівної документації на місцевому рівні, затвердженого постановою Кабінету
+Міністрів України від 25 травня 2011 року № 555, громадські слухання мають бути
+проведені саме щодо містобудівної документації на місцевому рівні, до якої
+відповідно до частини першої статті 16 Закону України від 17 лютого 2011 року
+№ 3038-VI «Про регулювання містобудівної діяльності» відносяться генеральний
+план населеного пункту, план зонування територій і детальний план території, їх
+оновлення та внесення змін до них. Проведення громадських слухань проектної
+документації щодо будівництва або реконструкції конкретних об`єктів Порядком
+№ 555 не передбачено.
+
+11 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Товариства з обмеженою
+
+відповідальністю «Б.Р.С.» на рішення Сумського окружного адміністративного суду
+від 11 жовтня 2023 року та постанову Другого апеляційного адміністративного суду
+від 28 лютого 2024 року у справі № 480/5165/21 за позовом керівника окружної
+прокуратури міста Суми в інтересах держави до департаменту забезпечення
+ресурсних платежів Сумської міської ради, треті особи: товариство з обмеженою
+відповідальністю «Б.Р.С.», управління Державної інспекції архітектури
+і містобудування у Сумській області, Державна інспекція архітектури
+та містобудування України про визнання протиправними та скасування
+містобудівних умов та обмежень.
+
+ОБСТАВИНИ СПРАВИ
+
+Управлінням архітектури та містобудування за заявою ТОВ «Б.Р.С.» надано
+містобудівні умови та обмеження для проектування об&#x27;єкта будівництва. У рішенні
+про надання містобудівних умов та обмежень вказано про необхідність
+спеціального погодження у вигляді громадських слухань щодо розміщення об&#x27;єкту.
+Звернувшись до суду з позовом прокурор зазначив, що видані відповідачем
+містобудівні умови та обмеження ТОВ «Б.Р.С.» є протиправними та підлягають
+скасуванню з підстав невідповідності намірів забудови вимогам містобудівної
+документації на місцевому рівні, оскільки при їх наданні відповідачем не враховано
+відсутність детального плану території, погодженого шляхом проведення
+
+громадських слухань.
+
+Справа розглядались судами неодноразово. При новому розгляді справи
+рішенням окружного адміністративного суду, яке залишено без змін постановою
+апеляційного адміністративного суду, позовні вимоги задоволено. Суди виходили
+з того, що детальний план території не розроблявся та не затверджувався,
+громадські слухання його проекту не проводились. Отже, наміри забудови не
+відповідають вимогам містобудівної документації на місцевому рівні - плану
+зонування, що свідчить про протиправність виданих забудовнику містобудівних
+умов та обмежень.
+
+Верховний Суд залишив касаційну скаргу без задоволення, а рішення судів
+попередніх інстанцій без змін.
+
+ОЦІНКА СУДУ
+Законним способом узгодження різних інтересів у сфері містобудування є
+громадське обговорення; процедура громадського обговорення є запобіжником
+порушення важливих інтересів різних груп та осіб і забезпечує їх виявлення
+та врахування під час прийняття рішень у сфері містобудування.
+
+Для дотримання вимог Порядку проведення громадських слухань щодо
+проектів містобудівної документації на місцевому рівні, затвердженого постановою
+Кабінету Міністрів України від 25 травня 2011 року № 555 (далі – Порядок № 355)
+громадські слухання мають бути проведені саме щодо містобудівної документації
+
+на місцевому рівні, до якої відповідно до частини першої статті 16 Закону України
+від 17 лютого 2011 року № 3038-VI «Про регулювання містобудівної діяльності»
+відносяться генеральний плани населених пунктів, план зонування територій
+і детальний план території, їх оновлення та внесення змін до них; проведення
+громадських слухань проектної документації щодо будівництва або реконструкції
+конкретних об`єктів Порядком № 555 не передбачено.
+
+Судами встановлено, що за змістом протоколу громадських слухань від
+16 листопада 2020 року, предметом вказаних слухань був не проект містобудівної
+документації (детального плану території), як це передбачено Порядком № 555,
+а проектна документація, проведення громадських обговорень якої чинним
+законодавством не передбачено, через що цей протокол не є належним доказом
+виконання вимоги щодо спеціального погодження.
+
+Враховуючи відсутність детального плану території наміри забудови не
+відповідають вимогам містобудівної документації на місцевому рівні, що свідчить
+про протиправність виданих забудовнику містобудівних умов та обмежень.
+
+Детальніше з текстом постанови Верховного Суду від 11 листопада 2024 року у справі
+№ 480/5165/21 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123058566
+
+ІІІ. СПРАВИ, РОЗГЛЯНУТІ СУДОВОЮ ПАЛАТОЮ З РОЗГЛЯДУ СПРАВ ЩОДО
+ВИБОРЧОГО ПРОЦЕСУ ТА РЕФЕРЕНДУМУ, А ТАКОЖ ЗАХИСТУ ПОЛІТИЧНИХ ПРАВ
+ГРОМАДЯН
+
+### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+
+### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.03_segment.md № 620/9415/23 50 60 60 50 по вагітності, пологах і догляду за дитиною покарання засудженого семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «по вагітності, пологах і догляду за дитиною» (трудове законодавство / робочий час і час відпочинку. робочі місця / відпустки / по вагітності, пологах і догляду за дитиною).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">03.03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123084953" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 620/9415/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 60 60 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Робочий час і час відпочинку. Робочі місця</span><span class="crumb-sep">›</span><span class="crumb">Відпустки</span><span class="crumb-sep">›</span><span class="crumb-leaf">По вагітності, пологах і догляду за дитиною</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>покарання засудженого</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «По вагітності, пологах і догляду за дитиною» (Трудове законодавство / Робочий час і час відпочинку. Робочі місця / Відпустки / По вагітності, пологах і догляду за дитиною).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+
+3.3. Про врахування територіальної віддаленості при визначенні місця відбування
+
+покарання засудженого
+
+При первісному визначенні місця відбування покарання засудженого має бути
+врахований критерій територіальної віддаленості такого місця до місця
+проживання особи до засудження або місця постійного проживання його родичів.
+Диспозиція статті 93 КВК України законодавцем сформульована таким чином,
+що визначає врахування критерію територіальності при визначенні місця
+відбування покарання «як правило», тобто у переважній більшості випадків, і лише
+допускає виключення з такого правила. Керуватись критерієм виключності підстав
+вже при переведенні засудженого варто при дотриманні загально правила при
+первісному виборі місця для відбування засудженим покарання у виді позбавлення
+волі.
+
+15 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу особи на рішення Чернігівського
+окружного адміністративного суду від 11 вересня 2023 року та постанову Шостого
+апеляційного адміністративного суду від 12 грудня 2023 року у справі № 620/9415/23
+за позовом особи до Департаменту з питань виконання кримінальних покарань про
+визнання протиправним і скасування рішення, зобов`язання вчинити певні дії.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач засуджений до довічного позбавлення волі, відбуває покарання
+у Новгород-Сіверській установі виконання покарань №31. До засудження позивач
+проживав в іншому регіоні, де також проживають його родичі. Від позивача та його
+матері надходили заяви з проханням про переведення його до державної установи для
+відбування покарань. Проте центральна комісія відмовила у переведенні через
+відсутність вільних місць у запитуваних установах і невиявлення виняткових обставин,
+які б перешкоджали його подальшому перебуванню в установі виконання покарань
+№31. Позовні вимоги обґрунтовані вимоги тим, що рішення про відмову у переведенні
+порушує його право підтримувати сімейні зв’язки через значну віддаленість від місця
+проживання його родичів.
+
+Суди попередніх інстанцій у задоволенні позову відмовили. Суди попередніх
+інстанцій виходили з того, що позивачем не наведено виняткових обставин, які
+перешкоджають його подальшому перебуванню в Державній установі «НовгородСіверська установа виконання покарань (№31)».
+
+Верховний Суд касаційну скаргу задовольнив, скасував рішення судів попередніх
+інстанцій та ухвалив нове рішення, яким позов задовольнив.
+
+ОЦІНКА СУДУ
+При первісному визначенні місця відбування покарання засудженого має бути
+врахований критерій територіальної віддаленості такого місця до місця проживання
+
+особи до засудження або місця постійного проживання його родичів. Суттєва відстань
+від місця проживання близьких родичів позивача до місця його відбування покарання є
+перешкодою у спілкуванні засудженого з рідними.
+
+Як встановили суди попередніх інстанцій у цій справі, до засудження позивач був
+зареєстрований та проживав за адресою, у тій же місцевості наразі проживають і його
+родичі. Втім, цей фактор при визначенні місця відбування позивачем покарання не був
+врахований.
+
+Керуватись критерієм виключності підстав при переведенні засудженого варто при
+дотриманні вказаного загально правила при первісному виборі місця для відбування
+засудженим покарання у виді позбавлення волі.
+
+За таким умов, судами попередніх інстанцій порушено норми матеріального права
+при ухваленні рішень про відмову у задоволенні цього позову.
+
+До виключної компетенції органів виконавчої влади, у цьому випадку
+Департаменту, належить прийняття рішення про суті спірного питання, і саме відповідач
+має розглянути можливість переведення позивача до конкретної колонії за його
+заявою: чи то до Чортківської установи виконання покарань №26», чи то до Державної
+установи «Львівська установа виконання покарань №19», в тому числі надаючи оцінку
+кількості вільних місць про що йшлось при прийнятті рішення про цілковиту відмову
+у переведенні позивача. Таким чином, позивачем було вірно обрано спосіб захисту його
+порушеного права шляхом зобовязання Департаменту повторно розглянути його
+
+клопотання.
+
+Детальніше з текстом постанови Верховного Суду 15 листопада 2024 року у справі №
+620/9415/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123084953
+
+IV. ПРОЦЕСУАЛЬНІ ПИТАННЯ
+
+### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+
+### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md № 340/2502/23 70 30 60 брати та сестри. дід, баба, онуки та інші родичі перебувають троє дітей, права на відстрочку від призову на військову службу під семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «брати та сестри. дід, баба, онуки та інші родичі» (законодавство про шлюб і сім&#x27;ю / права та обов&#x27;язки осіб, що перебувають у спорідненості / брати та сестри. дід, баба, онуки та інші родичі).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/122882982" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 340/2502/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 30 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb">Права та обов&#x27;язки осіб, що перебувають у спорідненості</span><span class="crumb-sep">›</span><span class="crumb-leaf">Брати та сестри. Дід, баба, онуки та інші родичі</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>перебувають троє дітей, права на відстрочку від призову на військову службу під</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Брати та сестри. Дід, баба, онуки та інші родичі» (Законодавство про шлюб і сім&#x27;ю / Права та обов&#x27;язки осіб, що перебувають у спорідненості / Брати та сестри. Дід, баба, онуки та інші родичі).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+
+3.1. Про визначальні умови набуття військовозобов’язаним, на утриманні якого
+перебувають троє дітей, права на відстрочку від призову на військову службу під
+час мобілізації
+
+Визначальними для вирішення публічно-правового спору, чи є у чоловіка право
+на відстрочку від призову на військову службу, зважаючи на те, що у нього
+на утриманні перебуває троє дітей та ту обставину, що його сім`я є багатодітною, є
+встановлення факту перебування на утриманні військовозобов`язаного трьох
+і більше дітей віком до 18 років, і лише за вказаних обставин особа може реалізувати
+своє право на отримання відстрочки від призову на військову службу під час
+мобілізації.
+
+07 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу особи на рішення Кіровоградського
+окружного адміністративного суду від 28 липня 2023 року та постанову Третього
+апеляційного адміністративного суду від 22 листопада 2023 року у справі № 340/2502/23
+
+за позовом особи до ІНФОРМАЦІЯ про визнання протиправним та скасування рішення,
+зобов’язання вчинити дії.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач отримав повістку з вимогою з’явитися до ІНФОРМАЦІЯ, а після
+адвокатського запиту із проханням надати інформацію щодо можливості надання
+відстрочення від призову на військову службу під час мобілізації, отримав відмову.
+Позивач вказував, що є багатодітним батьком трьох дітей. Позивач звернувся до суду
+з вимогою визнати протиправним та скасувати рішення відповідача про відсутність
+у нього обставин які дають право на відстрочку від призову на військову службу під час
+мобілізації та надати відстрочку від призову на військову службу під час мобілізації
+на підставі абзацу 4 частини першої статті 23 Закону України від 21 жовтня 1993 року №
+3543-XII «Про мобілізаційну підготовку та мобілізацію». У касаційній скарзі позивач
+наполягав на тому, що обов`язок, який покладено на нього, відповідно до положень
+статей 198, 199 Сімейного кодексу України, щодо утримання доньки, яка досягла 18 років
+у зв`язку із продовженням нею навчання, та наявність ще двох дітей до 18 років, надають
+йому право на відстрочку від призову на військову службу під час мобілізації.
+
+Суд першої інстанції відмовив у задоволенні позову. Апеляційний суд залишив це
+рішення без змін, зазначивши, що у позивача немає підстав для відстрочки через
+відсутність трьох неповнолітніх дітей.
+
+Верховний Суд касаційну скаргу залишив без задоволення, рішення судів попередніх
+інстанцій - без змін.
+
+ОЦІНКА СУДУ
+Визначальними для вирішення цього публічно-правового спору було встановлення
+факту перебування на утриманні військовозобов`язаного трьох і більше дітей віком до 18
+років, і лише за вказаних обставин особа може реалізувати своє право на отримання
+відстрочки від призову на військову службу під час мобілізації.
+
+Згідно обставин цієї справи, позивач має лише двох дітей віком до 18 років.
+Наявність у сім`ї позивача статусу багатодітної, та утримання позивачем трьох дітей,
+одна з яких досягла повноліття, не надають йому права на відстрочку від призову
+на військову службу під час мобілізації на підставі абзацу 4 частини першої статті 23
+Закону України від 21 жовтня 1993 року № 3543-XII «Про мобілізаційну підготовку
+та мобілізацію», за відсутності встановленого факту утримання ним саме трьох і більше
+дітей віком до 18 років, а такі обґрунтування касаційної скарги свідчать про помилкове
+трактування норм права, що регулюють спірні правовідносини.
+
+Детальніше з текстом постанови Верховного Суду від 07 листопада 2024 року у справі №
+340/2502/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/122882982
+
+### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+
+### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.2_segment.md № 420/3971/23 130 30 40 соціальний і правовий захист військовослужбовців і працівників служби безпеки відпустки працівників дбр при звільненні семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «соціальний і правовий захист військовослужбовців і працівників служби безпеки» (законодавство про національну безпеку та правопорядок / служба безпеки / соціальний і правовий захист військовослужбовців і працівників служби безпеки).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">03.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123084709" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 420/3971/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">130 30 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про національну безпеку та правопорядок</span><span class="crumb-sep">›</span><span class="crumb">Служба безпеки</span><span class="crumb-sep">›</span><span class="crumb-leaf">Соціальний і правовий захист військовослужбовців і працівників служби безпеки</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>відпустки працівників ДБР при звільненні</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Соціальний і правовий захист військовослужбовців і працівників служби безпеки» (Законодавство про національну безпеку та правопорядок / Служба безпеки / Соціальний і правовий захист військовослужбовців і працівників служби безпеки).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+
+3.2. Про правове регулювання права на компенсацію за невикористані дні
+відпустки працівників ДБР при звільненні
+
+Cпеціальне законодавство, яке регулює умови грошового забезпечення осіб
+рядового і начальницького складу ДБР, не містить чіткої регламентації питання
+невикористаних днів відпустки за попередні роки, тому до таких прововідносни
+застосовуються норми загального трудового законодавства, зокрема КЗпП України
+та Закону №504/96-ВР.
+
+14 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Територіального управління
+Державного бюро розслідувань, розташованого у місті Миколаєві на рішення
+Одеського окружного адміністративного суду від 25 липня 2023 року та постанову
+П`ятого апеляційного адміністративного суду від 31 жовтня 2023 року у справі №
+420/3971/23 за позовом особи до Територіального управління Державного бюро
+розслідувань, розташованого у місті Миколаєві, про визнання протиправною
+бездіяльності та зобов`язання вчинити певні дії.
+
+ОБСТАВИНИ СПРАВИ
+
+Позовні вимоги обґрунтувані тим, що під час звільнення з посади позивачу не
+виплачено компенсацію за невикористані 48 днів щорічної відпустки. Позивач вказував,
+що чинне трудове законодавство України, зокрема стаття 24 Закону України від 15
+листопада 1996 року №504/96-ВР «Про відпустки» (далі - Закон №504/96-ВР), стаття 83
+Кодексу законів про працю України (далі - КЗпП України) та абзац 4 частини
+першої статті 12 Закону України від 15 березня 2022 року №2136-IX «Про організацію
+трудових відносин в умовах воєнного стану» (далі - Закон №2136-IX), гарантує
+працівнику виплату грошової компенсації за всі не використані дні щорічної відпустки.
+Відповідач вказував на відсутність підстав застосування статті 83 КЗпП України
+та статті 24 Закону 504/96-ВР, наголошуючи на тому, що відповідно до пунктів 84 та 95
+Положення про проходження служби особами рядового та начальницького складу
+Державного бюро розслідувань, затвердженого постановою Кабінету Міністрів України
+05 серпня 2020 року №743, який є спеціальним нормативно-правовим актом,
+компенсація при звільненні виплачується особам рядового та начальницького складу
+ДБР тільки за невикористану в році звільнення відпустку. Обов`язку виплати спірної
+компенсації за попередні роки, позивачу, немає.
+
+Суди попередніх інстанцій позов задовольнили, та вказали, що  Закон України від
+12 листопада 2015 року №794-VIII «Про Державне бюро розслідувань» (далі - Закон
+№794-VIII) та Закону України від 02 липня 2015 року №580-VIII «Про Національну поліцію»
+(далі – Закон№ 580-VIII,) який згідно з частиною другою статті 19 Закону №794-VIII
+поширюється на осіб рядового і начальницького складу ДБР у частині соціальних
+гарантій, не містять чітких положень щодо виплати компенсації за невикористані дні
+відпустки. У зв`язку з цим, суд при вирішенні спірних правовідносин необхідно
+застосовувати положення статті 24 Закону №504/96-ВР та статті 83 КЗпП України, де
+
+вказано, що у разі звільнення працівника йому виплачується грошова компенсація
+за всі не використані ним дні щорічної відпустки.
+
+Верховний Суд касаційну скаргу залишив без задоволення, а рішення судів
+попередніх інстанцій – без змін.
+
+ОЦІНКА СУДУ
+З огляду на специфіку завдань, які виконують особи рядового та начальницького
+складу ДБР, вони користуються спеціальним правовим захистом, зокрема соціальними
+гарантіями відповідно до Закону України «Про Національну поліцію» та інших законів
+України, з урахуванням положень, встановлених Законом України «Про Державне бюро
+розслідувань». Однією з таких гарантій є право на відпустки та компенсації
+за невикористані відпустки.
+
+Закон України «Про державне бюро розслідувань», який регулює діяльність ДБР, не
+містить спеціальних норм щодо надання відпусток чи виплати компенсацій
+за невикористані дні відпусток при звільненні осіб рядового та начальницького складу
+ДБР. Водночас цей Закон встановлює, що порядок проходження служби особами
+рядового та начальницького складу ДБР регулюється Положенням про проходження
+служби особами рядового та начальницького складу ДБР, затвердженим постановою
+Кабінету Міністрів України від 05 серпня 2020 року №743.
+
+Положення №743 та Інструкція про механізм реалізації та застосування норм
+законодавства щодо грошового забезпечення осіб рядового і начальницького складу
+Державного бюро розслідувань, порядок та умови його виплати (Інструкція №348), які
+визначають порядок виплати грошового забезпечення особам рядового
+і начальницького складу ДБР, хоча й передбачають право на отримання компенсації
+за невикористану відпустку в році звільнення, вони все ж не містять чітких норм, які б
+регулювали порядок виплати компенсації за дні відпустки, які не були використані
+в попередні роки.Недостатня чіткість спеціального законодавства у спірному питанні
+призводить до ситуації правової невизначеності, яку, за загальним правилом, у тому
+числі з урахуванням позицій, сформульованих Європейським судом з прав людини,
+потрібно тлумачити на користь працівника.
+
+З огляду на те, що спеціальне законодавство, яке регулює умови грошового
+забезпечення осіб рядового і начальницького складу ДБР, не містить чіткої
+регламентації питання невикористаних днів відпустки за попередні роки, до спірних
+правовідносин мають застосувуватись норми загального трудового законодавства,
+зокрема КЗпП України та Закону №504/96-ВР. Таким чином, у разі звільнення
+працівника йому виплачується грошова компенсація за всі невикористані ним дні
+щорічної відпустки.
+
+Детальніше з текстом постанови Верховного Суду від 14 листопада 2024 року у справі
+№420/3971/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123084709
+
+### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+
+### 3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1_segment.md № 160/7289/22 60 70 недержавне пенсійне забезпечення призначення пенсій на пільгових умовах семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «недержавне пенсійне забезпечення» (законодавство з питань соціального забезпечення та соціального страхування / недержавне пенсійне забезпечення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123058507" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/7289/22</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Недержавне пенсійне забезпечення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>призначення пенсій на пільгових умовах</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Недержавне пенсійне забезпечення» (Законодавство з питань соціального забезпечення та соціального страхування / Недержавне пенсійне забезпечення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+
+4.1. Про участь суб&#x27;єкта господарювання в оскарженні судових рішень щодо
+призначення пенсій на пільгових умовах
+
+Суб`єкт господарювання, на який законом покладено обов`язок відшкодування
+витрат Пенсійного фонду України на виплату та доставку пенсій, призначених
+на пільгових умовах, має право брати участь у якості третьої сторони, а також
+оскаржувати судові рішення у справах, в яких відповідний працівник доводить факт
+роботи у такого суб`єкта господарювання на посадах, які дають право
+на призначення пенсії на пільгових умовах.
+
+19 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу Товариства з обмеженою
+відповідальністю «Нікопрогресбуд» на ухвалу Третього апеляційного
+
+адміністративного суду від 18 червня 2024 року у справі № 160/7289/22 за позовом
+особи до Головного управління Пенсійного фонду України в Дніпропетровській
+області, Головного управління Пенсійного фонду України в Сумській області про
+визнання протиправними дій щодо непризначення пенсії за віком на пільгових умовах.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач звернувся до суду з позовом про визнання дій відповідачів
+протиправними щодо непризначення йому пенсії за віком на пільгових умовах.
+
+Рішенням окружного адміністративного суду позов задоволено частково.
+Не погоджуючись із зазначеним судовим рішенням, Товариство з обмеженою
+відповідальністю «Нікопрогресбуд» з посиланням на те, що суд вирішив питання про
+його права, інтереси та обов`язки, оскаржило його в апеляційному порядку.
+
+Ухвалою апеляційного адміністративного суду провадження у справі закрито
+у зв`язку з тим, що після відкриття апеляційного провадження за апеляційною
+скаргою, поданою особою з підстав вирішення судом питання про її права, свободи,
+інтереси та (або) обов`язки, встановлено, що судовим рішенням питання про права,
+свободи, інтереси та (або) обов`язки такої особи не вирішувалося. Приймаючи таке
+рішення, суд апеляційної інстанції виходив з того, що апелянт не є учасником спірних
+публічних правовідносин, що виникли з приводу правомірності дій та рішень
+територіального органу Пенсійного фонду, а тому скаржник не є особою, на яку
+поширюється оскаржувані позивачем дії та рішення.
+
+Верховний Суд задовольнив касаційну скаргу, скасував ухвалу апеляційного
+адміністративного суду, а справу направив для продовження розгляду до суду
+апеляційної інстанції.
+
+ОЦІНКА СУДУ
+Зміст частини першої статті 13, частини першої статті 293 КАС України свідчить,
+що законодавцем забезпечено право особи на апеляційне оскарження рішення суду
+у разі якщо суд вирішив питання про її права, свободи, інтереси та (або) обов`язки.
+
+Як вбачається з приписів пункту 1.3, абзаців 1, 2 пункту 6.2, пункту 6.7 Інструкції про
+порядок обчислення і сплати страхувальниками та застрахованими особами внесків
+на загальнообов`язкове державне пенсійне страхування до Пенсійного фонду України,
+затвердженою постановою Правління Пенсійного фонду від 19 грудня 2003 року
+№ 21-1, фінансування пенсій, призначених на пільгових умовах, здійснюється
+за рахунок страхувальників, а тому у підприємств виникає обов`язок зі своєчасного
+розрахунку з Пенсійним фондом України.
+
+У цій справі суд першої інстанції встановив, що позивач працював у Товаристві
+з обмеженою відповідальністю «Нікопрогресбуд» на посаді, що дає право
+на призначення пенсії на пільгових умовах за Списком № 2 виробництв, робіт, професій,
+посад і показників, затвердженим Кабінетом Міністрів України, внаслідок чого
+
+у підприємства виникає обов`язок щодо відшкодування пенсійному органу фактичних
+витрат на виплату та доставку пільгової пенсії за віком, призначеної позивачу.
+
+Таким чином, враховуючи такі основні конституційні засади судочинства як
+рівність усіх учасників судового процесу перед законом і судом, змагальність сторін
+та свобода в наданні ними суду своїх доказів і у доведенні перед судом їх
+переконливості, забезпечення права на апеляційний перегляд справи, Верховний Суд
+дійшов висновку, що суб`єкт господарювання, на який законом покладено обов`язок
+відшкодування витрат Пенсійного фонду України на виплату та доставку пенсій,
+призначених на пільгових умовах, має право брати участь у якості третьої сторони,
+а також оскаржувати судові рішення у справах, в яких відповідний працівник доводить
+факт роботи у такого суб`єкта господарювання на посадах, які дають право
+на призначення пенсії на пільгових умовах.
+
+Детальніше з текстом постанови Верховного Суду від 11 листопада 2024 року у справі
+№ 160/7289/22 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123058507
+
+### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+
+### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.2_segment.md № 240/34142/23 10 40 60 оскарження в суді неправомірних дій посадової особи проведення розслідування нещасного випадку – травмування військовослужбовця семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «оскарження в суді неправомірних дій посадової особи» (основи суспільного ладу / законодавство з питань прав людини та громадянина / оскарження в суді неправомірних дій посадової особи).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">04.2_segment.md</span>
+            <span class="file-badge">№ 240/34142/23</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Оскарження в суді неправомірних дій посадової особи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>проведення розслідування нещасного випадку – травмування військовослужбовця</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Оскарження в суді неправомірних дій посадової особи» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Оскарження в суді неправомірних дій посадової особи).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+
+4.2. Про можливість оскарження в порядку адміністративного судочинства акта
+проведення розслідування нещасного випадку – травмування військовослужбовця
+
+Положеннями пункту 17 Розділу ІІ І Інструкції про розслідування та облік нещасних
+випадків з військовослужбовцями, професійних захворювань і аварій у Збройних
+Силах України, затвердженої наказом Міністерства оборони України від 27 жовтня
+2021 року №332 чітко передбачено право на оскарження в судовому порядку
+висновків комісії з розслідування, тому закриття провадження у справі в частині
+визнання протиправним та скасування акту проведення розслідування
+(спеціального розслідування) нещасного випадку (форма НВ-2), складеного
+військовою частиною за результатами службового розслідування по факту
+травмування військового, на підставі пункту 1 частини першої статті 238 КАС
+України є неможливим.
+
+21 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу особи на ухвалу Житомирського
+окружного адміністративного суду від 26 лютого 2024 року та постанову Сьомого
+апеляційного адміністративного суду від 15 травня 2024 рокуу справі № 240/34142/23
+за позовом особи до військової частини, про визнання дій протиправними,
+зобов`язання вчинити дії
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач отримав травму під час участі у заходах забезпечення оборони України.
+Військова частина провела службове розслідування та склала акти проведення
+розслідування нещасного випадку НВ-2 і НВ-3. Позивач оскаржив ці акти, стверджуючи,
+
+що вони складені з порушенням нормативних вимог, не відображають реальні
+обставини події та негативно впливають на його права.
+
+Суд першої інстанції закрив провадження у справі в частині вимог щодо
+скасування актів НВ-2 і НВ-3. Суд дійшов висновку, що ці акти не є індивідуальними
+правовими актами, не породжують правових наслідків і не можуть бути оскаржені
+в адміністративному суді. Апеляційний суд погодився з цим висновком.
+
+Верховний Суд касаційну скаргу задовольнив, рішення судів попередніх інстанцій
+скасував та направив справу до суду першої інстанції для продовження розгляду.
+
+ОЦІНКА СУДУ
+Положеннями Інструкції про розслідування та облік нещасних випадків
+з військовослужбовцями, професійних захворювань і аварій у Збройних Силах України,
+затвердженої наказом Міністерства оборони України 27 жовтня 2021 року №332 (далі –
+Інструкція №332), чітко передбачено право на оскарження в судовому порядку
+висновків комісії з розслідування, тому закриття провадження судом у справі в частині
+визнання протиправним та скасування акту проведення розслідування (спеціального
+розслідування) нещасного випадку (форма НВ-2), складеного військовою частиною
+за результатами службового розслідування по факту травмування військового,
+на підставі пункту 1 частини першої статті 238 КАС України є неможливим.
+
+Таким чином, позовні вимоги щодо визнання протиправним та скасування акту
+за формою НВ-2 підлягали розгляду разом із іншими позовними вимогами в цій справі.
+
+При вирішенні клопотання сторони про закриття провадження у справі в частині,
+не є застосовними положення Порядку проведення службового розслідування
+у Збройних Силах України, затвердженого наказом Міністра оборони України від
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.3_segment.md № 120/359/24 10220 50 посади працівників державних органів, які виконуютьфункції з обслуговування службу семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «посади працівників державних органів, які виконуютьфункції з обслуговування» (основи суспільного ладу / законодавство про державну службу / посади працівників державних органів, які виконуютьфункції з обслуговування).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">04.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123410430" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 120/359/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10220 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про державну службу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Посади працівників державних органів, які виконуютьфункції з обслуговування</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>службу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Посади працівників державних органів, які виконуютьфункції з обслуговування» (Основи суспільного ладу / Законодавство про державну службу / Посади працівників державних органів, які виконуютьфункції з обслуговування).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+
+4.3. Про поновлення строку звернення до суду для осіб, мобілізованих на військову
+службу
+
+Проходження особою військової служби, призваної по мобілізації у Збройні Сили
+України, може бути підставою для поновлення строку звернення до суду з кількох
+причин, пов`язаних із особливим статусом військовослужбовців та характером
+їхньої служби:
+
+1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+можуть перебувати у віддалених, в тому числі й небезпечних місцях, де відсутній
+доступ до адвокатів чи інших правових ресурсів, що обмежує можливість
+
+своєчасного звернення до суду.
+2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+стану, часто перебувають у стані, коли фізично або психологічно неможливо
+займатися приватними справами, зокрема ініціювати судові спори.
+3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+або відрядженнях може унеможливити дотримання, визначеного процесуальним
+
+законом, строку для звернення до суду.
+4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+військовослужбовцями важливої функції із захисту держави, законодавство
+та судова практика мають враховувати обставини, пов`язані з проходженням
+військової служби, як вагому підставу для поновлення строку.
+5. Обов`язок держави забезпечувати реалізацію принципу рівного доступу
+до правосуддя: проходження військової служби може суттєво ускладнити
+реалізацію особами цього права, а отже, з метою належного забезпечення
+зазначеного принципу, може визнаватися об`єктивною причиною пропуску
+
+процесуального строку.
+
+29 листопада 2024 року Верховний Суд у складі колегії суддів Касаційного
+адміністративного суду розглянув касаційну скаргу особи на ухвалу Вінницького
+окружного адміністративного суду від 13 лютого 2024 року та постанову Сьомого
+апеляційного адміністративного суду від 04 квітня 2024 року у справі № 120/359/24
+за позовом особи до Головного управління Пенсійного фонду України у Вінницькій
+області про визнати протиправним та скасувати рішення про відмову у призначенні
+позивачу дострокової пенсії за віком.
+
+ОБСТАВИНИ СПРАВИ
+
+Позивач звернувся до суду з позовом у якому просив визнати протиправним
+та скасувати рішення Головного управління Пенсійного фонду України у Вінницькій
+області про відмову у призначенні йому дострокової пенсії за віком.
+
+Суд першої інстанції, з яким погодився суд апеляційної інстанції, повернув позовну
+заяву позивачу без розгляду через пропуск, встановленого статтею 122 КАС України,
+строку для звернення до суду. Ухвалюючи таке рішення, суди виходили з того,
+що проходження позивачем військової служби не може вважатися поважною
+причиною пропуску строку звернення до суду, адже така обставина виникла значно
+пізніше початку перебігу строку для звернення до суду. Крім того, суди зважали на те,
+що позивач у липні 2022 року звернувся до пенсійного органу із заявою про
+
+призначення пенсії, а отже й мав об`єктивну можливість звернутися з позовом до суду,
+а військова частина позивача знаходиться в зоні, що не є територією бойових дій.
+
+Верховний Суд задовольнив касаційну скаргу, скасував рішення судів попередніх
+інстанцій, а справу направив до суду першої інстанції для продовження розгляду.
+
+ОЦІНКА СУДУ
+Верховний Суд погодився із висновком судів попередніх інстанцій про те, що сам
+факт введення воєнного стану в Україні, без обґрунтування неможливості звернення
+до суду саме позивачем у встановлені строки, у зв`язку із запровадженням такого, не
+може безумовно вважатись поважною причиною для безумовного поновлення цих
+строків.
+
+Водночас, суди попередніх інстанцій не звернули увагу на ті обставини, що позивач
+є учасником бойових дій, що підтверджується копією посвідчення та відповідно
+до Закону України від 21 жовтня 1993 року № 3543-XII «Про мобілізаційну підготовку
+та мобілізацію», Указу Президента України від 24 лютого 2022 року № 65/2022 «Про
+загальну мобілізацію» мобілізований у першу хвилю (оперативні резервісти, колишні
+військовослужбовці та ветерани антитерористичної операції та Операції об&#x27;єднаних
+сил). Вказані обставини свідчать про пропуск строку звернення позивача до суду
+за захистом його прав з поважних причин та є підставою для поновлення судом
+строків, встановлених частиною другою статті 122 КАС України.
+
+Вирішуючи цю справу, колегія суддів Верховного Суду сформувала наступний
+правовий висновок щодо застосування положень статей 122 та 123 КАС України
+у правовідносинах, пропуск процесуального строку у яких пов`язаний саме з призовом
+по мобілізації до Збройних Сил України для виконання конституційного обов`язку
+із захисту суверенітету і незалежності Держави Україна:
+
+Проходження особою військової служби, призваною по мобілізації у Збройні Сили
+України, може бути підставою для поновлення строку звернення до суду з кількох
+причин, пов`язаних із особливим статусом військовослужбовців та характером їхньої
+служби:
+
+1. Обмеження доступу до правової допомоги: під час служби військовослужбовці
+можуть перебувати у віддалених, в тому числі й небезпечних місцях, де відсутній доступ
+до адвокатів чи інших правових ресурсів, що обмежує можливість своєчасного
+
+звернення до суду.
+
+2. Виконання обов`язків служби: військовослужбовці, особливо в умовах воєнного
+стану, часто перебувають у стані, коли фізично або психологічно неможливо займатися
+приватними справами, зокрема ініціювати судові спори.
+
+3. Фактор часу: участь військовослужбовця у довготривалих операціях, навчаннях
+або відрядженнях може унеможливити дотримання, визначеного процесуальним
+
+законом, строку для звернення до суду.
+
+4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+військовослужбовцями важливої функції із захисту держави, законодавство та судова
+практика мають враховувати обставини, пов`язані з проходженням військової служби,
+як вагому підставу для поновлення строку.
+
+5. Обов`язок держави забезпечувати реалізацію принципу рівного доступу
+до правосуддя: проходження військової служби може суттєво ускладнити реалізацію
+особами цього права, а отже, з метою належного забезпечення зазначеного принципу,
+може визнаватися об`єктивною причиною пропуску процесуального строку.
+
+Детальніше з текстом постанови Верховного Суду від 29 листопада 2024 року у справі
+№ 120/359/24 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123410430
+
+Огляд судової практики Касаційного адміністративного суду у складі Верховного
+Суду (актуальна практика). Рішення, внесені до ЄДРСР, за листопад 2024
+року / Упоряд.: управління аналітичної та правової роботи Касаційного
+адміністративного суду департаменту аналітичної та правової роботи Апарату
+Верховного Суду; управління забезпечення роботи судової палати з розгляду справ
+щодо податків, зборів та інших обов’язкових платежів секретаріату Касаційного
+адміністративного суду у складі Верховного Суду. Київ, 2024. – 30 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="21.11.2017_segment.md № 240/34142/23 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав службового розслідування внаслідок порушення військової дисципліни семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">21.11.2017_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123213884" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 240/34142/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>службового розслідування внаслідок порушення військової дисципліни</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">21.11.2017 №608 (далі - Порядок №608), оскільки вони стосуються проведення
+службового розслідування внаслідок порушення військової дисципліни
+військовослужбовцями, а правова природа висновку службового розслідування
+в розумінні Порядку №608 не є тотожною із правовою природою актів за формою НВ2 і НВ-3 в розумінні положень Інструкції №322.
+
+Детальніше з текстом постанови Верховного Суду від 21 листопада 2024 року у справі №
+240/34142/23 можна ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123213884
+
+### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+
+### 4. Повага до особливого статусу військовослужбовців: враховуючи виконання
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 16;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

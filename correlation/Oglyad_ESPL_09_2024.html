@@ -1,0 +1,2497 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_ESPL_09_2024 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_ESPL_09_2024 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_ESPL_09_2024.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_ESPL_09_2024</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">2</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">84.0%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">2</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 2 із 2</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 10 40 70 забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів що стосується існування загального інтересу, єспл зазначив, що декретзакон № 78/2010 запровадив «невідкладні заходи щодо фінансової стабілізації». семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів» (основи суспільного ладу / законодавство з питань прав людини та громадянина / забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Що стосується існування загального інтересу, ЄСПЛ зазначив, що Декретзакон № 78/2010 запровадив «невідкладні заходи щодо фінансової стабілізації».</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Існування підстави, що становила загальний інтерес
+
+1. Існування підстави, що становила загальний інтерес
+
+Що стосується існування загального інтересу, ЄСПЛ зазначив, що Декретзакон № 78/2010 запровадив «невідкладні заходи щодо фінансової стабілізації».
+У Пояснювальній записці щодо перетворення цього положення на закон
+пояснюється, що стаття 12(11) мала на меті надати тлумачення відповідного
+положення, а саме статті 1(208) Закону № 662/1996, з метою відновлення
+усталеної адміністративної практики з цього питання, тоді як відповідно
+до підготовчих матеріалів до Закону № 122/2010, яким це положення було
+перетворене на закон, воно також мало за мету уникнення значного фінансового
+навантаження на Державу.
+
+(a) Фінансові інтереси Держави
+
+## 29   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+У цій справі законодавча історія спірного положення чітко показала,
+що існували численні суперечки щодо питання подвійної реєстрації в різних
+системах соціального забезпечення і що за відсутності автентичного
+тлумачення це призвело б до значного фінансового тягаря для Держави.
+Існування численних спорів зі значними фінансовими наслідками було також
+визнано в рішенні Касаційного Суду від 12 лютого 2010 року.
+
+Водночас ЄСПЛ зазначив, що це не було єдиною метою, яку переслідувало
+спірне положення.
+
+(b) Відновлення правової визначеності
+
+Що стосується мети відновлення адміністративної практики, якої послідовно
+дотримувалися до рішення Касаційного Суду від 12 лютого 2010 року, ЄСПЛ
+повторив, що він визнає те, що ретроспективне законодавство за виняткових
+обставин може бути виправдане необхідністю тлумачення або роз&#x27;яснення більш
+
+раннього законодавчого положення.
+
+В контексті обставин цієї справи, ЄСПЛ зазначив, що стаття 12(11) Декретузакону № 78/2010 була безпосередньо спрямована на відновлення раніше
+встановленої адміністративної практики. Конституційний Суд зауважив, що це
+положення мало на меті вирішити проблему, спричинену непослідовним
+тлумаченням, яке призвело до суперечностей в самому Касаційному Суді,
+шляхом надання відповідному застосовному положенню, а саме статті 1(208)
+Закону № 662/1996, одного з його можливих значень, про яке можна було
+з великою долею вірогідності стверджувати, що воно відповідало значенню, яке
+було первісно задумано. Таким чином, на думку Конституційного Суду,
+положення про тлумачення було спрямоване на відновлення правової
+визначеності, а отже, було виправдане переконливими підставами загального
+інтересу.
+
+Враховуючи зазначене, ЄСПЛ визнав, що втручання законодавчого органу
+ґрунтувалося на підставах загального інтересу.
+
+### 2. Чи були ці підстави загального інтересу переконливими
+
+### 2. Чи були ці підстави загального інтересу переконливими
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md не вказана 260 10 30 підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання єспл повинен був оцінити переконливість відповідних підстав в цілому семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання» (виправно-трудове законодавство / виправно-трудове законодавство / підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">260 10 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>ЄСПЛ повинен був оцінити переконливість відповідних підстав в цілому</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання» (Виправно-трудове законодавство / Виправно-трудове законодавство / Підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Чи були ці підстави загального інтересу переконливими
+
+2. Чи були ці підстави загального інтересу переконливими
+
+ЄСПЛ повинен був оцінити переконливість відповідних підстав в цілому
+і у світлі таких елементів: чи була усталеною судова практика, змінена
+оскаржуваним законодавчим втручанням; спосіб і час ухвалення законодавства;
+передбачуваність законодавчого втручання; сфера дії законодавства та його
+наслідки.
+
+(а) Чи була усталеною судова практика до її зміни
+
+ЄСПЛ передусім зазначив, що до рішення Касаційного Суду від
+12 лютого 2010 року усталена адміністративна практика вимагала від
+
+## 30   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+адміністративних та комерційних керівників приватних компаній реєструватися
+як у системі gestione separata, так і в системі gestione commerciale INPS
+та сплачувати внески до обох систем у зв&#x27;язку з різними видами їхньої
+діяльності. Ця практика була підтримана переважною більшістю судів нижчих
+інстанцій.
+
+Заявник це заперечував, однак ЄСПЛ зазначив, що деякі з судових рішень,
+на які посилався заявник, фактично не підтверджували його позицію. Зокрема,
+хоча ці рішення і не накладали обов&#x27;язку реєструватися в обох системах
+соціального страхування, вони говорили про те, що існував обов&#x27;язок сплачувати
+внески на соціальне страхування з урахуванням загальної суми заробітної плати,
+отриманої у зв&#x27;язку з різними видами діяльності, що здійснювалася в межах
+компанії. В інших рішеннях зазначалося, що немає обов&#x27;язку реєструватися
+в обох системах, але не роз&#x27;яснювалося, яким чином слід розраховувати суму
+внесків на соціальне страхування. Якщо цей розрахунок повинен був
+здійснюватися на основі загальної суми отриманої заробітної плати, це не
+відповідало позиції, яку відстоював заявник.
+
+ЄСПЛ зауважив, що лише Касаційний Суд рішенням від 12 лютого 2010 року
+надав тлумачення, яке підтверджувало позицію заявника, вказавши, що нема
+потреби реєструватися в обох системах і що зобов&#x27;язання зі сплати внесків
+на соціальне страхування має розраховуватися виключно на основі основної
+діяльності.
+
+У наступному рішенні Касаційного Суду від 8 серпня 2011 року чітко
+вказувалося на існування суперечливої судової практики і на той факт,
+що у згадуваному вище попередньому судовому рішенні було обрано одне
+з можливих тлумачень положення, але воно було єдиним рішенням, де
+
+застосовано таке тлумачення.
+
+Тому Суд вважав, що судова практика, яка була змінена оскаржуваним
+втручанням законодавчого органу, не була усталеною. Дійсно, в італійській
+правовій системі той факт, що рішення від 12 лютого 2010 року було винесено
+Касаційним Судом, не перешкоджало подальшому розвитку судової практики,
+оскільки суди нижчих інстанцій не є повністю підпорядкованими Касаційному
+Суду, і зберігають право відступати від його рішень, якщо вони надають для цього
+обґрунтування.
+
+(b) Чи було втручання законодавчого органу своєчасним і доречним
+
+ЄСПЛ надав важливого значення тому факту, що невдовзі після винесення
+Касаційним Судом рішення від 12 лютого 2010 року законодавець
+продемонстрував свій намір не допустити можливість подальшого застосування
+цього рішення. Дійсно, 31 травня 2010 року, лише через три з половиною місяці
+після винесення рішення, Уряд ухвалив статтю 12(11) Декрету-закону № 78/2010,
+
+## 31   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+який згодом, протягом шістдесяти днів, був перетворений Парламентом у Закон
+№ 122/2010. Тому Суд вважав, що втручання законодавчого органу було дуже
+
+своєчасним.
+
+ЄСПЛ зауважив, що у правовій Державі законодавчий орган може вносити
+зміни до законодавства з метою виправлення тлумачення закону, наданого
+судовою владою, за умови дотримання правових норм і принципів, які є
+обов&#x27;язковими навіть для законодавчого органу.
+
+(с) Чи було законодавче втручання передбачуваним
+
+ЄСПЛ повторив, що відповідне законодавче втручання мало на меті
+відновити правову визначеність після неочікуваного рішення Касаційного Суду
+у цій справі.
+
+Втручання мало на меті відновити попередню адміністративну практику, яка
+застосовувалася на момент виникнення спору і була підтримана судами нижчих
+інстанцій. Ця практика встановлювала, що реєстрація в обох системах
+соціального страхування була обов&#x27;язковою і що внески на соціальне
+страхування мали сплачуватися за обома системами за різні види діяльності,
+що здійснювалися. Такий підхід не суперечив судовій практиці Касаційного Суду
+до його рішення від 12 лютого 2010 року.
+
+Таким чином, на момент, коли на заявника було покладено обов&#x27;язок
+сплачувати внески на соціальне страхування і він звернувся до суду, як усталена
+адміністративна практика, так і основна судова практика були несприятливими
+для нього, а отже, на той час, очевидно, призвели б до відмови у задоволенні
+його вимог. Втручання законодавця лише відновило наявну адміністративну
+практику, підтриману по суті судами на момент звернення заявника до суду,
+і якої дотримувався Касаційний Суд у своїй практиці, хоча і на основі іншої
+аргументації. Тому таке законодавче втручання не було підстав вважати
+непередбачуваним.
+
+(d) Сфера застосування та наслідки відповідного законодавства
+
+ЄСПЛ зазначив, що у цій справі втручання законодавця дозволило стягнути
+із заявника несплачені внески на соціальне страхування, а також пеню
+та штрафні санкції за прострочення сплати.
+
+Однак заявник навіть не отримав рішення першої інстанції, не кажучи вже
+про рішення, що набрало законної сили, яке б підтверджувало, що на момент
+законодавчого втручання він не був зобов&#x27;язаний сплачувати додаткові внески
+на соціальне страхування.
+
+Враховуючи зазначене, ЄСПЛ визнав заяву в цій частині явно
+необґрунтованою у розумінні пункту 3 статті 35 Конвенції та визнав її
+неприйнятною відповідно до пункту 4 статті 35.
+
+## 32   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+В. Щодо стверджуваного порушення статті 1 Першого протоколу до Конвенції
+
+Заявник скаржився на те, що ретроспективне застосування статті 12(11)
+Декрету-закону № 78/2010, в результаті якого він був зобов&#x27;язаний сплатити
+додаткові внески на соціальне страхування, а також пеню та штрафні санкції,
+спричинило порушення його права на мирне володіння своїм майном,
+гарантованого статтею 1 Першого протоколу до Конвенції.
+
+ЄСПЛ вважав, що зобов&#x27;язання сплачувати внески на соціальне
+страхування, а також відсотки та штрафи становило втручання у право заявника
+на мирне володіння своїм майном. Однак, згідно зі статтею 1 Першого протоколу
+до Конвенції Державам дозволяється контролювати використання власності
+відповідно до загальних інтересів або з метою забезпечення сплати податків.
+Водночас ЄСПЛ зазначив, що закони з ретроспективною дією, як у цій справі,
+можуть відповідати вимогам законності цієї статті. У цій справі ЄСПЛ дійшов
+
+саме такого висновку.
+
+Крім того, ЄСПЛ не встановив, що сплата відповідних внесків становила для
+заявника надмірний тягар, враховуючи, що заявник не надав жодного
+відповідного аргументу з цього приводу. Тому ЄСПЛ визнав заяву в цій частині
+явно необґрунтованою та відхилив її.
+
+Висновок
+
+Заяву було визнано неприйнятною та відхилено
+
+Ухвала в цій справі прийнята 3 вересня 2024 року, оприлюднена 19 вересня
+2024 року та є остаточною.
+
+## 33   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+СТАТТЯ 8 КОНВЕНЦІЇ (ПРАВО НА ПОВАГУ ДО ПРИВАТНОГО І СІМЕЙНОГО ЖИТТЯ)
+
+[P.J. and R.J. v. SWITZERLAND](https://hudoc.echr.coe.int/ukr?i=001-235695) (№ 52232/20)
+
+Обставини справи
+
+Справа стосувалася видворення першого заявника зі Швейцарії на 5 років
+після його засудження за злочин, пов&#x27;язаний з наркотиками. Заявники (перший
+заявник та його дружина – друга заявниця) стверджували, що такий захід був
+непропорційним та порушував їхнє право на повагу до сімейного життя
+відповідно до статті 8 Конвенції.
+
+Перший заявник народився і жив у Боснії і Герцеговині, де у 2011 році
+познайомився з другою заявницею, громадянкою Сербії. Вона народилася
+в Швейцарії й прожила там все своє життя на підставі довгострокового дозволу
+
+на проживання.
+
+У 2013 році заявники одружилися і перший заявник переїхав до Швейцарії,
+щоб жити з другою заявницею як сім&#x27;я. У 2014 та 2016 роках у Швейцарії в них
+народилися дві доньки, які відвідували там школу. Перший заявник їздив
+у Боснію і Герцеговину один або два рази на рік.
+
+Після переїзду до Швейцарії перший заявник мав тимчасові підробітки
+некваліфікованим робітником на будівництві та технічному обслуговуванні
+протягом перших кількох років, а потім виконував такі роботи, як встановлення
+теплої підлоги та прибирання. Друга заявниця – основна годувальниця сім&#x27;ї,
+дипломована медсестра, яка працювала позмінно в місцевій лікарні. За словами
+заявників, подружжя ділило батьківську турботу про своїх дочок, причому перший
+заявник брав на себе більшу частину обов’язків через графік роботи другої
+заявниці.
+
+7 лютого 2018 року перший заявник був затриманий під час перевезення
+пакунку, що містив 194 грами кокаїну 96 % чистоти для третьої особи між містами
+Лангнау-ам-Альбіс та Цюрих. За свої послуги він мав отримати 500 швейцарських
+франків (CHF).
+
+3 липня 2018 року суд кантону Цюрих визнав його винним у вчиненні
+злочину, пов&#x27;язаного з незаконним обігом наркотиків за обтяжуючих обставин,
+і, зазначив, що заявник співпрацював, зізнався у вчиненому з самого початку,
+не мав судимостей і що існує «презумпція сприятливого прогнозу щодо ризику
+рецидиву», засудив його до умовного позбавлення волі строком на 20 місяців
+з відстрочкою виконання вироку на 2 роки. Крім того, суд постановив видворити
+його зі Швейцарії на 5 років відповідно до статті 66а Кримінального кодексу
+Швейцарії, що є мінімально допустимим терміном. Торгівля наркотиками була
+одним зі злочинів, які обов&#x27;язково призводили до видворення іноземця
+
+## 34   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+зі Швейцарії, якщо видворення не призводило до особистого скрутного
+становища. Ім&#x27;я першого заявника мало бути внесено до Шенгенської
+інформаційної системи, що також передбачало заборону в&#x27;їзду до Шенгенської
+
+зони.
+
+11 листопада 2019 року справу розглянув Верховний Суд кантону Цюрих. Він,
+зокрема, встановив, що, хоча перший заявник не був залучений
+до широкомасштабної торгівлі наркотиками, злочин був серйозним, оскільки він
+перевозив велику кількість кокаїну і тим самим створював небезпеку для життя
+інших людей і громадської безпеки. Зрештою, суд визнав, що приватні інтереси
+першого заявника залишитися у Швейцарії не переважали інтереси громадської
+безпеки.
+
+15 лютого 2020 року перший заявник оскаржив рішення до Федерального
+Суду Швейцарії. Він стверджував, що Верховний Суд кантону Цюріх не
+дотримався статті 8 Конвенції, і що його видворення на 5 років становило
+непропорційне втручання в його право на повагу до сімейного життя.
+
+17 червня 2020 року Федеральний Суд Швейцарії відхилив скаргу першого
+заявника. Суд дійшов висновку, що суспільні інтереси переважали над
+приватними інтересами першого заявника, оскільки його видворення слугувало
+законній меті запобігання новим злочинам для забезпечення громадської
+безпеки. Це було пропорційне втручання в його право на повагу до сімейного
+життя відповідно до статті 8 Конвенції.
+
+У липні 2020 року першого заявника було видворено зі Швейцарії. Нині він
+проживає в Боснії та Герцеговині. Друга заявниця та їхні дочки проживають
+у Швейцарії. У 2020 році вони подали документи на отримання швейцарського
+громадянства та отримали його в грудні 2021 року.
+
+Заявники скаржилися, що видворення першого заявника через його
+кримінальне засудження було непропорційним покаранням, яке становило
+порушення їхнього права на повагу до сімейного життя за статтею 8 Конвенції.
+
+Оцінка Суду
+
+Сторони не заперечували, що у цій справі було втручання у право заявників
+на повагу до їхнього сімейного життя, що воно було «передбачено законом»
+і виправдано однією або декількома законними цілями згідно з пунктом 2 статті
+8 Конвенції. Однак вони мали відмінну думку про те, чи воно було необхідним
+і пропорційним, і чи належним чином національні суди обґрунтували свої
+рішення.
+
+Тому ЄСПЛ мав перевірити, чи був оскаржуваний захід «необхідним
+у демократичному суспільстві».
+
+## 35   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+ЄСПЛ зазначив, що засудження першого заявника за злочин, пов&#x27;язаний
+з наркотиками (20 місяців позбавлення волі з відстрочкою на 2 роки), мав
+серйозний характер. Водночас ЄСПЛ зауважив, що перший заявник не мав
+судимості або судимостей, пов&#x27;язаних з наркотиками, на момент вчинення
+злочину, за який його згодом було видворено (див., на противагу, серед останніх
+прикладів справи, в яких заявники вчинили кілька злочинів, пов’язаних
+з наркотиками, або мали судимості до їхнього видворення): Al-Masudi v.
+[Denmark, № 35740/21, § 28, від 5 вересня 2023 року; Loukili v. the Netherlands,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2235740/21%22%5D%7D)
+[№ 57766/19](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2257766/19%22%5D%7D), [§ 52, від 11 квітня 2023 року; і Nguyen v. Denmark, № 2116/21](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%222116/21%22%5D%7D), § 29,
+від 9 квітня 2024 року).
+
+Перший заявник прибув до Швейцарії у 2013 році у віці 30 років, коли
+одружився з другою заявницею. До цього він провів усе своє життя, включаючи
+навчання в школі та професійну підготовку, у своїй рідній країні – Боснії
+і Герцеговині, де у нього були батьки та брат, і куди він регулярно навідувався.
+Після переїзду до Швейцарії і до моменту засудження він працював
+на тимчасових роботах, а його дружина була основною годувальницею у сім&#x27;ї.
+За словами першого заявника, він брав на себе більшу частину батьківської
+турботи про своїх малолітніх дочок, поки його дружина була на роботі. На момент
+видворення зі Швейцарії перший заявник прожив там близько 6 років і 8 місяців,
+однак, як сам визнав, погано розмовляв німецькою мовою, а відповідно
+до оцінки органів влади рівень його інтеграції у суспільство був нижче
+середнього (див., на противагу, Z v. Switzerland, № 6325/15, §§ 67 і 69, від
+22 грудня 2020 року).
+
+Визначивши відповідні фактори, національні суди зосередили свою оцінку
+ситуації першого заявника на характері та тяжкості вчиненого ним злочину.
+У зв&#x27;язку з цим ЄСПЛ зазначив, що, хоча злочин першого заявника був
+серйозним, він не був покараний реальним позбавленням волі, а був засуджений
+до умовного покарання з відстрочкою виконання вироку.
+
+Однак, встановивши, що ступінь вини першого заявника був незначним,
+національні суди лише послалися на той факт, що перший заявник зізнався
+з самого початку, що він співпрацював з поліцією і що існував сприятливий
+прогноз щодо ризику рецидиву (див., на противагу, згадане рішення у справі Z v.
+Switzerland, § 24, де був доведений ризик рецидиву, оскільки заявник вчинив
+злочин незабаром після завершення випробувального терміну, і рішення у справі
+[Vasquez v. Switzerland, № 1785/08, § 46, від 26 листопада 2013 року, де був](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%221785/08%22%5D%7D)
+доведений ризик рецидиву, враховуючи те, що заявник мав труднощі
+з самоконтролем після винесення йому вироку).
+
+Національні суди зазначили, що незабаром після ухвалення рішення про
+видворення у липні 2018 року перший заявник знайшов роботу з повною
+зайнятістю, яку він зберігав до моменту видворення зі Швейцарії через 2 роки,
+
+## 36   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+і що він демонстрував хорошу поведінку протягом усього цього періоду. Уряд
+припускав, що така поведінка першого заявника була очікуваною, враховуючи,
+що він отримав умовний термін ув&#x27;язнення. Однак у своїй оцінці національні суди
+
+не врахували, що, хоча страх перед тим, що умовне засудження може
+перетворитися на реальний термін ув&#x27;язнення, міг зіграти певну роль, загальна
+хороша поведінка першого заявника, його здатність мати стабільну роботу
+незабаром після засудження, а також відсутність будь-яких подальших
+адміністративних або кримінальних правопорушень, свідчили про його щирий
+намір довести, що він не становив загрози для суспільної безпеки. Ці докази
+прагнення першого заявника до законослухняної поведінки були проігноровані.
+
+Принцип пропорційності вимагає, серед іншого, враховувати особисту
+поведінку особи та вплив застосованого заходу на сімейне життя. Національні
+суди не ставили під сумнів справжність сімейного життя першого заявника
+або негативний вплив, який мало б на нього п&#x27;ятирічне видворення. Вони
+стверджували, що друга заявниця могла або поїхати за першим заявником
+до Боснії і Герцеговини, де у неї були хороші перспективи, або залишитися
+у Швейцарії, що робило розлуку питанням вибору.
+
+Що стосується дочок заявників, суди дійшли висновку, що з огляду на їхній
+вік вони могли адаптуватися до нового середовища в Боснії і Герцеговині
+і що їхній переїзд залежав від вибору другої заявниці слідувати за чоловіком.
+
+Враховуючи наведене, ЄСПЛ вважав, що, призначаючи та підтримуючи
+п&#x27;ятирічне видворення, національні суди не застосували належним чином його
+практику, яка вимагає ретельного дотримання балансу між особистими
+та суспільними інтересами. Суди не надали належної ваги певним аспектам. До
+них відносяться низький рівень вини першого заявника, той факт, що його
+покарання було умовним, відсутність судимості, той факт, що він більше не
+становив загрози громадській безпеці, його статус довгострокового іммігранта
+і несприятливий вплив видворення на членів його сім&#x27;ї.
+
+Таким чином, ЄСПЛ дійшов висновку, що було порушення статті 8 Конвенції.
+
+Висновок
+
+Порушення статті 8 Конвенції (право на повагу до приватного і сімейного
+життя).
+
+Рішення в цій справі ухвалене Палатою 17 вересня 2024 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+
+## 37   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+[PINCHUK v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-235607) (№ 72777/13)
+
+Обставини справи
+
+Справа стосувалася тверджень про те, що роботодавець заявника
+
+[Житомирська обласна міліція на час подій] незаконно збирав конфіденційні
+медичні дані про нього, і що національні суди не навели відповідних і достатніх
+підстав для відхилення його скарг з цього приводу. Заявник посилався
+на статті 6 та 8 Конвенції.
+
+У період з 24 жовтня по 29 грудня 2012 року заявник, на той час працівник
+міліції, періодично проходив стаціонарне та амбулаторне лікування у серцевосудинних відділеннях Житомирської міської та Житомирської обласної лікарень.
+
+Чотири рази у жовтні та листопаді 2012 року начальник заявника звертався
+до головних лікарів вищезазначених лікарень з проханням підтвердити факт
+проходження заявником лікування та повідомити його точний діагноз і деталі
+стану його здоров&#x27;я. У різні дати співробітники лікарень надали свої відповіді.
+Принаймні одна з них містила детальний опис стану здоров&#x27;я та діагнозу
+
+заявника.
+
+У січні 2013 року заявник подав позов до суду, стверджуючи, зокрема,
+що його начальник незаконно вимагав від лікарень його медичну інформацію.
+Заявник зазначив, що він дотримався необхідних адміністративних
+формальностей, своєчасно повідомляючи керівництво про свою відсутність
+за станом здоров&#x27;я та надаючи офіційні листки непрацездатності. Прямі запити
+його керівництва до лікарень з метою отримання детальної інформації, зокрема,
+щодо стану здоров&#x27;я заявника та точного діагнозу, не були обґрунтованими.
+
+21 травня 2013 року Житомирський окружний адміністративний суд
+відмовив у задоволенні позову.
+
+25 липня 2013 року Апеляційний суд Житомирської області відхилив
+апеляційну скаргу заявника.
+
+Ухвалою від 6 серпня 2013 року Вищий адміністративний суд України
+відмовив заявнику у відкритті касаційного провадження.
+
+Посилаючись на статтю 8 Конвенції заявник скаржився на збір
+роботодавцем його медичних даних в порушення норм національного
+законодавства та цієї статті Конвенції.
+
+Оцінка Суду
+
+Стаття 8 Конвенції
+
+Беручи до уваги заперечення Уряду, оскаржене заявником, про те,
+що останній не вичерпав національних засобів юридичного захисту, оскільки не
+
+## 38   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+подав жодного позову проти лікарень, Суд зазначив, що скарга, яка перебувала
+на його розгляді, стосувалася стверджуваної незаконності збору цієї інформації
+роботодавцем заявника, а не її розголошення лікарнями. Ця конкретна скарга
+була подана заявником до національних судів трьох рівнів юрисдикції, і Уряд не
+заперечував цього факту. Тому Суд відхилив це заперечення. Він вважав,
+що скарга заявника не була ані явно необґрунтованою у розумінні підпункту «а»
+пункту 3 статті 35 Конвенції, ані неприйнятною з будь-яких інших підстав. Тому
+він оголосив її прийнятною.
+
+Розглядаючи цю скаргу у світлі загальних принципів, розроблених у своїй
+[практиці (див. Radu v. the Republic of Moldova, № 50073/07, §§ 27–32, від](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2250073/07%22%5D%7D)
+[15 квітня 2014 року; Y.Y. v. Russia, № 40378/06, §§ 52–60, від 23 лютого 2016 року;](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2240378/06%22%5D%7D)
+[Surikov v. Ukraine, № 42788/06, §§ 70–74 і 91, від 26 січня 2017 року; і та M.K. v.](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2242788/06%22%5D%7D)
+[Ukraine, № 24867/13, §§ 34–37, 50–51 і 59–61, від 15 вересня 2022 року), Суд](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2224867/13%22%5D%7D)
+зазначив, що наявність втручання не було предметом спору між сторонами. Суд
+також вважав, що запити керівника заявника (співробітника міліції)
+до персоналу лікарні з метою отримання детальної медичної інформації про
+заявника становили втручання у право заявника на повагу до його приватного
+життя у розумінні статті 8 Конвенції.
+
+Суд урахував аргумент Уряду про те, що оскаржуване втручання мало
+підстави в національному законодавстві. Зокрема, Уряд посилався, по суті,
+на статтю 17 Закону № 565-XII «Про міліцію», чинну на час розгляду справи, яка
+встановлювала критерії відбору на службу до міліції, одним з яких був стан
+здоров&#x27;я кандидатів. Крім того, Уряд зазначив, що Міністерство внутрішніх справ
+прийняло нормативно-правові акти з метою створення спеціальних медичних
+комісій для контролю за придатністю працівників міліції до служби.
+
+Суд визнав, що роботодавець заявника є державним органом, тому міг мати
+законний інтерес в отриманні інформації про стан його здоров&#x27;я в контексті
+оцінки його фізичної придатності до служби. З метою дотримання статті 8
+Конвенції для реалізації такого інтересу цей державний орган був зобов&#x27;язаний
+
+насамперед дотримуватися конкретних правових норм, що супроводжувалися
+необхідними процесуальними гарантіями (див. згадане вище рішення Surikov v.
+[Ukraine, заява № 42788/06, § 91, від 26 січня 2017 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2242788/06%22%5D%7D)
+
+Уряд не заперечував, що заявник належним чином повідомив свого
+роботодавця про свою відсутність за станом здоров&#x27;я та своєчасно
+й у відповідний спосіб надав офіційні листки непрацездатності. У цьому
+контексті Суд не міг погодитися з аргументом Уряду про те, що загальні правові
+положення щодо прийняття на службу до міліції та функціонування комісій
+з питань медичної придатності створювали правову основу для прямих
+і конкретних запитів керівника заявника до лікарень з метою отримання
+детальної інформації щодо його лікування та діагнозу. Крім того, Суд урахував
+
+## 39   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+покликання заявника на статтю 39-1 КЗпП, яка прямо забороняє роботодавцям
+робити такі запити. Ні із зауважень Уряду, ні з рішень, прийнятих національними
+судами, не вбачалося, що право робити такі запити випливає з будь-яких інших
+положень національного законодавства, що мають перевагу над прямою
+забороною, на яку покликався заявник.
+
+Відповідно Суд вважав, що втручання, про яке йдеться, не відповідало
+закону. Цей висновок був достатнім для встановлення порушення статті 8
+Конвенції. Він також позбавив необхідності розглядати інші аргументи сторін
+щодо наявності законної мети або необхідності втручання.
+
+Висновок
+
+Порушення статті 8 Конвенції (право на повагу до приватного і сімейного
+життя).
+
+Рішення в цій справі ухвалене Комітетом 12 вересня 2024 року та є остаточним.
+
+## 40   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+[PINDO MULLA v. Spain [GC]](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2215541/20%22%5D%7D) (№ 15541/20)
+
+Обставини справи
+
+Справа стосувалася скарги заявниці на порушення її права за статтею 8
+Конвенції у світлі статті 9 з огляду на здійснене їй переливання крові під час
+невідкладної хірургічної операції всупереч заздалегідь оформленій заявницею
+відмові від такого виду медичного втручання за буд-якої ситуації. Заявниця
+належала до релігійної громади Свідків Єгови. У 2017 році, після того, як їй
+порадили зробити операцію, вона згідно з відповідним національним
+
+законодавчим положенням склала та  зареєструвала попереднє розпорядження
+(documento de instrucciones previas) і видала постійну довіреність. Кожен
+з документів фіксував її відмову від переливання крові в будь-якому вигляді
+в будь-якій медичній ситуації, навіть якщо її життю загрожує небезпека,
+і що вона погодиться на будь-яке медичне лікування, яке не передбачає
+використання крові. Окрім того, заявниця подала попереднє розпорядження
+до відповідного реєстру міст Кастилія та Леону (the Register of Advance Directives
+of Castile and Leon). З невідомих Суду причин воно не було фізично додане
+до медичної справи заявниці в лікарні Soria.
+
+У 2018 році вона потрапила до місцевої лікарні з серйозною внутрішньою
+кровотечею. Коли їй запропонували переливання крові, вона підписала
+інформовану згоду, відмовившись від такого лікування. Тому її перевели
+до лікарні Soria в Мадриді, яка, як відомо, пропонує методи лікування, що не
+передбачають переливання крові.
+
+Зважаючи на тяжкість стану заявниці, лікарі мадридської лікарні терміново
+звернулися факсом до чергового судді з проханням надати інструкції щодо дій
+після її прибуття. Вони вказали, що заявниця є свідком Єгови, що вона усно
+висловила свою відмову від усіх видів лікування і що її стан після прибуття буде
+дуже нестабільним. Суддя, який не знав ані особи заявниці, ані її точних побажань,
+надав дозвіл на всі медичні та хірургічні процедури, необхідні для порятунку її
+життя і фізичної цілісності. Розглядаючи ситуацію як надзвичайну, в лікарні не
+дотрималися звичайного протоколу надання згоди. Заявниці було проведено
+хірургічне втручання та переливання еритроцитів: її не було повідомлено ані про
+рішення, ані про заплановану операцію.
+
+Рішення чергового судді було залишено апеляційним судом без змін,
+а подальша скарга заявниці за процедурою amparo була визнана
+Конституційним Судом неприйнятною.
+
+4 липня 2023 року одна з Палат ЄСПЛ відмовилася від юрисдикції
+на користь Великої Палати ЄСПЛ.
+
+## 41   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+Оцінка Суду
+
+(1) Правова характеристика справи
+
+У цій справі два окремих права, на які посилалася заявниця – право
+на повагу до приватного життя і право на свободу думки, совісті та релігії, були
+дуже тісно переплетені: бажання заявниці щодо лікування її хвороби ґрунтувалися
+на її відданості відповідному вченню її релігійної громади. Оскільки основне
+питання стосувалося автономії та самовизначення пацієнта щодо медичного
+лікування, справа підлягала розгляду в аспекті «приватного життя»,
+передбаченому статтею 8 Конвенції, яка тлумачилася і застосовувалася у світлі
+статті 9 Конвенції.
+(2) Попередні зауваження
+
+Ця справа відрізнялася від попередніх справ, які також стосувалися питань
+поваги до особистої автономії та відмови у наданні медичної допомоги. Оскільки
+заявниця бажала вилікуватися від своєї хвороби та була готова прийняти будьяке відповідне лікування за умови відмови від переливання крові, цю справу слід
+відрізняти від тих, що стосувалися бажання особи покласти край своєму життю.
+Проте, загальні принципи, викладені в рішеннях у деяких з цих справ, не були
+позбавлені актуальності для цієї справи. Ця справа також відрізнялася від тих,
+що стосувалися спорів про лікування дитини або відмову від життєво
+необхідного лікування дитини, в яких питання забезпечення найкращих інтересів
+дитини-пацієнта було першочерговим питанням розгляду. З урахуванням умов
+системи громадського здоров’я, ця справа відрізнялася від справ, пов&#x27;язаних
+з лікуванням осіб, позбавлених волі, які, таким чином, перебували під контролем
+і відповідальністю Держави, чи то в контексті кримінального права, чи то
+в контексті охорони психічного здоров&#x27;я. Відмова заявниці від переливання крові
+також не була пов&#x27;язана з прямим ризиком для здоров&#x27;я третіх осіб.
+
+Зрештою ЄСПЛ урахував відповідні норми міжнародного права, застосовні
+у відносинах між сторонами, зокрема, відповідні положення Конвенції про захист
+прав і гідності людини щодо застосування біології та медицини: Конвенція про
+[права людини та біомедицину (Конвенція Ов’єдо), ратифікованої Державою-](https://rm.coe.int/168007cf98)
+відповідачем.
+
+(3) Втручання у право заявниці на повагу до приватного життя
+
+Медичні працівники лікарні в місті Мадрид оцінили, що після прибуття
+до їхнього закладу заявниця опиниться у невідкладній ситуації, яка загрожувала
+її життю, і що для того, щоб вижити, вона потребувала хірургічного втручання,
+яке, ймовірно, вимагало переливання крові. У зв&#x27;язку з цим ЄСПЛ роз&#x27;яснив,
+що в його функції не входить ставити під сумнів оцінку стану здоров&#x27;я заявниці
+медичними працівниками або їхні рішення щодо лікування, яке має бути надане:
+
+## 42   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+фактично, заявниця не оскаржувала обґрунтованість цих оцінок або рішень
+в жодному національному суді. Втручанням у цій справі, як стверджувалося
+на національному рівні, було рішення чергового судді, яке повинно розглядатися
+в тому правовому та фактичному контексті, в якому воно було прийнято. Крім
+того, враховуючи важливість процесуальних гарантій, передбачених статтею 8
+Конвенції, ЄСПЛ розглянув, як було ініційовано процес прийняття рішення, як він
+був проведений та переглянутий для того, щоб з&#x27;ясувати, чи продемонстрував він
+у цій справі достатню повагу до автономії заявниці.
+
+(4) Виправданість втручання
+(a) Законність і мета втручання
+
+Втручання відповідало національному законодавству і переслідувало мету
+«захисту здоров&#x27;я».
+
+(b) Необхідність втручання
+(i) Відповідні принципи судової практики
+
+Як раніше зазначав ЄСПЛ, свобода приймати або відмовлятися від
+конкретного медичного лікування є життєво важливою для самовизначення
+та особистої автономії. Повнолітній дієздатний пацієнт може вільно приймати
+рішення про операцію або медичне лікування, включаючи переливання крові. За
+відсутності необхідності захищати третіх осіб, Держава повинна утримуватися від
+втручання у свободу вибору особи щодо медичної допомоги. З огляду на те,
+що заявниця була визнана такою, що перебувала під загрозою неминучої
+небезпеки для свого життя, необхідно було також взяти до уваги принципи, які
+ЄСПЛ вивів відповідно до статті 2 Конвенції щодо позитивного зобов&#x27;язання
+Держав захищати пацієнтів. Паралельний обов&#x27;язок випливає зі статті 8
+Конвенції щодо фізичної недоторканності пацієнтів.
+
+Крім того, ЄСПЛ підкреслив необхідність надійних правових та інституційних
+гарантій у відповідному процесі прийняття рішень для забезпечення того, щоб
+рішення з такими наслідками було чітким, недвозначним, вільним
+та усвідомленим. Особа повинна дійсно усвідомлювати наслідки того, про
+що вона просить, і бути захищеною від тиску та зловживань.
+
+(ii) Узгодження прав і обов&#x27;язків, передбачених Конвенцією
+
+ЄСПЛ ще не мав можливості розглянути, як у надзвичайній ситуації
+автономія пацієнта повинна бути узгоджена з його правом на життя. У зв&#x27;язку
+з цим він підтвердив позицію, викладену у своїй попередній практиці щодо
+автономії пацієнта, а саме, що у звичайному контексті охорони здоров&#x27;я зі статті
+8 Конвенції випливає, що дієздатний повнолітній пацієнт має право вільно
+і свідомо відмовитися від медичного лікування, незважаючи на дуже серйозні,
+
+## 43   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+навіть смертельні наслідки, які може мати таке рішення. Повага до права
+пацієнта давати або не давати згоду на лікування є фундаментальним
+принципом у сфері охорони здоров&#x27;я. Це право, однак, не можна тлумачити
+в абсолютних термінах; право на повагу до приватного життя, будучи ширшим
+правом, яке охоплює автономію пацієнта, є правом обмеженим, і, таким чином,
+здійснення будь-якого з його аспектів може бути обмежене відповідно до пункту
+2 статті 8 Конвенції.
+
+У ситуації, пов&#x27;язаній з реальною і неминучою небезпекою для існування
+людини, право на життя, передбачене статтею 2 Конвенції, також буде діяти
+в тандемі з правом особи самостійно приймати рішення про медичне лікування.
+З точки зору Держави, її обов&#x27;язки щодо забезпечення дотримання обох цих прав
+також будуть виконані.
+
+ЄСПЛ зазначив, що, хоча суспільний інтерес у збереженні життя
+або здоров&#x27;я пацієнта повинен поступатися інтересу пацієнта керувати своїм
+власним життям, справжність відмови від медичного лікування є законним
+питанням, враховуючи, що на карту поставлено здоров&#x27;я і, можливо, саме життя
+пацієнта. Необхідно переконатися, що в екстреній ситуації рішення про відмову
+від життєво необхідного лікування було прийнято вільно і самостійно особою
+з необхідною дієздатністю, яка усвідомлювала наслідки свого рішення. Також
+необхідно забезпечити, щоб рішення – про існування якого повинен знати
+медичний персонал – відповідало обставинам, що склалися, в тому сенсі,
+що воно має бути чітким, конкретним і недвозначним у відмові від лікування
+і відображати поточну позицію пацієнта з цього питання.
+
+Звідси випливало, що якщо в екстрених ситуаціях існували обґрунтовані
+підстави сумніватися в рішенні особи в будь-якому з цих істотних аспектів, це не
+могло вважатися неповагою до її особистої автономії щодо продовження
+невідкладного лікування, яке рятує життя. Ця позиція повністю узгоджується
+[зі статтею 8 Конвенції Ов&#x27;єдо. З неї також випливає, що необхідно докласти](https://rm.coe.int/168007cf98)
+розумних зусиль, щоб розвіяти сумніви або невизначеність, пов&#x27;язані з відмовою
+в лікуванні. Як ЄСПЛ вже раніше зазначав, хоча і в іншому контексті, побажання
+пацієнта повинні розглядатися як такі, що мають першочергове значення. Те,
+що є «розумними зусиллями», обов&#x27;язково залежатиме від обставин справи,
+а також від змісту національної правової бази. Якщо, незважаючи на розумні
+зусилля, лікар або суд, залежно від обставин, в необхідному обсязі не зміг
+встановити, що воля пацієнта дійсно полягала у відмові від життєво необхідного
+лікування, обов&#x27;язок захистити життя пацієнта шляхом надання необхідної
+медичної допомоги повинен переважати.
+
+[Відповідні міжнародні документи (зокрема, Конвенція Ов&#x27;єдо) відображають](https://rm.coe.int/168007cf98)
+як складність, так і делікатність запровадження та функціонування системи
+попередніх медичних розпоряджень. Хоча головні інституції Ради Європи зайняли
+
+## 44   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+позицію на підтримку таких розпоряджень, враховуючи їх необов&#x27;язковий
+характер, ці позиції передбачають значну свободу розсуду для Держав щодо
+статусу та умов застосування таких інструментів. Як показало порівняльне
+дослідження, проведене для цієї справи, хоча значна кількість Держав-членів
+Ради Європи мають конкретні положення і механізми для попередніх медичних
+розпоряджень або для врахування раніше висловлених побажань, вони не
+роблять це в однаковий спосіб. Тому виявляється, що в Європі існує
+різноманітна практика, коли мова йде про умови узгодження, наскільки це
+можливо, права на життя і права на повагу до автономії пацієнта шляхом
+врахування раніше висловлених побажань. Таким чином, ЄСПЛ виснував, що як
+принцип надання обов&#x27;язкової юридичної сили попереднім медичним
+розпорядженням, так і пов&#x27;язані з ним формальні та практичні умови,
+перебувають в межах свободи розсуду Договірних Держав.
+
+(iii) Застосування вищезазначених принципів і міркувань до даної справи
+
+[У справі Reyes Jimenez v. Spain ЄСПЛ вже розглядав положення відповідного](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2257020/18%22%5D%7D)
+національного законодавства, що регулюють надання згоди, і зазначив, що вони
+повністю відповідають кореспондуючим [положенням Конвенції](https://rm.coe.int/168007cf98) Ов&#x27;єдо.
+Національна нормативно-правова база щодо попередніх медичних розпоряджень
+виявилася добре розробленою і ґрунтувалася на відповідних положеннях
+і принципах вищезгаданої Конвенції щодо автономії пацієнта. Вона є розумним
+балансом законодавця між основними правами пацієнтів, кореспондуючими
+обов&#x27;язками Держави та вагомими суспільними інтересами. Існує також значна
+схожість між практикою ЄСПЛ та Конституційного Суду, зокрема, у визнанні
+права дієздатного пацієнта на відмову від певної форми медичного лікування
+в тому числі якщо це може призвести до смертельного результату. Крім того,
+конституційна судова практика підтвердила необхідність обґрунтування
+призначення медичного лікування проти волі пацієнта з посиланням
+на принципи необхідності, пропорційності та поваги до суті автономії пацієнта.
+
+Крім того, ЄСПЛ зазначив, що вимога про надання згоди на відмову від
+лікування в письмовій формі per se не суперечить статті 8 Конвенції, яка не
+передбачає жодної конкретної форми згоди.
+
+Держава-відповідач вирішила надати обов&#x27;язкової сили попереднім
+медичним розпорядженням і вжила конкретних практичних заходів для
+забезпечення того, щоб інструкції, надані пацієнтами, були відомі
+та виконувалися в системі охорони здоров&#x27;я на всій національній території.
+ЄСПЛ підкреслив, що там, де така система була створена (що є вибором Держави
+в межах її свободи розсуду) і на неї покладаються пацієнти, які правильно нею
+користуються, важливо, аби вона ефективно функціонувала і досягала своєї
+
+мети.
+
+## 45   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+Ключовою особливістю цієї справи було залучення чергового судді, що є
+стандартною практикою для лікарні в місті Мадриді, коли йдеться про пацієнта,
+який відмовляється від переливання крові. ЄСПЛ визнав важливу роль, яку суди
+можуть відігравати у вирішенні спорів або наданні правових рекомендацій щодо
+медичного лікування. Однак, переваги прийняття судових рішень з делікатних
+питань, що виникають у складних обставинах, обов&#x27;язково залежать від
+інформації, яка була надана або може бути отримана особою, яка приймає
+рішення.
+
+Заява лікарів до чергового судді містила дуже обмежену, але також неточну
+інформацію, оскільки в ній зазначалося, що заявниця відмовилася від «усіх видів
+лікування» і що її відмова була усною. Це давало підстави вважати, і саме так це
+зрозумів черговий суддя, що відмова заявниці була лише усною. Двоє посадових
+осіб, з якими зв&#x27;язався черговий суддя, а саме судовий лікар і місцевий
+прокурор, у своїй оцінці ситуації також виходили з припущення, що це було саме
+так. Відсутність ключової інформації про документування побажань заявниці, які
+були зафіксовані в різних формах і в різний час у письмовій формі, мала
+визначальний вплив на прийняття рішення щодо лікування заявниці. У системі,
+в якій відмова від медичного лікування повинна бути виражена в письмовій
+формі, ця прогалина була суттєвою. Оскільки ні заявниця, ні будь-хто з її близьких
+не знав про рішення, прийняте черговим суддею, виправити це упущення було
+неможливо навіть теоретично.
+
+З огляду на обставини та ступінь невідкладності справи практична
+можливість залучити заявницю до участі у вирішальній стадії процесу – розгляді
+справи черговим суддею – була значно зменшена. Це також суттєво обмежило
+можливості чергового судді проводити будь-які подальші розслідування фактів
+ситуації. Це зробило ще більш важливим надання особі, яка приймає рішення,
+адекватного фактичного підґрунтя для прийняття рішення, яке, так чи інакше,
+мало дуже великі наслідки для заявниці.
+
+Крім того, мова йшла про право дієздатного пацієнта самостійно приймати
+рішення щодо свого здоров&#x27;я. Це, очевидно, охоплює свободу змінювати своє
+рішення так само як і залишати його без змін. Питання про те, чи мала заявниця
+таку можливість, було вирішальним з огляду на те, що існувало письмове
+медичне розпорядження, яке гарантувало, що її відмова від переливання крові
+залишиться в силі у випадку, якщо вона не зможе прийняти таке рішення
+у відповідний момент часу згідно з іспанським законодавством. Однак це
+питання не було висвітлене перед суддею з самого початку. Хоча судовий лікар
+згадав про нього під час розгляду заяви, воно не було прямо розглянуто
+в рішенні. Скоріше, на нього було дано непряму негативну відповідь, оскільки
+було надано дозвіл безпосередньо приступити до необхідного лікування без
+необхідності отримання згоди. ЄСПЛ також зауважив, що нічого не було сказано
+
+## 46   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+про гарантії національного законодавства у випадку, коли згода пацієнта не може
+бути отримана, тобто про консультації, якщо дозволяють обставини, з родичами
+або особами, які мають de facto зв&#x27;язки з пацієнтом. Також не було зроблено
+жодного такого кроку після повідомлення лікарні про прийняте рішення.
+
+Відзначаючи, що будь-яка оцінка рішення повинна враховувати обмеження,
+притаманні формі провадження, і терміновість, в якій воно повинно було
+проводитися, ЄСПЛ вважав, що за цих обставин вичерпне юридичне
+обґрунтування було неможливим. З точки зору Конвенції та застосовних
+принципів, обґрунтування рішення чітко вказувало на важливість захисту права
+на життя, тоді як важливість поваги до права пацієнта самостійно приймати
+рішення про медичне лікування меншою мірою була розглянута. Посилаючись
+на фатальні наслідки, які могли б настати у разі відмови у лікуванні, було надано
+беззастережний дозвіл на надання заявниці будь-якого лікування, яке було
+необхідним для її порятунку. По суті, це рішення передало право приймати
+рішення з моменту його винесення від заявниці до лікарів. Подальший розгляд
+справи не приділив належної уваги вищезазначеним питанням.
+
+ЄСПЛ повністю усвідомлював, що дії, вчинені в день, про який йде мова,
+персоналом обох лікарень, були мотивовані першочерговим прагненням
+забезпечити ефективне лікування пацієнта, який перебував під їхнім наглядом,
+відповідно до найфундаментальніших норм медичної професії. Він не ставив під
+сумнів їхні оцінки щодо тяжкості стану заявниці на той час, невідкладності
+необхідності її лікування, медичних можливостей, доступних за тих обставин,
+або того, що життя заявниці було врятовано того дня. Однак не можна
+стверджувати, що національна система адекватно відреагувала на скаргу
+заявниці про те, що її побажання були неправомірно відхилені. Виявлені недоліки
+вказували на те, що оскаржуване втручання було результатом процесу
+прийняття рішень, який, як він відбувся у цій справі, не забезпечив достатньої
+поваги до автономії заявниці, захищеної статтею 8 Конвенції, яку вона хотіла
+реалізувати, щоб дотримуватися важливого вчення своєї релігії.
+
+Висновок
+
+Порушення статті 8 Конвенції (право на повагу до приватного і сімейного
+життя) у поєднанні зі статтею 9 Конвенції (свобода думки, совісті і релігії).
+
+Рішення в цій справі ухвалене Великою Палатою 17 вересня 2024 року та є
+
+остаточним.
+
+## 47   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+[S.V.M. v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-235612) (№ 40106/15)
+
+Обставини справи
+
+Справа стосувалася стверджуваного незаконного та необґрунтованого
+розголошення інформації про судимість заявника у довідці про несудимість.
+
+20 лютого 2012 року УМВС України у Львівській області на запит заявника
+надало довідку про несудимість, у якій зазначалося: «Відповідно до статті 89
+Кримінального кодексу С.В.М. вважається таким, що не має судимості...».
+
+Заявник просив вилучити посилання на статтю 89 Кримінального кодексу,
+що встановлює умови, за яких судимість може бути знята з особи, яка її має.
+Заявник стверджував, що йому потрібна ця довідка для пошуку роботи,
+і що посилання на статтю 89 зробить очевидним для будь-кого, хто її читатиме,
+що він колись був засуджений. Це поставило б його в несправедливо невигідне
+становище на ринку праці. Орган внутрішніх справ відмовив в клопотанні
+заявника з посиланням на наказ від 23 серпня 2002 року № 823/188, виданий
+спільно Міністерством внутрішніх справ і Державним департаментом з питань
+
+виконання покарань.
+
+Заявник звернувся до суду з позовом до органу міліції, вимагаючи видати
+наказ, який би зобов&#x27;язав останню внести зміни до довідки. Він стверджував,
+що довідка, про яку йде мова, містила конфіденційну інформацію, розголошення
+якої в контексті пошуку ним роботи не було необхідним і ставило його
+в несправедливо невигідне становище порівняно з особами, які ніколи не були
+засуджені. Він також стверджував, що це розголошення порушило статтю 32
+Конституції та статтю 14 Закону про захист персональних даних, яка дозволяє
+розкриття персональної інформації третім особам без згоди суб&#x27;єкта даних лише
+у випадках, коли таке розкриття прямо вимагається законом. Він стверджував,
+що ні пункт 9.9., ні будь-яка інша частина Наказу № 823/188 не містили жодних
+положень, які б вимагали розкриття інформації про погашену судимість.
+
+6 липня 2012 року Львівський окружний адміністративний суд відхилив
+позов заявника, зазначивши, зокрема, що міліція діяла відповідно до пункту 9.9
+наказу № 823/188. Суд також зазначив, що, оскільки заявник сам запросив
+довідку і вона була вручена йому особисто, міліцію не можна звинувачувати
+в тому, що вона передала його дані третім особам всупереч чинному
+законодавству, і що заявник не мав права вимагати внесення будь-яких змін
+
+до тексту.
+
+14 травня 2015 року Львівський апеляційний адміністративний суд відхилив
+апеляційну скаргу заявника, підтримавши висновки й обґрунтування суду нижчої
+інстанції.
+
+Скарга заявника до суду касаційної інстанції також не мала успіху.
+
+## 48   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+18 травня 2022 року у відповідь на інформаційний запит Урядового
+уповноваженого у справах ЄСПЛ Міністерство внутрішніх справ надало лист,
+у якому пояснило, що з 2012 року відповідна нормативно-правова база зазнала
+змін. Зокрема, новий наказ Міністерства (від 30 березня 2022 року № 207)
+дозволив суб&#x27;єктам даних запитувати повну або скорочену версію довідки про
+несудимість, залежно від мети, для якої вона запитувалася.
+
+Посилаючись на статтю 8 Конвенції заявник скаржився, що довідкою
+працівників міліції про несудимість свавільно та без необхідності було
+розголошено делікатну інформацію стосовно його погашеної судимості.
+
+Оцінка Суду
+
+Стаття 8 Конвенції
+
+Уряд стверджував про невичерпання національних засобів юридичного
+захисту. Він зауважив, що заявник міг оскаржити відображені дані про його
+судимість в інформаційній системі органів внутрішніх справ або порушити
+антидискримінаційне провадження проти будь-якого потенційного роботодавця,
+який відмовив йому у працевлаштуванні на підставі його минулої судимості.
+Уряд підкреслив, що не було жодних правових підстав для того, щоб відрізняти
+ситуацію заявника в контексті пошуку роботи від ситуації осіб, які ніколи не були
+засуджені. Стверджуючи, що посилання на статтю 89 КК у зазначеній довідці не
+становило втручання у права заявника за статтею 8 Конвенції, він утримався від
+будь-яких подальших коментарів по суті скарги заявника.
+
+ЄСПЛ вважав, що заявник належним чином виклав у національних судах
+суть своєї скарги, яка стосувалася конкретного формулювання у довідці органів
+внутрішніх справ про яку йдеться. Він погодився з його аргументом, поданим
+у відповідь на зауваження Уряду, про те, що запропоновані ним засоби
+юридичного захисту не стосувалися суті його скарги. Тому ЄСПЛ відхилив
+заперечення Уряду щодо невичерпання засобів юридичного захисту. Він також
+вважав, що ця скарга не була явно необґрунтованою в розумінні підпункту «а»
+пункту 3 статті 35 Конвенції та не була неприйнятною з будь-яких інших підстав,
+і оголосив її прийнятною.
+
+Як зазначив ЄСПЛ, сторони не заперечували, що спосіб, у який було
+сформульовано інформацію у довідці про несудимість, давав зрозуміти читачеві,
+що заявник раніше був засуджений за вчинення кримінального правопорушення.
+Беручи до уваги принципи, розроблені у відповідній судовій практиці, Суд
+вважав, що розкриття інформації про минуле засудження заявника у довідці про
+несудимість становило обробку чутливих персональних даних про нього
+та становило втручання у його право на повагу до приватного життя, захищене
+[статтею 8 Конвенції (див. M.M. v. the United Kingdom, № 24029/07, §§ 187–90](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2224029/07%22%5D%7D)
+
+## 49   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+та 195, від 13 листопада 2012 року, а також P.T. v. the Republic of Moldova,
+[№ 1122/12, § 28, від 26 травня 2020 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%221122/12%22%5D%7D)
+
+Таким чином, Суд повинен визначити, чи було це втручання виправданим
+відповідно до пункту 2 статті 8 Конвенції (див. Surikov v. Ukraine, № 42788/06,
+[§§ 70–74, від 26 січня 2017 року та L.B. v. Hungary [GC], № 36345/16, § 106,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2236345/16%22%5D%7D)
+9 березня 2023 року).
+
+У зв&#x27;язку із цим Суд повинен оцінити, по-перше, чи було втручання
+[«законним» (див. Surikov v. Ukraine, заява № 42788/06, §§ 71–72, від 26 січня 2017](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2242788/06%22%5D%7D)
+року). Суд зазначив, що в національному провадженні заявник стверджував,
+що міліція порушила статтю 32 Конституції та статтю 14 Закону про захист
+персональних даних, які вимагають згоди особи на розкриття особистої
+інформації, за винятком випадків, коли таке розкриття прямо вимагається
+законом. Ані національні органи, які розглядали цей аргумент на національному
+рівні, ані Уряд у своїх зауваженнях до Суду не посилалися на жодний
+законодавчий акт, який би вимагав від міліції розкривати інформацію про минулі
+судимості за обставин справи заявника. Єдине нормативне положення, на яке
+покликалися органи влади у зв&#x27;язку із цим – п. 9.9 наказу № 823/188, який
+вимагав від міліції видавати довідки з урахуванням вимог статті 89 КК. Навіть
+якщо припустити, що цей наказ може кваліфікуватися як «закон» для цілей
+статті 32 Конституції та розділу 14 Закону про захист персональних даних, Суд не
+міг виявити жодного елементу, який би вказував на те, що вищезгадане
+положення, сформульоване в дуже загальних рисах, вимагало розкриття
+інформації про судимості, що були зняті або погашені. Тому Суд не міг дійти
+висновку, що посилання на погашену судимість заявника у довідці про
+несудимість, про яку йдеться, мало достатню підставу в застосовному
+[законодавстві (див. Radu v. the Republic of Moldova, № 50073/07, §§ 30–32, від](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2250073/07%22%5D%7D)
+15 квітня 2014 року).
+
+Однак у цій справі Уряд не висловився щодо існування такої законної мети
+або необхідності втручання, на яке скаржився заявник. ЄСПЛ, у свою чергу,
+зазначив, що довідка, яку запитував заявник для використання у зв&#x27;язку
+з пошуком роботи, була сформульована таким чином, що розкривала наявність
+у нього судимості, але не містила жодних деталей, які могли б мати відношення
+до процесу прийняття рішення про працевлаштування, таких як характер, вид
+або дата правопорушення. З наявних матеріалів ЄСПЛ не міг з&#x27;ясувати, яким
+чином розкриття цієї конкретної інформації у запитуваних довідках, що могло
+вимагатися у різних ситуаціях, коли погашена судимість заявника не мала
+очевидного значення, переслідувало будь-яку із законних цілей, перелічених
+у пункті 2 статті 8 Конвенції, чи відповідало будь-якій нагальній суспільній потребі
+або забезпечувало справедливий баланс між правами заявника за статтею 8
+Конвенції та інтересами будь-якої третьої сторони знати про його минулу
+
+## 50   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+судимість, яка, відповідно до вимог національного законодавства, вже була
+погашена (див. P.T. v. the Republic of Moldova, згадане вище, §§ 29–32).
+
+З матеріалів Уряду вбачалося, що після подій, які стали підставою для подачі
+цієї заяви, Міністерство внутрішніх справ переглянуло відповідну політику.
+Відповідно до наказу № 207, виданого у 2022 році, суб&#x27;єкти даних тепер
+користуються більшою гнучкістю у визначенні обсягу інформації, включеної
+до довідки про несудимість, залежно від мети їхнього запиту.
+
+ЄСПЛ позитивно відзначив загальні зусилля Уряду щодо вдосконалення
+національної системи захисту даних у цій сфері. Водночас він наголосив,
+що подальші реформи не мали жодного впливу на особисту ситуацію заявника,
+викладену в згаданій заяві. Таким чином, стосовно заявника було порушено
+статтю 8 Конвенції.
+
+Висновок
+
+Порушення статті 8 Конвенції (право на повагу до приватного і сімейного
+життя).
+
+Рішення в цій справі ухвалене Комітетом 12 вересня 2024 року та є остаточним.
+
+## 51   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+СТАТТЯ 1 ПЕРШОГО ПРОТОКОЛУ ДО КОНВЕНЦІЇ (ЗАХИСТ ВЛАСНОСТІ)
+
+[MELANDRI v. San Marino](https://hudoc.echr.coe.int/eng?i=001-235896) (№ 25189/21)
+
+Обставини справи
+
+Справа стосувалася скарги за пунктами 1 та підпунктами «а» та «b» пункту
+3 статті 6 Конвенції у зв&#x27;язку з кримінальним провадженням проти заявника
+за відмивання коштів, а також скарги щодо подальшої конфіскації його майна
+за статтею 1 Першого протоколу до Конвенції.
+
+28 листопада 2012 року Агентство фінансової розвідки (далі – FIA)
+повідомило слідчого суддю про потенційно незаконні банківські операції
+заявника та L.C. у B.C. S.p.a. – банку Сан-Марино.
+
+У період з 2 вересня 2009 року по 17 березня 2010 року заявник поклав
+на свій банківський рахунок 4,865,830 євро (EUR) готівкою та чеками на суму
+близько 500 000 євро.
+
+Тим часом L. C., якого заявник представив банку, також відкрив поточний
+рахунок у банку на ім’я виноробної компанії O. (далі – компанія О.), єдиним
+директором якої він був. У період з 20 жовтня 2010 року по 22 грудня 2010 року
+на рахунок цієї компанії було перераховано 310 000 євро від компанії A. G., яка
+була пов’язана із заявником.
+
+FIA поінформувало, що з повідомлень у ЗМІ в червні 2012 року стало
+відомо, що в результаті розслідування під назвою «Операція Баккус» [«Operation
+Baccus»], яке проводилося, inter alia, Управлінням Барі по боротьбі з мафією (the
+Bari Anti-Mafia District Directorate, Італія), заявник разом з L. C. були піддані
+заходам, що обмежують особисту свободу. Заявник та інші особи були
+звинувачені в Італії у вчиненні низки злочинів, включаючи відмивання коштів,
+змову з метою вимагання, лихварство та шахрайство проти Держави, через
+низку фіктивних операцій у виноробному секторі. Незаконна діяльність мала
+на меті в кінцевому підсумку ввести в оману італійські податкові органи
+та Європейський Союз.
+
+22 листопада 2013 року слідчий суддя, на підставі доказів, отриманих
+в рамках міжнародної правової допомоги, пред&#x27;явив заявнику та L. C.
+обвинувачення у відмиванні коштів за статтею 199 bis Кримінального кодексу,
+розпорядившись про накладення превентивного арешту на поліс страхування
+життя з єдиним страховим внеском, укладеного у компанії C.S.A. S.p.a., на який
+були переведені цінні папери та суми на загальну суму приблизно 6 800 000 євро,
+на рахунок у банку CIS, на якому знаходилося 480 євро, а також на будь-який
+інший рахунок, що міг бути пов&#x27;язаний із заявником, у будь-якій іншій фінансовій
+установі в Сан-Марино.
+
+## 52   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+Заявнику було висунуто офіційні обвинувачення 9 грудня 2014 року.
+Відповідно до обвинувального акта слідчого судді від 17 квітня 2015 року,
+заявник звинувачувався в переказі та приховуванні коштів, отриманих
+злочинним шляхом, через різні банківські операції.
+
+Вироком судді суду першої інстанції (Commissario della Legge) від
+10 січня 2019 року заявника було визнано винним у відмиванні коштів,
+переведенні та приховуванні коштів незаконного походження, за обома
+обвинуваченнями, враховуючи триваючий характер злочинів у сукупності, й суд,
+схиляючись до мінімальної міри покарання вирішив призначити заявникові
+покарання у вигляді позбавлення волі до 4 років і 6 місяців. Крім того, відповідно
+до статті 147 КК суддя розпорядився про конфіскацію раніше арештованого
+майна, а також нарахованих на нього відсотків.
+
+Суддя першої інстанції вважав, що заявник був залучений до різних
+кримінальних проваджень, пов&#x27;язаних з економічними злочинами, які принесли
+значні суми грошей (мільйони євро). Обставини справи, в тому числі строки
+та використані методи, свідчили про те, що кошти, якими володів заявник, були
+отримані в результаті таких правопорушень. Цих доказів (prove logiche) було
+достатньо, щоб переконати суддю, як того вимагає національна практика,
+незалежно від встановлення вини у вчиненні цих предикатних злочинів.
+Національний суд вважав, що не можна ігнорувати той факт, що заявник був
+причетний до організованої злочинності протягом декількох років
+і що на депозити було покладено готівку, що є типовим для осіб, які бажають
+приховати походження коштів. Таким чином, поведінка заявника становила склад
+злочину, передбаченого статтею 199 bis КК, і такі елементи злочину, як об’єктивна
+сторона та прямий умисел були встановлені.
+
+Розглянувши апеляцію заявника 6 листопада 2020 року Апеляційний суд
+залишив у силі обвинувальний вирок за першим пунктом обвинувачення, при
+цьому змінивши підстави його постановлення. Зокрема, він вважав, що заявник
+дійсно вчинив злочин з відмивання коштів, який, проте, підлягав кримінальному
+переслідуванню у цій справі, оскільки Закон № 99/2010 вже передбачав,
+що відповідний виняток, передбачений статтею 199 bis КК, не застосовується
+до предикативного (основного) злочину – виготовлення фальшивих рахунківфактур. Суддя апеляційного суду також виправдав заявника за другим
+обвинуваченням, не погодившись з висновком суду першої інстанції з огляду
+на причини виправдання співучасника, а саме на відсутності доказів
+продовження існування злочину після внесення змін у 2013 році). У будь-якому
+випадку, навіть за умови правильного підґрунтя, яке було застосоване в апеляції,
+кошти, про які йшлося у другому обвинуваченні, були скоріше засобом вчинення
+злочину, а не прибутком, і саме з цієї причини обидва обвинувачені повинні були
+бути виправдані. Як наслідок, суд переглянув та призначив покарання, inter alia,
+
+## 53   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+у вигляді 4 років і 3 місяців позбавлення волі. Решта вироку була залишена без
+змін.
+
+Посилаючись на пункт 1 та підпункти «a» та «b» пункту 3 статті 6 Конвенції
+й на статтю 1 Першого протоколу до Конвенції, заявник скаржився, зокрема,
+на те, що він не мав можливості захистити себе, оскільки його звинуватили
+у відмиванні коштів [money laundering], а не у відмиванні власних коштів [selflaundering], а також на те, що рішення про конфіскацію не було пропорційним.
+
+Оцінка Суду
+
+В контексті скарги за пунктом 1 та підпунктами «a» та «b» пункту 3 статті 6
+Конвенції основний аргумент заявника полягав в тому, що він не знав про
+правову кваліфікацію відповідних суттєвих фактів, оскільки вважав, що існувала
+різниця між відмиванням коштів [money laundering] і відмиванням власних коштів
+
+[self-laundering], хоча вони і охоплювалися однією й тією ж нормою (стаття 199
+bis КК).
+
+По-перше, ЄСПЛ зазначив, що стаття 199 bis КК стосувалася злочину
+відмивання коштів [money laundering]. Однак, згідно зі статтею 199 bis КК
+(у редакції до 2013 року), особа, яка вчинила основний злочин (який призвів
+до отримання активів, що в кінцевому підсумку були відмиті), могла
+скористатися застереженням про виключення з обвинувачення відмивання
+[коштів (див. Staiano v. San Marino (ухв.), № 75201/16, § 58, 3 вересня 2019 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2275201/16%22%5D%7D)
+Як стверджував Уряд та визнав Апеляційний суд, вже до 2013 року це
+застереження не застосовувалося до «видачі, використання або випуску
+рахунків-фактур або інших документів за вигадані операції або послуги»
+відповідно до статті 1 (f) Закону № 99/2010 (що також визнав заявник у своїй
+заяві). ЄСПЛ погодився, що в правовій системі Сан-Марино, хоча юридична
+термінологія може відсилати до «відмивання» та «відмивання власних коштів»,
+як стверджував Уряд, злочин, передбачений статтею 199 bis КК, залишається
+одним і тим самим, незалежно від будь-яких винятків, які можуть з&#x27;явитися через
+те ж саме положення або інші закони, що впливають на це положення. Таким
+чином, ЄСПЛ не міг погодитися з аргументом заявника про те, що така ситуація
+створила двозначність, яка унеможливлює захист (пункт 51 рішення).
+
+З огляду на це заявник був детально поінформований про характер
+та причини пред’явлених йому обвинувачень, що дало йому достатній час
+та можливості підготувати належний захист. ЄСПЛ відхилив скаргу заявника
+за пунктом 1 та підпункти «a» та «b» пункту 3 статті 6 Конвенції (пункти 53–54
+рішення).
+
+Щодо скарги за статтею 1 Першого протоколу до Конвенції, то ЄСПЛ,
+з посиланням на свою практику нагадав, що захід конфіскації, навіть якщо він
+
+## 54   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+передбачає позбавлення майна, однак, є контролем за використанням майна
+у значенні другого пункту статті 1 Першого протоколу до Конвенції (див. рішення
+у справах Air Canada v. the United Kingdom, 5 травня 1995 року, § 34, Series A
+[№ 316-A, § 34; Silickienė v. Lithuania, № 20496/02, § 62, 10 квітня 2012 року,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2220496/02%22%5D%7D)
+[§ 62; S.A. Bio d’Ardennes v. Belgium, № 44457/11, § 48, 12 листопада 2019 року, § 48;](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2244457/11%22%5D%7D)
+[та Markus v. Latvia, № 17483/10, § 70, 11 червня 2020 року). Однак у деяких](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2217483/10%22%5D%7D)
+випадках, коли конфіскація передбачала передачу права власності на постійній
+основі, а заявник не мав реальної можливості повернути своє майно, ЄСПЛ
+вважав, що такі заходи були рівнозначні позбавленню власності (див.,
+наприклад, рішення у справах Andonoski v. the former Yugoslav Republic of
+[Macedonia, № 16225/08, § 30, 17 вересня 2015 року; B.K.M. Lojistik Tasimacilik](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2216225/08%22%5D%7D)
+[Ticaret Limited Sirketi v. Slovenia, № 42079/12, § 38, 17 січня 2017 року; та Yașar](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2242079/12%22%5D%7D)
+[v. Romania, № 64863/13, § 49, 26 листопада 2019 року) (пункт 63 рішення).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2264863/13%22%5D%7D)
+
+В обох ситуаціях ЄСПЛ повинен встановити, чи був захід законним
+і «відповідав загальним інтересам», а також чи існував розумний зв&#x27;язок
+пропорційності між застосованими засобами та метою, яку прагнули досягти
+[(див. рішення у справах Džinić v. Croatia, № 38359/13, §§ 61 і 62,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2238359/13%22%5D%7D)
+[17 травня 2016 року, та Gogitidze and Others v. Georgia, № 36862/05, §§ 96 і 97,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2236862/05%22%5D%7D)
+12 травня 2015 року). Характер втручання, переслідувана мета, характер
+порушених майнових прав, а також поведінка заявника і державних органів,
+що втручаються, є одними з основних факторів, що мають істотне значення для
+оцінки того, чи було дотримано при застосуванні оскаржуваного заходу
+необхідного справедливого балансу і, зокрема, чи було накладено
+непропорційний тягар на заявника (див. рішення у справі Karahasanoğlu v. Turkey
+
+[[GC], № 21392/08 та 2 інші, § 149, від 16 березня 2021 року, та Ferhatović v.](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2221392/08%22%5D%7D)
+[Slovenia, № 64725/19, § 43, 7 липня 2022 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2264725/19%22%5D%7D)
+
+ЄСПЛ зазначив, що стосовно законності заходів з конфіскації в Сан-Марино
+він раніше визнавав конфіскацію, за відсутності обвинувальних вироків,
+законною відповідно до частини другої статті 147 КК, на яку посилався Уряд
+[у цій справі (див. Zaghini v. San Marino, № 3405/21, § 59, 11 травня 2023 року,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%223405/21%22%5D%7D)
+[та рішення у справі Balsamo v. San Marino, №№ 20319/17 та 21414/17, §§ 73](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2220319/17%22%5D%7D)
+та 89, 8 жовтня 2019 року), та конфіскації після засудження, які були законними
+відповідно до частини 1 статті 147 та на той час (3), а тепер (10) КК (див. Sofia v.
+[San Marino (ухв.), № 38977/15, § 69, 2 травня 2017 року). У цій справі заявника](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2238977/15%22%5D%7D)
+було визнано винним у відмиванні коштів, отриманих злочинним шляхом,
+у зв&#x27;язку з переказом грошей, вчиненим у період з 10 березня 2011 року
+до 27 грудня 2011 року, дати останнього переказу страхового поліса. Суддя
+апеляційного суду постановив, що ці кошти, або більша їх частина, становили
+особистий прибуток, отриманий заявником в обмін на його участь
+в організованій злочинності. Таким чином, ці суми були визнані такими,
+
+## 55   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+що отримані злочинним шляхом. На додаток, сам заявник визнав,
+що конфісковані гроші були ціною, прибутком або плодом злочину і що єдиною
+можливою правовою підставою для конфіскації у його справі була частина перша
+статті 147 КК. З цього випливало, що у цій справі, враховуючи відповідний
+обвинувальний вирок, було б достатньо визнати, що конфіскація, застосована
+до заявника, відповідала закону, а саме частині першій статті 147 (або частині
+третій у різних її редакціях) (пункт 70 рішення).
+
+Також очевидно, що захід у цій справі мав законну мету, в загальних
+інтересах, а саме боротьбу з відмиванням грошей (див. рішення у справах
+Zaghini, згадане вище, § 60; Sofia, згадане вище, § 70; та Piras v. San Marino (ухв.),
+[№ 27803/16, § 54, 27 червня 2017 року) (пункт 71 рішення).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2227803/16%22%5D%7D)
+
+Стосовно пропорційності, попри відсутність сумнівів конфіскації значної
+суми коштів, національні суди обох інстанцій вважали, що вона була отримана від
+злочину, і встановили, що заявник не зміг довести, що ці суми мали законне
+походження. У зв&#x27;язку з цим, а також щодо процесуальних гарантій, ЄСПЛ
+послався на свій попередній висновок про те, що в кримінальному провадженні
+були дотримані права захисту. Беручи до уваги всі відповідні факти та італійське
+провадження, на думку судді апеляційного суду, відповідні перекази були
+відмиванням коштів (іншими словами, переказ доходів від кримінального
+правопорушення), і ЄСПЛ зазначив, що ці операції відповідали сумам
+(арештованим і, зрештою) конфіскованим. Дійсно, заявник не вказав, які суми
+були конфісковані в надлишку, а також не наводив цього аргументу
+в апеляційній скарзі, попри те, що його вже було визнано винним за цим
+обвинуваченням і застосовано конфіскацію (пункт 72 рішення).
+
+Зокрема, ніщо не свідчило про те, що кошти, згадані в другому
+обвинуваченні, були коли-небудь (вилучені та, зрештою) конфісковані. Так само не
+було жодних ознак того, що конфіскація мала на меті покрити будь-які прибутки,
+отримані у зв&#x27;язку з другим обвинуваченням, за яким заявника було
+виправдано. Таким чином, аргумент заявника про те, що розмір конфіскації мав
+бути змінений після цього виправдувального вироку, був помилковим. З огляду
+на це, та враховуючи, зокрема, важливість переслідуваної мети, а також
+відповідні процесуальні гарантії, доступні заявнику в рамках відповідного
+провадження, ЄСПЛ не вважав, що цей захід був непропорційним (пункти 73–74
+рішення).
+
+Висновок
+
+Відсутність порушення статті 1 Першого протоколу до Конвенції (захист власності).
+
+Рішення в цій справі ухвалене Палатою 12 вересня 2024 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+
+## 56   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+[YAYLALI v. Serbia](https://hudoc.echr.coe.int/ukr?i=001-235694) (№ 15887/15)
+
+Обставини справи
+
+Справа стосувалася конфіскації особистих ювелірних виробів заявника
+сербськими митними органами після того, як він не задекларував їх під час
+транзиту через Сербію, на додаток до накладення штрафу, що, як він
+стверджував, становило порушення його прав за статтею 1 Першого протоколу
+до Конвенції.
+
+Після паспортного контролю прикордонною поліцією 19 червня 2013 року
+заявника зупинили митники та правоохоронці Держави-відповідача на в’їзді
+до Сербії на кордоні з Хорватією під час подорожі з Нідерландів до Туреччини.
+Заявник мав при собі 1500 євро (EUR) та особисті речі. Однак, після проведення
+митниками огляду автомобіля, багажу та самого заявника, в останнього було
+знайдено сумку з 8 вживаними золотими браслетами, які того ж дня було
+тимчасово вилучено митними органами; після цього стосовно заявника було
+порушено справу про адміністративне правопорушення у зв’язку
+з недекларуванням ним ювелірних виробів, що становило митний проступок,
+визначений статтею 292 § 1(2) Закону про митну справу. Відповідно
+до проведеної митними органами оцінки, браслети важили 254 грами
+на загальну суму 7620 євро (30 євро за грам).
+
+Під час судового засідання з розгляду цього адміністративного
+правопорушення заявник, у присутності перекладача та без юридичного
+представника, стверджував, що золоті браслети належали його дружині та які
+він віз до Туреччини, де в місті Анталія вони планували купити будинок. У разі ж
+нестачі коштів на цей будинок, заявник планував продати браслети для
+отримання додаткових коштів. Також, він заявив, що митники розмовляли з ним
+поганою турецькою мовою і що він не знав, що при в’їзді в Сербію необхідно
+декларувати золоті вироби.
+
+Того ж дня суд своїм рішенням визнав заявника винним у вчиненні
+адміністративного правопорушення, а саме у навмисному недекларуванні
+товарів, які він ввіз на митну територію Республіки Сербія, зокрема «8 б/у
+браслетів», виготовлених з жовтого металу, схожого на золото, загальною вагою
+254 грами.
+
+Заявника було оштрафовано на 55 000 сербських динарів (RSD; на той час
+приблизно 665 євро); стягнуто судові витрати в розмірі 1000 динарів (близько 12
+євро). Суд, покликаючись на статтю 40 Закону про проступки, з огляду
+на загальні обставини справи та те, що правопорушник не завдав серйозної
+шкоди Державі, наклав штраф у розмірі, нижчому від встановленого законом
+
+## 57   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+граничного розміру, оскільки навіть значно зменшений штраф все одно
+відповідав бажаному стримувальному та каральному ефекту та сприяв
+запобіганню майбутнім подібним порушенням.
+
+Зрештою, суд застосував захисний захід (zaštitna mera oduzimanja robe kao
+predmeta prekršaja), конфіскувавши всі 8 браслетів як предмет правопорушення
+(predmet prekšaja). Застосовуючи захід конфіскації, суд вказав на обов&#x27;язковий
+характер санкції, передбаченої статтею 298 Закону про митну справу, яка мала
+бути виконана після того, як рішення стане остаточним. Браслети були тимчасово
+вилучені до завершення провадження у справі про проступок.
+
+26 червня 2013 року заявник, якого представляв сербський адвокат,
+оскаржив захід конфіскації.
+
+2 липня 2013 року Вищий суд у справах про адміністративні правопорушення
+відхилив апеляцію заявника та залишив без змін рішення суду першої інстанції.
+Він підтвердив, що конфіскація була обов’язковою і що її застосування не
+перебувало в межах дискреції суду у справах про недекларування товарів
+на кордоні, незалежно від того, чи були ці товари придбані законним шляхом.
+Конфіскація була застосована в загальних інтересах та відповідно до закону.
+
+Конституційна скарга заявника стосовно незаконності норм Закону про
+митну справу стосовно обов’язковості конфіскації була відхилена Конституційним
+Судом.
+
+Заявник скаржився на те, що конфіскація законно придбаних ювелірних
+виробів сербськими митними органами після того, як він не задекларував їх під
+час транзиту через Сербію, була вкрай непропорційним та невиправданим
+втручанням, яке порушувало статтю 1 Першого протоколу до Конвенції.
+
+Оцінка Суду
+
+Стаття 1 Першого протоколу до Конвенції
+
+Як зауважив ЄСПЛ, сторони не заперечували, що рішення національних
+органів влади про конфіскацію не задекларованих ювелірних виробів становили
+втручання у право заявника на мирне володіння своїм майном, гарантоване
+статтею 1 Першого протоколу до Конвенції.
+
+Стосовно питання про те, яке з правил, що містяться у статті 1 Першого
+протоколу потрібно застосувати Суд зауважив, що митні органи спочатку
+тимчасово вилучили всі незадекларовані браслети, а суди у справах про
+адміністративні правопорушення згодом конфіскували вилучені у заявника
+браслети, що призвело до остаточної передачі їх Державі. ЄСПЛ вважав,
+що немає потреби займати чітку позицію щодо правила статті 1 Першого
+протоколу, відповідно до якого справу слід розглядати в контексті позбавлення
+власності або контролю за його використанням – оскільки принципи,
+
+## 58   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+що регулюють питання виправдання в обох контекстах, по суті, однакові,
+включаючи, як і легітимність мети будь-якого втручання, так і його
+пропорційність та збереження справедливого балансу (див. Denisova and
+[Moiseyeva v. Russia, № 16903/03, § 55, від 1 квітня 2010 року, а також Credit Europe](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2216903/03%22%5D%7D)
+[Leasing Ifn S.A. v. Romania, № 38072/11, §§ 68–71, 21 липня 2020 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2238072/11%22%5D%7D)
+
+ЄСПЛ вважав недоцільним розглядати питання законності оскаржуваного
+заходу, і натомість перевірити, чи переслідувало втручання законну мету
+[та чи було воно пропорційним (див. Imeri v. Croatia, № 77668/14, §§ 50–51, від](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2277668/14%22%5D%7D)
+24 червня 2021 року).
+
+В цій справі Конституційний Суд не оцінював, чи було рішення про
+конфіскацію пропорційним, але переконався, що воно було законним.
+
+З наявних матеріалів і доводів Уряду не випливало, що перевезення золота
+чи особистих золотих прикрас через митний кордон Сербії було незаконним
+або що існувала якась конкретна заборона щодо кількості чи вартості золотих
+прикрас, які можна було ввозити або перевозити під час транзиту (див. AGOSI v.
+the United Kingdom, від 24 жовтня 1986 року, § 55, серія A, № 108, щодо заборони
+імпорту золотих монет). Конфісковане золото не було ані контрабандою, ані
+знаряддям будь-якої злочинної діяльності чи прибутком від неї (див. Phillips v. the
+[United Kingdom, № 41087/98, §§ 9–18, ECHR 2001-VII, та Ulemek v. Croatia,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2241087/98%22%5D%7D)
+[№ 21613/16, § 65, від 31 жовтня 2019 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2221613/16%22%5D%7D)
+
+Що стосується поведінки заявника, Суд зазначив, що він задекларував 1500
+євро та особисті речі під час митного контролю, але не задекларував золоті
+браслети, які були виявлені під час перевірки митними органами. Неналежну
+поведінку заявника було кваліфіковано як навмисну через те, що він повинен був
+усвідомлювати обов’язок декларування, а отже, свідомо прийняв наслідки
+[невиконання ним цього обов’язку (див. Sadocha v. Ukraine, № 77508/11, §§ 29–33,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2277508/11%22%5D%7D)
+[від 11 липня 2019 року; Togrul v. Bulgaria, № 20611/10, § 44, від 15 листопада 2018](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2220611/10%22%5D%7D)
+[року, § 27; Ismayilov v. Russia, № 30352/03, §§ 36–38, від 6 листопада 2008 року;](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2230352/03%22%5D%7D)
+[Gabrić v. Croatia, № 9702/04, §§ 38–39, від 5 лютого 2009 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%229702/04%22%5D%7D)
+
+ЄСПЛ зауважив про відсутність ознак того, що заявник мав будь-яку
+судимість, а національні органи влади, в свою чергу, не мали жодної інформації
+про те, що він брав участь у будь-якій злочинній діяльності чи перебував під
+слідством у зв’язку з цим відповідно до інциденту, про який йде мова. Товари
+були придбані законним шляхом і не було ознак будь-якого передбачуваного
+незаконного використання. Відповідно не було жодних підстав вважати, що,
+конфіскувавши золоті браслети у заявника, влада прагнула запобігти будь-якій
+незаконній діяльності, як, наприклад, відмивання грошей, торгівля наркотиками
+або ухилення від сплати податків.
+
+Звідси випливало, що єдиною неправомірною поведінкою заявника була
+його неспроможність задекларувати митним органам золоті браслети.
+
+## 59   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+Також Суд нагадав, що для того, щоб бути пропорційним, втручання має
+відповідати серйозності порушення, а санкція – тяжкості правопорушення,
+за яке вона покликана покарати, у цьому випадку – недекларування товарів
+перед митними органами, а не тяжкість будь-якого ймовірного порушення, яке
+фактично не було встановлено, наприклад, відмивання коштів або ухилення від
+сплати митних зборів, оскільки у цій справі навіть не йдеться про таке порушення
+[(див. Ismayilov v. Russia, № 30352/03 §§ 36–38, від 6 листопада 2008 року; Grifhorst](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2230352/03%22%5D%7D)
+[v. France, № 28336/02, § 102, від 26 лютого 2009 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2228336/02%22%5D%7D)
+
+ЄСПЛ звернув увагу, що замість передбаченого штрафу за правопорушення,
+про яке йдеться, суди у справах про адміністративні правопорушення вважали,
+врівноважуючи різні елементи, що загальні обставини виправдовували
+накладення штрафу, нижчого від встановленого законом розміру. При цьому
+національні органи влади визнали, що правопорушник не завдав Державі
+серйозної шкоди, і дійшли висновку, що значно зменшений штраф відповідатиме
+бажаному стримувальному та каральному ефекту й запобігатиме майбутнім
+порушенням правил у справі заявника.
+
+Незважаючи на наведене, національні суди винесли постанову про
+конфіскацію незадекларованих ювелірних виробів у повному обсязі як об’єкта
+правопорушення, що було стримувальним і каральним за своєю метою.
+
+ЄСПЛ зауважив, що, як встановлено національними судами, конфіскація всіх
+незадекларованих товарів була обов’язковим заходом, який накладався
+на додаток до штрафу за митний проступок (див. Karapetyan v. Georgia,
+[№ 61233/12, § 36, від 15 жовтня 2020 року).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2261233/12%22%5D%7D)
+
+Відповідно до Закону про митну справу національні органи влади не мали
+права оцінювати пропорційність заходу та в цьому контексті брати до уваги те,
+що заявник довів законне придбання особистих ювелірних виробів. Раніше Суд
+висловлював думку про те, що стосовно правопорушень, пов’язаних
+із незадекларованою готівкою, надто жорсткий законодавчий підхід часто може
+призвести до того, що національні органи влади не зможуть знайти необхідний
+справедливий баланс між вимогами загального інтересу та вимогами захисту
+права власності особи (див. mutatis mutandis, Gyrlyan, цит. вище, §§ 30–31,
+[та Yaremiychuk and Others v. Ukraine, № 2720/13 та 6 інших, § 31, від 9 грудня 2021](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%222720/13%22%5D%7D)
+року).
+
+На думку ЄСПЛ, обов’язковий характер конфіскації, на додаток до штрафу,
+міг перешкодити національній владі оцінити окремі обставини та пропорційність
+конфіскації у цій справі.
+
+Таким чином, автоматичний характер конфіскації позбавив заявника будьякої розумної можливості подати свою справу до відповідних органів влади
+з метою ефективного оскарження заходів, що становили втручання в його права
+власності, і мати будь-які шанси на успіх у зв’язку із цим.
+
+## 60   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+На думку ЄСПЛ, наведених у справі міркувань було достатньо для висновку
+про те, що обов’язкова конфіскація золотих ювелірних виробів, про які йшла
+мова, поклала на заявника індивідуальний і надмірний тягар.
+
+Висновок
+
+Порушення статті 1 Першого протоколу до Конвенції (захист власності).
+
+Рішення в цій справі ухвалене Палатою 17 вересня 2024 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+
+## 61   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+СТАТТЯ 14 КОНВЕНЦІЇ (ЗАБОРОНА ДИСКРИМІНАЦІЇ)
+
+[DE JESUS LOURENÇO JÓIA v. Portugal](https://hudoc.echr.coe.int/eng?i=001-237302) (ухв.) (№ 4976/23)
+
+Обставини справи
+
+Справа стосувалася відмови органів влади надати заявнику (стажеру
+португальської кримінальної поліції (Polícia Judiciária)) статус інваліда війни
+(estatuto de deficiente das forças armadas). Заявник посилався на статтю 14
+Конвенції та статтю 1 Протоколу № 12 до Конвенції.
+
+9 жовтня 1998 року заявник втрутився у конфлікт між двома особами –
+учасниками дорожньо-транспортної пригоди, в результаті чого йому було
+завдано тяжких тілесних ушкоджень, що призвели до стійкої часткової втрати
+працездатності (23,5 % у 2009 році та 37,8 % у 2017 році). Зазначений інцидент
+португальська кримінальна поліція кваліфікувала як нещасний випадок під час
+виконання службових обов’язків.
+
+У липні 2017 року заявник звернувся до Генерального директора
+Португальської кримінальної поліції з проханням надати йому статус особи
+[з інвалідністю внаслідок війни на підставі Указу № 43/76 від 20 січня 1976 року,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2243/76%22%5D%7D)
+який передбачав певні соціальні виплати у разі зниження розумових
+або фізичних здібностей під час проходження військової служби або захисту
+національних інтересів у небезпечних умовах. Зокрема, цей Указ передбачав
+надання такого статусу, якщо нещасний випадок стався (а) під час проходження
+військової служби або за обставин, безпосередньо пов&#x27;язаних з нею, або під час
+перебування в полоні; (б) під час підтримання громадського порядку; (в) під час
+гуманітарної діяльності; або (г) під час виконання військового обов&#x27;язку,
+пов&#x27;язаного з підвищеним ризиком. Він також послався на Указ № 275-A/2000
+від 9 листопада 2000 року, згідно з яким такий статус може бути наданий
+працівникам кримінальної поліції.
+
+З огляду на відсутність будь-якого рішення щодо себе, заявник звернувся
+з адміністративним позовом та клопотанням про видачу судового наказу
+до Адміністративного суду міста Лісабона вважаючи, що, з одного боку, його
+часткова інвалідність може ще більше погіршити його здоров&#x27;я, а з іншого боку,
+його статус дозволить йому отримати спеціальну пенсію.
+
+Рішеннями Адміністративного суду міста Лісабона від вересня 2019 року
+було відмовлено у задоволенні вимог заявника. Суд виходив з того, що, хоча
+заявник отримав травму під час виконання своїх професійних обов’язків, цей
+нещасний випадок не був пов&#x27;язаний з «підвищеним ризиком», що перевищує
+ризик, пов’язаний з будь-якою діяльністю поліції, як того вимагає Указ № 43/76.
+
+## 62   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+Не погоджуючись з ухваленим судовим рішенням та застосованим судом
+тлумаченням норм права, заявник оскаржив його в апеляційному порядку. Він,
+зокрема, стверджував, що вимогу «підвищеного ризику» не можна застосувати
+у цій справі. Він також вказав на колегу (V. P.), який був визнаний інвалідом
+на підставі згаданих указів, стверджуючи, що обидва отримали тілесні
+ушкодження під час «підтримання громадського порядку».
+
+Рішенням від 6 травня 2021 року Південно-Центральний адміністративний
+суд підтримав рішення суду першої інстанції та відхилив доводи заявника щодо
+тлумачення Указу № 43/76, згідно з яким визнання статусу особи з інвалідністю
+внаслідок війни в результаті будь-якого нещасного випадку під час звичайної
+діяльності поліції без підвищеного ризику, наприклад, патрулювання,
+суперечитиме меті цього законодавства.
+
+Рішенням від 22 вересня 2022 року Вищий Адміністративний Суд остаточно
+підтвердив, що вимога «підвищеного ризику» повинна застосовуватися до всіх
+підстав, перелічених в Указі № 43/76. Дійшовши такого висновку, і Південний
+Центральний адміністративний суд, і Вищий Адміністративний Суд спиралися
+на усталену національну практику. Їхня оцінка обмежувалася питаннями права,
+пов&#x27;язаними з тлумаченням Указу № 43/76, без урахування тверджень заявника
+про те, як цей Указ може бути застосований до інших нормативно-правових актів.
+
+Посилаючись на статтю 14 Конвенції та статтю 1 Протоколу № 12
+до Конвенції, заявник скаржився до ЄСПЛ на відмову національних органів
+влади визнати його особою з інвалідністю внаслідок війни, на відміну від V. P.,
+якому було надано такий статус через поранення, яких він зазнав під час
+виконання службових обов&#x27;язків, що спричинило стійку часткову втрату
+працездатності на 30 %. Заявник стверджував, що він був вимушений
+продовжувати виконання своїх обов’язків і це призвело до погіршення стану
+його здоров’я. Водночас надання заявнику статусу особи з інвалідністю
+внаслідок війни дозволило б йому вийти на пенсію та отримувати виплати
+у повному розмірі.
+
+Оцінка Суду
+
+З урахуванням змісту скарг заявника та своїх повноважень, ЄСПЛ
+першочергово розглянув заяву з точки зору статті 14 Конвенції у поєднанні
+зі статтею 1 Першого протоколу до Конвенції та статтею 8 Конвенції.
+
+Зокрема, ЄСПЛ вказав, що у цій справі національні суди, в тому числі
+Вищий адміністративний суд, як суд останньої інстанції, послідовно вважали,
+що обставини, пов&#x27;язані з нещасним випадком, про який йдеться, не
+відповідають вимозі «підвищеного ризику», яка повинна застосовуватися до всіх
+
+## 63   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+підстав, зазначених у застосовних нормах. Відповідно, вони постановили,
+що заявник не відповідав юридичним критеріям військової інвалідності.
+
+У цьому контексті ЄСПЛ повторив, що тлумачення національного
+законодавства є справою національних судів, які найкраще можуть тлумачити
+та застосовувати національне законодавство. Наглядова функція Суду
+обмежується забезпеченням того, щоб таке застосування та тлумачення були
+сумісними з вимогами Конвенції (див. рішення у справах García Ruiz v. Spain [GC],
+[№ 30544/96, §§ 28–29, ECHR 1999-I, та Pla and Puncernau v. Andorra, № 69498/01,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2269498/01%22%5D%7D)
+§ 46, від 13 липня 2004 року). У цій справі Суд не вважав, що тлумачення,
+зроблене національними судами на основі усталеної національної практики, є
+необґрунтованим, свавільним або таким, що явно не відповідає принципам,
+покладеним в основу Конвенції (див., a contrario, рішення у справі Glor v.
+[Switzerland, № 13444/04, § 91, ECHR 2009) (пункт 14 ухвали).](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2213444/04%22%5D%7D)
+
+З огляду на вищевикладене ЄСПЛ виснував, що заявник не мав «законного
+очікування» у розумінні статті 1 Першого протоколу до Конвенції щодо надання
+йому вищезазначеного статусу. Відповідно, факти справи не підпадали під дію
+
+цього положення.
+
+Враховуючи цей висновок, а також те, що стаття 14 Конвенції не має
+самостійного існування, Суд вважав, що стаття 14 не може бути застосована
+у цій справі в частині, що стосується статті 1 Першого протоколу до Конвенції.
+
+Відповідно скарга за статтею 14 у поєднанні зі статтею 1 Першого
+протоколу до Конвенції, якщо припустити, що вона була належним чином подана
+до національних судів, є несумісною ratione materiae з положеннями Конвенції
+у розумінні підпункту «а» пункту 3 статті 35 і має бути відхилена відповідно
+до пункту 4 статті 35 Конвенції (див. рішення у справах Gratzinger and
+[Gratzingerova v. the Czech Republic (ухв.), № 39794/98, §§ 68 та 76, ECHR 2002 VII,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2239794/98%22%5D%7D)
+[та Dobrowolski and Others v. Poland (ухв.) № № 45651/11, 68650/11 та інші, § 31,](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2245651/11%22%5D%7D)
+від 13 березня 2018 року) (пункт 17 ухвали).
+
+Розглядаючи скаргу заявника на погіршення стану його здоров&#x27;я у зв&#x27;язку
+з виконанням ним завдань після нещасного випадку (див. пункт 9 цього рішення),
+ЄСПЛ нагадав, що приватне життя включає фізичну та психологічну
+недоторканність особи (див., mutatis mutandis, рішення у справі Vavřička and
+[Others v. the Czech Republic [GC], № № 47621/13 and 5 others, § 261, від 8 квітня](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2247621/13%22%5D%7D)
+2021 року).
+
+Суд зазначив, що у цій справі, незважаючи на труднощі, з якими зіткнувся
+заявник, останній не надав жодних відповідних документів, які б встановлювали
+причинно-наслідковий зв&#x27;язок між виконанням ним своїх обов&#x27;язків після
+нещасного випадку та стверджуваним погіршенням стану його здоров&#x27;я.
+Відповідно, факти цієї справи не підпадають під дію статті 8 Конвенції (див.
+
+## 64   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+[рішення у справі Beeler v. Switzerland [GC], № 78630/12, §§ 47–72, від](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2278630/12%22%5D%7D)
+20 жовтня 2020 року) (пункт 19 рішення).
+
+Звідси випливало, що скарга за статтею 14 у поєднанні зі статтею 8
+Конвенції є несумісною ratione materiae з положеннями Конвенції у розумінні
+підпункту «а» пункту 3 статті 35 і має бути відхилена відповідно до пункту 4 статті
+35 Конвенції.
+
+Що стосується скарги заявника за статтею 1 Протоколу № 12 до Конвенції,
+ЄСПЛ підкреслив, що відповідно до Пояснювальної записки, це положення
+застосовується, серед іншого, до дискримінації з боку органу державної влади
+при здійсненні ним дискреційних повноважень (див. рішення у справі Savez
+[crkava “Riječ života” and Others v. Croatia, № 7798/08, §§ 103–04, від 9 грудня 2010](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%227798/08%22%5D%7D)
+року). У цій справі заявник скаржився на відмову національних органів влади
+надати йому статус особи з інвалідністю внаслідок війни, на відміну від V. P.,
+і ЄСПЛ визнав, що така відмінність може підпадати під дію статті 1 Протоколу
+№ 12 до Конвенції.
+
+Однак, припускаючи, що скарга заявника була належним чином подана
+до національних судів (див. пункти 6 і 8 цього рішення), заявник повинен був
+довести, що, з огляду на особливий характер його скарги, він перебував
+у ситуації, подібній до ситуації V. P. (див. рішення у справі Clift v. the United
+[Kingdom, № 7205/07, § 66, від 13 липня 2010 року). Водночас сам факт того, що V.](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%227205/07%22%5D%7D)
+P. було надано такий статус за тілесні ушкодження, яких він зазнав під час
+«підтримання громадського порядку», не був достатнім для того, щоб Суд дійшов
+висновку, що заявник зазнав дискримінації. Дійсно, заявник не продемонстрував,
+чи була застосована відповідна вимога «підвищеного ризику» у справі V. P. Таким
+чином, заявнику не вдалося довести, що існувала інша особа, яка перебувала
+у відповідному подібному або аналогічному становищі та з якою поводилися
+інакше, ніж з ним (пункт 22 ухвали).
+
+Враховуючи зазначене, ЄСПЛ виснував, що ця заява є явно
+необґрунтованою у розумінні пункту 3 статті 35 і має бути відхилена відповідно
+до пункту 4 статті 35 Конвенції.
+
+Висновок
+
+Заяву було визнано неприйнятною та відхилено.
+
+Ухвала в цій справі прийнята Комітетом 3 вересня 2024 року, оприлюднена
+26 вересня 2024 року та є остаточною.
+
+## 65   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+## Огляд рішень Європейського суду з прав людини
+
+РІШЕННЯ ЄСПЛ ПРОТИ УКРАЇНИ
+
+Стаття 3 Конвенції (заборона катування)
+[PAVLYSHYN v. Ukraine](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2225093/17%22%5D%7D) (№ 25093/17): непроведення ефективного розслідування
+тверджень заявника про жорстоке поводження з боку його сусідів, яке відбулося
+на очах у його неповнолітніх дітей – порушення
+[SPARYSH AND KUTSMAND v. Ukraine](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2249709/18%22%5D%7D) (№ 49709/18 та 49870/18): неналежні умови
+тримання під вартою та відсутність у національному законодавстві ефективного
+засобу юридичного захисту; інші скарги, висунуті за усталеною практикою Суду –
+
+порушення
+
+Стаття 5 Конвенції (право на свободу та особисту недоторканність)
+[SYRYTSYA AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2218261/23%22%5D%7D) (№ 18261/23 та 2 інших – див. перелік
+у Додатку): надмірна тривалість тримання під вартою під час досудового
+розслідування; інші скарги, висунуті за усталеною практикою ЄСПЛ (див. перелік
+у Додатку) – порушення
+
+Стаття 6 Конвенції (право на справедливий суд)
+[BURDA AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2243007/13%22%5D%7D) (№ 43007/13 та 11 інших – див. перелік
+у Додатку): надмірна тривалість цивільних проваджень та відсутність
+у національному законодавстві ефективного засобу юридичного захисту –
+
+порушення
+GAVRYLYUK v. Ukraine (№ 19612/23 та 33083/23): надмірна тривалість
+кримінального провадження та відсутність у національному законодавстві
+ефективного засобу юридичного захисту; інші скарги, висунуті за усталеною
+практикою ЄСПЛ (див. перелік у Додатку) – порушення
+[SHPYTALNYY AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2252921/21%22%5D%7D) (№ 52921/21 та 5 інших – див. перелік
+у Додатку): надмірна тривалість кримінальних проваджень та відсутність
+у національному законодавстві ефективного засобу юридичного захисту; інші
+скарги, висунуті за усталеною практикою ЄСПЛ (див. перелік у Додатку) –
+
+порушення
+
+Стаття 8 Конвенції (право на повагу до приватного і сімейного життя)
+[MOROZ v. Ukraine](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2263648/14%22%5D%7D) (№ 63648/14): виселення матері та доньки з приміщень, які були
+зареєстровані як «нежитлові», в якому вони проживали близько 40 та 23 років
+відповідно – порушення
+[MYRONYUK v. Ukraine](https://hudoc.echr.coe.int/eng#%7B%22appno%22:%5B%2222566/14%22%5D%7D) (№ 22566/14): виселення заявника та його родини
+з державного гуртожитку без перевірки пропорційності такого заходу –
+
+порушення
+
+## 66   Рішення, ухвалені ЄСПЛ за період із 01.09.2024 по 30.09.2024
+
+Огляд рішень Європейського суду з прав людини (вересень 2024 року). Рішення за період із
+01.09.2024 по 30.09.2024 / Відп. за вип.: С. В. Гаврилюк, Д. О. Мудрак, А. А. Петренко,
+Т. В. Простибоженко, О. Ю. Тарасенко, Д. П. Мордас, Р. Ш. Бабанли. Київ, 2024. – 66 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 2;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Перегляд Огляду Судової Практики — Кодифікатор Законодавства</title>
+  <meta name="description" content="Інтерактивний перегляд та кольорова розмітка оглядів судової практики Верховного Суду.">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=26">
+  <link rel="stylesheet" href="viewer.css?v=2">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body class="viewer-page">
+
+  <!-- Header & Toolbar -->
+  <header class="viewer-header">
+    <div class="viewer-header-inner">
+      <div class="viewer-brand-left">
+        <a href="digest.html" class="btn-back" title="Повернутися до Реєстру Дайджестів">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Дайджести</span>
+        </a>
+
+        <div class="viewer-doc-info">
+          <h1 class="viewer-doc-title" id="doc-title">Завантаження документа...</h1>
+          <div class="viewer-doc-meta" id="doc-meta">
+            <span class="viewer-meta-pill" id="meta-seg-count">0 сегментів</span>
+            <span class="viewer-meta-pill" id="meta-cat">ККС ВС</span>
+            <span class="viewer-meta-pill" id="meta-filename">...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Cluster -->
+      <div class="viewer-actions">
+        <div class="viewer-search-box">
+          <svg class="viewer-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="viewer-search" class="viewer-search-input" placeholder="Пошук у тексті...">
+        </div>
+
+        <!-- View Mode: Rendered / Raw -->
+        <div class="view-mode-toggle" role="group" aria-label="Режим перегляду">
+          <button type="button" class="view-mode-btn active" id="btn-mode-render" title="Розмічений вигляд">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span>Рідер</span>
+          </button>
+          <button type="button" class="view-mode-btn" id="btn-mode-raw" title="Вихідний код Markdown">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Markdown</span>
+          </button>
+        </div>
+
+        <button type="button" class="viewer-btn-icon" id="btn-copy-all" title="Скопіювати Markdown">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+        </button>
+
+        <a href="#" target="_blank" rel="noopener noreferrer" class="viewer-btn-icon" id="btn-pdf-link" title="Відкрити оригінал PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </a>
+
+        <!-- Theme Switch -->
+        <div class="mac-theme-control" id="theme-control">
+          <button type="button" class="theme-segment" id="theme-btn-light" data-theme="light" title="Світла тема">
+            <svg class="theme-btn-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <button type="button" class="theme-segment active" id="theme-btn-dark" data-theme="dark" title="Темна тема">
+            <svg class="theme-btn-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Workspace: Sidebar (TOC) + Content Area -->
+  <main class="viewer-workspace">
+    <!-- Sidebar: Dynamic Navigation List -->
+    <aside class="viewer-sidebar">
+      <div class="sidebar-header">
+        <h2 class="sidebar-title">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          <span>Зміст та сегменти</span>
+        </h2>
+        <span class="sidebar-count" id="sidebar-total-count">0</span>
+      </div>
+      <nav class="sidebar-nav-list" id="sidebar-nav"></nav>
+    </aside>
+
+    <!-- Main Content Stream -->
+    <section class="viewer-content-main">
+      <div id="render-view" class="viewer-rendered-container">
+        <!-- Rendered blocks inserted dynamically -->
+      </div>
+      <div id="raw-view" class="viewer-raw-container" style="display: none;">
+        <pre class="raw-code-container"><code id="raw-code-text"></code></pre>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Message -->
+  <div class="viewer-toast" id="viewer-toast">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toast-text">Скопійовано в буфер обміну!</span>
+  </div>
+
+  <script src="viewer.js?v=1"></script>
+</body>
+</html>

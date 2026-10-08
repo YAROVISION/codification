@@ -1,0 +1,2882 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_VS_derzh_sluzhba_pryiniattia — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_VS_derzh_sluzhba_pryiniattia та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_VS_derzh_sluzhba_pryiniattia.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_VS_derzh_sluzhba_pryiniattia</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">26</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">85.0%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">14</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 26 із 26</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01.01_segment.md № 640/9355/20 40 80 50 землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення організації добору на вакантні посади керівника державної служби та його семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення» (природні ресурси. охорона природи / склад земель / землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/104383950" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 640/9355/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40 80 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb">Склад земель</span><span class="crumb-sep">›</span><span class="crumb-leaf">Землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>організації добору на вакантні посади керівника державної служби та його</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення» (Природні ресурси. Охорона природи / Склад земель / Землі промисловості, транспорту, зв&#x27;язку, оборони та іншого несільськогосподарського призначення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.1. Про повноваження Кабінету Міністрів України як суб’єкта призначення щодо
+організації добору на вакантні посади керівника державної служби та його
+заступників
+
+Особа звернулась до суду з позовом до Кабінету Міністрів України, Державної
+податкової служби України, в якому просила визнати протиправними дії щодо
+оголошення добору на вакантні посади Голови та заступника Голови Державної
+податкової служби України і затвердження умов добору, а також визнати
+протиправним та скасувати розпорядження Кабінету Міністрів України про
+призначення на вказані посади. В обґрунтування позовних вимог позивач зазначив
+про істотне порушення умов добору, які полягає у тому, що суб’єктом призначення
+на посади голови Державної податкової служби України та його заступника є
+Кабінет Міністрів України, який не має повноважень на призначення, тоді як добір
+оголошено Державною податковою службою України. Також позивач зазначив про
+незаконність встановлених строків на подання документів від кандидатів
+на призначення, оскільки такий строк має бути не меншим ніж три дні з дня
+оприлюднення оголошення, тоді як фактично строк на подання документів
+становив два дні. Зазначені обставини, на думку позивача, порушують його права
+та інтереси, оскільки через неправомірне обмеження строку на подання документів
+позивач був позбавлений можливості скористатись правом на участь у доборі.
+Судами попередніх інстанцій в задоволенні позову відмовлено. Верховний Суд
+касаційну скаргу залишив без задоволення, а рішення судів попередніх інстанцій
+без змін.
+
+Суб’єктом призначення у спірних правовідносинах є Кабінет Міністрів
+України.
+У даному випадку, рішення про необхідність призначення на вакантні
+посади приймалось саме Кабінетом Міністрів України, про що було
+зазначено в оголошенні, що оприлюднене на Єдиному порталі вакансій
+державної служби, що спростовує доводи скаржника про проведення
+процедури добору неуповноваженим органом.
+Перебіг строку на подання документів особами, які виявили бажання
+взяти участь у доборі, починається з наступного дня після оприлюднення
+в установленому порядку рішення про необхідність призначення
+
+на відповідну вакантну посаду державної служби, а не від дати
+розміщення оголошення на Єдиному порталі вакансій державної служби,
+
+як про це зазначає позивач
+
+Детальніше з текстом постанови КАС ВС від 19 травня 2022 року у справі № 640/9355/20 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/104383950
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.10_segment.md № 500/2175/18 10140 місцеві органи державної виконавчої влади до участі в конкурсі на зайняття посади державної служби семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «місцеві органи державної виконавчої влади» (основи суспільного ладу / місцеві органи державної виконавчої влади).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.01.10_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/83142466" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 500/2175/18</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Місцеві органи державної виконавчої влади</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>до участі в конкурсі на зайняття посади державної служби</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Місцеві органи державної виконавчої влади» (Основи суспільного ладу / Місцеві органи державної виконавчої влади).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.10. Про строк оскарження рішення конкурсної комісії щодо недопущення особи
+до участі в конкурсі на зайняття посади державної служби
+
+Особа звернулася до суду з позовом до Територіального управління Державної
+судової адміністрації в Тернопільській області, Міжрегіонального управління
+Національного агентства України з питань державної служби в Чернівецькій, ІваноФранківській та Тернопільській областях про визнання протиправними дій,
+зобов’язання вчинити дії. Позивач наполягав на тому, що строки, визначені в статті
+28 Закону України від 10 грудня 2015 року №889-VIII «Про державну службу»,
+поширюються на випадки оскарження учасниками конкурсу на зайняття вакантної
+посади державної служби результатів конкурсу. Також зазначив, що внаслідок
+оспорюваної відмови в допуску до участі в конкурсі не набув статусу учасника
+конкурсу і предмет його позову не стосувався результатів конкурсу на зайняття
+посади державної служби, в зв’язку з чим положення вказаної статті до спірних
+правовідносин застосуванню не підлягали. Суди попередніх інстанцій залишили
+позов без розгляду. Верховний Суд касаційну скаргу задовольнив частково,
+оскаржувані судові рішення змінені у частині щодо мотивів залишення позовної
+заяви без розгляду. У решті рішення судів попредніх інстанцій залишені без змін.
+
+Спір, що виник на етапі вирішення питання про допуск особи до конкурсу
+на зайняття посади державної служби, є спором, що виникає з відносин
+прийняття на публічну службу. Про рішення (дії) Конкурсної комісії
+Територіального управління Державної судової адміністрації
+Тернопільській області щодо недопущення позивача до участі в конкурсі
+на зайняття посади державної служби позивач довідався 19 квітня 2018
+року, однак до суду звернувся лише 18 жовтня 2018 року. Таким чином
+строки звернення до суду з цим позовом позивач пропустив. Статтею 28
+Закону України від 10 грудня 2015 року №889-VIII «Про державну службу»
+встановлений спеціальний порядок і строки оскарження учасником
+
+конкурсу результатів конкурсу. Учасниками конкурсу є особи, які
+за наслідками перевірки поданих ними документів визнані такими,
+що відповідають установленим законам вимогам до осіб, які
+претендують на вступ на державну службу. Натомість результати
+конкурсу оформлюються рішенням конкурсної комісії, в якому,
+з урахуванням результатів складання тестування, розв’язання
+ситуаційних завдань та співбесіди, визначається переможець конкурсу. У
+спірних правовідносинах позивач не оскаржував результатів конкурсу
+й не набув статусу його учасника, адже не був до нього допущений
+
+Детальніше з текстом постанови КАС ВС від 19 липня 2019 року у справі № 500/2175/18 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/83142466
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.2_segment.md № 826/2692/17 10140 10 представники президента служби експертів у сфері захисту конкуренції при проведені конкурсу на зайняття семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «представники президента» (основи суспільного ладу / місцеві органи державної виконавчої влади / представники президента).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">01.01.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/81215497" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 826/2692/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Місцеві органи державної виконавчої влади</span><span class="crumb-sep">›</span><span class="crumb-leaf">Представники президента</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>служби експертів у сфері захисту конкуренції при проведені конкурсу на зайняття</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Представники президента» (Основи суспільного ладу / Місцеві органи державної виконавчої влади / Представники президента).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.2. Про необхідність залучення Комісією з питань вищого корпусу державної
+служби експертів у сфері захисту конкуренції при проведені конкурсу на зайняття
+вакантної посади керівника апарату Антимонопольного комітету України
+
+Особи звернулись до суду з позовом до Комісії з питань вищого корпусу
+державної служби, треті особи - Антимонопольний комітет України, ОСОБА_5,
+в якому просили визнати протиправним та скасувати рішення в частині
+визначення переможця конкурсу на зайняття вакантної посади керівника апарату
+Антимонопольного комітету України. Судами попередніх інстанцій позов
+задоволено частково. Підставою для ухвалення судами відповідних рішень було
+встановлено порушення Комісією процедури проведення конкурсу, яке вплинуло
+на результати конкурсу, зокрема, при проведенні конкрсу не були залучені експерти
+у сфері захисту конкуренції. У касаційній скарзі третя особа скаржник вказувала,
+що сам лише факт незалучення експертів у спірних правовідносинах не має
+жодного значення для правильного вирішення даної справи. Верховний Суд
+касаційну скаргу залишив без задоволення, а рішення судів попередніх інстанцій
+без змін.
+
+Відповідно до Умов проведення повторного конкурсу на зайняття
+вакантної посади керівника апарату Антимонопольного комітету України
+посадові обов&#x27;язки даної посади передбачають забезпечення виконання
+завдань апаратом Антимонопольного комітету України з питань
+організаційного, правового, наукового, документального, інформаційного,
+експертно-аналітичного, матеріально-технічного, кадрового
+та фінансового забезпечення діяльності Комітету та його органів,
+здійснення загального керівництва і координації роботи структурних
+підрозділів апарату Комітету, їх участі у розробці, аналізі нормативноправових актів та законопроектів і здійсненні юридичної експертизи,
+
+тощо.
+Комісія не прийняла рішення про залучення експертів у сфері захисту
+конкуренції для проведення оцінки відповідності окремим вимогам, які
+оцінюються за допомогою ситуаційних завдань, не врахувавши,
+
+що Антимонопольний комітет України є державним органом
+із спеціальним статусом, метою діяльності якого є забезпечення
+державного захисту конкуренції у підприємницькій діяльності та у сфері
+державних закупівель. Враховуючи вказане, Суд зауважив,
+що відповідачем при проведенні конкурсу було порушено принципи
+діяльності Комісії, зокрема, принцип ефективності прийняття рішення.
+Залучення експертів у сфері захисту конкуренції, для проведення оцінки
+відповідності кандидатів окремим вимогам, суттєво могло вплинути
+
+на результати конкурсу
+
+Детальніше з текстом постанови КАС ВС від 17 квітня 2019 року у справі № 826/2692/17 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/81215497
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.3_segment.md № 9901/72/19 280 60 прокуратура брати участь в ухваленні рішень цим органом про проведення конкурсу на посади семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «прокуратура» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">01.01.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/92566043" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 9901/72/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>брати участь в ухваленні рішень цим органом про проведення конкурсу на посади</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Прокуратура» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.3. Про відсутність повноважень керівника секретаріату Вищої ради правосуддя
+брати участь в ухваленні рішень цим органом про проведення конкурсу на посади
+державної служби
+
+Особа звернулась до суду з позовом до Вищої ради правосуддя, треті особи:
+Комісія з питань вищого корпусу державної служби в системі правосуддя, керівник
+секретаріату ВРП, про визнання протиправним, нечинним і скасування рішення про
+оголошення конкурсу на зайняття посад державної служби категорії «А»
+у Державній судовій адміністрації України, стягнення моральної шкоди. На
+обґрунтування позовних вимог позивачі зазначили про наявний конфлікт інтересів
+у керівника секретаріату ВРП. Так, згідно з розміщеним на офіційному вебсайті
+ВРП протоколом засідання Комісії з питань вищого корпусу державної служби
+в системі правосуддя було вирішено визначити переможцем конкурсу на зайняття
+посади державної служби категорії «А» в системі правосуддя Голови Державної
+судової адміністрації України особу, яка станом як на день оголошення конкурсу,
+так і на день його проведення обіймала посаду керівника секретаріату ВРП,
+до повноважень якого належить здійснення визначення умов проведення конкурсу
+та вимог до кандидатів на посаду, а також розробка проєкту відповідного рішення
+ВРП. Рішенням Верховного Суду у складі колегії суддів Касаційного
+адміністративного суду в задоволенні позову відмовлено. Велика Палата
+Верховного Суду апеляційну скаргу залишила без задоволення, а рішення суду
+першої інстанції без змін.
+
+Права та обов’язки керівника секретаріату закріплені у пункті 4.2
+Положення про секретаріат Вищої ради правосуддя від 23 березня 2017
+року № 579/0/15-17, згідно з яким, зокрема: керівник секретаріату
+
+організовує роботу секретаріату, координує діяльність усіх його
+структурних підрозділів, несе персональну відповідальність за виконання
+покладених на секретаріат завдань та функцій; організовує підготовку
+структурними підрозділами секретаріату проєктів актів ВРП та її органів,
+а також доручень і розпоряджень Голови ВРП.
+Водночас Положення наділяє керівника повноваженнями візувати лише
+підготовлені структурними підрозділами секретаріату проєкти доручень
+і розпоряджень Голови ВРП з організаційних питань.
+Системний аналіз положень Регламенту дає змогу дійти висновку про
+відсутність положень щодо участі керівника секретаріату ВРП в ухваленні
+рішень ВРП.
+Отже, на підставі наведених вище положень чинного законодавства
+особа як керівник секретаріату ВРП не брав і не міг брати участі
+в ухваленні ВРП оскаржуваного в цій справі рішення про оголошення
+конкурсу на зайняття посад державної служби категорії «А» в Державній
+судовій адміністрації України
+
+Детальніше з текстом постанови КАС ВС від 26 жовтня 2020 року у справі № 9901/72/19 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/92566043
+
+Детальніше з текстом постанови ВП ВС від 09 лютого 2022 року у справі № 9901/72/19 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/104076194
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.4_segment.md № 802/1112/16-а 10200 30 вибори депутатів місцевих рад державного органу семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «вибори депутатів місцевих рад» (основи суспільного ладу / законодавство про вибори. виборчі комісії / вибори депутатів місцевих рад).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">01.01.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/90029674" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 802/1112/16-а</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10200 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про вибори. Виборчі комісії</span><span class="crumb-sep">›</span><span class="crumb-leaf">Вибори депутатів місцевих Рад</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>державного органу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Вибори депутатів місцевих Рад» (Основи суспільного ладу / Законодавство про вибори. Виборчі комісії / Вибори депутатів місцевих Рад).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.4. Про залучення до конкурсної комісії сторонніх осіб, які не є працівниками цього
+
+державного органу
+
+Особа звернулась до суду з позовом до Конкурсної комісії Регіонального
+сервісного центру Міністерства внутрішніх справ України та до Регіонального
+сервісного центру Міністерства внутрішніх справ України, в якому просила визнати
+протиправним та скасувати рішення конкурсної комісії про результати конкурсу
+на зайняття вакантної посади державної служби категорії «Б» та зобов’язати
+провести повторний конкурс. Суди попередніх інстанцій у задоволенні позову
+відмовили. Скаржник вважав, що суди безпідставно послались на пункт 67
+Порядку проведення конкурсу на зайняття посад державної служби, затвердженого
+Постановою Кабінету Міністрів України від 25 березня 2016 року № 246, оскільки
+у випадку спірних правовідносин слід було застосувати норми статті 28 Закону
+України від 10 грудня 2015 року №889-VIII «Про державну службу», які прямо
+передбачають можливість скасування рішень конкурсної комісії. На думку
+скаржника, вказаним Порядком не встановлено необхідності доведення факту
+впливу на рішення конкурсної комісії залученими особами, а достатнім є лише
+
+підтвердження можливості здійснення ними такого впливу. Верховний Суд
+касаційну скаргу задовольнив частково, оскаржувані судові рішення змінив.
+
+До складу конкурсної комісії повинні входити представники служби
+управління персоналом і юридичної служби та окремих структурних
+підрозділів відповідного державного органу, а також – можуть бути
+залучені представники громадських об’єднань. Водночас, до роботи
+конкурсної комісії можуть залучатись і інші особи, зокрема, державні
+службовці, в тому числі з інших державних органів, працівники, науковці,
+а також експерти у відповідній сфері та представник виборного органу
+первинної профспілкової організації за її наявності.
+Залучення певної особи до складу конкурсної комісії та залучення її
+до роботи конкурсної комісії, за своєю правовою суттю, є двома різними
+способами участі у процедурі проведення конкурсу на зайняття посад
+державної служби, які наділяють особу різним обсягом повноважень
+
+Детальніше з текстом постанови КАС ВС від 25 червня 2020 року у справі № 802/1112/16-а можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/90029674
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.5_segment.md № 826/15957/16 10140 10 представники президента особа звернулась до суду з позовом до комісії з питань вищого корпусу семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «представники президента» (основи суспільного ладу / місцеві органи державної виконавчої влади / представники президента).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">01.01.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/90804471" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 826/15957/16</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Місцеві органи державної виконавчої влади</span><span class="crumb-sep">›</span><span class="crumb-leaf">Представники президента</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Особа звернулась до суду з позовом до Комісії з питань вищого корпусу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Представники президента» (Основи суспільного ладу / Місцеві органи державної виконавчої влади / Представники президента).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.5. Про статус учасника конкурсу на зайняття вакантної посади державної служби
+
+Особа звернулась до суду з позовом до Комісії з питань вищого корпусу
+державної служби, у якому просила суд скасувати рішення відповідача про
+
+переможця конкурсу та другого за результатами конкурсу кандидата на посаду
+голови обласної державної адміністрації. Позивач вважає, що він відповідає
+вимогам до осіб, які претендують на зайняття посад голів обласних державних
+адміністрацій та ним було подано у визначений строк документи для участі
+у конкурсі відповідно до розпорядження Президента України «Про оголошення
+конкурсу на зайняття вакантних посад голови Житомирської обласної державної
+адміністрації та голови Харківської обласної державної адміністрації» від
+09 вересня 2016 року № 237/2016-рп, проте відповідачем безпідставно прийнято
+рішення про відмову у допуску до участі у згадуваному конкурсі. Суди попередніх
+інстанцій у задоволенні позову відмовили. Доводи касаційної скарги зводилися
+до протиправності рішення про визначення переможців конкурсу осіб відмінних від
+позивача. Верховний Суд касаційну скаргу залишив без задоволення, а оскажувані
+судові рішення – без змін.
+
+Статус учасника конкурсу на зайняття вакантної посади державної
+служби категорії «А» набуває лише той кандидат, який був допущений
+до участі у такому конкурсі. Відповідно право на оскарження рішення
+
+конкурсної комісії та дій Комісії, що пов’язані з проведенням конкурсу,
+виникає в учасника конкурсу, який приймав участь в таких етапах
+конкурсу як тестування та/або розв’язання ситуаційних завдань та/або
+співбесіда
+
+Детальніше з текстом постанови КАС ВС від 05 серпня 2020 року у справі № 826/15957/16 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/90804471
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.6_segment.md № 820/4712/16 120 60 10 призовний вік. призов громадян на строкову військову службу рішення про поновлення працівника на цій посаді семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «призовний вік. призов громадян на строкову військову службу» (законодавство про оборону / призов і прийняття (вступ) на військову службу / призовний вік. призов громадян на строкову військову службу).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">01.01.6_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/86504749" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 820/4712/16</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb">Призов і прийняття (вступ) на військову службу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Призовний вік. Призов громадян на строкову військову службу</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>рішення про поновлення працівника на цій посаді</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Призовний вік. Призов громадян на строкову військову службу» (Законодавство про оборону / Призов і прийняття (вступ) на військову службу / Призовний вік. Призов громадян на строкову військову службу).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.6. Про відсутність підстав вважати посаду вакантною з дня прийняття судом
+рішення про поновлення працівника на цій посаді
+
+Особа звернувся до суду з позовом до Державної екологічної інспекції України,
+Голови Державної екологічної інспекції України, треті особи Національне агентство
+України з питань державної служби, ОСОБА_2, ОСОБА_3, в якому просив суд
+визнати протиправним та скасувати наказ Державної екологічної інспекції України
+про оголошення конкурсу на заміщення вакантних посад в частині оголошення
+конкурсу на посаду начальника Державної екологічної інспекції у Полтавській
+області; визнати протиправним та скасувати результат конкурсу. Позовні вимоги
+обґрунтовані тим, що відповідно до постанови Харківського окружного
+адміністративного суду від 02 червня 2016 року позивач поновлений на посаді
+начальника Державної екологічної інспекції у Полтавській області - Головного
+державного інспектора з охорони навколишнього природного середовища
+Полтавської області. Головою Державної екологічної інспекції України
+22 липня 2016 року оголошено конкурс на заміщення вакантних посад державної
+служби категорій «Б» і «В» Державної екологічної інспекції України в тому числі
+і на посаду - головного державного інспектора з охорони навколишнього
+природного середовища Полтавської власті. Суд першої інстанції позов
+задовольнив. Апеляційний суд скасував рішення суду першої інстанції та ухвалив
+нове, яким у задоволенні позову відмовив. Скаржник вказував, що з моменту
+прийняття рішення суду посада - начальник Державної екологічної інспекції
+у Полтавській області - Головний державний інспектор з охорони навколишнього
+природного середовища Полтавської області не може вважатися вакантною, тому
+оголошення і проведення конкурсу на посаду державної служби відносно якої є
+рішення суду про поновлення на цій посаді незаконно звільненого працівника не
+має правових підстав і свідчить про порушення прав позивача. Верховний Суд
+касаційну скаргу задовольнив, постанову суду апеляційної інстанції скасував,
+рішення суду першої інстанції залишено в силі.
+
+З моменту прийняття судом рішення про поновлення працівника на роботі
+його посада не може вважатися вакантною, і у роботодавця не має
+правових підстав для оголошення конкурсу на заміщення такої посади.
+Роботодавець добровільно і негайно повинен виконати рішення суду про
+поновлення працівника на роботі шляхом видачі відповідного наказу
+відразу після оголошення рішення суду. Наказ Державної екологічної
+інспекції України від 22 липня 2016 року №284-о про оголошення конкурсу
+на заміщення вакантних посад в частині, що стосується посади
+начальника Державної екологічної інспекції у Полтавській області Головного державного інспектора з охорони навколишнього природного
+середовища Полтавської області є протиправним
+
+Детальніше з текстом постанови КАС ВС від 21 грудня 2019 року у справі № 820/4712/16 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/86504749
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.7_segment.md № 240/3971/19 10140 10 представники президента служби категорії «а» про недопуск до конкурсу без відповідного протокольного семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «представники президента» (основи суспільного ладу / місцеві органи державної виконавчої влади / представники президента).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">01.01.7_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/87713476" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 240/3971/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Місцеві органи державної виконавчої влади</span><span class="crumb-sep">›</span><span class="crumb-leaf">Представники президента</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>служби категорії «А» про недопуск до конкурсу без відповідного протокольного</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Представники президента» (Основи суспільного ладу / Місцеві органи державної виконавчої влади / Представники президента).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.7. Про протиправність повідомлення кандидата на зайняття посади державної
+служби категорії «А» про недопуск до конкурсу без відповідного протокольного
+рішення Комісії з питань вищого корпусу державної служби
+
+Особа звернулась до суду з позовом до начальника відділу забезпечення
+діяльності Комісії з питань вищого корпусу державної служби Національного
+агентства України з питань державної служби, Комісії з питань вищого корпусу
+державної служби, в якому просила визнати протиправними дії щодо недопуску
+його до участі у конкурсі на зайняття посади Голови Державної служби геології
+та надр та скасувати оформлене листом рішення про такий недопуск. Судами
+попередніх інстанцій позов задоволено. У касаційній скарзі третя особа скаржник
+зазначила, що обов’язок перевіряти документи кандидатів покладено не
+на начальника відділу забезпечення діяльності Комісії, а на спеціальний
+структурний підрозділ НАДС; спірний лист був оформлений від імені НАДС, а не
+особисто нею, як начальником відділу. Крім того, зазначила відповідач, не є
+зрозумілим чому суди за відсутності інформації в протоколі Комісії з питань
+вищого корпусу державної служби про те, що позивач не пройшов конкурсу,
+вирішили зробити відповідальним начальника відділу забезпечення діяльності
+Комісії з питань вищого корпусу державної служби НАДС, оскільки цей відділ, який
+очолює відповідач, є структурним підрозділом НАДС, а Комісія є самостійним
+суб’єктом. Відділ лише забезпечує діяльність роботи Комісії з питань вищого
+корпусу державної служби та не формує її порядок денний, а тим більше не складає
+її протоколи. Верховний Суд касаційну скаргу залишив без задоволення, а рішення
+судів попередніх інстанцій без змін.
+
+Спеціальний структурний підрозділ НАДС наділений повноваженнями
+повідомляти кандидатам про результати перевірки, в тому числі
+попередньої, документів або про недопуск до етапу конкурсу тестування, якщо досвід роботи та/або подані документи не відповідають
+
+установленим вимогам.
+Водночас повідомлення кандидата про недопуск для участі саме
+в конкурсі, а не до тестування або про те, що він не пройшов конкурс
+за відсутності відповідного протокольного рішення Комісії є
+протиправним, оскільки не ґрунтується на нормах законодавства,
+що регулює спірні правовідносини.
+Суд також зазначив, що саме на відділ забезпечення діяльності Комісії
+з питань вищого корпусу державної служби Національного агентства
+України з питань державної служби, очолюваний відповідачем,
+покладено обов’язок обробки і аналізу документів, поданих
+претендентами на посади державної служби категорії «А».
+Водночас посадова особа як начальник відділу забезпечення діяльності
+Комісії з питань вищого корпусу державної служби Національного
+агентства України з питань державної служби, яка несе персональну
+відповідальність за виконання Відділом покладених на нього функцій
+та підписує документи з питань, що належать до компетенції Відділу, є
+належним відповідачем у спірних правовідносинах
+
+Детальніше з текстом постанови КАС ВС від 20 лютого 2020 року у справі № 240/3971/19 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/87713476
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.8_segment.md № 820/4038/18 10100 президент несвоєчасного надходження його документів до державного органу, в якому семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «президент» (основи суспільного ладу / президент).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">01.01.8_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/84405872" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 820/4038/18</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10100</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Президент</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>несвоєчасного надходження його документів до державного органу, в якому</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Президент» (Основи суспільного ладу / Президент).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.8. Про неправомірність допуску кандидата до участі в конкурсі у разі
+несвоєчасного надходження його документів до державного органу, в якому
+
+проводиться конкурс
+
+Особа звернулась до суду з позовом до Комісії з питань вищого корпусу
+державної служби, треті особи: ОСОБА_4, Фонд державного майна України, в якому
+просила визнати протиправним і скасувати рішення Комісії в частині допуску
+до участі у конкурсі на зайняття вакантної посади керівника апарату Фонду
+державного майна України та визначення переможця конкурсу на зайняття
+вакантної посади керівника апарату Фонду державного майна України ОСОБА_4.
+Позовні вимоги обґрунтовано тим, що 15 травня 2018 року відповідач при
+проведенні конкурсу на зайняття вакантної посади керівника апарату Фонду
+державного майна України, в якому позивач брав участь, допустив істотні
+
+порушення порядку проведення конкурсу, які вплинули на його результати, а саме:
+відповідачем всупереч вимогам законодавства та умовам конкурсу, було допущено
+до участі у конкурсі ОСОБА_4, яка і стала переможцем конкурсу. На думку
+
+позивача, порушення порядку проведення конкурсу полягає в тому, що документи
+вказаною особою подано не у спосіб, який встановлено законодавством, а також
+з порушенням строку, визначеного умовами конкурсу, що є підставою для не
+допуску до участі у конкурсі відповідного заявника. Рішенням суду першої інстанції
+позовні вимоги задоволено частково. Визнано протиправним і скасовано рішення
+Комісії в частині допуску до участі у конкурсі на зайняття вакантної посади
+керівника апарату Фонду державного майна України та визначення переможця
+конкурсу на зайняття вакантної посади керівника апарату Фонду державного майна
+України ОСОБА_4. Постановою суду апеляційної інстанції рішення суду першої
+інстанції скасовано і у задоволенні позову відмовлено. Верховний Суд задовольнив
+касаційні скарги позивача і Фонду державного майна України, скасував постанову
+суду апеляційної інстанції, залишивши в силі рішення суду першої інстанції.
+
+Законодавцем визначено умови допуску документів до перевірки
+у порядку, передбаченому пунктом 22 Порядку проведення конкурсу
+на зайняття посад державної служби, затвердженого постановою
+Кабінету Міністрів України від 25 березня 2016 року № 246, а саме
+надання їх до встановленого умовами конкурсу строку подання (поштою
+або особисто), а також надходження до державного органу менше ніж
+за три робочі дні до дати проведення конкурсу. У разі недотримання
+
+таких умов - документи не розглядаються.
+ОСОБА_4 подавала документи для участі у конкурсі не особисто,
+а надсилала поштою. Комісія отримала ці документи 11 травня 2018 року
+
+     - у п’ятницю, конкурс на вакантну посаду керівника апарату Фонду
+державного майна України проводився 15 травня 2018 року. Тобто
+документи ОСОБА_4 для участі у конкурсі надійшли до Комісії не за три
+робочі дні до проведення конкурсу, що є підставою, відповідно до пункту
+9 Порядку № 246, для залишення їх без розгляду.
+Отже, Комісією було порушено процедуру прийняття документів ОСОБА_4
+для участі у конкурсі - здійснено розгляд документів кандидата
+на підставі пункту 22 Порядку № 246, у той час як за приписами пункту 9
+Порядку №246 такі документи не розглядаються. Дане порушення
+спричинило протиправний допуск кандидата для участі у конкурсі
+на вакантну посаду. Також Верховний Суд не погодився із висновком
+суду апеляційної інстанції щодо врахування факту здійснення оплати
+ОСОБА_4 доставки документів до 14 год. 10 травня 2018 року, оскільки
+
+пунктом 9 Порядку № 246 визначено, що документи повинні надійти, а не
+повинні бути надіслані за три робочі дні до проведення конкурсу
+
+Детальніше з текстом постанови КАС ВС від 19 вересня 2019 року у справі № 820/4038/18 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/84405872
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01.9_segment.md № 820/5707/17 10100 президент учасника конкурсу на зайняття вакантної посади державної служби як підставу для семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «президент» (основи суспільного ладу / президент).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">01.01.9_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/94264170" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 820/5707/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10100</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Президент</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>учасника конкурсу на зайняття вакантної посади державної служби як підставу для</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Президент» (Основи суспільного ладу / Президент).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.9. Про відсутність копії додатка до диплома про освіту в переліку документів
+учасника конкурсу на зайняття вакантної посади державної служби як підставу для
+недопуску його до участі в конкурсі
+
+Особа звернулась до суду з позовом до Державної фіскальної служби України,
+в якому просила визнати незаконними дії щодо недопуску позивача до участі
+у конкурсі на посаду заступника начальника ГУ ДФС у Харківській області,
+що організовує правову роботу Головного управління ДФС у Харківській області
+та її територіальних органів. Департаментом кадрової політики та роботи
+з персоналом ДФС, направлено позивачу електронною поштою повідомлення про
+не допуск його до участі у конкурсі у зв’язку з поданням ним неповного пакету
+документів, а саме не було надано додатків до диплому. Судами попередніх
+інстанцій у задоволенні позову відмовлено. У касаційній скарзі позивач зауважив,
+що суди не звернули увагу на те, що відповідач протиправно вимагав від позивача
+надання копій додатків до дипломів, оскільки дипломи позивача не є дипломами
+європейського зразка, а отже на дипломи позивача не розповсюджується дія
+Закону України від 01 липня 2014 року № 1556-VII «Про вищу освіту». Верховний Суд
+касаційну скаргу залишив без задоволення, а оскаржувані судові рішення – без
+змін.
+
+З аналізу норм Закону України від 10 грудня 2015 року № 889-VIII «Про
+державну службу» та Порядку проведення конкурсу на зайняття посад
+державної служби, затвердженого постановою Кабінету Міністрів України
+від 25 березня 2016 року №246, вбачається, що до переліку документів,
+які подаються особою для участі у конкурсі, віднесено, серед іншого копію
+(копії) документа (документів) про освіту.
+Відповідно до Рекомендацій щодо заповнення Додатка до диплома про
+вищу освіту Міністерства освіти і науки України від 28 квітня 2000 року
+№1/9-118 додаток до диплома про вищу освіту є документом про освіту,
+що видається власнику диплома з метою надання додаткової інформації
+про зміст і обсяг освіти, особливості навчання і форми підсумкового
+контролю та його академічні і професійні права тощо.
+Додаток як невід’ємна складова документа про вищу освіту є дійсним
+лише з дипломом про вищу освіту, серія і номер яких співпадають.
+
+Таким чином суди попередніх інстанцій проаналізувавши законодавство
+яке діяло на момент здобуття позивачем вищої освіти так само, як
+і законодавство, яке діяло станом на момент оголошення та проведення
+конкурсу на зайняття вакантної посади дійшли правильного висновку,
+що додаток до диплому є його невід’ємною частиною, а отже є
+документом про освіту
+
+Детальніше з текстом постанови КАС ВС від 20 січня 2021 року у справі № 820/5707/17 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/94264170
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01_segment.md не вказана 10140 місцеві органи державної виконавчої влади служби семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «місцеві органи державної виконавчої влади» (основи суспільного ладу / місцеві органи державної виконавчої влади).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Місцеві органи державної виконавчої влади</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>служби</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Місцеві органи державної виконавчої влади» (Основи суспільного ладу / Місцеві органи державної виконавчої влади).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1. Організація конкурсу та допуск осіб до конкурсу на зайняття посади державної
+служби
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2.01_segment.md № 640/2194/20 10200 30 вибори депутатів місцевих рад кандидата при проведенні конкурсного відбору на посаду державної служби семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «вибори депутатів місцевих рад» (основи суспільного ладу / законодавство про вибори. виборчі комісії / вибори депутатів місцевих рад).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">01.2.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/106290384" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 640/2194/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10200 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про вибори. Виборчі комісії</span><span class="crumb-sep">›</span><span class="crumb-leaf">Вибори депутатів місцевих Рад</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>кандидата при проведенні конкурсного відбору на посаду державної служби</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Вибори депутатів місцевих Рад» (Основи суспільного ладу / Законодавство про вибори. Виборчі комісії / Вибори депутатів місцевих Рад).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2.1. Про повноваження комісії під час оцінювання професійної компетентності
+кандидата при проведенні конкурсного відбору на посаду державної служби
+
+Особа звернулася до суду з позовом до Комісії з питань вищого корпусу
+державної служби, Кабінету Міністрів України, третя особа на стороні відповідача Національне агентство України з питань державної служби, в якому просила
+визнати протиправними дії Комісії в частині визнання її такою, що не пройшла
+конкурсний відбір та не була включена до загального рейтингу; скасувати пункти
+протоколу засідання Комісії № 8 від 21 листопада 2019 року в частині визначення
+результатів співбесіди, складення рейтингу кандидатів та визначення кандидатур
+на зайняття посади Голови Державного агентства України з питань кіно
+та зобов’язати повторно провести співбесіду з кандидаткою на посаду
+та повторно визначити загальний рейтинг кандидатів у конкурсі на вказану
+посаду. Суди попередніх інстанцій в задоволенні позову відмовили. Верховний Суд
+касаційну скаргу залишив без задоволення, а оскаржувані судові рішення – без
+змін.
+
+Конкурс на зайняття посади на державній службі – це оцінка
+професійного та освітньо-кваліфікаційного рівня кандидата через
+змагання для заміщення відповідної вакантної посади. Вказана оцінка
+здійснюється визначеним законодавством органом на підставі
+відповідних принципів. Комісія має повноваження на здійснення
+
+оцінювання професійної компетентності кандидата під час проведення
+конкурсного відбору на посаду Голови Державного агентства України
+з питань кіно. Персональний склад Комісії приймається Кабінетом
+Міністрів України за пропозицією Нацдержслужби. Тобто, уряд формує
+відповідний орган, що буде здійснювати перевірку кандидата
+на дотримання кваліфікаційних вимог, вимог до його компетентності
+та вимоги до професійних знань.
+На етапі співбесіди кожний член Комісії індивідуально після обговорення
+відповідності професійної компетентності кандидата за кожною окремою
+вимогою виставляє відповідні бали. Пунктом 52 Порядку проведення
+конкурсу на зайняття посад державної служби, затвердженого
+постановою Кабінету Міністрів України від 25 березня 2016 року № 246,
+визначений лише перелік балів, які можуть бути виставлені кандидату,
+а сам процес виставляння балів є дискреційним повноваженням члена
+Комісії. Під дискреційними повноваженнями слід розуміти повноваження,
+які адміністративний орган, приймаючи рішення, може здійснювати
+з певною свободою розсуду, тобто, коли такий орган може обирати
+з кількох юридично допустимих рішень те, яке він вважає найкращим
+за даних обставин. Дискреційне повноваження може полягати у виборі
+діяти, чи не діяти, а якщо діяти, то у виборі варіанту рішення чи дії серед
+варіантів, що прямо або опосередковано закріплені у законі. Важливою
+ознакою такого вибору є те, що він здійснюється без необхідності
+узгодження варіанту вибору із будь-ким
+
+Детальніше з текстом постанови КАС ВС від 16 вересня 2022 року у справі № 640/2194/20 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/106290384
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2.2_segment.md № 826/2198/17 10140 місцеві органи державної виконавчої влади в разі, якщо кількість голосів членів конкурсної комісії розділено порівну семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «місцеві органи державної виконавчої влади» (основи суспільного ладу / місцеві органи державної виконавчої влади).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">01.2.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/81431713" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 826/2198/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Місцеві органи державної виконавчої влади</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>в разі, якщо кількість голосів членів конкурсної комісії розділено порівну</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Місцеві органи державної виконавчої влади» (Основи суспільного ладу / Місцеві органи державної виконавчої влади).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2.2. Про визначення переможця конкурсу на зайняття посад державної служби
+в разі, якщо кількість голосів членів конкурсної комісії розділено порівну
+
+Позивач звернувся до суду з позовом до Міністерства юстиції України, третя
+особа: ОСОБА_2 про визнання протиправними дій щодо невизначення жодного
+кандидата на зайняття вакантних посад начальника та першого заступника
+начальника Південного міжрегіонального управління з питань виконання
+кримінальних покарань та пробації та скасування рішень щодо невизначення
+жодного кандидата на зайняття вакантних посад начальника та першого
+заступника начальника Південного міжрегіонального управління з питань
+виконання кримінальних покарань та пробації. Позивач в обґрунтування своїх
+позовних вимог зазначив, що Закон України від 10 грудня 2015 року №889-VIII «Про
+
+державну службу» та Порядок проведення конкурсу на зайняття посад державної
+служби, затверджений постановою Кабінету Міністрів України від 25 березня 2016
+року №246 не передбачають винесення рішення про невизнання жодного кандидата
+на зайняття вакантних посад, у зв&#x27;язку з відсутністю більшості голосів за одного
+із кандидатів. Судами попередніх інстанцій позов задоволено частково. Скаржник
+вказав, що поетапно виконав дії щодо оголошення, проведення та визначення
+результатів конкурсу, а оскільки обидва кандидати (ОСОБА_1 та ОСОБА_2)
+за результатами тестування, розв&#x27;язання ситуаційних завдань, співбесіди
+та загального голосування набрали однакову загальну кількість балів голова
+Комісії вирішив провести відкрите голосування членів комісії, у результаті якого
+кожен з кандидатів знову набрав однакову кількість балів. Пунктом 67 Порядку №
+246 передбачено випадок, коли за результатами конкурсу не визначено кандидата
+на зайняття вакантної посади, що цілком узгоджується з метою конкурсного
+відбору на посади державної служби. Верховний Суд касаційну скаргу задовольнив
+частково, оскаржувані судові рішення у частині задоволених позовних вимог
+скасував і направив справу в цій частині на новий розгляд до суду першої
+інстанції.
+
+Визначити переможця конкурсу у ситуації, коли кількість голосів членів
+конкурсної комісії розділено порівну, неможливо. Конкурс пройшов усі
+необхідні етапи, а також відкрите голосування усіх членів конкурсної
+комісії для того, щоб визначити кандидата на вакантну посаду. Та
+обставина, що конкурсна комісія Міністерства не проводила повторної
+співбесіди, не доводить протиправності дій відповідача
+та неправомірність його рішення.
+Повторна співбесіда, як і відкрите голосування, є додатковим способом
+визначити кандидата на вакантну посаду і її проведення можливе, якщо
+таке рішення ухвалить конкурсна комісія. У цьому зв&#x27;язку треба додати,
+що повторна співбесіда є альтернативним (одним з двох) способом
+визначити кандидата на вакантну посаду за однакової кількості балів
+у двох претендентів на цю посаду, а не обов&#x27;язковим (поряд з відкритим
+голосуванням) етапом конкурсу.
+Конкурс на заміщення вакантних посад державної служби може
+завершитися тим, що кандидата на зайняття вакантної посади не буде
+визначено. Така ситуація/результат, відповідно до наведених положень
+статті 30 Закону України від 10 грудня 2015 року № 889-VIII «Про державну
+службу», є підставою для повторного конкурсу
+
+Детальніше з текстом постанови КАС ВС від 24 квітня 2019 року у справі № 826/2198/17 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/81431713.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2.3_segment.md № 804/6325/17 60 20120 30 пенсії в разі втрати годувальника конкурсу на вимогу центрального органу виконавчої влади семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «пенсії в разі втрати годувальника» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / пенсії в разі втрати годувальника).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">01.2.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/85804125" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 804/6325/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пенсії в разі втрати годувальника</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>конкурсу на вимогу центрального органу виконавчої влади</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Пенсії в разі втрати годувальника» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Пенсії в разі втрати годувальника).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2.3. Про підставу проведення повторного конкурсу в разі скасування результатів
+конкурсу на вимогу центрального органу виконавчої влади
+
+Дніпропетровська митниця ДФС звернулась до суду з позовом
+до Міжрегіонального управління Національного агентства України з питань
+державної служби у Дніпропетровській та Запорізькій областях у якому просила
+визнати незаконною та скасувати винесену відповідачем вимогу про скасування
+результатів конкурсу на посаду заступника начальника відділу митного
+оформлення Дніпропетровської митниці ДФС. Позивач зауважив,
+що правовідносини, пов’язані з оголошенням конкурсу на зайняття вакантної
+посади у Дніпропетровській митниці ДФС, виникли до 30 серпня 2017 року, тобто
+до набрання чинності постановою КМ України від 18 серпня 2017 року № 648 «Про
+внесення змін до Порядку проведення конкурсу на зайняття посад державної
+служби», якою передбачено заборону проставлення підпису кандидатами
+на бланках ситуаційного завдання, а тому в цьому випадку застосуванню
+підлягають приписи постанови КМ України від 25 березня 2016 року № 246
+у редакції, що діяла до 30 серпня 2017 року. На думку позивача, ним не допущено
+порушень, які вплинули на результати проведеного конкурсу. Відповідач
+у запереченні на позов стверджував про безпідставність заявлених
+Дніпропетровською митницею ДФС вимог з огляду на чинне правове регулювання
+спірних правовідносин і наголошував на тому, що, направляючи спірну вимогу,
+Управління НАДС діяла обґрунтовано й у межах своїх повноважень. Суди
+попередніх інстанцій у задоволенні позову відмовили. Скаржник зауважив на тому,
+що висунута відповідачем вимога не містить порушень законодавства, які могли
+вплинути на результат конкурсу, тому вказана вимога є безпідставною. Верховний
+Суд касаційну скаргу залишив без задоволення, а оскаржувані судові рішення – без
+змін.
+
+Підставою для проведення повторного конкурсу у разі скасування
+результатів конкурсу на вимогу центрального органу виконавчої влади,
+що забезпечує формування та реалізує державну політику у сфері
+державної служби, є, з-поміж іншого, встановлення факту порушення умов
+конкурсу, яке не лише вплинуло на його результат, а й об’єктивно мало
+імовірність такого впливу.
+Зі змісту пункту 43 Порядку проведення конкурсу на зайняття посад
+державної служби, затверджений постановою Кабінету Міністрів України
+від 25 березня 2016 року №246 висновується, що регламентована ним
+процедура спрямована на забезпечення анонімності бланків відповідей,
+яка створить передумови для об’єктивної оцінки результати кандидатів.
+
+Допущені з боку конкурсної комісії порушення принципу анонімності
+(проставлення підписів на кожному аркуші бланків відповідей) створило
+передумови для ідентифікації кандидатів і, відповідно, для необ’єктивної
+оцінки відповідних робіт
+
+Детальніше з текстом постанови КАС ВС від 21 листопада 2019 року у справі № 804/6325/17 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/85804125
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2.4_segment.md № 823/598/17 10140 місцеві органи державної виконавчої влади на посаду або відмову в призначенні на посаду державної служби переможця семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «місцеві органи державної виконавчої влади» (основи суспільного ладу / місцеві органи державної виконавчої влади).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">01.2.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/80198195" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 823/598/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Місцеві органи державної виконавчої влади</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>на посаду або відмову в призначенні на посаду державної служби переможця</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Місцеві органи державної виконавчої влади» (Основи суспільного ладу / Місцеві органи державної виконавчої влади).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2.4. Про обов’язок керівника державної служби прийняти рішення про призначення
+на посаду або відмову в призначенні на посаду державної служби переможця
+конкурсу на зайняття посад державної служби
+
+Позивач звернувся до суду з позовом до Державного рибного господарства
+України, голови Державного агентства рибного господарства України, в якому
+просив визнати протиправною бездіяльність голови Державного агентства рибного
+господарства України щодо неприйняття рішення про призначення позивача
+на посаду начальника управління Державного агентства рибного господарства
+у Черкаській області та зобов’язати вчинити ці дії. Позивач зазначив,
+що відповідач безпідставно не вчиняє дії щодо призначення його на посаду
+начальника управління Державного агентства рибного господарства у Черкаській
+області, оскільки позивач визнаний переможцем за результатами конкурсу, має усі
+необхідні погодження та за результатами проведених спеціальних перевірок не
+встановлено обставин, які перешкоджають призначенню позивача на згадану
+посаду. Рішенням суду першої інстанції у задоволенні позову відмовлено.
+Апеляційний суд скасував рішення суду першої інстанції та ухвалив нове, яким
+позов задовольнив частково.Скаржник зауважив на тому, що апеляційний суд не
+взяв до уваги, що у зв’язку із відкликанням Міністерством аграрної політики
+та продовольства України погодження про призначення особи на посаду,
+у Державного агентства рибного господарства України були відсутні підстави для
+призначення позивача на посаду. Крім того, касатор зауважив, що заява позивача
+про його призначення на посаду не містила дати, тому також відсутні підстави для
+його призначення на посаду, оскільки відповідач, без відповідного волевиявлення
+позивача, не може самостійно призначати позивача на посаду будь-якою датою.
+Верховний Суд касаційну скаргу залишив без задоволення, а оскаржувані судові
+рішення – без змін.
+
+За результатами конкурсу на посаду державної служби, відповідно
+до результатів спеціальної перевірки проведеної згідно з Законом
+України від 14 жовтня 2014 року № 1700-VII «Про запобігання корупції»
+та Законом України від 16 вересня 2014 року № 1682-VII «Про очищення
+
+влади», суб’єкт призначення повинен прийняти одне з рішень: про
+призначення на посаду державної служби або відмову у такому
+призначенні.
+В порушення приписів частини четвертої статті 31 Закону України від
+10 грудня 2015 року №889-VIII «Про державну службу» з моменту
+оголошення особи, переможцем конкурсу на посаду державного
+службовця та проведення відносно нього перевірки, Головою
+Державного агентства рибного господарства України, до компетенції
+якого віднесено прийняття відповідних рішень, не було прийнято жодного
+рішення. Таким чином, Верховний Суд погоджується з висновками суду
+апеляційної інстанції про визнання протиправною бездіяльності
+Державного агентства рибного господарства України та зобов’язання
+розглянути питання та прийняти рішення про призначення на посаду
+або відмову у призначені на посаду державної служби
+
+Детальніше з текстом постанови КАС ВС від 28 лютого 2019 року у справі № 823/598/17 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/80198195
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2.5_segment.md № 9901/276/19 100171 20 20 кіно, звукозапис, аудіо-, відеозапис тощо інформації про переможця та обов’язок суб’єкта призначення ухвалити рішення про семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «кіно, звукозапис, аудіо-, відеозапис тощо» (законодавство з питань освіти, науки, культури / засоби масової інформації / аудіовізуальні засоби / кіно, звукозапис, аудіо-, відеозапис тощо).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">01.2.5_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/84493503" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 9901/276/19</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100171 20 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Засоби масової інформації</span><span class="crumb-sep">›</span><span class="crumb">Аудіовізуальні засоби</span><span class="crumb-sep">›</span><span class="crumb-leaf">Кіно, звукозапис, аудіо-, відеозапис тощо</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>інформації про переможця та обов’язок суб’єкта призначення ухвалити рішення про</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Кіно, звукозапис, аудіо-, відеозапис тощо» (Законодавство з питань освіти, науки, культури / Засоби масової інформації / Аудіовізуальні засоби / Кіно, звукозапис, аудіо-, відеозапис тощо).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2.5. Про вичерпання повноважень конкурсної комісії після оприлюднення
+інформації про переможця та обов’язок суб’єкта призначення ухвалити рішення про
+
+призначення
+
+Позивач звернувся до суду з позовом до ВРП, у якій просив визнати
+протиправною бездіяльність щодо непризначення його на посаду Голови ДСА
+України та зобов’язати вчинити ці дії. На обґрунтування своїх вимог позивач
+зазначив, що 15 лютого 2019 року Комісія з питань вищого корпусу державної
+служби в системі правосуддя визначила його переможцем конкурсу на зайняття
+посади державної служби категорії «А» в системі правосуддя - Голови ДСА України.
+Оголошення щодо цього рішення опубліковано 15 лютого 2019 року. Після цього
+Комісія вичерпала свої повноваження і жодних обставин, які б перешкоджали його
+призначенню ВРП на зазначену посаду, немає. На переконання позивача, невжиття
+дій з метою призначення його на посаду Голови ДСА України, як і відсутність
+рішення щодо призначення його на цю посаду, є протиправною бездіяльністю
+відповідача. Рішенням Верховного Суду у складі колегії суддів КАС в задоволенні
+позову відмовлено. Свої висновки суд першої інстанції мотивував тим, що ухвалою
+суду у справі № 640/2298/19 зупинено дію рішення конкурсної комісії про
+визначення переможця конкурсу на посаду Голови ДСА України, яка підлягає
+обов’язковому виконанню і не скасована, у зв’язку з чим Вища рада правосуддя
+мала підстави відкласти розгляд питання про призначення і таке її рішення не
+можна трактувати як протиправну бездіяльність. Велика Палата Верховного Суду
+
+частково задовольнила апеляційну скаргу, скасувала рішення суду першої інстанції
+та ухвалила нове рішення про часткове задоволення позову.
+
+Оскарження результатів конкурсу в адміністративному судочинстві
+і заходи забезпечення позовів, які можуть бути вжиті в межах цього
+оскарження, не можуть перешкоджати і не перешкоджають прийняттю
+рішення про призначення по завершенню строку, передбаченого
+частиною третьою статті 31 Закону України від 10.12.2015 року № 889-VIII
+«Про державну службу». Після оприлюднення інформації про переможця
+конкурсу повноваження конкурсної комісії є вичерпаними, надалі
+здійснюється діяльність субєкта призначення (у цій справі - ВРП), яка
+полягає у прийнятті рішення про призначення. Перешкодити здійсненню
+цієї діяльності могли б заходи із забезпечення позову, які полягають
+у забороні суб’єкту призначення вчиняти відповідні дії. Однак закон (пункт
+1 частини третьої статті 151 КАС України) не допускає забезпечення
+позову шляхом зупинення актів ВРП та встановлення для неї заборони
+або обов’язку вчиняти певні дії, і такі заходи не вживались. Отже,
+з метою безперебійного функціонування державного органу закон
+вимагає від ВРП прийняти рішення про призначення в межах
+встановленого в законі строку навіть в умовах оскарження результатів
+
+конкурсу, що триває
+
+Детальніше з текстом рішення КАС ВС від 19 вересня 2019 року у справі № 9901/276/19 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/84493503
+
+Детальніше з текстом постанови ВП ВС від 08 вересня 2022 року у справі № 9901/276/19 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/ 106330152
+
+2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.2_segment.md не вказана 10140 місцеві органи державної виконавчої влади державної служби семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «місцеві органи державної виконавчої влади» (основи суспільного ладу / місцеві органи державної виконавчої влади).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">17</span>
+            <span class="file-badge">01.2_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Місцеві органи державної виконавчої влади</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>державної служби</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Місцеві органи державної виконавчої влади» (Основи суспільного ладу / Місцеві органи державної виконавчої влади).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.2. Повноваження конкурсної комісії під час проведення конкурсу на посади
+державної служби
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md № 826/4954/17 10140 місцеві органи державної виконавчої влади кандидата на посаду державної служби семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «місцеві органи державної виконавчої влади» (основи суспільного ладу / місцеві органи державної виконавчої влади).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">18</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <a href="http://reyestr.court.gov.ua/Review/85711360" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 826/4954/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Місцеві органи державної виконавчої влади</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>кандидата на посаду державної служби</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Місцеві органи державної виконавчої влади» (Основи суспільного ладу / Місцеві органи державної виконавчої влади).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+2.2. Про суб&#x27;єкта оскарження рішення конкурсної комісії щодо переможця конкурсу
+кандидата на посаду державної служби
+
+Особа звернувся до суду з позовом до Державного агентства лісових ресурсів
+України, в якому просив скасувати рішення Державного агентства лісових ресурсів
+України щодо переможця конкурсу кандидата на посаду начальника ІваноФранківського обласного управління лісового та мисливського господарства.
+Позивач вказував, що надіслав на адресу конкурсної комісії пакет документів
+поштовим відправленням, з метою участі в конкурсі на зайняття вакантних посад
+державних службовців, зокрема, начальника Івано-Франківського обласного
+управління лісового та мисливського господарства. Відповідач вказував,
+що позивача повідомлено листом про те, що документи, надіслані поштою
+або подані особисто в останній день приймання документів після закінчення
+робочого часу, не розглядаються, тому позивача не допущено до участі у конкурсі
+на зайняття вакантної посади начальника Івано-Франківського обласного
+управління лісового та мисливського господарства. Суди попередніх інстанцій
+відмовили у задоволенні позову. Верховний Суд касаційну скаргу залишив без
+задоволення, а оскаржувані судові рішення – без змін.
+
+Умовами проведення конкурсу чітко встановлено строк - 15 днів для
+прийняття документів осіб, бажаючих прийняти участь у даному конкурсі.
+При цьому, даний строк визначає момент, коли такі документи мають
+фізично опинитися у Комісії для їх подальшого розгляду, а не бути
+відправлені кандидатами поштою, кур’єром тощо.
+Правом на оскарження рішень конкурсної комісії наділена особа, яка
+подала необхідні документи на участь у такому конкурсі. Це означає,
+що такі документи мають бути прийняті відповідною комісією
+та перевірені на предмет їх повноти
+
+Детальніше з текстом постанови КАС ВС від 18 листопада 2019 року у справі № 826/4954/17 можна
+ознайомитися за посиланням http://reyestr.court.gov.ua/Review/85711360
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md № 520/987/2020 40110 відповідальність за порушення законодавства про землю. вирішення земельних спорів для скасування його результатів семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «відповідальність за порушення законодавства про землю. вирішення земельних спорів» (природні ресурси. охорона природи / відповідальність за порушення законодавства про землю. вирішення земельних спорів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">19</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/100529428" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 520/987/2020</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40110</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Відповідальність за порушення законодавства про землю. Вирішення земельних спорів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>для скасування його результатів</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Відповідальність за порушення законодавства про землю. Вирішення земельних спорів» (Природні ресурси. Охорона природи / Відповідальність за порушення законодавства про землю. Вирішення земельних спорів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+2.1. Про факт порушення умов конкурсу на посаду державного службовця як підставу
+для скасування його результатів
+
+Особа звернувся до суду з позовом до Фонду державного майна України,
+за участю третіх осіб, які не заявляють самостійних вимог на предмет спору
+на стороні відповідача - Регіонального відділення Фонду державного майна України
+по Полтавській та Сумській областях, ОСОБА_2, у якому, просив визнати
+протиправним і скасувати рішення голови Фонду державного майна України про
+визначення переможцем конкурсу на зайняття вакантних посад державної служби
+категорії «Б», проведеного відповідно до наказу Фонду з кадрових питань
+(особового складу) від 16 грудня 2019 року № 462-р «Про оголошення конкурсу»
+на зайняття вакантної посади начальника Регіонального відділення Фонду
+державного майна України по Полтавській та Сумській областях ОСОБА_2;
+скасувати наказ про призначення за результатами конкурсу ОСОБА_2 на посаду
+начальника Регіонального відділення Фонду державного майна України по
+Полтавській та Сумській областях з 17 лютого 2020 року. Позивач уважав,
+що конкурс був упереджений та не прозорий, позаяк переможець конкурсу
+ОСОБА_2 при подачі документів не надав підтвердження рівня вільного володіння
+державною мовою, у зв’язку із чим не повинен був бути допущеним до участі
+у конкурсі. Також зазначає, що за результатами другого етапу (співбесіди)
+ОСОБА_2 набрав непрохідний бал та не міг бути включеним до загального рейтингу.
+Судами попередніх інстанцій позов задоволено. Верховний Суд касаційну скаргу
+задовольнив, оскаржувані судові рішення скасував, у задоволенні позову відмовив.
+
+Право на доступ до публічної служби не означає, що особі гарантується
+право на зайняття посади публічної служби. Сутність права на рівний
+доступ зводиться до того, що такий доступ має бути рівним
+та заснованим на особистих якостях та досягненнях. У спорах,
+пов’язаних із прийняттям на публічну службу, судам необхідно
+перевіряти чи було забезпечено особі рівний доступ, зокрема,
+у конкурсних процедурах на зайняття посад державної служби.
+Підставою для скасування результатів конкурсу є встановлення факту
+порушень умов конкурсу, які могли вплинути на результати конкурсу. У
+спорах, пов’язаних із оскарженням учасниками конкурсів на зайняття
+посад публічної служби результатів конкурсу, судам необхідно не лише
+перевіряти чи було дотримано процедуру проведення конкурсу,
+а й досліджувати питання щодо того, чи є встановлені порушення
+
+такими, що мали можливість вплинути на результат проведеного
+конкурсу. Межею, що розділяє істотне (фундаментальне) порушення
+та неістотне, є встановлення такої обставини: чи могло бути іншим
+рішення за умови дотримання передбаченої законом процедури
+
+Детальніше з текстом постанови КАС ВС від 22 жовтня 2021 року у справі № 520/987/2020 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/100529428
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.3_segment.md № 990/205/24 10200 30 вибори депутатів місцевих рад або бездіяльності конкурсної комісії з проведення конкурсу на зайняття посади семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «вибори депутатів місцевих рад» (основи суспільного ладу / законодавство про вибори. виборчі комісії / вибори депутатів місцевих рад).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">20</span>
+            <span class="file-badge">02.3_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/123658730" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 990/205/24</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10200 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про вибори. Виборчі комісії</span><span class="crumb-sep">›</span><span class="crumb-leaf">Вибори депутатів місцевих Рад</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>або бездіяльності Конкурсної комісії з проведення конкурсу на зайняття посади</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Вибори депутатів місцевих Рад» (Основи суспільного ладу / Законодавство про вибори. Виборчі комісії / Вибори депутатів місцевих Рад).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+2.3. Про неоскаржуваність у порядку адміністративного судочинства рішень, дій
+або бездіяльності Конкурсної комісії з проведення конкурсу на зайняття посади
+керівника служби дисциплінарних інспекторів, його заступника та дисциплінарного
+інспектора
+
+Позивач звернувся до суду з позовом до Вищої ради правосуддя, третя особа, яка
+не заявляє самостійних вимог щодо предмета спору, на стороні відповідача
+Конкурсна комісія з проведення конкурсу на зайняття посади керівника служби
+дисциплінарних інспекторів, його заступника та дисциплінарного інспектора,
+у якому просив визнати неправомірною бездіяльність ВРП під час проведення
+конкурсу на зайняття посади керівника служби дисциплінарних інспекторів, його
+заступника та дисциплінарного інспектора, скасувати конкурс та зобов’язати
+відповідача оголосити новий конкурс, проведення якого повністю покласти на ВРП.
+На обґрунтування позову зазначав, що ВРП незаконно самоусунулася від
+виконання своїх конституційних обов’язків, незаконно делегувала свої
+повноваження з проведення Конкурсу незрозумілому допоміжному органу, який
+називає себе Конкурсною комісією та переважно складається з осіб, які не є
+держслужбовцями, не є працівниками Секретаріату ВРП, не є громадянами України,
+підібрані за непрозорою процедурою, відносяться до громадського сектору, не
+проходили спеціальну перевірку і не надавали зобов’язань щодо нерозголошення
+інформації (у тому числі таємної чи такої, що складає державну таємницю), яка їм
+стала / стане відома у процесі проведення конкурсу. Рішенням Верховного Суду
+у складі колегії суддів Касаційного адміністративного суду в задоволенні позову
+відмовлено. Суд першої інстанції дійшов висновку, що Конкурсна комісія є
+суб’єктом владних повноважень у розумінні Кодексу адміністративного
+судочинства України, наділена адміністративною процесуальною правосуб’єктністю
+відповідно до вимог статті 43 цього Кодексу, а тому її рішення може бути оскаржене
+в порядку, встановленому цим Кодексом. Разом з тим з огляду на положення
+частини четвертої статті 22 КАС України Верховному Суду як суду першої інстанції
+такий спір не підсудний. Велика Палата Верховного Суду частково задовольнила
+апеляційну скаргу та змінила мотивувальну частину рішення суду першої інстанції.
+
+До повноважень Конкурсної комісії не віднесено ухвалення остаточного
+рішення про призначення або про відмову в призначенні переможців
+конкурсу на вакантні посади заступника керівника служби
+дисциплінарних інспекторів та дисциплінарних інспекторів. Проведення
+співбесіди з переможцями Конкурсу та ухвалення за її результатами
+рішення про призначення або про відмову в призначенні переможців
+Конкурсу належить до виключної компетенції ВРП.
+
+Конкурсна комісія лише сприяє суб’єкту призначення у встановленні
+відповідності кандидатів на зазначені посади критерію доброчесності
+і встановленим для судді етичним стандартам та не уповноважена
+призначати їх на посаду, а відтак вона не є суб’єктом владних
+повноважень, який може бути відповідачем в адміністративній справі.
+Отже, позов до Конкурсної комісії з приводу оскарження її рішень, дій
+або бездіяльності не належить розглядати за правилами
+адміністративного судочинства.
+
+Детальніше з текстом рішення КАС ВС від 09 грудня 2024 року у справі № 990/205/24 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/123658730
+
+Детальніше з текстом постанови ВП ВС від 03 квітня 2025 року у справі № 990/205/24 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/127077657
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.4_segment.md № 826/6108/17 10140 10 представники президента служби оскаржити рішення конкурсної комісії одночасно в адміністративному семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «представники президента» (основи суспільного ладу / місцеві органи державної виконавчої влади / представники президента).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">21</span>
+            <span class="file-badge">02.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/88305287" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 826/6108/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Місцеві органи державної виконавчої влади</span><span class="crumb-sep">›</span><span class="crumb-leaf">Представники президента</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>служби оскаржити рішення конкурсної комісії одночасно в адміністративному</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Представники президента» (Основи суспільного ладу / Місцеві органи державної виконавчої влади / Представники президента).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Оскарження результатів конкурсу на зайняття вакантних посад державної служби
+
+2.4. Про можливість учасника конкурсу на зайняття вакантної посади державної
+служби оскаржити рішення конкурсної комісії одночасно в адміністративному
+(позасудовому) та судовому порядку
+
+Державне агентство лісових ресурсів України звернулось суду з позовом
+до Національного агентства України з питань державної служби в якому просило
+визнати протиправною та скасувати вимогу відповідача про скасування
+результатів конкурсу на зайняття посади начальника Івано-Франківського
+обласного управління лісового та мисливського господарства. Судами попередніх
+інстанцій позов задоволено. Ухвалюючи рішення у цій справі суди зазначили,
+що учасником конкурсу на зайняття вакантної посади начальника ІваноФранківського обласного управління лісового та мисливського господарства
+фактично обраний судовий спосіб захисту порушеного права шляхом оскарження
+рішення конкурсу, що мало виключити обрання другого способу - звернення
+до Національного агентства України з питань державної служби, оскільки така
+ситуація може призвести до конфлікту органів у разі прийняття двох протилежних
+за змістом рішень. У касаційній скарзі відповідач зазначив, що подання скарги
+до органу, посадової особи вищого рівня не перешкоджає оскарженню цих рішень,
+дій чи бездіяльності до суду. Верховний Суд касаційну скаргу задовольнив, рішення
+судів попередніх інстанцій скасував, та ухвалив нове рішення – про відмову
+у задоволенні позову.
+
+Факт подання скарги до органу, посадової особи вищого рівня не
+позбавляє права особи на оскарження цих рішень, дій чи бездіяльності
+
+до суду.
+
+Отже, звернення учасника конкурсу на зайняття вакантної посади
+державної служби категорій &quot;Б&quot; і &quot;В&quot; до Нацдержслужби про оскарження
+рішення конкурсної комісії, не позбавляє його права на оскарження цього
+ж рішення безпосередньо до суду
+
+Детальніше з текстом постанови КАС ВС від 19 березня 2020 року у справі № 826/6108/17 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/88305287
+
+3. Призначення на посаду державної служби за результатами конкурсу
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.03_segment.md № 160/3094/20 10140 місцеві органи державної виконавчої влади на посаду державної служби семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «місцеві органи державної виконавчої влади» (основи суспільного ладу / місцеві органи державної виконавчої влади).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">22</span>
+            <span class="file-badge">03.03_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/107845554" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 160/3094/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10140</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Місцеві органи державної виконавчої влади</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>на посаду державної служби</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Місцеві органи державної виконавчої влади» (Основи суспільного ладу / Місцеві органи державної виконавчої влади).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Призначення на посаду державної служби за результатами конкурсу
+
+3.3. Про межі повноважень суб’єкта призначення за результатами конкурсу
+на посаду державної служби
+
+Особа звернулася до суду з позовом до Кабінету Міністрів України, у якому
+просив: визнати нечинним рішення Кабінету Міністрів України в частині не
+підтримання призначення позивача Головою Державного агентства
+з енергоефективності та енергозбереження та відхилення проекту розпорядження
+Кабінету Міністрів «Про призначення Особи Головою Державного агентства
+з енергоефективності та енергозбереження» нечинним; визнати протиправною
+бездіяльність Кабінету Міністрів України в частині не прийняття розпорядження про
+призначення Особи Головою Державного агентства з енергоефективності
+та енергозбереження; зобов’язати Кабінету Міністрів України призначити особу
+позивача на посаду Голови Державного агентства з енергоефективності
+та енергозбереження. Рішенням суду першої інстанції позов задоволено частково.
+Суд апеляційної інстанції змінив зміст резолютивної частини рішення суду першої
+інстанції, а в решті залишив його без змін. Підставою касаційного оскарження
+рішення суду відповідач визначив відсутність правового висновку Верховного Суду
+щодо можливості прийняття Кабінетом Міністрів України не тільки рішень у формі
+розпоряджень та постанов, а й протокольних рішень з окремих кадрових питань,
+які не стосуються призначення або звільнення з посади, а стосуються виключно
+розгляду питання прийняття або відхилення пропозицій щодо призначення
+кандидата на посаду керівника центрального органу виконавчої влади. Верховний
+Суд касаційну скаргу залишив без задоволення, а оскаржувані судові рішення – без
+
+змін.
+
+Саме Законом України від 10 грудня 2015 року № 889-VIII «Про державну
+службу» врегульоване питання вступу (призначення) на державну службу,
+в тому числі й на посаду керівника центрального органу виконавчої
+влади, а Порядком проведення конкурсу на зайняття посад державної
+
+служби, затвердженим постановою Кабінету Міністрів України
+25 березня 2016 року №246 врегульовано процедуру проведення
+
+конкурсу.
+Закон України від 10 грудня 2015 року № 889-VIII «Про державну службу»
+має вищу юридичну силу, аніж Порядок розгляду питань, пов’язаних
+з підготовкою і внесенням подань щодо осіб, призначення на посаду
+та звільнення з посади яких здійснюється Верховною Радою України,
+Президентом України або Кабінетом Міністрів України чи погоджується
+з Кабінетом Міністрів України, затверджений постановою Кабінету
+Міністрів України від 11 квітня 2012 року №298.
+Таким чином, визнання позивача переможцем конкурсу, отримання
+позитивного висновку за результатами спеціальної перевірки, відсутність
+заяви позивача про відмову у призначенні на посаду, вказує на чіткі
+рамки повноважень, в яких мав би діяти суб’єкт призначення,
+з урахуванням частини другої статті 19 Конституції України.
+У цьому випадку невмотивована відмова відповідача у призначенні
+позивача на посаду нівелює значення та зміст конкурсного відбору
+державних службовців, ставить під сумнів прозорість, демократизацію
+та ефективність кадрової політики Уряду
+
+Детальніше з текстом постанови КАС ВС від 13 грудня 2022 року у справі № 160/3094/20 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/107845554
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md № 813/3002/16 80 30 50 ордер на жиле приміщення можливості подати заяву на проведення спеціальної перевірки семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «ордер на жиле приміщення» (житлове законодавство. житлово-комунальне господарство / надання житлових приміщень / ордер на жиле приміщення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">23</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/89598700" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 813/3002/16</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">80 30 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Житлове законодавство. Житлово-комунальне господарство</span><span class="crumb-sep">›</span><span class="crumb">Надання житлових приміщень</span><span class="crumb-sep">›</span><span class="crumb-leaf">Ордер на жиле приміщення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>можливості подати заяву на проведення спеціальної перевірки</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Ордер на жиле приміщення» (Житлове законодавство. Житлово-комунальне господарство / Надання житлових приміщень / Ордер на жиле приміщення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Призначення на посаду державної служби за результатами конкурсу
+
+3.1. Про повідомлення особи про результати проведеного конкурсу для надання їй
+можливості подати заяву на проведення спеціальної перевірки
+
+Особа звернувся до суду з позовом до Державного агентства рибного
+господарства України, голови Державного агентства рибного господарства України,
+в якому просила зобов’язати голову Державного агентства рибного господарства
+України прийняти рішення за результатами проведеного конкурсу щодо
+призначення позивача на посаду начальника Управління державного агентства
+рибного господарства у Львівській області. Позивач вважав, що на керівника
+державного органу покладено обов’язок протягом місяця призначити на посаду
+переможця конкурсу та обов’язок з організації проведення спеціальної перевірки.
+Оскільки ж призначення не відбулося, а спеціальна перевірка не проведена очевидною є бездіяльність відповідача. Суд першої інстанції в задоволенні позову
+відмовив. Апеляційний суд скасував рішення суду першої інстанції та ухвалив нове,
+яким позов задовольнив. Скаржник зазначив, що рішення про призначення
+(обрання) або відмову у призначенні (обранні) на посаду, пов’язану з виконанням
+функцій держави або місцевого самоврядування, приймається після проведення
+спеціальної перевірки, а у разі ненадання особою згоди на проведення спеціальної
+перевірки, питання щодо призначення її на посаду не розглядається. Верховний Суд
+касаційну скаргу задовольнив частково, оскаржувані рішення судів змінено.
+
+Законодавчі строки подання заяви на проведення спеціальної перевірки
+слід відраховувати від належного повідомлення позивача про результати
+проведеного конкурсу, оскільки позивач претендував на вакантну посаду
+в створюваному територіальному органі та пройшов конкурс, однак
+відповідачем не було офіційно повідомлено про це позивача,
+що унеможливило подання ним вказаної заяви.
+Законодавцем не наведено жодних підстав (альтернатив) для відмови
+в призначені на посаду особи, щодо якої було прийнято рішення
+
+конкурсної комісії про рекомендацію для призначення такої особи
+на вказану посаду, окрім встановлення за результатами спеціальної
+перевірки обставин, які є підставою для відмови у призначенні (обранні)
+на посаду)
+
+Детальніше з текстом постанови КАС ВС від 03 червня 2020 року у справі № 813/3002/16 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/89598700
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.2_segment.md № 640/23171/21 50 90 30 на час виконання державних або громадських обов&#x27;язків переможця конкурсу на посаду керівника територіального органу відповідного семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «на час виконання державних або громадських обов&#x27;язків» (трудове законодавство / гарантії і компенсації / на час виконання державних або громадських обов&#x27;язків).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">24</span>
+            <span class="file-badge">03.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/105247826" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 640/23171/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 90 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Гарантії і компенсації</span><span class="crumb-sep">›</span><span class="crumb-leaf">На час виконання державних або громадських обов&#x27;язків</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>переможця конкурсу на посаду керівника територіального органу відповідного</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «На час виконання державних або громадських обов&#x27;язків» (Трудове законодавство / Гарантії і компенсації / На час виконання державних або громадських обов&#x27;язків).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Призначення на посаду державної служби за результатами конкурсу
+
+3.2. Про обов’язковість умови погодження профільним міністром призначення
+переможця конкурсу на посаду керівника територіального органу відповідного
+центрального органу виконавчої влади
+
+Особа звернувся до суду з позовом до Міністра фінансів України та Державної
+митної служби України, у якому просив визнати протиправною бездіяльність
+Міністра фінансів України щодо непогодження призначення на вакантну посаду
+начальника Координаційно-моніторингової митниці позивача, як переможця
+конкурсу та визнати протиправною бездіяльність Державної митної служби України
+щодо непризначення позивача на вакантну посаду начальника Координаційномоніторингової митниці, як переможця конкурсу. Судами попередніх інстанцій позов
+задоволено частково. Суди вказали, що Міністром фінансів України допущено
+бездіяльність, яка полягає у нездійсненні розгляду отриманих від Державної митної
+служби України документів щодо погодження призначення позивача на посаду
+в межах строків, які б дозволяли Державній митній службі України прийняти
+рішення про призначення позивача на посаду в порядку, визначеному Законом
+України від 10 грудня 2015 року № 889-VIII «Про державну службу». Верховний Суд
+касаційну скаргу залишив без задоволення, а оскаржувані судові рішення – без
+змін.
+
+Призначення на посаду керівника центрального органу виконавчої влади
+є можливим за сукупності таких умов, як: визнання особи переможцем
+конкурсу; проходження ним спеціальної перевірки у випадку та порядку,
+передбачених законодавством у сфері запобігання корупції; отримання
+погодження відповідного профільного міністра та голови відповідної
+місцевої державної адміністрації; проходження кандидатом співбесіди
+із суб’єктом призначення; підписання з кандидатом контракту про
+проходження державної служби (у разі укладення).
+Тому, погодження з відповідним міністром є встановленою Законом
+обов’язковою умовою, а не міжвідомчим погодженням. Відтак,
+бездіяльність Міністерства фінансів України щодо погодження особи
+
+на посаду не може вважатися такою, що не породжує правових наслідків
+для неї, оскільки відсутність вказаного погодження не надає можливість
+суб’єкту призначення діяти в рамках Закону України від
+17 березня 2011 року № 3166-VI «Про центральні органи виконавчої
+влади» з дотриманням строків, визначених Законом України від
+10 грудня 2015 року № 889-VIII «Про державну службу».
+
+Детальніше з текстом постанови КАС ВС від 14 липня 2022 року у справі № 640/23171/21 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/105247826
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+
+### 3. Призначення на посаду державної служби за результатами конкурсу
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.4_segment.md № 420/194/20 40 80 20 10 земельні ділянки для ведення особистого підсобного господарства, садівництва, городництва, сінокосіння та випасання худоби кандидата семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «земельні ділянки для ведення особистого підсобного господарства, садівництва, городництва, сінокосіння та випасання худоби» (природні ресурси. охорона природи / склад земель / землі сільськогосподарського призначення / земельні ділянки для ведення особистого підсобного господарства, садівництва, городництва, сінокосіння та випасання худоби).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">25</span>
+            <span class="file-badge">03.4_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/93268209" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 420/194/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40 80 20 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb">Склад земель</span><span class="crumb-sep">›</span><span class="crumb">Землі сільськогосподарського призначення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Земельні ділянки для ведення особистого підсобного господарства, садівництва, городництва, сінокосіння та випасання худоби</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>кандидата</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Земельні ділянки для ведення особистого підсобного господарства, садівництва, городництва, сінокосіння та випасання худоби» (Природні ресурси. Охорона природи / Склад земель / Землі сільськогосподарського призначення / Земельні ділянки для ведення особистого підсобного господарства, садівництва, городництва, сінокосіння та випасання худоби).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3. Призначення на посаду державної служби за результатами конкурсу
+
+3.4. Про умови призначення на вакантну посаду другого за результатами конкурсу
+
+кандидата
+
+Особа звернулась до суду з позовом до Одеської обласної державної адміністрації,
+Голови Одеської обласної державної адміністрації про визнання протиправною
+бездіяльності, зобов’язання видати розпорядчий документ про призначення
+на посаду, зобов’язання укласти трудовий договір, відшкодування моральної
+шкоди, стягнення середнього заробітку за час вимушеного прогулу. Позивач вказує
+на те, що з моменту завершення спеціальної перевірки та отримання Одеською
+обласною державною адміністрацією погодження Міністерства охорони здоров’я
+України щодо призначення минуло більш ніж 2 місяці, тому, на думку позивача,
+відсутність відповідних розпорядчих актів про призначення на посаду директора
+Департаменту охорони здоров’я Одеської обласної державної адміністрації є
+протиправною бездіяльністю з боку посадових осіб суб’єкта призначення. Суди
+попередніх інстанцій у задоволенні позову відмовили. Скаржник вважав,
+що отримавши позитивні висновки за результатами проходження перевірок
+
+та погодження, у відповідачів були всі необхідні та визначені законом документи
+для призначення позивача на посаду, проте дії щодо його призначення протиправно
+не вчинялись, та не надавалось жодних змістовних пояснень щодо причин такої
+бездіяльності. Верховний Суд касаційну скаргу залишив без задоволення,
+а оскаржувані судові рішення – без змін.
+
+Призначення на посаду державної служби відбувається шляхом видання
+визначеним законом суб’єктом призначення акту про призначення
+на посаду, який відповідно до статті 33 Закону України від
+10 грудня 2015 року № 889-VIII «Про державну службу» приймається
+у вигляді указу, постанови, наказу (розпорядження), рішення, залежно від
+категорії посади, відповідно до законодавства.
+Враховуючи правила статті 29 цього Закону, за якою другий
+за результатами конкурсу кандидат на зайняття вакантної посади
+державної служби має право на призначення на таку посаду протягом
+одного року з дня проведення конкурсу, Верховний Суд наголошує,
+що конструкція означеної правової норми дає підстави для висновку про
+те, що таке право другий за результатами конкурсу кандидат має лише
+
+у випадку, якщо протягом одного року з дня проведення конкурсу
+відповідний суб’єкт призначення прийняв акт про його призначення
+на посаду. Чинне законодавство визначає строк у статті 29 Закону
+України від 10 грудня 2015 року № 889-VIII «Про державну службу» як
+присічний - не передбачає випадків та підстав для його продовження,
+а також винятків із цього правила
+
+Детальніше з текстом постанови КАС ВС від 03 грудня 2020 року у справі № 420/194/20 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/93268209
+
+4. Інше
+
+### 4. Інше
+
+### 4. Інше
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1_segment.md № 822/3770/17 50 20 10 прийняття на роботу. випробування. конкурс. стажування на поворотне прийняття на державну службу семантичний мапінг з урахуванням юрисдикції вс. обрано рубрику «прийняття на роботу. випробування. конкурс. стажування» (трудове законодавство / трудовий договір. контракт / прийняття на роботу. випробування. конкурс. стажування).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">26</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/83800009" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 822/3770/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 20 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудовий договір. Контракт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прийняття на роботу. Випробування. Конкурс. Стажування</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>на поворотне прийняття на державну службу</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ВС. Обрано рубрику «Прийняття на роботу. Випробування. Конкурс. Стажування» (Трудове законодавство / Трудовий договір. Контракт / Прийняття на роботу. Випробування. Конкурс. Стажування).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4. Інше
+
+4.1. Про попереднє призначення за результатами конкурсу як умову реалізації права
+на поворотне прийняття на державну службу
+
+Позивачка звернулася до суду з позовом до Шепетівського об’єднаного
+управління Пенсійного фонду України Хмельницької області, у якому просила
+визнати протиправними дії щодо фактичної відмови у прийнятті її на публічну
+службу в порядку поворотного прийняття на посаду головного спеціаліста;
+зобов’язати відповідача з дня набрання законної сили рішенням суду в цій справі
+укласти трудовий договір і прийняти її на відповідну посаду; стягнути на користь
+позивачки середній заробіток за час вимушеного прогулу. Упродовж шести місяців
+із дня її звільнення у зв’язку зі скороченням штату в органі, де вона проходила
+службу, з’явилася вакантна посада, що відповідала її кваліфікації, а відмова
+відповідача прийняти її на вказану посаду порушує її право на поворотне прийняття
+на державну службу. Суд першої інстанції позов задовольнив частково.
+Апеляційний суд скасував рішення суду першої інстанції в частині відмови
+у задоволенні позовних вимог та ухвалив в цій частині нове рішення, яким
+задовольнив такі вимоги. Скаржник зазначив, що Законом України від
+10 грудня 2015 року № 889-VIII «Про державну службу» не визначено коло посад, які
+мають бути запропоновані раніше звільненому державному службовцю, у зв’язку
+з чим відмова від прийняття на одну посаду з одночасною пропозицією
+рівнозначних посад не може вважатися порушенням вимог статті 87 Закону України
+від 10 грудня 2015 року № 889-VIII «Про державну службу» щодо обов’язку
+поворотного прийняття на службу. Верховний Суд касаційну скаргу задовольнив
+частково, оскаржувані судові рішення скасовано, справу направлено до суду першої
+інстанції на нови розгляд.
+
+Суб’єкт призначення зобов’язаний прийняти на державну службу особу,
+звільнену з неї на підставі пункту 1 частини першої статті 87 Закону
+України від 10 грудня 2015 року № 889-VIII «Про державну службу»,
+за умови, що впродовж шести місяців після звільнення в державному
+органі з’явилася вакантна посада, яку звільнена особа може обійняти
+відповідно до своєї кваліфікації, і така особа звернулася до суб’єкта
+призначення з відповідною заявою.
+Ураховуючи, що загальним правилом зайняття посад державної служби
+відбувається лише на підставі конкурсу, право на поворотне прийняття
+на державну службу може бути реалізованим за умови, що особу було
+
+звільнено з посади в цьому ж органі, на яку її було призначено
+
+за результатами конкурсу.
+Водночас, суб’єкт призначення незобов’язаний повідомляти раніше
+скороченого державного службовця про виникнення вакансій
+за посадами, що відповідають його кваліфікації, адже з моменту
+звільнення державного службовця з підстав, визначених пункту 1
+частини першої статті 87 Закону України від 10 грудня 2015 року № 889-VIII
+«Про державну службу», відносини публічної служби, опосередковані
+взаємними правами й обов’язками, припиняються.
+
+Детальніше з текстом постанови КАС ВС від 21 серпня 2019 року у справі № 822/3770/17 можна
+ознайомитися за посиланням https://reyestr.court.gov.ua/Review/83800009
+
+Огляд судової практики Верховного Суду у справах щодо державної служби
+(прийняття на державну службу). Рішення, внесені в ЄДРСР, з лютого 2019 року до
+квітня 2025 року / Упоряд.: управління аналітичної та правової роботи Касаційного
+адміністративного суду департаменту аналітичної та правової роботи апарату
+Верховного Суду. Київ, 2025. – 33 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 26;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

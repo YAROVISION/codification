@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_SES_6_2025 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_SES_6_2025 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_SES_6_2025.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_SES_6_2025</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">31</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">72.0%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">24</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 31 із 31</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="02_segment.md не вказана 20 10 80 контроль за виконанням бюджету.рахункова палата верховної ради україни постанова загального суду (друга палата) від 17 червня 2025 року, asociación семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «контроль за виконанням бюджету.рахункова палата верховної ради україни» (бюджетно-фінансове законодавство / державний бюджет україни / контроль за виконанням бюджету.рахункова палата верховної ради україни).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20 10 80</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Державний бюджет України</span><span class="crumb-sep">›</span><span class="crumb-leaf">Контроль за виконанням бюджету.Рахункова палата Верховної Ради України</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Постанова Загального Суду (Друга Палата) від 17 червня 2025 року, Asociación</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Контроль за виконанням бюджету.Рахункова палата Верховної Ради України» (Бюджетно-фінансове законодавство / Державний бюджет України / Контроль за виконанням бюджету.Рахункова палата Верховної Ради України).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2 Рішення за червень 2025 року
+
+І. Інституційні положення: Європейський омбудсмен
+
+Постанова Загального Суду (Друга Палата) від 17 червня 2025 року, Asociación
+de ciudadanos contra la corrupción y para la defensa del estado de derecho v Ombudsman,
+T-615/24
+
+[Посилання на повний текст постанови](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=301457&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=5988378)
+
+Позов про скасування – Рішення Омбудсмена про відмову в порушенні розслідування
+за скаргою – Акт, що не підлягає оскарженню – Часткова явна відсутність юрисдикції
+– Часткова явна неприйнятність
+
+Розглянувши позов про скасування, відхилений частково на підставі явної
+відсутності юрисдикції і частково як явно неприйнятний, Загальний Суд уперше
+з моменту прийняття нового Статуту Європейського омбудсмена в 2021 році [1] вирішив
+питання щодо того, чи можуть рішення Омбудсмена про відмову в порушенні
+розслідування за скаргою бути предметом позову про скасування.
+
+Заявник, Asociación de ciudadanos contra la corrupción y para la defensa del estado
+de derecho, є асоціацією за іспанським правом, метою якої є боротьба з корупцією
+
+та захист верховенства права.
+
+28 серпня 2024 року заявник подав скаргу на Європейську комісію до Омбудсмена.
+Омбудсмен повідомила заявника листом від 18 вересня 2024 року, що після розгляду
+скарги не було виявлено достатньо доказів для порушення розслідування
+і що провадження за скаргою буде закрито. Отримавши звернення від заявника,
+Омбудсмен електронним листом від 27 вересня 2024 року та листом від 03 жовтня
+2024 року підтвердила свої попередні відповіді й відповіла на прохання заявника
+про порушення розслідування за власною ініціативою.
+
+Асоціація звернулася з позовом про скасування рішення, викладеного в листі
+Омбудсмена від 03 жовтня 2024 року.
+
+Висновки Суду
+
+Суд відхилив цей позов про скасування як явно неприйнятний, оскільки
+оскаржуване рішення не є актом, що підлягає оскарженню для цілей статті 263 ДФЄС.
+
+У зв’язку з цим Суд зазначив, що зі статті 228 ДФЄС та статей 2–4
+Регламенту 2021/1163 випливає, що Омбудсмен має розглядати скарги,
+що стосуються випадків незадовільного управління в діяльності установ, органів,
+служб або агенцій Європейського Союзу, а також проводити розслідування, які вона
+
+1 Регламент Європейського Парламенту (ЄС, Євратом) 2021/1163 від 24 червня 2021 року, що встановлює правила
+та загальні умови виконання обов’язків Омбудсмена (Статут Європейського Омбудсмена) і скасовує Рішення
+94/262/ЄОВС, ЄС, Євратом (OJ 2021, L 253, с. 1).
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03_segment.md не вказана 180 30 70 технічне обслуговування малих суден, що належать громадянам до сфери її повноважень або не відповідають певним процесуальним вимогам, [3] якщо семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «технічне обслуговування малих суден, що належать громадянам» (законодавство про забезпечення діяльності транспорту / річковий транспорт / технічне обслуговування малих суден, що належать громадянам).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">03_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">180 30 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про забезпечення діяльності транспорту</span><span class="crumb-sep">›</span><span class="crumb">Річковий транспорт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Технічне обслуговування малих суден, що належать громадянам</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>до сфери її повноважень або не відповідають певним процесуальним вимогам, [3] якщо</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Технічне обслуговування малих суден, що належать громадянам» (Законодавство про забезпечення діяльності транспорту / Річковий транспорт / Технічне обслуговування малих суден, що належать громадянам).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3 Рішення за червень 2025 року
+
+вважає обґрунтованими. [2] Зокрема, Омбудсмен відхиляє скарги, які не належать
+до сфери її повноважень або не відповідають певним процесуальним вимогам, [3] якщо
+вона вважає, що скарга є явно необґрунтованою, вона закриває провадження у справі
+та повідомляє про це скаржника [4], а якщо вона вбачає для цього підстави, може
+прийняти рішення про порушення розслідування. [5] У цьому контексті вона має
+якнайшвидше поінформувати скаржника про вжиті щодо скарги заходи та може
+запропонувати скаржнику й відповідній установі, органу, службі або агенції рішення
+для усунення випадку незадовільного управління, якого стосується скарга; якщо
+з таким рішенням погоджується відповідна установа, орган, служба або агенція ЄС,
+вона може закрити провадження у справі. [6] Якщо факт незадовільного управління
+виявлено в результаті проведення розслідування, Омбудсмен повідомляє про його
+результати відповідну установу, орган, службу або агенцію і, за необхідності, надає
+рекомендації. [7] Після такого повідомлення відповідна установа, орган, служба або агенція
+має протягом трьох місяців надіслати Омбудсмену докладний висновок, [8] після чого
+Омбудсмен може закрити розслідування та передати відповідній установі, органу, службі
+або агенції, а в деяких випадках й Європейському Парламенту, звіт, у якому вона може
+надати рекомендації. Нарешті, Омбудсмен має повідомити скаржника про результати
+розслідування, отриманий висновок та будь-які рекомендації, викладені у звіті. [9]
+
+Отже, з цих положень випливає, що Омбудсмен лише якнайшвидше інформує
+скаржника про вжиті щодо його скарги заходи й що у випадку, коли вона виявляє факт
+незадовільного управління, після передачі справи до відповідної установи, органу,
+служби чи агенції, вона просто інформує скаржника про результати розслідування
+та про висновок відповідної установи, органу, служби чи агенції, а також про будь-які
+рекомендації, надані ними.
+
+Зокрема, після розгляду скарги Омбудсмен не має повноважень вживати
+обов’язкових заходів, а звіт, який вона надсилає до відповідної установи, органу,
+служби або агенції, якщо вона виявляє факт незадовільного управління,
+за визначенням не має жодних правових наслідків для третіх осіб у значенні
+статті 263 ДФЄС і не є обов’язковим для відповідної установи, органу, служби
+чи агенції, які мають право, у межах повноважень, наданих їм правом ЄС, самостійно
+вирішувати, які заходи вжити щодо цього.
+
+Суд дійшов висновку, що обґрунтоване рішення Омбудсмена про закриття
+розгляду скарги без вжиття подальших заходів щодо неї, зокрема тоді, коли
+розслідування не було розпочато, не є актом, що може бути оскаржений шляхом
+подання позову про скасування, оскільки таке рішення не породжує правових
+наслідків для третіх осіб у значенні статті 263 ДФЄС.
+
+2 Стаття 228(1), перший та другий підпункти, ДФЄС.
+3 Стаття 2(4) Статуту Омбудсмена.
+4 Стаття 2(5) цього Статуту.
+5 Стаття 2(7) та стаття 3(1) цього Статуту.
+6 Стаття 2(10) цього Статуту.
+7 Стаття 4(1) цього Статуту.
+8 Стаття 4(2) цього Статуту.
+9 Стаття 4(3) цього Статуту.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04_segment.md не вказана 260 10 30 підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання позову про бездіяльність на підставі статті 265 дфєс, вимагається визнання того, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання» (виправно-трудове законодавство / виправно-трудове законодавство / підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">04_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">260 10 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Виправно-трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>позову про бездіяльність на підставі статті 265 ДФЄС, вимагається визнання того,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання» (Виправно-трудове законодавство / Виправно-трудове законодавство / Підстави звільнення від відбування покарання, допомога особам, звільненим з місць позбавлення волі, нагляд за особами, звільненими від відбування покарання).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4 Рішення за червень 2025 року
+
+З тих самих підстав Суд зазначив, що навіть якщо припустити, що, шляхом подання
+позову про бездіяльність на підставі статті 265 ДФЄС, вимагається визнання того,
+що Омбудсмен не почав розслідування або не надіслав звіт і рекомендації до Комісії,
+ці дії не можуть бути предметом позову про бездіяльність відповідно до третього
+абзацу статті 265 ДФЄС. Позов про бездіяльність має на меті забезпечити
+відповідальність за неприйняття юридично обов’язкового акта. Омбудсмен не вживає
+обов’язкових заходів ані щодо скаржника, ані щодо відповідної установи, органу,
+служби чи агенції.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05_segment.md не вказана 220 30 державні сільськогосподарські підприємства рішення загального суду (сьома палата, розширений склад) від 11 червня 2025 року, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «державні сільськогосподарські підприємства» (законодавство про сільське господарство та агропромисловий комплекс / державні сільськогосподарські підприємства).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">05_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">220 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про сільське господарство та агропромисловий комплекс</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні сільськогосподарські підприємства</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Загального Суду (Сьома Палата, розширений склад) від 11 червня 2025 року,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Державні сільськогосподарські підприємства» (Законодавство про сільське господарство та агропромисловий комплекс / Державні сільськогосподарські підприємства).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5 Рішення за червень 2025 року
+
+II. Сільське господарство та рибальство
+
+Рішення Загального Суду (Сьома Палата, розширений склад) від 11 червня 2025 року,
+Spain v Commission, T-681/22
+
+Спільна політика щодо рибальства – Стаття 9 Регламенту (ЄС) 2016/2336 –
+Імплементаційний регламент (ЄС) 2022/1614 – Методи та критерії визначення районів,
+де, як відомо, існують або можуть існувати вразливі морські екосистеми – Створення
+переліку районів, де наявність вразливих морських екосистем є доведеною
+або ймовірною – Створення буферних зон – Позов про неправомірність –
+Пропорційність
+
+У контексті двох позовів, що стосувалися скасування Імплементаційного
+регламенту 2022/1614, [10] Загальний Суд, засідаючи в розширеному складі з п’яти
+суддів, сформулював критерії для визначення районів, де, як відомо, існують
+або можуть існувати вразливі морські екосистеми («ВМЕ»), з урахуванням принципів,
+викладених у Регламенті 2016/2336 [11] («базовий регламент»).
+
+Регламент № 1380/2013 [12] про спільну політику щодо рибальства (СПР)
+передбачає, inter alia, прийняття заходів для збереження та сталого використання
+морських біологічних ресурсів. У цьому контексті стаття 9(6) базового регламенту
+передбачає прийняття імплементаційних актів з метою встановлення переліку
+районів, де, як відомо, існують або можуть існувати ВМЕ («райони ВМЕ»). Відповідно
+до статті 9(9) базового регламенту, рибальство з використанням донних знарядь лову
+в таких районах забороняється.
+
+15 вересня 2022 року Європейська комісія шляхом прийняття Імплементаційного
+регламенту 2022/1614 затвердила такий перелік на підставі двох консультативних
+документів, виданих Міжнародною радою з дослідження моря (МРДМ).
+
+Королівство Іспанія, кілька іспанських компаній, що володіють риболовними
+суднами, а також організація виробників рибної продукції, до складу якої входять
+ці компанії, просили Суд скасувати цей імплементаційний регламент у частині,
+що стосувалася затвердження зазначеного переліку. На підтримку своїх позовів вони
+стверджували, по-перше, що імплементаційний регламент порушує базовий регламент
+і деякі загальні принципи права ЄС, а по-друге, що стаття 9(6) і (9) базового регламенту
+є недійсною.
+
+У своїх рішеннях Суд відхилив обидва позови в повному обсязі.
+
+10 Імплементаційний регламент Комісії (ЄС) 2022/1614 від 15 вересня 2022 року про визначення наявних районів
+глибоководного рибальства та встановлення переліку районів, де, як відомо, існують або можуть існувати вразливі
+морські екосистеми (ОJ 2022 L 242, с. 1).
+11 Регламент Європейського Парламенту і Ради (ЄС) 2016/2336 від 14 грудня 2016 року про встановлення особливих умов
+для риболовлі глибоководних запасів у північно-східній частині Атлантичного океану та положення щодо риболовлі
+в міжнародних водах північно-східної частини Атлантичного океану, а також скасування Регламенту Ради (ЄС)
+№ 2347/2002 (ОJ 2016 L 354, с. 1).
+12 Регламент Європейського Парламенту і Ради (ЄС) № 1380/2013 від 11 грудня 2013 року про спільну політику
+щодо рибальства і внесення змін до регламентів Ради (ЄС) № 1954/2003 та (ЄС) № 1224/2009, а також скасування
+регламентів Ради (ЄС) № 2371/2002 і (ЄС) № 639/2004 та Рішення Ради 2004/585/ЄС (OJ 2013 L 354, с. 22).
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06_segment.md не вказана 30 60 10 окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.) насамперед суд розглянув, чи порушила комісія базовий регламент, принцип семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (цивільне законодавство / зобов&#x27;язальне право / окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">06_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Насамперед Суд розглянув, чи порушила Комісія базовий регламент, принцип</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (Цивільне законодавство / Зобов&#x27;язальне право / Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 6 Рішення за червень 2025 року
+
+Висновки Суду
+
+Насамперед Суд розглянув, чи порушила Комісія базовий регламент, принцип
+пропорційності або принцип недискримінації при встановленні переліку районів ВМЕ
+в контексті скарг, що стосувалися, з одного боку, впливу певних типів рибальських
+знарядь, а з іншого боку, методології, що використовувалася для визначення меж цих
+районів.
+
+Стосовно типів рибальських знарядь Суд передусім розтлумачив статтю 9(6)
+базового регламенту з метою встановлення критеріїв для визначення районів ВМЕ
+і визначення того, чи вимагає це положення оцінки значного негативного впливу
+рибальства в цих районах за допомогою пасивних донних знарядь лову, тобто знарядь
+лову, зафіксованих в одному місці в морському середовищі. На думку заявників,
+Комісія повинна була оцінити вплив таких знарядь, оскільки вони мають менший
+негативний вплив на ВМЕ, ніж рухомі донні знаряддя лову. Крім того, заявники у справі
+T-781/22 стверджували, що однакове ставлення до пасивних і рухомих знарядь лову
+без будь-яких об’єктивних підстав порушує принцип недискримінації.
+
+Однак стаття 9(6) базового регламенту не вимагає ні такої оцінки, ні підходу
+до управління рибними ресурсами або підходу до управління, який включає оцінку
+наслідків відповідних заходів захисту ВМЕ для рибальської діяльності та економічного
+і соціального життя.
+
+По-перше, з визначень, наведених у базовому регламенті та Регламенті
+№ 734/2008 [13], випливає, що наявність ВМЕ проявляється або на неї вказують
+елементи, що стосуються характеру та кількості видів, що потрапляють як у рухомі,
+так і в пасивні знаряддя лову. Крім того, доведена або ймовірна наявність захищених
+видів призводить до класифікації відповідних районів як районів ВМЕ,
+щоб забезпечити їх захист від донних знарядь лову загалом. Отже, район може бути
+класифікований як район ВМЕ з огляду на значний негативний вплив, що виникає
+внаслідок використання виключно мобільних донних знарядь лову або використання
+донних знарядь лову загалом, без можливості поставити під сумнів таку класифікацію
+стосовно пасивних донних знарядь лову. За таких обставин встановлення переліку
+таких районів не може залежати від порівняльного аналізу мобільних і пасивних
+знарядь лову, навіть якщо останні можуть становити менший ризик, ніж мобільні
+
+знаряддя лову.
+
+По-друге, з керівних принципів Продовольчої та сільськогосподарської
+організації ООН (ФАО), на які посилається базовий регламент для цілей щорічної оцінки
+районів ВМЕ, також випливає, що класифікація морської екосистеми як вразливої
+не передбачає вивчення негативного впливу пасивних донних знарядь лову, оскільки
+така класифікація ґрунтується на характеристиках самої екосистеми.
+
+13 Регламент Ради (ЄС) № 734/2008 від 15 липня 2008 року про захист вразливих морських екосистем у відкритому морі
+від шкідливого впливу донних знарядь лову (ОJ 2008 L 201, с. 8), зокрема стаття 2(b) – (d), що стосується понять «ВМЕ»,
+«значний шкідливий вплив» і «донне знаряддя лову».
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07_segment.md не вказана 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав регламенту, з цього положення не можна зробити висновок, що підхід до управління, мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">07_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>регламенту, з цього положення не можна зробити висновок, що підхід до управління,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7 Рішення за червень 2025 року
+
+По-третє, згідно з телеологічним та системним аналізом статті 9(6) базового
+регламенту, з цього положення не можна зробити висновок, що підхід до управління,
+який включає вимогу оцінювати наслідки заходів щодо збереження ВМЕ
+для рибальської діяльності та економічного і соціального життя, повинен
+застосовуватися щодо встановлення переліку районів ВМЕ. Навпаки, такий підхід є
+несумісним з поняттям «імплементаційного акта», оскільки він змінював
+би або доповнював базовий регламент в його основних елементах, що стосуються
+захисту ВМЕ. Комісія не могла в рамках повноважень, наданих їй для прийняття
+імплементаційного регламенту, досягти балансу між захистом ВМЕ та іншими цілями
+СПР.
+
+Далі, наскільки це було доцільно, при складанні переліку районів ВМЕ слід було
+
+спиратися на характеристики самих екосистем з урахуванням ризику настання шкоди,
+пов’язаний зі значним негативним впливом, що загалом виникає внаслідок
+використання донних знарядь лову, а відсутність аналізу з боку МРДМ і Комісії
+щодо шкідливого впливу пасивних знарядь лову не становить порушення принципу
+пропорційності. Нарешті, оскільки конкретний тип використовуваних знарядь лову,
+мобільних чи пасивних, не визначає позначення цих районів, аргумент про те,
+що відсутність такого аналізу є дискримінаційною, також не може бути прийнятним.
+
+Стосовно методології, використаної для визначення конкретних районів ВМЕ, Суд
+не встановив порушення базового регламенту або принципу пропорційності. Вибір
+методології належить до широких дискреційних повноважень, якими користується
+Комісія щодо застосування критеріїв для встановлення переліку цих районів.
+У цій справі немає доказів, які б свідчили про те, що Комісія явно вийшла за межі своїх
+дискреційних повноважень, використовуючи методологію, враховану МРДМ у своїй
+рекомендації, або що Комісія не використала найкращу доступну наукову та технічну
+інформацію.
+
+Суд також відхилив заперечення заявників щодо неправомірності. З одного боку,
+заявники посилалися на порушення статті 291 ДФЄС, оскільки стаття 9(6) базового
+регламенту посилається на імплементаційний акт з метою доповнення його істотних
+елементів. З іншого боку, вони стверджували, що невибіркова заборона на риболовлю
+з використанням будь-яких донних знарядь лову в районах ВМЕ, передбачена
+статтею 9(9) цього регламенту, порушує норми СПР, принцип пропорційності
+й можливе зобов’язання конкретно обґрунтовувати зроблений вибір.
+
+Стосовно питання, чи стаття 9(6) базового регламенту посилається
+на імплементаційний акт з метою доповнення його істотних або навіть неістотних
+елементів, варто зазначити, що імплементаційні акти, на які посилається
+це положення, лише конкретизують райони ВМЕ і таким способом надають
+конкретного змісту ratione loci режиму захисту ВМЕ, прийнятому цією статтею.
+У цьому контексті істотні елементи, що стосуються визначення і критеріїв
+ідентифікації ВМЕ, ознак ВМЕ та процедури складання переліку таких екосистем,
+вже викладені в статті 9 базового регламенту.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="08_segment.md не вказана 30 60 10 окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.) для вме відповідно до процедури, також визначеної в базовому регламенті, водночас семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (цивільне законодавство / зобов&#x27;язальне право / окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">08_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>для ВМЕ відповідно до процедури, також визначеної в базовому регламенті, водночас</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (Цивільне законодавство / Зобов&#x27;язальне право / Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 8 Рішення за червень 2025 року
+
+Отже, Комісія склала перелік на підставі достатньо чітких і точних критеріїв
+для ВМЕ відповідно до процедури, також визначеної в базовому регламенті, водночас
+користуючись певною свободою розсуду, зокрема при встановленні точної
+методології застосування критеріїв, закріплених законодавцем. Крім того, Комісія
+діяла в межах своїх повноважень щодо імплементації, а не управління СПР. У цьому
+контексті вона могла враховувати елементи, пов’язані з промисловими операціями,
+що здійснювалися з метою оцінки ймовірності (подальшої) наявності ВМЕ.
+
+Щодо невибіркової заборони, встановленої статтею 9(9) базового регламенту,
+без урахування, зокрема, її економічних і соціальних наслідків, з Регламенту
+№ 1380/2013 випливає, що довгострокова екологічна стійкість рибальської діяльності
+передбачає мінімізацію впливу цієї діяльності на морську екосистему шляхом
+застосування застережного підходу до управління рибальством, а також
+екосистемного підходу.
+
+При зважуванні інтересів, що є невід’ємною частиною прийняття заходів
+щодо збереження морських біологічних ресурсів, законодавчий орган має широку
+свободу розсуду. Його рішення про прийняття таких заходів підлягає перегляду
+судовою владою ЄС, що має обмежитися встановленням того, чи є вжиті заходи явно
+помилковими або чи не було допущено зловживання повноваженнями,
+або чи не перевищив законодавчий орган межі своєї свободи розсуду. Законодавчий
+орган не зобов’язаний проводити конкретне та обґрунтоване зважування інтересів
+захисту морського середовища та інтересів осіб, які займаються рибальською
+діяльністю, а також соціально-економічних аспектів цієї діяльності. У контексті
+технічних заходів автор заходу не зобов’язаний конкретно обґрунтовувати свій вибір,
+якщо оскаржуваний захід чітко розкриває основну мету, що переслідується, як у цьому
+
+випадку.
+
+На думку Суду, не було доведено, що законодавчий орган явно перевищив межі
+своїх дискреційних повноважень. Зокрема, заявники не надали достатньо точних
+і переконливих доказів, щоб встановити, що пасивні знаряддя лову не мають
+негативного впливу на ВМЕ, тим самим виключаючи, на підставі екосистемного
+та застережного підходу, ризик, підтверджений науковою літературою, що ці знаряддя
+лову становлять для ВМЕ, особливо під час їх багаторазового використання
+
+та вилучення.
+
+З огляду на наведене, законодавчий орган ЄС, користуючись широкою свободою
+розсуду в цьому питанні, міг вважати за необхідне, з метою уникнення ризику
+шкідливого впливу пасивних знарядь лову, незважаючи на ймовірні негативні
+соціально-економічні наслідки, заборонити рибальство з використанням донних
+знарядь лову загалом у районах ВМЕ.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09_segment.md не вказана 10230 10 30 інші органи державного контролю рішення суду справедливості єс (велика палата) від 03 червня 2025 року, mirin, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «інші органи державного контролю» (основи суспільного ладу / державний контроль / органи державного контролю / інші органи державного контролю).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">09_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10230 10 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Державний контроль</span><span class="crumb-sep">›</span><span class="crumb">Органи державного контролю</span><span class="crumb-sep">›</span><span class="crumb-leaf">Інші органи державного контролю</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Суду справедливості ЄС (Велика Палата) від 03 червня 2025 року, Mirin,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Інші органи державного контролю» (Основи суспільного ладу / Державний контроль / Органи державного контролю / Інші органи державного контролю).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 9 Рішення за червень 2025 року
+
+III. Прикордонний контроль, притулок та імміграція: імміграційна політика
+
+Рішення Суду справедливості ЄС (Велика Палата) від 03 червня 2025 року, Mirin,
+C-460/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=300861&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=5988378)
+
+Звернення за попереднім рішенням – Простір свободи, безпеки та правосуддя –
+Прикордонний контроль, притулок та імміграція – Директива 2002/90/ЄС – Загальний
+склад злочину сприяння незаконному в’їзду, транзиту та перебуванню – Стаття 1(1)(а)
+– Тлумачення, що відповідає Хартії основоположних прав Європейського Союзу –
+Стаття 7 – Повага до приватного і сімейного життя – Стаття 24 – Права дитини –
+Стаття 52(1) – Втручання в сутність основоположних прав – Стаття 18 – Право
+на притулок – Особа, яка незаконно ввозить на територію Держави-члена
+неповнолітніх громадян третіх країн, що супроводжують її та над якими вона здійснює
+фактичний догляд
+
+На звернення Окружного суду Болоньї (Tribunale di Bologna, Болонья, Італія), Суд
+справедливості ЄС, засідаючи Великою Палатою, роз’яснив, по-перше, що тлумачення
+статті 1(1)(а) Директиви 2002/90 [14], яке відповідає статтям 7 і 24 Хартії основоположних
+прав Європейського Союзу («Хартія»), призводить до виключення з кола складу
+злочину сприяння незаконному в’їзду в значенні статті 1(1)(а) поведінки особи,
+яка, порушуючи правила, що регулюють перетин кордонів, ввозить на територію
+Держави-члена неповнолітніх, які є громадянами третьої країни та супроводжують її,
+і щодо яких вона здійснює фактичний догляд. По-друге, Суд вважав, що ці статті
+перешкоджають існуванню національного законодавства, яке криміналізує таку
+поведінку.
+
+27 серпня 2019 року ОB, громадянка третьої країни, у супроводі двох
+неповнолітніх, громадян тієї ж третьої країни, пред’явила підроблені паспорти
+в аеропорту Болоньї (Італія) після прибуття рейсу з третьої країни. Ці діти були її
+донькою та племінницею, яку було передано під опіку ОB після смерті її матері.
+
+28 серпня 2019 року ОB було заарештовано, а двоє дітей поміщено до закладу опіки.
+Щодо ОB було порушено провадження в Окружному суді Болоньї, який є судом,
+що звернувся за попереднім рішенням, за злочин сприяння незаконному в’їзду громадян
+третіх країн, передбачений статтею 12(1) Уніфікованого закону про імміграцію, [15]
+
+14 Директива Ради 2002/90/ЄС від 28 листопада 2002 року, що визначає сприяння незаконному в’їзду, транзиту
+та перебуванню (OJ 2002 L 328, с. 17). Стаття 1 цієї директиви під заголовком «Загальний склад правопорушення»
+передбачає в пункті 1(а), що кожна Держава-член повинна передбачити відповідне покарання «будь-якій особі,
+яка навмисно допомагає особі, яка не є громадянином Держави-члена, в’їхати на територію Держави-члена або проїхати
+транзитом через її територію з порушенням законодавства цієї Держави щодо в’їзду або транзиту іноземців».
+15 Законодавчий декрет № 286 – Уніфікований закон про положення щодо регулювання імміграції та норми,
+що стосуються статусу іноземців (Decreto legislativo n. 286 – Testo unico delle disposizioni concernenti la disciplina
+dell’immigrazione e norme sulla condizione dello straniero) від 25 липня 1998 року (GURI № 191 від 18 серпня 1998 року,
+Звичайний додаток № 139), у редакції, що застосовується до фактів справи в основному провадженні.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="10_segment.md не вказана 10160 законодавство а також за злочин володіння підробленими документами, передбачений семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «законодавство» (основи суспільного ладу / законодавство).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">10_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10160</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>а також за злочин володіння підробленими документами, передбачений</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Законодавство» (Основи суспільного ладу / Законодавство).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 10 Рішення за червень 2025 року
+
+який транспонує статтю 1(1)(а) Директиви 2002/90 в італійське законодавство, [16]
+а також за злочин володіння підробленими документами, передбачений
+Кримінальним кодексом Італії. Водночас щодо ОB не було порушено кримінального
+провадження за стверджуваний незаконний в’їзд на територію Італії.
+
+29 серпня 2019 року на судовому засіданні, що стосувалося обґрунтованості її
+арешту, перед суддею, відповідальним за кримінальне розслідування в Окружному
+суді Болоньї, ОB заявила, що втекла зі своєї країни походження, щоб уникнути погроз
+вбивством з боку свого колишнього партнера, і що вона побоюється за фізичну
+недоторканність неповнолітніх, які її супроводжують.
+
+Суддя, відповідальний за кримінальне розслідування, визнав арешт ОB
+обґрунтованим, але відмовив у задоволенні клопотання прокурора про застосування
+запобіжного заходу у вигляді тримання під вартою.
+
+09 жовтня 2019 року ОB звернулася із заявою про надання міжнародного
+
+захисту.
+
+З висновків суду, що звернувся за попереднім рішенням, випливає,
+що неповнолітніх осіб було передано під «відповідальність» і «захист» ОB. Суд
+вважав, що поведінка ОB відповідає складу злочину, передбаченого статтею 12(1)
+Уніфікованого закону про імміграцію, і не підпадає під виняток, передбачений
+статтею 12(2) цього закону. [17] Він звернувся з питанням, чи може така поведінка,
+однак, розглядатися як дія, яку було вчинено з метою «гуманітарної допомоги»
+в розумінні статті 1(2) Директиви 2002/90, [18] та не підпадати під загальний склад
+злочину сприяння незаконному в’їзду, передбаченому статтею 1(1)(а) цієї директиви,
+оскільки має на меті сприяти здійсненню відповідними неповнолітніми їхніх прав,
+гарантованих Хартією. [19]
+
+Зазначивши, що Директива 2002/90 лише передбачає право, а не зобов’язання
+Держав-членів утримуватися від визнання кримінальним правопорушенням
+поведінки, спрямованої на сприяння незаконному в’їзду на їхню територію,
+якщо метою такої поведінки є надання «гуманітарної допомоги», судом, який
+звернувся за попереднім рішенням, inter alia, ставиться питання про чинність
+статті 1 цієї директиви у світлі Хартії та про тлумачення Хартії з метою
+визначення того, чи перешкоджає вона застосуванню національних імплементаційних
+
+положень.
+
+16 А також стаття 1(1) Рамкового рішення Ради 2002/946/JHA від 28 листопада 2002 року про посилення кримінальноправової бази для запобігання сприянню незаконному в’їзду, транзиту та перебуванню (OJ 2002 L 328, с. 1).
+17 Це положення встановлює, що «діяльність з надання допомоги та гуманітарної допомоги, що здійснюється в Італії
+стосовно іноземних громадян, які її потребують, незалежно від того, чи перебувають вони на території Держави»,
+не становить кримінального правопорушення.
+18 Згідно з цим положенням, «будь-яка Держава-член може вирішити не встановлювати покарання щодо поведінки,
+визначеної в [статті 1(1)(а)], застосовуючи своє національне законодавство та практику у випадках, коли метою такої
+поведінки є надання гуманітарної допомоги відповідній особі».
+19 А саме, по-перше, їхнього права на життя, фізичну недоторканність, свободу та безпеку, оскільки ці права перебувають
+під загрозою в їхній країні походження, по-друге, їхнього права на повагу до сімейного життя, з огляду на батьківські
+та сімейні зв’язки між ОB та цими неповнолітніми особами, і, по-третє, їхнього права на притулок у зв’язку з поданням ОB
+прохання про надання міжнародного захисту.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="11_segment.md не вказана 280 20 10 10 рішення і висновки конституційного суду суд нагадав, що акт єс повинен тлумачитися, наскільки це можливо, згідно семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «рішення і висновки конституційного суду» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / судова система. вища рада юстиції. органи юстиції / конституційний суд / рішення і висновки конституційного суду).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">11_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 20 10 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Судова система. Вища рада юстиції. Органи юстиції</span><span class="crumb-sep">›</span><span class="crumb">Конституційний Суд</span><span class="crumb-sep">›</span><span class="crumb-leaf">Рішення і висновки Конституційного Суду</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Суд нагадав, що акт ЄС повинен тлумачитися, наскільки це можливо, згідно</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Рішення і висновки Конституційного Суду» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Судова система. Вища рада юстиції. Органи юстиції / Конституційний Суд / Рішення і висновки Конституційного Суду).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 11 Рішення за червень 2025 року
+
+Висновки Суду
+
+Суд нагадав, що акт ЄС повинен тлумачитися, наскільки це можливо, згідно
+з первинним правом у цілому та, зокрема, з положеннями Хартії. З огляду на факти,
+встановлені в основному провадженні, статті 7, 18 та 24 Хартії [20] мають вирішальне
+значення для відповіді на питання, поставлені національним судом. Крім того,
+ці питання ґрунтуються на припущенні, що поведінка, яка є предметом основного
+провадження, підпадає під загальний склад злочину сприяння незаконному в’їзду,
+як це визначено в статті 1(1)(а) Директиви 2002/90.
+
+Тому Суд розглянув питання, чи має стаття 1(1)(а) Директиви 2002/90,
+у поєднанні, зокрема, зі статтями 7, 18 та 24 Хартії, тлумачитися в такий спосіб,
+що поведінка особи, яка, порушуючи правила перетину кордонів, ввозить на територію
+Держави-члена неповнолітніх громадян третьої країни, які супроводжують її
+та перебувають під її фактичним доглядом [21], не підпадає під загальний склад злочину
+сприяння незаконному в’їзду.
+
+З огляду на своє загальне формулювання стаття 1(1)(а) Директиви 2002/90 може
+підлягати різним тлумаченням. Попри те, що це положення не містить прямої згадки
+про поведінку, що є предметом основного провадження, вона також прямо
+не виключає, як такого, тлумачення, згідно з яким така поведінка підпадає
+під визначення загального складу злочину, передбачений цим положенням.
+
+Однак останнє тлумачення не може бути прийнятним.
+По-перше, це суперечило б цілям Директиви 2002/90. Справді, така поведінка,
+як поведінка OB, не становить сприяння незаконній імміграції, а випливає з прийняття
+відповідною особою особистої відповідальності у зв’язку з опікою, яку вона здійснює
+над неповнолітніми.
+
+По-друге, з огляду на статті 7 та 24 Хартії, з урахуванням яких має тлумачитися
+стаття 1(1)(а) Директиви 2002/90, така поведінка не може підпадати під загальний
+склад злочину сприяння незаконному в’їзду, навіть якщо ця особа сама незаконно
+в’їхала на цю територію.
+
+Будь-яке інше тлумачення призвело б до особливо серйозного втручання в право
+на повагу до сімейного життя та права дитини, закріплені у вищезазначених статтях
+Хартії, такою мірою, що це підірвало б саму суть цих основоположних прав у значенні
+статті 52(1) Хартії.
+
+Дійсно, визнання того, що особу може бути покарано лише за те, що вона
+допомагає неповнолітнім особам, за якими вона фактично доглядає, незаконно
+в’їхати на територію Держави-члена, підривало б саму суть таких основоположних
+
+прав.
+
+Такими діями особа, така як ОB, у принципі, лише конкретно виконує обов’язок,
+що випливає з її особистої відповідальності, заснованої на її родинних зв’язках з цими
+неповнолітніми, з метою забезпечення захисту та догляду, необхідних для їхнього
+
+20 Які закріплюють, відповідно, право на повагу до сімейного життя, право на притулок та права дитини.
+21 «Така поведінка».
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="12_segment.md не вказана 150170 інвестиції. капітальні вкладення відповідальності перед цими неповнолітніми. семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «інвестиції. капітальні вкладення» (загальні засади правового регулювання економічного розвитку / інвестиції. капітальні вкладення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">12_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150170</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Інвестиції. Капітальні вкладення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>відповідальності перед цими неповнолітніми.</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Інвестиції. Капітальні вкладення» (Загальні засади правового регулювання економічного розвитку / Інвестиції. Капітальні вкладення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 12 Рішення за червень 2025 року
+
+благополуччя та розвитку. Поведінка цієї особи є конкретним проявом її загальної
+відповідальності перед цими неповнолітніми.
+
+Отже, якщо не підривати суть прав, закріплених у статтях 7 та 24 Хартії,
+стаття 1(1)(а) Директиви 2002/90 не може стосуватися забезпечення того, щоб така
+поведінка, як поведінка ОB, кваліфікувалася як «сприяння незаконному в’їзду» на цю
+територію й на цій підставі вважалася кримінальним правопорушенням.
+
+Нарешті, таке тлумачення є необхідним також з огляду на статтю 18 Хартії, [22]
+що застосовується в разі, коли, як у справі OB, особа, яка має намір отримати
+міжнародний захист, після в’їзду на територію відповідної Держави-члена подала
+заяву про надання міжнародного захисту.
+
+У цьому контексті необхідно визнати право будь-якого громадянина третьої
+країни подати заяву про надання міжнародного захисту на території Держави-члена,
+зокрема на її кордонах або в транзитних зонах, навіть якщо він перебуває в цій
+Державі-члені незаконно, незалежно від перспектив успіху такої заяви. У разі подання
+такої заяви заявник, як правило, не може вважатися таким, що перебуває на території
+відповідної Держави-члена незаконно, доки не буде прийнято рішення щодо цієї заяви
+в першій інстанції, якщо не має бути поставлено під загрозу ефективність права
+на притулок, гарантованого статтею 18 Хартії. Заходи, які без обґрунтованих підстав
+змушують громадянина третьої країни відмовитися від подання заяви про надання
+міжнародного захисту до компетентних органів влади, також можуть підірвати
+ефективність права на притулок.
+
+У цій справі OB користується правами, що випливають з подання такої заяви, і її
+не може бути піддано кримінальному покаранню ні за власний незаконний в’їзд
+на територію Італії, ні за те, що на момент в’їзду її супроводжували дочка
+та племінниця, за якими вона фактично доглядає.
+
+Суд вважав, що за таких обставин немає необхідності розглядати питання
+про чинність статті 1 Директиви 2002/90 або тлумачити статтю 1(2) цієї директиви,
+яка стосується звільнення від кримінальної відповідальності у випадках, коли метою
+відповідної поведінки є надання гуманітарної допомоги відповідній особі.
+
+Крім того, з огляду на сумніви суду, що звернувся за попереднім рішенням,
+щодо сумісності з правом ЄС національної норми, що транспонує, inter alia,
+статтю 1(1)(а) Директиви 2002/90 в італійське законодавство, Суд нагадав,
+що при впровадженні заходів з перенесення директиви в національне законодавство
+суди Держав-членів повинні не тільки тлумачити своє національне законодавство
+у відповідності до цієї директиви, але й забезпечити, щоб вони не спиралися
+
+на тлумачення директиви, яке суперечить основним правам, захищеним
+правопорядком ЄС, або іншим загальним принципам, визнаним правом ЄС.
+
+Відповідно, при транспонуванні статті 1(1)(а) Директиви 2002/90, яка має на меті
+чітко визначити склад злочину сприяння незаконній імміграції, Держави-члени
+
+22 Згідно з цим положенням, право на притулок має бути гарантоване з належним дотриманням норм Женевської
+конвенції та відповідно до ДЄС і ДФЄС. Держави-члени повинні дотримуватися цих норм при імплементації
+як Директиви 2002/90, так і Рамкового рішення 2002/946.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="13_segment.md не вказана 60 20120 40 розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата за межі складу цього злочину, визначеного цією нормою, шляхом включення до нього семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">13_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за межі складу цього злочину, визначеного цією нормою, шляхом включення до нього</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 13 Рішення за червень 2025 року
+
+не можуть закріплювати у своєму національному законодавстві норми, які виходять
+за межі складу цього злочину, визначеного цією нормою, шляхом включення до нього
+дій, які не підпадають під його визначення, що є порушенням статей 7 і 24
+та статті 52(1) Хартії.
+
+Крім того, статті 7 та 24 Хартії є достатніми самі по собі й не потребують
+уточнення положеннями права ЄС або національного права для надання особам прав,
+на які вони можуть посилатися як такі. Отже, якщо суд, що звернувся за попереднім
+рішенням, визнає, що тлумачення його національного законодавства відповідно
+до права ЄС є неможливим, він повинен забезпечити в межах своєї юрисдикції
+судовий захист осіб, що їх стосуються ці статті, та гарантувати їхню повну
+ефективність, не застосовуючи, у разі необхідності, статтю 12 Уніфікованого закону
+про імміграцію.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="14_segment.md не вказана 280 90 10 нотаріальні контори постанова загального суду (шоста палата) від 06 червня 2025 року, research семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «нотаріальні контори» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / нотаріат / нотаріальні контори).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">14_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 90 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Нотаріальні контори</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Постанова Загального Суду (Шоста Палата) від 06 червня 2025 року, Research</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Нотаріальні контори» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Нотаріат / Нотаріальні контори).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 14 Рішення за червень 2025 року
+
+IV. Судова співпраця у кримінальних справах: Європейська прокуратура
+
+Постанова Загального Суду (Шоста Палата) від 06 червня 2025 року, Research
+Investments and Others v European Public Prosecutor’s Office, T-509/24
+
+[Посилання на повний текст постанови](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=301193&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=5988378)
+
+Посилена співпраця щодо створення Європейської прокуратури – Листи
+Європейського делегованого прокурора – Стаття 42(1) – (3) Регламенту (ЄС)
+2017/1939 – Відсутність юрисдикції
+
+Своєю постановою Загальний Суд відхилив позов [23], поданий компаніями
+«Research Investments s. r. o.», «Areál Zákolany s. r. o.» та «Simon Cihelník», через
+відсутність юрисдикції. Заявники просили скасувати три листи Чеського
+європейського делегованого прокурора («оскаржувані листи»), якими Чеський
+європейський делегований прокурор відповів на листи, надіслані заявниками
+до Європейської прокуратури. Відповідно до правил розподілу юрисдикції між судами
+ЄС та національними судами щодо судового перегляду процесуальних актів
+Європейської прокуратури, викладених у Регламенті 2017/1939 [24] та які передбачають
+юрисдикцію судів ЄС, відповідно до статті 263 ДФЄС, лише щодо рішень Європейської
+прокуратури про закриття справи [25], Суд постановив, що оскаржувані листи не можуть
+розглядатися ним як такі і що, отже, він не має юрисдикції щодо позову проти
+Європейської прокуратури.
+
+Після розслідування, проведеного Європейською прокуратурою, щодо ймовірних
+злочинів, пов&#x27;язаних із шахрайством із субсидіями, заподіянням шкоди фінансовим
+інтересам Європейського Союзу та відмиванням грошей, заявникам у червні 2022 року
+за рішенням чеського європейського делегованого прокурора було висунуто
+звинувачення, і справа була передана до чеського суду, що має територіальну
+юрисдикцію. У серпні 2024 року заявники надіслали до Європейської прокуратури три
+листи, в яких вони, серед іншого, стверджували, що вона не має компетенції вести
+вищезгадану справу. Крім того, заявники просили Європейську прокуратуру діяти
+відповідно до Регламенту 2017/1939 [26] та ухвалити рішення про закриття справи
+або зупинення провадження, без ухвалення якого вони будуть зобов&#x27;язані подати
+позов до Суду відповідно до статті 265 ДФЄС або статті 263 ДФЄС.
+
+Оскаржуваними листами чеський європейський делегований прокурор
+повідомив заявників, що він розглядає їхні листи як частину їхнього захисту
+у кримінальному провадженні, що розглядається чеським судом, і що вони будуть
+
+23 Позов про скасування, поданий на підставі статті 263 ДФЄС.
+24 Регламент Ради (ЄС) 2017/1939 від 12 жовтня 2017 року про впровадження посиленої співпраці щодо створення
+Європейської прокуратури (OJ 2017 L 283, с. 1).
+25 У тій частині, у якій вони оскаржуються безпосередньо на підставі права ЄС (стаття 42(3) Регламенту 2017/1939).
+26 Заявники посилаються у цьому відношенні на статтю 22(1) та (3), статтю 25(3)(a) та статтю 39 Регламенту 2017/1939.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="15_segment.md не вказана 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) не застосовуються в цій справі через правила, що застосовуються до судового семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">15_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>не застосовуються в цій справі через правила, що застосовуються до судового</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 15 Рішення за червень 2025 року
+
+надіслані до цього суду. Більше того, прокурор заявив, що статті 265 та 263 ДФЄС
+не застосовуються в цій справі через правила, що застосовуються до судового
+перегляду процесуальних заходів, вжитих Європейською прокуратурою.
+
+У цьому контексті заявники просили скасувати оскаржувані листи, стверджуючи,
+що вони є «рішеннями sui generis про закриття справи», законність яких має бути
+перевірена Судом відповідно до «широкого» тлумачення статті 42(3)
+Регламенту 2017/1939.
+
+Висновки Суду
+
+Як попереднє зауваження Суд зазначив, що відповідно до статті 86(3) ДФЄС
+Регламент про створення Європейської прокуратури встановлює, серед іншого,
+правила, що застосовуються до судового перегляду процесуальних заходів, вжитих
+нею під час виконання своїх функцій. У зв&#x27;язку з цим механізм, передбачений
+законодавцем для забезпечення перегляду процесуальних актів Європейської
+прокуратури, передбачений статтею 42 Регламенту 2017/1939, є механізмом
+sui generis, який має на меті забезпечити ефективні засоби правового захисту
+відповідно до другого підпункту статті 19(1) ДЄС.
+
+Отже, з пунктів 1 та 2 статті 42 однозначно видно, що виключна юрисдикція
+розглядати та визначати процесуальні акти Європейської прокуратури, спрямовані
+на створення юридичних наслідків для третіх осіб, надається національним судам, [27]
+окрім винятків, передбачених статтею 42(3) та (8) цього регламенту, і що лише
+у порядку попереднього рішення Суд Європейського Союзу покликаний приймати
+рішення щодо (i) дійсності цих актів з урахуванням положень права ЄС
+та (ii) тлумачення або дійсності положень Регламенту 2017/1939. [28]
+
+Що стосується винятків з виключної компетенції національних судів,
+передбачених статтею 42(1) Регламенту 2017/1939, пункт 3 цієї статті прямо
+передбачає юрисдикцію суду ЄС відповідно до статті 263 ДФЄС лише щодо рішень
+Європейської прокуратури про закриття справи, якщо вони оскаржуються
+безпосередньо на підставі права ЄС. [29]
+
+27 Стаття 42(1) Регламенту 2017/1939 передбачає, серед іншого, що процесуальні дії Європейської прокуратури, які мають
+на меті створити юридичні наслідки для третіх осіб, підлягають перегляду компетентними національними судами
+відповідно до вимог та процедур, встановлених національним законодавством
+28 Стаття 42(2) Регламенту 2017/1939 зазначає, що Суд Європейського Союзу має юрисдикцію, відповідно до статті 267
+ДФЄС, приймати попередні рішення (i) щодо дійсності процесуальних актів Європейської прокуратури, якщо таке питання
+дійсності порушено перед будь-яким судом або трибуналом держави-члена безпосередньо на підставі права ЄС, (ii)
+щодо тлумачення або дійсності положень права ЄС, включаючи Регламент 2017/1939, та (iii) щодо тлумачення статей 22
+та 25 цього регламенту щодо будь-якого конфлікту компетенції між Європейською прокуратурою та компетентними
+національними органами.
+29 Крім того, стаття 42(8) Регламенту 2017/1939 передбачає судовий перегляд Судом Європейського Союзу відповідно
+до статті 263 ДФЄС рішень Європейської прокуратури, які впливають на права суб’єктів даних згідно з Розділом VIII цього
+регламенту, та рішень Європейської прокуратури, які не є процесуальними актами, таких як рішення Європейської
+прокуратури щодо права публічного доступу до документів, або рішення про звільнення європейських делегованих
+прокурорів, прийняті відповідно до статті 17(3) цього регламенту, або будь-які інші адміністративні рішення.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="16_segment.md не вказана 240 20 органи, уповноважені розглядати справи про адміністративні правопорушення опосередковано, як рішення про закриття справи. [30] отже, суд не має юрисдикції семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «органи, уповноважені розглядати справи про адміністративні правопорушення» (законодавство про адміністративні правопорушення / органи, уповноважені розглядати справи про адміністративні правопорушення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">16_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">240 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про адміністративні правопорушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Органи, уповноважені розглядати справи про адміністративні правопорушення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>опосередковано, як рішення про закриття справи. [30] Отже, Суд не має юрисдикції</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Органи, уповноважені розглядати справи про адміністративні правопорушення» (Законодавство про адміністративні правопорушення / Органи, уповноважені розглядати справи про адміністративні правопорушення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 16 Рішення за червень 2025 року
+
+Однак у цій справі оскаржувані листи не можна розглядати, навіть
+опосередковано, як рішення про закриття справи. [30] Отже, Суд не має юрисдикції
+перевіряти їх законність відповідно до статті 42(3) Регламенту 2017/1939.
+
+Цей висновок не ставиться під сумнів аргументами заявників щодо широкого
+тлумачення останнього положення, згідно з яким оскаржувані листи є «рішеннями
+sui generis про закриття справи».
+
+Звернення до широкого тлумачення можливе лише тією мірою, якою воно
+сумісне з формулюванням положення, про яке йде мова, і навіть принцип тлумачення
+відповідно до правила вищої обов&#x27;язкової сили не може служити підставою
+для тлумачення, яке є contra legem. Навіть якби оскаржувані листи були еквівалентні
+рішенням sui generis про закриття справи, що не було продемонстровано в цій справі,
+«широке» тлумачення статті 42(3) Регламенту 2017/1939 призвело б до того, що дії,
+які не підпадають під сферу застосування випадків, зазначених у статті 39
+цього Регламенту, класифікувалися б як «рішення sui generis про закриття справи»,
+що підірвало б систему судового перегляду, передбачену статтею 42 цього
+Регламенту.
+
+30 У значенні статті 39 Регламенту 2017/1939.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="17_segment.md не вказана 40110 відповідальність за порушення законодавства про землю. вирішення земельних спорів рішення загального суду (восьма палата, розширений склад) від 25 червня 2025 року, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «відповідальність за порушення законодавства про землю. вирішення земельних спорів» (природні ресурси. охорона природи / відповідальність за порушення законодавства про землю. вирішення земельних спорів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">17_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40110</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Відповідальність за порушення законодавства про землю. Вирішення земельних спорів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Загального Суду (Восьма Палата, розширений склад) від 25 червня 2025 року,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Відповідальність за порушення законодавства про землю. Вирішення земельних спорів» (Природні ресурси. Охорона природи / Відповідальність за порушення законодавства про землю. Вирішення земельних спорів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 17 Рішення за червень 2025 року
+
+V. Наближення законодавства: торговельна марка Європейського Союзу
+
+Рішення Загального Суду (Восьма Палата, розширений склад) від 25 червня 2025 року,
+Comité interprofessionnel du vin de Champagne and INAO v EUIPO – Nero Lifestyle (NERO
+CHAMPAGNE), T-239/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=301649&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=6048931)
+
+Торгова марка ЄС – Провадження щодо розгляду заперечення – Заявка на словесну
+торгову марку ЄС NERO CHAMPAGNE – Більш раннє захищене позначення походження
+«Champagne» – Відносна підстава для відмови – Стаття 8(6) Регламенту (ЄС)
+2017/1001 – Стаття 103(2)(a) та (c) Регламенту (ЄС) № 1308/2013 – Торгова марка,
+що містить захищене позначення походження – Продукти, що відповідають
+специфікації продукту із захищеним позначенням походження – Обов’язок
+щодо обґрунтування – Стаття 94 Регламенту 2017/1001
+
+У своєму рішенні Загальний Суд вирішив, по-перше, питання застосування статті
+103(2)(a)(ii) Регламенту № 1308/2013, [31] щодо безпрецедентного питання можливого
+використання репутації захищеного позначення походження (protected designation
+of origin, PDO), коли торгова марка, що містить це PDO, обмежує свою реєстрацію
+продуктами, що відповідають специфікації PDO, про яке йде мова, та послугами,
+що стосуються таких продуктів, та, по-друге, статті 103(2)(c) Регламенту № 1308/2013
+щодо можливості того, що торгова марка, що містить PDO, може містити хибне
+або оманливе позначення.
+
+19 лютого 2019 року компанія «Nero Lifestyle Srl» подала до Відомства
+інтелектуальної власності Європейського Союзу (EUIPO) заявку на реєстрацію
+словесного знака «NERO CHAMPAGNE» як торгової марки ЄС для різних товарів
+та послуг. [32] Кілька місяців потому, 02 серпня 2019 року, Comité interprofessionnel du vin
+de Champagne (Міжпрофесійний комітет вина регіону Шампань) та L’Institut national
+de l’origine et de la qualité (Національний інститут походження та якості, INAO),
+заявники, подали заперечення проти реєстрації заявленого знака на основі
+PDO «Champagne», зареєстрованого в Європейському Союзі для вина з 18 вересня
+1973 року.
+
+Відділ з питань заперечень EUIPO частково задовольнив заперечення на підставі
+статті 103(2)(c) Регламенту № 1308/2013 щодо деяких послуг та відхилив заперечення
+щодо інших товарів та послуг.
+
+31 Регламент Європейського Парламенту та Ради (ЄС) № 1308/2013 від 17 грудня 2013 року про створення спільної
+організації ринків сільськогосподарської продукції та скасування Регламентів Ради (ЄЕС) № 922/72, (ЄЕС) № 234/79, (ЄС)
+№ 1037/2001 та (ЄС) № 1234/2007 (OJ 2013 L 347, с. 671).
+32 Більш конкретно, він охоплював товари та послуги класів 33, 35 та 41 Ніццької угоди про Міжнародну класифікацію
+товарів і послуг для цілей реєстрації знаків від 15 червня 1957 року, з переглядом та змінами.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="18_segment.md не вказана 280 20 30 верховний суд автономної республіки крим. обласні суди. київський і севастопольський міські суди. апеляційні суди euipo, розглянувши апеляцію заявників, частково скасувала рішення відділу з питань семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «верховний суд автономної республіки крим. обласні суди. київський і севастопольський міські суди. апеляційні суди» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / судова система. вища рада юстиції. органи юстиції / верховний суд автономної республіки крим. обласні суди. київський і севастопольський міські суди. апеляційні суди).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">17</span>
+            <span class="file-badge">18_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>75% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 20 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Судова система. Вища рада юстиції. Органи юстиції</span><span class="crumb-sep">›</span><span class="crumb-leaf">Верховний Суд Автономної Республіки Крим. Обласні суди. Київський і Севастопольський міські суди. Апеляційні суди</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>EUIPO, розглянувши апеляцію заявників, частково скасувала рішення Відділу з питань</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Верховний Суд Автономної Республіки Крим. Обласні суди. Київський і Севастопольський міські суди. Апеляційні суди» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Судова система. Вища рада юстиції. Органи юстиції / Верховний Суд Автономної Республіки Крим. Обласні суди. Київський і Севастопольський міські суди. Апеляційні суди).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 18 Рішення за червень 2025 року
+
+Рішенням від 17 лютого 2023 року («оскаржуване рішення») Апеляційна рада
+EUIPO, розглянувши апеляцію заявників, частково скасувала рішення Відділу з питань
+заперечень у частині, в якій він відхилив заперечення щодо деяких послуг,
+і, як наслідок, задовольнила заперечення щодо цих послуг. Однак, вона відхилила
+заперечення щодо інших товарів і послуг, що стосуються продуктів, що відповідають
+специфікації PDO «Champagne».
+
+Саме в цьому контексті Загальний Суд розглянув заяву про скасування та зміну
+рішення Апеляційної ради в частині, в якій вона відхилила заперечення.
+
+Висновки Суду
+
+По-перше, Суд зазначив, що стаття 102(1) Регламенту № 1308/2013 принципово
+не забороняє торговельній марці містити або складатися з PDO. Реєстрація такої
+марки може бути відхилена або визнана недійсною лише у двох ситуаціях, а саме: якщо
+PDO не відповідає відповідній специфікації продукту, або якщо його використання
+підпадає під дію статті 103(2) цього Регламенту. Остання стаття містить вичерпний
+перелік практик, від яких захищені PDO. Зокрема, стаття 103(2)(a)(ii) спрямована
+на захист PDO від будь-якого прямого чи непрямого комерційного використання, якщо
+це використання експлуатує репутацію PDO.
+
+Таким чином, зі спільного тлумачення статті 102(1) та статті 103(2) Регламенту
+№ 1308/2013 видно, що ці положення не перешкоджають реєстрації торговельної
+марки, яка містить або складається з PDO як такого, за винятком випадків, коли така
+реєстрація підпадає під дію однієї з вищезазначених ситуацій.
+
+По-друге, Суд вирішив питання щодо «теорії обмеження» [33], яку Апеляційна рада
+застосувала в оскаржуваному рішенні. Згідно з цією теорією, по суті робиться
+припущення, що марка, яка містить PDO, не може в принципі експлуатувати репутацію
+цього PDO, коли ця марка зареєстрована виключно для продуктів, що відповідають
+специфікації цього PDO, та для послуг, що стосуються таких продуктів.
+
+33 Ця теорія бере свій початок у Керівних принципах EUIPO щодо експертизи торговельних марок Європейського Союзу
+(Частина C (Заперечення), Розділ 6 (Географічні зазначення), пункт 3.1.3 (Обмеження обсягу захисту географічних
+зазначень на відносних підставах)). Згідно з цими рекомендаціями, «якщо специфікація заявки [на торговельну марку]
+обмежена стосовно товарів, ідентичних продукту, на який поширюється [PDO або PGI*], товарами, що відповідають
+специфікації відповідного [PDO або PGI], функція відповідного [PDO або PGI] захищається стосовно цих товарів.
+Це пояснюється тим, що заявка [на торговельну марку] охоплює лише товари певного географічного походження
+та пов’язані з ними особливі якості. Отже, заперечення проти заявки [на торговельну марку], яке було належним чином
+обмежене, не буде успішним».
+
+_* Прим. перекладача_ – PGI (Protected Geographical Indication), або «Захищене географічне зазначення», у сфері торгових
+марок означає, що продукт має певні характеристики, які пов’язані з його географічним походженням. Це означає,
+що принаймні один з етапів виробництва або переробки продукту відбувається в певній географічній місцевості,
+і це впливає на властивості продукту. PGI гарантує, що продукт має зв&#x27;язок з певним місцем, а його якість і репутація
+обумовлені саме цим географічним походженням. PGI відрізняється від PDO тим, що для PDO вимагається, щоб всі етапи
+виробництва продукту відбувалися в одному і тому ж місці, тоді як для PGI достатньо, щоб хоча б один етап був пов&#x27;язаний
+з географічним місцем.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="19_segment.md не вказана 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав цієї «теорії обмеження», зокрема щодо характеру припущення про те, що репутація pdo мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">18</span>
+            <span class="file-badge">19_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>цієї «теорії обмеження», зокрема щодо характеру припущення про те, що репутація PDO</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 19 Рішення за червень 2025 року
+
+Однак Суд зазначив, що оскаржуваному рішенню бракує ясності в застосуванні
+цієї «теорії обмеження», зокрема щодо характеру припущення про те, що репутація PDO
+не експлуатувалася. Таким чином, Суд будував свої міркування навколо двох
+можливих сценаріїв: по-перше, це неспростовне припущення, і, по-друге, воно є
+
+спростовним.
+
+Щодо першої можливості, Суд зазначив, що Апеляційна рада встановила,
+що стаття 103(2) Регламенту № 1308/2013 не застосовується, оскільки заявка
+на реєстрацію марки стосується продуктів, які відповідають специфікації PDO,
+та послуг, пов&#x27;язаних з такими продуктами. Однак ситуації, перелічені у статті 103(2)
+цього Регламенту, не поширюються на продукти, які не відповідають специфікації.
+Стаття 103(2)(a)(ii) не уточнює, що вона застосовується лише до використання
+відповідного PDO для порівнюваних продуктів або для товарів і послуг,
+які не відповідають специфікації цього PDO. Таким чином, ніщо у формулюванні статті
+103(2)(a)(ii) та (b)– (d) цього Регламенту не вказує на те, що передбачені в ній ситуації
+не можуть застосовуватися до використання PDO щодо продуктів, які відповідають
+специфікації цього PDO.
+
+Відповідно, Суд вважав, що на статтю 103(2)(a)(ii) Регламенту № 1308/2013 можна
+посилатися для заперечення реєстрації марки, яка містить або складається з PDO,
+незважаючи на те, що товари та послуги, пов&#x27;язані з такими товарами, на які
+поширюється заявка на марку, відповідають специфікації відповідної PDO. У зв&#x27;язку
+з цим Апеляційна рада мала провести аналіз, щоб оцінити, чи використовувала заявка
+на марку репутацію цього PDO, а саме, чи використання цього PDO мало на меті
+незаконне використання його репутації.
+
+Таким чином, Суд вважав, що Апеляційна рада, застосувавши неспростовне
+припущення, допустилася юридичної помилки при тлумаченні статті 103(2)(a)(ii)
+Регламенту № 1308/2013.
+
+Щодо можливості спростування припущення про те, що репутація PDO
+не використовувалася, Суд зазначив, що можна припустити, що торгова марка,
+яка містить або складається з PDO, зареєстрована виключно для продуктів,
+що відповідають специфікації цього PDO, або для пов&#x27;язаних з ним послуг, не буде
+неправомірно використовувати репутацію цього PDO у значенні статті 103(2)(a)(ii)
+Регламенту № 1308/2013, оскільки вона вважатиметься такою, що використовується
+на ринку лише для продуктів, що відповідають стандартам якості, що стосуються цього
+PDO, або для послуг, що стосуються таких продуктів. Однак це припущення може бути
+спростоване, якщо можна продемонструвати на основі конкретних, обґрунтованих
+та послідовних елементів, що дана торгова марка може неправомірно
+використовувати репутацію PDO, навіть якщо вона охоплює лише продукти,
+що відповідають специфікації цього PDO, або пов’язані з ним послуги. Тоді арбітражні
+органи EUIPO повинні з&#x27;ясувати, чи дозволяють такі елементи спростувати
+
+це припущення.
+
+Отже, Суд зазначив, що в тій мірі, в якій оскаржуване рішення тлумачиться як
+таке, що застосувало спростовне припущення, воно не містить правової помилки.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="20_segment.md не вказана 280 20 30 верховний суд автономної республіки крим. обласні суди. київський і севастопольський міські суди. апеляційні суди які привели її до висновку, що це припущення не було спростоване в цій справі. семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «верховний суд автономної республіки крим. обласні суди. київський і севастопольський міські суди. апеляційні суди» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / судова система. вища рада юстиції. органи юстиції / верховний суд автономної республіки крим. обласні суди. київський і севастопольський міські суди. апеляційні суди).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">19</span>
+            <span class="file-badge">20_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>75% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 20 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Судова система. Вища рада юстиції. Органи юстиції</span><span class="crumb-sep">›</span><span class="crumb-leaf">Верховний Суд Автономної Республіки Крим. Обласні суди. Київський і Севастопольський міські суди. Апеляційні суди</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>які привели її до висновку, що це припущення не було спростоване в цій справі.</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Верховний Суд Автономної Республіки Крим. Обласні суди. Київський і Севастопольський міські суди. Апеляційні суди» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Судова система. Вища рада юстиції. Органи юстиції / Верховний Суд Автономної Республіки Крим. Обласні суди. Київський і Севастопольський міські суди. Апеляційні суди).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 20 Рішення за червень 2025 року
+
+Однак доречно розглянути, чи Апеляційна рада достатньою мірою виклала причини,
+які привели її до висновку, що це припущення не було спростоване в цій справі.
+
+Суд зазначив, що на стадії адміністративної процедури були виявлені різні
+елементи, які вказують на те, що заявлена торгова марка може експлуатувати
+репутацію PDO «Champagne». Ці елементи включають, зокрема, видатну репутацію
+PDO «Champagne», той факт, що заявлена марка є словесною, а тому може
+використовуватися на ринку багатьма різними способами, зокрема таким
+чином, що суперечить цілям PDO, та, крім того, аргументи, що стосуються маркування
+товарів, що продаються Nero Lifestyle.
+
+Таким чином, Суд вважав, що, не надавши достатнього пояснення, як вказані
+елементи не змогли спростувати припущення у цій справі, Апеляційна рада
+не виконала свого обов&#x27;язку щодо обґрунтування.
+
+Таким чином, Суд скасував рішення Апеляційної ради в тій частині, в якій остання
+відхилила подану до неї апеляцію.
+
+Нарешті, Суд розглянув, чи можна сприймати заявлений знак, назва якого містить
+PDO «Champagne», як такий, що містить хибне або оманливе позначення у значенні
+статті 103(2)(c) Регламенту № 1308/2013. [34] По-перше, Суд зазначив, що слово «nero»
+використовується в назві кількох відомих італійських сортів винограду та в назві
+багатьох сортів виноградної лози. Отже, відповідна громадськість може бути введена
+в оману, думаючи, що заявлений знак асоціюється з відповідним сортом винограду
+
+шампань.
+
+По-друге, слово «nero» буде сприйматися відповідною італомовною публікою
+як «чорний». Таким чином, відповідна публіка може бути введена в оману щодо
+кольору шампанського вина, що продається під заявленою маркою, думаючи, що це
+новий сорт шампанського, а саме «чорне шампанське», навіть якщо згідно
+зі специфікацією PDO шампанське може бути лише білим або рожевим. Відповідно, Суд
+вважав, що Апеляційна рада допустилася помилки в оцінці, вважаючи, що заявлена
+марка не підпадає під дію статті 103(2)(c) Регламенту № 1308/2013.
+
+Таким чином, Суд здійснив свої повноваження щодо внесення змін
+та задовольнив заперечення щодо товарів та послуг, про які йде мова, включаючи
+«Вино, що відповідає специфікаціям [PDO] ‘’Champagne’’», що належить до класу 33.
+
+34 Стаття 103(2)(c) Регламенту № 1308/2013 має на меті захистити PDO та PGI від «будь-яких інших неправдивих
+або оманливих зазначень щодо походження, місця виготовлення, характеру або основних якостей продукту,
+на внутрішній або зовнішній упаковці, рекламних матеріалах або документах, що стосуються відповідного винного
+продукту, а також на упаковці продукту в тарі, що може створити помилкове враження щодо його походження».
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="21_segment.md не вказана 120140 10 пільги по оподаткуванню рішення суду справедливості єс (велика палата) від 24 червня 2025 року, gr real, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «пільги по оподаткуванню» (законодавство про оборону / соціальний і правовий захист військовослужбовців. пільги для військовослужбовців і членів їх сімей / пільги по оподаткуванню).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">20</span>
+            <span class="file-badge">21_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb">Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пільги по оподаткуванню</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Суду справедливості ЄС (Велика Палата) від 24 червня 2025 року, GR REAL,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Пільги по оподаткуванню» (Законодавство про оборону / Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей / Пільги по оподаткуванню).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 21 Рішення за червень 2025 року
+
+VI. Захист споживачів: несправедливі умови
+
+Рішення Суду справедливості ЄС (Велика Палата) від 24 червня 2025 року, GR REAL,
+C-351/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=301563&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=6048931)
+
+Звернення за попереднім рішенням – Захист прав споживачів – Несправедливі умови
+споживчих договорів – Директива 93/13/ЄЕС – Стаття 6(1) – Стаття 7(1) – Договір
+споживчого кредиту – Договір, забезпечений обтяженням нерухомого майна,
+що становить сімейне житло споживача – Дострокове стягнення кредиту –
+Позасудовий продаж цього нерухомого майна з аукціону – Національне
+законодавство, що дозволяє здійснювати цей продаж без попередньої перевірки
+судом відповідного боргу – Підстави для анулювання цього продажу, що виключають
+наявність несправедливих умов – Ефективність захисту, наданого споживачам –
+Статті 7 та 47 Хартії основоположних прав Європейського Союзу
+
+За результатами розгляду звернення за попереднім рішенням від Krajský súd
+v Prešove (Регіональний суд, м. Прешов, Словацька Республіка), Суд у складі Великої
+Палати, ухвалив рішення щодо захисту, що надається споживачам Директивою
+93/13, [35] у її поєднанні зі статтями 7 та 47 Хартії, які закріплюють основоположні права
+на житло та ефективний судовий захист, [36] у контексті спору між двома споживачами,
+з одного боку, та переможцем торгів за сімейне житло цих споживачів, з іншого боку,
+щодо (i) виселення таких споживачів з цього житла після його придбання переможцем
+торгів та (ii) зустрічного позову, в якому ці споживачі оскаржували законність передачі
+права власності на це нерухоме майно. Суд також розглянув умови, за яких позасудове
+провадження щодо стягнення іпотеки, після його початку, має продовжуватися
+для дотримання цих основоположних прав та вимог, передбачених Директивою 93/13.
+
+07 квітня 2011 року відповідачі PO та RT уклали кредитний договір зі Словацькою
+кредитною установою («банк») на суму 63 000 євро, що підлягала щомісячному
+погашенню. Остаточний платіж за цим кредитним договором мав бути здійснений
+20 січня 2030 року. Умова, що містилася у загальних умовах, що застосовувалися
+банком, передбачала дострокове погашення у разі затримки платежу. Кредитний
+договір передбачав іпотеку на сімейний будинок цих відповідачів.
+
+03 листопада 2016 року, через затримку сплати відповідачами щомісячних
+платежів, банк оголосив позику такою, що має бути негайно погашена, та зажадав
+від цих відповідачів сплати повністю решти суми, належної за цим кредитним
+договором. Він також подав заяву про звернення стягнення на передане в іпотеку
+нерухоме майно шляхом його позасудового продажу з аукціону.
+
+35 Директива Ради 93/13/ЄЕС від 05 квітня 1993 року про несправедливі умови споживчих договорів (OJ 1993 L 95, с. 29).
+36 Стаття 7 Хартії основоположних прав Європейського Союзу («Хартія»), що стосується поваги до приватного
+та сімейного життя, гарантує право на житло, тоді як стаття 47 Хартії передбачає право на ефективний судовий захист.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="22_segment.md не вказана 20170 акції, облігації, векселі, інші цінні папери. дивіденди до okresný súd prešov (окружний суд, м. прешов, словацька республіка) з проханням семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «акції, облігації, векселі, інші цінні папери. дивіденди» (бюджетно-фінансове законодавство / акції, облігації, векселі, інші цінні папери. дивіденди).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">21</span>
+            <span class="file-badge">22_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20170</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Акції, облігації, векселі, інші цінні папери. Дивіденди</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>до Okresný súd Prešov (Окружний суд, м. Прешов, Словацька Республіка) з проханням</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Акції, облігації, векселі, інші цінні папери. Дивіденди» (Бюджетно-фінансове законодавство / Акції, облігації, векселі, інші цінні папери. Дивіденди).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 22 Рішення за червень 2025 року
+
+21 квітня 2017 року відповідачі в основному провадженні подали позов
+до Okresný súd Prešov (Окружний суд, м. Прешов, Словацька Республіка) з проханням
+зобов&#x27;язати банк утриматися від звернення стягнення на іпотечне майно
+та, як тимчасовий захід, зупинити стягнення на це майно до остаточного завершення
+
+основного провадження.
+
+25 квітня 2017 року відбувся перший раунд аукціону, на якому не було зроблено
+жодної пропозиції ціни.
+
+Рішенням від 26 травня 2017 року Окружний суд відхилив клопотання відповідача
+про вжиття тимчасового заходу. Ці відповідачі подали апеляцію на це рішення
+до Регіонального суду. 18 липня 2017 року, до того, як цей суд зміг ухвалити своє
+рішення, відповідне нерухоме майно було придбано у другому раунді аукціону
+заявником, компанією «GR REAL», яка працює, зокрема, у секторі кредитування,
+а також управління та обслуговування нерухомого майна. Цей продаж відбувся,
+незважаючи на те, що РО заперечував проти звернення стягнення на спірне іпотечне
+майно на тій підставі, що судове провадження, спрямоване на запобігання цьому
+стягненню, все ще тривало, і що як організатор аукціону, так і переможець торгів були
+повідомлені про наявність судового оскарження щодо стягнення.
+
+09 серпня 2017 року Регіональний суд скасував постанову від 26 травня 2017 року
+та постановив переглянути клопотання відповідачів про застосування тимчасового
+заходу, зокрема, на тій підставі, що Окружний суд повинен був розглянути заперечення
+відповідача щодо відсутності угоди про дострокове виконання.
+
+19 грудня 2017 року відповідачі відкликали позов, поданий 21 квітня 2017 року,
+у зв&#x27;язку з продажем відповідного нерухомого майна. Відповідно, 11 січня 2018 року
+Окружний суд закрив провадження у справі.
+
+Після відмови відповідачів звільнити відповідне нерухоме майно, яке було їхнім
+єдиним місцем проживання та яке вони займали зі своїми дітьми, двоє з яких були
+неповнолітніми, заявник звернувся до Окружного суду з позовом про виселення.
+Відхилення цього позову цим судом було підтверджено в апеляційному порядку
+Регіональним судом Прешова.
+
+Постановою від 08 квітня 2021 року Najvyšší súd Slovenskej republiky (Верховний
+Суд Словацької Республіки) скасував рішення обох цих судів та повернув справу
+до Окружного суду для того, щоб останній суд розглянув питання про право власності
+заявника. Окружний суд Прешова задовольнив позов заявника та зобов&#x27;язав
+відповідачів звільнити відповідне майно, відхиливши їхню заяву про оскарження
+законності продажу цього майна.
+
+Як заявник, так і відповідачі оскаржили це рішення до Регіонального суду. У цьому
+суді відповідачі стверджували про порушення їхніх прав як споживачів та права
+
+на житло.
+
+Регіональний суд вирішив звернутися до Суду справедливості ЄС із зверненням
+за попереднім рішенням, у якому порушив низку питань. По-перше, він висловив
+сумніви щодо відповідності пункту про прискорення виконання у спірному кредитному
+договорі вимозі прозорості, враховуючи, що цей пункт був включений до загальних
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="23_segment.md не вказана 150 60 10 облік і звітність порушив питання про те, чи користується, згідно з директивою 93/13, переможець семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «облік і звітність» (загальні засади правового регулювання економічного розвитку / загальні питання обліку і статистики. перепис населення / облік і звітність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">22</span>
+            <span class="file-badge">23_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Загальні питання обліку і статистики. Перепис населення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Облік і звітність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>порушив питання про те, чи користується, згідно з Директивою 93/13, переможець</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Облік і звітність» (Загальні засади правового регулювання економічного розвитку / Загальні питання обліку і статистики. Перепис населення / Облік і звітність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 23 Рішення за червень 2025 року
+
+умов банку, але нібито не був доведений до відома відповідачів. По-друге, цей суд
+порушив питання про те, чи користується, згідно з Директивою 93/13, переможець
+торгів за нерухоме майно у позасудовому продажу на аукціоні, поінформований
+про незавершене судове провадження щодо дійсності пункту, на якому ґрунтувався
+цей продаж, абсолютним захистом, чи цей захист може бути обмежений, враховуючи,
+зокрема, проактивну поведінку відповідних споживачів, які намагалися захистити себе
+від такого примусового виконання, стверджуючи, що цей пункт є несправедливим,
+а також сумніви щодо добросовісності цієї компанії.
+
+Висновки Суду
+
+По-перше, Суд розглянув, чи підпадає судове провадження, що розглядається
+в основному провадженні, під дію Директиви 93/13. [37]
+
+Таким чином, Суд нагадав, що для того, щоб визначити, чи можна ефективно
+посилатися на Директиву 93/13 у таких провадженнях, необхідно дослідити предмет
+цього провадження та конкретні особливості спору, частиною якого воно є, а також
+можливу наявність потенційно несправедливої умови в договорі іпотечного кредиту,
+який став предметом такого провадження.
+
+Щодо, по-перше, предмета провадження, Суд повторив свою практику, згідно
+з якою на Директиву 93/13 не можна в принципі ефективно посилатися у спорі, який
+стосується захисту речових прав, що походять від права власності, законно набутого
+продавцем або постачальником після продажу на аукціоні. [38] Він також зазначив,
+що національний суд не може проводити перевірку несправедливості договірних умов,
+яка призвела б до анулювання актів передачі права власності на нерухоме майно
+в ситуації, коли процедура стягнення за іпотекою, яка призвела до цієї передачі,
+завершена, а права власності на це майно були передані третій стороні
+без оскарження законності передачі. [39] У цьому контексті Суд зазначив, що предмети
+позовів, що розглядаються в основному провадженні, можна відрізнити від тих,
+що розглядаються в його вищезгаданій практиці. Особливістю спору в основному
+провадженні є те, що національний суд, який звернувся із запитом, розглядає (i) позов
+про виселення відповідачів з їхнього сімейного будинку, поданий заявником
+при здійсненні свого права власності, набутого в результаті позасудового продажу
+на аукціоні цього будинку, та (ii) зустрічний позов, за яким відповідачі оскаржують
+законність передачі права власності на цей будинок заявнику на тій підставі, що умови,
+за яких відбулася ця передача, не відповідають вимозі ефективного судового
+захисту. [40]
+
+Отже, на відміну від спору, який розглядався у справі, що призвела до рішення
+у справі Banco Santander, [41] спір в основному провадженні стосується не лише захисту
+
+37 А саме, сфера застосування статті 6(1) та статті 7(1) Директиви 93/13.
+38 Рішення від 07 грудня 2017 року, Banco Santander (Справа C-598/15, EU:C:2017:945, пункти 44 та 47).
+39 Рішення від 17 травня 2022 року, Ibercaja Banco (C-600/19, EU:C:2022:394, пункт 57).
+40 Як передбачено статтею 47 Хартії та статтею 7(1) Директиви 93/13.
+41 Рішення від 07 грудня 2017 року, Banco Santander (C-598/15, EU:C:2017:945).
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="24_segment.md не вказана 30 50 60 50 приватизація земельних ділянок але й умов, за яких провадження щодо звернення стягнення на майно, яке було семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «приватизація земельних ділянок» (цивільне законодавство / право власності. державна реєстрація прав на нерухоме майно / приватизація / приватизація земельних ділянок).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">23</span>
+            <span class="file-badge">24_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 50 60 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Право власності. Державна реєстрація прав на нерухоме майно</span><span class="crumb-sep">›</span><span class="crumb">Приватизація</span><span class="crumb-sep">›</span><span class="crumb-leaf">Приватизація земельних ділянок</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>але й умов, за яких провадження щодо звернення стягнення на майно, яке було</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Приватизація земельних ділянок» (Цивільне законодавство / Право власності. Державна реєстрація прав на нерухоме майно / Приватизація / Приватизація земельних ділянок).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 24 Рішення за червень 2025 року
+
+прав на нерухоме майно, набутих після продажу нерухомого майна на аукціоні,
+але й умов, за яких провадження щодо звернення стягнення на майно, яке було
+предметом іпотеки, могло призвести до передачі цих прав компанії, яка зробила
+успішну ставку. У цій справі у своєму зустрічному позові відповідачі в основному
+провадженні не посилаються проти набувача нерухомого майна, який є третьою
+стороною за договором іпотечного кредиту щодо цього майна, на підстави
+для анулювання цього договору або деяких його умов, а оскаржують саму законність
+передачі права власності на це майно цьому набувачу.
+
+По-друге, що стосується конкретних особливостей спору, частиною якого є
+виконавче провадження, та, зокрема, ставлення споживачів до розглянутого
+позасудового виконавчого провадження, Суд зазначив, що його не можна вважати
+повністю пасивним.
+
+Відповідачі подали позов, прагнучи запобігти продовженню цього провадження,
+
+додавши заяву про вжиття тимчасового заходу з метою зупинення провадження.
+На думку національного суду, який звернувся за попереднім рішенням, цей правовий
+засіб був би єдиним засобом протидії проведенню позасудового продажу з аукціону.
+З урахуванням оцінки, яку має провести цей суд, той факт, що після продажу з аукціону
+ці відповідачі відкликали цей позов, не може поставити під сумнів висновок про те,
+що ці відповідачі не залишалися пасивними, оскільки вони могли обґрунтовано
+вважати, що відповідна дія стала безпредметною.
+
+Крім того, національний суд, який звернувся за попереднім рішенням, зазначив,
+що відповідачі повідомили заявника на другому раунді аукціону про існування заяви
+про вжиття тимчасового заходу для зупинення звернення стягнення на відповідне
+іпотечне майно, яка очікувала розгляду. Така оцінка фактів належить до компетенції
+національного суду та зобов&#x27;язує Суд справедливості ЄС, хоча заявник заперечує,
+що його було повідомлено про існування такої заяви.
+
+По-третє, національний суд, який звернувся за попереднім рішенням, вважав,
+що на дату продажу з аукціону існували підтверджуючі докази щодо можливої
+наявності потенційно несправедливої умови в договорі, на якому ґрунтувалося
+стягнення відповідного іпотечного майна. Він висловив сумніви щодо того,
+чи відповідає пункт про прискорення стягнення, який призвів до цього стягнення,
+вимозі прозорості.
+
+З огляду на вищезазначене, Суд вважав, що, на відміну від справи, яка призвела
+до рішення у справі Banco Santander, [42] відповідачі не залишалися пасивними
+у позасудовому провадженні щодо стягнення. Навпаки, вони скористалися засобами
+правового захисту, передбаченими національним законодавством, щоб протистояти
+цьому стягненню, одночасно інформуючи осіб, яких це стягнення стосується, про свої
+дії. Однак це провадження щодо стягнення продовжилося та завершилося продажем
+з аукціону їхнього сімейного будинку за відсутності будь-якого судового перегляду
+підстави боргу, сплати якого банк вимагав, навіть попри наявність підтверджувальних
+доказів щодо потенційної несправедливості пункту про прискорення стягнення,
+
+42 Рішення від 07 грудня 2017 року, Banco Santander (C-598/15, EU:C:2017:945).
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="25_segment.md не вказана 120140 10 пільги по оподаткуванню вже здійсненої передачі права власності стосовно третьої сторони [43] не може семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «пільги по оподаткуванню» (законодавство про оборону / соціальний і правовий захист військовослужбовців. пільги для військовослужбовців і членів їх сімей / пільги по оподаткуванню).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">24</span>
+            <span class="file-badge">25_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb">Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пільги по оподаткуванню</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>вже здійсненої передачі права власності стосовно третьої сторони [43] не може</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Пільги по оподаткуванню» (Законодавство про оборону / Соціальний і правовий захист військовослужбовців. Пільги для військовослужбовців і членів їх сімей / Пільги по оподаткуванню).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 25 Рішення за червень 2025 року
+
+на якому ґрунтувалося це стягнення. За таких обставин захист правової визначеності
+вже здійсненої передачі права власності стосовно третьої сторони [43] не може
+вважатися абсолютним.
+
+Отже, Суд постановив, що сфера дії Директиви 93/13, [44] у поєднанні зі статтями 7
+та 47 Хартії [45], охоплює судові провадження, в яких (i) компанія, яка була переможцем
+торгів на майно у вигляді сімейного будинку споживача, проданого в контексті
+позасудового стягнення на майно, наданого цими споживачами в іпотеку на користь
+кредитора, що діє в рамках комерційної діяльності, подає клопотання про виселення
+цього споживача, та (ii) споживач оскаржує шляхом зустрічного позову законність
+передачі права власності на це майно компанії, яка зробила переможну ставку,
+причому ця передача відбулася, незважаючи на судове провадження, яке все
+ще тривало на момент цієї передачі та яке вимагало зупинення примусового
+звернення стягнення на це іпотечне майно на тій підставі, що в договорі, на якому
+ґрунтувалося це звернення стягнення, були несправедливі умови, причому компанія,
+яка зробила переможну ставку, була попередньо повідомлена цим споживачем
+про ці незавершені провадження. Цей підхід застосовується тією мірою, якою
+на момент відповідного продажу існували підтверджуючі докази того, що умови були
+потенційно несправедливими, і що споживач скористався засобами правового
+захисту, якими пересічний споживач міг обґрунтовано скористатися з метою
+
+отримання судового перегляду цих умов.
+
+По-друге, Суд постановив, що Директива 93/13, у поєднанні зі статтями 7 та 47
+Хартії, які гарантують право на житло та на ефективний судовий захист, перешкоджає
+національному законодавству [46], яке дозволяє продовжувати позасудове стягнення
+на предмет іпотеки у вигляді сімейного будинку цього споживача, наданий
+споживачем на користь кредитора, який діє в ході ведення комерційної діяльності,
+незважаючи на наявність клопотання, що перебуває на розгляді суду, про прийняття
+тимчасового заходу, що вимагає зупинення цього стягнення, та підтверджуючих
+доказів щодо можливої наявності потенційно несправедливої умови в договорі,
+на якому ґрунтувалося це стягнення. Цей підхід застосовується, коли це
+законодавство не передбачає жодної можливості досягнення судовим шляхом
+анулювання цього стягнення на підставі наявності несправедливих умов у цьому
+договорі.
+
+У цій справі, і з урахуванням перевірок національного суду, засоби правового
+захисту, доступні відповідачам на дату продажу з аукціону, про який йде мова,
+не відповідали вимозі ефективного судового захисту.
+
+43 На яке Суд посилався у рішеннях від 07 грудня 2017 року, Banco Santander (C-598/15, EU:C:2017:945, пункт 45),
+та від 17 травня 2022 року, Ibercaja Banco (C-600/19, EU:C:2022:394, пункт 57).
+44 А саме стаття 6(1) та стаття 7(1) Директиви 93/13.
+45 Право на житло та ефективний судовий захист.
+46 Zákon č. 527/2002 Z. z. o dobrovol’ných dražbách a o doplnení zákona Slovenskej národnej rady č. 323/1992 Zb. o notároch
+a notárskej činnosti (Notársky poriadok) v znení neskorších predpisov (Закон № 527/2002 про добровільні аукціони
+та внесення змін до Закону № 323/1992 про нотаріусів і нотаріальну діяльність (Нотаріальний кодекс)) («Закон
+про добровільні аукціони»).
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="26_segment.md не вказана 150 70 підприємницька діяльність зупинити проведення цього продажу з аукціону в контексті виконавчого провадження, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «підприємницька діяльність» (загальні засади правового регулювання економічного розвитку / підприємницька діяльність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">25</span>
+            <span class="file-badge">26_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb-leaf">Підприємницька діяльність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>зупинити проведення цього продажу з аукціону в контексті виконавчого провадження,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Підприємницька діяльність» (Загальні засади правового регулювання економічного розвитку / Підприємницька діяльність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 26 Рішення за червень 2025 року
+
+По-перше, ці засоби правового захисту не пропонували ефективної можливості
+зупинити проведення цього продажу з аукціону в контексті виконавчого провадження,
+щоб забезпечити судовий перегляд потенційно несправедливої умови договору,
+що призвела до такого стягнення, навіть якщо клопотання про зупинення перебувало
+на розгляді суду. Стаття 7(1) Директиви 93/13 вимагає, щоб споживач не був
+позбавлений ефективної можливості домогтися зупинення виконавчого провадження,
+порушеного відповідно до виконавчого документа, що ґрунтується на договірній умові,
+дійсність якої оскаржується в суді на підставі її несправедливості. За відсутності такого
+зупинення рішення, яким ця умова визнається несправедливою, надасть цьому
+споживачеві лише подальший захист суто компенсаційного характеру, який буде
+неповним і недостатнім. Ця вимога є ще більш виправданою, коли, як у цьому випадку,
+виконавче провадження стосується житла споживача та його сім&#x27;ї, захист якого
+підпадає під дію основоположного права на повагу до приватного та сімейного життя. [47]
+
+По-друге, ці засоби правового захисту не надали відповідачам можливості подати
+заяву про анулювання цього продажу з аукціону через наявність несправедливої
+умови в договорі, на якому ґрунтувався цей продаж, [48] незважаючи на наявність
+переконливих доказів щодо потенційної несправедливості цієї умови.
+
+Суд додав, що, враховуючи нещодавню судову практику Верховного Суду
+Словацької Республіки щодо Закону про добровільні аукціони, [49] можливість
+тлумачення цього Закону, [50] який відповідає положенням Директиви 93/13,
+не видається виключеною. У зв’язку з цим, якщо національний суд, що звернувся
+за попереднім рішенням, вважає, що він має право тлумачити цей Закон саме таким
+чином, то стосовно підстав для анулювання, передбачених у ньому, цей Закон також
+передбачає, що заява про анулювання має бути подана протягом трьох місяців з дати
+прийняття виграшної пропозиції. Національний суд має перевірити те, що не можна
+було обґрунтовано очікувати, що відповідачі подадуть позов про анулювання
+відповідного продажу з аукціону на підставі Закону про добровільні аукціони, оскільки
+вони не могли передбачити тлумачення цього Закону Верховним Судом Словацької
+Республіки, зроблене ним через п&#x27;ять років після цього продажу.
+
+Важливість суспільного інтересу, що лежить в основі захисту, який ця Директива
+надає споживачам, та необхідність забезпечення ефективності прав, які окремі особи
+отримують з цієї Директиви, гарантують, що за відсутності ефективних засобів правового
+захисту, що дозволяють їм відстоювати свої права згідно з цією Директивою до дати
+прийняття виграшної пропозиції, відповідачі в основному провадженні не будуть обмежені
+у часі для оскарження стягнення, яке призвело до цього прийняття.
+
+47 Стаття 7 Хартії.
+48 Пункт 21(2) Закону про добровільні аукціони передбачає право подати заяву про анулювання продажу протягом трьох
+місяців з дати прийняття виграшної пропозиції у разі оскарження дійсності договору, що створює відповідне обтяження,
+або порушення положень цього Закону.
+49 У своїх письмових зауваженнях уряд Словаччини стверджує, що в судовій практиці, що датується 2022 роком,
+підтвердженій у 2023 році, Верховний суд Словацької Республіки тлумачив пункт 21(2) Закону про добровільні аукціони
+таким чином, що наявність несправедливих умов у договорі, на якому ґрунтується позасудове виконання, є підставою
+для анулювання продажу, здійсненого в контексті цього виконання.
+50 Зокрема, пункт 21(2) Закону про добровільні аукціони.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="27_segment.md не вказана 30 60 10 окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.) рішенням, може визнати продаж з аукціону недійсним і, як наслідок, відновити семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (цивільне законодавство / зобов&#x27;язальне право / окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">26</span>
+            <span class="file-badge">27_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Зобов&#x27;язальне право</span><span class="crumb-sep">›</span><span class="crumb-leaf">Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>рішенням, може визнати продаж з аукціону недійсним і, як наслідок, відновити</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)» (Цивільне законодавство / Зобов&#x27;язальне право / Окремі види зобов&#x27;язань (оренда, лізинг, купівля-продаж, кредит, дарування, поставка, підряд, перевезення, страхування, доручення, комісія, спільна діяльність, концесія та ін.)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 27 Рішення за червень 2025 року
+
+Суд також зазначив, що оскільки національний суд, який звернувся за попереднім
+рішенням, може визнати продаж з аукціону недійсним і, як наслідок, відновити
+правовідносини між відповідачами та банком до здійснення цього продажу, цей суд
+повинен розглянути, з урахуванням чинного національного законодавства,
+можливість допустити цей банк до участі в провадженні відповідно до будь-яких
+відповідних процесуальних норм .
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="28_segment.md не вказана 90 30 30 трансплантація органів і флори семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «трансплантація органів» (законодавство про охорону здоров&#x27;я / лікувально-профілактична допомога населенню (безплатна, платна, пільги по оплаті). медичні огляди / трансплантація органів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">27</span>
+            <span class="file-badge">28_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">90 30 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про охорону здоров&#x27;я</span><span class="crumb-sep">›</span><span class="crumb">Лікувально-профілактична допомога населенню (безплатна, платна, пільги по оплаті). Медичні огляди</span><span class="crumb-sep">›</span><span class="crumb-leaf">Трансплантація органів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>і флори</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Трансплантація органів» (Законодавство про охорону здоров&#x27;я / Лікувально-профілактична допомога населенню (безплатна, платна, пільги по оплаті). Медичні огляди / Трансплантація органів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 28 Рішення за червень 2025 року
+
+VII. Навколишнє середовище: Директива про охорону природних оселищ та дикої фауни
+і флори
+
+Рішення Суду справедливості ЄС (П’ята Палата), 12 червня 2025 року, Eesti Suurkiskjad,
+C-629/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=301163&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=6228230)
+
+Звернення за попереднім рішенням – Охорона природних оселищ та дикої фауни
+і флори – Директива 92/43/ЄЕС – Перший підпункт статті 1(i) – Природоохоронний стан
+виду – Поняття – Стаття 14 – Заходи з управління – Вилучення з дикої природи
+та експлуатація, сумісні зі збереженням або відновленням сприятливого
+природоохоронного стану виду – Другий підпункт статті 1(i) – Оцінка того, чи є
+природоохоронний стан відповідного виду сприятливим – Сукупні умови – Canis
+lupus (вовк) – Класифікація в категорії «вразливий» Червоного списку Міжнародного
+союзу охорони природи – Види тварин, що входять до популяції, природний ареал якої
+простягається за межі території Держави-члена – Врахування обміну з популяціями
+того самого виду, що мешкають у сусідніх Державах-членах або в третіх країнах –
+Стаття 2(3) – Врахування економічних, соціальних і культурних вимог, а також
+регіональних та місцевих характеристик
+
+Щодо звернення за попереднім рішенням, поданим Riigikohus (Верховний Суд,
+Естонія), Суд відповів на кілька питань, що стосуються захисту вовка (Canis lupus)
+відповідно до Директиви про охорону природних оселищ та дикої фауни і флори [51],
+зокрема статтю 14 цієї директиви, [52 ] яка дозволяє вживати таких заходів,
+як обмеження полювання, яке в принципі дозволено в Естонії, [53] якщо таке обмеження
+є необхідним для збереження сприятливого стану популяції відповідного виду.
+
+У 2020 році компетентний орган Естонії розпорядженням встановив квоту
+на полювання на вовків на мисливський сезон 2020–2021 років в Естонії. Заявник
+та скаржник за касаційною скаргою в основному провадженні («заявник в основному
+провадженні»), естонська асоціація з охорони навколишнього середовища, оскаржили
+законність цього розпорядження, стверджуючи, що передумова, на якій воно
+ґрунтується, а саме те, що стан збереження вовка в Естонії є сприятливим,
+
+є неправильною.
+
+51 Директива Ради 92/43/ЄЕС від 21 травня 1992 року про охорону природних оселищ та дикої фауни і флори (OB L 206,
+22.07.1992, с. 7), зі змінами, внесеними Директивою Ради 2013/17/ЄС від 13 травня 2013 року (ОВ 2013 L 158. с. 193.)
+(«Директива про оселища»).
+52 [Див. Статтю 14(1) Директиви про оселища: «Якщо на підставі нагляду, передбаченого статтею 11, Держави-члени](https://zakon.rada.gov.ua/laws/show/987_004-92#n92)
+вважають за необхідне, вони повинні вживати заходів для забезпечення сумісності вилучення з дикої природи
+[екземплярів дикої фауни і флори, перелічених у додатку V, а також їх експлуатації із збереженням їх сприятливого](https://zakon.rada.gov.ua/laws/show/987_004-92#n1890)
+
+природоохоронного стану.».
+53 Оскільки популяції вовків в Естонії включені до Додатку V(a) до Директиви про оселища і, отже, можуть бути об’єктом
+полювання. Таким чином, ці популяції становлять виняток із загального правила, згідно з яким полювання на вовків,
+як правило, заборонено відповідно до статті 12 цієї Директиви, що розглядається в поєднанні з Додатком IV(a) до неї.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="29_segment.md не вказана 70 70 10 книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах яка, у свою чергу, є частиною євразійської популяції цього виду тварин, ареал семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (законодавство про шлюб і сім&#x27;ю / акти громадянського стану. загс / книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">28</span>
+            <span class="file-badge">29_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 70 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb">Акти громадянського стану. ЗАГС</span><span class="crumb-sep">›</span><span class="crumb-leaf">Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>яка, у свою чергу, є частиною Євразійської популяції цього виду тварин, ареал</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (Законодавство про шлюб і сім&#x27;ю / Акти громадянського стану. ЗАГС / Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 29 Рішення за червень 2025 року
+
+У цьому контексті «сприятливий» стан збереження Балтійської популяції вовка,
+яка, у свою чергу, є частиною Євразійської популяції цього виду тварин, ареал
+природного поширення якого охоплює Естонію, Латвію, Литву, північний схід Польщі
+та деякі сусідні треті країни, не заперечується. Однак, з огляду на класифікацію
+естонської регіональної популяції Міжнародним союзом охорони природи (МСОП),
+ця популяція, на думку заявника в основному провадженні, не може вважатися такою,
+що перебуває в природоохоронному стані.
+
+Розглядаючи касаційну скаргу, подану цією стороною проти відхилення її
+оскарження цього розпорядження, запитуючий суд по суті поставив питання про те,
+чи стаття 1(i) Директиви про охорону природних оселищ та дикої фауни і флори,
+яка визначає поняття стану збереження виду та умови для визначення того, чи є стан
+збереження виду сприятливим, має тлумачитися в тому сенсі, що віднесення
+до категорії «вразливий» Червоного списку МСОП популяції виду тварин, що мешкає
+на території Держави-члена, виключає можливість визнання природоохоронного
+стану цього виду на території цієї Держави-члена «сприятливим» у розумінні цього
+положення. Крім того, цей суд, по суті, прагне встановити, чи слід тлумачити статтю
+1(i) цієї Директиви в тому сенсі, що прийняття Державою-членом заходів управління
+відповідно до статті 14(1), тягне за собою обов’язок забезпечити,
+щоб природоохоронний стан популяції цього виду, що мешкає на території цієї
+Держави-члена, був сприятливим, або ж ця Держава-член може враховувати
+природоохоронний стан всієї популяції, природний ареал якої простягається за межі
+території цієї Держави-члена, і, залежно від обставин, в якій мірі та за яких умов вона
+може це робити.
+
+У цьому контексті запитуючий суд поставив питання про те, чи можуть економічні,
+соціальні та культурні вимоги, а також регіональні та місцеві особливості
+враховуватися при оцінці природоохоронного стану виду.
+
+Висновки Суду
+
+По-перше, Суд справедливості ЄС зазначив, що дискреційні повноваження
+Держав-членів щодо визначення необхідності вжиття заходів відповідно до статті
+14(1) Директиви про охорону природних оселищ та дикої фауни і флори обмежуються
+обов’язком забезпечити, щоб відлов у дикій природі особин виду та їх експлуатація
+були сумісні з підтриманням сприятливого природоохоронного стану цього виду.
+Зокрема, якщо вид тварин має несприятливий природоохоронний стан, компетентні
+органи повинні вжити заходів у значенні цього положення з метою поліпшення
+природоохоронного стану відповідного виду таким чином, щоб у майбутньому його
+популяції були збережені в сприятливому стані у стійкий спосіб.
+
+Сприятливий природоохоронний стан популяцій відповідного виду в їхньому
+природному ареалі повинен існувати і оцінюватися, в першу чергу і обов&#x27;язково,
+на місцевому та національному рівнях. Якщо природоохоронний стан виду не є
+сприятливим у Державі-члені, на територію якої поширюється його природний ареал,
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="30_segment.md не вказана 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав або, принаймні, не в повній мірі, навіть якщо популяція відповідного виду, мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">29</span>
+            <span class="file-badge">30_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>або, принаймні, не в повній мірі, навіть якщо популяція відповідного виду,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 30 Рішення за червень 2025 року
+
+принаймні потенційно, цей вид не може виконувати там свою екологічну функцію,
+або, принаймні, не в повній мірі, навіть якщо популяція відповідного виду,
+що перебуває в цій Державі-члені, є частиною популяції, природоохоронний стан якої
+
+є сприятливим.
+
+При цьому віднесення національної популяції виду до категорії «вразливих»
+Червоного списку МСОП само по собі не виключає того, що природоохоронний стан
+цього виду на території відповідної Держави-члена може бути визнаний сприятливим,
+якщо виконуються сукупні умови, встановлені в другому підпункті статті 1(i)
+Директиви про охорону природних оселищ та дикої фауни і флори.
+
+У цьому контексті популяції видів тварин, зокрема вовків, які також присутні
+в інших Державах-членах або третіх країнах, що межують з Державою, яка планує
+вжити заходів з управління відповідно до статті 14(1) Директиви про охорону
+природних оселищ та дикої фауни і флори, будуть мати значення для останньої
+Держави-члена з метою встановлення, чи є природоохоронний стан популяції цього
+виду, що перебуває на її території, сприятливим. Їхнє значення залежить від того,
+чи існують обміни між цими популяціями, які можуть впливати на вид, що може
+позначитися на довгостроковому розподілі та чисельності цієї популяції на цій
+території.
+
+У випадках, коли ситуація на даний момент є задовільною, необхідно все ж таки
+забезпечити її стабільність, щоб визнати природоохоронний стан виду сприятливим.
+
+У зв&#x27;язку з цим слід, зокрема, враховувати, по-перше, будь-які передбачувані
+зміни, які можуть вплинути на обмін між популяцією, що мешкає в Державі-члені,
+та іншими популяціями, що входять до складу тієї ж популяції. По-друге, слід
+враховувати рівень правового захисту, яким користується відповідний вид у сусідніх
+Державах-членах та третіх країнах. По-третє, ще більшу вагу слід надавати відносинам
+з популяціями інших Держав, де відповідні Держави-члени та треті країни не тільки
+застосовують порівнянні норми правового захисту, але й співпрацюють з метою
+захисту відповідних видів та координують, наприклад, свої заходи захисту таким
+чином, щоб оптимізувати обмін між відповідними популяціями.
+
+Крім того, з метою забезпечення того, щоб вилучення з дикої природи
+екземплярів виду та їх використання були сумісні з підтриманням сприятливим
+природоохоронним станом цього виду, може виявитися необхідним, щоб Державачлен, на території якої присутня популяція вовків, що є частиною популяції, природний
+ареал якої простягається за межі цієї території, коли вона планує врахувати обмін
+між популяцією вовків, що мешкає на цій території, та популяціями, що мешкають
+у сусідніх Державах-членах або третіх країнах, обмінюватися з цими Державамичленами та третіми країнами інформацією про транскордонні переміщення,
+що спостерігаються у зразків цього виду, та про заходи управління, які ці Державичлени або треті країни вживають або мають намір вжити щодо популяцій,
+що мешкають на їхніх відповідних територіях. По-перше, такий обмін інформацією
+може зробити більш точною оцінку відповідною Державою-членом чисельності
+власної популяції. По-друге, отримання інформації про заходи з управління,
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="31_segment.md не вказана 140270 10 спільні підприємства країнами, може бути необхідним для того, щоб відповідна держава-член могла семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «спільні підприємства» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / економічне співробітництво з іноземними країнами / спільні підприємства).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">30</span>
+            <span class="file-badge">31_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140270 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb">Економічне співробітництво з іноземними країнами</span><span class="crumb-sep">›</span><span class="crumb-leaf">Спільні підприємства</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>країнами, може бути необхідним для того, щоб відповідна Держава-член могла</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Спільні підприємства» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Економічне співробітництво з іноземними країнами / Спільні підприємства).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 31 Рішення за червень 2025 року
+
+що застосовуються або плануються відповідними Державами-членами або третіми
+країнами, може бути необхідним для того, щоб відповідна Держава-член могла
+забезпечити, щоб відповідний вид міг вважатися таким, що фактично має сприятливий
+природоохоронний стан на її території. Нарешті, інформація про заходи,
+що застосовуються або плануються сусідніми Державами-членами або третіми
+країнами, може бути необхідною для того, щоб відповідна Держава-член могла
+забезпечити, щоб заходи, які вона планує вжити щодо цього виду, були сумісні
+з підтриманням сприятливого природоохоронного стану цього виду на її території.
+
+По-друге, Суд справедливості ЄС зазначив, що економічні, соціальні та культурні
+вимоги, а також регіональні та місцеві особливості, згадані в статті 2(3) Директиви
+про охорону природних оселищ та дикої фауни і флори, які, крім того, не становлять
+самостійного відступу від загальної системи захисту, встановленої цією Директивою,
+не можуть бути використані для недотримання зобов’язання забезпечити,
+щоб вилучення з дикої природи екземплярів особин видів та їх експлуатація були
+сумісні з підтриманням природоохоронного стану цих видів, яке обмежує дискреційне
+право Держав-членів відповідно до статті 14 цієї Директиви. Лише в межах цієї
+свободи дискреційного розсуду Держави-члени в принципі можуть враховувати
+ці вимоги та особливості.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="32_segment.md не вказана 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">31</span>
+            <span class="file-badge">32_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 32 Рішення за червень 2025 року
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 31;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

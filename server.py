@@ -22,6 +22,7 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 DOCS_PDFS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents", "pdfs")
 DOCS_MARKDOWN_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents", "markdown")
 DOCS_SEGMENTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "documents", "segments")
+CORRELATION_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "correlation")
 DB_PATH = os.path.join(DATA_DIR, "classifier.sqlite")
 JSON_TREE_PATH = os.path.join(DATA_DIR, "classifier.json")
 
@@ -44,6 +45,16 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
         # PDF serving
         if path.startswith("/documents/pdfs/"):
             self.handle_pdf(path)
+            return
+
+        # Markdown serving
+        if path.startswith("/documents/markdown/"):
+            self.handle_markdown(path)
+            return
+
+        # Correlation HTML serving
+        if path.startswith("/correlation/"):
+            self.handle_correlation(path)
             return
 
         # API Endpoints
@@ -82,6 +93,22 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
                 self.send_header("Accept-Ranges", "bytes")
                 self.end_headers()
                 return
+        if parsed.path.startswith("/documents/markdown/"):
+            rel_path = urllib.parse.unquote(parsed.path.replace("/documents/markdown/", "").lstrip("/"))
+            file_path = os.path.normpath(os.path.join(DOCS_MARKDOWN_DIR, rel_path))
+            if os.path.isdir(file_path):
+                md_files = [f for f in os.listdir(file_path) if f.endswith(".md") and not f.startswith(".")]
+                if md_files:
+                    dir_name = os.path.basename(file_path)
+                    target = f"{dir_name}.md" if f"{dir_name}.md" in md_files else md_files[0]
+                    file_path = os.path.join(file_path, target)
+            if file_path.startswith(DOCS_MARKDOWN_DIR) and os.path.isfile(file_path):
+                self.send_response(200)
+                self.send_header("Content-Type", "text/plain; charset=utf-8")
+                self.send_header("Content-Length", str(os.path.getsize(file_path)))
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                return
         super().do_HEAD()
 
     def handle_pdf(self, path):
@@ -112,6 +139,68 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
         except Exception as e:
             try:
                 self.send_error(500, "Error streaming PDF")
+            except Exception:
+                pass
+
+    def handle_markdown(self, path):
+        rel_path = urllib.parse.unquote(path.replace("/documents/markdown/", "").lstrip("/"))
+        file_path = os.path.normpath(os.path.join(DOCS_MARKDOWN_DIR, rel_path))
+
+        # Якщо запитано папку, шукаємо відповідний .md файл всередині
+        if os.path.isdir(file_path):
+            md_files = [f for f in os.listdir(file_path) if f.endswith(".md") and not f.startswith(".")]
+            if md_files:
+                dir_name = os.path.basename(file_path)
+                target = f"{dir_name}.md" if f"{dir_name}.md" in md_files else md_files[0]
+                file_path = os.path.join(file_path, target)
+
+        # Захист від directory traversal
+        if not file_path.startswith(DOCS_MARKDOWN_DIR) or not os.path.isfile(file_path):
+            self.send_error(404, "Markdown File Not Found")
+            return
+
+        try:
+            with open(file_path, "rb") as f:
+                content = f.read()
+
+            self.send_response(200)
+            self.send_header("Content-Type", "text/plain; charset=utf-8")
+            self.send_header("Content-Length", str(len(content)))
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(content)
+        except (ConnectionResetError, BrokenPipeError):
+            pass
+        except Exception as e:
+            try:
+                self.send_error(500, f"Error reading markdown file: {e}")
+            except Exception:
+                pass
+
+    def handle_correlation(self, path):
+        rel_path = urllib.parse.unquote(path.replace("/correlation/", "").lstrip("/"))
+        file_path = os.path.normpath(os.path.join(CORRELATION_DIR, rel_path))
+
+        # Захист від directory traversal
+        if not file_path.startswith(CORRELATION_DIR) or not os.path.isfile(file_path):
+            self.send_error(404, "Correlation Page Not Found")
+            return
+
+        try:
+            with open(file_path, "rb") as f:
+                content = f.read()
+
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(content)))
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(content)
+        except (ConnectionResetError, BrokenPipeError):
+            pass
+        except Exception as e:
+            try:
+                self.send_error(500, f"Error reading correlation page: {e}")
             except Exception:
                 pass
 
@@ -275,11 +364,16 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
             md_path_file = os.path.join(DOCS_MARKDOWN_DIR, f"{name_no_ext}.md")
             md_path_dir = os.path.join(DOCS_MARKDOWN_DIR, name_no_ext)
             has_markdown = False
+            markdown_url = None
             if os.path.isfile(md_path_file):
                 has_markdown = True
+                markdown_url = f"/documents/markdown/{urllib.parse.quote(name_no_ext)}.md"
             elif os.path.isdir(md_path_dir):
-                md_inner = [mf for mf in os.listdir(md_path_dir) if mf.endswith(".md") and not mf.startswith(".")]
-                has_markdown = len(md_inner) > 0
+                md_inner = sorted([mf for mf in os.listdir(md_path_dir) if mf.endswith(".md") and not mf.startswith(".")])
+                if len(md_inner) > 0:
+                    has_markdown = True
+                    target_md = f"{name_no_ext}.md" if f"{name_no_ext}.md" in md_inner else md_inner[0]
+                    markdown_url = f"/documents/markdown/{urllib.parse.quote(name_no_ext)}/{urllib.parse.quote(target_md)}"
 
             # Перевірка наявності оброблених сегментів у documents/segments/name_no_ext
             seg_folder = os.path.join(DOCS_SEGMENTS_DIR, name_no_ext)
@@ -290,6 +384,10 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
                 segments_count = len(seg_files)
                 has_segments = segments_count > 0
 
+            # Перевірка наявності correlation сторінки
+            correlation_file = os.path.join(CORRELATION_DIR, f"{name_no_ext}.html")
+            has_correlation = os.path.isfile(correlation_file)
+
             category = self.detect_category(filename)
 
             pdf_full_path = os.path.join(DOCS_PDFS_DIR, filename)
@@ -298,11 +396,15 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
             results.append({
                 "num": idx,
                 "filename": filename,
+                "name_no_ext": name_no_ext,
                 "url": f"/documents/pdfs/{urllib.parse.quote(filename)}",
                 "size_bytes": pdf_size_bytes,
                 "has_markdown": has_markdown,
+                "markdown_url": markdown_url,
                 "has_segments": has_segments,
                 "segments_count": segments_count,
+                "has_correlation": has_correlation,
+                "correlation_url": f"/correlation/{urllib.parse.quote(name_no_ext)}.html" if has_correlation else None,
                 "category": category
             })
         return results

@@ -1,0 +1,3219 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglad_KKS_01_2025 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglad_KKS_01_2025 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglad_KKS_01_2025.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglad_KKS_01_2025</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">39</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">73.7%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">24</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 39 із 39</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01.01.01_segment.md № 357/12623/21 280 60 20 40 заходи правового захисту зібраними під час проведення досудового розслідування, обсягу яких, семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «заходи правового захисту» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура / кадри органів прокуратури / заходи правового захисту).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01.01.01_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124754858" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 357/12623/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60 20 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Прокуратура</span><span class="crumb-sep">›</span><span class="crumb">Кадри органів прокуратури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Заходи правового захисту</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>зібраними під час проведення досудового розслідування, обсягу яких,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Заходи правового захисту» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура / Кадри органів прокуратури / Заходи правового захисту).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1.1. У КПК визначено право прокурора обґрунтовувати свою позицію доказами,
+зібраними під час проведення досудового розслідування, обсягу яких,
+на переконання сторони обвинувачення, буде достатньо для доведення
+винуватості особи та притягнення її до кримінальної відповідальності. При цьому
+законодавець не встановив перед прокурором вимоги долучати під час судового
+розгляду абсолютно всі зібрані під час досудового розслідування докази
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+визнали винуватим і засудили обвинуваченого за п. 7 ч. 2 ст. 115 КК.
+
+У касаційній скарзі засуджений зазначає, що в реєстрі матеріалів
+досудового розслідування вказано про два висновки судово-психіатричних
+експертиз від 14.07.2021 та від 10.08.2021, зауважуючи, що останнє експертне
+дослідження, дані якого, на його думку, мають істотне значення для справи,
+в матеріалах кримінального провадження відсутнє.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС вказав, що статтями 22, 290, 349 КПК
+визначено право сторони обвинувачення обґрунтовувати свою позицію про
+доведеність винуватості особи доказами, зібраними під час проведення
+досудового розслідування, обсягу яких, на переконання сторони обвинувачення,
+буде достатньо для доведення винуватості особи та притягнення її
+до кримінальної відповідальності за інкримінований їй злочин. При цьому
+законодавець не встановив перед прокурором вимоги долучати під час судового
+розгляду абсолютно всі зібрані під час досудового розслідування докази.
+
+Як убачається з матеріалів кримінального провадження, у реєстрі
+матеріалів досудового розслідування дійсно зазначено про проведення кількох
+судово-психіатричних експертиз, за результатами яких було складено висновки
+від 14.07.2021 та від 10.08.2021. Водночас, відповідно до вироку, суд першої
+інстанції дослідив та поклав у основу свого рішення лише висновок від 14.07.2021.
+
+З огляду на положення статей 22, 290, 349 КПК та практику ВС, прокурор,
+надаючи суду докази щодо винуватості засудженого, зібрані під час досудового
+розслідування, користуючись своїм правом, передбаченим ст. 22 КПК, мав законні
+підстави не надавати суду для дослідження висновок від 10.08.2021.
+
+При цьому засуджений, лише формально посилаючись на те,
+що наведений висновок від 10.08.2021 має істотне значення для справи, не
+
+вказує, яким саме чином його відсутність у матеріалах кримінального
+провадження впливає на правильність рішень судів попередніх інстанцій щодо
+його винуватості, з огляду на те, що в матеріалах справи наявний висновок
+судово-психіатричної експертизи від 14.07.2021, який був предметом дослідження
+місцевого суду та покладений в основу вироку.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.01.2025 у справі № 357/12623/21
+[(провадження № 51-2720км23) – https://reyestr.court.gov.ua/Review/124754858.](https://reyestr.court.gov.ua/Review/124754858)
+
+Суд, сторони та інші учасники кримінального провадження
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="01.01_segment.md не вказана 60 20 31 пенсії за особливі заслуги перед україною і в доведенні перед судом їх переконливості (ст. 22 кпк) семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «пенсії за особливі заслуги перед україною» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсії за особливі заслуги перед україною).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">01.01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20 31</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пенсії за особливі заслуги перед Україною</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>і в доведенні перед судом їх переконливості (ст. 22 КПК)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Пенсії за особливі заслуги перед Україною» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсії за особливі заслуги перед Україною).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">1.1. Змагальність сторін та свобода в поданні ними суду своїх доказів
+і в доведенні перед судом їх переконливості (ст. 22 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02.1_segment.md № 466/10640/16 10280 законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів з естетичної хірургії у вигляді корекції скелета носа не здійснив належного догляду семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів» (основи суспільного ладу / законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">02.02.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124561007" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 466/10640/16</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10280</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>з естетичної хірургії у вигляді корекції скелета носа не здійснив належного догляду</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів» (Основи суспільного ладу / Законодавство про організацію та проведення мітингів, демонстрацій та інших масових заходів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.2.1. Дії лікаря-анестезіолога, який під час проведення пластичної операції
+з естетичної хірургії у вигляді корекції скелета носа не здійснив належного догляду
+за потерпілою в період виходу її з наркозу до відновлення свідомості, своєчасно
+не провів відсмоктування вмісту трахеї та бронхів, що призвело до розвитку
+гострої дихальної недостатності внаслідок аспіраційної асфіксії, перебувають
+у причинному зв’язку з настанням смерті потерпілої особи й  утворюють склад
+кримінального правопорушення, передбаченого ч. 1 ст. 140 КК
+
+Обставини справи: обвинувачений, обіймаючи посаду лікаря-анестезіолога
+за сумісництвом у міській косметологічній лікарні, здійснював анестезіологічне
+забезпечення під час оперативного втручання у вигляді корекції скелета носа
+потерпілій під загальним знечуленням із застосуванням ендотрахеальної трубки
+для профілактики затікання крові в дихальні шляхи. Однак після операції
+обвинувачений неналежно виконав свої професійні обов’язки внаслідок недбалого
+ставлення до них, а саме не здійснив догляду за потерпілою в період виходу
+з наркозу аж до відновлення свідомості з метою попередження загрозливих
+для життя станів та відновлення всіх життєво важливих функцій, особливо
+дихальної і серцево-судинної системи, своєчасно не провів відсмоктування вмісту
+трахеї та бронхів, що призвело до гострої дихальної недостатності,
+що розвинулася внаслідок аспірації крові в респіраторний відділ легень
+(аспіраційна асфіксія) і спричинила тяжкі наслідки — смерть потерпілої.
+
+Позиції судів першої та апеляційної інстанцій: місцевий суд, з яким
+погодився суд апеляційної інстанції, визнав винуватою та засудив особу
+за ч. 1 ст.140 КК.
+
+У касаційній скарзі засуджений стверджує, що суд не встановив дійсної
+причини смерті хворої потерпілої, оскільки показаннями допитаних свідків
+та іншими доказами не підтверджено наявності в неї ознак кровотечі
+під час оперативного втручання і серцево-судинної реанімації, а в ході судовомедичних експертиз не виявлено джерела і причин цієї кровотечі, тому, на думку
+
+засудженого, з урахуванням установлення ним інтубаційної трубки, у цьому
+випадку не могла відбутися аспірація крові в легені та подальша асфіксія.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС вказав, що за своїми професійними
+обов’язками, які регламентуються законодавством України про охорону здоров’я,
+зокрема ЗУ «Основи законодавства України про охорону здоров&#x27;я», прийнятим
+відповідно до цього Закону галузевим нормативним документом, що регулює
+діяльність лікарів-анестезіологів, а також посадовою інструкцією, обвинувачений
+як лікар-анестезіолог ніс персональну відповідальність за проведення лікування
+у вигляді анестезіологічного забезпечення і зобов’язаний був здійснювати
+ретельний нагляд за станом життєво важливих функцій організму хворої під час
+операції (знеболення) і післяопераційному періоді до їх відновлення
+та стабілізації.
+
+Ключовим моментом є те, що обвинувачений саме в післяопераційний
+період унаслідок недбалого ставлення до своїх професійних обов’язків не провів
+відсмоктування вмісту трахеї та бронхів потерпілої, тоді як був зобов’язаний
+виконати вказані дії, здійснюючи догляд за хворою та наглядаючи за станом
+життєво важливих функцій її організму до виходу з наркозу, і саме це його діяння
+спричинило її смерть, яка настала від аспіраційної асфіксії, тобто гострої дихальної
+недостатності, що розвинулася внаслідок аспірації крові в респіраторний відділ
+
+легень.
+
+Із фактичних обставин кримінального провадження встановлено,
+що тяжкий наслідок у вигляді смерті потерпілої був породжений конкретним
+діянням засудженого, який не виконав свого обов’язку щодо належного догляду
+за хворою в післяопераційному періоді, а не третіх осіб чи  будь-яких інших
+зовнішніх сил. Якби не було діяння (бездіяльності) засудженого, цей наслідок не
+настав би, що свідчить про наявність однієї з обов’язкових ознак об’єктивної
+сторони кримінального правопорушення — причинного зв’язку між ними.
+
+Висновок про винуватість лікаря-анестезіолога у вчиненні кримінального
+правопорушення за наведених обставин достатньо вмотивований і ґрунтується
+на доказах, отриманих в порядку, визначеному КПК, які були предметом
+безпосереднього дослідження суду першої інстанції, а саме: показаннях свідків,
+експертів, висновках судових експертиз, протоколів слідчих дій та інших
+письмових документів. Аналіз зазначених доказів дозволив судам попередніх
+інстанцій чітко встановити обов’язки засудженого, які він повинен був виконати,
+але не виконав, та які саме вимоги нормативних актів він порушив.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 16.01.2025 у справі № 466/10640/16
+[(провадження № 51-2409км24) – https://reyestr.court.gov.ua/Review/124561007.](https://reyestr.court.gov.ua/Review/124561007)
+
+Кримінальні правопорушення проти власності
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.02_segment.md не вказана 20 50110 лісовий доход або фармацевтичним працівником (ст. 140 кк) семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «лісовий доход» (бюджетно-фінансове законодавство / податки та обов&#x27;язкові платежі / лісовий доход).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">02.02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20 50110</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Податки та обов&#x27;язкові платежі</span><span class="crumb-sep">›</span><span class="crumb-leaf">Лісовий доход</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>або фармацевтичним працівником (ст. 140 КК)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Лісовий доход» (Бюджетно-фінансове законодавство / Податки та обов&#x27;язкові платежі / Лісовий доход).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.2. Неналежне виконання професійних обов&#x27;язків медичним
+або фармацевтичним працівником (ст. 140 КК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.03.2023_segment.md № 295/3702/23 210 70 ядерні матеріали та ядерні установки від 02.03.2023 (далі – №182), а 09.03.2023 їм повідомлено про завершення семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «ядерні матеріали та ядерні установки» (законодавство про використання ядерної енергії та радіаційний захист. законодавство з питань ліквідації наслідків чорнобильської катастрофи та інших ядерних аварій і випробувань / ядерні матеріали та ядерні установки).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">02.03.2023_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124522531" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 295/3702/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">210 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про використання ядерної енергії та радіаційний захист. Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань</span><span class="crumb-sep">›</span><span class="crumb-leaf">Ядерні матеріали та ядерні установки</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>від 02.03.2023 (далі – №182), а 09.03.2023 їм повідомлено про завершення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Ядерні матеріали та ядерні установки» (Законодавство про використання ядерної енергії та радіаційний захист. Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань / Ядерні матеріали та ядерні установки).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">02.03.2023 матеріали щодо них виділено в провадження № 620230000000000182
+від 02.03.2023 (далі – №182), а 09.03.2023 їм повідомлено про завершення
+досудового розслідування та надано доступ до його матеріалів.
+
+Суд першої інстанції дійшов висновку, що строк досудового розслідування
+в кримінальному провадженні № 33 закінчився 10.03.2022, тому всі подальші
+процесуальні дії були вчинені поза межами цього строку.
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+закрили провадження № 182 на підставі п. 10 ч. 1 ст. 284 КПК.
+
+У касаційній скарзі прокурор вважає, що в кримінальному провадженні,
+з якого матеріали щодо усіх підозрюваних виділені в окремі провадження, строк
+досудового розслідування обраховується відповідно до ч. 2 ст. 219 КПК
+в редакції, чинній на відповідний період часу.
+
+Позиція ККС: скасовано рішення судів попередніх інстанцій та призначено
+новий розгляд у суді першої інстанції.
+
+Обґрунтування позиції ККС: ККС вказав, що строки, передбачені ч. 3 ст. 219
+КПК, захищають підозрювану особу від надмірно тривалого досудового
+розслідування, обмежуючи строк, протягом якого вона перебуває
+в невизначеному становищі. Ці строки розпочинають свій перебіг з моменту
+повідомлення особі про підозру, і право особи на розумний строк забезпечується
+в тому кримінальному провадженні, у якому вона є підозрюваною особою,
+незалежно від того, чи  об’єднане її провадження з іншим або виділено в окреме
+
+провадження.
+
+У той же час право особи на розумний строк досудового розслідування не
+може впливати на інші розслідування, які її не стосуються. Факт виділення
+з кримінального провадження в окреме провадження матеріалів щодо частини
+кримінальних правопорушень … не впливає на обчислення процесуального строку
+досудового розслідування за фактом вчинення того кримінального
+правопорушення, в якому повідомлення про підозру не здійснювалося.
+Провадження, в якому не залишилося підозрюваних внаслідок виділення з нього
+матеріалів в інші провадження, є «фактовим» провадженням, строк якого
+визначається відповідними правилами.
+
+Таким чином, на час оголошення воєнного стану 24.02.2022 в провадженні
+№ 33 не було підозрюваних осіб і на це провадження поширюються правила ч. 2
+ст. 219 КПК.
+
+Встановлений прокурором строк досудового розслідування (10.03.2022)
+щодо трьох осіб, яким було повідомлено про підозру 10, 15 та 16.12.2021,
+продовжував діяти стосовно цих осіб у провадженнях, в які відповідні матеріали
+були виділені з провадження № 33. У самому провадженні № 33 діяв загальний
+строк, встановлений ч. 2 ст. 219 КПК, який у даному випадку складав 18 місяців
+від часу внесення 18.01.2021 відомостей до ЄРДР.
+
+В подальшому на провадження № 33 поширювалась дія ч. 8 ст. 615 КПК,
+яка набрала чинності 22.03.2022 і зазнала змін 01.05.2022. Це положення
+передбачало, що з часу введення воєнного стану в «фактових» провадженнях
+строк досудового розслідування не зараховується до загальних строків,
+передбачених ст. 219 цього Кодексу. Тобто це положення давало можливість
+
+проводити досудове розслідування без необхідності звертатися за продовженням
+його строку в порядку, передбаченому § 4 гл. 24 цього Кодексу.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 14.01.2025 у справі № 295/3702/23
+[(провадження № 51-2240км24) – https://reyestr.court.gov.ua/Review/124522531.](https://reyestr.court.gov.ua/Review/124522531)
+
+Слідчі (розшукові) дії
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1.1_segment.md № 592/7961/18 190 10 40 тарифи і такси на поштові відправлення у зв&#x27;язку з виконанням своїх трудових (службових) обов&#x27;язків на підставі трудового семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «тарифи і такси на поштові відправлення» (законодавство про забезпечення діяльності зв&#x27;язку / поштовий зв&#x27;язок / тарифи і такси на поштові відправлення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">02.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124522524" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 592/7961/18</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">190 10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про забезпечення діяльності зв&#x27;язку</span><span class="crumb-sep">›</span><span class="crumb">Поштовий зв&#x27;язок</span><span class="crumb-sep">›</span><span class="crumb-leaf">Тарифи і такси на поштові відправлення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>у зв&#x27;язку з виконанням своїх трудових (службових) обов&#x27;язків на підставі трудового</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Тарифи і такси на поштові відправлення» (Законодавство про забезпечення діяльності зв&#x27;язку / Поштовий зв&#x27;язок / Тарифи і такси на поштові відправлення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.1.1. Шкода, завдана внаслідок ДТП з вини водія, що керував автомобілем
+у зв&#x27;язку з виконанням своїх трудових (службових) обов&#x27;язків на підставі трудового
+договору з особою, яка володіє транспортним засобом, відшкодовується
+володільцем цього джерела підвищеної небезпеки, а не винним водієм
+
+Обставини справи: водій, керуючи службовим автомобілем і порушивши
+ПДР, завдав тяжких тілесних ушкоджень пішоходу, який перетинав проїжджу
+частину за межами пішохідного переходу.
+
+Позиції судів першої та апеляційної інстанцій: місцевий суд визнав
+винуватим і засудив водія за ч.2 ст. 286 КК. За цивільним позовом потерпілого
+зі страхової компанії та засудженого стягнуто відшкодування матеріальної
+і моральної шкоди, витрати на лікування та правову допомогу в розмірах,
+
+вказаних у вироку суду.
+
+Апеляційний суд оскарженою ухвалою, крім іншого, стягнув зі страхової
+компанії на користь потерпілого 99172,92 грн у відшкодування допомоги у зв’язку
+з тимчасовою та стійкою втратою працездатності, вартості реабілітації
+та страхової виплати за шкоду, заподіяну здоров’ю, а з ТОВ «ВЕНБЕСТ» –
+моральну шкоду в розмірі 100000 грн.
+
+У касаційній скарзі відповідач просить змінити оскаржене рішення,
+виключивши з нього рішення про стягнення з ТОВ «ВЕНБЕСТ» на користь
+потерпілого моральної шкоди в розмірі 100 000 грн.
+
+Позиція ККС: залишено без зміни ухвалу апеляційного суду.
+Обґрунтування позиції ККС: ККС встановив, що суд першої інстанції
+відмовив в задоволенні цивільного позову потерпілого до відповідача, оскільки
+під час судового розгляду не визнав, що під час ДТП засуджений виконував
+службові обов’язки. Апеляційний суд дійшов висновку, що матеріали справи
+містять достатньо доказів на підтвердження того, що засуджений на час події
+перебував у трудових відносинах з відповідачем. ККС не має підстав ставити
+під сумнів цей висновок суду апеляційної інстанції.
+
+Як зазначив ККС, особа, яка керує транспортним засобом у зв&#x27;язку
+з виконанням своїх трудових (службових) обов&#x27;язків на підставі трудового
+договору з особою, яка володіє транспортним засобом, не є суб’єктом, який несе
+відповідальність за шкоду, завдану джерелом підвищеної небезпеки. У цьому
+
+випадку таким суб’єктом є законний володілець джерела підвищеної небезпеки
+і шкода, завдана внаслідок ДТП з вини водія, що керував автомобілем,
+відшкодовується володільцем цього джерела підвищеної небезпеки, а не винним
+водієм.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 14.01.2025 у справі № 592/7961/18
+[(провадження № 51-2362км24) – https://reyestr.court.gov.ua/Review/124522524.](https://reyestr.court.gov.ua/Review/124522524)
+
+Докази і доказування
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02.1_segment.md не вказана 280 60 прокуратура  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «прокуратура» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">02.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Прокуратура» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">2.1. Цивільний відповідач (ст. 62 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1.1_segment.md не вказана 210110 70 пенсійне забезпечення потерпілих та учасників ліквідації наслідків аварії на чаес та інших ядерних аварій і випробувань рішення за результатами якого було скасовано, не можуть вважатися семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «пенсійне забезпечення потерпілих та учасників ліквідації наслідків аварії на чаес та інших ядерних аварій і випробувань» (законодавство про використання ядерної енергії та радіаційний захист. законодавство з питань ліквідації наслідків чорнобильської катастрофи та інших ядерних аварій і випробувань / законодавство з питань ліквідації наслідків чорнобильської катастрофи та інших ядерних аварій і випробувань / пенсійне забезпечення потерпілих та учасників ліквідації наслідків аварії на чаес та інших ядерних аварій і випробувань).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">03.1.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">210110 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про використання ядерної енергії та радіаційний захист. Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пенсійне забезпечення потерпілих та учасників ліквідації наслідків аварії на ЧАЕС та інших ядерних аварій і випробувань</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>рішення за результатами якого було скасовано, не можуть вважатися</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Пенсійне забезпечення потерпілих та учасників ліквідації наслідків аварії на ЧАЕС та інших ядерних аварій і випробувань» (Законодавство про використання ядерної енергії та радіаційний захист. Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань / Законодавство з питань ліквідації наслідків Чорнобильської катастрофи та інших ядерних аварій і випробувань / Пенсійне забезпечення потерпілих та учасників ліквідації наслідків аварії на ЧАЕС та інших ядерних аварій і випробувань).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.1.1. Показання потерпілих, надані ними під час минулого судового розгляду,
+рішення за результатами якого було скасовано, не можуть вважатися
+недопустимими доказами лише на тій підставі, що неможливо було забезпечити
+явку таких осіб під час нового судового розгляду
+
+Обставини справи: потерпілі давали показання під час судового розгляду,
+за наслідками якого було ухвалено вирок від 21.05.2021. Після скасування цього
+вироку судом апеляційної інстанції під час нового розгляду справи в місцевому
+суді забезпечити явку потерпілих для їхнього безпосереднього допиту не вдалося.
+Потерпіла на неодноразові виклики місцевого суду в судові засідання не
+з’являлася, у ході встановлення її місцезнаходження органами поліції, остання
+повідомила, що фізично не може приїхати до суду через свій похилий вік (80 років)
+та проблеми із пересуванням. Водночас потерпілий також не з’являвся у судові
+засідання, під час встановлення місцезнаходження останнього органами поліції,
+було з’ясовано, що він у 2021 році виїхав до місця своєї реєстрації
+у с. Приморський Посад Мелітопольського району Запорізької області, яке на час
+нового розгляду справи вважалося тимчасово окупованою територією України,
+та будь-який зв’язок із ним відсутній.
+
+Суд першої інстанції задовольнив клопотання прокурора та вважав
+за можливе дослідити показання потерпілих, надані ними під час минулого
+судового розгляду, шляхом відтворення звукозапису та/або відеозапису судових
+засідань від 26.02. та 19.03.2021. Сторона захисту вказане клопотання підтримала
+та не заперечувала проти його задоволення. Місцевим судом також було
+задоволено клопотання сторони захисту про дослідження технічного запису
+судового засідання від 29.04.2021, у якому були зафіксовані відповіді потерпілого
+на запитання головуючого судді.
+
+Таким чином судом були досліджені технічні записи допиту потерпілих
+в судових засіданнях 26.02., 19.03. та 29.04.2021, на яких, зокрема, зафіксовані
+запитання та відповіді потерпілих, що давало місцевому суду можливість не лише
+сприймати зміст їхніх показань, але й  спостерігати манеру їхньої поведінки
+під час допиту і робити висновки для оцінки їхньої достовірності.
+
+Позиції судів першої та апеляційної інстанцій: 12.05.2021 місцевий суд
+визнав винуватим і засудив обвинуваченого за ч. 2 ст. 125, ч. 2 ст. 186, ч. 2 ст. 190
+КК.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03.1_segment.md не вказана 280 60 прокуратура  мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">03.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">3.1. Показання (ст. 95 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1.1_segment.md № 591/4693/15 60 40 10 60 будинки-інтернати для престарілих та інвалідів їх у скарзі, то можна припустити, що він не заперечує, щоб ці засоби комунікації семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «будинки-інтернати для престарілих та інвалідів» (законодавство з питань соціального забезпечення та соціального страхування / соціальна захищеність населення / соціальна захищеність інвалідів, ветеранів війни, учасників воєнних конфліктів, ветеранів праці. жертви нацистських переслідувань / будинки-інтернати для престарілих та інвалідів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">04.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124718067" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 591/4693/15</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 40 10 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Соціальна захищеність населення</span><span class="crumb-sep">›</span><span class="crumb">Соціальна захищеність інвалідів, ветеранів війни, учасників воєнних конфліктів, ветеранів праці. Жертви нацистських переслідувань</span><span class="crumb-sep">›</span><span class="crumb-leaf">Будинки-інтернати для престарілих та інвалідів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>їх у скарзі, то можна припустити, що він не заперечує, щоб ці засоби комунікації</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Будинки-інтернати для престарілих та інвалідів» (Законодавство з питань соціального забезпечення та соціального страхування / Соціальна захищеність населення / Соціальна захищеність інвалідів, ветеранів війни, учасників воєнних конфліктів, ветеранів праці. Жертви нацистських переслідувань / Будинки-інтернати для престарілих та інвалідів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">4.1.1. Якщо учасник справи надав суду телефон та електронну адресу, зазначивши
+їх у скарзі, то можна припустити, що він не заперечує, щоб ці засоби комунікації
+використовувалися судом. Це покладає на особу обов&#x27;язок отримувати
+повідомлення і відповідати на них. Суд, який комунікує з учасником справи
+за допомогою вказаних ним засобів зв’язку, діє правомірно й  добросовісно
+
+Позиції судів першої та апеляційної інстанцій: місцевий суд, з яким
+погодився суд апеляційної інстанції, кримінальне провадження
+за обвинуваченням особи у вчиненні кримінального правопорушення,
+передбаченого ст. 128 КК, закрив відповідно до п. 7 ч. 1 ст. 284 КПК у зв’язку
+з відмовою потерпілої від обвинувачення. Свою позицію суд мотивував тим,
+що потерпіла в судові засідання не з’являлася і таке за приписами ч. 6 ст. 340
+КПК прирівнюється до її відмови від обвинувачення.
+
+У касаційній скарзі скаржниця стверджує, що виклик у судове засідання
+за допомогою SMS-повідомлень за відсутності на це її письмової згоди
+суперечить приписам КПК.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС констатував, що за змістом ч. 1 ст. 135,
+ч. 1 ст. 136 КПК особа викликається до суду шляхом вручення повістки про виклик,
+надіслання її поштою, електронною поштою чи  факсимільним зв&#x27;язком,
+здійснення виклику по телефону або телеграмою. Належним підтвердженням
+отримання особою повістки про виклик або ознайомлення з її змістом іншим
+шляхом є розпис особи про отримання повістки, в тому числі на поштовому
+повідомленні, відеозапис вручення особі повістки, будь-які інші дані, які
+підтверджують факт вручення особі повістки про виклик або ознайомлення з її
+змістом.
+
+Якщо учасник справи надав суду телефон та електронну адресу,
+зазначивши їх у скарзі, то можна припустити, що він не заперечує, щоб ці засоби
+комунікації використовувалися судом. Це, у свою чергу, покладає на особу
+обов&#x27;язок отримувати повідомлення і відповідати на них. Отже, суд, який
+
+комунікує з учасником справи за допомогою вказаних ним засобів зв’язку, діє
+правомірно й  добросовісно.
+
+З матеріалів провадження вбачається, що в позовній заяві потерпілої про
+стягнення з обвинуваченого завданої шкоди, наданій суду представником
+потерпілої, а також у письмових клопотаннях до суду зазначено як засіб зв’язку
+її номер телефону; остання неодноразово отримувала повідомлення про виклик
+до суду телефоном і жодних зауважень щодо цього не висловлювала. Надалі саме
+на цей номер телефону надсилали SMS-повідомлення, які було доставлено
+потерпілій (відповідні довідки є у матеріалах провадження). У той же час
+упродовж розгляду справи в місцевому суді потерпіла користувалася послугами
+адвоката, якого також викликали до суду. Отже, за окреслених обставин немає
+підстав уважати, що потерпіла не була обізнана про час і дату судових засідань.
+
+Наведене свідчить про те, що потерпіла свідомо не скористалася своїм
+правом підтримувати обвинувачення, фактично відмовилася від його реалізації, не
+цікавилася процесом розгляду справи судом, не вживала будь-яких заходів щодо
+активної участі в судових засіданнях і це також вплинуло на тривалість
+провадження за подіями 2007 року.
+
+Постанова колегії суддів Другої судової палати ККС ВС від 23.01.2025 у справі № 591/4693/15
+[(провадження № 51-3209км24) – https://reyestr.court.gov.ua/Review/124718067.](https://reyestr.court.gov.ua/Review/124718067)
+
+III. ДОСУДОВЕ РОЗСЛІДУВАННЯ
+
+Загальні положення досудового розслідування
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04.1_segment.md не вказана 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">04.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">4.1. Порядок здійснення виклику в кримінальному провадженні (ст. 135 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.1.1_segment.md не вказана 60 20110 20 підвищення пенсій деяким категоріям громадян щодо частини кримінальних правопорушень не впливає на обчислення семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «підвищення пенсій деяким категоріям громадян» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / обчислення пенсій. розмір і перерахування пенсій. надбавки. виплата пенсій. відрахування / підвищення пенсій деяким категоріям громадян).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">05.1.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20110 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Обчислення пенсій. Розмір і перерахування пенсій. Надбавки. Виплата пенсій. Відрахування</span><span class="crumb-sep">›</span><span class="crumb-leaf">Підвищення пенсій деяким категоріям громадян</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>щодо частини кримінальних правопорушень не впливає на обчислення</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Підвищення пенсій деяким категоріям громадян» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Обчислення пенсій. Розмір і перерахування пенсій. Надбавки. Виплата пенсій. Відрахування / Підвищення пенсій деяким категоріям громадян).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">5.1.1. Виділення з кримінального провадження в окреме провадження матеріалів
+щодо частини кримінальних правопорушень не впливає на обчислення
+процесуального строку досудового розслідування за фактом вчинення того
+кримінального правопорушення, у якому повідомлення про підозру не
+здійснювалося
+
+Обставини справи: 18.01.2021 до ЄРДР за № 62021000000000033 (далі –
+№ 33) та № 62021000000000034 (далі – № 34) внесено відомості про вчинення
+кримінальних правопорушень, передбачених ч. 1 ст. 366 та ч. 3 ст. 191 КК, які
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05.1_segment.md не вказана 150140 10 якість, асортимент. гарантійні строки  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «якість, асортимент. гарантійні строки» (загальні засади правового регулювання економічного розвитку / продукція / якість, асортимент. гарантійні строки).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">05.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Продукція</span><span class="crumb-sep">›</span><span class="crumb-leaf">Якість, асортимент. Гарантійні строки</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Якість, асортимент. Гарантійні строки» (Загальні засади правового регулювання економічного розвитку / Продукція / Якість, асортимент. Гарантійні строки).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">5.1. Строки досудового розслідування (ст. 219 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06.1.1_segment.md № 357/12623/21 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) дії, а не забезпечити його обов’язкову участь, за винятком слідчих дій, під час яких семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">06.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124754858" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 357/12623/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>дії, а не забезпечити його обов’язкову участь, за винятком слідчих дій, під час яких</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">6.1.1. Слідчий чи  прокурор зобов’язані допустити захисника до проведення слідчої
+дії, а не забезпечити його обов’язкову участь, за винятком слідчих дій, під час яких
+можуть бути обмежені або порушені права та законні інтереси особи
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+визнали винуватим і засудили обвинуваченого за п. 7 ч. 2 ст. 115 КК.
+
+У касаційній скарзі засуджений зазначає, що вилучення особистих речей
+(визнаних надалі речовими доказами) під час затримання, огляд місця події
+та обшук у квартирі за місцем його проживання було здійснено за відсутності
+
+адвоката.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС вказав, що системний аналіз ч. 1 ст. 223, ч.
+1 ст. 234 ч. 1 ст. 236, ч. 3 ст. 237 КПК свідчить про те, що питання щодо присутності
+підозрюваного та його захисника під час проведення слідчих дій, за винятком
+слідчих дій, під час яких можуть бути обмежені або порушені права та законні
+інтереси особи, належать до компетенції органу досудового розслідування
+і вирішення цих питань є правом такого органу, а не обов’язком.
+
+Як убачається з вироку, огляд місця події та обшук здійснювалися
+за відсутністю засудженого та його захисника. При цьому за їх результатами було
+складено відповідні протоколи, які були визнані судом першої інстанції
+допустимими та покладені в основу обвинувального вироку.
+
+Разом з тим, засуджений не наводить будь-яких доводів, які б свідчили про
+те, що під час вказаних слідчих дій могли бути обмежені або порушені його права
+і законні інтереси, а також не вказує даних про те, що захисник, з огляду на те,
+що слідчий чи  прокурор зобов’язані саме допустити захисника до проведення
+слідчої дії, а не забезпечити його обов’язкову участь, був позбавлений можливості
+бути присутнім у ході слідчих дій.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.01.2025 у справі № 357/12623/21
+[(провадження № 51-2720км23) – https://reyestr.court.gov.ua/Review/124754858.](https://reyestr.court.gov.ua/Review/124754858)
+
+Негласні слідчі (розшукові) дії
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06.1_segment.md не вказана 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">06.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">6.1. Вимоги до проведення слідчих (розшукових) дій (ст. 223 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.1.1_segment.md № 233/4222/17 70 30 права та обов&#x27;язки осіб, що перебувають у спорідненості обов’язковість проведення фоноскопічного дослідження семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «права та обов&#x27;язки осіб, що перебувають у спорідненості» (законодавство про шлюб і сім&#x27;ю / права та обов&#x27;язки осіб, що перебувають у спорідненості).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">07.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124718048" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 233/4222/17</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb-leaf">Права та обов&#x27;язки осіб, що перебувають у спорідненості</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>обов’язковість проведення фоноскопічного дослідження</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Права та обов&#x27;язки осіб, що перебувають у спорідненості» (Законодавство про шлюб і сім&#x27;ю / Права та обов&#x27;язки осіб, що перебувають у спорідненості).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">7.1.1. Використання у кримінальному провадженні результатів НСРД не зумовлює
+обов’язковість проведення фоноскопічного дослідження
+
+Позиції судів першої та апеляційної інстанцій: місцевим судом визнано
+винуватим і засуджено обвинуваченого за ч. 1 ст. 368 КК. Апеляційний суд цей
+вирок змінив, звільнив обвинуваченого від призначеного покарання за ч. 1 ст. 368
+КК на підставі п. 3 ч. 1 ст. 49 КК, ч. 5 ст. 74 КК (в редакції від 05 січня 2017 року)
+у зв’язку із закінченням строків давності.
+
+У касаційній скарзі засуджений зазначає, що належність засудженому
+та заявниці голосів на записах НСРД не підтверджено експертним шляхом.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС вказав, що у своїх показаннях,
+відображених в оскаржуваному вироку, засуджений не заперечує фактів
+спілкування з заявницею, у тому числі безпосередньо у день події.
+
+У матеріалах кримінального провадження наявний висновок експерта,
+згідно з яким на аудіо- та відеозаписах диску ознак монтажу та перезапису не
+виявлено, запис відеозображення та звуку проводився одночасно.
+
+Проведення фоноскопічного дослідження не є обов’язковим у всіх без
+виключення провадженнях, у яких використовуються НСРД. Якщо сторона
+обвинувачення не вбачала доцільності для проведення такої експертизи
+і вважала, що зібраних доказів у цьому провадженні достатньо, то сторона
+захисту не була позбавлена можливості самостійно ініціювати проведення
+відповідної експертизи з метою підтвердження своєї позиції.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 21.01.2025 у справі № 233/4222/17
+[(провадження № 51-3216км24) – https://reyestr.court.gov.ua/Review/124718048.](https://reyestr.court.gov.ua/Review/124718048)
+
+Повідомлення про підозру
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07.1_segment.md не вказана 100171 20 10 радіомовлення. телебачення  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «радіомовлення. телебачення» (законодавство з питань освіти, науки, культури / засоби масової інформації / аудіовізуальні засоби / радіомовлення. телебачення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">17</span>
+            <span class="file-badge">07.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">100171 20 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань освіти, науки, культури</span><span class="crumb-sep">›</span><span class="crumb">Засоби масової інформації</span><span class="crumb-sep">›</span><span class="crumb">Аудіовізуальні засоби</span><span class="crumb-sep">›</span><span class="crumb-leaf">Радіомовлення. Телебачення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Радіомовлення. Телебачення» (Законодавство з питань освіти, науки, культури / Засоби масової інформації / Аудіовізуальні засоби / Радіомовлення. Телебачення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">7.1. Аудіо-, відеоконтроль особи (ст. 260 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="08.02.2022_segment.md не вказана 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) повідомлення їм про підозру до 10.03.2022; а 22 та 23.02.2022 матеріали щодо цих семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">18</span>
+            <span class="file-badge">08.02.2022_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>повідомлення їм про підозру до 10.03.2022; а 22 та 23.02.2022 матеріали щодо цих</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">08.02.2022 прокурор продовжив строк досудового розслідування з часу
+повідомлення їм про підозру до 10.03.2022; а 22 та 23.02.2022 матеріали щодо цих
+осіб виділені в окремі провадження.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="08.1.1_segment.md № 357/12623/21 60 20120 40 розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата під час досудового розслідування. повідомлення про підозру, у випадку семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / розмір і перерахування пенсій. обчислення пенсій. надбавки. виплата).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">19</span>
+            <span class="file-badge">08.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124754858" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 357/12623/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>під час досудового розслідування. Повідомлення про підозру, у випадку</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Розмір і перерахування пенсій. Обчислення пенсій. Надбавки. Виплата).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">8.1.1. КПК не заборонено зміну правової кваліфікації кримінально караних дій особи
+під час досудового розслідування. Повідомлення про підозру, у випадку
+виникнення підстав, може бути змінене слідчим чи  прокурором шляхом ухвалення
+відповідної постанови. КПК не передбачено, що внесення змін у ЄРДР і зміна
+правової кваліфікації злочину мають здійснюватися виключно за погодженням
+саме керівника прокуратури та на підставі відповідної ухвали слідчого судді.
+
+Кримінальний процесуальний закон не містить вимог щодо обов’язкового
+затвердження обвинувального акта саме керівником відділу прокуратури
+
+Обставини справи: засуджений до касаційної скарги долучив копію витягу
+з ЄРДР, відповідно до якого внесено відомості про вчинення злочину,
+передбаченого ч. 2 ст. 121 КК. Правова кваліфікація злочину за ч. 2 ст. 121 КК
+і вказана в постанові про визначення групи прокурорів у кримінальному
+провадженні від 09.07.2021, яку прокурор долучив до обвинувального акта. Тобто
+після повідомлення про вчинення кримінального правопорушення та початку
+досудового розслідування слідчими органами було визначено попередню
+кваліфікацію злочину за ч. 2 ст. 121 КК.
+
+Як видно з матеріалів досудового розслідування, у межах цього
+кримінального провадження (тобто після вчинення дій, передбачених ч. 1 ст. 214
+КПК) слідчий виніс постанову від 09.07.2021 про перекваліфікацію складу злочину.
+При цьому згідно з вироком в матеріалах кримінального провадження наявний
+витяг з ЄРДР від 18.08.2021 року з правовою кваліфікацією дій за п. 7 ч. 2 ст. 115
+КК.
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+визнали винуватим і засудили обвинуваченого за п. 7 ч. 2 ст. 115 КК.
+
+У касаційній скарзі засуджений зазначає, що унесення змін у ЄРДР,
+зокрема зміна правової кваліфікації його дій з ч. 2 ст. 121 на п. 7 ч. 2 ст. 115 КК,
+здійснювалося слідчим без обов’язкової на це ухвали слідчого судді. А також
+обвинувальний акт з уже зміненою правовою кваліфікацією дій засудженого не
+погоджений керівником відділу прокуратури і не завірений мокрою гербовою
+
+печаткою.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС вказав, що системний аналіз положень
+кримінального процесуального закону свідчить про те, що КПК не містить
+імперативних норм, які б забороняли зміну правової кваліфікації кримінально
+караних дій особи під час досудового розслідування. Це також узгоджується
+з положеннями гл. 22 КПК, зі змісту якої вбачається, що повідомлення про
+підозру (у якому, з-поміж іншого, має бути указана правова кваліфікація
+кримінального правопорушення, у вчиненні якого підозрюється особа,
+із зазначенням статті (частини статті) закону України про кримінальну
+відповідальність), у випадку виникнення підстав, може бути змінене слідчим
+чи  прокурором (статті 277–279 КПК). Разом з тим зміна правової кваліфікації
+кримінального правопорушення, з огляду на положення ч. 3 ст. 110 КПК, має
+здійснюватися шляхом винесення відповідної постанови. При цьому КПК не
+передбачено, що внесення змін у ЄРДР і зміна правової кваліфікації злочину
+мають здійснюватися виключно за погодженням саме керівника прокуратури
+та на підставі відповідної ухвали слідчого судді.
+
+Крім того, постанова про визначення групи прокурорів у кримінальному
+провадженні за ознаками злочину, передбаченого саме ч. 2 ст. 121 КК, не
+позбавляє орган досудового розслідування права змінити правову кваліфікацію
+кримінального правопорушення на цій стадії кримінального провадження.
+
+Відповідно до положень, передбачених статтями 36, 37, 40 КПК,
+затвердження обвинувального акта здійснюється прокурором, який входить
+до складу групи прокурорів. При цьому процесуальним законом не передбачено
+вимоги щодо обов’язкового затвердження обвинувального акта керівником
+відділу прокуратури.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.01.2025 у справі № 357/12623/21
+[(провадження № 51-2720км23) – https://reyestr.court.gov.ua/Review/124754858.](https://reyestr.court.gov.ua/Review/124754858)
+
+IV. СУДОВЕ ПРОВАДЖЕННЯ У ПЕРШІЙ ІНСТАНЦІЇ
+
+Судовий розгляд
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="08.1_segment.md не вказана 50 20 50 переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (трудове законодавство / трудовий договір. контракт / переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">20</span>
+            <span class="file-badge">08.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 20 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудовий договір. Контракт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (Трудове законодавство / Трудовий договір. Контракт / Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">8.1. Зміна повідомлення про підозру (ст. 279 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.08.2021_segment.md не вказана 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) розгляд кримінального провадження у суді першої інстанції. семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">21</span>
+            <span class="file-badge">09.08.2021_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>розгляд кримінального провадження у суді першої інстанції.</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">09.08.2021 апеляційний суд скасував цей вирок та призначив новий
+розгляд кримінального провадження у суді першої інстанції.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.1.1_segment.md № 357/12623/21 150 60 10 облік і звітність суддя уповноважений одноособово вирішувати питання доцільності продовження семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «облік і звітність» (загальні засади правового регулювання економічного розвитку / загальні питання обліку і статистики. перепис населення / облік і звітність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">22</span>
+            <span class="file-badge">09.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124754858" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 357/12623/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">150 60 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Загальні засади правового регулювання економічного розвитку</span><span class="crumb-sep">›</span><span class="crumb">Загальні питання обліку і статистики. Перепис населення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Облік і звітність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>суддя уповноважений одноособово вирішувати питання доцільності продовження</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Облік і звітність» (Загальні засади правового регулювання економічного розвитку / Загальні питання обліку і статистики. Перепис населення / Облік і звітність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.1.1. Під час розгляду кримінального провадження судом присяжних головуючий
+суддя уповноважений одноособово вирішувати питання доцільності продовження
+обвинуваченому запобіжного заходу у вигляді тримання під вартою
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+визнали винуватим і засудили обвинуваченого за п. 7 ч. 2 ст. 115 КК. Судовий
+розгляд кримінального провадження стосовно засудженого здійснювався
+в порядку, передбаченому § 2 гл. 30 КПК, а саме судом присяжних.
+
+У касаційній скарзі засуджений зазначає, що головуюча суддя, порушуючи
+вимоги ч. 3 ст. 331 КПК, самостійно продовжила йому запобіжний захід.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС вказав, що відповідно до ч. 3 ст. 383 КПК
+усі питання, пов’язані із судовим розглядом, крім питання, передбаченого ч. 3
+ст. 331 цього Кодексу, судді і присяжні вирішують спільно.
+
+Згідно з ч. 3 ст. 331 КПК за наявності клопотань суд під час судового
+розгляду зобов’язаний розглянути питання доцільності продовження запобіжного
+заходу до закінчення двомісячного строку з дня його застосування. За
+
+результатами розгляду питання суд своєю вмотивованою ухвалою скасовує,
+змінює запобіжний захід або продовжує його дію на строк, що не може
+перевищувати 2 місяців. Копія ухвали вручається обвинуваченому, прокурору
+та надсилається уповноваженій службовій особі до місця ув’язнення. Під час
+здійснення судового провадження судом присяжних питання, передбачене цією
+частиною, вирішує головуючий.
+
+Таким чином, з огляду на вказані положення процесуального закону,
+головуюча суддя в цьому випадку була уповноважена одноособово вирішувати
+питання доцільності продовження обвинуваченому запобіжного заходу у вигляді
+тримання під вартою, а тому касаційна скарга в цій частині задоволенню не
+підлягає.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.01.2025 у справі № 357/12623/21
+[(провадження № 51-2720км23) – https://reyestr.court.gov.ua/Review/124754858.](https://reyestr.court.gov.ua/Review/124754858)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.1_segment.md не вказана 50 20 50 переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці (ст. 331 кпк) семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (трудове законодавство / трудовий договір. контракт / переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">23</span>
+            <span class="file-badge">09.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 20 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудовий договір. Контракт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>(ст. 331 КПК)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (Трудове законодавство / Трудовий договір. Контракт / Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.1. Обрання, скасування, зміна або продовження запобіжного заходу в суді
+(ст. 331 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.2.1_segment.md № 357/12623/21 50130 40 порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших) а кримінальне провадження здійснюється на основі змагальності, що передбачає семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (трудове законодавство / трудові спори (конфлікти) / порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">24</span>
+            <span class="file-badge">09.2.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124754858" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 357/12623/21</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50130 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудові спори (конфлікти)</span><span class="crumb-sep">›</span><span class="crumb-leaf">Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>а кримінальне провадження здійснюється на основі змагальності, що передбачає</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)» (Трудове законодавство / Трудові спори (конфлікти) / Порядок розгляду трудових спорів деяких категорій працівників (суддів, прокурорсько-слідчих працівників та інших)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.2.1. Під час судового розгляду суд не проводить слідчих (розшукових) дій,
+а кримінальне провадження здійснюється на основі змагальності, що передбачає
+самостійне обстоювання сторонами обвинувачення і захисту їхніх правових
+позицій, прав, свобод і законних інтересів засобами, передбаченими КПК
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+визнали винуватим і засудили обвинуваченого за п. 7 ч. 2 ст. 115 КК.
+
+У касаційній скарзі засуджений зазначає, що місцевим судом безпідставно
+було відхилено його клопотання, подане в порядку ст. 333 КПК, про проведення
+слідчих (розшукових) дій під час судового провадження.
+
+Позиція ККС: залишено без зміни рішення судів попередніх інстанцій.
+Обґрунтування позиції ККС: ККС вказав, що у клопотанні засуджений
+фактично посилався на неповноту слідства, допущену, на його думку, в ході
+досудового розслідування, а також на провокаційні дії його колишньої дружини
+
+та адвоката.
+
+Місцевий суд залишив це клопотання без розгляду, пославшись на те,
+що відповідно до вимог КПК під час судового розгляду суд не проводить слідчих
+(розшукових) дій, а кримінальне провадження здійснюється на основі
+змагальності, що передбачає самостійне обстоювання сторонами обвинувачення
+і захисту їхніх правових позицій, прав, свобод і законних інтересів засобами,
+передбаченими цим Кодексом.
+
+За таких обставин, а також ураховуючи те, що будь-яких доводів про
+тимчасовий доступ до речей і документів чи  посилань на необхідність
+витребування з експертної установи висновку судово-психіатричної експертизи,
+як про це вказує засуджений, зазначене клопотання не містило, ККС вважає
+доводи засудженого про безпідставне відхилення такого клопотання такими,
+що не спростовують законність і обґрунтованість судового рішення в цій частині.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 20.01.2025 у справі № 357/12623/21
+[(провадження № 51-2720км23) – https://reyestr.court.gov.ua/Review/124754858.](https://reyestr.court.gov.ua/Review/124754858)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.2_segment.md не вказана 280 60 20 30 матеріальне і соціальне забезпечення та проведення слідчих (розшукових) дій під час судового провадження семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «матеріальне і соціальне забезпечення» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура / кадри органів прокуратури / матеріальне і соціальне забезпечення).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">25</span>
+            <span class="file-badge">09.2_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60 20 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb">Прокуратура</span><span class="crumb-sep">›</span><span class="crumb">Кадри органів прокуратури</span><span class="crumb-sep">›</span><span class="crumb-leaf">Матеріальне і соціальне забезпечення</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>та проведення слідчих (розшукових) дій під час судового провадження</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Матеріальне і соціальне забезпечення» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура / Кадри органів прокуратури / Матеріальне і соціальне забезпечення).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.2. Застосування заходів забезпечення кримінального провадження
+та проведення слідчих (розшукових) дій під час судового провадження
+(ст. 333 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.3.1_segment.md № 308/12144/15 140 70 10 консульський статут в раніше пред’явленому обсязі після його зміни прокурором кпк покладає на суд, семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «консульський статут» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / дипломатичні і консульські представництва україни за кордоном / консульський статут).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">26</span>
+            <span class="file-badge">09.3.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124560951" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 308/12144/15</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 70 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb">Дипломатичні і консульські представництва України за кордоном</span><span class="crumb-sep">›</span><span class="crumb-leaf">Консульський Статут</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>в раніше пред’явленому обсязі після його зміни прокурором КПК покладає на суд,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Консульський Статут» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Дипломатичні і консульські представництва України за кордоном / Консульський Статут).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.3.1. Обов’язок роз’яснити потерпілому право підтримувати обвинувачення
+в раніше пред’явленому обсязі після його зміни прокурором КПК покладає на суд,
+а не на прокурора чи  іншу особу
+
+Обставини справи: дії обвинуваченого первинно були кваліфіковані як
+умисне вбивство за ч. 1 ст. 115 КК. Далі прокурором було змінено обвинувачення
+із наданням кримінально-правової оцінки діям обвинуваченого за ст. 116 КК
+(умисне вбивство, вчинене в стані сильного душевного хвилювання).
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+визнали невинуватим обвинуваченого та виправдали за ст. 116 КК.
+
+У касаційній скарзі сторона обвинувачення та матір потерпілої зазначають,
+що в матеріалах провадження відсутні відомості щодо виконання головуючим
+вимог ч. 3 ст. 338 КПК, що є істотним порушенням вимог КПК.
+
+Позиція ККС: скасовано рішення судів попередніх інстанцій та призначено
+новий розгляд у суді першої інстанції.
+
+Обґрунтування позиції ККС: ККС вказав, що відповідно до ч. 3 ст. 338 КПК
+саме на суд покладено функцію роз’яснення потерпілому права на підтримання
+
+обвинувачення у первинному обсязі. Таке роз’яснення є гарантією забезпечення
+прав потерпілого у кримінальному провадженні і забезпечення того, щоб останній
+був почутий судом.
+
+У матеріалах цього провадження міститься заява, в якій вказано,
+що потерпілий підтримує позицію прокурора, та міститься підпис потерпілого.
+Водночас після зміни обвинувачення прокурором жодне судове засідання
+з участю потерпілого не відбулося. Також у справі є заява з проханням від
+потерпілого здійснювати судові розгляди без його участі. Відібрання стороною
+обвинувачення заяви від потерпілого поза судовим розглядом, перед судовим
+розглядом чи  у іншому позасудовому порядку не є належним виконанням вимог
+ч. 3 ст. 338 КПК і не може замінювати необхідність роз’яснення судом права
+потерпілого підтримувати обвинувачення у раніше пред’явленому обсязі. Так само
+не є належним виконанням вимог цієї статті роз’яснення будь-ким іншим, окрім
+суду, прав потерпілого на підтримання обвинувачення у первісному обсязі після
+його зміни прокурором.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 14.01.2025 у справі № 308/12144/15
+[(провадження № 51-2957км24) – https://reyestr.court.gov.ua/Review/124560951.](https://reyestr.court.gov.ua/Review/124560951)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.3_segment.md не вказана 50 20 50 переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (трудове законодавство / трудовий договір. контракт / переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">27</span>
+            <span class="file-badge">09.3_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 20 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудовий договір. Контракт</span><span class="crumb-sep">›</span><span class="crumb-leaf">Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці» (Трудове законодавство / Трудовий договір. Контракт / Переважне право на залишення на роботі при вивільненні працівника у зв&#x27;язку із змінами в організації виробництва і праці).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.3. Зміна обвинувачення в суді (ст. 338 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.4.1_segment.md № 587/2699/15 60 20120 30 пенсії в разі втрати годувальника повідомить про нові обставини, які мають істотне значення для кримінального семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «пенсії в разі втрати годувальника» (законодавство з питань соціального забезпечення та соціального страхування / законодавство про пенсійне забезпечення / пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / пенсії в разі втрати годувальника).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">28</span>
+            <span class="file-badge">09.4.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124718049" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 587/2699/15</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">60 20120 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство з питань соціального забезпечення та соціального страхування</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про пенсійне забезпечення</span><span class="crumb-sep">›</span><span class="crumb">Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Пенсії в разі втрати годувальника</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>повідомить про нові обставини, які мають істотне значення для кримінального</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Пенсії в разі втрати годувальника» (Законодавство з питань соціального забезпечення та соціального страхування / Законодавство про пенсійне забезпечення / Пенсійне забезпечення військовослужбовців та осіб начальницького і рядового складу органів внутрішніх справ, кримінально-виконавчої системи / Пенсії в разі втрати годувальника).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.4.1. КПК передбачає, що в разі якщо обвинувачений навіть в останньому слові
+повідомить про нові обставини, які мають істотне значення для кримінального
+провадження, суд за своєю ініціативою або за клопотанням учасників судового
+провадження відновлює з’ясування обставин, установлених під час кримінального
+провадження, та перевірку їх доказами, після завершення яких відкриває судові
+дебати щодо додатково досліджених обставин і надає останнє слово
+обвинуваченому. Подібне положення передбачене в КПК й  у випадку
+повідомлення такої інформації під час судових дебатів
+
+Обставини справи: потерпілими до засудженого було заявлено цивільні
+позови про відшкодування на їхню користь майнової шкоди, а потерпілою – про
+відшкодування майнової та моральної шкоди.
+
+Вироком місцевого суду вказані цивільні позови потерпілих були
+задоволені повністю та стягнено із засудженого на їхню користь 180 000 грн
+та 286 950 грн у рахунок відшкодування майнової шкоди відповідно, а цивільний
+позов потерпілої було задоволено частково та стягнено з засудженого на її
+користь 360 780 грн та 100 000 грн у рахунок відшкодування майнової
+та моральної шкоди відповідно.
+
+Позиції судів першої та апеляційної інстанцій: місцевий суд визнав
+винуватим і засудив обвинуваченого за ч. 1 ст. 190, ч. 5 ст. 191 КК, а також визнав
+невинуватим та виправдав за ч. 2 ст. 366 КК, на підставі п. 3 ч. 1 ст. 373 КПК
+у зв’язку із недоведеністю, що в діянні обвинуваченого є склад кримінального
+правопорушення. Апеляційний суд скасував цей вирок в частині визнання
+обвинуваченого винуватим у вчиненні кримінального правопорушення,
+
+передбаченого ч. 1 ст. 190 КК, звільнив його від кримінальної відповідальності
+на підставі п. 2 ч. 1 ст. 49 КК у зв’язку із закінченням строку давності,
+а кримінальне провадження в цій частині закрив на підставі п. 1 ч. 2 ст. 284, ст.
+417 КПК. В решті вирок місцевого суду залишено без зміни.
+
+Стороною захисту в суді першої інстанції було долучено копії квитанцій про
+часткове відшкодування засудженим матеріальної шкоди потерпілим, а також
+наголошувалося на тому, що ще в 2018 році потерпілі набули право власності
+на придбані ними на підставі попередніх договорів купівлі-продажу квартири.
+
+Сторона захисту в суді апеляційної інстанції наголошувала про
+неврахування факту фактичного отримання житла двома потерпілими, часткове
+відшкодування завданої потерпілим шкоди. З цим захист пов’язував
+безпідставність стягнення майнової шкоди у тих розмірах, які визначив суд.
+
+Позиція ККС: скасовано ухвалу апеляційного суду та призначено новий
+розгляд у суді апеляційної інстанції.
+
+Обґрунтування позиції ККС: ККС вказав, що захист дійсно повідомив
+важливу інформацію про отримання квартир деким із потерпілих під час судових
+дебатів. Вочевидь ККС не може схвалювати таку поведінку сторони захисту, який,
+маючи у своєму розпорядженні відповідну інформацію, не повідомляє її одразу
+після отримання, а озвучує аж під час судових дебатів. У суді касаційної інстанції
+засуджений підтвердив той факт, що знав раніше важливу інформацію, яка могла
+вплинути на вирішення справи в частині цивільних позовів, однак повідомив суд
+про неї не одразу.
+
+Разом з тим ККС вважає, що не залежно від того, що сторона захисту
+досить пізно повідомила суду важливу інформацію, вона все ж повинна була бути
+оцінена судами.
+
+Суд апеляційної інстанції правильно вказав, що документи, які
+підтверджують часткове відшкодування обвинуваченим завданої шкоди, були
+надані стороною захисту тільки після закінчення з’ясування обставин,
+встановлених під час кримінального провадження, та перевірки їх доказами. Далі
+суд зазначив, що «надання доказів на вказаній стадії судового провадження
+унеможливлювало їх дослідження в аспекті визначення розміру сум, які підлягали
+стягненню з обвинуваченого, із одночасним заслуховуванням пояснення
+потерпілих (цивільних позивачів) та їх представників, оскільки протилежне
+ймовірно призвело б до порушення принцип змагальності сторін та свободи
+в поданні ними суду своїх доказів і у доведеності перед судом їх переконливості».
+
+Проте кримінальний процесуальний закон передбачає, що у випадку якщо
+обвинувачений навіть в останньому слові повідомить про нові обставини, які
+мають істотне значення для кримінального провадження, суд за своєю
+ініціативою або за клопотанням учасників судового провадження відновлює
+з’ясування обставин, встановлених під час кримінального провадження,
+та перевірку їх доказами, після завершення яких відкриває судові дебати
+з приводу додатково досліджених обставин і надає останнє слово
+
+обвинуваченому. Подібне положення передбачене у КПК й  у випадку
+повідомлення такої інформації під час судових дебатів.
+
+Тобто аргументи апеляційного суду про те, що у разі повідомлення
+стороною захисту важливої для справи інформації на більш пізньому етапі (під
+час судових дебатів, під час останнього слова) унеможливлюють врахування
+судом позиції інших учасників провадження є неправильними. Окрім цього, у суду
+апеляційної інстанції, з урахуванням змісту доводів апеляційної скарги сторони
+захисту, були всі можливості самостійно перевірити доводи захисту у цій частині
+і ухвалити своє рішення щодо вирішення цивільних позовів.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 21.01.2025 у справі № 587/2699/15
+[(провадження № 51-3077км24) – https://reyestr.court.gov.ua/Review/124718049.](https://reyestr.court.gov.ua/Review/124718049)
+
+Судові рішення
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09.4_segment.md не вказана 280 60 прокуратура  мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">29</span>
+            <span class="file-badge">09.4_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">9.4. Судові дебати (ст. 364 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="10.1.1_segment.md № 755/14815/23 280 60 прокуратура запобіжного заходу з домашнього арешту на тримання під вартою до вступу цього мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">30</span>
+            <span class="file-badge">10.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124428679" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 755/14815/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>запобіжного заходу з домашнього арешту на тримання під вартою до вступу цього</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">10.1.1. Вказівка суду першої інстанції в резолютивній частині вироку про зміну
+запобіжного заходу з домашнього арешту на тримання під вартою до вступу цього
+вироку в законну силу з наведенням детальних мотивів ухваленого рішення
+відповідає положенням ст. 374 КПК
+
+Позиції судів першої та апеляційної інстанцій: суди попередніх інстанцій
+визнали винуватим і засудили обвинуваченого за ч. 1 ст. 156 КК.
+
+У касаційній скарзі захисник звертає увагу на відсутність підстав
+для зміни запобіжного заходу обвинуваченому у зв’язку з ухваленням вироку.
+Зазначає, що передумовою для зміни запобіжного заходу є наявність ризиків,
+передбачених ч. 1 ст. 177 КПК, а не постановлення судом вироку, який не набрав
+законної сили, однак у рішенні суду першої інстанції не наведено жодного ризику,
+який продовжив своє існування чи  з’явився з часу застосування стосовно
+обвинуваченого запобіжного заходу у вигляді домашнього арешту, у зв’язку
+із чим зміна запобіжного заходу останньому є незаконною.
+
+Позиція ККС: змінено рішення судів попередніх інстанцій, зараховано
+обвинуваченому в строк покарання строк його перебування під домашнім
+арештом відповідно до ч. 7 ст. 72 КК.
+
+Обґрунтування позиції ККС: ККС вказав, що ухвалюючи обвинувальний
+вирок стосовно засудженого, суд першої інстанції у резолютивній частині свого
+рішення зазначив про зміну йому запобіжного заходу з домашнього арешту
+на тримання під вартою до вступу вироку в законну силу, до того ж, як
+убачається зі змісту мотивувальної частини вироку, навів детальні мотиви
+прийнятого рішення.
+
+Отже, зазначаючи в резолютивній частині свого рішення про зміну
+запобіжного заходу до набрання вироком законної сили, місцевий суд діяв
+відповідно до положень ст. 374 КПК, тому доводи касаційної скарги захисника
+в цій частині є безпідставними.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 09.01.2025 у справі № 755/14815/23
+[(провадження № 51-2841км24) – https://reyestr.court.gov.ua/Review/124428679.](https://reyestr.court.gov.ua/Review/124428679)
+
+V. ОСОБЛИВІ ПОРЯДКИ КРИМІНАЛЬНОГО ПРОВАДЖЕННЯ
+
+Кримінальне провадження у формі приватного обвинувачення
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="10.1.2_segment.md № 759/2917/23 120 50 загальний військовий обов&#x27;язок і військова служба. військовий облік підставою для відмови від виконання конкретного наказу начальника, якщо семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «загальний військовий обов&#x27;язок і військова служба. військовий облік» (законодавство про оборону / загальний військовий обов&#x27;язок і військова служба. військовий облік).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">31</span>
+            <span class="file-badge">10.1.2_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124689408" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 759/2917/23</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb-leaf">Загальний військовий обов&#x27;язок і військова служба. Військовий облік</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>підставою для відмови від виконання конкретного наказу начальника, якщо</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Загальний військовий обов&#x27;язок і військова служба. Військовий облік» (Законодавство про оборону / Загальний військовий обов&#x27;язок і військова служба. Військовий облік).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">10.1.2. Наявність медичних протипоказань для служби в певному роді військ не є
+підставою для відмови від виконання конкретного наказу начальника, якщо
+з висновків військово-лікарської комісії не випливає неможливість виконання саме
+цього наказу за станом здоров&#x27;я. При цьому визначена в бойовому розпорядженні
+часова межа не може ототожнюватися із часовою межею чинності відповідного
+
+наказу
+
+Обставини справи: військовослужбовець військової служби
+за мобілізацією на особливий період відмовився виконати наказ начальника,
+який був виданий на підставі бойового розпорядження командира батальйону, про
+необхідність прибути у населений пункт Термахівка Вишгородського району
+Київської області з метою зайняття та утримання рубежу оборони, чим підірвав
+бойову готовність підрозділу.
+
+Позиції судів першої та апеляційної інстанції: суди попередніх інстанцій
+визнали винуватим і засудили солдата за ч. 4 ст. 402 КК.
+
+У касаційній скарзі засуджений зазначає, що він відмовився виконати
+наказ за станом здоров’я, оскільки згідно з висновком військово-лікарської
+комісії йому за станом здоров’я протипоказана служба в ДШВ, про
+що в матеріалах провадження наявна довідка, а засуджений вважає,
+що військова частина за родом військ відноситься до ДШВ. Також суди не
+встановили, чи  вважається командир батальйону його начальником, адже він був
+призваний до іншої військової частини і до нього не було доведено зміст наказу
+
+про переведення.
+
+Позиція ККС: зараховано засудженому у строк покарання строк його
+попереднього ув&#x27;язнення, у решті залишено без зміни рішення судів попередніх
+інстанцій.
+
+Обґрунтування позиції ККС: ККС вказав, що відповідно до наявного
+в матеріалах провадження витягу з наказу солдата було призначено на посаду
+водія відділення протитанкових керованих ракет. Відповідно до довідки ВЛК
+солдат визнаний обмежено придатним до військової служби, також зазначено про
+наявність у солдата протипоказань до служби в ДШВ, плавскладі, морській піхоті,
+спецспорудах. На запит ККС т.в.о. командира військової частини повідомив,
+що військова частина з моменту свого створення не відносилась до десантноштурмових військ чи  військ морської піхоти.
+
+За обставин цього конкретного провадження відкрита відмова
+засудженого виконати наказ начальника, який полягав у необхідності солдату
+прибути у населений пункт Термахівка Вишгородського району Київської області
+з метою зайняття та утримання рубежу оборони, не може обумовлюватися
+указаними вище висновками ВЛК, оскільки з їх змісту не випливає неможливість
+
+виконання солдатом указаного вище конкретного наказу за ознаками стану
+здоров’я. Самі по собі висновки ВЛК не вказують на законність дій солдата щодо
+відмови виконати законний наказ начальника, враховуючи, що на час вчинення
+солдатом такого діяння він служив у відповідній структурній частині відповідного
+військового формування.
+
+Стосовно доводів сторони захисту, висловлених у судовому засіданні про
+те, що бойове розпорядження командира батальйону, на ґрунті якого командир
+батареї протитанкових керованих ракет цього батальйону віддавав указаний вище
+наказ, відповідно до його змісту мало бути виконане до 16:00 28.08.2022, й  тому
+станом на 17.10.2022 воно вже не мало виконуватися, також вбачаються
+необґрунтованими. Зазначені у бойовому розпорядженні часові межі його
+виконання стосуються виключно цього бойового розпорядження.
+
+Однак солдата засуджено не за невиконання бойового розпорядження,
+а за невиконання конкретного наказу начальника, який був виданий на підставі
+вказаного бойового розпорядження. При цьому визначена у бойового
+розпорядженні часова межа, не пізніше якої командиру батареї протитанкових
+керованих ракет указаного батальйону наказано силами і засобами цієї батареї
+здійснити висування у відповідний район, не може ототожнюватися з часовою
+межею чинності відповідного наказу.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 20.01.2025 у справі № 759/2917/23
+[(провадження № 51-3809км24) – https://reyestr.court.gov.ua/Review/124689408.](https://reyestr.court.gov.ua/Review/124689408)
+
+РОЗДІЛ II. ЗАСТОСУВАННЯ НОРМ КРИМІНАЛЬНОГО ПРОЦЕСУАЛЬНОГО ПРАВА
+
+УКРАЇНИ
+
+I. ЗАГАЛЬНІ ПОЛОЖЕННЯ
+
+Засади кримінального провадження
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="10.1_segment.md не вказана 280 60 прокуратура  мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">32</span>
+            <span class="file-badge">10.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">10.1. Зміст вироку (ст. 374 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="11.1.1_segment.md № 587/2699/15 70 70 10 книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах статтями 190, 191 кк, такими, що відносяться до кримінальних проваджень у формі семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (законодавство про шлюб і сім&#x27;ю / акти громадянського стану. загс / книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">33</span>
+            <span class="file-badge">11.1.1_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124718049" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 587/2699/15</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 70 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb">Акти громадянського стану. ЗАГС</span><span class="crumb-sep">›</span><span class="crumb-leaf">Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>статтями 190, 191 КК, такими, що відносяться до кримінальних проваджень у формі</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (Законодавство про шлюб і сім&#x27;ю / Акти громадянського стану. ЗАГС / Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">11.1.1. Однією з підстав для визнання кримінальних правопорушень, передбачених
+статтями 190, 191 КК, такими, що відносяться до кримінальних проваджень у формі
+приватного обвинувачення, є їх вчинення особою, яка стосовно потерпілих була
+найманим працівником. Про таке провадження є підстави вести мову, зокрема,
+в тому випадку, якщо із заявою звертається підприємство, на якому працює особа,
+щодо якої подано заяву про вчинення нею кримінального правопорушення. Якщо
+кримінальне провадження розпочато на підставі заяв потерпілого – фізичної особи,
+а не підприємства, вести мову про кримінальне провадження у формі приватного
+обвинувачення немає підстав
+
+Позиції судів першої та апеляційної інстанцій: місцевий суд визнав
+винуватим і засудив обвинуваченого за ч. 1 ст. 190, ч. 5 ст. 191 КК, а також визнав
+невинуватим та виправдав за ч. 2 ст. 366 КК у зв’язку із недоведеністю,
+що в діянні обвинуваченого є склад кримінального правопорушення. Апеляційний
+суд скасував цей вирок в частині визнання обвинуваченого винуватим у вчиненні
+кримінального правопорушення, передбаченого ч. 1 ст. 190 КК, звільнив його від
+кримінальної відповідальності на підставі п. 2 ч. 1 ст. 49 КК у зв’язку
+із закінченням строку давності, а кримінальне провадження в цій частині закрив
+на підставі п. 1 ч. 2 ст. 284, ст. 417 КПК. В решті вирок місцевого суду залишено
+без зміни.
+
+У касаційній скарзі засуджений та його захисник зазначають про
+необхідність визнання усіх доказів недопустимими з підстав того, що реєстрація
+в ЄРДР та початок досудового розслідування в кримінальних провадженнях
+за заявами потерпілих відбулися з порушенням вимог ст. 477 КПК.
+
+Позиція ККС: скасовано ухвалу апеляційного суду та призначено новий
+розгляд у суді апеляційної інстанції.
+
+Обґрунтування позиції ККС: ККС вказав, що відповідно до п. 3 ч.1 ст. 477
+КПК (в редакції Закону, яка була чинною на момент початку досудового
+розслідування) до таких кримінальних правопорушень відносилися і кримінальні
+правопорушення, передбачені ст. 190 КК (шахрайство, крім шахрайства, вчиненого
+організованою групою), ст. 191 КК (привласнення, розтрата майна
+або заволодіння ним шляхом зловживання службовим становищем, крім
+вчиненого організованою групою, або шкода від якого завдана державним
+інтересам), якщо вони вчинені чоловіком (дружиною) потерпілого, іншим близьким
+родичем чи  членом сім`ї потерпілого, або якщо вони вчинені особою, яка щодо
+
+потерпілого була найманим працівником і завдала шкоду виключно власності
+потерпілого.
+
+Вищенаведене свідчить про те, що однією з підстав для визнання
+кримінального правопорушення, передбаченого статтями 190, 191 КК, таким,
+що відноситься до кримінальних проваджень у формі приватного обвинувачення,
+є, в тому числі, його вчинення особою, яка стосовно потерпілих була найманим
+працівником.
+
+Як убачається з матеріалів кримінального провадження, потерпілими
+у цьому об’єднаному кримінальному провадженні є фізичні особи. Кримінальні
+провадження щодо засудженого були розпочаті органом досудового
+розслідування на підставі заяв цих потерпілих.
+
+Про провадження у формі приватного обвинувачення були б підстави вести
+мову у тому випадку, якщо б із заявою зверталося підприємство, на якому
+працює особа, щодо якої подано заяву про вчинення нею кримінального
+правопорушення. У цьому випадку юридична особа із такою заявою не
+зверталася. Тож підстав вести мову про здійснення провадження у формі
+приватного обвинувачення за ч. 5 ст. 191 КК немає. Інформація до ЄРДР була
+внесена на підставі заяв потерпілих – фізичних осіб з попередньою кримінальноправовою кваліфікацією вчиненого.
+
+За таких обставин твердження сторони захисту про те, що кримінальні
+провадження щодо засудженого були розпочаті з порушенням вимог ч. 1 ст. 477
+КПК, на переконання колегії суддів, є безпідставними, оскільки в рамках цього
+кримінального провадження положення вказаної норми процесуального закону
+застосуванню не підлягають, а тому кримінальне провадження було розпочато
+з дотриманням вимог закону, а зібрані в ході проведення досудового
+розслідування докази є допустимими.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 21.01.2025 у справі № 587/2699/15
+[(провадження № 51-3077км24) – https://reyestr.court.gov.ua/Review/124718049.](https://reyestr.court.gov.ua/Review/124718049)
+
+Огляд судової практики Касаційного кримінального суду у складі Верховного Суду
+(актуальна практика). Рішення, внесені до ЄДРСР, за січень 2025 року / Упоряд.:
+управління аналітичної та правової роботи Касаційного кримінального суду
+департаменту аналітичної та правової роботи; заступник голови Касаційного
+кримінального суду у складі Верховного Суду, д. ю. н. Антонюк Н. О. Київ, 2025. –
+36 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="11.1_segment.md не вказана 280 60 прокуратура (ст. 477 кпк) семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «прокуратура» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">34</span>
+            <span class="file-badge">11.1_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>(ст. 477 КПК)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Прокуратура» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">11.1. Поняття кримінального провадження у формі приватного обвинувачення
+(ст. 477 КПК)
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="18.01.2023_segment.md не вказана 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав  семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">35</span>
+            <span class="file-badge">18.01.2023_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">18.01.2023 в провадженні № 33 повідомлено про підозру чотирьом особам;
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="21.01.2021_segment.md не вказана 140 10 державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав 10, 15 та 16.12.2021 в провадженні № 33 оголошено підозру трьом особам; семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / державні органи зовнішніх зносин україни. порядок зносин державних установ україни та їх службових осіб з установами та службовими особами іноземних держав).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">36</span>
+            <span class="file-badge">21.01.2021_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>10, 15 та 16.12.2021 в провадженні № 33 оголошено підозру трьом особам;</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Державні органи зовнішніх зносин України. Порядок зносин державних установ України та їх службових осіб з установами та службовими особами іноземних держав).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">21.01.2021 об’єднані в провадження № 33.
+
+10, 15 та 16.12.2021 в провадженні № 33 оголошено підозру трьом особам;
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="21.08.1998_segment.md № 362/5056/13 120160 10 зброя. бойові припаси рушницю та бойові припаси до неї, в металевому ящику, сейфі, спеціально семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «зброя. бойові припаси» (законодавство про оборону / військове майно / зброя. бойові припаси).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">37</span>
+            <span class="file-badge">21.08.1998_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124522544" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 362/5056/13</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>67% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">120160 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про оборону</span><span class="crumb-sep">›</span><span class="crumb">Військове майно</span><span class="crumb-sep">›</span><span class="crumb-leaf">Зброя. Бойові припаси</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>рушницю та бойові припаси до неї, в металевому ящику, сейфі, спеціально</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Зброя. Бойові припаси» (Законодавство про оборону / Військове майно / Зброя. Бойові припаси).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">21.08.1998 за № 622 (далі – Інструкція), не зберігав належну йому мисливську
+рушницю та бойові припаси до неї, в металевому ящику, сейфі, спеціально
+виготовленому для зберігання зброї за місцем свого постійного проживання,
+а також тримав її у зарядженому стані, що призвело до вільного доступу
+потерпілого до вказаної зброї та його смерті, яка настала в лікарні в день події,
+куди потерпілого доставили з тяжким тілесним ушкодженням, яке потерпілий
+отримав від раптового пострілу з рушниці в момент, коли обвинувачений
+намагався її відібрати у потерпілого.
+
+Позиції судів першої та апеляційної інстанції: суди попередніх інстанцій
+визнали винуватим і засудили власника рушниці за статтями 128, 264 КК.
+
+У касаційній скарзі засуджений зазначає, що суди попередніх інстанцій
+безпідставно кваліфікували його дії за ст. 128 КК, оскільки не встановили, що саме
+він натиснув на спусковий гачок рушниці, а також не взяли до уваги те,
+що диспозицією ст. 264 КК охоплюється ст. 128 КК.
+
+Позиція ККС: скасовано рішення судів попередніх інстанцій в частині
+засудження обвинуваченого за ст. 128 КК та закрито кримінальне провадження
+в цій частині.
+
+Обґрунтування позиції ККС: ККС вказав, що обов’язковою ознакою
+об’єктивної сторони кримінального правопорушення, передбаченого ст. 264 КК,
+за яке засудженого власника рушниці, є наслідки у вигляді загибелі людини
+або інші тяжкі наслідки. Таким чином наслідок у вигляді необережних тяжких
+тілесних ушкоджень є іншим тяжким наслідком як обов’язковою ознакою
+об’єктивної сторони злочину, передбаченого ст. 264 КК, а тому доводи сторони
+захисту в частині кримінально-правової оцінки вчиненого є обґрунтованими.
+
+Кримінальна караність діяння обвинуваченого полягає в тому, що через
+порушення ним умов зберігання мисливської рушниці та боєприпасів до неї
+потерпілий отримав вільний доступ до зарядженої рушниці і в подальшому
+в результаті пострілу отримав тяжкі тілесні ушкодження, від яких помер. З огляду
+на наведене вказівки судів попередніх інстанцій на кваліфікацію та засудження
+власника рушниці за ст. 128 КК підлягають виключенню з вироку місцевого суду
+та ухвали суду апеляційної інстанції.
+
+Постанова колегії суддів Першої судової палати ККС ВС від 14.01.2025 у справі № 362/5056/13[к (провадження № 51-3142км24) – https://reyestr.court.gov.ua/Review/124522544.](https://reyestr.court.gov.ua/Review/124522544)
+
+Кримінальні правопорушення проти безпеки руху та експлуатації транспорту
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="26.07.2023_segment.md не вказана 280 60 прокуратура за ч. 2 ст. 125, ч. 3 ст. 185, ч. 2 ст. 186, ч. 2 ст. 190 кк. мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">38</span>
+            <span class="file-badge">26.07.2023_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>за ч. 2 ст. 125, ч. 3 ст. 185, ч. 2 ст. 186, ч. 2 ст. 190 КК.</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">26.07.2023 місцевий суд визнав винуватим і засудив обвинуваченого
+за ч. 2 ст. 125, ч. 3 ст. 185, ч. 2 ст. 186, ч. 2 ст. 190 КК.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="29.05.2024_segment.md № 317/3658/20 280 60 прокуратура покарання. семантичний мапінг з урахуванням юрисдикції кас вс. обрано рубрику «прокуратура» (судоустрій. органи правосуддя. прокуратура. адвокатура. нотаріат / прокуратура).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">39</span>
+            <span class="file-badge">29.05.2024_segment.md</span>
+            <a href="https://reyestr.court.gov.ua/Review/124409883" target="_blank" rel="noopener" class="case-badge" title="Відкрити судове рішення в ЄДРСР">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span>№ 317/3658/20</span>
+            </a>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">280 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат</span><span class="crumb-sep">›</span><span class="crumb-leaf">Прокуратура</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>покарання.</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції КАС ВС. Обрано рубрику «Прокуратура» (Судоустрій. Органи правосуддя. Прокуратура. Адвокатура. Нотаріат / Прокуратура).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">29.05.2024 апеляційний суд змінив цей вирок в частині призначеного
+
+покарання.
+
+У касаційній скарзі захисник зазначає, що місцевий суд визнав винуватим
+обвинуваченого, посилаючись на суперечливі показання потерпілих, яких
+безпосередньо не допитав під час нового розгляду та обмежився дослідженням
+технічного запису допиту останніх під час минулого судового розгляду. Уважає,
+що такі показання є недопустимими доказами, оскільки не дозволили стороні
+захисту з’ясувати всі обставини, які впливають на кваліфікацію діянь
+обвинуваченого.
+
+Позиція ККС: змінено рішення судів попередніх інстанцій,
+перекваліфіковано дії обвинуваченого із ч. 3 ст. 185 КК на ч. 1 ст. 162 КК,
+на підставі п. 2 ч. 1 ст. 49 КК звільнено обвинуваченого від кримінальної
+відповідальності за ч. 2 ст. 125 КК у зв’язку із закінченням строків давності
+та закрито в цій частині кримінальне провадження щодо нього відповідно до п. 1
+ч. 2 ст. 284 КПК.
+
+Обґрунтування позиції ККС: ККС зазначив, що положення ч. 4 ст. 95 КПК,
+відповідно до яких суд може обґрунтовувати свої висновки лише на показаннях,
+які він безпосередньо сприймав під час судового засідання, не може тлумачитися
+як безумовна заборона використання показань, які особа надавала перед іншим
+складом суду в тій же справі.
+
+На відміну від допиту в порядку ст. 225 КПК, яка допускає допит
+за відсутності однієї зі сторін, допит під час судового розгляду справи по суті
+відбувається за обов’язкової участі сторін. Такий допит надає сторонам, зокрема,
+стороні захисту, можливість провести його більш ефективно, оскільки на цей час
+учасникам вже відомі елементи пред’явленого обвинувачення та докази отримані
+під час досудового розслідування.
+
+Показання, які особа надавала під час минулого судового розгляду,
+рішення за результатами якого було скасовано, не можуть вважатися
+недопустимими доказами лише на тій підставі, що неможливо було забезпечити
+явку такої особи під час нового судового розгляду.
+
+Варто зауважити, що матеріалами цього кримінального провадження
+також підтверджується і те, що під час минулого судового розгляду
+кримінального провадження сторонам була надана можливість брати участь
+у допиті потерпілих і вони повною мірою скористалися таким правом. Водночас
+сторони кримінального провадження під час дослідження місцевим судом
+технічних записів допиту потерпілих не були позбавлені можливості звертати увагу
+суду на ті аспекти показань, які є важливими для оцінки їхньої достовірності.
+
+За обставин цього кримінального провадження дослідження показань
+потерпілих, які вони давали під час минулого судового розгляду, забезпечило
+
+сторонам достатні процесуальні гарантії, здатні компенсувати неможливість
+їхнього допиту під час нового розгляду кримінального провадження, та їхні
+показання обґрунтовано визнано допустимими доказами. Крім того при новому
+розгляді не були встановлені будь-які нові суттєві обставини, які б зумовлювали
+необхідність повторного допиту вказаних потерпілих.
+
+Постанова колегії суддів Третьої судової палати ККС ВС від 06.01.2025 у справі № 317/3658/20
+[(провадження № 51-3817км24) – https://reyestr.court.gov.ua/Review/124409883.](https://reyestr.court.gov.ua/Review/124409883)
+
+II. ЗАХОДИ ЗАБЕЗПЕЧЕННЯ КРИМІНАЛЬНОГО ПРОВАДЖЕННЯ
+
+Виклик слідчим, прокурором, судовий виклик і привід
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 39;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

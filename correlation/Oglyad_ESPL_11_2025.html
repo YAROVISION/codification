@@ -1,0 +1,3765 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_ESPL_11_2025 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_ESPL_11_2025 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_ESPL_11_2025.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_ESPL_11_2025</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">59</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">58.1%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">17</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 59 із 59</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 10 40 50 відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду стаття 6 конвенції про захист прав людини і основоположних свобод семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду» (основи суспільного ладу / законодавство з питань прав людини та громадянина / відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Стаття 6 Конвенції про захист прав людини і основоположних свобод</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+Зміст
+
+Стаття 6 Конвенції про захист прав людини і основоположних свобод
+(право на справедливий суд)
+
+ILIEVSKA AND ZDRAVEVA v. North Macedonia: неможливість перегляду
+рішень про звільнення з посади суддів, прийнятих після повернення
+справи на новий розгляд – порушення
+
+RENOUARD v. France: застосування юрисдикційного імунітету Держави
+в контексті спору щодо сплати належної винагороди – відсутність
+
+порушення
+
+CONSTANTINOU AND OTHERS v. Cyprus: зменшення зарплати і пенсії
+державних службовців на тлі світової фінансової кризи – відсутність
+
+порушення
+
+SELIMI v. Albania: звільнення судді в межах комплексної реформи
+судової системи – порушення
+
+Стаття 8 Конвенції (право на повагу до приватного і сімейного життя) 18
+MANUKYAN v. Armenia: збір і зберігання персональних даних заявника 18
+службами безпеки та примус до співпраці з ними із застосуванням
+
+погроз – порушення
+
+A.R. v. Poland: скарга на наслідки рішення Конституційного суду Польщі,
+яким було встановлено неконституційність положень, що дозволяють
+легальний аборт у разі аномалій розвитку плода – порушення
+
+KYRIAN v. The Czech Republic: відмова національних судів зобов&#x27;язати
+законних батьків дитини надати заявнику, який не є законним батьком,
+інформацію про його біологічного сина – відсутність порушення
+
+Стаття 1 Першого протоколу до Конвенції (захист власності) 30
+ISKRA DOO BEOGRAD v. Serbia: незаконне знесення огорожі земельної 30
+ділянки та позбавлення заявника такого майна в рамках проєкту
+реконструкції – порушення
+
+ZVONAR v. Ukraine: позбавлення права власності на земельні ділянки,
+призначені для будівництва та обслуговування рекреаційних об’єктів,
+що вибули з державної власності з порушенням встановленої
+процедури – відсутність порушення
+
+Рішення ЄСПЛ проти України 39
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="03_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">3</span>
+            <span class="file-badge">03_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 3  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="04_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">4</span>
+            <span class="file-badge">04_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 4  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="05_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">5</span>
+            <span class="file-badge">05_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 5  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="06_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">6</span>
+            <span class="file-badge">06_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 6  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="07_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">7</span>
+            <span class="file-badge">07_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 7  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="08_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">8</span>
+            <span class="file-badge">08_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 8  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="09_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">9</span>
+            <span class="file-badge">09_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 9  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="10_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">10</span>
+            <span class="file-badge">10_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 10  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="11_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">11</span>
+            <span class="file-badge">11_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 11  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="12_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">12</span>
+            <span class="file-badge">12_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 12  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="13_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">13</span>
+            <span class="file-badge">13_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 13  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="14_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">14</span>
+            <span class="file-badge">14_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 14  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="15_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">15</span>
+            <span class="file-badge">15_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 15  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="16_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">16</span>
+            <span class="file-badge">16_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 16  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="17_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">17</span>
+            <span class="file-badge">17_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 17  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="18_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">18</span>
+            <span class="file-badge">18_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 18  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="19_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">19</span>
+            <span class="file-badge">19_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 19  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="20_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">20</span>
+            <span class="file-badge">20_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 20  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="21_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">21</span>
+            <span class="file-badge">21_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 21  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="22_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">22</span>
+            <span class="file-badge">22_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 22  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="23_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">23</span>
+            <span class="file-badge">23_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 23  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="24_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">24</span>
+            <span class="file-badge">24_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 24  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="25_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">25</span>
+            <span class="file-badge">25_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 25  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="26_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">26</span>
+            <span class="file-badge">26_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 26  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="27_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">27</span>
+            <span class="file-badge">27_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 27  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="28_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">28</span>
+            <span class="file-badge">28_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 28  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="29_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">29</span>
+            <span class="file-badge">29_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 29  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="30_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">30</span>
+            <span class="file-badge">30_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 30  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="31_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">31</span>
+            <span class="file-badge">31_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 31  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="32_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">32</span>
+            <span class="file-badge">32_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 32  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="33_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">33</span>
+            <span class="file-badge">33_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 33  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="34_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">34</span>
+            <span class="file-badge">34_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 34  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="35_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">35</span>
+            <span class="file-badge">35_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 35  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="36_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">36</span>
+            <span class="file-badge">36_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 36  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="37_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">37</span>
+            <span class="file-badge">37_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 37  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="38_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">38</span>
+            <span class="file-badge">38_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 38  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="39_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина  базовий мапінг за юрисдикцією суду (недостатньо ключових слів)">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">39</span>
+            <span class="file-badge">39_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div></div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Базовий мапінг за юрисдикцією суду (недостатньо ключових слів)</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 39  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="40_segment.md не вказана 10 40 50 відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду із 01.11.2025 по 30.11.2025 / відп. за вип.: т. р. цибульська, к. д. кузнецова, д. о. штода, семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду» (основи суспільного ладу / законодавство з питань прав людини та громадянина / відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">40</span>
+            <span class="file-badge">40_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>із 01.11.2025 по 30.11.2025 / Відп. за вип.: Т. Р. Цибульська, К. Д. Кузнецова, Д. О. Штода,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Відшкодування шкоди, завданої громадянинові незаконними діями органів дізнання, попереднього слідства, прокуратури і суду).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 40  Рішення, ухвалені ЄСПЛ за період із 01.11.2025 по 30.11.2025
+
+Огляд рішень Європейського суду з прав людини (листопад 2025 року). Рішення за період
+із 01.11.2025 по 30.11.2025 / Відп. за вип.: Т. Р. Цибульська, К. Д. Кузнецова, Д. О. Штода,
+Є. В. Воронюк, О. Ю. Тарасенко, Р. Ш. Бабанли. Київ, 2026. – 40 с.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="41_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина обставини справи мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">41</span>
+            <span class="file-badge">41_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Обставини справи</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+A.R. v. Poland [(№ 6030/21)](https://hudoc.echr.coe.int/ukr#{%22itemid%22:[%22001-245820%22]})
+
+Обставини справи
+
+Справа стосувалася скарг заявниці, A.R., громадянки Польщі, на наслідки
+рішення Конституційного суду Польщі, яким було встановлено неконституційність
+положень, що дозволяють легальний аборт у разі аномалій розвитку плода,
+а також впливу цього рішення на особисту ситуацію заявниці. Заявниця
+стверджувала, що невизначеність, спричинена цим рішенням, змусила її поїхати
+за кордон для проведення аборту та становила втручання у її права, гарантовані
+статтею 8 Конвенції.
+
+Умови для легального аборту в Польщі були визначені в Законі
+про планування сім&#x27;ї, захист людського плоду та умови, що дозволяють
+переривання вагітності (Ustawa o planowaniu rodziny, ochronie płodu ludzkiego
+i warunkach dopuszczalności przerywania ciąży – «Закон 1993 року»).
+
+Спочатку Закон 1993 року передбачав, що легальний аборт був можливий
+до дванадцятого тижня вагітності, якщо вагітність ставила під загрозу життя
+або здоров&#x27;я матері; пренатальні тести або інші медичні висновки вказували
+на високий ризик того, що плід буде серйозно і незворотньо пошкоджений
+або страждатиме від невиліковної хвороби, що загрожує життю; або були вагомі
+підстави вважати, що вагітність була результатом зґвалтування або інцесту.
+
+22 жовтня 2020 року Конституційний Суд ухвалив рішення, в якому, зокрема,
+визнав неконституційними положення, що дозволяють легальний аборт у разі
+аномалій розвитку плода. Рішення було опубліковано лише 27 січня 2021 року
+і набрало чинності в той же день.
+
+Це рішення викликало масові протести, включаючи демонстрації за участю
+тисяч людей по всій країні. У січні 2021 року Федерація жінок та планування сім’ї,
+польська неурядова організація, яка бореться за сексуальні та репродуктивні
+права, опублікувала в Інтернеті заповнену заяву та закликала жінок дітородного
+віку, які проживають у Польщі, подавати заяви до Суду.
+
+Заявниця подала заповнену заяву з додатковими деталями. Вона зазначила,
+що на момент ухвалення рішення Конституційного Суду вона була на 15-му тижні
+вагітності.
+
+Результати медичних обстежень, проведених 5 листопада 2020 року,
+підтвердили, що плід страждав на генетичне захворювання, яке називається
+трисомія. Вона побоювалась, що рішення Конституційного Суду буде
+опубліковано до того, як вона зможе зробити легальний аборт, тому поїхала
+до Нідерландів, де вагітність була перервана в приватній клініці.
+
+Посилаючись на статтю 3 Конвенції, заявниця стверджувала, що обмеження,
+введені Конституційним судом, заподіяли їй серйозні та реальні емоційні
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="43_segment.md не вказана 50120 20 статути про дисципліну. окремі правила для деяких категорій працівників потенційною жертвою порушення конвенції. хоча їй не було відмовлено в аборті семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «статути про дисципліну. окремі правила для деяких категорій працівників» (трудове законодавство / трудова дисципліна. відповідальність за її порушення / статути про дисципліну. окремі правила для деяких категорій працівників).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">42</span>
+            <span class="file-badge">43_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>72% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50120 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Трудова дисципліна. Відповідальність за її порушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Статути про дисципліну. Окремі правила для деяких категорій працівників</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>потенційною жертвою порушення Конвенції. Хоча їй не було відмовлено в аборті</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Статути про дисципліну. Окремі правила для деяких категорій працівників» (Трудове законодавство / Трудова дисципліна. Відповідальність за її порушення / Статути про дисципліну. Окремі правила для деяких категорій працівників).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+страждання. Посилаючись на статтю 8, заявниця скаржилася, що вона є
+потенційною жертвою порушення Конвенції. Хоча їй не було відмовлено в аборті
+на підставі вад плода, Закон 1993 року все одно порушував її права, оскільки вона
+була змушена адаптувати свою поведінку. Вона також скаржилася,
+що обмеження не було законним з огляду на склад Конституційного Суду,
+до якого входили судді, які були призначені на посаду неналежним чином.
+
+До справи подали численні коментарі треті сторони, включаючи різноманітні
+міжнародні правозахисні організації, а також експерти ООН.
+
+Оцінка Суду
+
+_Щодо статті 3 Конвенції_
+Враховуючи надані матеріали, Суд дійшов висновку, що заявниця не довела
+свою скаргу про те, що обмеження, введені Конституційним Судом, призвели
+до поводження, яке суперечить статті 3 Конвенції. Отже, ця скарга була визнана
+неприйнятною.
+
+_Щодо статті 8 Конвенції_
+Суд спочатку встановив, що стаття 8 застосовується у справі заявниці,
+і що вона була «безпосередньо зачеплена» законодавчою зміною. Вона поїхала
+до Нідерландів, де в листопаді 2020 року їй було перервано вагітність.
+Після ухвалення у жовтні 2020 року рішення Конституційного Суду могло бути
+опубліковано в будь-який час, і, як видається, існувала велика невизначеність,
+яка посилювалася як відсутністю будь-яких перехідних заходів, так і триваючою
+пандемією COVID-19. Суд наголосив, що у конкретних обставинах справи тривала
+невизначеність становила «втручання» у права заявниці, передбачені статтею 8
+Конвенції.
+
+Щодо складу колегії Конституційного Суду, яка ухвалила рішення
+від 22 жовтня 2020 року, то ЄСПЛ зазначив, що раніше він вже встановив у справі
+_M.L. v. Poland_ [(заява № 40119/21), що втручання в права заявниці не відповідало](https://hudoc.echr.coe.int/rus#{%22languageisocode%22:[%22ENG%22],%22appno%22:[%2240119/21%22],%22documentcollectionid2%22:[%22CHAMBER%22]})
+терміну «згідно із законом» у значенні статті 8 Конвенції, оскільки воно не було
+прийняте судом, встановленим законом. Суд вважав, що ці висновки також є
+актуальними у справі цієї заявниці.
+
+Хоча в обох випадках ситуації, що стали предметом скарги, були пов’язані
+з одним і тим самим рішенням Конституційного Суду, заявниця у цій справі
+додатково постраждала від невизначеності щодо його законодавчих наслідків.
+У справі _M.L. v. Poland_ втручання було спричинене набранням чинності рішенням
+Конституційного Суду, яке було опубліковано безпосередньо перед призначенням
+M.L. аборту, що унеможливило його проведення. У справі A.R. рішення
+Конституційного Суду ще не набрало чинності, і втручання було спричинене
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="45_segment.md не вказана 70 70 10 книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах та допустимості аборту на підставі аномалії плода. отже, питання, семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (законодавство про шлюб і сім&#x27;ю / акти громадянського стану. загс / книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">43</span>
+            <span class="file-badge">45_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">70 70 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про шлюб і сім&#x27;ю</span><span class="crumb-sep">›</span><span class="crumb">Акти громадянського стану. ЗАГС</span><span class="crumb-sep">›</span><span class="crumb-leaf">Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>та допустимості аборту на підставі аномалії плода. Отже, питання,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах» (Законодавство про шлюб і сім&#x27;ю / Акти громадянського стану. ЗАГС / Книги реєстрації актів громадянського стану та свідоцтв, що видаються на підставі записів у цих книгах).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+тривалою ситуацією значної невизначеності щодо застосовних законів
+та допустимості аборту на підставі аномалії плода. Отже, питання,
+яке залишилося для Суду, полягало в тому, чи на той час у справі заявниці
+національне законодавство було достатньо чітким і прогнозованим,
+щоб заявниця могла регулювати свою поведінку. Суд зазначив, що вимога
+передбачуваності має особливе значення в тих випадках, коли обмежується
+право, яке раніше було доступним відповідно до національного законодавства.
+
+Суд зазначив, що рішення Конституційного Суду Польщі набирають чинності
+з дня їх опублікування і що, як правило, рішення опубліковуються негайно.
+Хоча Конституційний Суд може визначити іншу дату в майбутньому, з якої закон,
+визнаний неконституційним, перестане застосовуватися, у даній справі він цього
+не зробив. Крім того, це рішення викликало масові протести, що лише посилило
+невизначеність щодо впливу змін у законодавчій базі на аборти. Залишалося
+незрозумілим, чи обмеження на аборти на підставі аномалій плода вже набрали
+чинності, чи аборти все ще можна було проводити на законних підставах.
+
+У висновку Суд визнав, що втручання в права заявниці не було «згідно
+із законом» через склад колегії Конституційного Суду, яка ухвалила рішення
+від 22 жовтня 2020 року, та через відсутність передбачуваності, необхідної згідно
+зі статтею 8, через загальну невизначеність щодо чинної правової бази,
+спричинену затримкою з опублікуванням рішення Конституційного Суду. З цього
+випливало, що було порушення статті 8 Конвенції.
+
+Висновок
+
+Порушення статті 8 Конвенції (право на повагу до приватного і сімейного
+життя).
+
+Рішення в цій справі ухвалене Палатою 13 листопада 2025 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="47_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина обставини справи мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">44</span>
+            <span class="file-badge">47_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Обставини справи</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+KYRIAN v. The Czech Republic [(№ 15956/23)](https://hudoc.echr.coe.int/ukr#{%22itemid%22:[%22001-245701%22]})
+
+Обставини справи
+
+Заява стосувалася відмови національних судів зобов&#x27;язати законних батьків
+дитини надати заявнику, який не є законним батьком, інформацію про його сина
+
+Заявник є біологічним батьком дитини, народженої в 2013 році в результаті
+позашлюбних стосунків з матір&#x27;ю. На підставі правової презумпції законним
+батьком дитини став тодішній чоловік жінки (матері дитини), і дитина жила
+зі своїми законними батьками. До лютого 2016 року заявник мав можливість
+бачитися зі своїм сином два-чотири рази на місяць. Згодом він подав позов
+про надання йому права на спілкування зі своїм сином. Однак у 2020 році,
+після подання законними батьками прохання заборонити контакти між дитиною
+та заявником, національні суди постановили, що режим контактів не повинен бути
+встановлений, вважаючи, що контакти з заявником не відповідають найкращим
+інтересам дитини, оскільки відносини між останнім та законними батьками є
+конфліктними.
+
+У 2021 році заявник подав нову заяву з проханням надати йому право
+на спілкування з дитиною. Крім того, він просив надати право спілкуватися
+в письмовій формі через опікуна ad litem та зобов’язати законних батьків
+регулярно інформувати його про розвиток дитини. Суди спиралися, inter alia,
+на експертну думку клінічного психолога, згідно з якою дитина, яка страждала
+від затримки розвитку, опинилася в центрі трикутника відносин між заявником
+та законними батьками і віддзеркалювала ставлення законних батьків у своїх
+відносинах із заявником. Дитина також була дуже прив’язана до свого законного
+батька, який забезпечував їй емоційну безпеку. Експерт висловив думку, згідно
+з якою в інтересах дитини варто не надавати заявнику права контактувати з нею
+на даний момент, принаймні до вирішення подружньої кризи, яку переживали
+законні батьки. Суд також зазначив, що заявник постійно тиснув на дитину та її
+законних батьків, щоб домогтися своїх прав на спілкування, що поглиблювало
+конфлікти та впливало на сімейну ситуацію, а це створювало занадто велике
+навантаження на дитину, що призвело до формування у неї негативного
+ставлення до заявника. На думку судів, з огляду на це і в найкращих інтересах
+дитини було необхідно врегулювати ситуацію, зокрема за допомогою професійної
+допомоги, до якої заявнику та законним батькам було запропоновано звернутися,
+та стабілізувати психічний стан дитини, маючи на увазі, що заявник, безумовно,
+повинен брати участь у житті свого сина в майбутньому.
+
+13 жовтня 2022 року конституційна скарга, подана заявником, була
+відхилена як очевидно необґрунтована. Конституційний Суд визнав, що висновок
+судів про те, що контакти дитини із заявником не відповідають її найкращим
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="49_segment.md не вказана 140 40 міждержавні організації та органи конфліктними, був ретельно обґрунтований. він зазначив, що якщо ситуація семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «міждержавні організації та органи» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / міждержавні організації та органи).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">45</span>
+            <span class="file-badge">49_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>74% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb-leaf">Міждержавні організації та органи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>конфліктними, був ретельно обґрунтований. Він зазначив, що якщо ситуація</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Міждержавні організації та органи» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Міждержавні організації та органи).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+інтересам, доки відносини між останнім та законними батьками залишаються
+конфліктними, був ретельно обґрунтований. Він зазначив, що якщо ситуація
+покращиться, рішення про відмову у встановленні режиму побачення може бути
+переглянуте з подальшим відновленням спілкування.
+
+Заявник, посилаючись на статтю 8 Конвенції та кілька положень Конвенції
+ООН про права дитини, скаржився на відмову національних судів надати йому
+право на спілкування з сином та право отримувати інформацію про нього.
+
+Оцінка Суду
+
+_Щодо статті 8 Конвенції_
+Для початку Суд зазначив, що заявник та мати дитини перебували
+у стосунках протягом декількох років. З точки зору принаймні заявника, вони
+планували жити разом, і що мати дозволяла йому бачитися з дитиною до лютого
+2016 року. Заявник також достатньо продемонстрував свою зацікавленість
+у дитині. Таким чином, Суд не виключив, що заплановані стосунки заявника
+з його біологічним сином становили «сімейне життя» відповідно до статті 8
+Конвенції. У будь-якому разі, визначення правових відносин між біологічним
+батьком і його дитиною стосувалося важливої частини ідентичності заявника
+і, отже, його «приватного життя» відповідно до пункту 1 статті 8 Конвенції. Таким
+чином, рішення національних судів не визначати його права на контакти
+і відмовляти йому в отриманні інформації про дитину становило втручання в його
+право, принаймні, на повагу до його приватного життя.
+
+ЄСПЛ звернув увагу на той факт, що відповідно до статті 927 Цивільного
+кодексу, особам, які є соціально близькими до дитини, можуть бути надані права
+на контакти, якщо дитина має з ними емоційні стосунки, які не є тимчасовими,
+і якщо очевидно, що відсутність контактів з цими особами може завдати шкоду
+дитині. У ході судового розгляду 2021 року суди дійшли висновку, що ці умови
+не були виконані, і не встановили жодного режиму контактів між заявником і його
+сином. На думку Суду, слід зазначити, що оскаржувані рішення були прийняті
+лише після того, як інші заходи – а саме регулярні контакти без нагляду
+та під наглядом, період відсутності контактів, який мав на меті стабілізувати
+психічний стан дитини, та неодноразові заклики судів до заявника та законних
+батьків дитини звернутися за професійною допомогою та зміцнити свої стосунки
+– виявилися неефективними. Також велике значення мав той факт, що чеські
+суди поставили на перше місце інтереси дитини. Дійсно, їхній висновок про те,
+що було б недоречно змушувати дитину контактувати із заявником проти її волі,
+був зроблений з огляду на нестабільний психологічний стан дитини, її труднощі
+в розумінні напруженої сімейної ситуації, її постійне небажання бачитися
+із заявником та складні відносини між останнім і законними батьками дитини.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="51_segment.md не вказана 140 40 20 міжнародні суди, арбітражі судів. крім того, національні суди ніколи не ставили під сумнів роль біологічного семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «міжнародні суди, арбітражі» (законодавство про зовнішні зносини та зовнішньоекономічні відносини / міждержавні організації та органи / міжнародні суди, арбітражі).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">46</span>
+            <span class="file-badge">51_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">140 40 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про зовнішні зносини та зовнішньоекономічні відносини</span><span class="crumb-sep">›</span><span class="crumb">Міждержавні організації та органи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Міжнародні суди, арбітражі</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>судів. Крім того, національні суди ніколи не ставили під сумнів роль біологічного</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Міжнародні суди, арбітражі» (Законодавство про зовнішні зносини та зовнішньоекономічні відносини / Міждержавні організації та органи / Міжнародні суди, арбітражі).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+Не було нічого, що вказувало б на необґрунтованість висновків національних
+судів. Крім того, національні суди ніколи не ставили під сумнів роль біологічного
+батька в житті свого сина і прямо визнали, що заявнику можуть бути надані права
+на контакти в майбутньому, за умови поліпшення відносин між усіма залученими
+особами. Що стосується процесу прийняття рішень, то відповідні рішення були
+ухвалені після судового розгляду, в якому заявник, за допомогою адвоката, брав
+безпосередню участь і мав можливість викласти всі свої аргументи, маючи
+доступ до всієї відповідної інформації, на яку спиралися суди. Суд першої інстанції
+заслухав не тільки заявника, але й законних батьків дитини та її опікуна ad litem.
+Крім того, при прийнятті рішення він врахував всю сімейну ситуацію і спирався
+на експертний висновок психолога.
+
+ЄСПЛ зазначив, що відмова національних судів надати заявнику право
+на контакти становила серйозне втручання в його права. У разі встановлення
+наявності сімейних відносин Держава повинна, як правило, діяти таким чином,
+щоб ці зв&#x27;язки могли розвиватися. Суд був переконаний, що національні суди
+вжили адекватних заходів у цьому сенсі та навели достатні підстави для свого
+рішення не встановлювати режим контактів, а також що процес був
+справедливим і забезпечував належну повагу до інтересів, захищених статтею 8
+Конвенції. Отже, Держава виконала свої позитивні зобов&#x27;язання та забезпечила
+справедливий баланс між інтересами всіх учасників провадження.
+
+Суд визнав аспект скарги заявника щодо відмови судів надати заявнику
+інформацію про дитину прийнятним. Він визнав з самого початку, що таке право
+належить насамперед тим, хто несе батьківську відповідальність і покликаний
+приймати рішення про виховання дитини або її медичне лікування. Проте раніше
+він дійшов висновку, що для біологічного батька чи матері, чия дитина
+виховувалася законними батьками, питання отримання інформації про стан
+дитини стосувалося важливої частини його чи її ідентичності. У питаннях права
+на контакти зобов’язання, які накладає стаття 8, мали тлумачитися з урахуванням
+Конвенції Організації Об’єднаних Націй про права дитини та Конвенції Ради
+Європи про контакт з дітьми. Зі статті 8, розкритої у світлі статей 2 (а) (iii) та пункту
+3 статті 4 Конвенції про контакт з дітьми, випливало, що право на отримання
+інформації про дитину є автономною формою контакту, яка може бути надана
+незалежно від права на особистий контакт, особливо якщо підтримання контакту
+з батьками не відповідає найкращим інтересам дитини. Отже, розглядаючи будьяку заяву, в якій біологічний батько або мати вимагали права на інформацію
+стосовно своєї дитини, національні органи влади мали дослідити конкретні
+обставини справи, щоб вирішити, чи надання такої інформації відповідатиме
+найкращим інтересам дитини чи біологічного батька або матері слід вважати
+пріоритетними порівняно з інтересами законних батьків.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="53_segment.md не вказана 240 10 адміністративні правопорушення, адміністративна відповідальність на інформацію про дитину було в першу чергу питанням батьківської семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «адміністративні правопорушення, адміністративна відповідальність» (законодавство про адміністративні правопорушення / адміністративні правопорушення, адміністративна відповідальність).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">47</span>
+            <span class="file-badge">53_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>78% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">240 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про адміністративні правопорушення</span><span class="crumb-sep">›</span><span class="crumb-leaf">Адміністративні правопорушення, адміністративна відповідальність</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>на інформацію про дитину було в першу чергу питанням батьківської</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Адміністративні правопорушення, адміністративна відповідальність» (Законодавство про адміністративні правопорушення / Адміністративні правопорушення, адміністративна відповідальність).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+З оскаржуваних рішень випливало, що національні суди вважали, що право
+на інформацію про дитину було в першу чергу питанням батьківської
+відповідальності, якої заявник не мав. Апеляційний суд потім вирішив,
+що за таких обставин заявнику могло бути надано право на інформацію лише
+в рамках визначення його прав на особистий контакт відповідно до статті 927
+Цивільного кодексу. Проте подальше обґрунтування, прийняте національними
+судами, підтверджувало, що за чеським законодавством право на інформацію
+про дитину також може бути надане як самостійне право, незалежне
+від особистого контакту, що відповідає вимозі індивідуального підходу згідно
+зі статтею 8 Конвенції. Дійсно, було розглянуто питання, чи дійсно надання
+інформації заявнику відповідатиме найкращим інтересам дитини. У цьому зв&#x27;язку
+суди надали значення тому, що законні батьки були проти надання будь-яких
+відомостей стосовно дитини заявнику, поведінка якого, на їхню думку, межувала
+зі стеженням, а також постійному негативному ставленню дитини до заявника
+та відсутності будь-яких позитивних зв&#x27;язків з ним. У конкретних обставинах
+справи право на контакти та право на інформацію були тісно пов’язані між собою,
+тому національні суди могли обґрунтовано спиратися на ті самі факти
+при ухваленні рішень щодо них. З їхніх рішень було очевидно, що вони послідовно
+враховували необхідність збереження психологічного стану дитини та емоційної
+безпеки, яку забезпечували її законні батьки. У цьому зв’язку, хоча право
+на інформацію про дитину має фундаментальне значення для батьків,
+які не мають фізичного або безпосереднього контакту зі своєю дитиною, можуть
+бути ситуації, в яких відмова у цьому праві краще відповідає найкращим
+інтересам дитини.
+
+ЄСПЛ був переконаний, що національні суди конкретно розглянули право
+заявника на інформацію щодо свого сина і надали значення як питанню про те,
+чи вплине зобов&#x27;язання надати йому такі відомості на право законних батьків
+мати повагу до їхнього сімейного життя, так і найкращим інтересам дитини.
+Посилаючись на свій висновок щодо відмови судів надати заявнику право
+на контакти, ЄСПЛ вважав, що оскаржувані рішення справедливо збалансували
+суперечливі інтереси та відповідали найкращим інтересам дитини. Суд також
+зазначив, що, як видається, заявник нещодавно отримав доступ до відомостей
+про дитину через посередництво матері. З огляду на ці міркування та зважаючи
+на допоміжну роль Суду і свободу розсуду Держави, він дійшов висновку,
+що національні органи навели достатні підстави для відмови зобов’язати
+законних батьків дитини надавати заявнику інформацію про дитину, і що процес
+прийняття рішення забезпечив заявнику необхідний захист його інтересів,
+гарантованих статтею 8 Конвенції.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="55_segment.md не вказана 30 60 зобов&#x27;язальне право відсутність порушення статті 8 конвенції (право на повагу до приватного семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «зобов&#x27;язальне право» (цивільне законодавство / зобов&#x27;язальне право).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">48</span>
+            <span class="file-badge">55_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>78% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">30 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Цивільне законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Зобов&#x27;язальне право</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Відсутність порушення статті 8 Конвенції (право на повагу до приватного</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Зобов&#x27;язальне право» (Цивільне законодавство / Зобов&#x27;язальне право).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+Висновок
+
+Відсутність порушення статті 8 Конвенції (право на повагу до приватного
+і сімейного життя).
+
+Рішення в цій справі ухвалене Палатою 6 листопада 2025 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="57_segment.md не вказана 10 40 70 забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів [iskra doo beograd v. serbia](https://hudoc.echr.coe.int/?i=001-246022) [(№ 53002/21)](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2253002/21%22]}) семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів» (основи суспільного ладу / законодавство з питань прав людини та громадянина / забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">49</span>
+            <span class="file-badge">57_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40 70</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство з питань прав людини та громадянина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>[ISKRA DOO BEOGRAD v. Serbia](https://hudoc.echr.coe.int/?i=001-246022) [(№ 53002/21)](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2253002/21%22]})</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів» (Основи суспільного ладу / Законодавство з питань прав людини та громадянина / Забезпечення захисту законних прав та інтересів осіб, які потерпіли від злочинів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+СТАТТЯ 1 ПЕРШОГО ПРОТОКОЛУ ДО КОНВЕНЦІЇ (ЗАХИСТ ВЛАСНОСТІ)
+
+[ISKRA DOO BEOGRAD v. Serbia](https://hudoc.echr.coe.int/?i=001-246022) [(№ 53002/21)](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2253002/21%22]})
+
+Обставини справи
+
+Заявник, Iskra DOO Beograd, є товариством з обмеженою відповідальністю,
+що розташоване в Белграді.
+
+8 травня 2015 року в контексті створення проєкту Белградської набережної
+(Beograd na vodi) огорожу, встановлену компанією-заявником у 1964 році,
+було знесено без попереднього повідомлення. Земельна ділянка, на якій була
+встановлена огорожа, використовувалася компанією-заявником безперервно
+з 1964 року.
+
+8 червня 2015 року заявник подав цивільний позов про захист права
+власності проти двох товариств з обмеженою відповідальністю, які брали участь
+у знесенні. 24 червня 2015 року працівники однієї з цих компаній зайняли частину
+землі, що використовувалася компанією-заявником, і розпочали будівництво
+власної тимчасової огорожі. Суд першої інстанції встановив, що мало місце
+втручання у право компанії-заявника на мирне користування своїм майном.
+Однак 10 квітня 2019 року апеляційний суд постановив, що повернення землі
+компанії-заявнику суперечитиме Указу про просторове планування Белградської
+набережної, в якому земля була призначена для громадського користування.
+Оскільки відновлення права власності до його попереднього стану суперечило
+б встановленим суспільним інтересам і залежало не лише від волі компанійвідповідачів, таке відновлення було юридично неможливим. 3 грудня 2020 року
+Конституційний Суд відхилив апеляцію компанії-заявника, постановивши,
+що гарантії справедливого судового розгляду були дотримані та що не було
+порушення прав власності компанії-заявника.
+
+Посилаючись на статтю 6, статтю 13 Конвенції та статтю 1 Першого
+протоколу, компанія-заявник скаржиться на руйнування огорожі та вилучення з її
+володіння землі, яку вона використовувала.
+
+Оцінка Суду
+
+_Щодо застосовності статті 1 Першого протоколу_
+
+_а) Відповідальність Держави_
+ЄСПЛ насамперед зауважив, що провадження, які стосуються цивільноправового спору між приватними особами, самі по собі не тягнуть за собою
+відповідальності Держави за статтею 1 Першого протоколу до Конвенції.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="59_segment.md не вказана 50 70 60 оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку норми містять істотні елементи публічного права і передбачають участь держави семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку» (трудове законодавство / оплата праці / оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">50</span>
+            <span class="file-badge">59_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">50 70 60</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Трудове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Оплата праці</span><span class="crumb-sep">›</span><span class="crumb-leaf">Оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>норми містять істотні елементи публічного права і передбачають участь Держави</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку» (Трудове законодавство / Оплата праці / Оплата роботи в надурочний час, при виконанні робіт різної кваліфікації, у святкові і неробочі дні, у нічний час, за незакінченим відрядним нарядом, при невиконанні норми виробітку, часу простою та браку).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+Натомість у випадках, коли предмет спору та застосовані матеріально-правові
+норми містять істотні елементи публічного права і передбачають участь Держави
+у її регулятивній функції або коли судові рішення у провадженнях між приватними
+особами переслідують публічний інтерес, Суд визнавав застосовність статті 1
+Першого протоколу.
+
+Звертаючись до обставин цієї справи Суд зазначив, що сторони
+не заперечують того, що обставини справи були пов’язані з реалізацією
+масштабного інвестиційного проєкту, який уряд Сербії визначив як стратегічний
+пріоритет, що має особливе значення для Республіки Сербія. З метою сприяння
+реалізації цього проєкту Держава-відповідач також ухвалила спеціальне
+законодавство та підзаконні акти і заснувала компанію Beograd na vodi DOO,
+метою чого було здійснення повного контролю за виконанням. Крім того,
+очевидно, що уряд з моменту створення компанії зберігав повний контроль за її
+діяльністю. За таких обставин ЄСПЛ зробив висновок, що компанія Beograd na
+vodi DOO не мала «достатньої інституційної та операційної незалежності
+від Держави», а отже, її дії можуть бути розцінені як такі, що здійснювались
+від імені Держави. Також не заперечувалось урядом і було встановлено
+національними судами, що демонтаж огорожі компанії-заявника та подальше
+вилучення земельної ділянки з володіння були здійснені компанією Beograd na
+vodi DOO через посередника. Нарешті, відмовляючи у задоволенні вимоги
+компанії-заявника про поновлення володіння, національні суди прямо послалися
+на публічний інтерес, визначений органами держави-відповідача.
+
+З огляду на наведене, ЄСПЛ дійшов висновку, що події, на які скаржиться
+заявник, та пов’язані з ними провадження у цій справі не можуть розглядатися
+як вирішення спору між приватними особами у сфері приватного права. У цьому
+контексті стаття 1 Першого протоколу до Конвенції була застосовною.
+
+_(b) Чи мала компанія-заявник «майно» у значенні статті 1 Першого протоколу_
+_до Конвенції_
+
+У контексті справи Суд нагадав, що поняття «майно», використане в першій
+частині статті 1 Першого протоколу, має автономне значення, яке не обмежується
+правом власності на матеріальні речі та є незалежним від формальної
+кваліфікації у національному праві: певні інші права та інтереси, що становлять
+активи, також можуть розглядатися як «майнові права» і, відповідно, як «майно»
+для цілей цього положення.
+
+ЄСПЛ зауважив, що той факт, що національне законодавство Держави
+не визнає певний інтерес «правом» або навіть «правом власності», не обов’язково
+перешкоджає тому, щоб за певних обставин такий інтерес визнавався «майном»
+у розумінні статті 1 Першого протоколу.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="61_segment.md не вказана 10260 10 громадські організації та демонтована 8 травня 2015 року, перебувала у власності компанії-заявника, семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «громадські організації» (основи суспільного ладу / законодавство про об&#x27;єднання громадян / громадські організації).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">51</span>
+            <span class="file-badge">61_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10260 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство про об&#x27;єднання громадян</span><span class="crumb-sep">›</span><span class="crumb-leaf">Громадські організації</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>та демонтована 8 травня 2015 року, перебувала у власності компанії-заявника,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Громадські організації» (Основи суспільного ладу / Законодавство про об&#x27;єднання громадян / Громадські організації).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+Сторони у справі не заперечували, що огорожа, зведена у 1964 році
+та демонтована 8 травня 2015 року, перебувала у власності компанії-заявника,
+а спірна земельна ділянка використовувалась компанією-заявником
+для здійснення своєї господарської діяльності протягом десятиліть
+до оскаржуваних подій.
+
+Так, Суд взяв до уваги факт того, що відповідно до національного
+законодавства компанія-заявник не була власником спірної земельної ділянки.
+Водночас Суд зазначив, що на момент свого заснування компанія-заявник
+перебувала у державній власності, а згодом у комунальній власності, аж до її
+приватизації у 2010 році. За таких обставин Суд дійшов висновку, що національні
+органи влади не лише толерували існування компанії-заявника на спірній
+земельній ділянці, а й фактично спочатку розмістили її там.
+
+Відтак Суд виснував, що за конкретних обставин цієї справи тривалий період
+часу (а саме безперервне та послідовне визнання Державою фактичного
+володіння компанією-заявником спірною земельною ділянкою протягом
+щонайменше п’ятдесяти років) породив майновий інтерес, який був достатньо
+сформованим і вагомим для того, щоб бути «майном» у розумінні статті 1 Першого
+протоколу до Конвенції.
+
+_Щодо порушення статті 1 Першого протоколу_
+ЄСПЛ зазначив, що самі ж національні суди встановили наявність втручання
+у право компанії-заявника на мирне володіння її майном, а відтак Суд не вбачав
+підстав не погодитися з цим висновком.
+
+Суд також повторив, що для того, щоб втручання було законним, воно
+повинно супроводжуватися достатніми процесуальними гарантіями, зокрема,
+можливістю ефективно оскаржити відповідне втручання. У контексті обставин
+справи Суд зазначив, що знесення повинно було бути здійснене відповідно
+до чітко визначеної процедури, проте компанії-заявнику було відмовлено
+в достатніх процесуальних гарантіях захисту від свавілля.
+
+Під час розгляду справи ЄСПЛ визнав наявність спеціального
+законодавства, ухваленого для реалізації проєкту «Belgrade Waterfront», і взяв
+до уваги аргумент Уряду про те, що компанія-заявник не мала права
+на компенсацію відповідно до положень цього законодавства. Однак саме по собі
+існування такого спеціального законодавства за своєю природою не може
+нівелювати право компанії-заявника на належну правову процедуру
+у разі знесення. Більше того, це спеціальне законодавство передбачає
+застосування загального законодавства у питаннях, які ним прямо
+не врегульовані.
+
+Наведені міркування були достатніми для того, щоб Суд дійшов висновку,
+що втручання, про яке йдеться у справі, а саме знесення огорожі компанії
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="63_segment.md не вказана 40 50 вилучення (викуп) землі користувалася, не було законним. за таких обставин єспл зробив висновок, семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «вилучення (викуп) землі» (природні ресурси. охорона природи / вилучення (викуп) землі).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">52</span>
+            <span class="file-badge">63_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">40 50</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Природні ресурси. Охорона природи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Вилучення (викуп) землі</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>користувалася, не було законним. За таких обставин ЄСПЛ зробив висновок,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Вилучення (викуп) землі» (Природні ресурси. Охорона природи / Вилучення (викуп) землі).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+заявника та вилучення з її володіння земельної ділянки, якою вона
+користувалася, не було законним. За таких обставин ЄСПЛ зробив висновок,
+що не було потреби досліджувати, чи переслідувало втручання легітимну мету
+та чи було воно пропорційним.
+
+Відповідно, мало місце порушення статті 1 Першого протоколу до Конвенції.
+Щодо розгляду скарги за іншими статтями Конвенції, ЄСПЛ зазначив, що основні
+правові питання, порушені в цій заяві, було розглянуто, а відтак немає потреби
+виносити окреме рішення щодо прийнятності та суті скарги за іншими статтями.
+
+Висновок
+
+Порушення статті 1 Першого протоколу до Конвенції (захист власності)
+
+Рішення в цій справі ухвалене Палатою 18 листопада 2025 року й набуде статусу
+остаточного відповідно до пункту 2 статті 44 Конвенції.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="65_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина обставини справи мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">53</span>
+            <span class="file-badge">65_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Обставини справи</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+ZVONAR v. Ukraine [(№ 20532/16)](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2220532/16%22]})
+
+Обставини справи
+
+Справа стосується позбавлення заявника, за результатами позову,
+поданого прокурором, земельної ділянки, яку він придбав у органів місцевої
+влади. Заявник з лютого 2009 року почав орендувати земельну ділянку площею
+0,42 га у органів місцевої влади. Ця ділянка була розташована в районі
+гірськолижного курорту Драгобрат поблизу села Ясіня. Вбачається, що заявник
+збудував там канатну транспортну систему та використовував її для туризму.
+
+17 листопада 2010 року та 11 січня 2011 року Рахівська районна державна
+адміністрація Закарпатської області (далі – районна адміністрація) ухвалила
+рішення, якими дозволила заявникові придбати зазначену земельну ділянку
+у приватну власність. У цих рішеннях зазначалося, що відповідна ділянка
+розташована за межами населених пунктів і має несільськогосподарське
+призначення. Згодом 14 січня 2011 року заявник і районна адміністрація уклали
+договір купівлі-продажу. Заявник сплатив 460 056 українських гривень (UAH),
+що на той час становило приблизно 43 850 євро (EUR). Згодом заявник отримав
+свідоцтва про право власності на земельні ділянки (які були поділені на кілька
+окремих), у яких зазначалося, що цільове призначення землі — «для будівництва
+та обслуговування рекреаційних об’єктів».
+
+У липні 2012 року, за зверненням місцевого прокурора, Державна інспекція
+сільського господарства провела перевірку виділення зазначеної земельної
+ділянки. Посилаючись на пункт 3 статті 122 Земельного кодексу, інспекція дійшла
+висновку, що районна адміністрація не мала повноважень розпоряджатися цією
+землею, оскільки місцеві державні адміністрації мають право розпоряджатися
+лише земельними ділянками за межами населених пунктів, призначеними
+для сільськогосподарського використання або водного господарства, а також
+для будівництва об’єктів інфраструктури місцевої громади (наприклад, шкіл
+чи лікарень).
+
+На підставі цього висновку прокурор звернувся до суду з позовом
+до заявника, вимагаючи скасування рішень районної адміністрації від 2010
+та 2011 років, а також визнання недійсними договору купівлі-продажу і права
+власності заявника. Прокурор діяв в інтересах Закарпатської обласної державної
+адміністрації (далі – обласна адміністрація) як органу, який, за твердженням
+прокурора, був уповноважений розпоряджатися відповідною землею, а також
+Ясинської сільської ради як органу, який мав би отримати всі доходи
+від відчуження цієї землі. Під час провадження обидва ці органи заперечували
+проти позову прокурора, стверджуючи, що районна адміністрація діяла в межах
+своїх повноважень, а земельна ділянка була відчужена законно.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="67_segment.md не вказана 20130 10 валютні фонди і рахунки повністю задовольнив позов прокурора. суд погодився з висновками державної семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «валютні фонди і рахунки» (бюджетно-фінансове законодавство / валютне законодавство / валютні фонди і рахунки).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">54</span>
+            <span class="file-badge">67_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20130 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb">Валютне законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Валютні фонди і рахунки</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>повністю задовольнив позов прокурора. Суд погодився з висновками Державної</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Валютні фонди і рахунки» (Бюджетно-фінансове законодавство / Валютне законодавство / Валютні фонди і рахунки).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+18 грудня 2013 року Рахівський районний суд Закарпатської області
+повністю задовольнив позов прокурора. Суд погодився з висновками Державної
+інспекції сільського господарства встановивши, що районна адміністрація діяла
+з перевищенням своїх повноважень (ultra vires), продавши земельну ділянку
+заявникові. Суд також зазначив, що така ділянка може бути витребувана
+у заявника відповідно до статті 387 Цивільного кодексу, згідно з якою майно,
+що вибуло з володіння власника «без належної правової підстави», може бути
+витребуване навіть у добросовісного набувача.
+
+20 травня 2014 року Закарпатський обласний апеляційний суд (далі –
+апеляційний суд) скасував це рішення. Суд дійшов висновку, що, заперечуючи
+проти позову прокурора, обласна адміністрація фактично схвалила відчуження
+земельної ділянки; отже, відповідно до статті 241 Цивільного кодексу, правочин,
+укладений представником із перевищенням повноважень, але згодом схвалений
+особою, яку він представляв, може вважатися дійсним. Це рішення було
+скасовано Вищим спеціалізованим судом України з розгляду цивільних
+і кримінальних справ (далі – ВССУ), а справу було передано до апеляційного суду
+на новий розгляд. ВССУ зазначив, що суд апеляційної інстанції не врахував
+належним чином той факт, що земельні ділянки рекреаційного призначення
+можуть передаватися у власність виключно Кабінетом Міністрів України.
+
+17 березня 2015 року апеляційний суд підтримав висновки рішення
+місцевого суду від 18 грудня 2013 року, однак змінив його мотивувальну частину
+відповідно до позиції ВССУ. Суд встановив, що оскільки земельна ділянка мала
+рекреаційне призначення, розпоряджатися нею міг лише Кабінет Міністрів
+України, а не районна чи обласна адміністрації, однак це не змінювало загального
+висновку про те, що ділянка була передана заявникові незаконно.
+7 жовтня 2015 року ВССУ відхилив касаційну скаргу заявника та залишив у силі
+вищезазначене рішення.
+
+У своїх поданнях до національних судів заявник, серед іншого, стверджував,
+що визнання договору купівлі-продажу недійсним не принесе користі Державі,
+а завдасть їй фінансових збитків, оскільки Держава буде зобов’язана
+відшкодувати йому кошти, сплачені за земельну ділянку. Водночас заявник
+жодного разу під час національного провадження прямо не порушував питання
+про застосування до його справи норм щодо недійсності правочинів, відповідно
+до яких сторони недійсного договору мають бути приведені у первісний стан,
+що означало б обов’язок відшкодувати заявникові кошти після витребування
+у нього земельної ділянки.
+
+Оцінка Суду
+
+Загальні принципи щодо втручання у право на мирне володіння майном були
+[узагальнені, зокрема, у справі Kryvenkyy v. Ukraine (no. 43768/07, § 42,](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2243768/07%22]})
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="69_segment.md не вказана 20170 акції, облігації, векселі, інші цінні папери. дивіденди і здійсненим в інтересах суспільства, а також чи переслідувало воно легітимну семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «акції, облігації, векселі, інші цінні папери. дивіденди» (бюджетно-фінансове законодавство / акції, облігації, векселі, інші цінні папери. дивіденди).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">55</span>
+            <span class="file-badge">69_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>70% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">20170</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Бюджетно-фінансове законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Акції, облігації, векселі, інші цінні папери. Дивіденди</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>і здійсненим в інтересах суспільства, а також чи переслідувало воно легітимну</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Акції, облігації, векселі, інші цінні папери. Дивіденди» (Бюджетно-фінансове законодавство / Акції, облігації, векселі, інші цінні папери. Дивіденди).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+16 лютого 2017). Зокрема, Суд надав оцінку, чи було таке втручання законним
+і здійсненим в інтересах суспільства, а також чи переслідувало воно легітимну
+мету із застосуванням засобів, розумно пропорційних меті, яку прагнули досягти.
+
+Суд також зазначає, що доводи, наведені Урядом щодо мети,
+яка переслідувалася шляхом позбавлення заявника спірної земельної ділянки,
+мали доволі загальний характер. Втім, Суд схиляється до висновку, що таке
+позбавлення майна було спрямоване на забезпечення поваги до принципу
+верховенства права і, таким чином, здійснювалося в інтересах суспільства.
+
+Умови компенсації, передбачені відповідним законодавством, є суттєвими
+для оцінки того, чи відповідає оскаржуваний захід вимозі справедливого балансу
+і, зокрема, чи не покладає він непропорційний тягар на заінтересованих осіб.
+У цьому зв’язку вилучення майна без виплати суми, пропорційної його вартості,
+зазвичай становитиме непропорційне втручання, тоді як повна відсутність
+компенсації може вважатися виправданою відповідно до статті 1 Протоколу
+першого лише за виняткових обставин (див. Jahn and Others v. Germany [GC],
+[no. 46720/99, 72203/01 та 72552/01, § 94, ECHR 2005-VI).](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2246720/99%22]})
+
+Суд зауважив, що у цій справі заявник придбав спірну земельну ділянку
+за договором купівлі-продажу, укладеним з органом місцевої влади, сплативши
+суму, яку сторони вільно погодили між собою. За таких обставин цей орган
+місцевої влади діяв так само, як і будь-яка інша приватна сторона за цивільним
+договором, а його дії у цьому аспекті, відповідно, регулювалися нормами
+цивільного права, зокрема щодо наслідків визнання договору купівлі-продажу
+недійсним та можливості отримання компенсації.
+
+Виходячи з цього Суд зазначив, зокрема на підставі зауважень Уряду,
+що у частині компенсації релевантними могли бути кілька положень Цивільного
+кодексу України.
+
+Що стосується компенсаційного механізму, встановленого статтею 1173
+Цивільного кодексу (відшкодування шкоди, завданої незаконними діями органів
+державної влади), на яку посилався Уряд, Суд не переконаний у його
+застосовності у цій справі, так само як і є незрозумілим, який саме вид
+компенсації міг бути присуджений на цій підставі. У будь-якому разі Суд зазначив,
+що він уже відхилив заперечення Уряду, засноване на статті 1173, у справі Drozdyk
+[and Mikula v. Ukraine (no. 27849/15 та 33358/15, §§ 26–33, 24 жовтня 2024). ЄСПЛ](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2227849/15%22]})
+не вбачав підстав відступати від цього висновку у цій справі.
+
+Що стосується посилання Уряду на статтю 216 Цивільного кодексу, Суд
+зазначив, що це положення встановлює правові наслідки недійсності правочину.
+Зокрема, недійсний правочин не створює правових наслідків, окрім тих,
+що пов’язані з його недійсністю. У разі визнання правочину недійсним кожна
+зі сторін зобов’язана повернути іншій стороні в натурі все отримане на виконання
+цього правочину або, якщо це неможливо, відшкодувати вартість отриманого
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="71_segment.md не вказана 130 50 30 надзвичайні ситуації природного та техногенного характеру (крім пожеж) купівлі-продажу, зокрема стаття 661 цивільного кодексу передбачає: якщо семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «надзвичайні ситуації природного та техногенного характеру (крім пожеж)» (законодавство про національну безпеку та правопорядок / надзвичайні заходи / надзвичайні ситуації природного та техногенного характеру (крім пожеж)).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">56</span>
+            <span class="file-badge">71_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>69% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">130 50 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про національну безпеку та правопорядок</span><span class="crumb-sep">›</span><span class="crumb">Надзвичайні заходи</span><span class="crumb-sep">›</span><span class="crumb-leaf">Надзвичайні ситуації природного та техногенного характеру (крім пожеж)</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>купівлі-продажу, зокрема стаття 661 Цивільного кодексу передбачає: якщо</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Надзвичайні ситуації природного та техногенного характеру (крім пожеж)» (Законодавство про національну безпеку та правопорядок / Надзвичайні заходи / Надзвичайні ситуації природного та техногенного характеру (крім пожеж)).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+за цінами які існували на той момент. Крім того, Суд зазначив, щодо договорів
+купівлі-продажу, зокрема стаття 661 Цивільного кодексу передбачає: якщо
+проданий товар вилучається у покупця на користь третьої особи на підставі
+судового рішення з підстав, що виникли до продажу товару, покупець має право
+на відшкодування збитків від продавця за умови, що покупець не знав і не міг
+знати про існування таких підстав.
+
+Виходячи з цього Суд зазначив, що у національних провадженнях заявник
+стверджував, що Держава мала б відшкодувати йому кошти, сплачені за земельну
+ділянку. Однак, вбачається, що він навів цей аргумент у контексті негативних
+(фінансових) наслідків, яких зазнала б Держава у разі визнання його права
+власності недійсним. Водночас таке посилання свідчить про те, що заявник
+усвідомлював можливість відшкодування, але не подав відповідної вимоги
+до національних судів ані у провадженні, порушеному проти нього, ані в окремому
+провадженні. Жодного пояснення такої бездіяльності заявник у своїх
+
+зауваженнях не надав.
+
+Суд зауважив, що хоча Уряд не навів прикладів національної судової
+практики на підтвердження ефективності засобу захисту, передбаченого статтею
+216 Цивільного кодексу, ЄСПЛ уже розглядав справи, в яких це положення
+застосовувалося на користь заінтересованої особи (див. Tverdokhlebova
+[v. Ukraine, no. 15830/16, §§ 11 і 40, 16 січня 2025, а також, з огляду на фактичні](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2215830/16%22]})
+[обставини (див. Guminskyy v. Ukraine [Комітет], no. 7210/15, § 8, 11 вересня 2025).](https://hudoc.echr.coe.int/eng#{%22appno%22:[%227210/15%22]})
+Крім того, сам заявник не навів жодних доводів для заперечення ефективності
+цього механізму. Суд також зазначив, що хоча певна форма «автоматичного»
+розгляду питань компенсації в межах проваджень щодо визнання права
+власності недійсним, подібних до цієї справи, могла б бути бажаною, загалом Суд
+не мав підстав сумніватися в ефективності та доступності відповідного
+механізму.
+
+З огляду на викладене Суд дійшов висновку, що заявник мав можливість
+вимагати компенсації щодо повернутої земельної ділянки і що він не навів жодних
+аргументів, які б свідчили про те, що така компенсація, якби вона була належним
+чином заявлена, була б неадекватною (див. Ibrahimbeyov and Others, зазначену
+вище, §§ 56 і 60). За цих обставин, беручи до уваги те, що визнання недійсним
+права заявника на спірну земельну ділянку було необхідним для відновлення
+законності та що на відповідний момент заявник мав можливість вимагати
+компенсації вартості цієї земельної ділянки, Суд вважав, що втручання у його
+права за статтею 1 Протоколу першого не порушило вимоги цієї статті
+щодо дотримання справедливого балансу між конвенційними правами особи
+та інтересами суспільства.
+Суд встановив, що вилучення земельної ділянки у заявника становило
+втручання у його право власності, однак воно було законним. Національні суди
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="73_segment.md не вказана 10 10 конституція оскільки районна адміністрація діяла з перевищенням повноважень, семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «конституція» (основи суспільного ладу / конституція).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">57</span>
+            <span class="file-badge">73_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>98% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Конституція</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>оскільки районна адміністрація діяла з перевищенням повноважень,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Конституція» (Основи суспільного ладу / Конституція).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+правомірно визнали недійсним правовстановлюючий документ заявника,
+оскільки районна адміністрація діяла з перевищенням повноважень,
+розпорядившись землею, яка відносилась до компетенції Кабінету Міністрів
+України. Суд погодився, що такі дії переслідували легітимну мету в суспільних
+інтересах — відновлення законності та повернення активів, що вибули
+з державної власності з порушенням встановленої процедури.
+
+Окрім того ключовим питанням у справі було те, чи дотримано справедливий
+баланс між інтересами суспільства та правами заявника, і чи не поклало
+вилучення майна на заявника «надмірний індивідуальний тягар». Суд зазначив,
+що за загальним правилом вилучення майна без компенсації є непропорційним
+заходом. Однак у цій справі ЄСПЛ врахував наступне: заявник мав законодавчо
+закріплену можливість вимагати відшкодування сплачених коштів та збитків
+на підставі статті 216 Цивільного кодексу України (правові наслідки недійсності
+правочину) та статті 661 ЦК України.
+
+Також заявник був освідомлений щодо можливості вимагати повернення
+коштів, проте не подав відповідного позову ні в межах справи про витребування
+землі, ні в окремому провадженні (див. Ibrahimbeyov and Others v. Azerbaijan,
+[no. 32380/13, §§ 56 та 60). Його стратегія захисту була спрямована виключно](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2232380/13%22]})
+на збереження права на землю, а не на отримання компенсації. Оскільки
+механізм компенсації був доступним і ефективним, а заявник ним не скористався,
+Держава не може нести відповідальність за відсутність відшкодування.
+
+Висновок
+
+Відсутність порушення статті 1 Першого протоколу до Конвенції (захист
+власності).
+
+Рішення в цій справі ухвалене Комітетом 20 листопада 2025 року і є остаточним.
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="75_segment.md не вказана 250 10 20 20 розділ ii. кримінальні правопорушення проти життя та здоров&#x27;я особи стаття 3 конвенції (заборона катування) семантичний мапінг з урахуванням юрисдикції єспл. обрано рубрику «злочини проти державної і колективної власності та індивідуальної власності громадян» (кримінальне законодавство / кримінальне законодавство / особлива частина / злочини проти державної і колективної власності та індивідуальної власності громадян).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">58</span>
+            <span class="file-badge">75_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>71% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">250 10 20 20</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Кримінальне законодавство</span><span class="crumb-sep">›</span><span class="crumb">Кримінальний кодекс України</span><span class="crumb-sep">›</span><span class="crumb">Особлива частина</span><span class="crumb-sep">›</span><span class="crumb-leaf">Розділ II. Кримінальні правопорушення проти життя та здоров&#x27;я особи</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Стаття 3 Конвенції (заборона катування)</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції ЄСПЛ. Обрано рубрику «Злочини проти державної і колективної власності та індивідуальної власності громадян» (Кримінальне законодавство / Кримінальне законодавство / Особлива частина / Злочини проти державної і колективної власності та індивідуальної власності громадян).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+РІШЕННЯ ЄСПЛ ПРОТИ УКРАЇНИ
+
+Стаття 3 Конвенції (заборона катування)
+[BABENKO v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-246132) [(№ 40453/16):](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2240453/16%22]}) непроведення ефективного розслідування
+жорстокого поводження та надмірна тривалість кримінального провадження –
+
+порушення
+[BEZULYA AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-247137) [(№№ 40455/23 та 8 інших заяв – див. перелік](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2240455/23%22]})
+у Додатку): неналежні умови тримання під вартою та відсутність ефективного
+засобу правового захисту у національному законодавстві – порушення
+[LEMESHKO AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-247138) [(№№ 30989/24 та 6 інших заяв – див. перелік](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2230989/24%22]})
+у Додатку): неналежні умови тримання під вартою та відсутність ефективного
+засобу правового захисту у національному законодавстві – порушення
+[KYTSKO AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245828) [(№№ 7937/24 та 7](https://hudoc.echr.coe.int/eng#{%22appno%22:[%227937/24%22]}) інших заяв – див. перелік
+у Додатку): неналежні умови тримання під вартою та відсутність ефективного
+засобу правового захисту у національному законодавстві – порушення
+[ROMANENKO v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245692) [(№ 54825/18): стверджуване жорстоке поводження](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2254825/18%22]})
+із заявником з боку поліції та відсутності ефективного розслідування у зв&#x27;язку
+з цим – відсутність порушення
+
+Стаття 5 Конвенції (право на свободу та особисту недоторканність)
+[MUDRAK AND RASKIN v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-247139) [(№№ 29911/24, 30238/24): надмірна тривалість](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2229911/24%22]})
+тримання під вартою – порушення
+[KRAYNYAK AND GUMENYUK v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245693) [(№ 12971/19): надмірна тривалість тримання](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2212971/19%22]})
+під вартою – порушення
+[NIKOLAYEV v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245698) [(№ 54309/20): відсутність належної медичної допомоги](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2254309/20%22]})
+під час тримання під вартою, надмірна тривалість тримання під вартою –
+
+порушення
+
+Стаття 6 Конвенції (право на справедливий суд)
+[KOZAK AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-246130) [(№№ 54738/13 та 2 інші заяви – див. перелік](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2254738/13%22]})
+у Додатку): недотримання принципу незалежного та безстороннього суду,
+недостатність подальшого судового перегляду під час розгляду справи
+про звільнення суддів за «порушення присяги» – порушення
+[MOTSNYY AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-247140) [(№№ 12164/24 та 10 інших заяв – див. перелік](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2212164/24%22]})
+у Додатку): надмірна тривалість кримінального провадження та відсутність
+ефективного засобу правового захисту у національному законодавстві –
+
+порушення
+[BASARI, TOV v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-246025) [(№ 78121/16): надмірна тривалість провадження;](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2278121/16%22]})
+застосування додаткового заходу забезпечення позову, що поклало
+на підприємство-заявника надмірний тягар – порушення
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="77_segment.md не вказана 10 40 законодавство з питань прав людини та громадянина провадження та відсутність ефективного засобу правового захисту мапінг за юрисдикцією: збігів за ключовими словами не знайдено">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">59</span>
+            <span class="file-badge">77_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>50% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10 40</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb-leaf">Законодавство з питань прав людини та громадянина</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>провадження та відсутність ефективного засобу правового захисту</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Мапінг за юрисдикцією: збігів за ключовими словами не знайдено</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### Огляд рішень Європейського суду з прав людини
+
+[IVCHENKO v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245829) [(№ 10095/24):](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2210095/24%22]}) надмірна тривалість кримінального
+провадження та відсутність ефективного засобу правового захисту
+у національному законодавстві – порушення
+[SEMENOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245817) [(№№ 9200/20](https://hudoc.echr.coe.int/eng#{%22appno%22:[%229200/20%22]}) та 10 інших заяв – див. перелік
+у Додатку): надмірна тривалість провадження та відсутність ефективного засобу
+правового захисту у національному законодавстві – порушення
+[SHTEFAN AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245830) [(№№ 11922/24 та 12 інших заяв – див. перелік](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2211922/24%22]})
+у Додатку): надмірна тривалість кримінального провадження та відсутність
+ефективного засобу правового захисту у національному законодавстві –
+
+порушення
+[SOKOLOV AND OTHERS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245815) [(№№ 71897/17](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2271897/17%22]}) та 8 інших заяв – див. перелік
+у Додатку): відмова в доступі до судів вищих інстанцій – порушення
+[PANKRATYEV v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245694) [(№ 36459/19): надмірна тривалість кримінального](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2236459/19%22]})
+провадження та відсутність ефективного засобу правового захисту
+у національному законодавстві – порушення
+
+Стаття 8 Конвенції (право на повагу до приватного і сімейного життя)
+[GUYVAN v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245689) [(№ 46704/16): обробка даних зі службового мобільного](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2246704/16%22]})
+телефону заявника його роботодавцем у контексті внутрішнього розслідування
+та відмова роботодавця повідомити його про зібрані таким чином дані –
+
+порушення
+
+Стаття 1 Першого протоколу до Конвенції (захист власності)
+[LINGYS AND SHPAKOVSKYY v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-246131) [(№№ 61463/15, 31516/16): накладення](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2261463/15%22]})
+стягнень у вигляді штрафів і конфіскації усієї суми грошових коштів,
+що перевищила дозволений ліміт, внаслідок недекларування її митним органом –
+
+порушення
+[BILOUS v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245818) [(№ 28541/20): позбавлення права власності на земельні ділянки](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2228541/20%22]})
+без компенсації– порушення
+[SIVKA v. Ukraine](https://hudoc.echr.coe.int/ukr?i=001-245811) [(№ 46247/15): стягнення пенсійних сум, виплачених за схемою](https://hudoc.echr.coe.int/eng#{%22appno%22:[%2246247/15%22]})
+дострокового виходу на пенсію, на яку заявниця нібито не мала права –
+
+порушення
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 59;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

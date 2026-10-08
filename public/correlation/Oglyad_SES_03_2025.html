@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Взаємозв'язок із класифікацією: Oglyad_SES_03_2025 — Кодифікатор Законодавства</title>
+  <meta name="description" content="Карта відповідності та семантичного зв'язку між сегментами огляду Oglyad_SES_03_2025 та рубриками класифікатора.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('app_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --bg-primary: #0b0f19;
+      --bg-secondary: #111827;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(24, 34, 53, 0.9);
+      --bg-surface: #1f2937;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-focus: #3b82f6;
+      
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+      --text-muted: #6b7280;
+      
+      --accent-blue: #3b82f6;
+      --accent-blue-glow: rgba(59, 130, 246, 0.2);
+      --accent-green: #10b981;
+      --accent-green-bg: rgba(16, 185, 129, 0.12);
+      --accent-purple: #8b5cf6;
+      --accent-amber: #f59e0b;
+      --accent-amber-bg: rgba(245, 158, 11, 0.12);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-glow: 0 0 20px var(--accent-blue-glow);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: #ffffff;
+      --bg-surface: #f1f5f9;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-focus: #2563eb;
+      
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #94a3b8;
+      
+      --accent-blue: #2563eb;
+      --accent-blue-glow: rgba(37, 99, 235, 0.12);
+      --accent-green: #059669;
+      --accent-green-bg: rgba(5, 150, 105, 0.1);
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-amber-bg: rgba(217, 119, 6, 0.1);
+      
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 0 15px var(--accent-blue-glow);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    /* Header Nav */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 24px;
+    }
+
+    .top-bar-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .back-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+      box-shadow: var(--shadow-glow);
+      transform: translateX(-2px);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-action:hover {
+      color: var(--text-primary);
+      background: var(--bg-card-hover);
+      border-color: var(--border-focus);
+    }
+
+    .btn-pdf {
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    .btn-pdf:hover {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1400px;
+      margin: 28px auto 0;
+      padding: 0 24px;
+    }
+
+    /* Hero Section */
+    .hero-card {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%), var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-title-group {
+      margin-bottom: 20px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+
+    .hero-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-family: var(--font-mono);
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .stat-value.highlight {
+      color: var(--accent-blue);
+    }
+
+    .stat-value.success {
+      color: var(--accent-green);
+    }
+
+    /* Controls Bar */
+    .controls-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 20px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 280px;
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 14px 10px 42px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-size: 0.92rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-blue-glow);
+    }
+
+    .filter-count {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* Segments List */
+    .segments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .segment-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .segment-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .seg-num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border: 1px solid var(--border-color);
+    }
+
+    .file-badge {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .case-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+      background: var(--accent-blue-glow);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .case-badge:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-green-bg);
+      color: var(--accent-green);
+    }
+
+    /* Category Breadcrumbs */
+    .category-section {
+      margin-bottom: 16px;
+    }
+
+    .cat-code-pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    .crumb-sep {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .crumb-leaf {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    /* Legal Position / Thesis */
+    .thesis-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      font-size: 0.94rem;
+      color: var(--text-primary);
+      line-height: 1.55;
+    }
+
+    .thesis-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-blue);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    /* LLM Reasoning */
+    .reasoning-box {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .reasoning-box svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: var(--accent-amber);
+    }
+
+    /* Details Toggle */
+    .details-toggle {
+      margin-top: 12px;
+    }
+
+    details summary {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      transition: var(--transition);
+    }
+
+    details summary:hover {
+      color: var(--text-primary);
+    }
+
+    .fulltext-content {
+      margin-top: 10px;
+      padding: 12px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      font-family: inherit;
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="/digest.html" class="back-btn" title="Повернутися до реєстру дайджестів">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        <span>Реєстр дайджестів</span>
+      </a>
+
+      <div class="header-actions">
+        <a href="/documents/pdfs/Oglyad_SES_03_2025.pdf" target="_blank" class="btn-action btn-pdf" title="Відкрити оригінальний PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Оригінал PDF</span>
+        </a>
+        <button id="theme-toggle-btn" class="btn-action" title="Перемкнути тему">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero Summary -->
+    <section class="hero-card">
+      <div class="hero-title-group">
+        <span class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          Взаємозв'язок із класифікацією
+        </span>
+        <h1 class="hero-title">Oglyad_SES_03_2025</h1>
+        <p class="hero-subtitle">Семантичний мапінг та класифікація правових позицій судової практики</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-label">Замаплено сегментів</div>
+          <div class="stat-value highlight">2</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Середня впевненість</div>
+          <div class="stat-value success">75.5%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-label">Охоплено рубрик</div>
+          <div class="stat-value">2</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="filter-input" class="search-input" placeholder="Пошук за номером справи, текстом позиції, кодом рубрики або файлом...">
+      </div>
+      <div id="filter-count" class="filter-count">Показано 2 із 2</div>
+    </div>
+
+    <!-- Segments List -->
+    <div id="segments-container" class="segments-list">
+
+      <article class="segment-card" data-search="01_segment.md не вказана 10160 30 систематизація нормативно-правових актів рішення суду справедливості єс (перша палата) від 6 березня 2025 року, семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «систематизація нормативно-правових актів» (основи суспільного ладу / законодавство / систематизація нормативно-правових актів).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">1</span>
+            <span class="file-badge">01_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>78% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">10160 30</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Основи суспільного ладу</span><span class="crumb-sep">›</span><span class="crumb">Законодавство</span><span class="crumb-sep">›</span><span class="crumb-leaf">Систематизація нормативно-правових актів</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Суду справедливості ЄС (Перша Палата) від 6 березня 2025 року,</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Систематизація нормативно-правових актів» (Основи суспільного ладу / Законодавство / Систематизація нормативно-правових актів).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 1. Авторське право ……………………………………………………………………………………………………………………………
+
+1. Авторське право
+
+Рішення Суду справедливості ЄС (Перша Палата) від 6 березня 2025 року,
+ONB and Others, C-575/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=296203&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=15936403)
+
+Звернення за попереднім рішенням — Наближення законодавства — Інтелектуальна
+власність — Авторське право та суміжні права — Виконавці, залучені на підставі
+адміністративно-правового акта — Передача суміжних прав через регуляторний акт —
+Директива 2001/29/ЄС — Стаття 2(b) та стаття 3(2) — Право на відтворення й право
+надавати доступ публіці — Директива 2006/115/ЄС — Статті 7—9 — Права на запис,
+мовлення, повідомлення до загального відома публіки та розповсюдження —
+Директива (ЄС) 2019/790 — Статті 18-23 — Справедлива винагорода в договорах
+щодо використання — Стаття 26 — Застосування в часі — Поняття «укладених актів»
+і «набутих прав»
+
+Розглянувши звернення за попереднім рішенням від Державної ради
+(Conseil d’État, Бельгія) Суд справедливості ЄС ухвалив рішення щодо можливості
+для Держав-членів обмежити через регуляторний акт здійснення суміжних прав
+виконавців, залучених на підставі адміністративно-правового акту.
+
+1 червня 2021 року Бельгійська Держава прийняла Королівський указ щодо
+суміжних прав художнього персоналу Бельгійського національного оркестру
+(ONB) («Королівський указ від 1 червня 2021 року»), який набрав чинності
+4 червня 2021 року.
+
+До прийняття цього королівського указу використання суміжних прав
+музикантів ONB узгоджувалося в індивідуальному порядку в межах
+консультативного комітету. У період між 2016 і 2021 роками ONB та представництва
+профспілок музикантів цього оркестру вели переговори з метою досягнення угоди
+про справедливу винагороду від ONB за виступи цих музикантів. Оскільки такі
+переговори не привели до результату, Бельгійська Держава ухвалила відповідний
+королівський указ. Відповідно до положень цього указу, виконавець передає ONB
+в обмін на компенсаційні виплати суміжні права щодо будь-яких виступів, здійснених
+у межах його або її служби в цьому оркестрі. Таким чином, право доведення
+до загального відома публіки, а також права на відтворення і розповсюдження,
+що належать музикантам ONB, передаються на весь строк дії суміжних прав
+і по всьому світу.
+
+### 9 Рішення за березень 2025 року
+
+Кілька музикантів подали позов до Державної ради (Conseil d’État) з вимогою
+анулювання Королівського указу від 1 червня 2021 року, посилаючись на те,
+що положення цього указу порушували право ЄС, зокрема Директиву 2019/790. [5]
+
+За цих обставин Державна рада (Conseil d’État) вирішила звернутися до Суду
+справедливості ЄС за попереднім рішенням з метою з’ясування по суті,
+чи перешкоджали положення цієї директиви передачі через регуляторний
+акт з метою використання роботодавцем суміжних прав виконавців, які працюють
+на підставі адміністративно-правового акту, щодо виступів, здійснених у межах їхньої
+служби цьому роботодавцю, без їхньої попередньої згоди.
+
+Висновки Суду
+
+Як попереднє зауваження, Суд нагадав, що в контексті звернення за попереднім
+рішенням саме на Суд покладається обов’язок виокремити з усієї інформації, наданої
+національним судом, ті елементи права ЄС, які потребують тлумачення,
+
+з урахуванням предмета спору.
+
+У цій справі, попри те, що питання, з якими Державна рада (Conseil d’État)
+зверталася за попереднім рішенням, стосувалися лише тлумачення положень
+Директиви 2019/790, Суд встановив, що ця директива ґрунтується, зокрема,
+на правилах, закріплених у Директивах 2001/29 [6] і 2006/115 [7], певні положення яких [8]
+є релевантними для відповіді на поставлені питання.
+
+Насамперед Суд з’ясовував, чи виключено Королівський указ від 1 червня
+2021 року зі сфери дії Директиви 2019/790 у часі (ratione temporis) з огляду на те,
+що його було прийнято та він набрав чинності до закінчення строку для транспозиції
+цієї директиви. У цьому контексті Суд зазначив, по-перше, що ця директива
+застосовується до всіх творів та інших об’єктів, які охороняються національним
+авторським правом, починаючи з 7 червня 2021 року [9] . По-друге, з огляду на те,
+що Директива 2019/790, відповідно до її статті 26(2), «застосовується без обмеження
+будь-яких актів, укладених до 7 червня 2021 року, та прав, набутих
+до 7 червня 2021 року», Суд встановив, що ця директива не повинна застосовуватись
+до актів використання, впроваджених до 7 червня 2021 року, і щодо яких права були
+дійсно набуті до цієї дати.
+
+У цій справі Суд дійшов висновку, що Королівський указ від 1 червня 2021 року,
+оскільки його було прийнято належним чином, може породжувати для ONB,
+між датою набрання чинності та датою завершення строку для транспозиції
+
+5 Директива Європейського парламенту і Ради (ЄС) 2019/790 від 17 квітня 2019 року про авторське право і суміжні
+права на Єдиному цифровому ринку та про внесення змін до директив 96/9/ЄС та 2001/29/ЄС (OJ 2019 L 130, с. 92).
+6 Директива Європейського парламенту і Ради 2001/29/ЄС від 22 травня 2001 року про гармонізацію окремих аспектів
+авторського права і суміжних прав в інформаційному суспільстві (OJ 2001 L 167, с. 10).
+7 Директива Європейського парламенту і Ради 2006/115/ЄС від 12 грудня 2006 року про право на надання в прокат
+і право на надання в позичку та про деякі суміжні права у сфері інтелектуальної власності (OJ 2006 L 376, с. 28).
+8 Положення, на які посилається Суд: стаття 2(b) і стаття 3(2)(a) Директиви 2001/29 («положення Директиви 2001/29»),
+стаття 3(1)(b), стаття 7(1), стаття 8(1) та стаття 9(1)(a) Директиви 2006/115 («положення Директиви 2006/115»).
+9 Дата завершення строку для імплементації Директиви 2019/790, встановлена статтею 29(1) цієї директиви.
+### 10 Рішення за березень 2025 року
+
+Директиви 2019/790, права, які не підпадають під сферу дії цієї директиви в часі
+(ratione temporis). Водночас Суд зазначив, що цей указ не вичерпав своїх правових
+наслідків у дату набрання ним чинності. Цей указ має на меті регулярно породжувати
+наслідки для виступів відповідних виконавців упродовж усього періоду його
+застосування, включно з періодом після завершення строку для транспозиції
+Директиви 2019/790.
+
+Таким чином, Суд виснував, що ця директива застосовується (ratione temporis)
+до передачі, здійсненої Королівським указом від 1 червня 2021 року, суміжних прав
+музикантів ONB щодо виступів, які відбулися після 7 червня 2021 року.
+
+Окрім того, Суд дослідив, чи поняття «виконавець», що використовується
+в Директивах 2001/29, 2006/115 і 2019/790, охоплює музикантів оркестру, залучених
+на підставі адміністративно-правового акту.
+
+Передусім Суд зазначив, що за відсутності іншого наміру, прямо вираженого
+законодавцем ЄС, поняттю «виконавець» слід надавати однакове значення
+у відповідному контексті цих директив.
+
+Щодо тлумачення цього поняття, Суд насамперед зауважив, що формулювання
+положень Директив 2001/29, 2006/115 і 2019/790 не виключає формально зі сфери
+їхньої дії виконавців, залучених на підставі адміністративно-правового акту.
+
+Далі, щодо контексту цих положень, Суд нагадав, що положення директив,
+чинних у сфері інтелектуальної власності, мають тлумачитися з урахуванням норм
+міжнародного права, і зокрема міжнародних договорів, які вони покликані
+імплементувати. Стаття 2(а) Договору Всесвітньої організації інтелектуальної
+власності (ВОІВ) про виконання і фонограми (WPPT) [10] не встановлює жодних умов,
+які б виключали зі сфери його застосування виконавців, залучених на підставі
+адміністративно-правового акту.
+
+Нарешті, Суд зазначив, що таке тлумачення підтримується цілями,
+які переслідують Директиви 2001/29, 2006/115 та 2019/790. Ці директиви, по суті,
+передбачають, що будь-яка гармонізація суміжних прав має ґрунтуватися
+на високому рівні захисту, з урахуванням потреби адаптації цього захисту до нових
+економічних реалій і забезпечення належного доходу для виконавців, які, як правило,
+перебувають у слабшому договірному становищі.
+
+За таких обставин Суд дійшов висновку, що виконавці, залучені на підставі
+адміністративно-правового акту, охоплюються поняттям «виконавець» у значенні
+положень Директив 2001/29, 2006/115 та 2019/790.
+
+Окрім того, Суд встановлював, чи положення Директив 2001/29 і 2006/115
+перешкоджають передачі через регуляторний акт суміжних прав виконавців,
+залучених на підставі адміністративно-правового акту, без їхньої попередньої згоди.
+
+10 Договір ВОІВ про виконання і фонограми (WIPO Performances and Phonograms Treaty), прийнятий в Женеві
+20 грудня 1996 року та схвалений від імені Європейського Співтовариства рішенням Ради 2000/278/ЄС від 16 березня
+2000 року (OJ 2000 L 89, с. 6). Відповідно до статті 2(а) цього договору, поняття «виконавці» охоплює всіх осіб,
+які «грають роль, співають, читають, декламують, грають на музичному інструменті або іншим чином виконують
+літературні або художні твори, або вираження фольклору».
+### 11 Рішення за березень 2025 року
+
+По-перше, Суд зазначив, що захист, наданий положеннями Директив 2001/29
+та 2006/115, має бути широким за обсягом. Відповідно цей захист охоплює не лише
+володіння правами, гарантованими цими положеннями, а й здійснення таких прав.
+
+По-друге, Суд вказав, що права, гарантовані виконавцям цими положеннями,
+мають превентивний характер, у тому сенсі, що будь-яке використання їхніх виступів
+вимагає попередньої згоди. З цього випливає, що в разі відсутності попередньої
+згоди правовласників, ці положення перешкоджають передачі через регуляторний
+
+акт виключних прав, зазначених у цих директивах, якщо така передача
+не охоплюється винятками чи обмеженнями, передбаченими цими директивами [11] .
+На думку Суду, вузько сформульовані винятки та обмеження прав виконавців,
+передбачені цими директивами, не допускають загальної примусової передачі всіх
+суміжних прав певної категорії виконавців.
+
+По-третє, Суд наголосив, що таке тлумачення підтримується міжнародним
+контекстом, у рамках якого здійснюється захист суміжних прав виконавців, а також
+цілями Директив 2001/29 і 2006/115. Зокрема, що стосується захисту прав
+виконавців, примусові ліцензії можуть передбачатися лише настільки, наскільки вони
+сумісні з Римською конвенцією [12], яка має непрямий вплив у межах ЄС. Ця конвенція
+встановлює, що захист, який вона надає виконавцям, як правило, включає
+можливість запобігати здійсненню без їхньої попередньої згоди телерадіопередачі,
+публічного сповіщення або відтворенню запису їхнього виконання. Хоча ця конвенція
+й містить винятки та обмеження виключних прав правовласників суміжних прав,
+жодне з її положень не дозволяє загальної примусової передачі таких прав. Така
+передача також не дозволена положеннями WPPT.
+
+З огляду на вищезазначене, Суд постановив, що положення Директив 2001/29
+і 2006/115 суперечать національному законодавству, яке передбачає передачу через
+регуляторний акт з метою використання роботодавцем суміжних прав виконавців,
+залучених на підставі адміністративно-правового акту, щодо виступів, здійснених
+у межах їхньої служби цьому роботодавцю, без попередньої згоди таких виконавців,
+як це мало місце у випадку з Королівським указом від 1 червня 2021 року.
+
+У зв’язку з цим Суд дійшов висновку, що не потрібно додатково розглядати,
+чи положення статей 18–23 Директиви 2019/790 суперечили такій передачі.
+
+11 Стаття 5 Директиви 2001/29 та, зокрема, стаття 10 Директиви 2006/115.
+12 Міжнародна конвенція про охорону інтересів виконавців, виробників фонограм і організацій мовлення
+(Римська конвенція), укладена в Римі 26 жовтня 1961 року.
+### 12 Рішення за березень 2025 року
+
+### 2. Промислові зразки Співтовариства …………………………………………………………………………………
+
+### 2. Промислові зразки Співтовариства …………………………………………………………………………………
+</div>
+          </details>
+        </div>
+      </article>
+
+      <article class="segment-card" data-search="02_segment.md не вказана 160 10 20 10 вугільна рішення загального cуду (друга палата) від 12 березня 2025 року, lidl v euipo – семантичний мапінг з урахуванням юрисдикції сєс. обрано рубрику «вугільна» (законодавство про діяльність галузей промисловості / окремі галузі промисловості / паливна промисловість / вугільна).">
+        <div class="card-top">
+          <div class="card-meta-left">
+            <span class="seg-num-badge">2</span>
+            <span class="file-badge">02_segment.md</span>
+            <span class="file-badge">Не вказана</span>
+          </div>
+          <div class="conf-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>73% точність</span>
+          </div>
+        </div>
+
+        <div class="category-section">
+          <span class="cat-code-pill">160 10 20 10</span>
+          <div class="breadcrumbs">
+            <span class="crumb">Законодавство про діяльність галузей промисловості</span><span class="crumb-sep">›</span><span class="crumb">Окремі галузі промисловості</span><span class="crumb-sep">›</span><span class="crumb">Паливна промисловість</span><span class="crumb-sep">›</span><span class="crumb-leaf">Вугільна</span>
+          </div>
+        </div>
+
+        <div class="thesis-box">
+          <div class="thesis-label">Правова позиція / Теза:</div>
+          <div>Рішення Загального Cуду (Друга Палата) від 12 березня 2025 року, Lidl v EUIPO –</div>
+        </div>
+
+        <div class="reasoning-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <div>Семантичний мапінг з урахуванням юрисдикції СЄС. Обрано рубрику «Вугільна» (Законодавство про діяльність галузей промисловості / Окремі галузі промисловості / Паливна промисловість / Вугільна).</div>
+        </div>
+
+        <div class="details-toggle">
+          <details>
+            <summary>Показати повний нормалізований текст сегмента</summary>
+            <div class="fulltext-content">### 2. Промислові зразки Співтовариства …………………………………………………………………………………
+
+2. Промислові зразки Співтовариства
+
+Рішення Загального Cуду (Друга Палата) від 12 березня 2025 року, Lidl v EUIPO –
+Liquidleds Lighting (Світлодіодні лампи), T-66/24
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=296480&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=15936554)
+
+Промисловий зразок Співтовариства — Провадження щодо визнання недійсним —
+Зареєстрований промисловий зразок Співтовариства, що зображає світлодіодну
+лампу — Не враховано розкриття попереднього зразка — Стаття 7(2) Регламенту (ЄС)
+№ 6/2002 — Вимоги — Тягар доказування
+
+У своєму рішенні Загальний Суд відхилив позов заявника та роз’яснив вимоги
+щодо застосування винятку, згідно з яким розкриття промислового зразка
+Співтовариства, здійснене його автором або правонаступником, не береться до уваги
+протягом 12 місяців до подання заявки на реєстрацію, як це передбачено статтею
+7(2) Регламенту № 6/2002. [13]
+
+Компанія Liquidleds Lighting Corp., третя особа у справі, з 2017 року є власником
+промислового зразка Співтовариства, який зображає світлодіодну лампу. У 2021 році
+компанія Lidl Vertriebs GmbH &amp; Co. KG, заявник, подала заявку до Відомства
+інтелектуальної власності Європейського Союзу (EUIPO) про визнання недійсним
+цього зразка на підставі двох попередніх зразків. Однак Відділ щодо недійсності
+EUIPO не задовольнив цю заявку.
+
+Аналогічно Апеляційна рада EUIPO відхилила скаргу заявника на це рішення,
+мотивуючи це тим, що, по-перше, розкриття першого попереднього зразка підпадає
+під дію винятку, передбаченого статтею 7(2) Регламенту № 6/2002, а по-друге,
+заявник не довів розкриття другого попереднього зразка.
+
+У зв’язку із цим заявник звернувся до Суду з позовом про скасування рішення
+Апеляційної ради.
+
+Висновки Суду
+
+Насамперед Суд розглянув застосування винятку, передбаченого статтею 7(2)
+Регламенту № 6/2002. Він зазначив, що цей виняток застосовується як щодо
+новизни [14], так і щодо індивідуального характеру зразка [15] . У цьому контексті Суд
+уточнив, що якщо відсутність новизни означає, що ідентичний промисловий зразок
+був розкритий, то відсутність індивідуального характеру означає, що був розкритий
+промисловий зразок, який справляє таке ж загальне враження на поінформованого
+користувача. Тому лише тоді, коли виняток, про який йде мова, застосовується при
+
+13 Регламент Ради (ЄС) № 6/2002 від 12 грудня 2001 року про промислові зразки Співтовариства (OJ 2002 L 3, с. 1).
+14 Для цілей статті 5 Регламенту № 6/2002.
+15 Для цілей статті 6 Регламенту № 6/2002.
+### 13 Рішення за березень 2025 року
+
+розгляді новизни, це розкриття, яке, ймовірно, не буде враховано, стосується
+попереднього промислового зразка, ідентичного оскаржуваному промисловому
+зразку. Попри те, що відсутність індивідуального характеру також може випливати
+з розкриття ідентичного попереднього промислового зразка, вимога щодо
+індивідуального характеру як така не вимагає відсутності розкриття ідентичного
+
+попереднього промислового зразка, а лише розкриття попереднього промислового
+зразка, який справляє таке саме загальне враження. Отже, застосування статті 7(2)
+Регламенту № 6/2002 у зв’язку зі статтею 6 цього регламенту не вимагає, щоб зразок,
+розкриття якого не береться до уваги, був ідентичним або тотожним оскаржуваному
+
+зразку.
+
+Таке тлумачення випливає з формулювання цієї статті, її контексту та цілей
+Регламенту № 6/2002. Суд встановив, що формулювання цієї статті не містить слова
+«ідентичний», не покликається на поняття «тотожність» і не включає вислів
+«той самий зразок». Так, формулювання обмежується встановленням, безперечно,
+тісного зв’язку між зареєстрованим зразком і попереднім зразком, розкритим
+автором або його правонаступником протягом пільгового періоду. Це формулювання
+не виключає можливості, що такий зв’язок може існувати як у випадку, коли зразки
+є ідентичними, так і у випадку, коли вони справляють однакове загальне враження.
+
+Щодо контексту, Суд зазначив, що стаття 7(2) Регламенту № 6/2002 і пункт
+20 преамбули до цього регламенту стосуються оцінки як новизни,
+так і індивідуального характеру оскаржуваного зразка. З метою оцінки
+індивідуального характеру, розкриття, яке не береться до уваги, стосується зразка,
+що справляє таке ж загальне враження, як і оскаржуваний зразок.
+
+Окрім того, Суд наголосив, що виняток, передбачений у цій статті, має на меті
+захист інтересів автора або його правонаступника, а також стимулювання інновацій,
+розроблення нових продуктів та інвестування в їхнє виробництво. Досягнення
+цих цілей могло б бути поставлене під загрозу, якби автор, після випробування
+зразка на ринку, який бажає скористатися пільговим періодом, був зобов’язаний
+у будь-якому випадку подавати заявку на реєстрацію саме того зразка, який було
+випробувано, без урахування результатів тестування, з метою внесення необхідних
+змін до зразка для комерційного успіху. Це позбавляло б можливості подати заявку
+на реєстрацію зразка, який, хоча й не був ідентичним, справляв те ж саме загальне
+враження, що й первинно випробуваний зразок. Крім того, у разі реєстрації зразка,
+що не був ідентичним до оскаржуваного, автор або його правонаступник наражався
+б на ризик, що, власне, розкриття попереднього зразка в пільговий період буде
+
+використано проти нього.
+
+Також Суд вказав, що питання щодо розкриття попереднього зразка
+є попереднім питанням, вирішення якого є необхідним для оцінки, чи є спірні дизайни
+ідентичними або такими, що справляють однакове загальне враження. Необхідність
+порівняння зразків виникає лише тоді, коли другий зразок був доведений до відома
+публіки, і якщо врахування цього розкриття не виключається статтею 7(2)
+
+### 14 Рішення за березень 2025 року
+
+Регламенту № 6/2002. Відповідно, Суд відхилив аргументи заявника, які стосувалися
+порівняння оскаржуваного зразка з попереднім зразком.
+
+У другій частині рішення щодо тягаря доказування Суд зазначив, що саме
+на заявника, який звертається з проханням про визнання зразка недійсним,
+покладається обов’язок довести, що оскаржуваний зразок не відповідає вимогам
+щодо охорони, зокрема, що він був фактично розкритий до дати подання заявки
+на реєстрацію. Втім, для застосування статті 7(2) Регламенту № 6/2002 власник
+зразка, щодо якого подано заяву про визнання недійсним, має довести,
+що він є автором або правонаступником автора попереднього зразка; що цей зразок
+було розкрито ним або третьою особою; і що таке розкриття відбулося в межах
+пільгового періоду. Тому в цьому випадку, по-перше, заявник мав довести,
+що оскаржуваний промисловий зразок не відповідав вимогам для охорони,
+а по-друге, третя особа у справі мала посилатися на виняток, передбачений статтею
+7(2) Регламенту № 6/2002, та довести, що вимоги для застосування цього винятку
+були виконані. Відповідно, Суд встановив, що, розглядаючи зауваження заявника,
+подані для спростування застосування винятку, Апеляційна рада не поклала тягар
+доказування на заявника, а лише застосувала загальний принцип захисту права
+на захист, а саме статтю 62 Регламенту № 6/2002.
+
+Суд також зазначив, що можливість заявника надати обґрунтовані зауваження
+не залежить від того, чи подані пояснення та докази третьою стороною відповідають
+якомусь рівню достовірності чи послідовності. Навпаки, саме у своїх зауваженнях
+заявник може довести недостовірність чи непослідовність аргументів іншої сторони.
+Крім того, хоча Апеляційна рада, як видається, запропонувала стороні, яка заперечує
+застосування винятку, передбаченого статтею 7(2) Регламенту № 6/2002, подати
+докази, це не слід розуміти як обов’язок подавати докази. Залежно від обставин,
+достатньо обмежитися формулюваннями зауважень, що можуть стосуватися доказів,
+поданих іншою стороною.
+
+### 15 Рішення за березень 2025 року
+
+IV. Енергетика
+
+Рішення Суду справедливості ЄС (П’ята Палата) від 6 березня 2025 року, Alajärven
+Sähkö and Others, C-48/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=296194&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=15937042)
+
+Звернення за попереднім рішенням — Внутрішній ринок електроенергії —
+Директива (ЄС) 2019/944 — Стаття 57(4) і (5) — Незалежність національного
+регуляторного органу під час здійснення своїх обов’язків і повноважень — Політичні
+орієнтири, видані Державою-членом — Законодавча поправка, спрямована
+на зниження тарифів на розподіл електроенергії — Рішення щодо методів моніторингу
+зборів за експлуатацію електроенергетичної системи, прийняте відповідним
+регуляторним органом після цієї поправки — Урахування підготовчих матеріалів
+(travaux préparatoires) до закону, що ввів цю поправку
+
+Розглядаючи звернення за попереднім рішенням, подане судом із питань ринку
+(markkinaoikeus, Фінляндія), Суд справедливості ЄС розтлумачив обсяг зобов’язання
+Держав-членів поважати незалежність національних регуляторних органів
+під час виконання завдань, покладених на них Директивою 2019/944 про спільні
+правила для внутрішнього ринку електричної енергії. [16]
+
+У грудні 2021 року фінський регуляторний орган ухвалив низку рішень
+(«оскаржувані рішення»), якими були змінені методи моніторингу зборів
+за експлуатацію електроенергетичної системи, встановлені в 2015 році, на період
+з 1 січня 2022 року по 31 грудня 2023 року. Відповідно до пояснень у цих рішеннях,
+цей орган ініціював зміни самостійно після набуття чинності Законом 730/2021 [17],
+який продовжив строк імплементації певних вимог щодо будівництва
+та обслуговування електроенергетичної системи.
+
+У зв’язку із цим суд із питань ринку зазначив, що з підготовчих матеріалів
+(travaux préparatoires) до Закону 730/2021 випливає, що його метою було зменшення
+тарифів на розподіл електроенергії, хоча сам закон не містив положень, які прямо
+регулюють тарифи на передачу або розподіл електроенергії чи методи їхнього
+
+розрахунку.
+
+Два фінські підприємства – оператори електроенергетичної системи – подали
+позов до суду з питань ринку, вимагаючи скасування оскаржуваних рішень у частині
+зміни методів моніторингу зборів за експлуатацію. Посилаючись на зв’язок між
+Законом 730/2021 та оскаржуваними рішеннями, ці підприємства стверджували,
+inter alia, що фінський регуляторний орган не діяв незалежно, як того вимагає
+Директива 2019/944.
+
+16 Директива (ЄС) 2019/944 Європейського Парламенту і Ради від 5 червня 2019 року про спільні правила внутрішнього
+ринку електричної енергії та про внесення змін до Директиви 2012/27/ЄС (ОВ 2019 L 158, с. 125).
+17 Laki sähkömarkkinalain muuttamisesta (730/2021) (Закон про внесення змін до Закону про ринок електроенергії
+(730/2021); «Закон 730/2021»)
+### 16 Рішення за березень 2025 року
+
+У зв’язку із цим та з огляду на зв’язок між набуттям чинності Закону 730/2021
+і прийняттям оскаржуваних рішень фінським регуляторним органом, суд із питань
+ринку звернувся до Суду з питанням, чи не суперечать положення статей 57(4), 57(5)
+і 59 Директиви 2019/944 національному законодавству на кшталт Закону 730/2021.
+
+Висновки Суду
+
+Попередньо Суд зазначив, що згідно зі статтею 57(4) Директиви 2019/944,
+Держави-члени повинні гарантувати незалежність регуляторного органу
+під час здійснення покладених на нього завдань згідно із цією директивою
+та пов’язаним законодавством. Крім того, за статтею 57(5)(a) цієї директиви, з метою
+захисту незалежності регуляторного органу, Держави-члени мають забезпечити
+можливість прийняття автономних рішень незалежно від будь-яких політичних
+органів.
+
+У цьому контексті Суд постановив, по-перше, що незалежність регуляторних
+органів має бути гарантована як щодо економічних суб’єктів, так і стосовно
+державних установ, чи то адміністративні органи, чи то політичні організації,
+а в останньому випадку – як щодо уряду, так і національного законодавчого органу.
+
+По-друге, Суд зазначив, що повноваження, делеговані регуляторним органам,
+є виконавчими, й ґрунтуються на технічній і фаховій оцінці фактичних обставин.
+У межах здійснення цих повноважень органи влади зобов’язані дотримуватись норм,
+установлених докладним законодавчим механізмом ЄС, який обмежує дискреційні
+повноваження та виключає ухвалення політичних рішень.
+
+Хоча, відповідно до формулювання статті 59(1)(m) Директиви 2019/944, саме
+регуляторні органи відповідають за забезпечення дотримання правил, що регулюють
+безпеку та надійність мережі, а також за оцінювання попередньої діяльності, у цьому
+формулюванні немає підстав вважати, що до їхньої компетенції належить
+
+встановлення таких правил.
+
+У зв’язку із цим, як зазначено в пункті 87 преамбули Директиви 2019/944
+та відповідно до другого абзацу статті 194(2) ДФЄС, Держави-члени мають право
+визначати умови використання своїх енергетичних ресурсів. Отже, Держави-члени
+вільні у прийнятті власних правил щодо національного ринку електроенергії,
+за винятком завдань і повноважень національних регуляторних органів,
+передбачених цією ж директивою.
+
+З такої перспективи реалізація Державою-членом своїх повноважень у сфері
+формування національної енергетичної політики може мати наслідки для витрат
+на експлуатацію електроенергетичної системи. До того ж сам факт, що Держава-член
+прагне за допомогою ухвалення норм знизити тарифи на розподіл електроенергії,
+не є несумісним зі статтями 57(4) і (5) Директиви 2019/944.
+
+Водночас з огляду на статті 57(4) і (5) Директиви 2019/944, національні
+регуляторні заходи, які містять деталізовані положення, що встановлюють елементи,
+які належать до дискреційних повноважень національного регуляторного органу, такі
+
+### 17 Рішення за березень 2025 року
+
+як рівень тарифів електроенергетичної системи або конкретні методи їхнього
+
+розрахунку, – не допускаються.
+
+Однак сам факт, що національний законодавець ухвалив закон, яким внесено
+зміни до вимог щодо безпеки постачання, і що, внаслідок цього, тарифи були змінені
+регуляторним органом, не ставить під сумнів незалежність цього органу
+під час здійснення своїх повноважень.
+
+З урахуванням наведеного Суд дійшов висновку, що статті 57(4) і 57(5)(a)
+Директиви 2019/944 у поєднанні зі статтею 59 цієї директиви слід тлумачити як такі,
+що не суперечать національному законодавству, мета якого, згідно з підготовчими
+матеріалами (travaux préparatoires), полягає, inter alia, у впливі на ціни розподілу
+електроенергії. Хоча таке законодавство не містить положень, які прямо регулюють
+тарифи на передачу чи розподіл електроенергії або методи їхнього розрахунку, але
+внаслідок набрання ним чинності національний регуляторний орган змінив методи
+моніторингу тарифів на експлуатацію електросистеми до завершення чинного
+періоду моніторингу на момент набуття чинності цього законодавства.
+
+### 18 Рішення за березень 2025 року
+
+V. Європейська цивільна служба: психологічне цькування
+
+Рішення Загального Суду (Четверта Палата, розширений склад) від 12 березня
+2025 року, Semedo v Parliament, T-349/23
+
+[Посилання на повний текст рішення](https://curia.europa.eu/juris/document/document.jsf;jsessionid=CBD49F20F5AC2D95DB4DF955152762E2?text=&amp;docid=296479&amp;pageIndex=0&amp;doclang=en&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=15931438)
+
+Законодавство, що регулює діяльність інституцій – Член Парламенту – Психологічне
+переслідування – Рішення Голови Парламенту про визнання факту психологічного
+цькування акредитованого помічника парламенту та застосування до Члена
+Парламенту покарання у вигляді позбавлення права на добові витрати протягом
+10 днів – Право бути почутим – Право на захист
+
+Розглянувши позов пані Monica Semedo, колишньої членкині Європейського
+Парламенту, Загальний Суд у розширеному складі скасував рішення Голови
+Парламенту, якими було визнано, що певні дії, приписувані заявниці, становили
+психологічне цькування в розумінні статті 12а(3) Положення про персонал
+Європейського Союзу та застосоване до неї покарання у вигляді позбавлення права
+на добові витрати [subsistence allowance] на 10 днів. На цьому тлі Суд роз’яснив
+судову практику щодо дотримання права на захист в контексті скарги про цькування
+проти члена Парламенту, а саме щодо доступу цього члена до показань свідків
+та письмових доказів, на які спиралися під час встановлення факту цькування.
+
+У березні 2022 року Консультативний комітет по роботі зі скаргами
+про цькування стосовно членів Парламенту («Комітет») повідомив заявницю про
+початок розслідування щодо неї за скаргою її колишнього акредитованого помічника
+парламенту («скаржник»), та надіслав їй короткий виклад тверджень скаржника,
+а також надані ним неконфіденційні докази.
+
+У листопаді 2022 року Комітет прийняв висновок за скаргою та свої
+рекомендації («висновок Комітету»), де вказав, що дії, про які заявляв скаржник,
+становили психологічне цькування, та рекомендував застосувати до заявниці
+покарання у вигляді позбавлення права на добові витрати на 20 днів.
+
+У грудні 2022 року Президент Парламенту надіслав заявниці анонімну версію
+висновку Комітету та запросив її надати письмові зауваження щодо нього. У січні
+2023 року заявниця подала свої зауваження, у яких, серед іншого, просила надати
+їй копію всього файлу, зокрема різні показання свідків, які не могли бути анонімними.
+Однак заявниці не було надано доступу до цієї інформації. У квітні 2023 року
+Президент Парламенту ухвалив оскаржувані рішення.
+
+Саме в цьому контексті заявниця подала до Суду позов про скасування
+цих рішень.
+
+### 19 Рішення за березень 2025 року
+
+Висновки Суду
+
+По-перше, щодо питання доступу заявниці до показань свідків, Суд нагадав,
+що в процедурі, спрямованій на встановлення факту цькування, загальний принцип
+поваги до прав захисту означає, що з належним урахуванням будь-яких вимог
+конфіденційності особа, якій пред’явлено обвинувачення, повинна до ухвалення
+рішення, що має для неї несприятливі наслідки, отримати всі документи у справі,
+як обвинувальні, так і виправдувальні, щодо стверджуваного цькування, та мати
+можливість висловити свою думку щодо них. Для того, щоб мати можливість
+ефективно подати свої зауваження, особа, обвинувачена в цькуванні, має право
+на розкриття принаймні короткого викладу показань різних осіб, опитаних під час
+розслідування, оскільки ці показання були використані Комітетом у своєму висновку
+для надання рекомендацій Президенту Парламенту, і такий короткий виклад мав бути
+розкритий із дотриманням, за потреби, принципу конфіденційності.
+
+Суд зазначив, що в цій справі заявниці було надіслано неконфіденційну версію
+висновку Комітету, що містив короткий виклад показань свідків, але цей виклад
+не відображав зміст показань свідків, отриманих під час розслідування. По-перше,
+з цього документа не було видно, що сприйняття свідків відрізнялося. По-друге,
+існувала низка розбіжностей між змістом цього документа та коротким викладом
+показань свідків, викладених у конфіденційному додатку до висновку Комітету.
+Отже, Парламент не дотримався права заявниці на захист.
+
+Щодо питання доступу заявниці до письмових доказів, Суд зазначив,
+що для того, щоб мати можливість захищатися, особа, якій пред’явлено
+обвинувачення, повинна мати можливість ознайомитися з детальним змістом
+документів у справі, які були підставою для її звинувачень.
+
+Хоча заявниця не заперечувала, що вона мала у своєму розпорядженні
+електронні листи та повідомлення, що були письмовими доказами, на які спиралися
+для встановлення факту цькування, оскільки вона була автором цих листів,
+не всі документи в справі, які були підставою для звинувачень проти неї, були
+їй надані під час адміністративної процедури. Суд виснував, що в цьому контексті
+права заявниці на захист не були дотримані.
+
+Насамкінець заявниця не мала доступу ані до короткого викладу,
+що відтворював зміст показань свідків, взятих Комітетом, ані до документів у справі,
+що були основою для звинувачень проти неї, хоча ця інформація була врахована
+для встановлення факту цькування та застосування покарання. Тому Суд виснував,
+що заявниця була позбавлена можливості краще захищати себе, і що таке порушення
+неминуче вплинуло на зміст оскаржуваних рішень.
+
+### 20 Рішення за березень 2025 року
+
+VI. Спільна торговельна політика: антидемпінг
+
+Рішення Загального Суду (Сьома Палата, розширений склад) від 19 березня
+2025 року, LG Belgium v Commission, T-356/22
+
+[Посилання на рішення, опубліковане у формі витягу](https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=296740&amp;pageIndex=0&amp;doclang=en&amp;mode=req&amp;dir=&amp;occ=first&amp;part=1&amp;cid=3963114)
+
+− −
+Демпінг Імпорт суперабсорбуючих полімерів з Республіки Корея Регламент (ЄС)
+
+− −
+2022/547 Остаточне антидемпінгове мито Стаття 3(2), (3), (5), (6) і (7) Регламенту
+
+− − −
+(ЄС) 2016/1036 Стаття 9(4) Регламенту 2016/1036 Визначення шкоди Аналіз
+
+−
+впливу імпорту на ціни на аналогічні товари, що продаються на ринку ЄС Аналіз
+
+− −
+зниження цін Застосування методу контролю за номером товару
+
+− −
+Причинно-наслідковий зв’язок Аналіз атрибуції та неатрибуції Інші відомі фактори
+
+− − −
+Сума антидемпінгового мита Права на захист Принцип належного врядування
+
+Відхиляючи позов LG Chem, Ltd. проти Імплементаційного регламенту Комісії
+2022/547 про введення остаточного антидемпінгового мита на імпорт
+суперабсорбуючих полімерів (superabsorbent polymers – «SAP») з Республіки Корея [18],
+Загальний Суд роз’яснив, які фактори варто враховувати для встановлення рівня
+шкоди та ставки антидемпінгового мита.
+
+LG Chem – корейський експортер SAP, який експортує цю продукцію, inter alia,
+до Європейського Союзу. Європейська коаліція виробників суперабсорбуючих
+полімерів подала скаргу до Європейської комісії, після чого Європейська комісія
+прийняла оскаржуване положення, яким було встановлено антидемпінгове мито
+в розмірі 13,4 % на імпорт до Європейського Союзу SAP, вироблених LG Chem.
+Ця компанія подала позов про скасування цього положення.
+
+Висновки Суду
+
+На підтримку своїх позовних вимог компанія LG Chem стверджувала, inter alia,
+що методологія, яку було застосовано Комісією в оскаржуваному регламенті,
+
+.
+порушила статтю 9(4) базового регламенту [19]
+
+Суд насамперед зазначив, що відповідно до цієї норми, яка встановлює
+«правило нижчого мита», сума антидемпінгового мита не повинна перевищувати
+встановленої демпінгової маржі, але вона повинна бути меншою за таку маржу, якщо
+таке нижче мито буде достатнім для усунення шкоди, завданої промисловості Союзу.
+
+18 Імплементаційний регламент Комісії (ЄС) 2022/547 від 5 квітня 2022 року про введення остаточного
+антидемпінгового мита на імпорт суперабсорбуючих полімерів з Республіки Корея (ОJ 2022 L 107, с. 27; «оскаржуваний
+регламент»).
+19 Регламент Європейського Парламенту і Ради (ЄС) 2016/1036 від 8 червня 2016 року про захист від демпінгового
+імпорту з країн, які не є членами Європейського Союзу (OJ 2016 L 176, с. 21; «базовий регламент»).
+
+### 21 Рішення за березень 2025 року
+
+У цій справі Комісією було застосовано статтю 7(2c) базового регламенту
+й рівень шкоди було розраховано за допомогою порівняння ціни демпінгового
+імпорту з цільовою ціною реалізації промисловості Союзу. Ця ціна відповідає ціні,
+яку промисловість Союзу могла б розумно очікувати отримати на ринку ЄС
+за відсутності демпінгового імпорту.
+
+У зв’язку із цим Суд зазначив, що застосування цього методу не виходило
+за межі дискреційних повноважень Комісії. Використання цільової ціни замість
+фактичної ціни реалізації продукції промисловості Союзу для визначення рівня шкоди
+дало змогу врахувати тиск, спричинений демпінговим імпортом на зниження
+цін реалізації продукції промисловості Союзу.
+
+Водночас із судової практики випливало, що для забезпечення того, щоб сума
+антидемпінгового мита, встановлена відповідно до статті 9(4) базового регламенту,
+не перевищувала суми, необхідної для усунення шкідливих наслідків демпінгового
+імпорту, ця сума не повинна враховувати шкідливі наслідки, спричинені іншими
+факторами, ніж цей імпорт.
+
+Із цього приводу LG Chem стверджувала, що Комісія не врахувала згубні
+наслідки, спричинені іншими факторами, ніж імпорт із Кореї, а саме, з одного боку,
+формулу ціни на SAP і вплив інвестицій промисловості Союзу, а з іншого боку, імпорт
+із Туреччини та Японії.
+
+По-перше, щодо формули ціни SAP і впливу інвестицій промисловості Союзу,
+Суд зазначив, що LG Chem не довела, що такі фактори сприяли заподіянню шкоди
+промисловості Союзу. Отже, заявник не може критикувати Комісію за те, що вона
+не врахувала шкідливі, як стверджувалося, наслідки цих факторів.
+
+По-друге, щодо імпорту з Туреччини та Японії, LG Chem не довела,
+що методологія, застосована Комісією, не була доречною для визначення належного
+рівня мита, який дозволив би усунути шкоду, завдану промисловості Союзу
+демпінговим імпортом. У зв’язку з цим Суд зазначив, що, забезпечивши, щоб рівень
+шкоди відображав лише різницю між середньозваженою імпортною ціною
+та цільовою ціною промисловості Союзу, розрахованою відповідно до статті 7(2c)
+базового регламенту, Комісія забезпечила, щоб відповідальність за будь-яку шкоду,
+заподіяну іншими факторами, не було приписано демпінговому імпорту.
+
+Суд дійшов висновку, що LG Chem не довела, що Комісія допустила явні помилки
+в оцінці та порушила статтю 9(4) базового регламенту при застосуванні свого методу
+розрахунку рівня шкоди та ставки антидемпінгового мита.
+
+Оскільки жодна з підстав, наведених LG Chem, не була визнана обґрунтованою,
+Суд відхилив позов у повному обсязі.
+
+### 22 Рішення за березень 2025 року
+</div>
+          </details>
+        </div>
+      </article>
+
+    </div>
+
+    <div id="no-results" class="no-results">
+      <h3>За вказаним пошуковим запитом нічого не знайдено</h3>
+      <p style="margin-top: 8px;">Спробуйте змінити ключові слова або очистити пошуковий рядок.</p>
+    </div>
+
+  </main>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    themeBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('app_theme', next);
+    });
+
+    // Live search filter
+    const searchInput = document.getElementById('filter-input');
+    const cards = document.querySelectorAll('.segment-card');
+    const countBadge = document.getElementById('filter-count');
+    const noResults = document.getElementById('no-results');
+    const totalCount = 2;
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach(card => {
+        const text = card.getAttribute('data-search') || '';
+        if (!query || text.includes(query)) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      countBadge.textContent = `Показано ${visible} із ${totalCount}`;
+      noResults.style.display = (visible === 0) ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

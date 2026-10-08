@@ -202,12 +202,27 @@ function renderTable() {
 
   // Generate HTML Rows
   const rowsHtml = filtered.map((item, index) => {
+    const docName = item.name_no_ext || item.filename.replace(/\.pdf$/i, "");
+    const mdUrl = item.markdown_url || `/documents/markdown/${encodeURIComponent(docName)}/${encodeURIComponent(docName)}.md`;
+    const correlationUrl = item.correlation_url || `/correlation/${encodeURIComponent(docName)}.html`;
+
+    const viewerUrl = `/viewer.html?file=${encodeURIComponent(mdUrl)}&doc=${encodeURIComponent(docName)}`;
+
     const mdBadge = item.has_markdown
-      ? `<span class="badge badge-success"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Так</span>`
+      ? `<a href="${viewerUrl}" target="_blank" rel="noopener noreferrer" class="badge badge-success badge-interactive" title="Відкрити розмічений Markdown рідер (${docName})">
+           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+           <span>Так</span>
+           <svg class="icon-open-external" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+         </a>`
       : `<span class="badge badge-neutral">Ні</span>`;
 
     const segBadge = item.has_segments
-      ? `<span class="badge badge-success"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Так <span class="badge-count">${item.segments_count}</span></span>`
+      ? `<a href="${correlationUrl}" target="_blank" rel="noopener noreferrer" class="badge badge-success badge-interactive" title="Відкрити сторінку взаємозв'язку сегментів із класифікатором (${docName})">
+           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+           <span>Так</span>
+           <span class="badge-count">${item.segments_count}</span>
+           <svg class="icon-open-external" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+         </a>`
       : `<span class="badge badge-neutral">Ні</span>`;
 
     const catBadgeClass = getCategoryBadgeClass(item.category);
