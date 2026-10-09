@@ -84,43 +84,84 @@ def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict
         tag_content = tag_match.group(1).strip() if tag_match else ""
 
         # Технічні сегменти
-        if "PREAMBLE" in tag_content.upper():
+        norm_tag = tag_content.replace('І', 'I').replace('і', 'i').replace('’', "'")
+        if "PREAMBLE" in norm_tag.upper():
             file_mapping.append(("00_Preamble.md", full_text, True))
             continue
-        if "APPENDIX" in tag_content.upper():
+        if "APPENDIX" in norm_tag.upper():
             file_mapping.append(("99_Appendix.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+I\b", tag_content) and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_I"
+        if "ОБ'ЄДНАН" in norm_tag.upper() and "Технічний" in tag_content:
+            if re.search(r"РОЗДІЛ\s+II\b|\bII\.", norm_tag):
+                current_rozdil = "ROZDIL_OP_II"
+                file_mapping.append(("02_Rozdil_II.md", full_text, True))
+            else:
+                current_rozdil = "ROZDIL_OP_I"
+                file_mapping.append(("01_Rozdil_I.md", full_text, True))
+            continue
+        if re.search(r"РОЗДІЛ\s+I\b", norm_tag) and "Технічний" in tag_content:
+            if "КРИМІНАЛЬНОГО ПРАВА" in norm_tag.upper():
+                current_rozdil = "ROZDIL_KK"
+            else:
+                current_rozdil = "ROZDIL_OP_I"
             file_mapping.append(("01_Rozdil_I.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+II\b", tag_content) and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_II"
+        if re.search(r"РОЗДІЛ\s+II\b", norm_tag) and "Технічний" in tag_content:
+            if "КРИМІНАЛЬНОГО ПРОЦЕСУАЛЬНОГО" in norm_tag.upper():
+                current_rozdil = "ROZDIL_KPK"
+            elif "КРИМІНАЛЬНОГО ПРАВА" in norm_tag.upper():
+                current_rozdil = "ROZDIL_KK"
+            else:
+                current_rozdil = "ROZDIL_OP_II"
             file_mapping.append(("02_Rozdil_II.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+III\b", tag_content) and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_III"
+        if re.search(r"РОЗДІЛ\s+III\b", norm_tag) and "Технічний" in tag_content:
+            if "КРИМІНАЛЬНОГО ПРОЦЕСУАЛЬНОГО" in norm_tag.upper():
+                current_rozdil = "ROZDIL_KPK"
+            else:
+                current_rozdil = "ROZDIL_KK"
             file_mapping.append(("03_Rozdil_III.md", full_text, True))
             continue
-        if "ОСОБЛИВОЇ ЧАСТИНИ" in tag_content.upper() and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_III_OSOB"
+        if "ЗАГАЛЬНОЇ ЧАСТИНИ" in norm_tag.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KK"
+            file_mapping.append(("01_Zahalna_chastyna.md", full_text, True))
+            continue
+        if "ОСОБЛИВОЇ ЧАСТИНИ" in norm_tag.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KK"
             file_mapping.append(("03_Osoblyva_chastyna.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+IV\b", tag_content) and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_IV"
+        if re.search(r"РОЗДІЛ\s+IV\b", norm_tag) and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Rozdil_IV.md", full_text, True))
             continue
-        if "ДОСУДОВЕ РОЗСЛІДУВАННЯ" in tag_content.upper() and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_IV_DOSUDOVE"
+        if "ДОСУДОВЕ РОЗСЛІДУВАННЯ" in norm_tag.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Dosudove.md", full_text, True))
             continue
-        if "ПЕРЕГЛЯДУ" in tag_content.upper() and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_IV_PEREHLYAD"
+        if "ПЕРЕГЛЯДУ" in norm_tag.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Perehlyad.md", full_text, True))
             continue
-        if "ПЕРШІЙ ІНСТАНЦІЇ" in tag_content.upper() and "Технічний" in tag_content:
-            current_rozdil = "ROZDIL_IV_PERSHA"
+        if "ПЕРШІЙ ІНСТАНЦІЇ" in norm_tag.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Persha_instantsiya.md", full_text, True))
+            continue
+        if "МІЖНАРОДНЕ" in tag_content.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KPK"
+            file_mapping.append(("04_Mizhnarodne.md", full_text, True))
+            continue
+        if "ЗАГАЛЬНІ ПОЛОЖЕННЯ" in tag_content.upper() and "Технічний" in tag_content:
+            if "КПК" in tag_content.upper() or current_rozdil in ("ROZDIL_KPK", "ROZDIL_IV"):
+                current_rozdil = "ROZDIL_KPK"
+            file_mapping.append((f"tech_{len(file_mapping):02d}.md", full_text, True))
+            continue
+        if "ЗАХОДИ ЗАБЕЗПЕЧЕННЯ" in tag_content.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KPK"
+            file_mapping.append((f"tech_{len(file_mapping):02d}.md", full_text, True))
+            continue
+        if "ОСОБЛИВІ ПОРЯДКИ" in tag_content.upper() and "Технічний" in tag_content:
+            current_rozdil = "ROZDIL_KPK"
+            file_mapping.append(("05_Osoblyvi_poryadky.md", full_text, True))
             continue
         if "Технічний" in tag_content or "Не підлягає розподілу" in tag_content:
             tech_fname = f"tech_{len(file_mapping):02d}.md"
@@ -132,17 +173,17 @@ def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict
         title_part = tag_content.split("|")[1].strip() if "|" in tag_content else ""
 
         if is_kks:
-            if current_rozdil == "ROZDIL_I":
+            if current_rozdil == "ROZDIL_OP_I":
                 fname = f"OP_01.{num_part.split('.')[-1]}_segment.md"
-            elif current_rozdil == "ROZDIL_II":
+            elif current_rozdil == "ROZDIL_OP_II":
                 fname = f"OP_02.{num_part.split('.')[-1]}_segment.md"
-            elif current_rozdil in ("ROZDIL_III", "ROZDIL_III_OSOB"):
+            elif current_rozdil in ("ROZDIL_KK", "ROZDIL_III", "ROZDIL_III_OSOB"):
                 if title_part != last_chapter_title:
                     kk_chapter_idx += 1
                     last_chapter_title = title_part
                 seg_num = num_part.split(".")[-1]
                 fname = f"KK_{kk_chapter_idx:02d}.{seg_num}_segment.md"
-            elif current_rozdil and "ROZDIL_IV" in current_rozdil:
+            elif current_rozdil in ("ROZDIL_KPK", "ROZDIL_IV", "ROZDIL_IV_DOSUDOVE", "ROZDIL_IV_PEREHLYAD", "ROZDIL_IV_PERSHA"):
                 if title_part != last_chapter_title:
                     kpk_chapter_idx += 1
                     last_chapter_title = title_part

@@ -239,8 +239,9 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
     def handle_tree(self):
         if os.path.exists(JSON_TREE_PATH):
             with open(JSON_TREE_PATH, "r", encoding="utf-8") as f:
-                return json.load(f)
-        return {"error": "classifier.json not found"}
+                tree_data = json.load(f)
+                return {"tree": tree_data} if isinstance(tree_data, list) else tree_data
+        return {"error": "classifier.json not found", "tree": []}
 
     def handle_roots(self):
         with get_db_connection() as conn:

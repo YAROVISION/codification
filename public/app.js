@@ -287,7 +287,7 @@ async function loadTree() {
   try {
     const res = await fetch("/api/tree");
     const data = await res.json();
-    currentTreeData = data.tree || [];
+    currentTreeData = Array.isArray(data) ? data : (data.tree || []);
 
     // Build fast lookup map
     buildLookupMap(currentTreeData);
