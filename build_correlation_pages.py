@@ -44,14 +44,41 @@ def build_page_for_document(doc_name: str, conn: sqlite3.Connection) -> str:
         print(f"⚠️ Не знайдено замаплених сегментів для {doc_name}")
         return ""
 
-    total_segments = len(rows)
-    avg_conf = sum((r["confidence_score"] or 0) for r in rows) / total_segments if total_segments > 0 else 0
+    from collections import OrderedDict
+    groups = OrderedDict()
+    for r in rows:
+        fp = r["file_path"]
+        if fp not in groups:
+            groups[fp] = {
+                "file_path": fp,
+                "case_number": r["case_number"] or "Не вказана",
+                "teza": r["teza"] or "",
+                "summary": r["summary"] or "",
+                "pdf_path": r["pdf_path"] or "",
+                "categories": []
+            }
+        
+        raw_path = r["category_path"] or r["category_name"] or "Не визначено"
+        path_crumbs = [p.strip() for p in raw_path.split("/") if p.strip()]
+        is_primary = ("[ДОПОВНЕНА КЛАСИФІКАЦІЯ]" not in (r["llm_reasoning"] or ""))
+
+        groups[fp]["categories"].append({
+            "category_code": r["category_code"] or "—",
+            "category_name": r["category_name"] or "Невідома рубрика",
+            "path_crumbs": path_crumbs,
+            "confidence": r["confidence_score"] or 0.0,
+            "reasoning": r["llm_reasoning"] or "",
+            "is_primary": is_primary
+        })
+
+    total_segments = len(groups)
+    total_links = len(rows)
+    avg_conf = sum((r["confidence_score"] or 0) for r in rows) / total_links if total_links > 0 else 0
     unique_categories = len(set(r["category_code"] for r in rows if r["category_code"]))
 
     # Read segment full texts from disk if available
     segments_data = []
-    for idx, r in enumerate(rows, 1):
-        file_path_str = r["file_path"]
+    for idx, (file_path_str, g) in enumerate(groups.items(), 1):
         fpath = Path(file_path_str)
         disk_text = ""
         if fpath.exists():
@@ -60,26 +87,21 @@ def build_page_for_document(doc_name: str, conn: sqlite3.Connection) -> str:
             except Exception:
                 pass
         
-        full_text = disk_text or r["summary"] or r["reasoning"] or ""
+        full_text = disk_text or g["summary"] or ""
         reyestr_url = extract_reyestr_url(full_text)
-        
-        # Clean breadcrumb path
-        raw_path = r["category_path"] or r["category_name"] or "Не визначено"
-        path_crumbs = [p.strip() for p in raw_path.split("/") if p.strip()]
+
+        # Сортуємо категорії: спочатку первинні, потім доповнені
+        cats_sorted = sorted(g["categories"], key=lambda c: 0 if c["is_primary"] else 1)
 
         segments_data.append({
             "idx": idx,
             "filename": fpath.name,
             "file_path": file_path_str,
-            "case_number": r["case_number"] or "Не вказана",
+            "case_number": g["case_number"],
             "reyestr_url": reyestr_url,
-            "category_code": r["category_code"] or "—",
-            "category_name": r["category_name"] or "Невідома рубрика",
-            "path_crumbs": path_crumbs,
-            "teza": r["teza"] or "",
-            "summary": r["summary"] or "",
-            "reasoning": r["llm_reasoning"] or "",
-            "confidence": r["confidence_score"] or 0.0,
+            "categories": cats_sorted,
+            "teza": g["teza"] or "",
+            "summary": g["summary"] or "",
             "full_text": full_text
         })
 
@@ -527,22 +549,111 @@ def build_page_for_document(doc_name: str, conn: sqlite3.Connection) -> str:
       color: var(--accent-green);
     }}
 
-    /* Category Breadcrumbs */
-    .category-section {{
+    /* All Categories List in Card */
+    .all-categories-container {{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       margin-bottom: 16px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+    }}
+
+    .all-categories-header {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }}
+
+    .links-count-pill {{
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--accent-amber);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      font-size: 0.76rem;
+      font-weight: 700;
+    }}
+
+    .category-row {{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 10px 12px;
+      background: var(--bg-surface);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent-purple);
+      transition: var(--transition);
+    }}
+
+    .category-row.is-primary {{
+      border-left-color: var(--accent-blue);
+      background: rgba(59, 130, 246, 0.05);
+    }}
+
+    .category-row-top {{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }}
+
+    .cat-type-badge {{
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: 0.03em;
+    }}
+
+    .cat-type-badge.primary {{
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }}
+
+    .cat-type-badge.augmented {{
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }}
+
+    .cat-reasoning-mini {{
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      padding-top: 4px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.06);
     }}
 
     .cat-code-pill {{
       display: inline-block;
       font-family: var(--font-mono);
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       font-weight: 700;
       padding: 2px 8px;
       background: rgba(139, 92, 246, 0.15);
       color: var(--accent-purple);
       border: 1px solid rgba(139, 92, 246, 0.3);
       border-radius: 4px;
-      margin-bottom: 6px;
+    }}
+
+    .cat-code-pill.primary {{
+      background: var(--accent-blue-glow);
+      color: var(--accent-blue);
+      border-color: rgba(59, 130, 246, 0.3);
     }}
 
     .breadcrumbs {{
@@ -721,46 +832,71 @@ def build_page_for_document(doc_name: str, conn: sqlite3.Connection) -> str:
         else:
             case_html = f"""<span class="file-badge">{html.escape(s['case_number'])}</span>"""
 
-        crumbs_html = ""
-        for c_idx, crumb in enumerate(s["path_crumbs"]):
-            is_last = (c_idx == len(s["path_crumbs"]) - 1)
-            cls = "crumb-leaf" if is_last else "crumb"
-            crumbs_html += f'<span class="{cls}">{html.escape(crumb)}</span>'
-            if not is_last:
-                crumbs_html += '<span class="crumb-sep">›</span>'
+        # Побудова списку всіх взаємозв'язків
+        categories_html = ""
+        search_terms = [s['filename'], s['case_number'], s['teza']]
 
-        conf_pct = f"{s['confidence'] * 100:.0f}%"
+        for cat in s["categories"]:
+            search_terms.extend([cat['category_code'], cat['category_name'], cat['reasoning']])
+            crumbs_html = ""
+            for c_idx, crumb in enumerate(cat["path_crumbs"]):
+                is_last = (c_idx == len(cat["path_crumbs"]) - 1)
+                cls = "crumb-leaf" if is_last else "crumb"
+                crumbs_html += f'<span class="{cls}">{html.escape(crumb)}</span>'
+                if not is_last:
+                    crumbs_html += '<span class="crumb-sep">›</span>'
+
+            row_cls = "category-row is-primary" if cat["is_primary"] else "category-row is-augmented"
+            type_badge = (
+                '<span class="cat-type-badge primary">★ Первинний зв\'язок</span>'
+                if cat["is_primary"]
+                else '<span class="cat-type-badge augmented">+ Доповнений зв\'язок</span>'
+            )
+            pill_cls = "cat-code-pill primary" if cat["is_primary"] else "cat-code-pill"
+
+            reasoning_html = ""
+            if cat["reasoning"]:
+                reasoning_html = f'<div class="cat-reasoning-mini">{html.escape(cat["reasoning"])}</div>'
+
+            categories_html += f"""
+            <div class="{row_cls}">
+              <div class="category-row-top">
+                <span class="{pill_cls}">{html.escape(cat['category_code'])}</span>
+                {type_badge}
+              </div>
+              <div class="breadcrumbs">
+                {crumbs_html}
+              </div>
+              {reasoning_html}
+            </div>
+            """
+
+        num_links = len(s["categories"])
+        links_badge = f'<span class="links-count-pill">{num_links} зв\'язки</span>' if num_links > 1 else '<span class="links-count-pill">1 зв\'язок</span>'
+        search_data_str = " ".join(search_terms).lower()
 
         html_content += f"""
-      <article class="segment-card" data-search="{html.escape((s['filename'] + ' ' + s['case_number'] + ' ' + s['category_code'] + ' ' + s['category_name'] + ' ' + s['teza'] + ' ' + s['reasoning']).lower())}">
+      <article class="segment-card" data-search="{html.escape(search_data_str)}">
         <div class="card-top">
           <div class="card-meta-left">
             <span class="seg-num-badge">{s['idx']}</span>
             <span class="file-badge">{html.escape(s['filename'])}</span>
             {case_html}
-          </div>
-          <div class="conf-badge">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>{conf_pct} точність</span>
+            {links_badge}
           </div>
         </div>
 
-        <div class="category-section">
-          <span class="cat-code-pill">{html.escape(s['category_code'])}</span>
-          <div class="breadcrumbs">
-            {crumbs_html}
+        <div class="all-categories-container">
+          <div class="all-categories-header">
+            <span>Взаємозв'язки з класифікатором законодавства ({num_links})</span>
           </div>
+          {categories_html}
         </div>
 
         <div class="thesis-box">
           <div class="thesis-label">Правова позиція / Теза:</div>
           <div>{html.escape(s['teza'] or s['summary'])}</div>
         </div>
-
-        {f'''<div class="reasoning-box">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-          <div>{html.escape(s['reasoning'])}</div>
-        </div>''' if s['reasoning'] else ''}
 
         <div class="details-toggle">
           <details>

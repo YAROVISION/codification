@@ -292,14 +292,82 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
 
             # Судова практика (Прикріплені сегменти)
             try:
-                cur.execute("""
-                    SELECT id, case_number, original_category, teza, summary, circumstances, reasoning, confidence_score, llm_reasoning, file_path, pdf_path
+                # Перевіряємо наявність колонки decision_url
+                cur.execute("PRAGMA table_info(mapped_segments)")
+                cols = [c[1] for c in cur.fetchall()]
+                has_decision_col = "decision_url" in cols
+
+                query = f"""
+                    SELECT id, case_number, original_category, teza, summary, circumstances, reasoning,
+                           confidence_score, llm_reasoning, file_path, pdf_path
+                           {', decision_url' if has_decision_col else ''}
                     FROM mapped_segments
                     WHERE category_code = ?
-                """, (code,))
-                cat["segments"] = [dict(r) for r in cur.fetchall()]
+                """
+                cur.execute(query, (code,))
+                segments_list = [dict(r) for r in cur.fetchall()]
+                for seg in segments_list:
+                    # Якщо немає decision_url або воно було в pdf_path
+                    if not seg.get("decision_url"):
+                        if seg.get("pdf_path") and seg["pdf_path"].startswith("http"):
+                            seg["decision_url"] = seg["pdf_path"]
+                        else:
+                            seg["decision_url"] = ""
+
+                    file_p = seg.get("file_path", "")
+                    doc_name = ""
+                    if file_p:
+                        parts = file_p.replace("\\", "/").split("/")
+                        if "segments" in parts:
+                            s_idx = parts.index("segments")
+                            if len(parts) > s_idx + 1:
+                                doc_name = parts[s_idx + 1]
+
+                    pdf_p = seg.get("pdf_path") or ""
+                    # Якщо pdf_path веде на сайт або не на .pdf, шукаємо відповідний pdf у documents/pdfs/
+                    if not pdf_p.lower().endswith(".pdf") or pdf_p.startswith("http"):
+                        if doc_name:
+                            pdf_cand = f"{doc_name}.pdf"
+                            if os.path.isfile(os.path.join(DOCS_PDFS_DIR, pdf_cand)):
+                                pdf_p = f"/documents/pdfs/{pdf_cand}"
+                            else:
+                                pdf_p = ""
+                        else:
+                            pdf_p = ""
+                    else:
+                        if not pdf_p.startswith("/"):
+                            pdf_p = "/" + pdf_p.replace("\\", "/").lstrip("/")
+
+                    seg["pdf_path"] = pdf_p
+                    seg["pdf_name"] = os.path.basename(pdf_p) if pdf_p else ""
+                    seg["doc_name"] = doc_name
+
+                    cur.execute("""
+                        SELECT ms.category_code, c.clean_name, ms.confidence_score
+                        FROM mapped_segments ms
+                        LEFT JOIN categories c ON ms.category_code = c.code
+                        WHERE ms.file_path = ?
+                        ORDER BY ms.id
+                    """, (seg["file_path"],))
+                    seg["all_categories"] = [dict(r) for r in cur.fetchall()]
+                cat["segments"] = segments_list
             except sqlite3.OperationalError:
                 cat["segments"] = []
+
+            # Розпарсити direct_acts та cross_references, якщо вони рядки JSON
+            if cat.get("direct_acts") and isinstance(cat["direct_acts"], str):
+                try:
+                    cat["direct_acts"] = json.loads(cat["direct_acts"])
+                except Exception:
+                    cat["direct_acts"] = []
+            elif not cat.get("direct_acts"):
+                cat["direct_acts"] = []
+
+            if cat.get("cross_references") and isinstance(cat["cross_references"], str):
+                try:
+                    cat["cross_references"] = json.loads(cat["cross_references"])
+                except Exception:
+                    cat["cross_references"] = []
 
             return cat
 

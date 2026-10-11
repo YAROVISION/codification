@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=14">
   <script>
     (function() {
       const savedTheme = localStorage.getItem('app_theme') || 'dark';
@@ -236,6 +236,23 @@
           <div class="subcategories-grid" id="subcategories-grid"></div>
         </section>
 
+        <!-- Direct Acts (Базове законодавство) Section -->
+        <section class="direct-acts-section hidden" id="direct-acts-section">
+          <div class="section-header">
+            <h3 class="section-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Прямі законодавчі акти та базові закони</span>
+              <span class="count-pill" id="direct-acts-count-badge">0</span>
+            </h3>
+          </div>
+          <div class="direct-acts-grid" id="direct-acts-grid"></div>
+        </section>
+
         <!-- Attached Segments Section -->
         <section class="segments-section hidden" id="segments-section">
           <div class="section-header">
@@ -332,7 +349,30 @@
     </main>
   </div>
 
-  <script src="app.js?v=20"></script>
+  <!-- Direct Acts Modal Dialog -->
+  <div class="modal-backdrop hidden" id="direct-acts-modal-backdrop" style="display: none;" hidden>
+    <div class="modal-dialog modal-glass" id="direct-acts-modal">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <h3 class="modal-title" id="modal-acts-title">Прямі законодавчі акти</h3>
+          <span class="count-pill" id="modal-acts-count">0</span>
+        </div>
+        <button class="modal-close-btn" id="modal-acts-close" title="Закрити (Esc)">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle" id="modal-acts-subtitle">Перелік офіційних нормативно-правових актів та прямих законів України з переходом до офіційного тексту на порталі Верховної Ради:</p>
+        <div class="modal-acts-list" id="modal-acts-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=23"></script>
 </body>
 </html>
 

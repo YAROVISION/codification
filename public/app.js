@@ -29,6 +29,14 @@ const heroDirectDocsBtnCount = document.getElementById("hero-direct-docs-btn-cou
 
 const subcategoriesGrid = document.getElementById("subcategories-grid");
 const subcatsCountBadge = document.getElementById("subcats-count-badge");
+const directActsSection = document.getElementById("direct-acts-section");
+const directActsGrid = document.getElementById("direct-acts-grid");
+const directActsCountBadge = document.getElementById("direct-acts-count-badge");
+const directActsModalBackdrop = document.getElementById("direct-acts-modal-backdrop");
+const modalActsTitle = document.getElementById("modal-acts-title");
+const modalActsCount = document.getElementById("modal-acts-count");
+const modalActsClose = document.getElementById("modal-acts-close");
+const modalActsList = document.getElementById("modal-acts-list");
 const segmentsSection = document.getElementById("segments-section");
 const segmentsList = document.getElementById("segments-list");
 const segmentsCountBadge = document.getElementById("segments-count-badge");
@@ -459,19 +467,49 @@ function renderCategoryDetails(cat) {
     heroBranchUrlBtn.style.display = "none";
   }
 
-  if (cat.direct_url) {
-    heroDirectUrlBtn.href = cat.direct_url;
+  let directActs = cat.direct_acts || [];
+  if (typeof directActs === "string") {
+    try {
+      directActs = JSON.parse(directActs);
+    } catch (e) {
+      directActs = [];
+    }
+  }
+  if (!Array.isArray(directActs)) {
+    directActs = [];
+  }
+
+  if (directActs.length > 0) {
+    heroDirectUrlBtn.removeAttribute("target");
+    heroDirectUrlBtn.href = "#direct-acts-section";
+    heroDirectUrlBtn.onclick = (e) => {
+      e.preventDefault();
+      const sec = document.getElementById("direct-acts-section");
+      if (sec) {
+        sec.classList.remove("hidden");
+        sec.scrollIntoView({ behavior: "smooth", block: "start" });
+        sec.classList.add("highlight-pulse");
+        setTimeout(() => sec.classList.remove("highlight-pulse"), 1500);
+      }
+    };
     heroDirectUrlBtn.classList.remove("hidden");
     heroDirectUrlBtn.style.removeProperty("display");
+    heroDirectDocsBtnCount.textContent = `(${directActs.length})`;
+  } else if (cat.direct_url && !cat.direct_url.includes("find/a?text=") && !cat.direct_url.includes("main/jj")) {
+    heroDirectUrlBtn.href = cat.direct_url;
+    heroDirectUrlBtn.setAttribute("target", "_blank");
+    heroDirectUrlBtn.onclick = null;
+    heroDirectUrlBtn.classList.remove("hidden");
+    heroDirectUrlBtn.style.removeProperty("display");
+    const directDocs = Number(cat.direct_docs_count || 0);
+    heroDirectDocsBtnCount.textContent = directDocs > 0 ? `(${directDocs.toLocaleString("uk-UA")})` : "";
   } else {
     heroDirectUrlBtn.classList.add("hidden");
     heroDirectUrlBtn.style.display = "none";
   }
 
   const totalDocs = Number(cat.total_docs_count || 0);
-  const directDocs = Number(cat.direct_docs_count || 0);
   heroTotalDocsBtnCount.textContent = totalDocs > 0 ? `(${totalDocs.toLocaleString("uk-UA")})` : "";
-  heroDirectDocsBtnCount.textContent = directDocs > 0 ? `(${directDocs.toLocaleString("uk-UA")})` : "";
 
   // Subcategories count badge
   const childrenList = cat.children || [];
@@ -485,6 +523,9 @@ function renderCategoryDetails(cat) {
   // Subcategories Grid
   renderSubcategories(childrenList);
 
+  // Direct Acts (Базові закони)
+  renderDirectActs(directActs, cat.clean_name);
+
   // Judicial Practice Segments
   if (typeof renderSegments === "function") {
     renderSegments(cat.segments);
@@ -497,6 +538,120 @@ function renderCategoryDetails(cat) {
   const semText = cat.semantic_text || `Категорія: ${cat.clean_name}. Ієрархічний шлях: ${cat.path_names}. Код класифікатора: ${cat.code} (Рівень ${cat.level}). Кількість документів: ${cat.total_docs_count}.`;
   semanticTextPreview.textContent = semText;
 }
+
+// Render Direct Laws & Acts
+function renderDirectActs(directActs, catName) {
+  if (!directActsSection || !directActsGrid) return;
+
+  directActsGrid.innerHTML = "";
+
+  if (!directActs || directActs.length === 0) {
+    directActsSection.classList.add("hidden");
+    if (directActsCountBadge) directActsCountBadge.textContent = "0";
+    return;
+  }
+
+  directActsSection.classList.remove("hidden");
+  if (directActsCountBadge) {
+    directActsCountBadge.textContent = directActs.length;
+  }
+
+  directActs.forEach((act) => {
+    const card = document.createElement("a");
+    card.className = "direct-act-card";
+    card.href = act.url || "#";
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+    card.title = `Відкрити офіційний текст на порталі ВРУ: ${act.title}`;
+
+    card.innerHTML = `
+      <div class="direct-act-top">
+        <span class="direct-act-badge">${escapeHtml(act.type || "Закон України")}</span>
+        <span class="direct-act-icon-btn" title="Відкрити закон на ВРУ">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </span>
+      </div>
+      <div class="direct-act-title">${escapeHtml(act.title)}</div>
+      ${act.number ? `<div class="direct-act-number">📜 ${escapeHtml(act.number)}</div>` : ""}
+      ${act.description ? `<div class="direct-act-desc">${escapeHtml(act.description)}</div>` : ""}
+    `;
+
+    directActsGrid.appendChild(card);
+  });
+}
+
+// Open Direct Acts Modal
+function openDirectActsModal(categoryName, directActs) {
+  if (!directActsModalBackdrop || !modalActsList || !directActs || directActs.length === 0) {
+    closeDirectActsModal();
+    return;
+  }
+  if (modalActsTitle) modalActsTitle.textContent = `Прямі закони: ${categoryName}`;
+  if (modalActsCount) modalActsCount.textContent = directActs.length;
+  modalActsList.innerHTML = "";
+
+  directActs.forEach((act) => {
+    const item = document.createElement("a");
+    item.className = "modal-act-item";
+    item.href = act.url || "#";
+    item.target = "_blank";
+    item.rel = "noopener noreferrer";
+    item.title = `Відкрити офіційний текст на порталі ВРУ: ${act.title}`;
+
+    item.innerHTML = `
+      <div class="modal-act-info">
+        <span class="modal-act-type">${escapeHtml(act.type || "Закон України")}</span>
+        <div class="modal-act-title">${escapeHtml(act.title)}</div>
+        ${act.number ? `<div class="modal-act-number">📜 ${escapeHtml(act.number)}</div>` : ""}
+        ${act.description ? `<div class="modal-act-desc">${escapeHtml(act.description)}</div>` : ""}
+      </div>
+      <div class="modal-act-open-btn">
+        <span>Відкрити закон</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </div>
+    `;
+
+    modalActsList.appendChild(item);
+  });
+
+  directActsModalBackdrop.style.display = "flex";
+  directActsModalBackdrop.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+// Close Direct Acts Modal
+function closeDirectActsModal() {
+  if (directActsModalBackdrop) {
+    directActsModalBackdrop.style.display = "none";
+    directActsModalBackdrop.classList.add("hidden");
+  }
+  document.body.style.removeProperty("overflow");
+}
+
+// Modal event listeners setup
+if (modalActsClose) {
+  modalActsClose.addEventListener("click", closeDirectActsModal);
+}
+if (directActsModalBackdrop) {
+  directActsModalBackdrop.addEventListener("click", (e) => {
+    if (e.target === directActsModalBackdrop) {
+      closeDirectActsModal();
+    }
+  });
+}
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && directActsModalBackdrop && !directActsModalBackdrop.classList.contains("hidden")) {
+    closeDirectActsModal();
+  }
+});
 
 function getLevelLabel(level) {
   switch (level) {
@@ -602,12 +757,32 @@ function renderSegments(segments) {
     const card = document.createElement("article");
     card.className = "segment-card";
 
-    // Extract PDF URL and filename
+    // Визначення назви огляду / журналу за шляхом до сегмента
+    let docName = seg.doc_name || "";
+    if (!docName && seg.file_path) {
+      const parts = seg.file_path.replace(/\\/g, "/").split("/");
+      const segIdx = parts.indexOf("segments");
+      if (segIdx !== -1 && parts.length > segIdx + 1) {
+        docName = parts[segIdx + 1];
+      }
+    }
+
+    // Надійне формування посилання на PDF-журнал огляду
     let pdfUrl = "";
     let pdfName = "";
-    if (seg.pdf_path) {
-      pdfUrl = "/" + seg.pdf_path.replace(/\\/g, "/").replace(/^\/+/, "");
-      pdfName = seg.pdf_path.split("/").pop() || "Огляд судової практики";
+    if (seg.pdf_path && seg.pdf_path.toLowerCase().endsWith(".pdf") && !seg.pdf_path.startsWith("http")) {
+      const cleanPath = seg.pdf_path.replace(/\\/g, "/").replace(/^\/+/, "");
+      pdfUrl = "/" + cleanPath;
+      pdfName = seg.pdf_name || cleanPath.split("/").pop() || "Огляд судової практики.pdf";
+    } else if (docName) {
+      pdfUrl = `/documents/pdfs/${encodeURIComponent(docName)}.pdf`;
+      pdfName = `${docName}.pdf`;
+    }
+
+    // Визначення посилання на судове рішення в ЄДРСР
+    let decisionUrl = seg.decision_url || "";
+    if (!decisionUrl && seg.pdf_path && seg.pdf_path.startsWith("http")) {
+      decisionUrl = seg.pdf_path;
     }
 
     const confidencePct = Math.round((seg.confidence_score || 0.95) * 100);
@@ -615,16 +790,34 @@ function renderSegments(segments) {
     card.innerHTML = `
       <div class="segment-card-header">
         <div class="segment-badges">
-          <span class="segment-badge-case" title="Номер судового рішення Верховного Суду">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="m14 13-7.5 7.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0-.83-.83-.83-2.17 0-3L11 10"></path>
-              <path d="m16 16 6-6"></path>
-              <path d="m8 8 6-6"></path>
-              <path d="m9 7 8 8"></path>
-              <path d="m21 11-8-8"></path>
-            </svg>
-            ${escapeHtml(seg.case_number || "Справа ВС")}
-          </span>
+          ${decisionUrl ? `
+            <a href="${decisionUrl}" target="_blank" rel="noopener noreferrer" class="segment-badge-case segment-badge-case-link" title="Відкрити повний текст судового рішення у Єдиному державному реєстрі судових рішень (ЄДРСР)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m14 13-7.5 7.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0-.83-.83-.83-2.17 0-3L11 10"></path>
+                <path d="m16 16 6-6"></path>
+                <path d="m8 8 6-6"></path>
+                <path d="m9 7 8 8"></path>
+                <path d="m21 11-8-8"></path>
+              </svg>
+              <span>${escapeHtml(seg.case_number || "Справа ВС")}</span>
+              <svg class="external-icon-sm" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          ` : `
+            <span class="segment-badge-case" title="Номер судового рішення Верховного Суду">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m14 13-7.5 7.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0-.83-.83-.83-2.17 0-3L11 10"></path>
+                <path d="m16 16 6-6"></path>
+                <path d="m8 8 6-6"></path>
+                <path d="m9 7 8 8"></path>
+                <path d="m21 11-8-8"></path>
+              </svg>
+              ${escapeHtml(seg.case_number || "Справа ВС")}
+            </span>
+          `}
           <span class="segment-badge-confidence" title="Рівень семантичної відповідності категорії">
             <span class="confidence-dot"></span>
             ${confidencePct}% відповідність
@@ -632,7 +825,7 @@ function renderSegments(segments) {
         </div>
 
         ${pdfUrl ? `
-          <a href="${pdfUrl}" target="_blank" rel="noopener noreferrer" class="btn-pdf-view" title="Відкрити офіційний випуск журналу огляду (PDF) у новій вкладці">
+          <a href="${pdfUrl}" target="_blank" rel="noopener noreferrer" class="btn-pdf-view" title="Відкрити офіційний випуск журналу огляду (${escapeHtml(pdfName)}) у новій вкладці">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
               <polyline points="14 2 14 8 20 8"></polyline>
@@ -659,6 +852,20 @@ function renderSegments(segments) {
           </div>
         ` : ''}
 
+        ${seg.all_categories && seg.all_categories.length > 1 ? `
+          <div class="segment-all-categories">
+            <span class="all-categories-title">Всі взаємозв'язки цього сегмента (${seg.all_categories.length}):</span>
+            <div class="all-categories-chips">
+              ${seg.all_categories.map(ac => `
+                <a href="#code=${encodeURIComponent(ac.category_code)}" class="category-chip ${ac.category_code === currentSelectedCode ? 'active' : ''}" title="${escapeHtml(ac.clean_name || '')}">
+                  <span class="chip-code">${escapeHtml(ac.category_code)}</span>
+                  <span class="chip-name">${escapeHtml(ac.clean_name || '')}</span>
+                </a>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+
         <div class="segment-details-collapse hidden" id="seg-details-${seg.id || index}">
           ${seg.circumstances ? `
             <div class="detail-block">
@@ -676,6 +883,16 @@ function renderSegments(segments) {
             <div class="detail-block detail-ai">
               <div class="detail-label">Семантичне обґрунтування класифікації:</div>
               <div class="detail-text">${escapeHtml(seg.llm_reasoning)}</div>
+            </div>
+          ` : ''}
+          ${decisionUrl ? `
+            <div class="detail-block detail-court-ref">
+              <div class="detail-label">Судове рішення у Реєстрі (ЄДРСР):</div>
+              <div class="detail-text">
+                <a href="${decisionUrl}" target="_blank" rel="noopener noreferrer" class="pdf-link-inline court-link-inline">
+                  ⚖️ <strong>${escapeHtml(seg.case_number || "Рішення Верховного Суду")}</strong> (відкрити повний текст у ЄДРСР)
+                </a>
+              </div>
             </div>
           ` : ''}
           ${pdfUrl ? `

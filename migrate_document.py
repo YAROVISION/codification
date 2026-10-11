@@ -2,9 +2,8 @@
 """
 Скрипт міграції нормалізованих оглядів судової практики:
 1. Очищення старих сегментів у папці documents/segments/<doc_name>/.
-2. Очищення попередніх зв'язків у таблиці mapped_segments бази data/classifier.sqlite.
-3. Розбиття файлу documents/markdown/<doc_name>/<doc_name>.md на окремі файли сегментів у documents/segments/<doc_name>/.
-4. Автоматичний мапінг юридичних сегментів до класифікації через smart_mapper (із виключенням технічних сегментів).
+2. Розбиття файлу documents/markdown/<doc_name>/<doc_name>.md на окремі файли сегментів у documents/segments/<doc_name>/.
+3. Виділення технічних та юридичних сегментів відповідно до правил іменування.
 """
 
 import sys
@@ -18,7 +17,7 @@ from pathlib import Path
 if sys.stdout.encoding.lower() != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
 
-from smart_mapper import process_folder, get_db_connection
+
 
 
 def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict:
@@ -43,19 +42,9 @@ def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict
     if not dry_run:
         segments_dir.mkdir(parents=True, exist_ok=True)
 
-    # 2. Видалення попередніх зв'язків з БД
-    conn = get_db_connection()
-    cur = conn.cursor()
-    if not dry_run:
-        cur.execute("DELETE FROM mapped_segments WHERE file_path LIKE ?", (f"%{doc_name}%",))
-        deleted_mappings = cur.rowcount
-        conn.commit()
-        print(f"🗑 Видалено {deleted_mappings} попередніх записів із mapped_segments у БД.")
-    else:
-        cur.execute("SELECT count(*) FROM mapped_segments WHERE file_path LIKE ?", (f"%{doc_name}%",))
-        print(f"[DRY-RUN] Було б видалено {cur.fetchone()[0]} записів з БД.")
 
-    # 3. Читання markdown
+    # 2. Читання markdown
+
     content = md_path.read_text(encoding="utf-8", errors="surrogateescape")
 
     # 4. Розбиття на сегменти за мітками <!-- === SEGMENT: ... === -->
@@ -84,86 +73,86 @@ def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict
         tag_content = tag_match.group(1).strip() if tag_match else ""
 
         # Технічні сегменти
-        norm_tag = tag_content.replace('І', 'I').replace('і', 'i').replace('’', "'")
-        if "PREAMBLE" in norm_tag.upper():
+        tag_upper = tag_content.upper().replace('’', "'").replace('`', "'")
+        if "PREAMBLE" in tag_upper:
             file_mapping.append(("00_Preamble.md", full_text, True))
             continue
-        if "APPENDIX" in norm_tag.upper():
+        if "APPENDIX" in tag_upper:
             file_mapping.append(("99_Appendix.md", full_text, True))
             continue
-        if "ОБ'ЄДНАН" in norm_tag.upper() and "Технічний" in tag_content:
-            if re.search(r"РОЗДІЛ\s+II\b|\bII\.", norm_tag):
+        if "ОБ'ЄДНАН" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
+            if re.search(r"РОЗД[ІI]Л\s+[IІ]{2}\b|\b[IІ]{2}\.", tag_upper):
                 current_rozdil = "ROZDIL_OP_II"
                 file_mapping.append(("02_Rozdil_II.md", full_text, True))
             else:
                 current_rozdil = "ROZDIL_OP_I"
                 file_mapping.append(("01_Rozdil_I.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+I\b", norm_tag) and "Технічний" in tag_content:
-            if "КРИМІНАЛЬНОГО ПРАВА" in norm_tag.upper():
+        if re.search(r"РОЗД[ІI]Л\s+[IІ]\b", tag_upper) and "ТЕХНІЧНИЙ" in tag_upper:
+            if "КРИМІНАЛЬНОГО ПРАВА" in tag_upper:
                 current_rozdil = "ROZDIL_KK"
             else:
                 current_rozdil = "ROZDIL_OP_I"
             file_mapping.append(("01_Rozdil_I.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+II\b", norm_tag) and "Технічний" in tag_content:
-            if "КРИМІНАЛЬНОГО ПРОЦЕСУАЛЬНОГО" in norm_tag.upper():
+        if re.search(r"РОЗД[ІI]Л\s+[IІ]{2}\b", tag_upper) and "ТЕХНІЧНИЙ" in tag_upper:
+            if "КРИМІНАЛЬНОГО ПРОЦЕСУАЛЬНОГО" in tag_upper:
                 current_rozdil = "ROZDIL_KPK"
-            elif "КРИМІНАЛЬНОГО ПРАВА" in norm_tag.upper():
+            elif "КРИМІНАЛЬНОГО ПРАВА" in tag_upper:
                 current_rozdil = "ROZDIL_KK"
             else:
                 current_rozdil = "ROZDIL_OP_II"
             file_mapping.append(("02_Rozdil_II.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+III\b", norm_tag) and "Технічний" in tag_content:
-            if "КРИМІНАЛЬНОГО ПРОЦЕСУАЛЬНОГО" in norm_tag.upper():
+        if re.search(r"РОЗД[ІI]Л\s+[IІ]{3}\b", tag_upper) and "ТЕХНІЧНИЙ" in tag_upper:
+            if "КРИМІНАЛЬНОГО ПРОЦЕСУАЛЬНОГО" in tag_upper:
                 current_rozdil = "ROZDIL_KPK"
             else:
                 current_rozdil = "ROZDIL_KK"
             file_mapping.append(("03_Rozdil_III.md", full_text, True))
             continue
-        if "ЗАГАЛЬНОЇ ЧАСТИНИ" in norm_tag.upper() and "Технічний" in tag_content:
+        if "ЗАГАЛЬНОЇ ЧАСТИНИ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KK"
             file_mapping.append(("01_Zahalna_chastyna.md", full_text, True))
             continue
-        if "ОСОБЛИВОЇ ЧАСТИНИ" in norm_tag.upper() and "Технічний" in tag_content:
+        if "ОСОБЛИВОЇ ЧАСТИНИ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KK"
             file_mapping.append(("03_Osoblyva_chastyna.md", full_text, True))
             continue
-        if re.search(r"РОЗДІЛ\s+IV\b", norm_tag) and "Технічний" in tag_content:
+        if re.search(r"РОЗД[ІI]Л\s+[IІ]V\b", tag_upper) and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Rozdil_IV.md", full_text, True))
             continue
-        if "ДОСУДОВЕ РОЗСЛІДУВАННЯ" in norm_tag.upper() and "Технічний" in tag_content:
+        if "ДОСУДОВЕ РОЗСЛІДУВАННЯ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Dosudove.md", full_text, True))
             continue
-        if "ПЕРЕГЛЯДУ" in norm_tag.upper() and "Технічний" in tag_content:
+        if "ПЕРЕГЛЯДУ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Perehlyad.md", full_text, True))
             continue
-        if "ПЕРШІЙ ІНСТАНЦІЇ" in norm_tag.upper() and "Технічний" in tag_content:
+        if "ПЕРШІЙ ІНСТАНЦІЇ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Persha_instantsiya.md", full_text, True))
             continue
-        if "МІЖНАРОДНЕ" in tag_content.upper() and "Технічний" in tag_content:
+        if "МІЖНАРОДНЕ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("04_Mizhnarodne.md", full_text, True))
             continue
-        if "ЗАГАЛЬНІ ПОЛОЖЕННЯ" in tag_content.upper() and "Технічний" in tag_content:
-            if "КПК" in tag_content.upper() or current_rozdil in ("ROZDIL_KPK", "ROZDIL_IV"):
+        if "ЗАГАЛЬНІ ПОЛОЖЕННЯ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
+            if "КПК" in tag_upper or current_rozdil in ("ROZDIL_KPK", "ROZDIL_IV"):
                 current_rozdil = "ROZDIL_KPK"
             file_mapping.append((f"tech_{len(file_mapping):02d}.md", full_text, True))
             continue
-        if "ЗАХОДИ ЗАБЕЗПЕЧЕННЯ" in tag_content.upper() and "Технічний" in tag_content:
+        if "ЗАХОДИ ЗАБЕЗПЕЧЕННЯ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append((f"tech_{len(file_mapping):02d}.md", full_text, True))
             continue
-        if "ОСОБЛИВІ ПОРЯДКИ" in tag_content.upper() and "Технічний" in tag_content:
+        if "ОСОБЛИВІ ПОРЯДКИ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("05_Osoblyvi_poryadky.md", full_text, True))
             continue
-        if "Технічний" in tag_content or "Не підлягає розподілу" in tag_content:
+        if "ТЕХНІЧНИЙ" in tag_upper or "НЕ ПІДЛЯГАЄ РОЗПОДІЛУ" in tag_upper:
             tech_fname = f"tech_{len(file_mapping):02d}.md"
             file_mapping.append((tech_fname, full_text, True))
             continue
@@ -211,38 +200,16 @@ def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict
     legal_count = sum(1 for _, _, is_t in file_mapping if not is_t)
     print(f"📊 Співвідношення: {legal_count} юридичних сегментів, {tech_count} технічних сегментів.")
 
-    # 6. Запуск мапінгу до класифікації
-    if not dry_run:
-        print("🔗 Встановлення взаємозв'язків із класифікацією (smart_mapper)...")
-        res = process_folder(segments_dir)
-        print(f"✅ Результати мапінгу: оброблено={res['processed']}, замаплено={res['mapped']}")
-
-        cur.execute("SELECT count(*) FROM mapped_segments WHERE file_path LIKE ?", (f"%{doc_name}%",))
-        active_db_count = cur.fetchone()[0]
-        print(f"🎯 Всього активних зв'язків у базі classifier.sqlite для {doc_name}: {active_db_count}")
-
-        # 7. Генерація correlation HTML сторінки
-        try:
-            from build_correlation_pages import build_page_for_document
-            corr_file = build_page_for_document(doc_name, conn)
-            print(f"🌐 Створено інтерактивну correlation сторінку: {corr_file}")
-        except Exception as e:
-            print(f"⚠️ Не вдалося згенерувати correlation сторінку: {e}")
-    else:
-        active_db_count = 0
-
-    conn.close()
     return {
         "doc_name": doc_name,
         "total_files": len(file_mapping),
         "legal_segments": legal_count,
-        "tech_segments": tech_count,
-        "mapped_count": active_db_count
+        "tech_segments": tech_count
     }
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Міграція сегментів огляду судової практики та встановлення зв'язків з класифікацією")
+    parser = argparse.ArgumentParser(description="Міграція сегментів огляду судової практики на окремі файли")
     parser.add_argument("path", type=str, help="Шлях до файлу огляду documents/markdown/<doc_name>/<doc_name>.md")
     parser.add_argument("--dry-run", action="store_true", help="Режим симуляції")
     args = parser.parse_args()
