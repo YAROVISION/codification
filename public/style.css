@@ -2400,6 +2400,271 @@ body {
   color: var(--text-muted);
 }
 
+/* Segments Header Actions */
+.segments-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#btn-toggle-all-fulltext {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: var(--accent-cyan);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+#btn-toggle-all-fulltext:hover {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.2);
+}
+
+/* Full Text Section Inside Card */
+.segment-fulltext-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.segment-fulltext-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.btn-toggle-fulltext {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.12) 0%, rgba(99, 102, 241, 0.16) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--accent-cyan);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+[data-theme="light"] .btn-toggle-fulltext {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(79, 70, 229, 0.12) 100%);
+  border-color: rgba(2, 132, 199, 0.35);
+  color: #0369a1;
+}
+
+.btn-toggle-fulltext:hover {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.22) 0%, rgba(99, 102, 241, 0.28) 100%);
+  border-color: var(--accent-cyan);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+}
+
+[data-theme="light"] .btn-toggle-fulltext:hover {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.16) 0%, rgba(79, 70, 229, 0.22) 100%);
+  border-color: #0284c7;
+  color: #0c4a6e;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
+}
+
+.btn-toggle-fulltext .chevron-icon {
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-toggle-fulltext.expanded .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.fulltext-badge {
+  font-size: 11.5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+}
+
+.segment-fulltext-collapse {
+  animation: fadeIn 0.25s ease-out;
+}
+
+.segment-fulltext-collapse.hidden {
+  display: none !important;
+}
+
+.segment-fulltext-inner {
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05), 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+[data-theme="light"] .segment-fulltext-inner {
+  background: rgba(248, 250, 252, 0.9);
+  border-color: rgba(2, 132, 199, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.fulltext-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.fulltext-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-cyan);
+}
+
+.btn-copy-fulltext {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-copy-fulltext:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  transform: translateY(-1px);
+}
+
+.fulltext-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 1.68;
+  color: var(--text-main);
+}
+
+.fulltext-intro-paragraph {
+  margin: 0;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.fulltext-section-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid var(--accent-indigo);
+}
+
+[data-theme="light"] .fulltext-section-row {
+  background: rgba(241, 245, 249, 0.7);
+  border-left-color: #6366f1;
+}
+
+.fulltext-marker-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 0.02em;
+}
+
+[data-theme="light"] .fulltext-marker-badge {
+  color: #0284c7;
+}
+
+.fulltext-marker-text {
+  color: var(--text-main);
+  line-height: 1.65;
+}
+
+.fulltext-regular-paragraph {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.fulltext-citation-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 6px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+[data-theme="light"] .fulltext-citation-box {
+  background: rgba(168, 85, 247, 0.06);
+  border-color: rgba(168, 85, 247, 0.22);
+}
+
+.citation-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.citation-content {
+  flex: 1;
+  color: var(--text-main);
+}
+
+.fulltext-reyestr-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.fulltext-reyestr-link:hover {
+  background: rgba(56, 189, 248, 0.3);
+  border-color: var(--accent-cyan);
+  color: #ffffff;
+}
+
 .segment-details-collapse {
   margin-top: 6px;
   padding: 14px;

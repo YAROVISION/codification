@@ -52,6 +52,11 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
             self.handle_markdown(path)
             return
 
+        # Segments serving
+        if path.startswith("/documents/segments/"):
+            self.handle_segment_file(path)
+            return
+
         # Correlation HTML serving
         if path.startswith("/correlation/"):
             self.handle_correlation(path)
@@ -177,6 +182,33 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
             except Exception:
                 pass
 
+    def handle_segment_file(self, path):
+        rel_path = urllib.parse.unquote(path.replace("/documents/segments/", "").lstrip("/"))
+        file_path = os.path.normpath(os.path.join(DOCS_SEGMENTS_DIR, rel_path))
+
+        # Захист від directory traversal
+        if not file_path.startswith(DOCS_SEGMENTS_DIR) or not os.path.isfile(file_path):
+            self.send_error(404, "Segment File Not Found")
+            return
+
+        try:
+            with open(file_path, "rb") as f:
+                content = f.read()
+
+            self.send_response(200)
+            self.send_header("Content-Type", "text/plain; charset=utf-8")
+            self.send_header("Content-Length", str(len(content)))
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(content)
+        except (ConnectionResetError, BrokenPipeError):
+            pass
+        except Exception as e:
+            try:
+                self.send_error(500, f"Error reading segment file: {e}")
+            except Exception:
+                pass
+
     def handle_correlation(self, path):
         rel_path = urllib.parse.unquote(path.replace("/correlation/", "").lstrip("/"))
         file_path = os.path.normpath(os.path.join(CORRELATION_DIR, rel_path))
@@ -292,15 +324,17 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
 
             # Судова практика (Прикріплені сегменти)
             try:
-                # Перевіряємо наявність колонки decision_url
+                # Перевіряємо наявність колонок decision_url та full_text
                 cur.execute("PRAGMA table_info(mapped_segments)")
                 cols = [c[1] for c in cur.fetchall()]
                 has_decision_col = "decision_url" in cols
+                has_full_text_col = "full_text" in cols
 
                 query = f"""
                     SELECT id, case_number, original_category, teza, summary, circumstances, reasoning,
                            confidence_score, llm_reasoning, file_path, pdf_path
                            {', decision_url' if has_decision_col else ''}
+                           {', full_text' if has_full_text_col else ''}
                     FROM mapped_segments
                     WHERE category_code = ?
                 """
@@ -322,6 +356,17 @@ class ClassifierHandler(SimpleHTTPRequestHandler):
                             s_idx = parts.index("segments")
                             if len(parts) > s_idx + 1:
                                 doc_name = parts[s_idx + 1]
+
+                    # Забезпечуємо наявність повного тексту сегмента
+                    if not seg.get("full_text") and file_p:
+                        full_p = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), file_p))
+                        if os.path.isfile(full_p):
+                            try:
+                                with open(full_p, "r", encoding="utf-8", errors="surrogateescape") as sf:
+                                    raw_c = sf.read()
+                                seg["full_text"] = re.sub(r'<!--\s*===\s*SEGMENT:.*?===\s*-->', '', raw_c).strip()
+                            except Exception:
+                                pass
 
                     pdf_p = seg.get("pdf_path") or ""
                     # Якщо pdf_path веде на сайт або не на .pdf, шукаємо відповідний pdf у documents/pdfs/

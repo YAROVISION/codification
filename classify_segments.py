@@ -44,6 +44,7 @@ CODE_ABBR_MAP = {
     'КАСУ': ('120 10', 'Кодекс адміністративного судочинства України', '120'),
     'КВК': ('150 10', 'Кримінально-виконавчий кодекс України', '150'),
     'БК': ('10 10', 'Бюджетний кодекс України', '10'),
+    'КУ': ('10 10', 'Конституція України', '10'),
 }
 
 # Мапінг повних назв кодексів до їхніх скорочень
@@ -61,6 +62,10 @@ FULL_CODE_NAME_MAP = {
     'КОДЕКС АДМІНІСТРАТИВНОГО СУДОЧИНСТВА УКРАЇНИ': 'КАС',
     'КОДЕКСУ АДМІНІСТРАТИВНОГО СУДОЧИНСТВА УКРАЇНИ': 'КАС',
     'КОДЕКС УКРАЇНИ ПРО АДМІНІСТРАТИВНІ ПРАВОПОРУШЕННЯ': 'КУПАП',
+    'КОНСТИТУЦІЯ УКРАЇНИ': 'КУ',
+    'КОНСТИТУЦІЇ УКРАЇНИ': 'КУ',
+    'КОНСТИТУЦІЯ': 'КУ',
+    'КОНСТИТУЦІЇ': 'КУ',
 }
 
 # Регулярний вираз для пошуку статті та кодексу (підтримує п. 10 ч. 1 ст. 309 КПК, ст. 50 КК, стаття 111-1 КК)
@@ -68,6 +73,28 @@ ARTICLE_PATTERN = re.compile(
     r'(?:(?:п(?:ункт(?:ом|у|а)?)?\.?\s*\d+\s*)?(?:ч(?:астин(?:ою|і|а)?)?\.?\s*\d+\s*)?(?:ст(?:атт[іеяю]|[\.\s])?|стаття)\s*(\d+(?:[-–]\d+)?))\s*([А-Яа-яЄІЇA-Za-z]+)',
     re.IGNORECASE
 )
+
+MULTI_ARTICLE_PATTERN = re.compile(
+    r'(?:(?:п(?:ункт(?:ом|у|а)?)?\.?\s*\d+\s*)?(?:ч(?:астин(?:ою|і|а)?)?\.?\s*\d+\s*)?(?:ст(?:атт[іеяю]|[\.\s])?|стаття|статей)\s*(\d+(?:[-–]\d+)?))'
+    r'(?:\s*(?:та|,|і|чи)\s*(?:(?:ст(?:атт[іеяю]|[\.\s])?|стаття)\s*)?(\d+(?:[-–]\d+)?))?'
+    r'\s+([А-Яа-яЄІЇA-Za-z]+)',
+    re.IGNORECASE
+)
+
+def extract_articles_with_code(text: str) -> List[Tuple[str, str, str]]:
+    """Витягує список (номер_статті, абревіатура_кодексу, повне_слово) з урахуванням складних посилань (напр. 'ст. 115 та 116 КПК')."""
+    res = []
+    for m in MULTI_ARTICLE_PATTERN.finditer(text):
+        raw_abbr = m.group(3).strip()
+        abbr_upper = raw_abbr.upper()
+        if abbr_upper in FULL_CODE_NAME_MAP:
+            abbr_upper = FULL_CODE_NAME_MAP[abbr_upper]
+        art1 = m.group(1)
+        art2 = m.group(2)
+        res.append((art1, abbr_upper, raw_abbr))
+        if art2:
+            res.append((art2, abbr_upper, raw_abbr))
+    return res
 
 CASE_NUM_PATTERN = re.compile(
     r'(?:справ[іае]\s*(?:№\s*)?|№\s*)([0-9]{3,4}/[0-9]+/[0-9]{2}(?:-[а-я0-9]+)?)',
@@ -101,6 +128,20 @@ def parse_article_number(art_str: str) -> float:
         return float(clean_art)
     except ValueError:
         return 0.0
+
+
+def map_constitution_article(art_str: str, conn: sqlite3.Connection) -> str:
+    """Визначає точну рубрику Конституції України (10 10 ...) за номером статті."""
+    cur = conn.cursor()
+    clean_art = str(art_str).replace('–', '-').strip()
+    cur.execute(
+        "SELECT code FROM categories WHERE code LIKE '10 10 %' AND (name LIKE ? OR name LIKE ?)",
+        (f"Стаття {clean_art}.%", f"Стаття {clean_art} %")
+    )
+    row = cur.fetchone()
+    if row:
+        return row[0]
+    return "10 10"
 
 
 def map_criminal_code_article(art_num: float, text_snippet: str) -> str:
@@ -416,20 +457,18 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
                 break
 
     if not matched_code_abbr:
-        for m_art in ARTICLE_PATTERN.finditer(first_4):
-            candidate_abbr = m_art.group(2).upper().strip()
+        for art_str, candidate_abbr, _ in extract_articles_with_code(first_4):
             if candidate_abbr in CODE_ABBR_MAP:
-                matched_art_str = m_art.group(1)
+                matched_art_str = art_str
                 matched_code_abbr = candidate_abbr
                 matched_code_root, matched_code_name, _ = CODE_ABBR_MAP[candidate_abbr]
                 break
 
     # Якщо в перших 4 реченнях не знайдено статті, шукаємо в межах перших 1200 символів
     if not matched_code_abbr:
-        for m_wide in ARTICLE_PATTERN.finditer(clean_text[:1200]):
-            candidate_abbr = m_wide.group(2).upper().strip()
+        for art_str, candidate_abbr, _ in extract_articles_with_code(clean_text[:1200]):
             if candidate_abbr in CODE_ABBR_MAP:
-                matched_art_str = m_wide.group(1)
+                matched_art_str = art_str
                 matched_code_abbr = candidate_abbr
                 matched_code_root, matched_code_name, _ = CODE_ABBR_MAP[candidate_abbr]
                 break
@@ -469,6 +508,9 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
             primary_confidence = 0.95
         elif matched_code_abbr == "ЦК":
             primary_cat_code = map_civil_code_article(art_num, first_4)
+            primary_confidence = 0.95
+        elif matched_code_abbr == "КУ":
+            primary_cat_code = map_constitution_article(matched_art_str, conn)
             primary_confidence = 0.95
         else:
             sub_code = match_category_by_name(conn, matched_code_root, first_4)
@@ -512,16 +554,17 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
         "file_path": rel_file_path,
         "pdf_path": pdf_path,
         "decision_url": decision_url,
+        "full_text": clean_text,
         "is_primary": True
     }]
 
     seen_categories = {primary_cat_code}
 
     # 2. ДОПОВНЕНА КЛАСИФІКАЦІЯ (дослідження всього тексту сегмента на наявність додаткових норм)
-    for m_rest in ARTICLE_PATTERN.finditer(clean_text):
-        abbr = m_rest.group(2).upper().strip()
+    for art_str, abbr, _ in extract_articles_with_code(clean_text):
+        if abbr in FULL_CODE_NAME_MAP:
+            abbr = FULL_CODE_NAME_MAP[abbr]
         if abbr in CODE_ABBR_MAP:
-            art_str = m_rest.group(1)
             if abbr == matched_code_abbr and art_str == matched_art_str:
                 continue
             root_code, code_title, _ = CODE_ABBR_MAP[abbr]
@@ -536,6 +579,8 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
                 aug_cat_code = map_criminal_proc_code_article(art_num, clean_text[:800])
             elif abbr == "ЦК":
                 aug_cat_code = map_civil_code_article(art_num, clean_text[:800])
+            elif abbr == "КУ":
+                aug_cat_code = map_constitution_article(art_str, conn)
             else:
                 sub = match_category_by_name(conn, root_code, clean_text[:800])
                 aug_cat_code = sub if sub else root_code
@@ -565,14 +610,15 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
                     "file_path": rel_file_path,
                     "pdf_path": pdf_path,
                     "decision_url": decision_url,
+                    "full_text": clean_text,
                     "is_primary": False
                 })
 
     # 3. ВИЯВЛЕННЯ СТАТЕЙ ТА ЗАКОНІВ ПОЗА КЛАСИФІКАЦІЄЮ
     raw_found = []
-    # Пошук законів України, конвенцій або Конституції зі статтею
+    # Пошук законів України або конвенцій зі статтею
     for m_law in re.finditer(
-        r'(?:ст(?:атт[іеяю]|\.)?|стаття)\s*(\d+(?:[-–]\d+)?)\s*(?:Закону\s+(?:України\s+)?(?:[«"][^»"]+[»"]|[А-Яа-яЄІЇA-Za-z\s]{3,45}?(?=[,\.;\)\n\r]))|Конвенції|ЄКПЛ|Конституції\s+України)',
+        r'(?:ст(?:атт[іеяю]|\.)?|стаття)\s*(\d+(?:[-–]\d+)?)\s*(?:Закону\s+(?:України\s+)?(?:[«"][^»"]+[»"]|[А-Яа-яЄІЇA-Za-z\s]{3,45}?(?=[,\.;\)\n\r]))|Конвенції|ЄКПЛ)',
         clean_text, re.IGNORECASE
     ):
         raw_norm = re.sub(r'\s+', ' ', m_law.group(0).strip())
@@ -590,12 +636,12 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
     STOP_WORDS = {
         'УКРАЇНИ', 'СУДУ', 'РОКУ', 'ЧАСТИНИ', 'ПУНКТУ', 'СТАТТІ', 'ТА', 'АБО', 'ДО', 'НА',
         'ЗА', 'ВІД', 'ПРОВАДЖЕННЯ', 'СПРАВИ', 'ВКАЗАНОГО', 'ЦЬОГО', 'ВІДПОВІДНОГО', 'ІНШОГО',
-        'ЗАЗНАЧЕНОГО', 'ПОРЯДКУ', 'ВИПАДКУ', 'МЕЖАХ', 'ВИМОГ', 'ПОЛОЖЕНЬ', 'ЗАКОНУ'
+        'ЗАЗНАЧЕНОГО', 'ПОРЯДКУ', 'ВИПАДКУ', 'МЕЖАХ', 'ВИМОГ', 'ПОЛОЖЕНЬ', 'ЗАКОНУ',
+        'КОНСТИТУЦІЇ', 'КОНСТИТУЦІЯ'
     }
-    for m_art in ARTICLE_PATTERN.finditer(clean_text):
-        cand = m_art.group(2).upper().strip()
+    for art_str, cand, raw_abbr in extract_articles_with_code(clean_text):
         if len(cand) >= 2 and cand not in CODE_ABBR_MAP and cand not in STOP_WORDS:
-            phrase = f"ст. {m_art.group(1)} {m_art.group(2)}"
+            phrase = f"ст. {art_str} {raw_abbr}"
             if phrase not in final_norms and not any(phrase in x for x in final_norms):
                 final_norms.append(phrase)
 
@@ -667,83 +713,65 @@ def classify_folder(folder_path: Path) -> int:
 
         rel_path = results[0]["file_path"]
 
-        # Отримуємо всі існуючі зв'язки для цього сегмента
-        cur.execute("SELECT id, category_code FROM mapped_segments WHERE file_path = ?", (rel_path,))
-        existing_records = {row[1]: row[0] for row in cur.fetchall()}  # {category_code: id}
+        # Отримуємо всі існуючі зв'язки для цього сегмента: {category_code: (id, llm_reasoning)}
+        cur.execute("SELECT id, category_code, llm_reasoning FROM mapped_segments WHERE file_path = ?", (rel_path,))
+        existing_rows = cur.fetchall()
+        existing_records = {row[1]: (row[0], row[2]) for row in existing_rows}
 
-        # Категорії, які визначено в цьому прогоні
         computed_categories = {res["category_code"] for res in results}
 
-        # 1. Опрацьовуємо первинний зв'язок
-        primary_res = results[0]
-        prim_cat = primary_res["category_code"]
-
-        if prim_cat in existing_records:
-            valid_count += 1
-            cur.execute("""
-                UPDATE mapped_segments
-                SET case_number = ?, teza = ?, summary = ?,
-                    confidence_score = ?, llm_reasoning = ?, pdf_path = ?, decision_url = ?
-                WHERE id = ?
-            """, (
-                primary_res["case_number"], primary_res["teza"], primary_res["summary"],
-                primary_res["confidence_score"], primary_res["llm_reasoning"], primary_res["pdf_path"], primary_res.get("decision_url", ""),
-                existing_records[prim_cat]
-            ))
-        else:
-            # Якщо для сегмента був старий запис з невідомою/застарілою категорією, оновлюємо його
-            obsolete_ids = [eid for cat, eid in existing_records.items() if cat not in computed_categories]
-            if obsolete_ids:
-                reused_id = obsolete_ids[0]
+        # Видаляємо застарілі зв'язки, яких більше немає в computed_categories
+        for cat, (eid, _) in list(existing_records.items()):
+            if cat not in computed_categories:
+                cur.execute("DELETE FROM mapped_segments WHERE id = ?", (eid,))
+                del existing_records[cat]
                 updated_count += 1
-                print(f"  🔄 [ОНОВЛЕНО] {f.name}: первинний зв'язок оновлено на [{prim_cat}] {primary_res['original_category']}")
+
+        for idx, res in enumerate(results):
+            cat = res["category_code"]
+            is_prim = (idx == 0)
+            if cat in existing_records:
+                eid, prev_reasoning = existing_records[cat]
+                prev_is_prim = ("[ДОПОВНЕНА КЛАСИФІКАЦІЯ]" not in (prev_reasoning or ""))
+                if prev_is_prim == is_prim:
+                    valid_count += 1
+                else:
+                    updated_count += 1
+                    status_lbl = "первинний зв'язок оновлено" if is_prim else "переведено у доповнений зв'язок"
+                    print(f"  🔄 [ОНОВЛЕНО] {f.name}: {status_lbl} [{cat}] {res['original_category']}")
+
                 cur.execute("""
                     UPDATE mapped_segments
                     SET category_code = ?, original_category = ?, case_number = ?,
                         teza = ?, summary = ?, circumstances = ?, reasoning = ?,
-                        confidence_score = ?, llm_reasoning = ?, pdf_path = ?, decision_url = ?
+                        confidence_score = ?, llm_reasoning = ?, pdf_path = ?, decision_url = ?, full_text = ?
                     WHERE id = ?
                 """, (
-                    primary_res["category_code"], primary_res["original_category"], primary_res["case_number"],
-                    primary_res["teza"], primary_res["summary"], primary_res["circumstances"], primary_res["reasoning"],
-                    primary_res["confidence_score"], primary_res["llm_reasoning"], primary_res["pdf_path"], primary_res.get("decision_url", ""),
-                    reused_id
+                    res["category_code"], res["original_category"], res["case_number"],
+                    res["teza"], res["summary"], res["circumstances"], res["reasoning"],
+                    res["confidence_score"], res["llm_reasoning"], res["pdf_path"], res.get("decision_url", ""),
+                    res.get("full_text", ""),
+                    eid
                 ))
-                # Видаляємо з переліку використаних
-                existing_records = {k: v for k, v in existing_records.items() if v != reused_id}
             else:
-                inserted_count += 1
-                print(f"  ✨ [НОВИЙ ПЕРВИННИЙ] {f.name} -> [{prim_cat}] {primary_res['original_category']}")
-                cur.execute("""
-                    INSERT INTO mapped_segments (
-                        category_code, case_number, original_category,
-                        teza, summary, circumstances, reasoning,
-                        confidence_score, llm_reasoning, file_path, pdf_path, decision_url
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                """, (
-                    primary_res["category_code"], primary_res["case_number"], primary_res["original_category"],
-                    primary_res["teza"], primary_res["summary"], primary_res["circumstances"], primary_res["reasoning"],
-                    primary_res["confidence_score"], primary_res["llm_reasoning"], rel_path, primary_res["pdf_path"], primary_res.get("decision_url", "")
-                ))
+                if is_prim:
+                    inserted_count += 1
+                    print(f"  ✨ [НОВИЙ ПЕРВИННИЙ] {f.name} -> [{cat}] {res['original_category']}")
+                else:
+                    augmented_count += 1
+                    print(f"  ➕ [ДОПОВНЕНО] {f.name} -> [{cat}] {res['original_category']}")
 
-        # 2. Опрацьовуємо доповнені зв'язки (решта результатів)
-        for aug_res in results[1:]:
-            aug_cat = aug_res["category_code"]
-            if aug_cat in existing_records:
-                valid_count += 1
-            else:
-                augmented_count += 1
-                print(f"  ➕ [ДОПОВНЕНО] {f.name} -> [{aug_cat}] {aug_res['original_category']}")
                 cur.execute("""
                     INSERT INTO mapped_segments (
                         category_code, case_number, original_category,
                         teza, summary, circumstances, reasoning,
-                        confidence_score, llm_reasoning, file_path, pdf_path, decision_url
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        confidence_score, llm_reasoning, file_path, pdf_path, decision_url, full_text
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
-                    aug_res["category_code"], aug_res["case_number"], aug_res["original_category"],
-                    aug_res["teza"], aug_res["summary"], aug_res["circumstances"], aug_res["reasoning"],
-                    aug_res["confidence_score"], aug_res["llm_reasoning"], rel_path, aug_res["pdf_path"], aug_res.get("decision_url", "")
+                    res["category_code"], res["case_number"], res["original_category"],
+                    res["teza"], res["summary"], res["circumstances"], res["reasoning"],
+                    res["confidence_score"], res["llm_reasoning"], rel_path, res["pdf_path"], res.get("decision_url", ""),
+                    res.get("full_text", "")
                 ))
 
     conn.commit()

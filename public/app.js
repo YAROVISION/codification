@@ -40,6 +40,8 @@ const modalActsList = document.getElementById("modal-acts-list");
 const segmentsSection = document.getElementById("segments-section");
 const segmentsList = document.getElementById("segments-list");
 const segmentsCountBadge = document.getElementById("segments-count-badge");
+const btnToggleAllFulltext = document.getElementById("btn-toggle-all-fulltext");
+const btnToggleAllFulltextText = document.getElementById("btn-toggle-all-fulltext-text");
 const crossRefsContent = document.getElementById("cross-refs-content");
 const semanticTextPreview = document.getElementById("semantic-text-preview");
 
@@ -257,6 +259,11 @@ function setupEventListeners() {
   }
   if (sidebarBackdrop) {
     sidebarBackdrop.addEventListener("click", closeMobileSidebar);
+  }
+
+  // Toggle All Segments Full Text
+  if (btnToggleAllFulltext) {
+    btnToggleAllFulltext.addEventListener("click", toggleAllSegmentsFullText);
   }
 
   // Hash change
@@ -736,7 +743,171 @@ function escapeHtml(str) {
     .replace(/'/g, "&#039;");
 }
 
-// Render Judicial Practice Segments with PDF Journal Viewer links
+// Helper to escape regex special characters
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Global state for expanding all segment full texts
+let allFullTextsExpanded = false;
+
+function toggleAllSegmentsFullText() {
+  allFullTextsExpanded = !allFullTextsExpanded;
+  const collapses = document.querySelectorAll(".segment-fulltext-collapse");
+  const buttons = document.querySelectorAll(".btn-toggle-fulltext");
+
+  collapses.forEach(c => {
+    if (allFullTextsExpanded) {
+      c.classList.remove("hidden");
+    } else {
+      c.classList.add("hidden");
+    }
+  });
+
+  buttons.forEach(btn => {
+    const label = btn.querySelector(".btn-toggle-fulltext-text");
+    if (allFullTextsExpanded) {
+      btn.classList.add("expanded");
+      if (label) label.textContent = "Згорнути повний текст";
+    } else {
+      btn.classList.remove("expanded");
+      if (label) label.textContent = "Читати повний текст сегмента";
+    }
+  });
+
+  if (btnToggleAllFulltextText) {
+    btnToggleAllFulltextText.textContent = allFullTextsExpanded ? "Згорнути всі тексти" : "Розгорнути всі повні тексти";
+  }
+}
+
+// Format full text of court practice segments into readable structured blocks
+function formatSegmentFullTextHtml(rawText) {
+  if (!rawText) return "";
+
+  // 1. Очищуємо коментарі SEGMENT
+  let clean = rawText.replace(/<!--\s*===\s*SEGMENT:.*?===\s*-->/g, "").trim();
+
+  // 2. Список ключових юридичних маркерів судової практики Верховного Суду
+  const markers = [
+    "Обставини справи:",
+    "Позиції судів першої та апеляційної інстанцій:",
+    "Позиція судів першої та апеляційної інстанцій:",
+    "Позиція суду першої інстанції:",
+    "Позиція суду апеляційної інстанції:",
+    "Позиція судів попередніх інстанцій:",
+    "Позиції судів попередніх інстанцій:",
+    "Позиція суду:",
+    "Позиція ККС:",
+    "Позиція ВС:",
+    "Позиція ВП ВС:",
+    "Позиція КГС:",
+    "Позиція КЦС:",
+    "Позиція КАС:",
+    "Позиція Великої Палати:",
+    "Обґрунтування позиції ККС:",
+    "Обґрунтування позиції ВС:",
+    "Обґрунтування позиції ВП ВС:",
+    "Обґрунтування позиції КГС:",
+    "Обґрунтування позиції КЦС:",
+    "Обґрунтування позиції КАС:",
+    "Мотиви Верховного Суду:",
+    "Мотиви суду:",
+    "У касаційній скарзі:",
+    "У касаційних скаргах:"
+  ];
+
+  // Префікси постанов та ухвал для оформлення цитування
+  const citationPrefixes = [
+    "Постанова колегії суддів",
+    "Постанова Великої Палати",
+    "Постанова ККС ВС",
+    "Постанова КГС ВС",
+    "Постанова КЦС ВС",
+    "Постанова КАС ВС",
+    "Постанова Верховного Суду",
+    "Постанова ККС",
+    "Ухвала колегії суддів",
+    "Ухвала Верховного Суду"
+  ];
+
+  let processed = clean;
+  let citationHtml = "";
+
+  // Знаходимо фінальне цитування постанови
+  for (const cp of citationPrefixes) {
+    const cIdx = processed.indexOf(cp);
+    if (cIdx !== -1) {
+      const citText = processed.substring(cIdx).trim();
+      processed = processed.substring(0, cIdx).trim();
+
+      const urlMatch = citText.match(/https?:\/\/[^\s>]+/);
+      let formattedCit = escapeHtml(citText);
+      if (urlMatch) {
+        const u = urlMatch[0];
+        formattedCit = formattedCit.replace(
+          escapeHtml(u),
+          `<a href="${escapeHtml(u)}" target="_blank" rel="noopener noreferrer" class="fulltext-reyestr-link" title="Відкрити рішення в Єдиному державному реєстрі судових рішень (ЄДРСР)">⚖️ Відкрити в ЄДРСР</a>`
+        );
+      }
+      citationHtml = `
+        <div class="fulltext-citation-box">
+          <div class="citation-icon">📜</div>
+          <div class="citation-content">${formattedCit}</div>
+        </div>
+      `;
+      break;
+    }
+  }
+
+  // Розбиваємо текст за маркерами
+  const SPLIT_TOKEN = "___MARKER_SPLIT___";
+  let tokenized = processed;
+  for (const m of markers) {
+    const reg = new RegExp(`(^|\\s)(${escapeRegex(m)})`, "g");
+    tokenized = tokenized.replace(reg, `$1${SPLIT_TOKEN}$2`);
+  }
+
+  const sections = tokenized.split(SPLIT_TOKEN).map(s => s.trim()).filter(Boolean);
+
+  let htmlResult = "";
+  if (sections.length > 1) {
+    sections.forEach((sec) => {
+      let foundMarker = null;
+      for (const m of markers) {
+        if (sec.startsWith(m)) {
+          foundMarker = m;
+          break;
+        }
+      }
+
+      if (foundMarker) {
+        const textAfter = sec.substring(foundMarker.length).trim();
+        htmlResult += `
+          <div class="fulltext-section-row">
+            <span class="fulltext-marker-badge">${escapeHtml(foundMarker)}</span>
+            <span class="fulltext-marker-text">${escapeHtml(textAfter)}</span>
+          </div>
+        `;
+      } else {
+        htmlResult += `<p class="fulltext-intro-paragraph">${escapeHtml(sec)}</p>`;
+      }
+    });
+  } else {
+    // Якщо немає стандартних заголовків, розбиваємо за абзацами
+    const paras = processed.split(/\n+/).map(p => p.trim()).filter(Boolean);
+    paras.forEach(p => {
+      htmlResult += `<p class="fulltext-regular-paragraph">${escapeHtml(p)}</p>`;
+    });
+  }
+
+  if (citationHtml) {
+    htmlResult += citationHtml;
+  }
+
+  return htmlResult;
+}
+
+// Render Judicial Practice Segments with PDF Journal Viewer links and Full Text display
 function renderSegments(segments) {
   if (!segmentsSection || !segmentsList) return;
 
@@ -751,6 +922,12 @@ function renderSegments(segments) {
   segmentsSection.classList.remove("hidden");
   if (segmentsCountBadge) {
     segmentsCountBadge.textContent = segments.length;
+  }
+
+  // Reset toggle all button
+  allFullTextsExpanded = false;
+  if (btnToggleAllFulltextText) {
+    btnToggleAllFulltextText.textContent = "Розгорнути всі повні тексти";
   }
 
   segments.forEach((seg, index) => {
@@ -786,6 +963,8 @@ function renderSegments(segments) {
     }
 
     const confidencePct = Math.round((seg.confidence_score || 0.95) * 100);
+    const fullTextContent = seg.full_text || seg.summary || "";
+    const charCount = fullTextContent.length;
 
     card.innerHTML = `
       <div class="segment-card-header">
@@ -866,6 +1045,48 @@ function renderSegments(segments) {
           </div>
         ` : ''}
 
+        <!-- Блок повного тексту судового сегмента -->
+        <div class="segment-fulltext-section">
+          <div class="segment-fulltext-toggle-row">
+            <button type="button" class="btn-toggle-fulltext" data-target="seg-full-${seg.id || index}" title="Розгорнути або приховати весь нормалізований текст судової позиції">
+              <svg class="book-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              <span class="btn-toggle-fulltext-text">Читати повний текст сегмента</span>
+              <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <span class="fulltext-badge">${charCount.toLocaleString("uk-UA")} симв.</span>
+          </div>
+
+          <div class="segment-fulltext-collapse hidden" id="seg-full-${seg.id || index}">
+            <div class="segment-fulltext-inner">
+              <div class="fulltext-top-bar">
+                <div class="fulltext-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                  <span>Повний текст правової позиції, обставин та мотивів ВС</span>
+                </div>
+                <button type="button" class="btn-copy-fulltext" title="Скопіювати повний текст сегмента">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Копіювати</span>
+                </button>
+              </div>
+              <div class="fulltext-body">
+                ${formatSegmentFullTextHtml(fullTextContent)}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Додаткові деталі класифікації -->
         <div class="segment-details-collapse hidden" id="seg-details-${seg.id || index}">
           ${seg.circumstances ? `
             <div class="detail-block">
@@ -917,6 +1138,36 @@ function renderSegments(segments) {
         </div>
       </div>
     `;
+
+    // Event listener for toggle full text
+    const fullTextBtn = card.querySelector(".btn-toggle-fulltext");
+    const fullTextBox = card.querySelector(`#seg-full-${seg.id || index}`);
+    if (fullTextBtn && fullTextBox) {
+      fullTextBtn.addEventListener("click", () => {
+        const isHidden = fullTextBox.classList.contains("hidden");
+        if (isHidden) {
+          fullTextBox.classList.remove("hidden");
+          fullTextBtn.querySelector(".btn-toggle-fulltext-text").textContent = "Згорнути повний текст";
+          fullTextBtn.classList.add("expanded");
+        } else {
+          fullTextBox.classList.add("hidden");
+          fullTextBtn.querySelector(".btn-toggle-fulltext-text").textContent = "Читати повний текст сегмента";
+          fullTextBtn.classList.remove("expanded");
+        }
+      });
+    }
+
+    // Event listener for copy full text
+    const copyBtn = card.querySelector(".btn-copy-fulltext");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", () => {
+        navigator.clipboard.writeText(fullTextContent).then(() => {
+          showToast("Повний текст сегмента скопійовано!");
+        }).catch(() => {
+          showToast("Не вдалося скопіювати текст");
+        });
+      });
+    }
 
     // Event listener for toggle details
     const toggleBtn = card.querySelector(".btn-toggle-details");

@@ -2,6 +2,33 @@
 
 Нові записи додаються **зверху**.
 
+## 12.10.2026 (сегментація, міграція та класифікація оглядів, обробка Oglyad_KKS_12_2025_1)
+
+- Зроблено:
+  - **Сегментація, міграція та класифікація огляду [`Oglyad_KKS_12_2025_1`](file:///Users/kostantinkrivula/Desktop/codificftion/documents/segments/Oglyad_KKS_12_2025_1/):**
+    - Нормалізовано текст огляду у [`documents/markdown/Oglyad_KKS_12_2025_1/Oglyad_KKS_12_2025_1.md`](file:///Users/kostantinkrivula/Desktop/codificftion/documents/markdown/Oglyad_KKS_12_2025_1/Oglyad_KKS_12_2025_1.md) за правилами `brain/conventions.md`;
+    - Виконано міграцію огляду на 35 файлів: 24 юридичні сегменти (2 ОП, 9 КК, 13 КПК) та 11 технічних структурних блоків;
+    - Застосовано скіл `classification` та встановлено 57 взаємозв'язків у базі [`data/classifier.sqlite`](file:///Users/kostantinkrivula/Desktop/codificftion/data/classifier.sqlite) (24 первинних та 33 доповнених зв'язки);
+    - Згенеровано сторінку кореляції [`public/correlation/Oglyad_KKS_12_2025_1.html`](file:///Users/kostantinkrivula/Desktop/codificftion/public/correlation/Oglyad_KKS_12_2025_1.html);
+    - Виявлено норми поза класифікатором: ст. 1 Першого (Додаткового) протоколу до ЄКПЛ (`KPK_06.2`) та ст. 1-1 Закону про забезпечення прав і свобод на ТОТ (`OP_01.2`).
+  - **Опрацювання оглядів `Oglyad_KKS_10_2025`, `Oglyad_KKS_11_2025`, `Oglyad_KKS_12_2024`:**
+    - Оновлено сегментацію, класифікацію та сторінки кореляції у `public/correlation/`.
+
+
+- Зроблено:
+  - У базі даних [`data/classifier.sqlite`](file:///Users/kostantinkrivula/Desktop/codificftion/data/classifier.sqlite) до таблиці `mapped_segments` додано колонку `full_text` та заповнено її повними текстами для всіх 239 збережених сегментів.
+  - Оновлено скрипт [`classify_segments.py`](file:///Users/kostantinkrivula/Desktop/codificftion/classify_segments.py): поле `full_text` додано до результатів класифікації та автоматично записується під час `INSERT` і `UPDATE`.
+  - Оновлено сервер [`server.py`](file:///Users/kostantinkrivula/Desktop/codificftion/server.py):
+    - Ендпоінт `/api/category` повертає повний текст `full_text` для кожного сегмента (з бази або надійним fallback-читанням із файлу на диску);
+    - Додано роздачу файлів сегментів за шляхом `/documents/segments/`.
+  - Оновлено клієнтську частину ([`public/app.js`](file:///Users/kostantinkrivula/Desktop/codificftion/public/app.js), [`public/style.css`](file:///Users/kostantinkrivula/Desktop/codificftion/public/style.css), [`public/index.html`](file:///Users/kostantinkrivula/Desktop/codificftion/public/index.html)):
+    - У картку кожного судового сегмента додано блок повного тексту з кнопкою «Читати повний текст сегмента» / «Згорнути повний текст» та лічильником символів;
+    - Додано інтелектуальне форматування тексту `formatSegmentFullTextHtml`: автоматичне структурування та бейджі для розділів «Обставини справи:», «Позиції судів:», «Позиція ВС/ККС:», «Обґрунтування позиції ВС:», цитування постанов із клікабельними лінками на ЄДРСР;
+    - Додано кнопку копіювання всього тексту сегмента до буфера обміну;
+    - У шапку секції «Судова практика» додано загальну кнопку «Розгорнути всі повні тексти» / «Згорнути всі тексти».
+  - Виконано міграцію огляду [`Oglyad_KKS_09_2025`](file:///Users/kostantinkrivula/Desktop/codificftion/documents/segments/Oglyad_KKS_09_2025/) (50 файлів: 38 змістовних, 12 технічних).
+  - Проведено верифікацію та класифікацію огляду [`Oglyad_KKS_09_2024`](file:///Users/kostantinkrivula/Desktop/codificftion/documents/segments/Oglyad_KKS_09_2024/) (86 валідних зв'язків, виявлено 6 норм поза класифікатором).
+
 ## 10.10.2026 (правило обов'язкового інформування про норми законів/кодексів поза класифікацією)
 
 - Зроблено:
@@ -825,3 +852,15 @@
   - Очищено всі залишкові префікси «1. » на початку абзаців по всьому документу (120 позицій).
 - Стан: файл `documents/markdown/Oglyad_KKS_2024/Oglyad_KKS_2024.md`, опрацьовано всі розділи КПК (4–30), технічні сегменти, розділи 1–11 (Загальна частина), розділи 12–16 КК, очищено префікси «1. ».
 - Далі: Розділ 17 КК / Розділ 7 Особливої частини («Кримінальні правопорушення проти довкілля», сегмент 17.1).
+
+### 2026-10-12
+- `documents/markdown/Oglyad_KKS_10_2025/Oglyad_KKS_10_2025.md`:
+  - Повна нормалізація та сегментація: сформовано 51 сегмент (1 Preamble, 10 технічних, 40 юридичних).
+  - Усі 40 змістовних правових позицій зведено до формату «один абзац — один рядок» з префіксами та посиланнями на реєстр.
+  - Успішно виконано міграцію за скілом `migration` (`migrate_document.py`): створено 51 файл у папці `documents/segments/Oglyad_KKS_10_2025/` (40 юридичних: 2 OP_01, 2 OP_02, 18 KK, 18 KPK; 11 технічних).
+  - Успішно виконано класифікацію за скілом `classification` (`classify_segments.py`):
+    - Всі 40/40 юридичних сегментів зв'язано з класифікатором.
+    - Встановлено 40 первинних зв'язків та 57 доповнених (загалом 97 активних взаємозв'язків у базі `data/classifier.sqlite`).
+    - Згенеровано оновлену сторінку кореляції `public/correlation/Oglyad_KKS_10_2025.html`.
+    - Зафіксовано норми поза класифікацією (Конституція, ЄКПЛ, спеціальні закони).
+
