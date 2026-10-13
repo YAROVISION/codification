@@ -179,7 +179,12 @@ def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict
                 seg_num = num_part.split(".")[-1]
                 fname = f"KPK_{kpk_chapter_idx:02d}.{seg_num}_segment.md"
             else:
-                fname = f"{num_part}_segment.md"
+                parts = num_part.split(".")
+                if len(parts) >= 2 and parts[0].isdigit():
+                    rest = ".".join(parts[1:])
+                    fname = f"{int(parts[0]):02d}.{rest}_segment.md"
+                else:
+                    fname = f"{num_part}_segment.md"
             file_mapping.append((fname, full_text, False))
         else:
             if title_part != last_chapter_title:

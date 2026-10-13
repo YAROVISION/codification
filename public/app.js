@@ -354,8 +354,12 @@ function renderTree(nodes, parentEl = treeContainer, level = 1) {
     titleSpan.title = `${node.code} ${node.clean_name}`;
 
     const badge = document.createElement("span");
-    badge.className = "tree-badge";
-    badge.textContent = Number(node.total_docs_count).toLocaleString("uk-UA");
+    const count = Number(node.total_docs_count || 0);
+    badge.className = `tree-badge ${count > 0 ? "has-matches" : "zero"}`;
+    badge.textContent = count.toLocaleString("uk-UA");
+    badge.title = count > 0
+      ? `Всього співпадінь: ${count.toLocaleString("uk-UA")}` + (node.direct_docs_count ? ` (прямих: ${node.direct_docs_count.toLocaleString("uk-UA")})` : "")
+      : "Немає співпадінь";
 
     row.appendChild(expander);
     row.appendChild(codeSpan);
@@ -717,10 +721,11 @@ function renderSubcategories(children) {
     const card = document.createElement("div");
     card.className = "subcat-card";
 
+    const childCount = Number(child.total_docs_count || 0);
     card.innerHTML = `
       <div class="subcat-top">
         <span class="subcat-code">${child.code}</span>
-        <span class="subcat-count">${Number(child.total_docs_count).toLocaleString("uk-UA")} актів</span>
+        <span class="subcat-count ${childCount > 0 ? "has-matches" : ""}">${childCount.toLocaleString("uk-UA")} співпадінь</span>
       </div>
       <div class="subcat-title">${child.clean_name}</div>
     `;
@@ -1261,11 +1266,12 @@ async function performSearch(query) {
     results.forEach((item) => {
       const el = document.createElement("div");
       el.className = "search-result-item";
+      const itemCount = Number(item.total_docs_count || 0);
       el.innerHTML = `
         <div class="result-top-line">
           <span class="result-code">${item.code}</span>
           <span class="result-name">${item.clean_name}</span>
-          <span class="result-count">${Number(item.total_docs_count).toLocaleString("uk-UA")} актів</span>
+          <span class="result-count ${itemCount > 0 ? "has-matches" : ""}">${itemCount.toLocaleString("uk-UA")} співпадінь</span>
         </div>
         <div class="result-path">${item.path_names || ""}</div>
       `;

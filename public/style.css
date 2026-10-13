@@ -916,6 +916,47 @@ body {
   border-radius: var(--radius-full);
   border: 1px solid var(--border-subtle);
   flex-shrink: 0;
+  transition: all 0.18s ease;
+}
+
+.tree-badge.zero {
+  opacity: 0.45;
+}
+
+.tree-badge.has-matches {
+  color: #0284c7;
+  background: rgba(14, 165, 233, 0.12);
+  border-color: rgba(14, 165, 233, 0.35);
+  font-weight: 600;
+  box-shadow: 0 0 6px rgba(14, 165, 233, 0.12);
+}
+
+[data-theme="dark"] .tree-badge.has-matches {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.2);
+}
+
+.tree-node-row:hover .tree-badge.has-matches {
+  background: rgba(14, 165, 233, 0.22);
+  border-color: rgba(14, 165, 233, 0.55);
+}
+
+[data-theme="dark"] .tree-node-row:hover .tree-badge.has-matches {
+  background: rgba(56, 189, 248, 0.26);
+  border-color: rgba(56, 189, 248, 0.6);
+}
+
+.subcat-count.has-matches,
+.result-count.has-matches {
+  color: #0284c7;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .subcat-count.has-matches,
+[data-theme="dark"] .result-count.has-matches {
+  color: #38bdf8;
 }
 
 .tree-children-container {
