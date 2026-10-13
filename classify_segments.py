@@ -45,6 +45,11 @@ CODE_ABBR_MAP = {
     'КВК': ('150 10', 'Кримінально-виконавчий кодекс України', '150'),
     'БК': ('10 10', 'Бюджетний кодекс України', '10'),
     'КУ': ('10 10', 'Конституція України', '10'),
+    'МПГПП': ('160 10', 'Міжнародний пакт про громадянські і політичні права', '160'),
+    'ЄКПЛ': ('160 20', 'Конвенція про захист прав людини і основоположних свобод', '160'),
+    'КОНВЕНЦІЯ': ('160 20', 'Конвенція про захист прав людини і основоположних свобод', '160'),
+    'КОНВЕНЦІЇ': ('160 20', 'Конвенція про захист прав людини і основоположних свобод', '160'),
+    'ПЕРШИЙ_ПРОТОКОЛ': ('160 20 40', 'Перший протокол до ЄКПЛ', '160'),
 }
 
 # Мапінг повних назв кодексів до їхніх скорочень
@@ -66,6 +71,21 @@ FULL_CODE_NAME_MAP = {
     'КОНСТИТУЦІЇ УКРАЇНИ': 'КУ',
     'КОНСТИТУЦІЯ': 'КУ',
     'КОНСТИТУЦІЇ': 'КУ',
+    'МІЖНАРОДНИЙ ПАКТ ПРО ГРОМАДЯНСЬКІ І ПОЛІТИЧНІ ПРАВА': 'МПГПП',
+    'МІЖНАРОДНОГО ПАКТУ ПРО ГРОМАДЯНСЬКІ І ПОЛІТИЧНІ ПРАВА': 'МПГПП',
+    'МІЖНАРОДНИЙ ПАКТ ПРО ГРОМАДЯНСЬКІ ТА ПОЛІТИЧНІ ПРАВА': 'МПГПП',
+    'МІЖНАРОДНОГО ПАКТУ ПРО ГРОМАДЯНСЬКІ ТА ПОЛІТИЧНІ ПРАВА': 'МПГПП',
+    'МІЖНАРОДНИЙ ПАКТ': 'МПГПП',
+    'МІЖНАРОДНОГО ПАКТУ': 'МПГПП',
+    'КОНВЕНЦІЯ ПРО ЗАХИСТ ПРАВ ЛЮДИНИ І ОСНОВОПОЛОЖНИХ СВОБОД': 'ЄКПЛ',
+    'КОНВЕНЦІЇ ПРО ЗАХИСТ ПРАВ ЛЮДИНИ І ОСНОВОПОЛОЖНИХ СВОБОД': 'ЄКПЛ',
+    'КОНВЕНЦІЯ ПРО ЗАХИСТ ПРАВ ЛЮДИНИ ТА ОСНОВОПОЛОЖНИХ СВОБОД': 'ЄКПЛ',
+    'КОНВЕНЦІЇ ПРО ЗАХИСТ ПРАВ ЛЮДИНИ ТА ОСНОВОПОЛОЖНИХ СВОБОД': 'ЄКПЛ',
+    'ЄВРОПЕЙСЬКА КОНВЕНЦІЯ З ПРАВ ЛЮДИНИ': 'ЄКПЛ',
+    'ЄВРОПЕЙСЬКОЇ КОНВЕНЦІЇ З ПРАВ ЛЮДИНИ': 'ЄКПЛ',
+    'КОНВЕНЦІЯ': 'ЄКПЛ',
+    'КОНВЕНЦІЇ': 'ЄКПЛ',
+    'ЄКПЛ': 'ЄКПЛ',
 }
 
 # Регулярний вираз для пошуку статті та кодексу (підтримує п. 10 ч. 1 ст. 309 КПК, ст. 50 КК, стаття 111-1 КК)
@@ -84,6 +104,24 @@ MULTI_ARTICLE_PATTERN = re.compile(
 def extract_articles_with_code(text: str) -> List[Tuple[str, str, str]]:
     """Витягує список (номер_статті, абревіатура_кодексу, повне_слово) з урахуванням складних посилань (напр. 'ст. 115 та 116 КПК')."""
     res = []
+    # Спеціальна перевірка для Міжнародного пакту про громадянські і політичні права
+    for m_icp in re.finditer(
+        r'(?:(?:п(?:ункт(?:ом|у|а)?)?\.?\s*\d+\s*)?(?:ч(?:астин(?:ою|і|а)?)?\.?\s*\d+\s*)?(?:ст(?:атт[іеяю]|[\.\s])?|стаття|статей)\s*(\d+(?:[-–]\d+)?))\s+'
+        r'(?:Міжнародного\s+пакту(?:\s+про\s+громадянські\s+(?:і|та)\s+політичні\s+права)?|МПГПП)',
+        text, re.IGNORECASE
+    ):
+        res.append((m_icp.group(1), 'МПГПП', 'Міжнародний пакт про громадянські і політичні права'))
+
+    # Спеціальна перевірка для ЄКПЛ та протоколів
+    for m_echr in re.finditer(
+        r'(?:(?:п(?:ункт(?:ом|у|а)?)?\.?\s*\d+\s*)?(?:ч(?:астин(?:ою|і|а)?)?\.?\s*\d+\s*)?(?:ст(?:атт[іеяю]|[\.\s])?|стаття|статей)\s*(\d+(?:[-–]\d+)?))\s+'
+        r'(?:(?:Першого\s+(?:додаткового\s+)?протоколу\s+до\s+)?(?:Конвенції(?:\s+про\s+захист\s+прав\s+людини(?:\s+і|\s+та)\s+основоположних\s+свобод)?|ЄКПЛ)|ЄКПЛ)',
+        text, re.IGNORECASE
+    ):
+        is_prot1 = 'першого' in m_echr.group(0).lower()
+        target_abbr = 'ПЕРШИЙ_ПРОТОКОЛ' if is_prot1 else 'ЄКПЛ'
+        res.append((m_echr.group(1), target_abbr, 'Конвенція про захист прав людини і основоположних свобод'))
+
     for m in MULTI_ARTICLE_PATTERN.finditer(text):
         raw_abbr = m.group(3).strip()
         abbr_upper = raw_abbr.upper()
@@ -142,6 +180,54 @@ def map_constitution_article(art_str: str, conn: sqlite3.Connection) -> str:
     if row:
         return row[0]
     return "10 10"
+
+
+def map_iccpr_article(art_str: str, conn: sqlite3.Connection) -> str:
+    """Визначає точну рубрику Міжнародного пакту про громадянські і політичні права (160 10 ...) за номером статті."""
+    cur = conn.cursor()
+    clean_art = str(art_str).replace('–', '-').strip()
+    cur.execute(
+        "SELECT code FROM categories WHERE code LIKE '160 10 %' AND (name LIKE ? OR name LIKE ?)",
+        (f"Стаття {clean_art}.%", f"Стаття {clean_art} %")
+    )
+    row = cur.fetchone()
+    if row:
+        return row[0]
+    return "160 10"
+
+
+def map_echr_article(art_str: str, conn: sqlite3.Connection, protocol: str = "") -> str:
+    """Визначає точну рубрику ЄКПЛ (160 20 ...) за номером статті."""
+    cur = conn.cursor()
+    clean_art = str(art_str).replace('–', '-').strip()
+    if protocol == 'ПЕРШИЙ_ПРОТОКОЛ':
+        cur.execute(
+            "SELECT code FROM categories WHERE code LIKE '160 20 40 %' AND (name LIKE ? OR name LIKE ?)",
+            (f"Стаття {clean_art}.%", f"Стаття {clean_art} %")
+        )
+        row = cur.fetchone()
+        if row:
+            return row[0]
+        return "160 20 40"
+
+    # Спочатку шукаємо в Розділі I (Права і свободи)
+    cur.execute(
+        "SELECT code FROM categories WHERE code LIKE '160 20 10 %' AND (name LIKE ? OR name LIKE ?)",
+        (f"Стаття {clean_art}.%", f"Стаття {clean_art} %")
+    )
+    row = cur.fetchone()
+    if row:
+        return row[0]
+
+    # Шукаємо в цілому в 160 20
+    cur.execute(
+        "SELECT code FROM categories WHERE code LIKE '160 20 %' AND (name LIKE ? OR name LIKE ?)",
+        (f"Стаття {clean_art}.%", f"Стаття {clean_art} %")
+    )
+    row = cur.fetchone()
+    if row:
+        return row[0]
+    return "160 20"
 
 
 def map_criminal_code_article(art_num: float, text_snippet: str) -> str:
@@ -512,6 +598,12 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
         elif matched_code_abbr == "КУ":
             primary_cat_code = map_constitution_article(matched_art_str, conn)
             primary_confidence = 0.95
+        elif matched_code_abbr == "МПГПП":
+            primary_cat_code = map_iccpr_article(matched_art_str, conn)
+            primary_confidence = 0.95
+        elif matched_code_abbr in ("ЄКПЛ", "КОНВЕНЦІЯ", "КОНВЕНЦІЇ", "ПЕРШИЙ_ПРОТОКОЛ"):
+            primary_cat_code = map_echr_article(matched_art_str, conn, matched_code_abbr)
+            primary_confidence = 0.95
         else:
             sub_code = match_category_by_name(conn, matched_code_root, first_4)
             if sub_code:
@@ -581,6 +673,10 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
                 aug_cat_code = map_civil_code_article(art_num, clean_text[:800])
             elif abbr == "КУ":
                 aug_cat_code = map_constitution_article(art_str, conn)
+            elif abbr == "МПГПП":
+                aug_cat_code = map_iccpr_article(art_str, conn)
+            elif abbr in ("ЄКПЛ", "КОНВЕНЦІЯ", "КОНВЕНЦІЇ", "ПЕРШИЙ_ПРОТОКОЛ"):
+                aug_cat_code = map_echr_article(art_str, conn, abbr)
             else:
                 sub = match_category_by_name(conn, root_code, clean_text[:800])
                 aug_cat_code = sub if sub else root_code
@@ -616,9 +712,9 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
 
     # 3. ВИЯВЛЕННЯ СТАТЕЙ ТА ЗАКОНІВ ПОЗА КЛАСИФІКАЦІЄЮ
     raw_found = []
-    # Пошук законів України або конвенцій зі статтею
+    # Пошук законів України або конвенцій зі статтею (крім ЄКПЛ та МПГПП, які вже в класифікаторі)
     for m_law in re.finditer(
-        r'(?:ст(?:атт[іеяю]|\.)?|стаття)\s*(\d+(?:[-–]\d+)?)\s*(?:Закону\s+(?:України\s+)?(?:[«"][^»"]+[»"]|[А-Яа-яЄІЇA-Za-z\s]{3,45}?(?=[,\.;\)\n\r]))|Конвенції|ЄКПЛ)',
+        r'(?:ст(?:атт[іеяю]|\.)?|стаття)\s*(\d+(?:[-–]\d+)?)\s*(?:Закону\s+(?:України\s+)?(?:[«"][^»"]+[»"]|[А-Яа-яЄІЇA-Za-z\s]{3,45}?(?=[,\.;\)\n\r])))',
         clean_text, re.IGNORECASE
     ):
         raw_norm = re.sub(r'\s+', ' ', m_law.group(0).strip())
@@ -637,7 +733,7 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
         'УКРАЇНИ', 'СУДУ', 'РОКУ', 'ЧАСТИНИ', 'ПУНКТУ', 'СТАТТІ', 'ТА', 'АБО', 'ДО', 'НА',
         'ЗА', 'ВІД', 'ПРОВАДЖЕННЯ', 'СПРАВИ', 'ВКАЗАНОГО', 'ЦЬОГО', 'ВІДПОВІДНОГО', 'ІНШОГО',
         'ЗАЗНАЧЕНОГО', 'ПОРЯДКУ', 'ВИПАДКУ', 'МЕЖАХ', 'ВИМОГ', 'ПОЛОЖЕНЬ', 'ЗАКОНУ',
-        'КОНСТИТУЦІЇ', 'КОНСТИТУЦІЯ'
+        'КОНСТИТУЦІЇ', 'КОНСТИТУЦІЯ', 'МІЖНАРОДНОГО', 'ПАКТУ', 'ЄКПЛ', 'КОНВЕНЦІЯ', 'КОНВЕНЦІЇ'
     }
     for art_str, cand, raw_abbr in extract_articles_with_code(clean_text):
         if len(cand) >= 2 and cand not in CODE_ABBR_MAP and cand not in STOP_WORDS:
