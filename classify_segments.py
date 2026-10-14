@@ -25,6 +25,17 @@ if sys.stdout.encoding.lower() != 'utf-8':
 BASE_DIR = Path(__file__).resolve().parent
 DB_PATH = BASE_DIR / "data" / "classifier.sqlite"
 
+# Завантаження мапи конкретних статей КК та КПК
+MAP_FILE = BASE_DIR / "data" / "article_to_category_map.json"
+ARTICLE_MAP = {"КК": {}, "КПК": {}}
+if MAP_FILE.exists():
+    try:
+        import json
+        with open(MAP_FILE, "r", encoding="utf-8") as f:
+            ARTICLE_MAP = json.load(f)
+    except Exception as e:
+        print(f"Помилка завантаження article_to_category_map.json: {e}")
+
 # Словник скорочень кодексів та відповідних кореневих кодів у класифікаторі
 CODE_ABBR_MAP = {
     'КК': ('130 10', 'Кримінальний кодекс України', '130'),
@@ -61,6 +72,7 @@ CODE_ABBR_MAP = {
     'СТАТУС_СУДДІВ': ('170 90', 'Закон України «Про статус суддів»', '170'),
     'СБУ': ('170 100', 'Закон України «Про Службу безпеки України»', '170'),
     'ПРОКУРАТУРА': ('170 110', 'Закон України «Про прокуратуру»', '170'),
+    'ПРИКОРДОННИЙ_КОНТРОЛЬ': ('170 120', 'Закон України «Про прикордонний контроль»', '170'),
     'ОСЦПВ': ('180 10', 'Закон України «Про обов’язкове страхування цивільно-правової відповідальності власників наземних транспортних засобів»', '180'),
     'КУПН': ('190 10', 'Кодекс України про надра', '190'),
     'ЗК': ('190 20', 'Земельний кодекс України', '190'),
@@ -70,6 +82,11 @@ CODE_ABBR_MAP = {
 
 # Мапінг повних назв кодексів до їхніх скорочень
 FULL_CODE_NAME_MAP = {
+    'ЗАКОН УКРАЇНИ «ПРО ПРИКОРДОННИЙ КОНТРОЛЬ»': 'ПРИКОРДОННИЙ_КОНТРОЛЬ',
+    'ЗАКОНУ УКРАЇНИ «ПРО ПРИКОРДОННИЙ КОНТРОЛЬ»': 'ПРИКОРДОННИЙ_КОНТРОЛЬ',
+    'ЗАКОН «ПРО ПРИКОРДОННИЙ КОНТРОЛЬ»': 'ПРИКОРДОННИЙ_КОНТРОЛЬ',
+    'ЗАКОНУ «ПРО ПРИКОРДОННИЙ КОНТРОЛЬ»': 'ПРИКОРДОННИЙ_КОНТРОЛЬ',
+    'ПРО ПРИКОРДОННИЙ КОНТРОЛЬ': 'ПРИКОРДОННИЙ_КОНТРОЛЬ',
     'ЗАКОН УКРАЇНИ «ПРО ПРОКУРАТУРУ»': 'ПРОКУРАТУРА',
     'ЗАКОНУ УКРАЇНИ «ПРО ПРОКУРАТУРУ»': 'ПРОКУРАТУРА',
     'ЗАКОН «ПРО ПРОКУРАТУРУ»': 'ПРОКУРАТУРА',
@@ -214,6 +231,7 @@ def extract_articles_with_code(text: str) -> List[Tuple[str, str, str]]:
         (r'(?:(?:Закону|Закон)(?:\s+України)?\s*[«"]Про\s+Національну\s+гвардію(?:\s+України)?[»"]|Про\s+Національну\s+гвардію(?:\s+України)?)', 'НГ', 'Закон України «Про Національну гвардію України»'),
         (r'(?:(?:Закону|Закон)(?:\s+України)?\s*[«"]Про\s+державну\s+охорону\s+органів\s+державної\s+влади\s+України\s+та\s+посадових\s+осіб[»"]|Про\s+державну\s+охорону\s+органів\s+державної\s+влади\s+України\s+та\s+посадових\s+осіб)', 'УДО', 'Закон України «Про державну охорону органів державної влади України та посадових осіб»'),
         (r'(?:(?:Закону|Закон)(?:\s+України)?\s*[«"]Про\s+Державну\s+прикордонну\s+службу(?:\s+України)?[»"]|Про\s+Державну\s+прикордонну\s+службу(?:\s+України)?)', 'ДПСУ', 'Закон України «Про Державну прикордонну службу України»'),
+        (r'(?:(?:Закону|Закон)(?:\s+України)?\s*[«"]Про\s+прикордонний\s+контроль[»"]|Про\s+прикордонний\s+контроль)', 'ПРИКОРДОННИЙ_КОНТРОЛЬ', 'Закон України «Про прикордонний контроль»'),
         (r'(?:(?:Закону|Закон)(?:\s+України)?\s*[«"]Про\s+контррозвідувальну\s+діяльність[»"]|Про\s+контррозвідувальну\s+діяльність)', 'КРД', 'Закон України «Про контррозвідувальну діяльність»'),
         (r'(?:(?:Закону|Закон)(?:\s+України)?\s*[«"]Про\s+розвідку[»"]|Про\s+розвідку)', 'РОЗВІДКА', 'Закон України «Про розвідку»'),
         (r'(?:(?:Закону|Закон)(?:\s+України)?\s*[«"]Про\s+судоустрій\s+і\s+статус\s+суддів[»"]|Про\s+судоустрій\s+і\s+статус\s+суддів)', 'СУДОУСТРІЙ', 'Закон України «Про судоустрій і статус суддів»'),
@@ -374,6 +392,7 @@ GOV_LAW_PREFIX_MAP = {
     'СТАТУС_СУДДІВ': '170 90',
     'СБУ': '170 100',
     'ПРОКУРАТУРА': '170 110',
+    'ПРИКОРДОННИЙ_КОНТРОЛЬ': '170 120',
     'ОСЦПВ': '180 10',
     'КУПН': '190 10',
     'ЗК': '190 20',
@@ -404,8 +423,20 @@ def map_military_law_enforcement_article(art_str: str, conn: sqlite3.Connection)
     return map_law_article('170 20', art_str, conn)
 
 
-def map_criminal_code_article(art_num: float, text_snippet: str) -> str:
-    """Визначає точну рубрику КК (130 10 ...) за номером статті."""
+def map_criminal_code_article(art_val: Any, text_snippet: str = "") -> str:
+    """Визначає точну рубрику КК (130 10 ... статті включно) за номером статті."""
+    clean_art = str(art_val).replace('–', '-').strip()
+    if clean_art.endswith('.0'):
+        clean_art = clean_art[:-2]
+    # Пряма перевірка в базі статей класифікатора
+    if clean_art in ARTICLE_MAP.get("КК", {}):
+        return ARTICLE_MAP["КК"][clean_art]
+    base_art = re.split(r'[-–]', clean_art)[0].strip()
+    if base_art in ARTICLE_MAP.get("КК", {}):
+        return ARTICLE_MAP["КК"][base_art]
+
+    # Fallback до рівня розділу за числовим номером статті
+    art_num = parse_article_number(clean_art)
     # Загальна частина (ст. 1 - 108)
     if art_num < 109:
         if art_num <= 4:
@@ -486,8 +517,20 @@ def map_criminal_code_article(art_num: float, text_snippet: str) -> str:
         return "130 10 20 200"      # Розділ XX. Проти миру, безпеки людства
 
 
-def map_criminal_proc_code_article(art_num: float, text_snippet: str) -> str:
-    """Визначає точну рубрику КПК (140 10 ...) за номером статті."""
+def map_criminal_proc_code_article(art_val: Any, text_snippet: str = "") -> str:
+    """Визначає точну рубрику КПК (140 10 ... статті включно) за номером статті."""
+    clean_art = str(art_val).replace('–', '-').strip()
+    if clean_art.endswith('.0'):
+        clean_art = clean_art[:-2]
+    # Пряма перевірка в базі статей класифікатора
+    if clean_art in ARTICLE_MAP.get("КПК", {}):
+        return ARTICLE_MAP["КПК"][clean_art]
+    base_art = re.split(r'[-–]', clean_art)[0].strip()
+    if base_art in ARTICLE_MAP.get("КПК", {}):
+        return ARTICLE_MAP["КПК"][base_art]
+
+    # Fallback до рівня глави/параграфа за числовим номером статті
+    art_num = parse_article_number(clean_art)
     if art_num <= 6.99:
         return "140 10 10 10"       # Глава 1. Законодавство та сфера дії
     elif art_num <= 29.99:
@@ -592,8 +635,20 @@ def map_criminal_proc_code_article(art_num: float, text_snippet: str) -> str:
         return "140 10 100"         # Розділ IX-1. Воєнний стан
 
 
-def map_civil_code_article(art_num: float, text_snippet: str) -> str:
-    """Визначає точну рубрику ЦК (20 10 ...) за номером статті."""
+def map_civil_code_article(art_val: Any, text_snippet: str = "") -> str:
+    """Визначає точну рубрику ЦК (20 10 ... статті включно) за номером статті."""
+    clean_art = str(art_val).replace('–', '-').strip()
+    if clean_art.endswith('.0'):
+        clean_art = clean_art[:-2]
+    # Пряма перевірка в базі статей класифікатора
+    if clean_art in ARTICLE_MAP.get("ЦК", {}):
+        return ARTICLE_MAP["ЦК"][clean_art]
+    base_art = re.split(r'[-–]', clean_art)[0].strip()
+    if base_art in ARTICLE_MAP.get("ЦК", {}):
+        return ARTICLE_MAP["ЦК"][base_art]
+
+    # Fallback до рівня книги/глави за числовим номером статті
+    art_num = parse_article_number(clean_art)
     # Книга перша. Загальні положення (ст. 1 - 268)
     if art_num <= 23.99:
         return "20 10 10 10"       # Розділ I. Основні положення
@@ -790,13 +845,13 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
         art_num = parse_article_number(matched_art_str)
         primary_reasoning_parts.append(f"Первинна норма: ст. {matched_art_str} {matched_code_abbr}")
         if matched_code_abbr == "КК":
-            primary_cat_code = map_criminal_code_article(art_num, first_4)
+            primary_cat_code = map_criminal_code_article(matched_art_str, first_4)
             primary_confidence = 0.95
         elif matched_code_abbr == "КПК":
-            primary_cat_code = map_criminal_proc_code_article(art_num, first_4)
+            primary_cat_code = map_criminal_proc_code_article(matched_art_str, first_4)
             primary_confidence = 0.95
         elif matched_code_abbr == "ЦК":
-            primary_cat_code = map_civil_code_article(art_num, first_4)
+            primary_cat_code = map_civil_code_article(matched_art_str, first_4)
             primary_confidence = 0.95
         elif matched_code_abbr == "КУ":
             primary_cat_code = map_constitution_article(matched_art_str, conn)
@@ -872,11 +927,11 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
             aug_confidence = 0.90
             
             if abbr == "КК":
-                aug_cat_code = map_criminal_code_article(art_num, clean_text[:800])
+                aug_cat_code = map_criminal_code_article(art_str, clean_text[:800])
             elif abbr == "КПК":
-                aug_cat_code = map_criminal_proc_code_article(art_num, clean_text[:800])
+                aug_cat_code = map_criminal_proc_code_article(art_str, clean_text[:800])
             elif abbr == "ЦК":
-                aug_cat_code = map_civil_code_article(art_num, clean_text[:800])
+                aug_cat_code = map_civil_code_article(art_str, clean_text[:800])
             elif abbr == "КУ":
                 aug_cat_code = map_constitution_article(art_str, conn)
             elif abbr == "МПГПП":
@@ -917,6 +972,39 @@ def classify_segment(file_path: Path, conn: sqlite3.Connection) -> List[Dict[str
                     "full_text": clean_text,
                     "is_primary": False
                 })
+
+    # Прямі згадки законів/кодексів у тексті сегмента (якщо закон застосовано судом як правова база)
+    clean_text_upper = clean_text.upper()
+    for full_name, abbr in FULL_CODE_NAME_MAP.items():
+        if len(full_name) > 15 and full_name in clean_text_upper:
+            if abbr in CODE_ABBR_MAP:
+                root_code, code_title, _ = CODE_ABBR_MAP[abbr]
+                if root_code not in seen_categories:
+                    seen_categories.add(root_code)
+                    cur.execute("SELECT clean_name, path_names FROM categories WHERE code = ?", (root_code,))
+                    c_row = cur.fetchone()
+                    aug_name = c_row[0] if c_row else root_code
+                    aug_path = c_row[1] if c_row else root_code
+                    aug_reasoning = (
+                        f"[ДОПОВНЕНА КЛАСИФІКАЦІЯ] Виявлено пряме застосування спеціального закону: {code_title}. "
+                        f"Доповнює первинний зв'язок без конкуренції. Рубрика: [{root_code}] {aug_path}."
+                    )
+                    results.append({
+                        "category_code": root_code,
+                        "case_number": case_num,
+                        "original_category": aug_name,
+                        "teza": teza,
+                        "summary": first_4,
+                        "circumstances": "",
+                        "reasoning": "",
+                        "confidence_score": 0.90,
+                        "llm_reasoning": aug_reasoning,
+                        "file_path": rel_file_path,
+                        "pdf_path": pdf_path,
+                        "decision_url": decision_url,
+                        "full_text": clean_text,
+                        "is_primary": False
+                    })
 
     # 3. ВИЯВЛЕННЯ СТАТЕЙ ТА ЗАКОНІВ ПОЗА КЛАСИФІКАЦІЄЮ
     raw_found = []
