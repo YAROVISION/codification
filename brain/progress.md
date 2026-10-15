@@ -2,6 +2,22 @@
 
 Нові записи додаються **зверху**.
 
+## 15.10.2026 (створення розділу 180 20 «Закон України «Про банки і банківську діяльність», розширення класифікатора та доповнена класифікація огляду koryp_pravopor_2025)
+
+- Зроблено:
+  - **Створення розділу `180 20` Закон України «Про банки і банківську діяльність»:**
+    - У категорії `180` «Підприємництво» створено підрозділ `180 20` за офіційною структурою Закону № 2121-III з конкретизацією до окремих статей (всього 106 нових рубрик: 7 розділів, 16 глав та 83 конкретні статті).
+    - Оновлено всі 5 форматів класифікатора (загальний обсяг зріс до **5 792 рубрик**): [`data/classifier.json`](data/classifier.json), [`data/classifier_flat.json`](data/classifier_flat.json), [`data/classifier.sqlite`](data/classifier.sqlite), [`data/classifier.csv`](data/classifier.csv), [`data/classifier.md`](data/classifier.md).
+    - Зареєстровано 83 статті у [`data/article_to_category_map.json`](data/article_to_category_map.json) під ключем `"БАНКИ"`.
+    - Створено скрипт автоматизації [`scripts/add_banking_law.py`](scripts/add_banking_law.py).
+  - **Оновлення модуля класифікації [`classify_segments.py`](classify_segments.py):**
+    - Додано префікс `'БАНКИ': '180 20'` до `CODE_ABBR_MAP`, `FULL_CODE_NAME_MAP`, `SPECIAL_GOV_LAWS`, `GOV_LAW_PREFIX_MAP` та фільтра виключень некласифікованих норм.
+  - **Синхронізація лічильників та перекласифікація:**
+    - Скриптом [`sync_classifier_counts.py`](sync_classifier_counts.py) перераховано всі прямі та агреговані бейджики (5 792 рубрики).
+    - Перекласифіковано огляд [`Oglyad_KKS_koryp_pravopor_2025`](documents/segments/Oglyad_KKS_koryp_pravopor_2025/): сегмент `KPK_01.34_segment.md` успішно отримав додатковий зв'язок `[180 20 30 50 30]` Стаття 62 («Порядок розкриття банками банківської таємниці»). Звіт показав 0 некласифікованих норм поза класифікатором.
+    - Оновлено сторінки кореляції [`build_correlation_pages.py`](build_correlation_pages.py) та дайджести [`public/digests_data.json`](public/digests_data.json).
+
+
 ## 14.10.2026 (міграція та класифікація Oglyad_KKS_I_pivr_2025, створення підкатегорії 170 120 «Закон України «Про прикордонний контроль»)
 
 - Зроблено:
