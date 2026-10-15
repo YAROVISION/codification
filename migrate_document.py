@@ -142,15 +142,21 @@ def split_and_migrate_document(md_file_path: str, dry_run: bool = False) -> dict
         if "ЗАГАЛЬНІ ПОЛОЖЕННЯ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             if "КПК" in tag_upper or current_rozdil in ("ROZDIL_KPK", "ROZDIL_IV"):
                 current_rozdil = "ROZDIL_KPK"
-            file_mapping.append((f"tech_{len(file_mapping):02d}.md", full_text, True))
+                file_mapping.append(("04_Zahalni_polozhennya.md", full_text, True))
+            else:
+                file_mapping.append(("01_Zahalna_chastyna.md", full_text, True))
             continue
         if "ЗАХОДИ ЗАБЕЗПЕЧЕННЯ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
-            file_mapping.append((f"tech_{len(file_mapping):02d}.md", full_text, True))
+            file_mapping.append(("04_Zakhody_zabezpechennya.md", full_text, True))
             continue
         if "ОСОБЛИВІ ПОРЯДКИ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
             current_rozdil = "ROZDIL_KPK"
             file_mapping.append(("05_Osoblyvi_poryadky.md", full_text, True))
+            continue
+        if "ВІДНОВЛЕННЯ ВТРАЧЕНИХ" in tag_upper and "ТЕХНІЧНИЙ" in tag_upper:
+            current_rozdil = "ROZDIL_KPK"
+            file_mapping.append(("06_Vidnovlennya.md", full_text, True))
             continue
         if "ТЕХНІЧНИЙ" in tag_upper or "НЕ ПІДЛЯГАЄ РОЗПОДІЛУ" in tag_upper:
             tech_fname = f"tech_{len(file_mapping):02d}.md"
