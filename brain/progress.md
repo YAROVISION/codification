@@ -2,7 +2,28 @@
 
 Нові записи додаються **зверху**.
 
-## 16.10.2026 (сегментація, міграція та класифікація тематичного огляду Oglyad_KKS_oglyad_obshuk_2020_2026)
+## 16.10.2026 (розділ класифікатора «Про адвокатуру та адвокатську діяльність», сегментація, міграція та класифікація оглядів Oglyad_KKS_proc_vutratu_1_2018_07_2025 та Oglyad_KKS_provok_zloch)
+
+- Зроблено:
+  - **Розширення класифікатора законодавства (галузь 180 «Підприємництво»):**
+    - Створено новий розділ `180 30` «Закон України «Про адвокатуру та адвокатську діяльність»» зі структурою закону: 10 розділів, 61 стаття (всього 72 рубрики з повними кодами до окремих статей).
+    - Інтегровано підтримку розпізнавання Закону про адвокатуру в [`classify_segments.py`](classify_segments.py).
+    - Синхронізовано структуру в усіх форматах: `data/classifier.sqlite`, `data/classifier.json`, `data/classifier_flat.json`, `data/classifier.csv`, `data/classifier.md`.
+  - **Огляд судової практики щодо процесуальних витрат ([`Oglyad_KKS_proc_vutratu_1_2018_07_2025`](documents/markdown/Oglyad_KKS_proc_vutratu_1_2018_07_2025/Oglyad_KKS_proc_vutratu_1_2018_07_2025.md)):**
+    - Нормалізація та сегментація за стандартом «один абзац — один сегмент» (35 блоків: 1 технічний PREAMBLE та 34 судові постанови). Створено допоміжний скрипт [`scripts/segment_proc_vutratu_2025.py`](scripts/segment_proc_vutratu_2025.py).
+    - Міграція до [`documents/segments/Oglyad_KKS_proc_vutratu_1_2018_07_2025/`](documents/segments/Oglyad_KKS_proc_vutratu_1_2018_07_2025/): 35 окремих файлів (`00_Preamble.md`, `01.1`–`04.2`).
+    - Класифікація: встановлено **123 взаємозв'язки** (34 первинні та 89 доповнених). Сегмент `02.5_segment.md` успішно прив'язано до нових рубрик адвокатури (`180 30 10 10`, `180 30 40 50`).
+    - Згенеровано кореляційну сторінку [`correlation/Oglyad_KKS_proc_vutratu_1_2018_07_2025.html`](correlation/Oglyad_KKS_proc_vutratu_1_2018_07_2025.html) та оновлено дайджест у [`public/digests_data.json`](public/digests_data.json).
+  - **Огляд судової практики щодо провокації злочину ([`Oglyad_KKS_provok_zloch`](documents/markdown/Oglyad_KKS_provok_zloch/Oglyad_KKS_provok_zloch.md)):**
+    - Нормалізація та сегментація за стандартом «один абзац — один сегмент» з очищенням колонтитулів 65 сторінок (53 блоки: 1 технічний PREAMBLE та 52 судові рішення ККС ВС). Створено допоміжний скрипт [`scripts/segment_provok_zloch.py`](scripts/segment_provok_zloch.py).
+    - Враховано статті ЄКПЛ та КПК, додані користувачем у префіксах.
+    - Міграція до [`documents/segments/Oglyad_KKS_provok_zloch/`](documents/segments/Oglyad_KKS_provok_zloch/): 53 чисті файли (`00_Preamble.md`, `01.1`–`07.4`).
+    - Класифікація: встановлено **314 взаємозв'язків** (52 первинні за ст. 6 ЄКПЛ `160 20 10 60` та 262 доповнені зв'язки за КПК і КК).
+    - Виявлено норми поза класифікатором: ст. 11 та ст. 8 Закону «Про оперативно-розшукову діяльність».
+    - Згенеровано кореляційну сторінку [`correlation/Oglyad_KKS_provok_zloch.html`](correlation/Oglyad_KKS_provok_zloch.html) та оновлено дайджест у [`public/digests_data.json`](public/digests_data.json).
+  - **Загальна статистика системи:**
+    - Сумарна кількість взаємозв'язків у дереві класифікатора досягла **3 329**.
+
 
 - Зроблено:
   - **Сегментація та нормалізація огляду [`Oglyad_KKS_oglyad_obshuk_2020_2026`](documents/markdown/Oglyad_KKS_oglyad_obshuk_2020_2026/Oglyad_KKS_oglyad_obshuk_2020_2026.md):**
